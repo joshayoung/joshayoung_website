@@ -1,2 +1,30 @@
-body {
+.Wrapper {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 50px 50px auto 50px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+
+header {
+  grid-area: header;
+  border: 1px solid red;
+}
+
+main {
+  grid-area: main;
+  border: 1px solid red;
+}
+
+aside {
+  grid-area: sidebar;
+  border: 1px solid red;
+}
+
+footer {
+  grid-area: footer;
+  border: 1px solid red;
 }
