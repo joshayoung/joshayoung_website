@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `My Website`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Josh A. Young`,
+    description: `Josh Young's personal website.`,
+    author: `@joshayoung`,
   },
   plugins: [
     `gatsby-transformer-remark`,
