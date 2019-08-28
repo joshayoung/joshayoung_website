@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <div className='Wrapper'>
-      <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}main</main>
         <aside>sidebar</aside>
         <footer>
