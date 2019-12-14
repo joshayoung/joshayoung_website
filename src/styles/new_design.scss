@@ -1,17 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
-html {
-  height: 100%;
-}
 body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
   background: rgb(254, 222, 3);
   font-family: 'Acme', sans-serif;
-}
-
-header {
-  display: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
@@ -34,7 +26,11 @@ p {
   font-size: 20px;
 }
 
-footer {
-  grid-row-start: 2;
-  grid-row-end: 3;
+.wrap {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;;
+}
+.wrapInside {
+  flex-grow: 1;
 }

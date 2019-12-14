@@ -17,31 +17,33 @@ const Layout2 = ({ children }) => {
 `)
 
   return (
-    <div>
-      <div className=''>
-        <header>Josh A. Young</header>
-        <nav>
-          <ul>
-            <li>Thoughts</li>
-            <li>Certs</li>
-            <li>Projects</li>
-            <li>Classes</li>
-            <li>Resume</li>
-            <li>About</li>
-            <li>Snippets</li>
-            <li>Definitions</li>
-            <li>Resources</li>
-          </ul>
+    <>
+      <div className='wrap'>
+        <div className='wrapInside'>
+          <header>Josh A. Young</header>
+          <nav>
+            <ul>
+              <li>Thoughts</li>
+              <li>Certs</li>
+              <li>Projects</li>
+              <li>Classes</li>
+              <li>Resume</li>
+              <li>About</li>
+              <li>Snippets</li>
+              <li>Definitions</li>
+              <li>Resources</li>
+            </ul>
 
-        </nav>
-        <div className='title'>
-          Josh A. Young
+          </nav>
+          <div className='title'>
+            Josh A. Young
+          </div>
+          <div className='title'>Full Stack Software Engineer</div>
+          <main>{children}main</main>
         </div>
-        <div className='title'>Full Stack Software Engineer</div>
-        <main>{children}main</main>
-        <footer>footer</footer>
       </div>
-    </div>
+      <footer>footer</footer>
+    </>
   )
 }
 
