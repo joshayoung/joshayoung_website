@@ -7,11 +7,11 @@ body {
 }
 
 nav {
-  border: 1px solid red;
 }
 
 nav ul {
   list-style-type: none;
+  margin: 0;
 }
 nav li {
   display: inline-block
@@ -33,4 +33,10 @@ p {
 }
 .wrapInside {
   flex-grow: 1;
+}
+
+footer {
+  height: 20px;
+  margin-top: -20px;
+  background: red;
 }

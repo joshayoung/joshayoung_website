@@ -1,7 +1,6 @@
 .Wrapper {
   display: grid;
   grid-gap: 10px;
-  border: 1px solid red;
 }
 
 header {
@@ -13,17 +12,14 @@ header {
 main {
   grid-column: 1 / 4;
   grid-row: 2 / 4;
-  border: 1px solid blue;
 }
 
 aside {
   grid-column: 4 / 5;
   grid-row: 2 / 4;
-  border: 1px solid green;
 }
 
 footer {
   grid-column: 1 / 5;
   grid-row: 4 / 5;
-  border: 1px solid #000;
 }

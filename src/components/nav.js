@@ -4,7 +4,7 @@ import React from "react"
 const Nav = ({ siteTitle }) => (
   <nav
     style={{
-      marginBottom: `1.45rem`,
+      backgroundColor: `green`
     }}
   >
     <ul>

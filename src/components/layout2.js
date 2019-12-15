@@ -21,7 +21,6 @@ const Layout2 = ({ children }) => {
     <>
       <div className='wrap'>
         <div className='wrapInside'>
-          <header>Josh A. Young</header>
           <Nav></Nav>
           <div className='title'>
             Josh A. Young
