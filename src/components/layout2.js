@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Nav from "./nav"
+import Glance from "./Glance"
 
 import "normalize.css"
 import "../styles/new_design.scss"
@@ -26,9 +27,10 @@ const Layout2 = ({ children }) => {
             Josh A. Young
           </div>
           <div className='title'>Full Stack Software Engineer</div>
-          <main>{children}main</main>
+          <main>{children}</main>
         </div>
       </div>
+      <Glance></Glance>
       <footer>footer</footer>
     </>
   )
