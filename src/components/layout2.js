@@ -1,11 +1,12 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import Nav from "./nav"
-import Glance from "./Glance"
+import React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
+import Nav from "./nav";
+import Glance from "./Glance";
+// import Allposts from "./allposts";
 
-import "normalize.css"
-import "../styles/new_design.scss"
+import "normalize.css";
+import "../styles/new_design.scss";
 
 const Layout2 = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -31,6 +32,7 @@ const Layout2 = ({ children }) => {
         </div>
       </div>
       <Glance></Glance>
+      {/* <Allposts></Allposts> */}
       <footer>footer</footer>
     </>
   )
