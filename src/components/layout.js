@@ -2,7 +2,7 @@ import React from "react";
 import { Global, css } from '@emotion/core';
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
-import Nav from "./nav";
+import Header from "./header";
 import Glance from "./glance";
 import Tags from "./tags";
 import Repos from "./repos";
@@ -71,17 +71,21 @@ const Layout = ({ children }) => {
       `} />
       <div className='Wrap'>
         <div className='WrapInside'>
-          <Nav></Nav>
-          <div className='title'>
-            Josh A. Young
-          </div>
-          <div className='title'>Full Stack Software Engineer</div>
-          <main>
+          <main
+            css={css`
+              margin: 1rem auto;
+              max-width: 90vw;
+              width: 500px;
+            `}
+          >
+            <Header />
+            <div>Josh A. Young</div>
+            <div className='title'>Full Stack Software Engineer</div>
             {children}
-            <Glance></Glance>
-            <Tags></Tags>
-            <Repos></Repos>
-            <Posts></Posts>
+            <Glance />
+            <Tags />
+            <Repos />
+            <Posts />
           </main>
         </div>
       </div>
@@ -99,4 +103,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default Layout;
