@@ -4,7 +4,7 @@
 * gatsby develop
 
 ### Left Off:
-* https://www.gatsbyjs.org/docs/recipes/#creating-a-layout-component
+* https://www.gatsbyjs.org/tutorial/part-two/ (using css modules)
 
 ### Resources:
 * https://www.gatsbyjs.org/tutorial/part-five/
