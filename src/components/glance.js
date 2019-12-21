@@ -2,13 +2,8 @@ import PropTypes from "prop-types";
 import React from "react";
 
 const Glance = ({ siteTitle }) => (
-  <>
-    <header
-      style={{
-        marginBottom: `1.45rem`,
-      }}
-    >Glance
-    </header>
+  <section>
+    <header>Glance</header>
     <ul>
       <li><a href="/me#books">Books</a></li>
       <li><a href="/me#books_i_recommend">Great Books</a></li>
@@ -21,7 +16,7 @@ const Glance = ({ siteTitle }) => (
       <li><a href="/tech-spectrum">Spectrum</a></li>
       <li><a href="/me#podcasts">Podcasts</a></li>
     </ul>
-  </>
+  </section>
 );
 
 Glance.propTypes = {

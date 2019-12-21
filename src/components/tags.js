@@ -2,13 +2,8 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Tags = ({ siteTitle }) => (
-  <>
-    <header
-      style={{
-        marginBottom: `1.45rem`,
-      }}
-    >Tags
-    </header>
+  <section>
+    <header>Tags</header>
     <ul aria-labelledby="tags">
       <li><a href="/tags?Jekyll">Jekyll</a></li>
       <li><a href="/tags?GitHub">GitHub</a></li>
@@ -30,7 +25,7 @@ const Tags = ({ siteTitle }) => (
       <li><a href="/tags?Ruby">Ruby</a></li>
       <li><a href="/tags?MVC">MVC</a></li>
     </ul>
-  </>
+  </section>
 );
 
 Tags.propTypes = {
