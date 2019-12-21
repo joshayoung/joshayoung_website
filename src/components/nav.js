@@ -5,16 +5,16 @@ import { Link } from "gatsby";
 const Nav = ({ siteTitle }) => (
   <nav>
     <ul>
-      <Link to="/">Go back to the homepage</Link>
-      <li><a href='thoughts'>Thoughts</a></li>
-      <li><a href='certs'>Certs</a></li>
-      <li><a href='projects'>Projects</a></li>
-      <li><a href='classes'>Classes</a></li>
-      <li><a href='resume'>Resume</a></li>
-      <li><a href='about'>About</a></li>
-      <li><a href='snippets'>Snippets</a></li>
-      <li><a href='definitions'>Definitions</a></li>
-      <li><a href='resources'>Resources</a></li>
+      <Link to="/">Home</Link>
+      <Link to="/thoughts">Thoughts</Link>
+      <Link to="/certifications">Certifications</Link>
+      <Link to="/projects">Projects</Link>
+      <Link to="/classes">Classes</Link>
+      <Link to="/resume">Resume</Link>
+      <Link to="/about">About</Link>
+      <Link to="/snippets">Snippets</Link>
+      <Link to="/definitions">Definitions</Link>
+      <Link to="/resources">Resources</Link>
     </ul>
   </nav>
 )

@@ -1,5 +1,6 @@
-import React from "react"
-import { useStaticQuery, Link, graphql } from "gatsby"
+import React from "react";
+import Layout from "../components/layout";
+import { useStaticQuery, Link, graphql } from "gatsby";
 
 export default ({ children }) => {
   const data = useStaticQuery(
@@ -14,7 +15,8 @@ export default ({ children }) => {
     `
   )
   return (
-    <div>
+    <Layout>
+      <h1>About</h1>
       <Link to={`/`}>
         <h3>
           Title: {data.site.siteMetadata.title}
@@ -24,6 +26,6 @@ export default ({ children }) => {
         About
       </Link>
       {children}
-    </div>
+    </Layout>
   )
 }
