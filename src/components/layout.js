@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import Nav from "./nav";
-import Glance from "./Glance";
+import Glance from "./glance";
+import Tags from "./tags";
 
 import "normalize.css";
 import "../styles/layout.scss";
@@ -30,6 +31,7 @@ const Layout = ({ children }) => {
           <main>
             {children}
             <Glance></Glance>
+            <Tags></Tags>
           </main>
         </div>
       </div>
@@ -37,6 +39,7 @@ const Layout = ({ children }) => {
         <a href="https://codepen.io/joshayoung/pens/popular">CodePen</a>
         <a href="https://www.linkedin.com/in/joshuayoung1">linkedin</a>
         <a href="https://github.com/joshayoung">Github</a>
+        <a href="/about">© 2020 - Josh Young</a>
       </footer>
     </>
   )
