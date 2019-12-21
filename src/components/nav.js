@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
 
 const Nav = ({ siteTitle }) => (
   <nav
@@ -8,6 +9,8 @@ const Nav = ({ siteTitle }) => (
     }}
   >
     <ul>
+
+      <Link to="/">Go back to the homepage</Link>
       <li><a href='thoughts'>Thoughts</a></li>
       <li><a href='certs'>Certs</a></li>
       <li><a href='projects'>Projects</a></li>
