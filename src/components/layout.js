@@ -46,12 +46,13 @@ const Layout = ({ children }) => {
           }
         }
 
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+
         nav {
-          ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-          }
           li {
             display: inline-block;
           }
