@@ -1,11 +1,12 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Intro from "../components/intro";
 
 const Index = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Home</h1>
+    <Intro />
   </Layout>
 )
 

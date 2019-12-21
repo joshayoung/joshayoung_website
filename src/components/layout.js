@@ -10,6 +10,8 @@ import Posts from "./posts";
 
 import "normalize.css";
 
+import "../styles/global.scss";
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
   query SiteTitleQuery2 {
