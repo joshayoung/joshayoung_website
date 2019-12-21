@@ -2,11 +2,11 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-const Snippets = () => (
+const TechSpectrum = () => (
   <Layout>
-    <SEO title="Snippets" />
-    <h1>Snippets</h1>
+    <SEO title="TechSpectrum" />
+    <h1>TechSpectrum</h1>
   </Layout>
 )
 
-export default Snippets;
+export default TechSpectrum;
