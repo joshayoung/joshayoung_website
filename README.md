@@ -1,7 +1,7 @@
 # Website for joshayoung.com
 
 ### Start Site:
-* gatsby develop
+* npm run develop
 
 ### Left Off:
 * https://www.gatsbyjs.org/tutorial/part-two/ (using css modules)
