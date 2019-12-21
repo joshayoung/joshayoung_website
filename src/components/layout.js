@@ -27,10 +27,12 @@ const Layout = ({ children }) => {
             Josh A. Young
           </div>
           <div className='title'>Full Stack Software Engineer</div>
-          <main>{children}</main>
+          <main>
+            {children}
+            <Glance></Glance>
+          </main>
         </div>
       </div>
-      <Glance></Glance>
       <footer>footer</footer>
     </>
   )
