@@ -1,4 +1,5 @@
 import React from "react";
+import { Global, css } from '@emotion/core';
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import Nav from "./nav";
@@ -8,7 +9,6 @@ import Repos from "./repos";
 import Posts from "./posts";
 
 import "normalize.css";
-import "../styles/layout.scss";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,6 +23,52 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Global styles={css`
+
+        * {
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: 'Acme', sans-serif;
+          font-size: 18px;
+          line-height: 1.4;
+        }
+
+        a {
+          text-decoration: none;
+          color: #000;
+          &:hover {
+            color: blue;
+          }
+        }
+
+        nav {
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          }
+          li {
+            display: inline-block;
+          }
+        }
+
+        .Wrap {
+          display: flex;
+          min-height: 100vh;
+          flex-direction: column;;
+          &-Inside {
+            flex-grow: 1;
+          }
+        }
+
+        footer {
+          height: 20px;
+          margin-top: -20px;
+        }
+
+      `} />
       <div className='Wrap'>
         <div className='WrapInside'>
           <Nav></Nav>
