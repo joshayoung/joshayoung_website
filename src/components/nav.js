@@ -8,15 +8,15 @@ const Nav = ({ siteTitle }) => (
     }}
   >
     <ul>
-      <li>Thoughts</li>
-      <li>Certs</li>
-      <li>Projects</li>
-      <li>Classes</li>
-      <li>Resume</li>
-      <li>About</li>
-      <li>Snippets</li>
-      <li>Definitions</li>
-      <li>Resources</li>
+      <li><a href='thoughts'>Thoughts</a></li>
+      <li><a href='certs'>Certs</a></li>
+      <li><a href='projects'>Projects</a></li>
+      <li><a href='classes'>Classes</a></li>
+      <li><a href='resume'>Resume</a></li>
+      <li><a href='about'>About</a></li>
+      <li><a href='snippets'>Snippets</a></li>
+      <li><a href='definitions'>Definitions</a></li>
+      <li><a href='resources'>Resources</a></li>
     </ul>
   </nav>
 )

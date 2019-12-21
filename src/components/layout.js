@@ -1,32 +1,37 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
+import Nav from "./nav";
+import Glance from "./Glance";
 
-import Header from "./header"
-import "normalize.css"
-import "../styles/structure.scss"
+import "normalize.css";
+import "../styles/new_design.scss";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
+  query SiteTitleQuery2 {
+    site {
+      siteMetadata {
+        title
       }
     }
-  `)
+  }
+`)
 
   return (
     <>
-      <div className='Wrapper'>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}main</main>
-        <aside>sidebar</aside>
-        <footer>
-          footer
-        </footer>
+      <div className='wrap'>
+        <div className='wrapInside'>
+          <Nav></Nav>
+          <div className='title'>
+            Josh A. Young
+          </div>
+          <div className='title'>Full Stack Software Engineer</div>
+          <main>{children}</main>
+        </div>
       </div>
+      <Glance></Glance>
+      <footer>footer</footer>
     </>
   )
 }
