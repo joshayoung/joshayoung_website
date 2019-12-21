@@ -1,12 +1,8 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import { Link } from "gatsby";
 
-const Projects = () => (
-  <Layout>
-    <SEO title="Projects" />
+export default () => (
+  <>
     <h1>Projects</h1>
-  </Layout>
+  </>
 )
-
-export default Projects;
