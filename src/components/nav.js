@@ -1,15 +1,10 @@
-import PropTypes from "prop-types"
-import React from "react"
-import { Link } from "gatsby"
+import PropTypes from "prop-types";
+import React from "react";
+import { Link } from "gatsby";
 
 const Nav = ({ siteTitle }) => (
-  <nav
-    style={{
-      backgroundColor: `green`
-    }}
-  >
+  <nav>
     <ul>
-
       <Link to="/">Go back to the homepage</Link>
       <li><a href='thoughts'>Thoughts</a></li>
       <li><a href='certs'>Certs</a></li>
@@ -32,4 +27,4 @@ Nav.defaultProps = {
   siteTitle: ``,
 }
 
-export default Nav
+export default Nav;
