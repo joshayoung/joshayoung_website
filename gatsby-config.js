@@ -5,6 +5,7 @@ module.exports = {
     author: `@joshayoung`,
   },
   plugins: [
+    `gatsby-plugin-emotion`,
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
