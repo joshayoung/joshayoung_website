@@ -12,21 +12,28 @@ const NavLink = styled(Link)`
   }
 `;
 
+const blue = '#234ACC';
+
 const Nav = ({ siteTitle }) => (
   <nav css={css`
-    border: 1px solid red;
     label, #menu {
       display: none;
     }
 
+    label {
+      z-index: 200;
+      position: relative;
+    }
+
     ul {
-      background: red;
+      padding-top: 68px;
       position: fixed;
-      right: -300px;
+      right: -250px;
+      background: #ccc;
       height: 100%;
       z-index: 100;
-      height: 100%;
-      width: 300px;
+      width: 250px;
+      margin-top: -68px;
       animation: close 0.5s ease;
       animation-fill-mode: forwards;
     }
@@ -35,34 +42,39 @@ const Nav = ({ siteTitle }) => (
       display: block;
     }
 
-    @media screen and (max-width: 768px){
-      label {
-        display: inline-block;
-        padding: 10px;
-        font-size: 34px;
-        &:hover {
-          cursor: pointer;
-        }
-      }
+    a {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      background: ${blue};
+    }
 
-      input:checked ~ ul {
-        animation: open 0.5s ease;
-        animation-fill-mode: forwards;
+    label {
+      display: inline-block;
+      padding: 10px;
+      font-size: 34px;
+      &:hover {
+        cursor: pointer;
       }
     }
 
+    input:checked ~ ul {
+      animation: open 0.5s ease;
+      animation-fill-mode: forwards;
+    }
+
     @keyframes open {
-      from {right: -300px;}
+      from {right: -250px;}
       to {right: 0;}
      }
 
      @keyframes close {
       from {right: 0;}
-      to {right: -300px;}
+      to {right: -250px;}
      }
   `}
   >
-    <label for='menu'>&#9776;</label>
+    <label className='menu' for='menu'>&#9776;</label>
     <input type='checkbox' id='menu' />
     <ul>
       <li>

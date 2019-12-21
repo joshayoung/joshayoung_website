@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => (
         border: 1px solid red;
       `}>
       <div>Josh A. Young</div>
-      <div>Full Stack Software Engineer</div>
+      <div>&#x7b; Full Stack Software Engineer &#x7d;</div>
     </Link>
     <Nav />
   </header>
