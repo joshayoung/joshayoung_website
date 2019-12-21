@@ -33,6 +33,8 @@ const Layout = ({ children }) => {
           font-family: 'Acme', sans-serif;
           font-size: 18px;
           line-height: 1.4;
+          color: #234ACC;
+          background: #f2f2f2;
         }
 
         a {
@@ -66,11 +68,16 @@ const Layout = ({ children }) => {
         footer {
           height: 20px;
           margin-top: -20px;
+          background: #3C4C80;
+          a {
+            color: #fff;
+          }
         }
 
       `} />
       <div className='Wrap'>
         <div className='WrapInside'>
+          <Header />
           <main
             css={css`
               margin: 1rem auto;
@@ -78,9 +85,6 @@ const Layout = ({ children }) => {
               width: 500px;
             `}
           >
-            <Header />
-            <div>Josh A. Young</div>
-            <div className='title'>Full Stack Software Engineer</div>
             {children}
             <Glance />
             <Tags />

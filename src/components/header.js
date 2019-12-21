@@ -5,18 +5,22 @@ import Nav from "../components/nav";
 import { css } from '@emotion/core';
 
 const Header = ({ siteTitle }) => (
-  <header css={css`
-    background: #ccc;
-    height: 100px;
+  <header css={
+    css`
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-  `}>
-    <div>
-      <h1 style={{ margin: 0 }}>
-        <Link to="/">
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+    `}
+  >
+    {siteTitle}
+    <Link
+      to="/"
+      css={css`
+        border: 1px solid red;
+      `}>
+      <div>Josh A. Young</div>
+      <div>Full Stack Software Engineer</div>
+    </Link>
     <Nav />
   </header>
 )
