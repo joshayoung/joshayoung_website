@@ -5,7 +5,7 @@ import Nav from "./nav";
 import Glance from "./Glance";
 
 import "normalize.css";
-import "../styles/new_design.scss";
+import "../styles/layout.scss";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,8 +20,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className='wrap'>
-        <div className='wrapInside'>
+      <div className='Wrap'>
+        <div className='WrapInside'>
           <Nav></Nav>
           <div className='title'>
             Josh A. Young
@@ -33,7 +33,11 @@ const Layout = ({ children }) => {
           </main>
         </div>
       </div>
-      <footer>footer</footer>
+      <footer>
+        <a href="https://codepen.io/joshayoung/pens/popular">CodePen</a>
+        <a href="https://www.linkedin.com/in/joshuayoung1">linkedin</a>
+        <a href="https://github.com/joshayoung">Github</a>
+      </footer>
     </>
   )
 }
