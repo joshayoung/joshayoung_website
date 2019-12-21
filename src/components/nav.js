@@ -19,8 +19,20 @@ const Nav = ({ siteTitle }) => (
       display: none;
     }
 
+    ul {
+      background: red;
+      position: fixed;
+      right: -300px;
+      height: 100%;
+      z-index: 100;
+      height: 100%;
+      width: 300px;
+      animation: close 0.5s ease;
+      animation-fill-mode: forwards;
+    }
+
     ul li {
-      display: inline-block;
+      display: block;
     }
 
     @media screen and (max-width: 768px){
@@ -33,17 +45,21 @@ const Nav = ({ siteTitle }) => (
         }
       }
 
-      ul {
-        display: none;
-        li {
-          display: block;
-        }
-      }
-
       input:checked ~ ul {
-        display: block;
+        animation: open 0.5s ease;
+        animation-fill-mode: forwards;
       }
     }
+
+    @keyframes open {
+      from {right: -300px;}
+      to {right: 0;}
+     }
+
+     @keyframes close {
+      from {right: 0;}
+      to {right: -300px;}
+     }
   `}
   >
     <label for='menu'>&#9776;</label>
