@@ -4,6 +4,8 @@ import { useStaticQuery, graphql } from "gatsby";
 import Nav from "./nav";
 import Glance from "./glance";
 import Tags from "./tags";
+import Repos from "./repos";
+import Posts from "./posts";
 
 import "normalize.css";
 import "../styles/layout.scss";
@@ -32,6 +34,8 @@ const Layout = ({ children }) => {
             {children}
             <Glance></Glance>
             <Tags></Tags>
+            <Repos></Repos>
+            <Posts></Posts>
           </main>
         </div>
       </div>
