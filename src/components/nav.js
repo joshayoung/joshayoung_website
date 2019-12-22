@@ -8,11 +8,11 @@ const NavLink = styled(Link)`
   font-size: 14px;
   color: ${props => props.color || "#000;"};
   &.active {
-    background: red;
+    background: #fff;
   }
 `;
 
-const blue = '#234ACC';
+const blue = "#3385ff";
 
 const Nav = ({ siteTitle }) => (
   <nav css={css`
@@ -33,14 +33,15 @@ const Nav = ({ siteTitle }) => (
     ul {
       padding-top: 68px;
       position: fixed;
-      right: -250px;
-      background: #ccc;
+      background: ${blue};
       height: 100%;
       z-index: 100;
       width: 250px;
       margin-top: -68px;
       animation: close 0.5s ease;
+      right: -250px;
       animation-fill-mode: forwards;
+      border-left: solid 3px ${blue};
     }
 
     ul li {
@@ -50,8 +51,10 @@ const Nav = ({ siteTitle }) => (
     a {
       display: block;
       padding: 10px;
-      color: #fff;
-      background: ${blue};
+      font-size: 18px;
+      &:hover {
+        background: #fff;
+      }
     }
 
     label {
