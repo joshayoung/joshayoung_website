@@ -3,11 +3,12 @@ import { Link } from 'gatsby';
 import CustomLink from '../pages/custom-link';
 
 const AllThoughts = ({ post }) => (
-  <article>
+  <article className='box'>
     {/*<pre>{JSON.stringify(post)}</pre>*/}
     <h3><Link to={post.path}>{post.title}</Link></h3>
-    <h3>{post.date}</h3>
-    <CustomLink to={post.path}>read</CustomLink>
+    <p>{post.description}</p>
+    <div>{post.date}</div>
+    {/* <CustomLink to={post.path}>read</CustomLink> */}
   </article>
 );
 

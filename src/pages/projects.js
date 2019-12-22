@@ -3,10 +3,12 @@ import Layout from "../components/layout";
 
 export default () => (
   <Layout>
-    <h1 className='header'>Projects</h1>
+    <h1 className='header'>Development Projects</h1>
     <section>
+      <article className='introduction'>
+        Below I have listed some of the personal projects that I have developed over the years along with the programming languages used for each.
+      </article>
       <div>
-        <h2>Development Projects</h2>
         <article>
           <ul>
             <li><a href='#will_it_rain'>Will It Rain (2019)</a></li>

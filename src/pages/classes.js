@@ -5,12 +5,11 @@ import SEO from "../components/seo";
 const Classes = () => (
   <Layout>
     <SEO title="Classes" />
-    <h1 className='header'>Classes</h1>
+    <h1 className='header'>Classes I've Taken</h1>
     <section>
       <div>
-        <h2>Classes I've Taken</h2>
         <article>
-          <p>In an effort to continually learn new technologies and stay abreast of existing technologies, I have found it helpful to take advantage of opportunities for continuing education. Below I have listed courses (both classroom and online) that I have completed over the years.</p>
+          <p className='introduction'>In an effort to continually learn new technologies and stay abreast of existing technologies, I have found it helpful to take advantage of opportunities for continuing education. Below I have listed courses (both classroom and online) that I have completed over the years.</p>
           <ul>
             <li><a href='#upcase'>Upcase by ThoughtBot</a></li>
             <li><a href='#pragmaticstudio'>The Pragmatic Studio</a></li>

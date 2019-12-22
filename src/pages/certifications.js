@@ -9,7 +9,7 @@ const Certifications = () => (
     <section>
       <div className='inner-section'>
         <article>
-          <p>Below I have included a list of certifications that I have attained over the past few years.
+          <p className='introduction'>Below I have included a list of certifications that I have attained over the past few years.
       Many of these certs required passing more than one test. I have included a short summary of each certification along with a link to a better explanation of each one.</p>
           <ul>
             <li><a href='#security'>CompTIA Security+</a></li>

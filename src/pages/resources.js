@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 const Resources = () => (
   <Layout>
     <SEO title="Resources" />
-    <h1>Resources</h1>
+    <h1 className='header'>Web Development Resources</h1>
   </Layout>
 )
 
