@@ -5,6 +5,13 @@ module.exports = {
     author: `@joshayoung`,
   },
   plugins: [
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
     `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-plugin-mdx`,
