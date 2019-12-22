@@ -7,20 +7,9 @@ import { css } from '@emotion/core';
 const Header = ({ siteTitle }) => (
   <header css={
     css`
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
     `}
   >
     {siteTitle}
-    <Link
-      to="/"
-      css={css`
-        border: 1px solid red;
-      `}>
-      <div>Josh A. Young</div>
-      <div>&#x7b; Full Stack Software Engineer &#x7d;</div>
-    </Link>
     <Nav />
   </header>
 )
