@@ -1,9 +1,8 @@
 ---
-layout: portfolio_entry
 title: Basic Rails MVC Setup
 description: This serves as a reference for a basic rails MVC setup with minimal customization.
 date: 2018-05-20
-excerpt_separator: <!--more-->
+path: /basic-rails-mvc-setup
 tags: Programming Rails Ruby MVC
 ---
 

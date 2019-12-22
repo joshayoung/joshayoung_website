@@ -1,9 +1,8 @@
 ---
-layout: portfolio_entry
 title: Database Best Practices
 description: Tips I have learned for best databases creation
 date: 2017-06-20
-excerpt_separator: <!--more-->
+path: /database-best-practices
 tags: Databases Standards
 ---
 

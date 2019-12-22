@@ -1,9 +1,8 @@
 ---
-layout: portfolio_entry
 title: Naming Best Practices
 description: Over the years I have decided on a few rule for best variable naming which I have outlined here.
 date: 2018-04-22
-excerpt_separator: <!--more-->
+path: /naming-best-practices
 tags: Standards Programming
 ---
 

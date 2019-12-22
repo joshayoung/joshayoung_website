@@ -1,9 +1,8 @@
 ---
-layout: portfolio_entry
 title: Using Docker in my Workflow
 description: Using docker to setup isolated development environments.
 date: 2016-04-17
-excerpt_separator: <!--more-->
+path: /using-docker
 tags: Docker
 ---
 

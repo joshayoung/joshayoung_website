@@ -1,9 +1,8 @@
 ---
-layout: portfolio_entry
 title: How I Developed This Site
 description: How I developed this site with Jekyll and use GitHub to host it.
 date: 2016-02-09
-excerpt_separator: <!--more-->
+path: /how-i-developed-this-site
 tags: Jekyll GitHub
 ---
 
