@@ -13,7 +13,7 @@ const Resume = () => (
 
     <article>
       <h3>Experienced - Full Stack Web Developer</h3>
-      <p>
+      <p className='introduction'>
         Full Stack Web Developer with 7+ years of experience developing web applications. Using current programming languages to further company productivity. Improving user experience by working with members of my team to maintain and improve our web programs.</p>
     </article>
 

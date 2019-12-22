@@ -10,6 +10,19 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
+.introduction {
+  line-height: 2;
+  font-size: 25px;
+  background: #eaeaea;
+  border-bottom: 1px solid #3385ff;
+  box-shadow: 1px 1px 1px #ccc;
+  margin-bottom: 50px;
+  padding: 0 10px;
+  &:first-letter {
+    color: #3385ff;
+  }
+}
+
 .box {
   padding-bottom: 10px;
   border-bottom: 3px solid #3385ff;

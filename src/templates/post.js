@@ -9,13 +9,12 @@ export default function Template({ data }) {
     <Layout>
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
-        <h2>{frontmatter.path}</h2>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
+      <div>{frontmatter.date}</div>
     </Layout>
   )
 }

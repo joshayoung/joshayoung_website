@@ -7,7 +7,8 @@ const listThoughts = () => {
         nodes {
           frontmatter {
             title
-            date
+            date(formatString: "MMMM DD, YYYY")
+            description
             path
           }
         }
@@ -18,6 +19,7 @@ const listThoughts = () => {
   return data.allMdx.nodes.map(post => ({
     title: post.frontmatter.title,
     date: post.frontmatter.date,
+    description: post.frontmatter.description,
     path: post.frontmatter.path
   }));
 };
