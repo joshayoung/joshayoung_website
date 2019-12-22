@@ -2,11 +2,8 @@ import React from "react";
 import { Global, css } from '@emotion/core';
 import PropTypes from "prop-types";
 import Header from "./header";
-import Glance from "./glance";
-import Tags from "./tags";
 import Footer from "./footer";
 import Logo from "../components/logo";
-import Stats from "../components/stats";
 import SEO from "../components/seo";
 
 import "normalize.css";
@@ -29,6 +26,13 @@ const Layout = ({ children }) => {
           line-height: 1.4;
           background-color: #f2f2f2;
           background-image: -webkit-linear-gradient(10deg, #efefef 50%, #f4f4f4 50%);
+        }
+
+        h1 {
+          font-size: 40px;
+          &.header {
+            border-bottom: 1px solid ${blue};
+          }
         }
 
         a {
@@ -87,9 +91,6 @@ const Layout = ({ children }) => {
           >
             <Logo />
             {children}
-            <Glance />
-            <Tags />
-            <Stats />
           </main>
         </div>
       </div>
