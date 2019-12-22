@@ -1,0 +1,3 @@
+These are the images as downloaded from the certification sites. The only modification done to these images was running them through ImageOptim.
+
+The images in this folder were resized to keep the correct ratios.

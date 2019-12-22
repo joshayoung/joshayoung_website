@@ -1,31 +1,12 @@
 import React from "react";
 import Layout from "../components/layout";
-import { useStaticQuery, Link, graphql } from "gatsby";
 
 export default ({ children }) => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  )
   return (
     <Layout>
-      <h1>About</h1>
-      <Link to={`/`}>
-        <h3>
-          Title: {data.site.siteMetadata.title}
-        </h3>
-      </Link>
-      <Link to={`/about/`}>
-        About
-      </Link>
+      <h1 className='header'>About</h1>
       {children}
+      <img width="100" height="100" src='certs/resized/SecurityPlus_Logo_Certified_CE.png' />
     </Layout>
   )
 }

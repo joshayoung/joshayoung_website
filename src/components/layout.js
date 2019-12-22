@@ -35,6 +35,18 @@ const Layout = ({ children }) => {
           }
         }
 
+        h3 {
+          color: ${blue};
+          &:before {
+            content: "{ ";
+            color: #b3b3b3;
+          }
+          &:after {
+            content: " }";
+            color: #b3b3b3;
+          }
+        }
+
         a {
           text-decoration: none;
           color: #000;
