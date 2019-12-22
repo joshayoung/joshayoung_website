@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Try jQuery",
+    "url": "https://www.codeschool.com/courses/try-jquery",
+    "display": false
+  },
+  {
+    "title": "JavaScript Best Practices",
+    "url": "https://www.codeschool.com/courses/javascript-best-practices",
+    "display": true
+  },
+  {
+    "title": "JavaScript Road Trip Part 1",
+    "url": "https://www.codeschool.com/courses/javascript-road-trip-part-1",
+    "display": false
+  },
+  {
+    "title": "JavaScript Road Trip Part 2",
+    "url": "https://www.codeschool.com/courses/javascript-road-trip-part-2",
+    "display": false
+  },
+  {
+    "title": "JavaScript Road Trip Part 3",
+    "url": "https://www.codeschool.com/courses/javascript-road-trip-part-3",
+    "display": false
+  },
+  {
+    "title": "ES2015: The Shape of JavaScript to Come",
+    "url": "https://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come",
+    "display": true
+  },
+  {
+    "title": "Shaping Up with AngularJS",
+    "url": "https://www.codeschool.com/courses/shaping-up-with-angularjs",
+    "display": false
+  },
+  {
+    "title": "Try Ember",
+    "url": "https://www.codeschool.com/courses/try-ember",
+    "display": true
+  },
+  {
+    "title": "jQuery: The Return Flight",
+    "url": "https://www.codeschool.com/courses/jquery-the-return-flight",
+    "display": false
+  },
+  {
+    "title": "Staying Sharp with AngularJS",
+    "url": "https://www.codeschool.com/courses/staying-sharp-with-angularjs",
+    "display": true
+  },
+  {
+    "title": "Real-time Web with Node.js",
+    "url": "https://www.codeschool.com/courses/real-time-web-with-node-js",
+    "display": true
+  },
+  {
+    "title": "Anatomy of Backbone.js Part 2",
+    "url": "https://www.codeschool.com/courses/anatomy-of-backbone-js-part-2",
+    "display": false
+  },
+  {
+    "title": "Anatomy of Backbone.js",
+    "url": "https://www.codeschool.com/courses/anatomy-of-backbone-js",
+    "display": false
+  },
+  {
+    "title": "Building Blocks of Express.js",
+    "url": "https://www.codeschool.com/courses/building-blocks-of-express-js",
+    "display": true
+  },
+  {
+    "title": "CoffeeScript",
+    "url": "https://www.codeschool.com/courses/coffeescript",
+    "display": true
+  },
+  {
+    "title": "The Magic Marvels of MongoDB",
+    "url": "https://www.codeschool.com/courses/the-magical-marvels-of-mongodb",
+    "display": true
+  },
+  {
+    "title": "Front-end Formations",
+    "url": "https://www.codeschool.com/courses/front-end-formations",
+    "display": false
+  },
+  {
+    "title": "Front-end Foundations",
+    "url": "https://www.codeschool.com/courses/front-end-foundations",
+    "display": false
+  },
+  {
+    "title": "Journey Into Mobile",
+    "url": "https://www.codeschool.com/courses/journey-into-mobile",
+    "display": false
+  },
+  {
+    "title": "CSS Cross-Country",
+    "url": "https://www.codeschool.com/courses/css-cross-country",
+    "display": false
+  },
+  {
+    "title": "Unmasking HTML Emails",
+    "url": "https://www.codeschool.com/courses/unmasking-html-emails",
+    "display": false
+  },
+  {
+    "title": "Adventures in Web Animations",
+    "url": "https://www.codeschool.com/courses/adventures-in-web-animations",
+    "display": false
+  },
+  {
+    "title": "Blasting Off with Bootstrap",
+    "url": "https://www.codeschool.com/courses/blasting-off-with-bootstrap",
+    "display": false
+  },
+  {
+    "title": "Fundamentals of Design",
+    "url": "https://www.codeschool.com/courses/fundamentals-of-design",
+    "display": true
+  },
+  {
+    "title": "You, Me & SVG",
+    "url": "https://www.codeschool.com/courses/you-me-svg",
+    "display": false
+  },
+  {
+    "title": "Assembling SASS",
+    "url": "https://www.codeschool.com/courses/assembling-sass",
+    "display": true
+  },
+  {
+    "title": "Assemblying SASS Part 2",
+    "url": "https://www.codeschool.com/courses/assembling-sass-part-2",
+    "display": false
+  }
+]
