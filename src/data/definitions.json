@@ -1,0 +1,213 @@
+[
+  {
+    "word": "Argument",
+    "definition": "one of the pieces of data provided as input to the subroutine",
+    "link": "https://en.wikipedia.org/wiki/Parameter_(computer_programming)"
+  },
+  {
+    "word": "Primitive Data Type",
+    "definition": "a data type provided by a programming language as a basic building block. Most languages allow more complicated composite types to be recursively constructed starting from basic types.",
+    "link": "https://en.wikipedia.org/wiki/Primitive_data_type"
+  },
+  {
+    "word": "Operator Precedence",
+    "definition": "is a collection of rules that reflect conventions about which procedures to perform first in order to evaluate a given mathematical expression",
+    "link": "https://en.wikipedia.org/wiki/Order_of_operations#Programming_languages"
+  },
+  {
+    "word": "Idiomatic",
+    "definition": "using a programming language in a way that is typical for that language.",
+    "link": ""
+  },
+  {
+    "word": "Memoization",
+    "definition": "memoization or memoisation is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.",
+    "link": "https://en.wikipedia.org/wiki/Memoization"
+  },
+  {
+    "word": "De Morgan's laws",
+    "definition": "not (A or B) = not A and not B; and not (A and B) = not A or not B",
+    "link": "https://en.wikipedia.org/wiki/De_Morgan%27s_laws"
+  },
+  {
+    "word": "Idempotence",
+    "definition": "is the property of certain operations in mathematics and computer science whereby they can be applied multiple times without changing the result beyond the initial application.",
+    "link": "https://en.wikipedia.org/wiki/Idempotence"
+  },
+  {
+    "word": "Invoking",
+    "definition": "the specific action of a user starting (or launching or invoking) a program",
+    "link": "https://en.wikipedia.org/wiki/Execution_(computing)"
+  },
+  {
+    "word": "Law of Demeter",
+    "definition": "a given object should assume as little as possible about the structure or properties of anything else (including its subcomponents), in accordance with the principle of 'information hiding'",
+    "link": "https://en.wikipedia.org/wiki/Law_of_Demeter"
+  },
+  {
+    "word": "Anonymous Function",
+    "definition": "a function definition that is not bound to an identifier",
+    "link": "https://en.wikipedia.org/wiki/Anonymous_function"
+  },
+  {
+    "word": "Single Responsibility Principle",
+    "definition": "every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class",
+    "link": "https://en.wikipedia.org/wiki/Single_responsibility_principle"
+  },
+  {
+    "word": "Type Coercion",
+    "definition": "different ways of changing an entity of one data type into another ... the word coercion is used to denote an implicit conversion, either during compilation or during run time.",
+    "link": "https://en.wikipedia.org/wiki/Type_conversion"
+  },
+  {
+    "word": "Higher-order Function",
+    "definition": "a function that does at least one of the following: takes one or more functions as arguments (i.e., procedural parameters), returns a function as its result.",
+    "link": "https://en.wikipedia.org/wiki/Higher-order_function"
+  },
+  {
+    "word": "DRY",
+    "definition": "don't repeat yourself (DRY) is a principle of software development aimed at reducing repetition of information of all kinds",
+    "link": "https://en.wikipedia.org/wiki/Don%27t_repeat_yourself"
+  },
+  {
+    "word": "WET",
+    "definition": "Violations of DRY are typically referred to as WET solutions, which is commonly taken to stand for either 'write everything twice', 'we enjoy typing' or 'waste everyone's time'.",
+    "link": "https://en.wikipedia.org/wiki/Don%27t_repeat_yourself"
+  },
+  {
+    "word": "Snake Cased",
+    "definition": "naming variables so that two words are separated with an underscore such as: 'the_variable' or 'Read_line'."
+  },
+  {
+    "word": "Open/Closed Principle",
+    "definition": "'software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification'; that is, such an entity can allow its behaviour to be extended without modifying its source code.",
+    "link": "https://en.wikipedia.org/wiki/Open/closed_principle"
+  },
+
+  {
+    "word": "Click-through Rate (CTR)",
+    "definition": "'is the ratio of users who click on a specific link to the number of total users who view a page, email, or advertisement. It is commonly used to measure the success of an online advertising campaign for a particular website as well as the effectiveness of email campaigns.'",
+    "link": "https://en.wikipedia.org/wiki/Click-through_rate"
+  },
+
+  {
+    "word": "Soft Delete",
+    "definition": "'marking a database entry as deleted so that it no longer appears to the end user. On the backend a boolean flag is being set that prevent this entry from being shown on the frontend of the site.",
+    "link": ""
+  },
+  {
+    "word": "Observer Pattern",
+    "definition": "a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.",
+    "link": "https://en.wikipedia.org/wiki/Observer_pattern"
+  },
+  {
+    "word": "Dyadic Form (in regard to functions)",
+    "definition": "a function that takes two arguments",
+    "link": ""
+  },
+  {
+    "word": "Greenfield Project",
+    "definition": "developing a system for a totally new environment, without concern for integrating with other systems, especially not legacy systems.",
+    "link": "https://en.wikipedia.org/wiki/Greenfield_project"
+  },
+  {
+    "word": "Brownfield Development",
+    "definition": "problem spaces needing the development and deployment of new software systems in the immediate presence of existing (legacy) software applications/systems.",
+    "link": "https://en.wikipedia.org/wiki/Brownfield_(software_development)"
+  },
+  {
+    "word": "Monadic Form (in regard to functions)",
+    "definition": "a function that takes one argument",
+    "link": ""
+  },
+  {
+    "word": "Temporal coupling",
+    "definition": "When two actions are bundled together into one module just because they happen to occur at the same time.",
+    "link": "https://en.wikipedia.org/wiki/Coupling_(computer_programming)#Types_of_coupling"
+  },
+  {
+    "word": "Caveat Utilitor",
+    "definition": "let the user beware",
+    "link": "https://en.wiktionary.org/wiki/Appendix:List_of_Latin_phrases_(A%E2%80%93E)"
+  },
+  {
+    "word": "Linear Time",
+    "definition": "if its time complexity is O(n). Informally, this means that for large enough input sizes the running time increases linearly with the size of the input. For example, a procedure that adds up all elements of a list requires time proportional to the length of the list.",
+    "link": "https://en.wikipedia.org/wiki/Time_complexity#Linear_time"
+  },
+  {
+    "word": "Lexical Scope",
+    "definition": "a variable's definition is resolved by searching its containing block or function, then if that fails searching the outer containing block, and so on",
+    "link": "https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scope_vs._dynamic_scope"
+  },
+  {
+    "word": "Dynamic Scope",
+    "definition": "a variable's definition is resolved by searching its ... calling function ..., then the function which called that calling function, and so on, progressing up the call stack",
+    "link": "https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scope_vs._dynamic_scope"
+  },
+  {
+    "word": "Binary Function",
+    "definition": "a function that takes two inputs",
+    "link": "https://en.wikipedia.org/wiki/Binary_function"
+  },
+  {
+    "word": "Encapsulation",
+    "definition": "a language mechanism for restricting direct access to some of the object's components",
+    "link": "https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)"
+  },
+  {
+    "word": "Heisenbug",
+    "definition": "a software bug that seems to disappear or alter its behavior when one attempts to study it",
+    "link": "https://en.wikipedia.org/wiki/Heisenbug"
+  },
+  {
+    "word": "Invocation Operator",
+    "definition": "The two parenthesis next to a function name when you invoke it.",
+    "link": ""
+  },
+  {
+    "word": "Lambda Expression",
+    "definition": "a function (or a subroutine) defined, and possibly called, without being bound to an identifier",
+    "link":"https://en.wikipedia.org/wiki/Lambda_expression"
+  },
+  {
+    "word": "Tail Recursion",
+    "definition": "the same subroutine being called again later in the call chain",
+    "link": "https://en.wikipedia.org/wiki/Tail_call"
+  },
+  {
+    "word": "Parameter",
+    "definition": "An ordered list of parameters is usually included in the definition of a subroutine, so that, each time the subroutine is called, its arguments for that call can be assigned to the corresponding parameters.",
+    "link": "https://en.wikipedia.org/wiki/Parameter_(computer_programming)"
+  },
+  {
+    "word": "Polymorphism",
+    "definition": "when a name denotes instances of many different classes related by some common superclass",
+    "link": "https://en.wikipedia.org/wiki/Polymorphism_(computer_science)"
+  },
+  {
+    "word": "Tail Call",
+    "definition": "a subroutine call performed as the final action of a procedure",
+    "link": "https://en.wikipedia.org/wiki/Tail_call"
+  },
+  {
+    "word": "Transitive Relation",
+    "definition": "an element a is related to an element b, and b is in turn related to an element c, then a is also related to c",
+    "link": "https://en.wikipedia.org/wiki/Transitive_relation"
+  },
+  {
+    "word": "Unary Function",
+    "definition": "a function that takes one argument",
+    "link": "https://en.wikipedia.org/wiki/Unary_function"
+  },
+  {
+    "word": "Predicate",
+    "definition": "a Boolean-valued function P: X→ {true, false}",
+    "link": "https://en.wikipedia.org/wiki/Predicate_(mathematical_logic)"
+  },
+  {
+    "word": "Conway's Law",
+    "definition": "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations",
+    "link": "https://en.wikipedia.org/wiki/Conway%27s_law"
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "title" : "Full Stack Radio",
+    "url" : "http://www.fullstackradio.com",
+    "display": true
+  },
+  {
+    "title" : "Coding Blocks",
+    "url" : "https://www.codingblocks.net",
+    "display": true
+  },
+  {
+    "title" : "BSD Now",
+    "url" : "https://www.bsdnow.tv/episodes",
+    "display": true
+  },
+  {
+    "title" : "The Bike Shed",
+    "url" : "http://bikeshed.fm",
+    "display": true
+  },
+  {
+    "title" : "Giant Robots Smashing Into Other Giant Robots",
+    "url" : "http://giantrobots.fm/",
+    "display": true
+  },
+  {
+    "title" : "Ruby on Rails Podcast",
+    "url" : "http://5by5.tv/rubyonrails",
+    "display": true
+  },
+  {
+    "title" : "Ruby Rogues",
+    "url" : "https://devchat.tv/ruby-rogues",
+    "display": true
+  },
+  {
+    "title" : "The Ruby Testing Podcast",
+    "url" : "https://www.codewithjason.com/ruby-testing-podcast/",
+    "display": true
+  },
+  {
+    "title" : ".NET Rocks",
+    "url" : "https://www.dotnetrocks.com",
+    "display": true
+  },
+  {
+    "title" : "Command Line Heroes",
+    "url" : "https://www.redhat.com/en/command-line-heroes",
+    "display": true
+  },
+  {
+    "title" : "Software Engineering Daily",
+    "url" : "https://softwareengineeringdaily.com",
+    "display": true
+  },
+  {
+    "title" : "Syntax",
+    "url" : "https://syntax.fm",
+    "display": true
+  },
+  {
+    "title" : "Security Now",
+    "url" : "https://twit.tv/shows/security-now",
+    "display": true
+  },
+  {
+    "title" : "Packet Pushers Datanauts",
+    "url" : "http://packetpushers.net/series/datanauts-podcast",
+    "display": true
+  },
+  {
+    "title" : "CTRL+CLICK CAST",
+    "url" : "https://ctrlclickcast.com/episodes/archive",
+    "display": true
+  },
+  {
+    "title" : "CodePen Radio",
+    "url" : "https://blog.codepen.io/radio",
+    "display": true
+  },
+  {
+    "title" : "The Big Web Show",
+    "url" : "http://5by5.tv/bigwebshow",
+    "display": true
+  },
+  {
+    "title" : "A Responsive Web Design Podcast",
+    "url" : "https://responsivewebdesign.com/podcast",
+    "display": true
+  },
+  {
+    "title" : "FLOSS Weekly",
+    "url" : "https://twit.tv/shows/floss-weekly",
+    "display": true
+  },
+  {
+    "title" : "Front End Happy Hour",
+    "url" : "http://frontendhappyhour.com",
+    "display": true
+  },
+  {
+    "title" : "JavaScript Jabber",
+    "url" : "https://devchat.tv/js-jabber",
+    "display": true
+  },
+  {
+    "title" : "The Laracasts Snippet",
+    "url" : "https://laracasts.simplecast.fm/",
+    "display": true
+  },
+  {
+    "title" : "The Laravel Podcast",
+    "url" : "http://www.laravelpodcast.com",
+    "display": true
+  },
+  {
+    "title" : "Ask Noah",
+    "url" : "http://www.jupiterbroadcasting.com/show/asknoah",
+    "display": true
+  },
+  {
+    "title" : "Linux Action News",
+    "url" : "http://www.jupiterbroadcasting.com/show/linux-action-news",
+    "display": true
+  },
+  {
+    "title" : "Request for Commits",
+    "url" : "https://changelog.com/rfc",
+    "display": true
+  },
+  {
+    "title" : "Presentable",
+    "url" : "https://www.relay.fm/presentable",
+    "display": true
+  },
+  {
+    "title" : "The PHP Roundtable",
+    "url" : "https://www.phproundtable.com",
+    "display": true
+  },
+  {
+    "title" : "TechSNAP",
+    "url" : "http://www.jupiterbroadcasting.com/show/techsnap",
+    "display": true
+  },
+  {
+    "title" : "Scale Your Code Podcast",
+    "url" : "https://itunes.apple.com/us/podcast/scale-your-code-podcast/id987253051?mt=2",
+    "display": true
+  },
+  {
+    "title" : "ShopTalk Show",
+    "url" : "http://shoptalkshow.com",
+    "display": true
+  },
+  {
+    "title" : "The Web Ahead",
+    "url" : "http://5by5.tv/webahead",
+    "display": true
+  },
+  {
+    "title" : "Toolsday",
+    "url" : "http://www.toolsday.io/#episode-area",
+    "display": true
+  },
+  {
+    "title" : "The Changelog",
+    "url" : "https://changelog.com/podcast",
+    "display": true
+  }
+]

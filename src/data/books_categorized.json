@@ -1,0 +1,410 @@
+[
+  {
+    "title": "CSS",
+    "class": "",
+    "hide_from_recommended": false,
+    "data": [
+      {
+        "title": "SASS for Web Designers",
+        "author": "Dan Cederholm",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "CSS3 for Web Designers",
+        "author": "Dan Cederholm",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "HTML and CSS: Design and Build Websites",
+        "author": "Jon Duckett",
+        "url": "",
+        "display": true,
+        "recommend": true
+      }
+    ]
+  },
+  {
+    "title": "Programming",
+    "class": "",
+    "hide_from_recommended": false,
+    "data": [
+      {
+        "title": "Perl Specialist Instructor Guide",
+        "author": "",
+        "url": "",
+        "display": false
+      },
+      {
+        "title": "Practical Object-Oriented Design: An Agile Primer Using Ruby",
+        "author": "Sandi Metz",
+        "url": "",
+        "display": true,
+        "recommend": true
+      },
+      {
+        "title": "Design Patterns in Ruby",
+        "author": "Russ Olsen",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "PHP and MySQL Web Development",
+        "author": "Luke Welling and Laura Thomson",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Rails 5 Test Prescriptions",
+        "author": "Noel Rappin",
+        "url": "https://pragprog.com/book/nrtest3/rails-5-test-prescriptions",
+        "display": true,
+        "recommend": true
+      },
+      {
+        "title": "99 Bottles of OOP",
+        "author": "Katrina Owen & Sandi Metz",
+        "url": "",
+        "display": true,
+        "recommend": true
+      },
+      {
+        "title": "Learning PHP and MySQL",
+        "author": "Michele E. Davis and Jon A. Phillips",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "The Elements of C# Style",
+        "author": "Kenneth Baldwin, Andrew Gray, and Trevor Misfeldt",
+        "truncated_authors": "Kenneth Baldwin, Andrew Gray...",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Learning Perl",
+        "author": "Randal L. Schwartz, Brian D Foy, and Tom Phoenix",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Easy Laravel 5",
+        "author": "W. Jason Gilmore",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "The iOS 5 Developer's Cookbook",
+        "author": "Erica Sadun",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Build Your Own ASP.NET Website Using C# and VB.NET",
+        "author": "Zak Ruvalcaba",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "The Well-Grounded Rubyist",
+        "author": "David A. Black",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+        "short_title": "Clean Code",
+        "author": "Robert C. Martin",
+        "url": "",
+        "display": true,
+        "recommend": true
+      },
+      {
+        "title": "The Pragmatic Programmer: From Journeyman to Master",
+        "short_title": "The Pragmatic Programmer",
+        "author": "Andrew Hunt and David Thomas",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Object-Oriented Analysis & Design",
+        "author": "Brett D. McLaughlin, Gary Pollice, & David West",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Phparchitects Zend Php 5 Certification Study Guide",
+        "author": "Davey Shafik",
+        "url": "",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Design",
+    "class": "",
+    "hide_from_recommended": false,
+    "data": [
+      {
+        "title": "On Web Typography",
+        "author": "Jason Santa Maria",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Building a StoryBrand",
+        "author": "Donald Miller",
+        "url": "",
+        "display": true,
+        "recommend": true
+      },
+      {
+        "title": "Thinking with Type",
+        "author": "Ellen Lupton",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Designing the Obvious",
+        "author": "Robert Hoekman, jr.",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "The Design of Everyday Things",
+        "author": "Donald A. Norman",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Don't Make Me Think",
+        "author": "Steve Krug",
+        "url": "",
+        "display": true,
+        "recommend": true
+      }
+    ]
+  },
+  {
+    "title": "Security",
+    "class": "",
+    "hide_from_recommended": false,
+    "data": [
+      {
+        "title": "Counter Hack Reloaded",
+        "author": "Edward Skoudis",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Penetration Testing with Kali Linux v1.0.4",
+        "author": "",
+        "url": "",
+        "display": true,
+        "recommend": true
+      },
+      {
+        "title": "CEH Certified Ethical Hacker All-in-One Exam Guide",
+        "author": "Matt Walker",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Nmap Network Scanning",
+        "author": "Gordon Fyodor Lyon",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "The Hacker Playbook: Practical Guide To Penetration Testing",
+        "author": "Peter Kim",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Penetration Testing: A Hands-On Introduction to Hacking",
+        "author": "Georgia Weidman",
+        "url": "",
+        "display": true,
+        "recommend": true
+      },
+      {
+        "title": "Metasploit: The Penetration Tester's Guide",
+        "short_title": "Metasploit",
+        "author": "David Kennedy, Jim O'Gorman, Devon Kearns, and Mati Aharoni",
+        "url": "",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Networking",
+    "class": "",
+    "hide_from_recommended": false,
+    "data": [
+      {
+        "title": "All-In-One: CompTIA Network+",
+        "author": "Mike Meyers",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "CompTIA Network+ Certification All-in-One Exam Guide, 5th Edition (Exam N10-005)",
+        "short_title": "CompTIA Network+",
+        "author": "Mike Meyers",
+        "url": "",
+        "display": true,
+        "recommend": true
+      },
+      {
+        "title": "CompTIA Linux+ Complete Study Guide Authorized Courseware: Exams LX0-101 and LX0-102",
+        "short_title": "CompTIA Linux+",
+        "author": "Roderick W. Smith",
+        "url": "",
+        "display": true,
+        "recommend": true
+      },
+      {
+        "title": "CompTIA A+ 2006 in Depth",
+        "author": "Jean Andrews",
+        "url": "",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "JavaScript",
+    "class": "",
+    "hide_from_recommended": false,
+    "data": [
+      {
+        "title": "JavaScript and jQuery: Interactive Front-End Web Development",
+        "author": "Jon Duckett",
+        "url": "",
+        "display": true,
+        "recommend": true
+      },
+      {
+        "title": "JavaScript: The Good Parts",
+        "author": "Douglas Crockford",
+        "url": "",
+        "display": true,
+        "recommend": true
+      },
+      {
+        "title": "ppk on JavaScript",
+        "author": "Peter-Paul Koch",
+        "url": "",
+        "display": true,
+        "recommend": true
+      },
+      {
+        "title": "JavaScript Patterns",
+        "author": "Stoyan Stefanov",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "O'Reilly Web Studio: Designing with JavaScript: Creating Dynamic Web Pages",
+        "author": "Nick Heinle, and Bill Pena",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Learning JavaScript",
+        "author": "Ethan Brown",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "JavaScript Specialist Instructor Guide",
+        "author": "",
+        "url": "",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Web Development",
+    "class": "",
+    "hide_from_recommended": true,
+    "data": [
+      {
+        "title": "Smashing Book 5",
+        "author": "Smashing Magazine",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Content Strategy for Mobile",
+        "author": "Karen McGrane",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Web Form Design: Filling in the Blanks",
+        "author": "Luke Wroblewski",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "The Elements of Content Strategy",
+        "author": "Erin Kissane",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Mobile First",
+        "author": "Luke Wroblewski",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Responsive Design: Patterns & Principles",
+        "author": "Ethan Marcotte",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "HTML5 for Web Designers",
+        "author": "Jeremy Keith",
+        "url": "",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Databases",
+    "class": "",
+    "hide_from_recommended": true,
+    "data": [
+      {
+        "title": "Developer's Library: MySQL",
+        "author": "Paul DuBois",
+        "url": "",
+        "display": true
+      },
+      {
+        "title": "Database Design Specialist Instructor Guide",
+        "author": "",
+        "url": "",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Miscellaneous",
+    "class": "",
+    "hide_from_recommended": true,
+    "data": [
+      {
+        "title": "Learning the Vi and Vim Editors",
+        "author": "Arnold Robbins, Elbert Hannah, and Linda Lamb",
+        "truncated_authors": "Arnold Robbins, Elbert Hannah...",
+        "url": "",
+        "display": true
+      }
+    ]
+  }
+]

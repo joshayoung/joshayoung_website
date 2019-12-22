@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import CustomLink from '../pages/custom-link';
 
 const AllThoughts = ({ post }) => (
   <article className='box'>

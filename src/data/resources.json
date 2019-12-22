@@ -1,0 +1,1073 @@
+[{
+    "title": "CSS",
+    "class": "css_resources",
+    "data": [{
+        "title": "Ceaser CSS Easing Animation Tool",
+        "url": "https://matthewlein.com/ceaser",
+        "display": true
+      },
+      {
+        "title": "Grid by Example",
+        "url": "https://gridbyexample.com",
+        "display": true
+      },
+      {
+        "title": "Flexbox Guide",
+        "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox",
+        "display": true
+      },
+      {
+        "title": "HSL Tool",
+        "url": "http://mothereffinghsl.com",
+        "display": true
+      },
+      {
+        "title": "Grid Guide",
+        "url": "https://css-tricks.com/snippets/css/complete-guide-grid",
+        "display": true
+      },
+      {
+        "title": "CSS Stats",
+        "url": "http://cssstats.com",
+        "display": true
+      },
+      {
+        "title": "CSS Matic Tools",
+        "url": "http://www.cssmatic.com",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "APIs",
+    "class": "apis",
+    "data": [{
+      "title": "Public APIs",
+      "url": "https://flaviocopes.com/sample-app-ideas/#public-apis-you-can-use-in-example-projects",
+      "display": true
+    }]
+  },
+  {
+    "title": "Compatibility",
+    "class": "compatibility_resources",
+    "data": [{
+        "title": "Compatibility Overview",
+        "url": "https://www.quirksmode.org/compatibility.html",
+        "display": true
+      },
+      {
+        "title": "Can I Use",
+        "url": "https://caniuse.com",
+        "display": true
+      },
+      {
+        "title": "Mobile",
+        "url": "https://www.quirksmode.org/mobile",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Performance",
+    "class": "performance_resources",
+    "data": [{
+        "title": "Performance Budget Calculator",
+        "url": "http://www.performancebudget.io",
+        "display": true
+      },
+      {
+        "title": "Page Speed Insights",
+        "url": "https://developers.google.com/speed/pagespeed/insights",
+        "display": true
+      },
+      {
+        "title": "Web Page Test",
+        "url": "https://www.webpagetest.org",
+        "display": true
+      },
+      {
+        "title": "HTTP Archive",
+        "url": "http://www.httparchive.org",
+        "display": true
+      },
+      {
+        "title": "GZip Test",
+        "url": "http://www.gidnetwork.com/tools/gzip-test.php",
+        "display": true
+      },
+      {
+        "title": "Performance Rules",
+        "url": "https://developer.yahoo.com/performance/rules.html",
+        "display": true
+      },
+      {
+        "title": "Nibbler",
+        "url": "http://nibbler.silktide.com",
+        "display": true
+      },
+      {
+        "title": "Pingdom Website Speed Test",
+        "url": "https://tools.pingdom.com",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "HTML",
+    "class": "html_resources",
+    "data": [{
+        "title": "HTML5 Please",
+        "url": "http://html5please.com",
+        "display": true
+      },
+      {
+        "title": "What Is My Screen Resolution",
+        "url": "http://www.whatismyscreenresolution.com",
+        "display": true
+      },
+      {
+        "title": "HTML Entities",
+        "url": "http://unicode.org/emoji/charts/full-emoji-list.html",
+        "display": true
+      },
+      {
+        "title": "Code Sandbox",
+        "url": "https://codesandbox.io",
+        "display": true
+      },
+      {
+        "title": "PlaceHold.it",
+        "url": "https://placehold.it",
+        "display": true
+      },
+      {
+        "title": "Formalize",
+        "url": "https://formalize.me",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Programming",
+    "class": "programming_resources",
+    "data": [{
+        "title": "RegExr",
+        "url": "http://regexr.com",
+        "display": true
+      },
+      {
+        "title": "Naming",
+        "url": "https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names",
+        "display": true
+      },
+      {
+        "title": "Rails Documentation",
+        "url": "http://api.rubyonrails.org",
+        "display": true
+      },
+      {
+        "title": "Rails Instance Variables",
+        "url": "https://andycroll.com/ruby/dont-use-instance-variables-in-partials/",
+        "display": true
+      },
+      {
+        "title": "Git Immersion",
+        "url": "http://gitimmersion.com",
+        "display": true
+      },
+      {
+        "title": "Rails Casts",
+        "url": "http://railscasts.com",
+        "display": true
+      },
+      {
+        "title": "Git Book",
+        "url": "https://www.git-scm.com/book/en/v2",
+        "display": true
+      },
+      {
+        "title": "Git Tips",
+        "url": "https://www.alexkras.com/19-git-tips-for-everyday-use",
+        "display": true
+      },
+      {
+        "title": "Ruby Koans",
+        "url": "http://rubykoans.com",
+        "display": true
+      },
+      {
+        "title": "PHP Package List",
+        "url": "https://packagist.org",
+        "display": true
+      },
+      {
+        "title": "Ruby Tapas",
+        "url": "https://www.rubytapas.com",
+        "display": true
+      },
+      {
+        "title": "PHP Manual",
+        "url": "https://secure.php.net/manual/en",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Email Design",
+    "class": "email_design",
+    "data": [{
+        "title": "Foundation for Emails",
+        "url": "https://foundation.zurb.com/emails.html",
+        "display": true
+      },
+      {
+        "title": "MJML",
+        "url": "https://mjml.io",
+        "display": true
+      },
+      {
+        "title": "Litmus",
+        "url": "https://litmus.com",
+        "display": true
+      },
+      {
+        "title": "Email on Acid",
+        "url": "https://www.emailonacid.com",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Validation",
+    "class": "validation_resources",
+    "data": [{
+        "title": "JSON Linter",
+        "url": "http://jsonlint.com",
+        "display": true
+      },
+      {
+        "title": "Regex 101",
+        "url": "https://regex101.com",
+        "display": true
+      },
+      {
+        "title": "Regulex",
+        "url": "https://jex.im/regulex",
+        "display": true
+      },
+      {
+        "title": "Robots.txt Checker",
+        "url": "http://tool.motoricerca.info/robots-checker.phtml",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Testing",
+    "class": "testing_resources",
+    "data": [{
+        "title": "Mocks Aren't Stubs",
+        "url": "https://martinfowler.com/articles/mocksArentStubs.html",
+        "display": true
+      },
+      {
+        "title": "Testing JavaScript with Jest",
+        "url": "https://flaviocopes.com/jest/#create-the-first-jest-test",
+        "display": true
+      },
+      {
+        "title": "Mocking Fetch with Jest",
+        "url": "https://www.reactnativeschool.com/mocking-fetch-api-calls-when-using-jest",
+        "display": true
+      },
+      {
+        "title": "Learning Jest Through Practice",
+        "url": "https://www.jonathan-petitcolas.com/2017/10/31/learning-jest-through-practice.html",
+        "display": true
+      },
+      {
+        "title": "xUnit Test Patterns",
+        "url": "http://xunitpatterns.com",
+        "display": true
+      },
+      {
+        "title": "F.I.R.S.T. Properties of Unit Tests",
+        "url": "https://agileinaflash.blogspot.com/2009/02/first.html",
+        "display": true
+      },
+      {
+        "title": "Testing Rails",
+        "url": "https://github.com/thoughtbot/testing-rails",
+        "display": true
+      },
+      {
+        "title": "Better Specs",
+        "url": "http://www.betterspecs.org/",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Videos",
+    "class": "video_resources",
+    "data": [{
+        "title": "The Deep Synergy Between Testability and Good Design",
+        "url": "https://www.youtube.com/watch?v=4cVZvoFGJTU",
+        "display": true
+      },
+      {
+        "title": "Refactoring to Form Objects in Rails",
+        "url": "https://www.youtube.com/watch?v=9luYcnfZ7Ok",
+        "display": true
+      },
+      {
+        "title": "Learn Enough Ruby",
+        "url": "https://www.youtube.com/watch?v=NGXp6_-nc4s",
+        "display": true
+      },
+      {
+        "title": "Confident Code",
+        "url": "https://www.youtube.com/watch?v=T8J0j2xJFgQ",
+        "display": true
+      },
+      {
+        "title": "Refactoring Fat Models with Patterns",
+        "url": "https://www.youtube.com/watch?v=5yX6ADjyqyE",
+        "display": true
+      },
+      {
+        "title": "Practical Object-Oriented Design in Ruby",
+        "url": "https://www.youtube.com/playlist?list=PLECibIxMfd0dVOFbn7cbtvuiatC0XvINP",
+        "display": true
+      },
+      {
+        "title": "SOLID Object-Oriented Design",
+        "url": "https://www.youtube.com/watch?v=v-2yFMzxqwU",
+        "display": true
+      },
+      {
+        "title": "Turn the Ship Around",
+        "url": "https://www.youtube.com/watch?v=IzJL8zX3EVk",
+        "display": true
+      },
+      {
+        "title": "A Fresh Look at Tell, Don't Ask",
+        "url": "https://www.youtube.com/watch?v=ZJ6bH6Df4K8",
+        "display": true
+      },
+      {
+        "title": "Get a Whiff of This",
+        "url": "https://www.youtube.com/watch?v=PJjHfa5yxlU",
+        "display": true
+      },
+      {
+        "title": "Refactoring Live: Primitive Obsession",
+        "url": "https://www.youtube.com/watch?v=LhX5COR8WXc",
+        "display": true
+      },
+      {
+        "title": "How to Stop Hating your Test Suite",
+        "url": "https://www.youtube.com/watch?v=VD51AkG8EZw",
+        "display": true
+      },
+      {
+        "title": "Full Stack Fest 2015: Nothing is Something",
+        "url": "https://www.youtube.com/watch?v=9mLK_8hKii8",
+        "display": true
+      },
+      {
+        "title": "RailsConf 2014 - Debugger Driven Developement with Pry",
+        "url": "https://www.youtube.com/watch?v=4hfMUP5iTq8",
+        "display": true
+      },
+      {
+        "title": "Agile Product Ownership in a Nutshell",
+        "url": "https://www.youtube.com/watch?v=502ILHjX9EE",
+        "display": true
+      },
+      {
+        "title": "Refactoring from Good to Great",
+        "url": "https://www.youtube.com/watch?v=DC-pQPq0acs",
+        "display": true
+      },
+      {
+        "title": "The Magic Tricks of Testing",
+        "url": "https://www.youtube.com/watch?v=URSWYvyc42M",
+        "display": true
+      },
+      {
+        "title": "What we can learn about testing from the wheel",
+        "url": "https://www.youtube.com/watch?v=Da9wfQ0frGA",
+        "display": true
+      },
+      {
+        "title": "Write tests. Not too many. Mostly integration.",
+        "url": "https://www.youtube.com/watch?v=Fha2bVoC8SE",
+        "display": true
+      },
+      {
+        "title": "All The Little Things",
+        "url": "https://www.youtube.com/watch?v=8bZh5LMaSmE",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Cheat Sheets",
+    "class": "cheat_sheets",
+    "data": [{
+        "title": "DevHints.io",
+        "url": "https://devhints.io",
+        "display": true
+      },
+      {
+        "title": "Git Cheat Sheet",
+        "url": "https://gist.github.com/hofmannsven/6814451",
+        "display": true
+      },
+      {
+        "title": "SQL Basics Cheatsheet",
+        "url": "https://github.com/treehouse/cheatsheets/blob/master/sql_basics/cheatsheet.md",
+        "display": true
+      },
+      {
+        "title": "SQL Cheat Sheet",
+        "url": "https://github.com/treehouse/cheatsheets/blob/master/sql_basics/cheatsheet.md",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Slack",
+    "class": "slack",
+    "data": [{
+        "title": "View Objects",
+        "url": "https://jtway.co/cleaning-up-your-rails-views-with-view-objects-42cf048ea491",
+        "display": true
+      },
+      {
+        "title": "How to Get Better at Things",
+        "url": "http://news.e-scribe.com/464",
+        "display": true
+      },
+      {
+        "title": "How to Configure RSpec",
+        "url": "https://blog.eq8.eu/article/junior-developer-set-up-rails-with-rspec-factorybot-database-cleaner.html",
+        "display": true
+      },
+      {
+        "title": "Babel Present Env",
+        "url": "https://blog.jakoblind.no/babel-preset-env",
+        "display": true
+      },
+      {
+        "title": "Ten Principles for Growth as Engineer",
+        "url": "https://medium.com/@daniel.heller/ten-principles-for-growth-69015e08c35b",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Time/Date",
+    "class": "time_date",
+    "data": [{
+        "title": "Epoch Conversion",
+        "url": "https://www.epochconverter.com",
+        "display": true
+      },
+      {
+        "title": "Time Zone Map",
+        "url": "https://www.timeanddate.com/time/map",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Image Optimization",
+    "class": "image_optimization",
+    "data": [{
+      "title": "Tiny PNG",
+      "url": "https://tinypng.com",
+      "display": true
+    }]
+  },
+  {
+    "title": "Ruby / Rails",
+    "class": "ruby_rails",
+    "data": [{
+        "title": "Binding.pry",
+        "url": "https://docs.gitlab.com/ee/development/pry_debugging.html",
+        "display": true
+      },
+      {
+        "title": "Decorator on Rails",
+        "url": "https://johno.com/rails/2014/03/07/decorators-on-rails",
+        "display": true
+      },
+      {
+        "title": "Iterator/Reducer Quick Reference",
+        "url": "http://queirozf.com/entries/ruby-map-each-collect-inject-reject-select-quick-reference",
+        "display": true
+      },
+      {
+        "title": "Rails Design Patterns",
+        "url": "https://naturaily.com/blog/ruby-on-rails-design-patterns",
+        "display": true
+      },
+      {
+        "title": "Rails API",
+        "url": "https://api.rubyonrails.org",
+        "display": true
+      },
+      {
+        "title": "Ruby Docs",
+        "url": "https://ruby-doc.org",
+        "display": true
+      },
+      {
+        "title": "Rails Forms",
+        "url": "https://medium.com/@tinchorb/form-with-building-html-forms-in-rails-5-1-f30bd60ef52d",
+        "display": true
+      },
+      {
+        "title": "Date/Time Naming Conventions",
+        "url": "https://andycroll.com/ruby/use-rails-naming-conventions-for-dates-and-times/",
+        "display": true
+      },
+      {
+        "title": "Rails Console Tips",
+        "url": "https://pragmaticstudio.com/tutorials/rails-console-shortcuts-tips-tricks",
+        "display": true
+      },
+      {
+        "title": "View Models",
+        "url": "https://codyeatworld.com/2017/11/05/view-models-for-rails",
+        "display": true
+      },
+      {
+        "title": "View Models & Form Objects, Etc.",
+        "url": "http://engineering.appfolio.com/appfolio-engineering/2017/4/21/view-models-form-objects-presenters-and-helpers-oh-my",
+        "display": true
+      },
+      {
+        "title": "Load Paths",
+        "url": "http://hakunin.com/rails3-load-paths",
+        "display": true
+      },
+      {
+        "title": "Rails SQL Injection",
+        "url": "https://rails-sqli.org",
+        "display": true
+      },
+      {
+        "title": "Ruby OOP",
+        "url": "https://mixandgo.com/learn/object-oriented-programming-oop-with-ruby",
+        "display": true
+      },
+      {
+        "title": "Design Patterns in Ruby",
+        "url": "https://github.com/davidgf/design-patterns-in-ruby/blob/master/README.md",
+        "display": true
+      },
+      {
+        "title": "How to Learn Ruby on Rails",
+        "url": "https://mixandgo.com/learn/how-to-learn-ruby-on-rails-in-2018-the-ultimate-guide",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "REST",
+    "class": "rest_resources",
+    "data": [{
+      "title": "Richardson Maturity Model",
+      "url": "https://www.martinfowler.com/articles/richardsonMaturityModel.html",
+      "display": true
+    }]
+  },
+  {
+    "title": "Levelling-up",
+    "class": "levelling_up_resources",
+    "data": [{
+        "title": "Front End Center",
+        "url": "https://frontend.center",
+        "display": true
+      },
+      {
+        "title": "JS Complete",
+        "url": "https://jscomplete.com",
+        "display": true
+      },
+      {
+        "title": "Execute Program",
+        "url": "https://www.executeprogram.com",
+        "display": true
+      },
+      {
+        "title": "Flexbox Froggy",
+        "url": "https://flexboxfroggy.com",
+        "display": true
+      },
+      {
+        "title": "CSS Grid Garden",
+        "url": "http://cssgridgarden.com",
+        "display": true
+      },
+      {
+        "title": "Exercism",
+        "url": "https://exercism.io",
+        "display": true
+      },
+      {
+        "title": "LukeW Ideation + Design",
+        "url": "http://www.lukew.com",
+        "display": true
+      },
+      {
+        "title": "Gymnasium",
+        "url": "https://thegymnasium.com",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Accessibility",
+    "class": "accessibility_resources",
+    "data": [{
+        "title": "A11Y Project",
+        "url": "http://a11yproject.com",
+        "display": true
+      },
+      {
+        "title": "Mozilla Accessibility",
+        "url": "https://developer.mozilla.org/en-US/docs/web/Accessibility",
+        "display": true
+      },
+      {
+        "title": "WAIA11Y Project",
+        "url": "https://www.w3.org/WAI",
+        "display": true
+      },
+      {
+        "title": "WCAG Checklist",
+        "url": "http://webaim.org/standards/wcag/checklist",
+        "display": true
+      },
+      {
+        "title": "Web Accessibility Resources",
+        "url": "https://marcysutton.com/web-accessibility-resources",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "SQL",
+    "class": "sql_resources",
+    "data": [{
+        "title": "SQL Connection Strings",
+        "url": "https://www.connectionstrings.com/sql-server",
+        "display": true
+      },
+      {
+        "title": "SQL Associations",
+        "url": "https://support.airtable.com/hc/en-us/articles/218734758-A-beginner-s-guide-to-many-to-many-relationships",
+        "display": true
+      },
+      {
+        "title": "Modifying Data With SQL",
+        "url": "https://github.com/treehouse/cheatsheets/blob/master/modifying_data_with_sql/cheatsheet.md",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Code Best Practices",
+    "class": "code_best_practices",
+    "data": [{
+        "title": "Code Review Guidelines",
+        "url": "https://github.com/thoughtbot/guides/tree/master/code-review",
+        "display": true
+      },
+      {
+        "title": "Essential RubyOnRails patterns",
+        "url": "https://medium.com/selleo/essential-rubyonrails-patterns-part-1-service-objects-1af9f9573ca1",
+        "display": true
+      },
+      {
+        "title": "Rails Service Objects: A Comprehensive Guide",
+        "url": "https://www.toptal.com/ruby-on-rails/rails-service-objects-tutorial",
+        "display": true
+      },
+      {
+        "title": "Conventional Commits",
+        "url": "https://conventionalcommits.org",
+        "display": true
+      },
+      {
+        "title": "7 Patterns to Refactor Fat ActiveRecord Models",
+        "url": "https://codeclimate.com/blog/7-ways-to-decompose-fat-activerecord-models/",
+        "display": true
+      },
+      {
+        "title": "Decorators in Ruby",
+        "url": "https://thoughtbot.com/blog/evaluating-alternative-decorator-implementations-in",
+        "display": true
+      },
+      {
+        "title": "Presenter Pattern",
+        "url": "http://www.binarywebpark.com/presenter-pattern-poros-rails-applications",
+        "display": true
+      },
+      {
+        "title": "View Objects",
+        "url": "https://www.nopio.com/blog/view-objects-rails-views",
+        "display": true
+      },
+      {
+        "title": "Decorators and Presenters",
+        "url": "https://ieftimov.com/post/decorators-and-presenters",
+        "display": true
+      },
+      {
+        "title": "SOLID",
+        "url": "https://thoughtbot.com/blog/back-to-basics-solid",
+        "display": true
+      },
+      {
+        "title": "Refactoring and Design Patterns",
+        "url": "https://refactoring.guru",
+        "display": true
+      },
+      {
+        "title": "Design Patterns in Ruby",
+        "url": "https://bogdanvlviv.com/posts/ruby/patterns/design-patterns-in-ruby.html",
+        "display": true
+      },
+      {
+        "title": "Design Patterns in Ruby - github",
+        "url": "https://github.com/davidgf/design-patterns-in-ruby",
+        "display": true
+      },
+      {
+        "title": "Refactoring Catalog",
+        "url": "https://refactoring.com/catalog",
+        "display": true
+      },
+      {
+        "title": "The 12-Factor App",
+        "url": "https://12factor.net",
+        "display": true
+      },
+      {
+        "title": "Code Review Best Practices",
+        "url": "https://www.ibm.com/developerworks/rational/library/11-proven-practices-for-peer-review/index.html",
+        "display": true
+      },
+      {
+        "title": "Ruby Best Practices",
+        "url": "https://github.com/thoughtbot/guides/tree/master/best-practices",
+        "display": true
+      },
+      {
+        "title": "Style Guides",
+        "url": "https://github.com/thoughtbot/guides/tree/master/style",
+        "display": true
+      },
+      {
+        "title": "Git Version Control Guide",
+        "url": "https://github.com/thoughtbot/guides/tree/master/protocol/git",
+        "display": true
+      },
+      {
+        "title": "Git Best Practices",
+        "url": "https://chris.beams.io/posts/git-commit",
+        "display": true
+      },
+      {
+        "title": "Atomic Commits",
+        "url": "https://www.freshconsulting.com/atomic-commits",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Tutorials",
+    "class": "tutorials_resources",
+    "data": [{
+      "title": "Daniel Miessler Tutorials",
+      "url": "https://danielmiessler.com/study",
+      "display": true
+    }]
+  },
+  {
+    "title": "Linux",
+    "class": "linux_resources",
+    "data": [{
+      "title": "SCP Reference",
+      "url": "http://www.hypexr.org/linux_scp_help.php",
+      "display": true
+    }]
+  },
+  {
+    "title": "FreeBSD",
+    "class": "freebsd_resources",
+    "data": [{
+      "title": "FreeBSD Post Install Guide",
+      "url": "https://www.tecmint.com/things-to-do-after-installing-freebsd",
+      "display": true
+    }]
+  },
+  {
+    "title": "Network Tools",
+    "class": "network_tool",
+    "data": [{
+      "title": "Converters and Calculators",
+      "url": "https://www.wintelguy.com",
+      "display": true
+    }]
+  },
+  {
+    "title": "Pair Programming",
+    "class": "pair_programming",
+    "data": [{
+        "title": "Pair Programming Guide",
+        "url": "https://tuple.app/pair-programming-guide/the-case-for-pair-programming",
+        "display": true
+      },
+      {
+        "title": "Pair Programming Tips from Kindergarten",
+        "url": "https://www.cse.unsw.edu.au/~cs3710/PMmaterials/Tutorials/PPpractices.pdf",
+        "display": true
+      },
+      {
+        "title": "Set PR Co-owner",
+        "url": "https://help.github.com/en/articles/creating-a-commit-with-multiple-authors",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Miscellaneous",
+    "class": "miscellaneous_resources",
+    "data": [{
+        "title": "Secure Tunnel",
+        "url": "https://ngrok.com",
+        "display": true
+      },
+      {
+        "title": "User Stories",
+        "url": "https://www.atlassian.com/agile/project-management/user-stories",
+        "display": true
+      },
+      {
+        "title": "Developer Roadmap",
+        "url": "https://github.com/kamranahmedse/developer-roadmap",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "News",
+    "class": "news_resources",
+    "data": [{
+        "title": "Web Platform Daily",
+        "url": "https://webplatformdaily.org",
+        "display": true
+      },
+      {
+        "title": "Front End Front",
+        "url": "https://frontendfront.com",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Design",
+    "class": "design_resources",
+    "data": [{
+        "title": "Colour Lovers",
+        "url": "http://www.colourlovers.com",
+        "display": true
+      },
+      {
+        "title": "Layout Lab",
+        "url": "https://labs.jensimmons.com",
+        "display": true
+      },
+      {
+        "title": "Coolor Color Generator",
+        "url": "https://coolors.co/app",
+        "display": true
+      },
+      {
+        "title": "CSS Named Colors",
+        "url": "http://www.colors.commutercreative.com/grid",
+        "display": true
+      },
+      {
+        "title": "CSS Clip Path Generator",
+        "url": "http://bennettfeely.com/clippy",
+        "display": true
+      },
+      {
+        "title": "Noise Texture Generator",
+        "url": "http://www.noisetexturegenerator.com",
+        "display": true
+      },
+      {
+        "title": "Paletton",
+        "url": "http://paletton.com",
+        "display": true
+      },
+      {
+        "title": "Lorem Pixel",
+        "url": "http://lorempixel.com",
+        "display": true
+      },
+      {
+        "title": "Subtle Patterns",
+        "url": "https://www.toptal.com/designers/subtlepatterns",
+        "display": true
+      },
+      {
+        "title": "Coverr",
+        "url": "https://coverr.co",
+        "display": true
+      },
+      {
+        "title": "Kuler",
+        "url": "https://color.adobe.com/create/color-wheel",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "JavaScript",
+    "class": "javascript_resources",
+    "data": [{
+        "title": "Import and Export",
+        "url": "https://javascript.info/import-export",
+        "display": true
+      },
+      {
+        "title": "Mocking Callbacks in Jest",
+        "url": "https://dev.to/jhotterbeekx/mocking-with-callbacks-in-jest-2423",
+        "display": true
+      },
+      {
+        "title": "ES6 Modules without Webpack/Babel",
+        "url": "https://www.mariadcampbell.com/blog/implementing-es6-modules-without-webpack-or-babel",
+        "display": true
+      },
+      {
+        "title": "Jest URL Mocking",
+        "url": "https://www.ryandoll.com/post/2018/3/29/jest-and-url-mocking",
+        "display": true
+      },
+      {
+        "title": "You Might Not Need jQuery",
+        "url": "http://youmightnotneedjquery.com",
+        "display": true
+      },
+      {
+        "title": "Regex Builder",
+        "url": "https://regex101.com",
+        "display": true
+      },
+      {
+        "title": "John Resig Learn",
+        "url": "https://johnresig.com/apps/learn",
+        "display": true
+      },
+      {
+        "title": "JSLint",
+        "url": "http://www.jslint.com/help.html",
+        "display": true
+      },
+      {
+        "title": "jQAPI",
+        "url": "http://jqapi.com",
+        "display": true
+      },
+      {
+        "title": "JSFiddle",
+        "url": "https://jsfiddle.net",
+        "display": true
+      },
+      {
+        "title": "JavaScript Encyclopedia",
+        "url": "http://www.crockford.com/javascript/encyclopedia",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Jekyll",
+    "class": "jekyll_resources",
+    "data": [{
+      "title": "Jekyll FAQ",
+      "url": "https://github.com/planetjekyll/quickrefs/blob/master/FAQ.md",
+      "display": true
+    }]
+  },
+  {
+    "title": "Security",
+    "class": "security_resources",
+    "data": [{
+        "title": "Content Security Policy",
+        "url": "https://developers.google.com/web/fundamentals/security/csp",
+        "display": true
+      },
+      {
+        "title": "Securing Public Web Servers",
+        "url": "http://csrc.nist.gov/publications/nistpubs/800-44-ver2/SP800-44v2.pdf",
+        "display": true
+      },
+      {
+        "title": "Web Security",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/Security",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Documentation",
+    "class": "documentation_resources",
+    "data": [{
+        "title": "Microsoft Documentation",
+        "url": "https://docs.microsoft.com/en-us",
+        "display": true
+      },
+      {
+        "title": "MDN",
+        "url": "https://developer.mozilla.org/en-US",
+        "display": true
+      },
+      {
+        "title": "ISO 8601",
+        "url": "https://en.wikipedia.org/wiki/ISO_8601",
+        "display": true
+      },
+      {
+        "title": "ASCII",
+        "url": "http://www.crockford.com/wrmg/ascii.html",
+        "display": true
+      },
+      {
+        "title": "Google Web Fundamentals",
+        "url": "https://developers.google.com/web/fundamentals",
+        "display": true
+      },
+      {
+        "title": "Resource-Oriented Client Architecture",
+        "url": "http://roca-style.org",
+        "display": true
+      },
+      {
+        "title": "Reporting with SQL",
+        "url": "https://github.com/treehouse/cheatsheets/blob/master/reporting_with_sql/cheatsheet.md",
+        "display": true
+      }
+    ]
+  }
+]
