@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
           font-size: 18px;
           line-height: 1.4;
           background-color: #f2f2f2;
-          background-image: -webkit-linear-gradient(30deg, #f2f2f2 50%, #f4f4f4 50%);
+          background-image: -webkit-linear-gradient(10deg, #efefef 50%, #f4f4f4 50%);
         }
 
         a {
