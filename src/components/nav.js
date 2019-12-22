@@ -34,6 +34,7 @@ const Nav = ({ siteTitle }) => (
       padding-top: 68px;
       position: fixed;
       background: ${blue};
+      background: #ececec;
       height: 100%;
       z-index: 100;
       width: 250px;
@@ -46,6 +47,16 @@ const Nav = ({ siteTitle }) => (
 
     ul li {
       display: block;
+    }
+
+    li:nth-of-type(2n) a {
+      background: #e6e6e6;
+      &:active {
+
+      }
+      &:hover {
+        background: #fff;
+      }
     }
 
     a {
@@ -85,7 +96,7 @@ const Nav = ({ siteTitle }) => (
     <input type='checkbox' id='menu' />
     <ul>
       <li>
-        <NavLink color="blue" activeClassName='active' to="/">Home</NavLink>
+        <NavLink activeClassName='active' to="/">Home</NavLink>
       </li>
       <li>
         <NavLink activeClassName='active' to="/thoughts">Thoughts</NavLink>

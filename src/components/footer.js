@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { css } from '@emotion/core';
 import Social from "../components/social";
+import Quote from "../components/quote";
 import Attribution from "../components/attribution";
 
 const year = (new Date).getFullYear();
@@ -10,14 +11,40 @@ const year = (new Date).getFullYear();
 const Footer = ({ siteTitle }) => (
   <footer
     css={css`
-    font-size: 14px;
     background: #efefef;
     border-top: solid 1px #3385ff;
+    height: 100px;
+    margin-top: -100px;
+    @media (min-width: 600px) {
+      height: 80px;
+      margin-top: -80px;
+    }
     .inner {
       display: flex;
       justify-content: space-between;
-      max-width: 90vw;
-      width: 700px;
+      flex-direction: column;
+
+      @media (min-width: 600px) {
+        flex-direction: row;
+        align-items: flex-end;
+      }
+
+    }
+
+    .social {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-bottom: 20px;
+      @media (min-width: 600px) {
+        order: 3;
+        margin-bottom: 0px;
+      }
+    }
+
+    .quote {
+      color: #999999;
     }
 
     .social a {
@@ -28,12 +55,20 @@ const Footer = ({ siteTitle }) => (
     <div className='inner'>
       <div className='social'>
         <Social />
+        <a href="/about">Josh Young - © {year}</a>
       </div>
       <div css={css`
-        text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      font-size: 12px;
+      text-align: right;
+      @media (min-width: 600px) {
+        align-items: flex-start;
+      }
       `}>
-        <a href="/about">Josh Young - © {year}</a>
         <Attribution />
+        <Quote />
       </div>
     </div>
   </footer>

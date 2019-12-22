@@ -5,8 +5,8 @@ import { css } from "@emotion/core";
 const Social = ({ siteTitle }) => (
   <div css={css`
     svg {
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
     }
 
     #codepen,

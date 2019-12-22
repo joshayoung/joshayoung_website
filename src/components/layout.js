@@ -61,17 +61,16 @@ const Layout = ({ children }) => {
           }
         }
 
-        section {
-          margin-bottom: 20px;
+        main {
+          @media (min-width: 600px) {
+              border-left: 1px solid #dedede;
+              padding-left: 30px;
+          }
         }
 
         footer {
-          height: 40px;
-          margin-top: -40px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
           padding: 0 10px;
+          padding-top: 20px;
         }
 
       `} />
