@@ -2,28 +2,34 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { css } from '@emotion/core';
+import Social from "../components/social";
+
+const year = (new Date).getFullYear();
 
 const Footer = ({ siteTitle }) => (
   <footer
     css={css`
-    display: flex;
-    justify-content: space-between;
-    background: red;
     font-size: 14px;
-    background: #f4f4f4;
-    border-top: 1px solid #3385ff;
+    background: #f2f2f2;
+    border-top: solid 1px #3385ff;
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      max-width: 90vw;
+      width: 700px;
+    }
 
     .social a {
       margin: 0 4px;
       display: inline-block;
     }
   `}>
-    <div className='social'>
-      <a href="https://codepen.io/joshayoung/pens/popular">CP</a>
-      <a href="https://www.linkedin.com/in/joshuayoung1">LI</a>
-      <a href="https://github.com/joshayoung">GH</a>
+    <div className='inner'>
+      <div className='social'>
+        <Social />
+      </div>
+      <a href="/about">Josh Young - © {year}</a>
     </div>
-    <a href="/about">Josh Young - © 2020</a>
   </footer>
 )
 
