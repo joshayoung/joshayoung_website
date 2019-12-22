@@ -5,6 +5,7 @@ import { css } from '@emotion/core';
 import Social from "../components/social";
 import Quote from "../components/quote";
 import Attribution from "../components/attribution";
+import { Link } from "gatsby";
 
 const year = (new Date).getFullYear();
 
@@ -55,7 +56,7 @@ const Footer = ({ siteTitle }) => (
     <div className='inner'>
       <div className='social'>
         <Social />
-        <a href="/about">Josh Young - © {year}</a>
+        <Link to="/me">Josh Young - © {year}</Link>
       </div>
       <div css={css`
       display: flex;

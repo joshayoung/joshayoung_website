@@ -114,7 +114,7 @@ const Nav = ({ siteTitle }) => (
         <NavLink activeClassName='active' to="/resume">Resume</NavLink>
       </li>
       <li>
-        <NavLink activeClassName='active' to="/about">About</NavLink>
+        <NavLink activeClassName='active' to="/me">About</NavLink>
       </li>
       <li>
         <NavLink activeClassName='active' to="/snippets">Snippets</NavLink>

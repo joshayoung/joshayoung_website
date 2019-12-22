@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { css } from '@emotion/core';
+import { Link } from 'gatsby';
 
 const Intro = ({ siteTitle }) => (
   <section className='' css={css`
@@ -20,6 +21,9 @@ const Intro = ({ siteTitle }) => (
       display: inline-block;
       padding: 0 10px;
       color: #fff;
+      a {
+        color: #fff;
+      }
     }
 
     .dot {
@@ -29,9 +33,9 @@ const Intro = ({ siteTitle }) => (
     }
   `}>
     My name is Josh<span className='dot'>.</span>
-    I am a Web Developer<span className='dot'>.</span>
-    Here I write about web development and my current tech projects<span className='dot'>.</span>
-    Check out my <span>Blog</span> to see what I am writing or my <span>Projects</span> to
+    I am a Full Stack Software Engineer<span className='dot'>.</span>
+    Here I write about development and my current tech projects<span className='dot'>.</span>
+    Check out my <span><Link to="/thoughts">Blog</Link></span> to see what I am writing or my <Link to="/projects"><span>Projects</span></Link> to
     see what I am building<span className='dot'>...</span>
   </section >
 )
