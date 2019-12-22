@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 
+.warning {
+  padding: 10px;
+  background: red;
+}
+
 body {
   font-family: 'Work Sans', sans-serif;
 }
