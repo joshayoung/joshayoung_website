@@ -59,14 +59,14 @@ const Footer = ({ siteTitle }) => (
         <Link to="/me">Josh Young - © {year}</Link>
       </div>
       <div css={css`
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      font-size: 12px;
-      text-align: right;
-      @media (min-width: 600px) {
-        align-items: flex-start;
-      }
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 12px;
+        text-align: right;
+        @media (min-width: 600px) {
+          align-items: flex-start;
+        }
       `}>
         <Attribution />
         <Quote />
