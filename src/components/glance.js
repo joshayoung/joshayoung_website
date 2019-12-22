@@ -3,7 +3,7 @@ import React from "react";
 
 const Glance = ({ siteTitle }) => (
   <section className='box links'>
-    <header>/ Glance /</header>
+    <header>Glance</header>
     <ul>
       <li><a href="/me#books">Books</a></li>
       <li><a href="/me#books_i_recommend">Great Books</a></li>

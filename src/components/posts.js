@@ -11,6 +11,9 @@ const Posts = ({ siteTitle }) => (
       <li>
         <a href="/2018/one-to-many-associations/">One-to-Many Association in Rails</a>
       </li>
+      <li>
+        <a href="/2018/one-to-many-associations/">All about Rails</a>
+      </li>
     </ul>
   </section>
 )

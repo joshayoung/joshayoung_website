@@ -8,8 +8,9 @@ const Intro = ({ siteTitle }) => (
     to="/"
     css={css`
         font-size: 50px;
+        font-family: 'Acme', sans-serif;
         display: block;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         span {
           color: #3385ff;
         }
