@@ -74,7 +74,7 @@ const Layout = ({ children }) => {
         }
 
       `} />
-      <SEO />
+      <SEO title="test" />
       <div className='Wrap'>
         <div className='WrapInside'>
           <Header />
