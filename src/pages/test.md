@@ -5,3 +5,9 @@ import Count from "../components/counter.js";
 some awesome content
 
 <Count />
+
+<div style={{ color: 'green' }}>
+
+### I am green
+
+</div>
