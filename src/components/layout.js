@@ -7,6 +7,7 @@ import Tags from "./tags";
 import Footer from "./footer";
 import Logo from "../components/logo";
 import Stats from "../components/stats";
+import SEO from "../components/seo";
 
 import "normalize.css";
 
@@ -73,6 +74,7 @@ const Layout = ({ children }) => {
         }
 
       `} />
+      <SEO />
       <div className='Wrap'>
         <div className='WrapInside'>
           <Header />
