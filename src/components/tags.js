@@ -2,8 +2,8 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Tags = ({ siteTitle }) => (
-  <section>
-    <header>Tags</header>
+  <section className='box links'>
+    <header>/ Tags /</header>
     <ul aria-labelledby="tags">
       <li><a href="/tags?Jekyll">Jekyll</a></li>
       <li><a href="/tags?GitHub">GitHub</a></li>

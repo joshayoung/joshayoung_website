@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 const Posts = ({ siteTitle }) => (
-  <section>
+  <section className='list'>
     <header>Latest Posts</header>
     <ul>
       <li>

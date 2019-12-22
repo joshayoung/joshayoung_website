@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
 import React from "react";
+import { css } from '@emotion/core';
 
 const Glance = ({ siteTitle }) => (
-  <section>
-    <header>Glance</header>
+  <section className='box links'>
+    <header>/ Glance /</header>
     <ul>
       <li><a href="/me#books">Books</a></li>
       <li><a href="/me#books_i_recommend">Great Books</a></li>

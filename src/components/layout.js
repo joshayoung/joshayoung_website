@@ -7,6 +7,8 @@ import Glance from "./glance";
 import Tags from "./tags";
 import Repos from "./repos";
 import Posts from "./posts";
+import Footer from "./footer";
+import Logo from "../components/logo";
 
 import "normalize.css";
 
@@ -21,7 +23,9 @@ const Layout = ({ children }) => {
       }
     }
   }
-`)
+`);
+
+  const blue = "#3385ff";
 
   return (
     <>
@@ -34,15 +38,14 @@ const Layout = ({ children }) => {
           font-family: 'Acme', sans-serif;
           font-size: 18px;
           line-height: 1.4;
-          color: #234ACC;
-          background: #f2f2f2;
+          background: #f4f4f4;
         }
 
         a {
           text-decoration: none;
           color: #000;
           &:hover {
-            color: blue;
+            color: ${blue};
           }
         }
 
@@ -61,19 +64,24 @@ const Layout = ({ children }) => {
         .Wrap {
           display: flex;
           min-height: 100vh;
-          flex-direction: column;;
+          flex-direction: column;
+          margin-bottom: 100px;
           &-Inside {
             flex-grow: 1;
           }
         }
 
+        section {
+          margin-bottom: 20px;
+        }
+
         footer {
-          height: 20px;
-          margin-top: -20px;
-          background: #3C4C80;
-          a {
-            color: #fff;
-          }
+          height: 40px;
+          margin-top: -40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 10px;
         }
 
       `} />
@@ -84,9 +92,10 @@ const Layout = ({ children }) => {
             css={css`
               margin: 1rem auto;
               max-width: 90vw;
-              width: 500px;
+              width: 700px;
             `}
           >
+            <Logo />
             {children}
             <Glance />
             <Tags />
@@ -95,12 +104,7 @@ const Layout = ({ children }) => {
           </main>
         </div>
       </div>
-      <footer>
-        <a href="https://codepen.io/joshayoung/pens/popular">CodePen</a>
-        <a href="https://www.linkedin.com/in/joshuayoung1">linkedin</a>
-        <a href="https://github.com/joshayoung">Github</a>
-        <a href="/about">© 2020 - Josh Young</a>
-      </footer>
+      <Footer />
     </>
   )
 }

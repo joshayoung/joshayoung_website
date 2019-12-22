@@ -16,6 +16,11 @@ const blue = '#234ACC';
 
 const Nav = ({ siteTitle }) => (
   <nav css={css`
+    margin-left: 100%;
+    position: relative;
+    /* TODO: fix this: */
+    left: -51px;
+
     label, #menu {
       display: none;
     }
@@ -51,7 +56,6 @@ const Nav = ({ siteTitle }) => (
 
     label {
       display: inline-block;
-      padding: 10px;
       font-size: 34px;
       &:hover {
         cursor: pointer;
@@ -74,7 +78,7 @@ const Nav = ({ siteTitle }) => (
      }
   `}
   >
-    <label className='menu' for='menu'>&#9776;</label>
+    <label className='menu' htmlFor='menu'>&#9776;</label>
     <input type='checkbox' id='menu' />
     <ul>
       <li>

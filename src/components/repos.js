@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 const Repos = ({ siteTitle }) => (
-  <section>
+  <section className='list'>
     <header>Recently Updated Repos</header>
     <ul id="github_repos">
       <li>

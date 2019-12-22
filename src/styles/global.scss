@@ -3,3 +3,33 @@
 body {
   font-family: 'Acme', sans-serif;
 }
+
+.box {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #3385ff;
+  margin-bottom: 40px;
+  header {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+}
+
+.links ul {
+  display: flex;
+  flex-wrap: wrap;
+  a {
+    display: inline-block;
+    padding: 5px 10px;
+  }
+}
+
+.list {
+  header {
+    color:#3385ff;
+    padding: 3px;
+  }
+  ul {
+    list-style-type: square;
+    margin-left: 30px;
+  }
+}
