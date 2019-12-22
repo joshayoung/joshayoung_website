@@ -10,7 +10,7 @@ const Footer = ({ siteTitle }) => (
     justify-content: space-between;
     background: red;
     font-size: 14px;
-    background: #ccc;
+    background: #f4f4f4;
     border-top: 1px solid #3385ff;
 
     .social a {

@@ -1,12 +1,15 @@
 import React from "react";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import listThoughts from "../hooks/list-thoughts";
+import AllThoughts from "../components/all-thoughts";
 
-const Thoughts = () => (
-  <Layout>
-    <SEO title="Thoughts" />
-    <h1>Thoughts</h1>
-  </Layout>
-)
-
-export default Thoughts;
+export default () => {
+  const posts = listThoughts();
+  return (
+    <Layout>
+      {posts.map(post => (
+        <AllThoughts key={post.path} post={post} />
+      ))}
+    </Layout>
+  );
+};

@@ -27,7 +27,8 @@ const Layout = ({ children }) => {
           font-family: 'Acme', sans-serif;
           font-size: 18px;
           line-height: 1.4;
-          background: #f4f4f4;
+          background-color: #f2f2f2;
+          background-image: -webkit-linear-gradient(30deg, #f2f2f2 50%, #f4f4f4 50%);
         }
 
         a {
@@ -54,7 +55,7 @@ const Layout = ({ children }) => {
           display: flex;
           min-height: 100vh;
           flex-direction: column;
-          margin-bottom: 100px;
+          padding-bottom: 100px;
           &-Inside {
             flex-grow: 1;
           }
