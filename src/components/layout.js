@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Header from "./header";
 import Footer from "./footer";
 import Logo from "../components/logo";
+import LeftNav from "../components/left-nav";
 import SEO from "../components/seo";
 
 import "normalize.css";
@@ -72,8 +73,11 @@ const Layout = ({ children }) => {
           min-height: 100vh;
           flex-direction: column;
           padding-bottom: 100px;
-          &-Inside {
-            flex-grow: 1;
+          &Inside {
+            @media (min-width: 700px) {
+              display: flex;
+              justify-content: flex-start;
+            }
           }
         }
 
@@ -94,11 +98,16 @@ const Layout = ({ children }) => {
       <div className='Wrap'>
         <div className='WrapInside'>
           <Header />
+          <LeftNav />
           <main
             css={css`
               margin: 1rem auto;
               max-width: 90vw;
               width: 700px;
+              @media (min-width: 700px) {
+                margin: 0;
+                margin-top: 50px;
+              }
             `}
           >
             <Logo />

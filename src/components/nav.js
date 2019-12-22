@@ -1,16 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { Link } from "gatsby";
-import styled from "@emotion/styled";
 import { css } from '@emotion/core';
-
-const NavLink = styled(Link)`
-  font-size: 14px;
-  color: ${props => props.color || "#000;"};
-  &.active {
-    background: #fff;
-  }
-`;
+import NavLinks from "../components/nav-links";
 
 const blue = "#3385ff";
 
@@ -43,6 +34,9 @@ const Nav = ({ siteTitle }) => (
       right: -250px;
       animation-fill-mode: forwards;
       border-left: solid 3px ${blue};
+      @media (min-width: 700px) {
+        display: none;
+      }
     }
 
     ul li {
@@ -74,6 +68,9 @@ const Nav = ({ siteTitle }) => (
       &:hover {
         cursor: pointer;
       }
+      @media (min-width: 700px) {
+        display: none;
+      }
     }
 
     input:checked ~ ul {
@@ -94,38 +91,7 @@ const Nav = ({ siteTitle }) => (
   >
     <label className='menu' htmlFor='menu'>&#9776;</label>
     <input type='checkbox' id='menu' />
-    <ul>
-      <li>
-        <NavLink activeClassName='active' to="/">Home</NavLink>
-      </li>
-      <li>
-        <NavLink activeClassName='active' to="/thoughts">Thoughts</NavLink>
-      </li>
-      <li>
-        <NavLink activeClassName='active' to="/certifications">Certifications</NavLink>
-      </li>
-      <li>
-        <NavLink activeClassName='active' to="/projects">Projects</NavLink>
-      </li>
-      <li>
-        <NavLink activeClassName='active' to="/classes">Classes</NavLink>
-      </li>
-      <li>
-        <NavLink activeClassName='active' to="/resume">Resume</NavLink>
-      </li>
-      <li>
-        <NavLink activeClassName='active' to="/me">About</NavLink>
-      </li>
-      <li>
-        <NavLink activeClassName='active' to="/snippets">Snippets</NavLink>
-      </li>
-      <li>
-        <NavLink activeClassName='active' to="/definitions">Definitions</NavLink>
-      </li>
-      <li>
-        <NavLink activeClassName='active' to="/resources">Resources</NavLink>
-      </li>
-    </ul>
+    <NavLinks />
   </nav>
 )
 

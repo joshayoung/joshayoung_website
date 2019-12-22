@@ -303,12 +303,6 @@ const Resume = () => (
         <li>Web Security and Testing</li>
       </ul>
     </article>
-
-
-
-
-
-
   </Layout >
 )
 
