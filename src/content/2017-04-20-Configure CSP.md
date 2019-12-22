@@ -1,13 +1,12 @@
 ---
-layout: portfolio_entry
 title: Configure CSP
 description: Setting up and configuring Content Security Policy (CSP).
 date: 2017-04-20
-excerpt_separator: <!--more-->
+path: /configure-csp
 tags: Security CSP
 ---
 
-After recently learning about Content Security Policy (CSP), I decided to implement it on this site. For the uninitiated, CSP is essentially a way to lock down which scripts, styles, images, etc are allowed to run on your site. This was implemented in an effort to prevent security issues such as Cross Site Scripting (XSS) attacks. 
+After recently learning about Content Security Policy (CSP), I decided to implement it on this site. For the uninitiated, CSP is essentially a way to lock down which scripts, styles, images, etc are allowed to run on your site. This was implemented in an effort to prevent security issues such as Cross Site Scripting (XSS) attacks.
 
 <!--more-->
 
@@ -17,8 +16,8 @@ If you have more control over your site's hosting, you should be able to setup C
 <meta http-equiv="Content-Security-Policy"
 content="default-src 'none';
 img-src 'self';
-script-src 'self' https://ajax.googleapis.com 
-'sha256-O17JreqETM2ckomgHPckX1pb7B0hzmavSQor2MpT8oU=' 
+script-src 'self' https://ajax.googleapis.com
+'sha256-O17JreqETM2ckomgHPckX1pb7B0hzmavSQor2MpT8oU='
 'sha256-jzxr9xIKu3BOjQ4S2MfeDFmOYaBid7HGKUMtTGBL0Ls=';
 style-src 'self' https://fonts.googleapis.com;
 font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;

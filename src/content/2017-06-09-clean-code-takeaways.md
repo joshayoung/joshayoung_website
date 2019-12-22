@@ -1,9 +1,8 @@
 ---
-layout: portfolio_entry
 title: Clean Code Takeaways
 description: Takeaways from reading Clean Code by Robert C. Martin.
 date: 2017-06-09
-excerpt_separator: <!--more-->
+path: /clean-code-takeaways
 tags: Programming
 ---
 
