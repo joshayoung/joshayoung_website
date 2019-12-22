@@ -1,30 +1,18 @@
 import React from "react";
 import { Global, css } from '@emotion/core';
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
 import Header from "./header";
 import Glance from "./glance";
 import Tags from "./tags";
-import Repos from "./repos";
-import Posts from "./posts";
 import Footer from "./footer";
 import Logo from "../components/logo";
+import Stats from "../components/stats";
 
 import "normalize.css";
 
 import "../styles/global.scss";
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-  query SiteTitleQuery2 {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`);
-
   const blue = "#3385ff";
 
   return (
@@ -99,8 +87,7 @@ const Layout = ({ children }) => {
             {children}
             <Glance />
             <Tags />
-            <Repos />
-            <Posts />
+            <Stats />
           </main>
         </div>
       </div>
