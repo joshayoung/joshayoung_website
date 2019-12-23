@@ -87,7 +87,7 @@ curl --data "information=to&send=to the server" http://example.com
 
 ### <a id="css"></a>CSS
 
-#### Switch to box sizing</h4>
+#### Switch to box sizing
 ```css
 html {
   box-sizing: border-box;
@@ -109,7 +109,7 @@ html {
 }
 ```
 
-#### Margin/Padding Shorthand</h4>
+#### Margin/Padding Shorthand
 ```css
 //top right bottom left:
 margin (or padding): 10px 20px 10px 20px;
@@ -120,9 +120,6 @@ margin (or padding): 10px 20px;
 //top left/right bottom:
 margin (or padding): 10px 20px 10px;
 ```
-
-###------------####
-
 
 ### <a id="dev_tools"></a>Dev Tools
 
@@ -237,9 +234,12 @@ ufw default deny incoming
 #### Open Up Ports
 
 ```bash
-#Allow HTTP Service:
+# Allow HTTP Service:
+
 ufw allow http
-#or:
+
+# or:
+
 ufw allow 80/tcp
 #or allow application profile (nginx, apache, etc):
 ufw allow 'Nginx HTTP'
@@ -395,464 +395,486 @@ git rm -rvf file_name
 
 This will remove the directory from your repo, but not from the file system.
 
-      <pre><code class='git'>
-      git rm -r --cached my_folder_name
-      </code></pre>
-      <h4>Show Contents of Commit</h4>
-      <pre><code class='git'>
-        git show [commit hash]
-      </code></pre>
-      <h4>Change Base Branch</h4>
-      <pre><code class='git'>
-        git rebase --onto new_branch old_branch branch_you_are_moving
-      </code></pre>
-      <h4>Turn off the pager</h4>
-      <p>Add `--no-pager` to a command</p>
-      <h4>Restore a Deleted File</h4>
-      <pre><code class='git'>
-        git checkout [removed commit]^ -— [path to flle]
-      </code></pre>
-      <h4>Delete Branches</h4>
-      <pre><code class='git'>
-        #Delete a local branch:
-        git branch -d my_local_branch
+```git
+git rm -r --cached my_folder_name
+```
+#### Show Contents of Commit
+```git
+git show [commit hash]
+```
 
-        # Delete a remote branch:
-        git push origin --delete my_remote_branch
-      </code></pre>
-      <h4>Show which Remote Branch</h4>
-      <p>This shows which remote branch you are tracking and how far behind your local version is from the remote.</p>
-      <pre><code class='git'>
-        git branch -vv
-      </code></pre>
-      <h4>Push changes, then revert locally</h4>
-      <p>This will allow you to push up a feature branch and then revert your local changes to see the diff.</p>
-      <pre><code class='git'>
-        git push origin my_feature_branch
+#### Change Base Branch
 
-        #Revert changes so you can see the diff (locally):
-        git reset HEAD~
-      </code></pre>
+```git
+git rebase --onto new_branch old_branch branch_you_are_moving
+```
 
-      <h4>HEAD</h4>
-      <p>HEAD is the most recent commit on your present branch.</p>
+#### Turn off the pager
 
-      <h4>Checkout Previous Commit</h4>
-      <p>This will put you in a detached HEAD state.</p>
-      <pre><code class='git'>
-        git checkout [hash of previous commit]
-      </code></pre>
+Add `--no-pager` to a command
 
-      <h4>Checkout Remote Branch</h4>
-      <pre><code class='git'>
-        git fetch origin
-        git checkout -b my_branch_name orgin/my_branch_name
+#### Restore a Deleted File
 
-        #or:
+```git
+git checkout [removed commit]^ -— [path to flle]
+```
+#### Delete Branches
 
-        git fetch
-        git checkout my_branch_name
+```git
+#Delete a local branch:
+git branch -d my_local_branch
 
-        #if we have local branch with same name do
-        #this to prevent conflicts with the local branch:
+# Delete a remote branch:
+git push origin --delete my_remote_branch
+```
 
-        git fetch origin
-        git checkout --track origin/my_branch_name
-      </code></pre>
+#### Show which Remote Branch
 
-      <h4>Git Reset</h4>
-      <pre><code class='git'>
-        git reset --soft HEAD^3
+This shows which remote branch you are tracking and how far behind your local version is from the remote.
+```git
+git branch -vv
+```
+#### Push changes, then revert locally
 
-        "'mixed' is the default if you run `git reset`:
-        git reset --mixed HEAD^3
+This will allow you to push up a feature branch and then revert your local changes to see the diff.
 
-        git reset --hard HEAD^3
-      </code></pre>
-      <ul>
-        <li>--soft (keeps staged changes)</li>
-        <li>--mixed (changes present, not staged)</li>
-        <li>--hard (does not preserve uncommitted changes)</li>
-      </ul>
+```git
+git push origin my_feature_branch
 
-      <h4>Edit Commit Message</h4>
-      <pre><code class='git'>
-        git commit --amend
-      </code></pre>
+#Revert changes so you can see the diff (locally):
+git reset HEAD~
+```
 
-      <h4>Revert a file to state at previous commit</h4>
-      <pre><code class='git'>
-        git checkout -- my_file.txt
-      </code></pre>
+#### HEAD
 
-      <h4>Commit Messages</h4>
-      <p>Try to use present tense for your commit message (i.e. "<strong>Add</strong> new class for students" not: "Added new class for students")</p>
-      <pre><code class='git'>
-        git commit -m "Correct site map"
-      </code></pre>
-      <h4>Pick Files to Stash</h4>
-      <pre><code class='git'>
-        git stash -p
-      </code></pre>
-      <h4>Show File in Stash</h4>
-      <pre><code class='git'>
-        git stash show stash@{0}
-      </code></pre>
-      <h4>Checkout a file that is stashed</h4>
-      <pre><code class='git'>
-        git checkout stash@{0} -- path/to/file
-      </code></pre>
-      <h4>Revert Uncommitted Changes</h4>
-      <p>Leaving out the `stash@{2} variable below will run the stash command on top stash on the stack.</p>
-      <pre><code class='git'>
-        git stash apply stash@{1}
-        git stash drop stash@{2}
-      </code></pre>
-      <h4>Retrieve a stashed file</h4>
-      <pre><code class='git'>
-        git checkout [name of stash] -- [filename]
-      </code></pre>
-      <h4>Stash all files (including files in .gitignore)</h4>
-      <pre><code class='git'>
-        git stash --all
-      </code></pre>
-      <h4>Stash tracked and untracked files</h4>
-      <pre><code class='git'>
-        git stash save --include-untracked
-      </code></pre>
-      <h4>Revert One File</h4>
-      <pre><code class='git'>
-        git checkout -- path/to/file.txt
-      </code></pre>
-      <h4>Show Files in Commit</h4>
-      <pre><code class='git'>
-        git diff-tree --no-commit-id --name-only -r [commit hash]
-      </code></pre>
-      <h4>Show Diff in Staged Files</h4>
-      <pre><code class='git'>
-        git diff --staged
-      </code></pre>
-      <h4>Rename a Local Branch</h4>
-      <pre><code class='git'>
-        git branch -m &lt;oldname&gt; &lt;newname&gt;
-      </code></pre>
-      <h4>Move Remote PR Branch Locally</h4>
-      <pre><code class='git'>
-        git fetch origin pull/ID/head:BRANCHNAME
-      </code></pre>
-      <h4>Saves Current Changes with Stash</h4>
-      <pre><code class='git'>
-        git stash
-        or:
-        git stash save "Name for the stash"
-      </code></pre>
-      <h4>Files in stash</h4>
-      <pre><code class='git'>
-        git stash list --stat
-      </code></pre>
-      <h4>Show files in stash</h4>
-      <pre><code class='git'>
-        git stash show stash@{2}
-      </code></pre>
-      <h4>Remove all stashes</h4>
-      <pre><code class='git'>
-        git stash clear
-      </code></pre>
-      <h4>Restores Most Recently Stashed Changes</h4>
-      <p>This command will run `git stash apply` and then `git stash drop`.</p>
-      <pre><code class='git'>
-        git stash pop
-      </code></pre>
-      <h4>List Stashes</h4>
-      <pre><code class='git'>
-        git stash list
-      </code></pre>
-      <h4>Restore Specific Stash</h4>
-      <pre><code class='git'>
-        git stash pop stash@{3}
-      </code></pre>
-      <h4>Create and switch to branch</h4>
-      <pre><code class='git'>
-        git checkout -b new_branch_name
-      </code></pre>
-      <h4>Show Remote Branches</h4>
-      <pre><code class='git'>
-        git branch -r
-      </code></pre>
-      <h4>Delete local branch</h4>
-      <pre><code class='git'>
-        git branch -d local_branch_name
-      </code></pre>
-      <h4>Git Tags</h4>
-      <pre><code class='git'>
-        #show all tags
-        git tag
-        #checks out the code with this tag
-        git checkout [name of tag]
-        #adds a tag
-        git tag -a [tag name] -m tag description]
-        #pushes tags
-        git push --tags
-      </code></pre>
-      <h4>Show Diffs</h4>
-      <pre><code class='git'>
-        git diff HEAD^ (parent)
-        git diff HEAD^^ (grandparent)
-        git diff HEAD~6 (six commits ago)
-      </code></pre>
-      <h4>Compare Commits</h4>
-      <pre><code class='git'>
-        git diff HEAD^..HEAD
-        git diff 58786f..98f7f0
-        git diff master another_branch
-      </code></pre>
-      <h4>Stop tracking in Repo</h4>
-      <pre><code class='git'>
-        git rm --cached errors.txt
-      </code></pre>
-      <h4 markdown='1'>Remove one file from `git add`</h4>
-      <pre><code class='git'>
-        git reset HEAD &lt;file&gt;
-      </code></pre>
-      <h4 markdown='1'>Remove files added with `git add .`</h4>
-      <pre><code class='git'>
-        git reset
-      </code></pre>
-      <h4>Restore a deleted file</h4>
-      <pre><code class='git'>
-        #First find the hash:
-        git reflog
-        git log --walk-reflogs (more detail)
+HEAD is the most recent commit on your present branch.
 
-        #Then:
-        git reset --hard 7980f
-        #or:
-        git reset --hard HEAD@{1}
+#### Checkout Previous Commit
 
-        #Create a new branch with reflog hash:
-        git branch [new branch name] 890fs4
-        or:
-        git branch [new branch name] HEAD@{1}
-      </code></pre>
-      <h4>Clone a local repo as a backup</h4>
-      <pre><code class='git'>
-        git clone local_repo local_repo_backup
-      </code></pre>
-      <h4>Rewrite History</h4>
-      <p>Once a file is added to git (after the commit) it is permanently in the repo. The only way to remove it is to rewrite history. However, do this with extreme care! Make a backup of your code first with `clone`.</p>
-      <pre><code class='git'>
-        git filter-branch --tree-filter 'rm -f old_file.sh -- --all'
+This will put you in a detached HEAD state.
 
-        #or you can just remove the file from the repo:
-        git filter-branch --index-filter 'git rm --cached --ignore-unmatch old_file.sh'
+```git
+git checkout [hash of previous commit]
+```
 
-        #Sometimes when you re-write you will get empty commits, to delete these do:
-        git filter-branch -f --prune-empty -- --all
-      </code></pre>
-      <h4>Commit Order Differences</h4>
-      <p>Order from top to bottom:</p>
-      <pre><code class='git'>
-        git log (newest to oldest)
-        git rebase -i HEAD~3 (oldest to newest)
-      </code></pre>
-      <h4>Roll back previous commit (preserving file changes)</h4>
-      <pre><code class='git'>
-        git reset --soft HEAD~1
-        or
-        git reset --soft HEAD^
-      </code></pre>
-      <h4>Cherry Pick</h4>
-      <pre><code class='git'>
-        git cherry-pick 97589f
+#### Checkout Remote Branch
 
-        #Edit Commit:
-        git cherry-pick --edit 987df0
+```git
+git fetch origin
+git checkout -b my_branch_name orgin/my_branch_name
 
-        #Combine two commits:
-        git cherry-pick --no-commit 9876f 78979f
-        git commit -m "Combine two commits"
-      </code></pre>
-      <h4>Add file to last commit</h4>
-      <pre><code class='git'>
-        git add newfile.sh
-        git commit --amend -m "Add file to repo"
-        or:
-        git commit --amend --no-edit
-      </code></pre>
-      <h4>Roll back previous commit (discarding file changes)</h4>
-      <pre><code class='git'>
-        git reset --hard HEAD~1
-        #or:
-        git reset --hard HEAD^
-        #or the two previous  commits:
-        git reset --hard HEAD^^
-      </code></pre>
+#or:
 
-      <h4>Add Remote</h4>
-      <pre><code class='git'>
-        git push -u origin master
-        git push -u [the name] [the branch]
-        #After using '-u', you can use use `git push` next time:
-        git push
-      </code></pre>
+git fetch
+git checkout my_branch_name
 
-      <h4>Revert a Commit</h4>
-      <pre><code class='git'>
-        git revert [the commit hash you want to revert]
-      </code></pre>
+#if we have local branch with same name do
+#this to prevent conflicts with the local branch:
 
-      <h4>How Git Pull Works</h4>
-      <p>When you run `git pull`, you are actually performing a series of commands:</p>
-      <ul>
-        <li>Updates the local origin/master branch by fetching updates from the origin with: `git fetch`.</li>
-        <li>Then the newly updated local origin/master is merged into the local master with: `git merge origin/master`.</li>
-      </ul>
-      <p>Therefore, just running a `git fetch` will pull down all of the updated code from the origin, but it will not merge any of this with the local master.</p>
-      <h4>Rebase (run from feature branch)</h4>
-      <pre><code class='git'>
-        git rebase master
-      </code></pre>
-      <h4>Interactive Rebase (the last 4 commits)</h4>
-      <p>Using 'squash' will combine this commit in with the previous commit.</p>
-      <pre><code class='git'>
-        git rebase -i HEAD~4
-      </code></pre>
-    </article>
+git fetch origin
+git checkout --track origin/my_branch_name
+```
 
-    <article>
-      <a name='javascript'></a>
-      <h3>JavaScript</h3>
-      <h4>Capitalize Function</h4>
-      <pre>
-      <code>
-        var cap = function(str) {
-          return str.charAt(0).toUpperCase() + str.slice(1);
-        };
-      </code>
-      </pre>
-      <h4>Destructuring</h4>
-      <pre>
-        <code>
-          //Object Destructuring:
-          let foods = {
-            vegetable: 'spinach',
-            fruit: 'apple',
-            nut: 'almond',
-          };
-          const { vegetable, fruit } = foods;
+#### Git Reset
+```git
+git reset --soft HEAD^3
 
-          //Array Destructuring:
-          let dirty_dozen = [ 'Strawberries', 'Spinach', 'Nectarines', 'Apples',
-                              'Peaches', 'Pears', 'Cherries', 'Grapes', 'Celery',
-                              'Tomatoes', 'Sweet bell peppers', 'Potatoes' ];
+"'mixed' is the default if you run `git reset`:
+git reset --mixed HEAD^3
 
-          const [ one_item ] = dirty_dozen;
+git reset --hard HEAD^3
+```
 
-        </code>
-      </pre>
+* --soft (keeps staged changes)
+* --mixed (changes present, not staged)
+* --hard (does not preserve uncommitted changes)
 
-      <h4>Only display content when JavaScript is enabled</h4>
-      <pre>
-        <code class='javascript'>
-          document.getElementsByTagName('body')[0].className += ' js';
-        </code>
-        <code class='css'>
-          /* Only set when JavaScript is enabled in browser: */
-          body.js .only-js {
-            border: 1px solid #a0a0a0;
-            display: block;
-            ...
-          }
-        </code>
-      </pre>
+#### Edit Commit Message
+```git
+git commit --amend
+```
 
-      <h4>ES2015 Function Syntax</h4>
-      <pre>
-        <code class='javascript'>
-          const output_log = () => { alert('This is an example.'); };
-        </code>
-        <code class='javascript'>
-          const add_nums = (x, y) => { return x + y };
-        </code>
-      </pre>
+#### Revert a file to state at previous commit
+```git
+git checkout -- my_file.txt
+```
 
-      <h4>Detect Keyboard Input</h4>
-      <p data-height="265" data-theme-id="dark" data-slug-hash="vZjKVr" data-default-tab="css,result" data-user="joshayoung" data-embed-version="2" data-pen-title="Detect Keyboard Input" class="codepen">See the Pen <a href="https://codepen.io/joshayoung/pen/vZjKVr/">Detect Keyboard Input</a> by Josh (<a href="https://codepen.io/joshayoung">@joshayoung</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+#### Commit Messages
+Try to use present tense for your commit message (i.e. "<strong>Add</strong> new class for students" not: "Added new class for students")
+```git
+git commit -m "Correct site map"
+```
 
-      <h4>Basic Class Structure</h4>
-      <pre><code class='javascript'>
-        var Shape = function(sides) {
-          this.sides = sides;
-        }
+#### Pick Files to Stash
 
-        Shape.prototype.area = function() {
-          calculate ...
-        }
+```git
+git stash -p
+```
 
-        var square = new Shape(4);
-      </code></pre>
-      <h4>Immediately Invoked Function Expression (IIFE)</h4>
-      <pre><code class='javascript'>
-        (function() {
-          ...executed immediately
-        })();
-      </code></pre>
-      <h4>String Object vs Literal</h4>
-      <p>A string literal is immutable.</p>
-      <pre><code class='javascript'>
-        //String Object:
-        typeof new String(); //'object'
-        var str = new String('Hello');
-        str.x = 'World';
-        console.log(str.x); //Outputs 'World'
+#### Show File in Stash
+```git
+git stash show stash@{0}
+```
 
-        //String Literal:
-        typeof ''; //'string'
-      </code></pre>
-    </article>
+#### Checkout a file that is stashed
+```git
+git checkout stash@{0} -- path/to/file
+```
+#### Revert Uncommitted Changes
 
-    <article>
-      <a name='laravel'></a>
-      <h3>Laravel</h3>
-      <h4>Basic Migration</h4>
-      <pre><code class='bash'>
+Leaving out the `stash@{2} variable below will run the stash command on top stash on the stack.
+
+```git
+git stash apply stash@{1}
+git stash drop stash@{2}
+```
+
+#### Retrieve a stashed file
+
+```git
+git checkout [name of stash] -- [filename]
+```
+
+#### Stash all files (including files in .gitignore)
+
+```git
+git stash --all
+```
+#### Stash tracked and untracked files
+```git
+git stash save --include-untracked
+```
+#### Revert One File
+```git
+git checkout -- path/to/file.txt
+```
+#### Show Files in Commit
+```git
+git diff-tree --no-commit-id --name-only -r [commit hash]
+```
+
+#### Show Diff in Staged Files
+
+```git
+git diff --staged
+```
+#### Rename a Local Branch
+```git
+git branch -m &lt;oldname&gt; &lt;newname&gt;
+```
+#### Move Remote PR Branch Locally
+```git
+git fetch origin pull/ID/head:BRANCHNAME
+```
+#### Saves Current Changes with Stash
+```git
+git stash
+or:
+git stash save "Name for the stash"
+```
+#### Files in stash
+```git
+git stash list --stat
+```
+#### Show files in stash
+
+```git
+git stash show stash@{2}
+```
+#### Remove all stashes
+```git
+git stash clear
+```
+#### Restores Most Recently Stashed Changes
+This command will run `git stash apply` and then `git stash drop`.
+```git
+git stash pop </code></pre>
+```
+#### List Stashes
+```git
+git stash list
+```
+#### Restore Specific Stash
+```git
+git stash pop stash@{3}
+```
+#### Create and switch to branch
+
+```git
+git checkout -b new_branch_name
+```
+#### Show Remote Branches
+```git
+git branch -r
+```
+#### Delete local branch
+```git
+git branch -d local_branch_name
+```
+
+#### Git Tags
+```git
+#show all tags
+git tag
+#checks out the code with this tag
+git checkout [name of tag]
+#adds a tag
+git tag -a [tag name] -m tag description]
+#pushes tags
+git push --tags
+```
+#### Show Diffs
+```git
+git diff HEAD^ (parent)
+git diff HEAD^^ (grandparent)
+git diff HEAD~6 (six commits ago)
+```
+#### Compare Commits
+```git
+git diff HEAD^..HEAD
+git diff 58786f..98f7f0
+git diff master another_branch
+```
+#### Stop tracking in Repo
+```git
+git rm --cached errors.txt
+```
+#### Remove one file from `git add`
+```git
+git reset HEAD &lt;file&gt;
+```
+#### Remove files added with `git add .`
+```git
+git reset
+```
+#### Restore a deleted file
+```git
+#First find the hash:
+git reflog
+git log --walk-reflogs (more detail)
+
+#Then:
+git reset --hard 7980f
+#or:
+git reset --hard HEAD@{1}
+
+#Create a new branch with reflog hash:
+git branch [new branch name] 890fs4
+or:
+git branch [new branch name] HEAD@{1}
+```
+#### Clone a local repo as a backup
+```git
+git clone local_repo local_repo_backup
+```
+#### Rewrite History
+
+Once a file is added to git (after the commit) it is permanently in the repo. The only way to remove it is to rewrite history. However, do this with extreme care! Make a backup of your code first with `clone`.
+```git
+git filter-branch --tree-filter 'rm -f old_file.sh -- --all'
+
+#or you can just remove the file from the repo:
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch old_file.sh'
+
+#Sometimes when you re-write you will get empty commits, to delete these do:
+git filter-branch -f --prune-empty -- --all
+```
+#### Commit Order Differences
+Order from top to bottom:
+```git
+git log (newest to oldest)
+git rebase -i HEAD~3 (oldest to newest)
+```
+#### Roll back previous commit (preserving file changes)
+```git
+git reset --soft HEAD~1
+or
+git reset --soft HEAD^
+```
+#### Cherry Pick
+```git
+git cherry-pick 97589f
+
+#Edit Commit:
+git cherry-pick --edit 987df0
+
+#Combine two commits:
+git cherry-pick --no-commit 9876f 78979f
+git commit -m "Combine two commits"
+```
+#### Add file to last commit
+```git
+git add newfile.sh
+git commit --amend -m "Add file to repo"
+or:
+git commit --amend --no-edit
+```
+#### Roll back previous commit (discarding file changes)
+```git
+git reset --hard HEAD~1
+#or:
+git reset --hard HEAD^
+#or the two previous  commits:
+git reset --hard HEAD^^
+```
+
+#### Add Remote
+```git
+git push -u origin master
+git push -u [the name] [the branch]
+#After using '-u', you can use use `git push` next time:
+git push
+```
+
+#### Revert a Commit
+```git
+git revert [the commit hash you want to revert]
+```
+
+#### How Git Pull Works
+When you run `git pull`, you are actually performing a series of commands:
+
+* Updates the local origin/master branch by fetching updates from the origin with: `git fetch`.
+* Then the newly updated local origin/master is merged into the local master with: `git merge origin/master`.
+
+Therefore, just running a `git fetch` will pull down all of the updated code from the origin, but it will not merge any of this with the local master.
+
+#### Rebase (run from feature branch)
+
+```git
+git rebase master
+```
+
+#### Interactive Rebase (the last 4 commits)
+
+Using 'squash' will combine this commit in with the previous commit.
+```git
+git rebase -i HEAD~4
+```
+
+### <a id="javascript"></a>JavaScript
+
+#### Capitalize Function
+```javascript
+var cap = function(str) {
+return str.charAt(0).toUpperCase() + str.slice(1);
+};
+```
+#### Destructuring
+```javascript
+//Object Destructuring:
+let foods = {
+vegetable: 'spinach',
+fruit: 'apple',
+nut: 'almond',
+};
+const { vegetable, fruit } = foods;
+
+//Array Destructuring:
+let dirty_dozen = [ 'Strawberries', 'Spinach', 'Nectarines', 'Apples',
+          'Peaches', 'Pears', 'Cherries', 'Grapes', 'Celery',
+          'Tomatoes', 'Sweet bell peppers', 'Potatoes' ];
+
+const [ one_item ] = dirty_dozen;
+
+```
+
+#### Only display content when JavaScript is enabled
+```javascript
+document.getElementsByTagName('body')[0].className += ' js';
+```
+```css
+/* Only set when JavaScript is enabled in browser: */
+body.js .only-js {
+border: 1px solid #a0a0a0;
+display: block;
+...
+}
+```
+
+#### ES2015 Function Syntax
+```javascript
+const output_log = () => { alert('This is an example.'); };
+```
+```javascript
+const add_nums = (x, y) => { return x + y };
+```
+
+#### Detect Keyboard Input
+<p data-height="265" data-theme-id="dark" data-slug-hash="vZjKVr" data-default-tab="css,result" data-user="joshayoung" data-embed-version="2" data-pen-title="Detect Keyboard Input" class="codepen">See the Pen <a href="https://codepen.io/joshayoung/pen/vZjKVr/">Detect Keyboard Input</a> by Josh (<a href="https://codepen.io/joshayoung">@joshayoung</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+#### Basic Class Structure
+```javascript
+var Shape = function(sides) {
+this.sides = sides;
+}
+
+Shape.prototype.area = function() {
+calculate ...
+}
+
+var square = new Shape(4);
+```
+#### Immediately Invoked Function Expression (IIFE)
+```javascript
+(function() {
+...executed immediately
+})();
+```
+
+#### String Object vs Literal
+
+A string literal is immutable.
+
+```javascript
+//String Object:
+typeof new String(); //'object'
+var str = new String('Hello');
+str.x = 'World';
+console.log(str.x); //Outputs 'World'
+
+//String Literal:
+typeof ''; //'string'
+```
+
+### <a name='laravel'></a>Laravel
+
+      #### Basic Migration
+      ```bash
         php artisan make:migration the_users_table --create=users
-      </code></pre>
-      <h4>Refresh Auto Load Files</h4>
-      <pre><code class='bash'>
+        ```
+      #### Refresh Auto Load Files
+      ```bash
         composer dump-autoload
-      </code></pre>
-      <h4>Run the Migrations</h4>
-      <pre><code class='bash'>
+        ```
+      #### Run the Migrations
+      ```bash
         php artisan migrate
-      </code></pre>
-      <h4>Open Laravel Shell</h4>
-      <pre><code class='bash'>
+        ```
+      #### Open Laravel Shell
+      ```bash
         php artisan tinker
-      </code></pre>
-      <h4>Create the Model along with the Migration</h4>
-      <pre><code class='bash'>
+        ```
+      #### Create the Model along with the Migration
+      ```bash
         php artisan make:model User -m
-      </code></pre>
-      <h4>Create Controller</h4>
-      <pre><code class='bash'>
+        ```
+      #### Create Controller
+      ```bash
         php artisan make:controller UserController
-      </code></pre>
-      <h4>Create Model, Controller, and Migration</h4>
-      <pre><code class='bash'>
+        ```
+      #### Create Model, Controller, and Migration
+      ```bash
         php artisan make:model User -mc
-      </code></pre>
-      <h4>Create Resoureful Controller</h4>
-      <pre><code class='bash'>
+        ```
+      #### Create Resoureful Controller
+      ```bash
         php artisan make:controller UsersController -r
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='freebsd'></a>
-      <h3>FreeBSD</h3>
-      <h4>Edit Hostname</h4>
-      <pre><code class='bash'>
+      ### <a name='freebsd'></a>FreeBSD
+      #### Edit Hostname
+      ```bash
         #Edit:
         vi /etc/rc.conf
 
@@ -863,31 +885,34 @@ This will remove the directory from your repo, but not from the file system.
         hostname your-new-hostname
 
         reboot
-      </code></pre>
+        ```
 
-      <h4>Shutdown Server</h4>
-      <pre><code>
+      #### Shutdown Server
+      ```bash
         poweroff
         #or
         shutdown -p now
-      </code></pre>
-      <h4>Show Version</h4>
-      <pre><code>
+        ```
+      #### Show Version
+      ```bash
         freebsd-version
-      </code></pre>
+        ```
 
-      <h4>Update OS</h4>
-      <pre><code>
+      #### Update OS
+      ```bash
         freebsd-update fetch
         freebsd-update install
-      </code></pre>
+        ```
 
-      <h4>Ports</h4>
-      <p>Ports are groups of 'make' files that allow software to be installed from source. They can be managed by 'portsnap'.</p>
+      #### Ports
 
-      <h4>Packages</h4>
-      <p>These packages are pre-compiled. They are similar to .deb or .rpm packages on Debian and RHEL respectively.</p>
-      <pre><code>
+      Ports are groups of 'make' files that allow software to be installed from source. They can be managed by 'portsnap'.
+
+      #### Packages
+
+      These packages are pre-compiled. They are similar to .deb or .rpm packages on Debian and RHEL respectively.
+
+      ```bash
         #Package Info:
         pkg info
 
@@ -902,15 +927,15 @@ This will remove the directory from your repo, but not from the file system.
 
         #Uninstall package:
         pkg remove package_name
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-    <a name='slackware'></a>
-    <h3>Slackware</h3>
-      <h4>Slackware Linux Commands</h4>
-      <p>Use slackpkg to keep system updated.</p>
-      <pre><code>
+    ### <a name='slackware'></a>Slackware
+
+      #### Slackware Linux Commands
+
+      Use slackpkg to keep system updated.
+
+```bash
         #Download slackpkg .tar.gz file with wget
         wget https://slackpkg.org/stable/slackpkg-2.60-noarch-1.tgz
 
@@ -929,14 +954,11 @@ This will remove the directory from your repo, but not from the file system.
         #Update to the latest slackpkg packages:
         slackpkg update
         slackpkg upgrade-all
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='ubuntu-debian'></a>
-      <h3>Ubuntu/Debian</h3>
-      <p markdown='1' class='no-mb'>Add or edit the lines below in this file `/etc/network/interfaces`.</p>
-      <pre><code>
+      ### <a name='ubuntu-debian'></a>Ubuntu / Debian
+      Add or edit the lines below in this file `/etc/network/interfaces`.
+      ```bash
         ...
         auto eth0
         iface eth0 inet static
@@ -946,32 +968,31 @@ This will remove the directory from your repo, but not from the file system.
         broadcast 192.168.3.255
         dns-nameservers 192.168.3.1
         ...
-      </code></pre>
-      <h4>Show Ubuntu Version</h4>
-      <pre><code class='bash'>
+      ```
+      #### Show Ubuntu Version
+      ```bash
         lsb_release -a
         #or:
         cat /etc/*release
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='centos-rhel'></a>
-      <h3>CentOS/RHEL</h3>
+      ### <a name='centos-rhel'></a>CentOS / RHEL
 
-      <h4>Change Hostname</h4>
-      <pre><code class='bash'>
+      #### Change Hostname
+      ```bash
         hostnamectl set-hostname my-new-hostname
-      </code></pre>
+        ```
 
-      <h4>Show Version</h4>
-      <pre><code class='bash'>
+      #### Show Version
+      ```bash
         cat /etc/*release
-      </code></pre>
+        ```
 
-      <h4>Add Static IP</h4>
-      <p markdown='1' class='no-mb'>Add modify the entries below within: `/etc/sysconfig/network-scripts/ifcfg-eth0` (change IP addresses according to your network). The name for your network connection could differ from `ifcfg-eth0`.</p>
-      <pre><code class='bash'>
+      #### Add Static IP
+
+      Add modify the entries below within: `/etc/sysconfig/network-scripts/ifcfg-eth0` (change IP addresses according to your network). The name for your network connection could differ from `ifcfg-eth0`.
+
+      ```bash
         ...
         DEVICE="eth0"
         BOOTPROTO="static"
@@ -982,14 +1003,12 @@ This will remove the directory from your repo, but not from the file system.
         DNS2="192.168.3.2"
         ONBOOT="yes"
         ...
-      </code></pre>
-    </article>
+      ```
 
-    <article>
-    <a name='arch'></a>
-    <h3>Arch</h3>
-      <h4>Pacman Commands</h4>
-      <pre><code>
+    ### <a name='arch'></a>ARCH
+      #### Pacman Commands
+
+```bash
         #Sync and Update:
         pacman -Syu
 
@@ -998,33 +1017,32 @@ This will remove the directory from your repo, but not from the file system.
 
         #Remove a package:
         pacman -R package_name
-      </code></pre>
+        ```
 
-      <h4>Show Version</h4>
-      <pre><code>
+      #### Show Version
+      ```bash
         lsb_release -a
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='linux'></a>
-      <h3>Linux</h3>
+      ### <a name='linux'></a>Linux
 
-      <h4>Init Systems</h4>
-      <h5>SystemD</h5>
-      <p>Systemd is managed my 'systemctl'. To start sshd, we would run: <code>systemctl start sshd</code>.</p>
+      #### Init Systems
+      ##### SystemD
+      Systemd is managed my 'systemctl'. To start sshd, we would run: <code>systemctl start sshd</code>.
 
-      <h5>Upstart</h5>
-      <p>Upstart is managed by 'initctl'. To start sshd we would run: <code>initctl start sshd</code>. Upstart was invented as a replace for System V by Ubuntu.</p>
+      ##### Upstart
 
-      <h5>System V (SysV)</h5>
-      <p>To start sshd, we would run: '/etc/init.d/ssh start'. This was primarily used by older versions of Linux.</p>
+      Upstart is managed by 'initctl'. To start sshd we would run: `initctl start sshd`. Upstart was invented as a replace for System V by Ubuntu.
 
-      <h5>BSD Init</h5>
-      <p>The BSD based init system is configured under /etc/rc.conf. To start sshd, we would run: '/etc/rc.d/sshd start'. BSD and Slackware use the BSD init system</p>
+      ##### System V (SysV)
 
-      <h4>Linux partition/format with Parted</h4>
-      <pre><code class='bash'>
+      To start sshd, we would run: '/etc/init.d/ssh start'. This was primarily used by older versions of Linux.
+
+      ##### BSD Init
+      The BSD based init system is configured under /etc/rc.conf. To start sshd, we would run: '/etc/rc.d/sshd start'. BSD and Slackware use the BSD init system
+
+      #### Linux partition/format with Parted
+      ```bash
         parted /dev/sdb # Open device with gparted:
         print # Print device info:
         print free # Show free space
@@ -1055,25 +1073,25 @@ This will remove the directory from your repo, but not from the file system.
         mkfs.ext4 -L mydrive /dev/sdb1
 
         eject /dev/sdb1 # Eject partition:
-      </code></pre>
+        ```
 
-      <h4>Show Directory Size</h4>
-      <pre><code class='bash'>
+      #### Show Directory Size
+      ```bash
         du -sh directory_path
-      </code></pre>
+      ```
 
-      <h4>SystemD</h4>
-      <pre><code class='bash'>
+      #### SystemD
+      ```bash
         #'enable' will create a symbolic link so that the service starts on reboot
         #'disable' will remove the symbolic link
         #'is-active' will tell you if the service is running
         #'is-enable' will tell you if it starts on boot
         systemctl [status, enable, disable, is-active, is-enabled start, restart, reload, stop] application.service
-      </code></pre>
+        ```
 
-      <h4>Change Username</h4>
-      <p>If you want to switch user 'joe' to 'sally', below are the steps:</p>
-      <pre><code class='bash'>
+      #### Change Username
+      If you want to switch user 'joe' to 'sally', below are the steps:
+      ```bash
         usermod -l sally joe
 
         #Verify that the new user exists and the old one does not:
@@ -1093,21 +1111,20 @@ This will remove the directory from your repo, but not from the file system.
         #If you search these two files, you should not see the 'joe' user/group:
         cat /etc/group | grep joe
         cat /etc/passwd | grep joe
+        ```
 
-      </code></pre>
-
-      <h4>Rsync</h4>
-      <pre><code class='bash'>
+      #### Rsync
+      ```bash
         rsync -avz --delete /original/folder/location /new/folder/location
-      </code></pre>
+        ```
 
-      <h4>Reload Bash Config</h4>
-      <pre><code class='bash'>
+      #### Reload Bash Config
+      ```bash
         source .bashrc
-      </code></pre>
+        ```
 
-      <h4>Check Drive for Errors</h4>
-      <pre><code class='bash'>
+      #### Check Drive for Errors
+      ```bash
         #Health Summary:
         smartctl -H /dev/sdb
         #Time required to run HDD Test:
@@ -1124,29 +1141,29 @@ This will remove the directory from your repo, but not from the file system.
 
         #Print Details of Latest Test:
         smartctl -a /dev/sdb
-      </code></pre>
+        ```
 
-      <h4>Check Drive for Bad Blocks</h4>
-      <pre><code class='bash'>
+      #### Check Drive for Bad Blocks
+      ```bash
         #Test for bad block:
         badblocks -vs /dev/sdb > badblocks_results.txt
-      </code></pre>
+      ```
 
-      <h4>Correct Bad Blocks</h4>
-      <pre><code class='bash'>
+      #### Correct Bad Blocks
+      ```bash
         #ext(2/3/4) filesystem:
         e2fsck -l badblocks_results.txt /dev/sdb
 
         #other filesystems:
         fsck -l badblocks_results.txt /dev/sdb
-      </code></pre>
+        ```
 
-      <h4 markdown='1'>Show Security Settings with `ls`</h4>
-      <pre><code class='bash'>
+      #### Show Security Settings with `ls`
+      ```bash
         ls -Z
-      </code></pre>
-      <h4 markdown='1'>Crontab</h4>
-      <pre><code class='bash'>
+      ```
+      #### Crontab
+      ```bash
         *  *  *  *  *         command
         -  -  -  -  -
         |  |  |  |  |
@@ -1155,173 +1172,165 @@ This will remove the directory from your repo, but not from the file system.
         |  |  +------------------- day of month (1 - 31)
         |  +------------- hour (0 - 23)
         +------------ minute (0 - 59)
-      </code></pre>
+        ```
 
-      <h4 markdown='1'>Write ISO/IMG to Disk or USB</h4>
-      <p>The command below could also be executed with 'bs=4M'.</p>
-      <pre><code class='bash'>
+      #### Write ISO/IMG to Disk or USB
+      The command below could also be executed with 'bs=4M'.
+      ```bash
         fdisk -l
         umount /dev/sdb
         dd if=/path/to/iso/or/img of=/dev/sdb bs=1M status=progress && sync
         eject /dev/sdb
-      </code></pre>
+      ```
 
-      <h4 markdown='1'>Find Linux Version</h4>
-      <h5>Kernel:</h5>
-      <pre><code class='bash'>
+      #### Find Linux Version
+
+      ##### Kernel:
+      ```bash
         uname -mrs
       </code></pre>
-      <h5>Distribution:</h5>
-      <pre><code class='bash'>
+      ```
+      ##### Distribution:
+      ```bash
         cat /etc/*-release
-      </code></pre>
-      <h4>Prevent Command from Being Recorded in Terminal History</h4>
-      <pre><code class='bash'>
+        ```
+      #### Prevent Command from Being Recorded in Terminal History
+      ```bash
         &lt;space&gt; command
-      </code></pre>
-      <h4>Logged In User History (last 10)</h4>
-      <pre><code class='bash'>
+        ```
+      #### Logged In User History (last 10)
+      ```bash
         last -10
-      </code></pre>
-      <h4>Wipe HDD with 'dd' Command</h4>
-      <pre><code class='bash'>
+        ```
+      #### Wipe HDD with 'dd' Command
+      ```bash
         #With Zeros:
         dd if=/dev/zero of=/dev/sdb bs=1M status=progress && sync
 
         #With Random Data:
         dd if=/dev/urandom of=/dev/sdb bs=1M status=progress && sync
-      </code></pre>
-      <h4>Terminal Calculator</h4>
-      <pre><code class='bash'>
+        ```
+      #### Terminal Calculator
+      ```bash
         bc -l
-      </code></pre>
-      <h4>System Uptime</h4>
-      <pre><code class='bash'>
+        ```
+      #### System Uptime
+      ```bash
         uptime
-      </code></pre>
-      <h4>Clear Terminal</h4>
-      <pre><code class='bash'>
+      ```
+      #### Clear Terminal
+      ```bash
         CTRL + l
-      </code></pre>
-      <h4>Extract a .tar File</h4>
-      <pre><code class='bash'>
+        ```
+      #### Extract a .tar File
+      ```bash
         tar -xvf file.tar
-      </code></pre>
-      <h4>Extract a .tar.gz File</h4>
-      <pre><code class='bash'>
+        ```
+      #### Extract a .tar.gz File
+      ```bash
         tar -xzvf file.tar.gz
-      </code></pre>
-      <h4>Extract a .tar.bz2 File</h4>
-      <pre><code class='bash'>
+        ```
+      #### Extract a .tar.bz2 File
+      ```bash
         tar -xjvf file.tar.bz2
-      </code></pre>
-      <h4>Finding a File</h4>
-      <pre><code class='bash'>
+        ```
+      #### Finding a File
+      ```bash
         find / -name [file name you are searching] 2> /dev/null
-      </code></pre>
-      <h4>Bring Job Into the Foreground</h4>
-      <pre><code class='bash'>
+        ```
+      #### Bring Job Into the Foreground
+      ```bash
         fg
-      </code></pre>
-      <h4>Pause Job</h4>
-      <pre><code class='bash'>
+        ```
+      #### Pause Job
+      ```bash
         Ctrl + Z
-      </code></pre>
-      <h4>Resume Paused Job in Background</h4>
-      <pre><code class='bash'>
+        ```
+      #### Resume Paused Job in Background
+      ```bash
         bg
-      </code></pre>
-      <h4>Continue Execution after Shell Exit</h4>
-      <pre><code class='bash'>
+        ```
+      #### Continue Execution after Shell Exit
+      ```bash
         nohup ./script.sh &
-      </code></pre>
-      <h4>List Background Jobs</h4>
-      <pre><code class='bash'>
+        ```
+      #### List Background Jobs
+      ```bash
         jobs
-      </code></pre>
-      <h4>Start Program in Background</h4>
-      <pre><code class='bash'>
+        ```
+      #### Start Program in Background
+      ```bash
         ./script.sh &
-      </code></pre>
-      <h4>Direct All Output to Log File</h4>
-      <pre><code class='bash'>
+        ```
+      #### Direct All Output to Log File
+      ```bash
         ./script.sh 1> ~/tmp/log.txt 2> ~/tmp/log.txt &
-      </code></pre>
-      <h4>Direct All Output to Null</h4>
-      <pre><code class='bash'>
+        ```
+      #### Direct All Output to Null
+      ```bash
         ./script.sh 1> /dev/null 2> /dev/null &
-      </code></pre>
-      <h4>Run 256 Checksum</h4>
-      <pre><code class='bash'>
+        ```
+      #### Run 256 Checksum
+      ```bash
         sha256sum /the/path/to/file.iso
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='mac'></a>
-      <h3>Mac</h3>
-      <h4>Run 256 Checksum</h4>
-      <pre><code class='bash'>
+      ### <a name='mac'></a>Mac
+      #### Run 256 Checksum
+      ```bash
         shasum -a 256 /the/path/to/file.iso
-      </code></pre>
-      <h4>Change Time Machine Backup Frequency</h4>
-      <p>The interval is set in seconds.</p>
-      <pre><code class='bash'>
+        ```
+      #### Change Time Machine Backup Frequency
+
+      The interval is set in seconds.
+
+      ```bash
         defaults write /System/Library/Launch Daemons/com.apple.backupd-auto StartInterval -int 1800
-      </code></pre>
-      <h4>Find IP</h4>
-      <pre><code class='bash'>
+        ```
+      #### Find IP
+      ```bash
         ifconfig |  grep -oE "\w* \b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
-      </code></pre>
-      <h4>Flush DNS</h4>
-      <pre><code class='bash'>
+        ```
+      #### Flush DNS
+      ```bash
         killall -HUP mDNSResponder
-      </code></pre>
-      <h4 markdown='1'>Write ISO/IMG to Disk or USB</h4>
-      <p>The command below could also be executed with 'bs=4m'.</p>
-      <pre><code class='bash'>
+        ````
+      #### Write ISO/IMG to Disk or USB
+
+      The command below could also be executed with 'bs=4m'.
+      ```bash
         diskutil list
         umount /dev/disk2
         dd if=/path/to/iso/or/img/file of=/dev/disk2 bs=1m && sync
         diskutil eject /dev/disk2
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='mysql'></a>
-      <h3>MySQL</h3>
-      <h5>Connect to Database</h5>
-      <pre><code class='bash'>
+      ### <a name='mysql'></a>MySQL
+      ##### Connect to Database
+      ```bash
         mysql -u [username] -p [password] -h [hostname]
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='netstat'></a>
-      <h3>Netstat</h3>
-      <h4>Find Listening Port (Bash)</h4>
-      <pre><code class='bash'>
+      ### <a name='netstat'></a>Netstat
+
+      #### Find Listening Port (Bash)
+      ```bash
         netstat -nao | find "80"
-      </code></pre>
-      <h4>Find Listening Port (Windows)</h4>
-      <pre><code class='bash'>
+        ```
+      #### Find Listening Port (Windows)
+      ```bash
+
         netstat -nao | findstr "0.0.80"
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='mysql'></a>
-      <h3>MySQL</h3>
-      <h5>Connect to Database</h5>
-      <pre><code class='bash'>
+      ### <a name='mysql'></a>MySQL
+      ##### Connect to Database
+      ```bash
         mysql -u [username] -p [password] -h [hostname]
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='psql'></a>
-      <h3>PostGresql</h3>
-      <div class='code'>
+      ### <a name='psql'></a>PostgreSQL
+
         <dl>
           <dt>Connect to Database</dt>
           <dd><code>\c DATABASE_NAME</code></dd>
@@ -1342,13 +1351,9 @@ This will remove the directory from your repo, but not from the file system.
           <dt>Alter Role</dt>
           <dd><code>ALTER USER myuser WITH CREATEDB;</code></dd>
         </dl>
-      </div>
-    </article>
 
-    <article>
-      <a name='kanban'></a>
-      <h3>Kanban</h3>
-      <div class='code'>
+      ### <a name='kanban'></a>Kanban
+
         <dl>
           <dt>Swim Lanes</dt>
           <dd>Rows</dd>
@@ -1361,87 +1366,87 @@ This will remove the directory from your repo, but not from the file system.
           <dt>Hidden Work</dt>
           <dd>Something you are working on that is not visible on the Kanban Board</dd>
         </dl>
-      </div>
-    </article>
 
-    <article>
-      <a name='python'></a>
-      <h3>Python</h3>
-      <h4>Start Simple Server</h4>
-      <pre><code class='bash'>
+      ### <a name='python'></a>Python
+
+      #### Start Simple Server
+
+      ```bash
         python -m SimpleHTTPServer
-      </code></pre>
+        ```
 
-      <h4>Start Simple Server with Python 3</h4>
-      <pre><code class='bash'>
+      #### Start Simple Server with Python 3
+      ```bash
         python -m http.server
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='rails'></a>
-      <h3>Rails</h3>
+      ### <a name='rails'></a>Rails
 
-      <h4>Inheriting Directly from ActionController::Base</h4>
-      <p>Inheriting directly from: "ActionController::Base" instead of: "ApplicationController" will circumvent any code in your application_controller.rb file. Essentially it is like "skip running anything in the application_controller.rb file". "ApplicationController" inherits from "ActionController::Base".</p>
+      #### Inheriting Directly from ActionController::Base
+      Inheriting directly from: "ActionController::Base" instead of: "ApplicationController" will circumvent any code in your application_controller.rb file. Essentially it is like "skip running anything in the application_controller.rb file". "ApplicationController" inherits from "ActionController::Base".
 
-      <h4>Output image path from console</h4>
-      <pre><code class='bash'>
+      #### Output image path from console
+      ```bash
         ActionController::Base.helpers.asset_path('image.jpg')
 
         #Or:
         include ActionView::Helpers::AssetUrlHelper
         asset_path('image.jpg')
-      </code></pre>
-      <h4>Open Rails Database Console</h4>
-      <pre><code class='bash'>
+        ```
+      #### Open Rails Database Console
+      ```bash
         rails dbconsole
-      </code></pre>
-      <h4>Clear Test Log File</h4>
-      <pre><code class='bash'>
+        ```
+      #### Clear Test Log File
+      ```bash
         rails log:clear LOGS=test
-      </code></pre>
-      <h4>Rails Controller Methods Are Typically Ordered</h4>
-      <ol>
-        <li>index</li>
-        <li>show</li>
-        <li>new</li>
-        <li>edit</li>
-        <li>create</li>
-        <li>update</li>
-        <li>destroy</li>
-      </ol>
-      <h4>Rollback in Steps</h4>
-      <pre><code class='bash'>
+        ```
+      #### Rails Controller Methods Are Typically Ordered
+
+        1.index
+        2. show
+        3. new
+        4. edit
+        5. create
+        6. update
+        7. destroy
+
+      #### Rollback in Steps
+      ```bash
         rails db:rollback STEP=1
-      </code></pre>
-      <h4>Show Migration Status</h4>
-      <pre><code class='bash'>
+        ```
+      #### Show Migration Status
+      ```bash
         rails db:migrate:status
-      </code></pre>
-      <h4>Run Migrations on Test Database</h4>
-      <pre><code class='bash'>
+        ```
+      #### Run Migrations on Test Database
+      ```bash
         bin/rails db:migrate RAILS_ENV=test
-      </code></pre>
-      <h4>Rails CRUD forms with no form plugin</h4>
-      <a href='https://github.com/joshayoung/rails-basic-forms'>github.com/joshayoung/rails-basic-forms</a>
-      <h4>Start Local Server</h4>
-      <pre><code class='bash'>
+        ```
+
+      #### Rails CRUD forms with no form plugin
+
+      [github.com/joshayoung/rails-basic-forms](https://github.com/joshayoung/rails-basic-forms)
+      #### Start Local Server
+      ```bash
         rails server (rails s)
-      </code></pre>
-      <h4>Start Local Server on any IP</h4>
-      <pre><code class='bash'>
+        ```
+      #### Start Local Server on any IP
+      ```bash
         rails s -b 0.0.0.0
-      </code></pre>
-      <h4>Start Local Server on different port</h4>
-      <p>The default port is 3000 if unspecified.</p>
-      <pre><code class='bash'>
+        ```
+      #### Start Local Server on different port
+
+      The default port is 3000 if unspecified.
+
+```bash
         rails s -b 0.0.0.0 -P tmp/pids/srv1.pid
         rails s -b 0.0.0.0 -p 3001 -P tmp/pids/srv2.pid
         rails s -b 0.0.0.0 -p 3002 -P tmp/pids/srv3.pid
-      </code></pre>
-      <h4>Active Record Errors</h4>
-      <pre><code class='ruby'>
+      ```
+
+      #### Active Record Errors
+      ```ruby
         #Model validations:
         class Student
           validates :name, :grade, :act_score, presence: true
@@ -1455,38 +1460,40 @@ This will remove the directory from your repo, but not from the file system.
 
         #Show errors as sentences:
         new_student.errors.full_messages
-      </code></pre>
-      <h4>Route Syntax</h4>
-      <pre><code class='ruby'>
+        ```
+      #### Route Syntax
+      ```ruby
         verb "the_url" => "controller#action"
         get "tickets" => "tickets#index"
         get "tickets/:id" => "tickets#show"
-      </code></pre>
-      <h4>Open SQLite from Rails</h4>
-      <pre><code class='bash'>
+        ```
+      #### Open SQLite from Rails
+      ```bash
         rails dbconsole
-      </code></pre>
-      <h4>Show Rail Project Info</h4>
-      <pre><code class='bash'>
+        ```
+      #### Show Rail Project Info
+      ```bash
         rails about
-      </code></pre>
-      <h4>Open Rails Console</h4>
-      <pre><code class='bash'>
+        ```
+      #### Open Rails Console
+      ```bash
         rails console
         or:
         rails c
 
         #reload the console to pull in any code changes made:
         reload!
-      </code></pre>
-      <h4>Rails Tasks</h4>
-      <pre><code class='bash'>
+        ```
+      #### Rails Tasks
+      ```bash
         rails -T (commands than can be run)
         rails -T db (database related commands that can be run)
-      </code></pre>
-      <h4>Create Migration</h4>
-      <p>Older versions of rails used the 'rake' command instead of 'rails' below.</p>
-      <pre><code class='bash'>
+        ```
+      #### Create Migration
+
+      Older versions of rails used the 'rake' command instead of 'rails' below.
+
+      ```ruby
         rails g migration [migration name] field:type field:type...
 
         rails db:migrate
@@ -1496,32 +1503,38 @@ This will remove the directory from your repo, but not from the file system.
         rails db:rollback (rolls back the previous migration)
 
         rails db:migrate VERSION=XXX (rolls back to this migration)
-      </code></pre>
-      <h4>Add More Columns</h4>
-      <p>Using this convention, rails will know that you want to add the fields listed to the table defined by 'YYY' or 'yyy' below.</p>
-      <pre><code class='bash'>
+        ```
+      #### Add More Columns
+
+      Using this convention, rails will know that you want to add the fields listed to the table defined by 'YYY' or 'yyy' below.
+
+      ```bash
         rails g migration AddXXXToYYY ...
         rails g migration AddFieldsToTownships title:string moved_to:date
 
         rails g migration add_xxx_to_yyy
         rails g migration add_fields_to_townships
-      </code></pre>
-      <h4>Show Rails Generators</h4>
-      <pre><code class='bash'>
+        ```
+      #### Show Rails Generators
+      ```bash
         rails g
-      </code></pre>
-      <h4>Create Scaffolding</h4>
-      <pre><code class='bash'>
+        ```
+      #### Create Scaffolding
+      ```bash
         rails generate scaffold [name] attribute:type
-      </code></pre>
-      <pre><code class='bash'>
+        ```
+      ```bash
         rails generate scaffold Product title:string price:decimal
-      </code></pre>
-      <h4>Create Model (includes migration)</h4>
-      <p>Model names should be singular.</p>
-      <p>String is the default type, so that can be left off if the type is a string.</p>
-      <a href='http://api.rubyonrails.org/v5.2.0/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add_column'>Column Types</a>
-      <pre><code class='bash'>
+        ```
+      #### Create Model (includes migration)
+
+      Model names should be singular.
+
+      String is the default type, so that can be left off if the type is a string.
+
+      [Column Types](http://api.rubyonrails.org/v5.2.0/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add_column)
+
+      ```bash
         rails generate model [model name] [field[:type][:index] field[:type][:index]] [options]
 
         #or:
@@ -1536,22 +1549,27 @@ This will remove the directory from your repo, but not from the file system.
 
         #Migration Status:
         rails db:migrate:status
-      </code></pre>
-      <p>Example: A model named 'Student' would point to a table named 'students' by default.</p>
-      <h4>Create Controller and View</h4>
-      <p>Controller name is plural.</p>
-      <pre><code class='bash'>
+        ```
+      Example: A model named 'Student' would point to a table named 'students' by default.
+
+      #### Create Controller and View
+
+      Controller name is plural.
+
+      ```bash
         rails generate controller [controller name]
         or:
         rails g controller [controller name]
-      </code></pre>
-      <h4>Remove Controller and other files created above.</h4>
-      <pre><code class='bash'>
-        rails destroy controller [controller name]
-      </code></pre>
+        ```
+      #### Remove Controller and other files created above.
 
-      <h4>Basic Controller Methods</h4>
-      <pre><code class='ruby'>
+```bash
+        rails destroy controller [controller name]
+      ```
+
+      #### Basic Controller Methods
+
+```ruby
         class TicketsController < ApplicationController
           def index; end
           def create; end
@@ -1559,35 +1577,40 @@ This will remove the directory from your repo, but not from the file system.
           def update; end
           def destroy; end
         end
-      </code></pre>
+        ```
 
-      <h4>Views</h4>
-      <p>When you do not point the controller action to a specific view it will try to render the view with the same name as the action.</p>
-      <p>def 'index; end' would try to render the 'index.html.erb' view.</p>
+      #### Views
 
-      <h4>Create resourceful routes.</h4>
-      <p>This will create:</p>
-      <ul>
-        <li>Database migration for the 'students' table.</li>
-        <li>The Student model with the 'belongs_to' line pointing to 'course'.</li>
-        <li>A Student controller.</li>
-        <li>All of the resourceful routes for student.</li>
-      </ul>
-      <pre><code class='bash'>
+      When you do not point the controller action to a specific view it will try to render the view with the same name as the action.
+
+      def 'index; end' would try to render the 'index.html.erb' view.
+
+      #### Create resourceful routes.
+
+      This will create:
+
+    * Database migration for the 'students' table.
+    * The Student model with the 'belongs_to' line pointing to 'course'.
+    * A Student controller.
+    * All of the resourceful routes for student.
+
+      ```bash
         rails g resource [resource name] field:type field:type...
 
         rails g resource student first_name:string last_name:string course:references
-      </code></pre>
-      <h4>Show Routes</h4>
-      <p>Show routes from the browser app by going to this path: http://[url of app][:port]/rails/info/routes.</p>
-      <pre><code class='bash'>
+        ```
+      #### Show Routes
+
+      Show routes from the browser app by going to this path: http://[url of app][:port]/rails/info/routes.
+
+      ```bash
         rails routes
         or:
         rake routes
-      </code></pre>
+      ```
 
-      <h4>Resourceful Routes in route.rb</h4>
-      <pre><code class='ruby'>
+      #### Resourceful Routes in route.rb
+      ```ruby
         Rails.application.routes.draw
           root "students#index"
           get "students" => "students#index", as: "students"
@@ -1606,10 +1629,10 @@ This will remove the directory from your repo, but not from the file system.
           root "students#index"
           resources :students
         end
-      </code></pre>
+        ```
 
-      <h4>One-to-Many Nested Rotues in route.rb</h4>
-      <pre><code class='ruby'>
+      #### One-to-Many Nested Rotues in route.rb
+      ```ruby
         get '/lists/:list_id/notes' => 'notes#index', as: 'list_notes'
         post '/lists/:list_id/notes' => 'notes#create'
         get 'lists/:list_id/notes/new' => 'notes#new', as: 'new_list_note'
@@ -1618,10 +1641,10 @@ This will remove the directory from your repo, but not from the file system.
         patch 'lists/:list_id/notes/:id' => 'notes#update'
         patch 'lists/:list_id/notes/:id' => 'notes#update'
         delete 'lists/:list_id/notes/:id' => 'notes#destroy'
-      </code></pre>
+        ```
 
+      #### List of Resourceful routes
 
-      <h4>List of Resourceful routes</h4>
       <table class='rails-resourceful-routes'>
         <thead>
           <tr>
@@ -1700,23 +1723,26 @@ This will remove the directory from your repo, but not from the file system.
           </tr>
         </tbody>
       </table>
-      <p>** There are exceptions to the SQL displayed here. These example serve as the most common implementations in my experience.</p>
-      <p>Each of the 'name's listed in the table above is appended with either '_url' or '_path' in rails.</p>
-      <p>In the rails app, use '_path' for your views and '_url' for controller redirects.</p>
-      <h5>_url (full path to page)</h5>
-      <ul>
-        <li>i.e. students_url: http://www.joshyoung.me/students</li>
-        <li>i.e. student_url(4): ttp://www.joshyoung.me/students/4</li>
-      </ul>
-      <h5>_path (relative path to page)</h5>
-      <ul>
-        <li>i.e. students_path: /students</li>
-        <li>i.e. student_path(4): /students/4</li>
-      </ul>
-      <h4>Naming</h4>
-      <p>By convention the name of the model is singular and the name of the table is plural.</p>
-      <h4>Create New Table Entry</h4>
-      <pre><code class='ruby'>
+
+      ** There are exceptions to the SQL displayed here. These example serve as the most common implementations in my experience.
+      Each of the 'name's listed in the table above is appended with either '_url' or '_path' in rails.
+      In the rails app, use '_path' for your views and '_url' for controller redirects.
+
+      ##### _url (full path to page)
+
+        * i.e. students_url: http://www.joshyoung.me/students
+        * i.e. student_url(4): ttp://www.joshyoung.me/students/4
+
+      ##### _path (relative path to page)
+      * i.e. students_path: /students</li>
+      * i.e. student_path(4): /students/4</li>
+
+      #### Naming
+
+      By convention the name of the model is singular and the name of the table is plural.
+
+      #### Create New Table Entry
+      ```ruby
         township = Township.new
         township.city = 'London'
         township.country = 'England'
@@ -1731,9 +1757,9 @@ This will remove the directory from your repo, but not from the file system.
 
         Township.create(city: 'London', country: 'England')
 
-      </code></pre>
-      <h4>Update Table Value</h4>
-      <pre><code class='ruby'>
+```
+      #### Update Table Value
+      ```ruby
         township = Township.find(2)
         township.city = 'London'
         township.country = 'England'
@@ -1743,15 +1769,16 @@ This will remove the directory from your repo, but not from the file system.
 
         township.update(city: 'London', country: 'England')
 
-      </code></pre>
-      <h4>Delete Table Value</h4>
-      <pre><code class='ruby'>
+```
+      #### Delete Table Value
+      ```ruby
         township = Township.find_by(city: 'Jacksonville')
         township.destroy
-      </code></pre>
+      ```
 
-      <h4>One-to-Many Relationships</h4>
-      <pre><code class='ruby'>
+
+      #### One-to-Many Relationships
+      ```ruby
         #One (parent):
         class Student < ApplicationRecord
           has_many :movies
@@ -1761,24 +1788,22 @@ This will remove the directory from your repo, but not from the file system.
         class Movie < ApplicationRecord
           belongs_to :student
         end
-      </code></pre>
+        ```
 
-      <pre><code class='ruby'>
+      ```ruby
         #Setup the cascade to delete movies, then the student it removed:
         class Student < ApplicationRecord
           has_many :devices, dependent: :destroy
         end
-      </code></pre>
+        ```
 
-      <p>Generate the relationship:</p>
-      <pre><code class='bash'>
+      Generate the relationship:
+
+      ```bash
         rails g resource Device name:string student:references
-      </code></pre>
+        ```
 
-
-      <div style='display: flex;'>
-        <div style='margin-right:20px;'>
-          <h5>One (parent):</h5>
+          ##### One (parent):
           <table>
             <thead>
               <tr>
@@ -1803,10 +1828,8 @@ This will remove the directory from your repo, but not from the file system.
               </tr>
             </tbody>
           </table>
-        </div>
 
-        <div>
-          <h5>Many (child):</h5>
+          ##### Many (child):
           <table>
             <thead>
               <tr>
@@ -1836,16 +1859,15 @@ This will remove the directory from your repo, but not from the file system.
               </tr>
             </tbody>
           </table>
-        </div>
-      </div>
 
-      <p>In the above example, 'student_id' is a foreign key pointing to the 'id' field in the 'students' table.</p>
-      <p>The foreign key will always be the parent's table name in singular form (student) with an '_id' appended to the end. So in this case it is 'student_id' since the parent table is 'students'.</p>
+      In the above example, 'student_id' is a foreign key pointing to the 'id' field in the 'students' table.
+      The foreign key will always be the parent's table name in singular form (student) with an '_id' appended to the end. So in this case it is 'student_id' since the parent table is 'students'.
 
-      <p>In the ruby console, <strong>student.devices</strong> would return all of the devices that student possesses. On the other hand, <strong>device.student</strong> would return the student who is the owner of the device selected.</p>
+      In the ruby console, <strong>student.devices</strong> would return all of the devices that student possesses. On the other hand, <strong>device.student</strong> would return the student who is the owner of the device selected.
 
-      <h4>Many-to-Many Relationships</h4>
-      <pre><code class='ruby'>
+      #### Many-to-Many Relationships
+
+      ```ruby
         class Student < ApplicationRecord
           has_many :devices
         end
@@ -1858,10 +1880,8 @@ This will remove the directory from your repo, but not from the file system.
         class Color < ApplicationRecord
           has_many :devices
         end
-      </code></pre>
+        ```
 
-      <div style='display: flex;'>
-        <div style='margin-right:5px;'>
           <table>
             <thead>
               <tr>
@@ -1886,9 +1906,7 @@ This will remove the directory from your repo, but not from the file system.
               </tr>
             </tbody>
           </table>
-        </div>
 
-        <div style='margin-right: 5px;'>
           <table>
             <thead>
               <tr>
@@ -1922,8 +1940,7 @@ This will remove the directory from your repo, but not from the file system.
               </tr>
             </tbody>
           </table>
-        </div>
-        <div>
+
           <table>
             <thead>
               <tr>
@@ -1949,27 +1966,23 @@ This will remove the directory from your repo, but not from the file system.
               </tr>
             </tbody>
           </table>
-        </div>
-      </div>
-    </article>
 
-    <article>
-      <a name='ruby'></a>
-      <h3>Ruby</h3>
+      ### <a name='ruby'></a>Ruby
 
-      <h4>Output just a class' own methods</h4>
-      <pre><code class='ruby'>
+
+      #### Output just a class' own methods
+      ```ruby
         klass = Klass.new
 
         puts klass.methods - methods
-      </code></pre>
+        ```
 
-      <h4>Loads IRB With Active Support</h4>
-      <pre><code class='ruby'>
+      #### Loads IRB With Active Support
+      ```ruby
         !rails c
-      </code></pre>
-      <h4>Struct</h4>
-      <pre><code class='ruby'>
+        ```
+      #### Struct
+      ```ruby
         # With Struct you can only define
         # the attributes at object creation
         Student = Struct.new(:name, :grade)
@@ -1980,10 +1993,10 @@ This will remove the directory from your repo, but not from the file system.
 
         # Outputs: 95
         puts george.grade
-      </code></pre>
+        ```
 
-      <h4>OpenStruct</h4>
-      <pre><code class='ruby'>
+      #### OpenStruct
+      ```ruby
         require 'ostruct'
         george = OpenStruct.new(name: 'george', grade: 95)
 
@@ -1992,40 +2005,41 @@ This will remove the directory from your repo, but not from the file system.
 
         # Outputs: 95
         puts george.grade
-      </code></pre>
-      <h4>Open documentation for project's gems</h4>
-      <pre><code class='ruby'>
+        ```
+      #### Open documentation for project's gems
+      ```ruby
         gem serve
-      </code></pre>
-      <h4>Install to global gemset (when using rvm)</h4>
-      <pre><code class='ruby'>
+      ```
+      #### Install to global gemset (when using rvm)
+
+```ruby
         rvm @global do gem install [gem name]
-      </code></pre>
-      <h4>Empty Method Returns Nil</h4>
-      <pre><code class='ruby'>
+      ```
+      #### Empty Method Returns Nil
+      ```ruby
         def find_grade; end
         grade = find_grade
 
         #Outputs nil:
         puts grade
-      </code></pre>
-      <h4>Naming</h4>
-      <pre><code class='ruby'>
+        ```
+      #### Naming
+      ```ruby
         #Class is a Noun:
         class Cards
           #Module is an Adjective:
           include Shuffleable
         end
-      </code></pre>
-      <h4>Ranges</h4>
-      <pre><code class='ruby'>
+        ```
+      #### Ranges
+      ```ruby
         #Inclusive:
         5..10
         #Exclusive:
         5...10
-      </code></pre>
-      <h4>Find Methods</h4>
-      <pre><code class='ruby'>
+      ```
+      #### Find Methods
+      ```ruby
         cat.private_methods
         cat.public_methods
         cat.protected_methods
@@ -2034,41 +2048,42 @@ This will remove the directory from your repo, but not from the file system.
         Cat.private_instance_methods
         Cat.protected_instance_methods
         Cat.public_instance_methods
-      </code></pre>
-      <h4>Syntactic Sugar</h4>
-      <p>At the end of the day, the operators we know like `+`, `-`, etc are actually methods in ruby. So these two will do the same thing:</p>
-      <pre><code class='ruby'>
+        ```
+      #### Syntactic Sugar
+      At the end of the day, the operators we know like `+`, `-`, etc are actually methods in ruby. So these two will do the same thing:
+      ```ruby
         y = 5 + 6;
         y = 5.+(6)
-      </code></pre>
-      <h4>Methods and Code Blocks</h4>
-      <p>By default all methods will accept a code block. However, they will not yield to the block unless the method includes a `yield` keyword.</p>
-      <pre><code class='ruby'>
+        ```
+      #### Methods and Code Blocks
+      By default all methods will accept a code block. However, they will not yield to the block unless the method includes a `yield` keyword.
+      ```ruby
         #These are both valid ways to call a method:
         my_method
         my_method { puts "Test" }
         my_method() { puts "Test" }
-      </code></pre>
-      <h4>Accept Multiple Arguments</h4>
-      <pre><code class='ruby'>
+        ```
+      #### Accept Multiple Arguments
+      ```ruby
         def lots_of(*a)
         end
 
         #Outpus: [1, 2, 3, 4]
         puts lots_of(1, 2, 3, 4)
-      </code></pre>
-      <h4>Multiline Comment</h4>
-      <pre><code class='ruby'>
+        ```
+      #### Multiline Comment
+
+```ruby
       =begin
         def a_function
           puts 'test'
         end
       =end
-      </code></pre>
-      <h4>Ruby Symbol vs Strings</h4>
-      <p>Symbols have the same object ID whereas strings do not.</p>
-      <p>Symbols are immutable and strings are mutable.</p>
-      <pre><code class='bash'>
+      ```
+      ####Ruby Symbol vs Strings
+      Symbols have the same object ID whereas strings do not.
+      Symbols are immutable and strings are mutable.
+      ```bash
         #Open irb:
         >> :pathway.object_id
         => 9854917
@@ -2084,9 +2099,9 @@ This will remove the directory from your repo, but not from the file system.
         >>
         >> :pathway == "pathway"
         => false
-      </code></pre>
-      <h4>Ruby Class Properties</h4>
-      <pre><code class='ruby'>
+        ```
+      #### Ruby Class Properties
+      ```ruby
         class RubyStudent
           #readable only:
           attr_reader :name
@@ -2113,10 +2128,10 @@ This will remove the directory from your repo, but not from the file system.
 
         #Call the accessor method:
         puts rstudent.name
-      </code></pre>
+        ```
 
-      <h4>Static Methods</h4>
-      <pre><code class='ruby'>
+      #### Static Methods
+      ```ruby
         class RubyStudent
           def self.my_method
             ...
@@ -2125,10 +2140,10 @@ This will remove the directory from your repo, but not from the file system.
 
         #Call static method:
         RubyStudent.my_method
-      </code></pre>
+      ```
 
-      <h4>Multiple Static Methods</h4>
-      <pre><code class='ruby'>
+      #### Multiple Static Methods
+      ```ruby
         class RubyStudent
           class << self
             def my_method
@@ -2144,12 +2159,12 @@ This will remove the directory from your repo, but not from the file system.
         #Call static method:
         RubyStudent.my_method
         RubyStudent.my_second_method
-      </code></pre>
+        ```
 
-      <h4>Ruby Modules</h4>
-      <p>Modules are a typically used to create reusable sections of code in the form of Mixins or they can be used to wrap classes thereby action as a Namespace.</p>
-      <p>Modules cannot be instantiated, so any methods have to be defined with self.</p>
-      <pre><code class='ruby'>
+      #### Ruby Modules
+      Modules are a typically used to create reusable sections of code in the form of Mixins or they can be used to wrap classes thereby action as a Namespace.
+      Modules cannot be instantiated, so any methods have to be defined with self.
+      ```ruby
         module Learnable
           ...
           def self.calculate
@@ -2161,11 +2176,11 @@ This will remove the directory from your repo, but not from the file system.
         Learnable::calculate
         #or
         Learnable.calculate
-      </code></pre>
+        ```
 
-      <h4>Ruby Class Inheritance</h4>
-      <p>Use inheritance when two class have a 'is-a' relationship. For instance: a MathStudent is a type of Student and a Fox is a type of Animal.</p>
-      <pre><code class='ruby'>
+      #### Ruby Class Inheritance
+      Use inheritance when two class have a 'is-a' relationship. For instance: a MathStudent is a type of Student and a Fox is a type of Animal.
+      ```ruby
         class Student
           ...
           def print_grade
@@ -2181,10 +2196,10 @@ This will remove the directory from your repo, but not from the file system.
         student = MathStudent.new
         #Prints 'A+':
         student.print_grade
-      </code></pre>
+        ```
 
-      <h4>Ruby Namespace</h4>
-      <pre><code class='ruby'>
+      #### Ruby Namespace
+      ```ruby
         module CollegeStudent
           class Student
             def self.outp
@@ -2199,11 +2214,11 @@ This will remove the directory from your repo, but not from the file system.
         CollegeStudent::Student.outp
         student = CollegeStudent::Student.new
         student.out
-      </code></pre>
+        ```
 
-      <h4>Ruby Mixins</h4>
-      <p>Ruby Mixins are just ruby modules that are included within a class.</p>
-      <pre><code class='ruby'>
+      #### Ruby Mixins
+      Ruby Mixins are just ruby modules that are included within a class.
+      ```ruby
         #If a module will be included in a class as a mixin, you do not have to define the method with self.
         #This way you can call the module method with the class instantiation.
 
@@ -2226,26 +2241,28 @@ This will remove the directory from your repo, but not from the file system.
 
         student = Student.new
         puts student.calculate(2, 2)
-      </code></pre>
-      <p>When you define a mixin, if you know what class it will be included within, you can use class properties in the Module definition, like below:</p>
-      <pre><code class='ruby'>
+        ```
+      When you define a mixin, if you know what class it will be included within, you can use class properties in the Module definition, like below:
+      ```ruby
         module Learnable
           def calculate(num1, num2)
             @first_number = 10
           end
         end
-      </code></pre>
-      <p>However, doing so could cause problems if you ever include the module within a class that does not define '@first_number'. Therefore it is best to use the class access within the module methods, like so:</p>
-      <pre><code class='ruby'>
+        ```
+      However, doing so could cause problems if you ever include the module within a class that does not define '@first_number'. Therefore it is best to use the class access within the module methods, like so:
+      ```ruby
         module Learnable
           def calculate(num1, num2)
             #Here we have to use 'self' otherwise the module will think it is defining a local variable.
             self.first_number = 10
           end
         end
-      </code></pre>
-      <p>Then when this is included in a class, it will work like this:</p>
-      <pre><code class='ruby'>
+        ```
+
+      Then when this is included in a class, it will work like this:
+
+      ```ruby
         require_relative 'learnable'
         class Student
           include Learnable
@@ -2258,10 +2275,10 @@ This will remove the directory from your repo, but not from the file system.
         end
 
         puts Student.new.first_number
-      </code></pre>
+        ```
 
-      <h4>Unless vs If</h4>
-      <pre><code class='ruby'>
+      #### Unless vs If
+      ```ruby
 
         #Prints 'false unless':
         unless false
@@ -2278,10 +2295,10 @@ This will remove the directory from your repo, but not from the file system.
 
         #Prints 'false if':
         puts 'false if' if !false
-      </code></pre>
+        ```
 
-      <h4>Memoization</h4>
-      <pre><code class='ruby'>
+      #### Memoization
+      ```ruby
         #If 'x' is false or nil return the value of 'y',
         #otherwise return the value of 'x':
         x ||= y
@@ -2291,11 +2308,11 @@ This will remove the directory from your repo, but not from the file system.
         def pizza_special
           @pizza ||= PizzaSpecial.find_the_pizza('cheese')
         end
-      </code></pre>
+        ```
 
-      <h4>When You Must Use 'self'.</h4>
-      <h5>For assigning values with the accessor method from within a class:</h5>
-      <pre><code>
+      #### When You Must Use 'self'.
+      ##### For assigning values with the accessor method from within a class:
+      ```ruby
         class Animal
           attr_accessor :tail
 
@@ -2325,10 +2342,10 @@ This will remove the directory from your repo, but not from the file system.
 
         #This would output 'Brown'.
         puts the_tail.tail
-      </code></pre>
+        ```
 
-      <h5>For defining 'class methods' (a.k.a. Static Methods):</h5>
-      <pre><code>
+      ##### For defining 'class methods' (a.k.a. Static Methods):
+      ```ruby
         class Student
           def self.new_grade(grade)
             @grade = grade
@@ -2336,10 +2353,10 @@ This will remove the directory from your repo, but not from the file system.
         end
 
         Student.new_grade('A')
-      </code></pre>
+        ```
 
-      <h4>Convenient Methods</h4>
-      <pre><code class='ruby'>
+      #### Convenient Methods
+      ```ruby
         class Test
           ...
         end
@@ -2352,10 +2369,10 @@ This will remove the directory from your repo, but not from the file system.
 
         #Prints: 89023478923
         puts test.object_id
-      </code></pre>
+        ```
 
-      <h4>Show Ancestors</h4>
-      <pre><code class='ruby'>
+      #### Show Ancestors
+      ```ruby
         #In a file named 'my_module.rb':
         module MyMod
           ...
@@ -2370,11 +2387,11 @@ This will remove the directory from your repo, but not from the file system.
 
         #Prints: [Test, MyMod, Object, Kernel, BasicObject]
         puts Test.ancestors
-      </code></pre>
+        ```
 
-      <h4>Function Return</h4>
-      <p>Functions always return a value even if they are empty.</p>
-      <pre><code>
+      #### Function Return
+      Functions always return a value even if they are empty.
+      ```ruby
         def empty_function
         end
 
@@ -2382,10 +2399,10 @@ This will remove the directory from your repo, but not from the file system.
 
         #Prints 'nil':
         puts return_value.inspect
-      </code></pre>
+        ```
 
-      <h4>Ruby Convert Types</h4>
-      <pre><code class='ruby'>
+      #### Ruby Convert Types
+      ```ruby
         a_string = 'a string value'
 
         #Convert to Symbol:
@@ -2396,25 +2413,29 @@ This will remove the directory from your repo, but not from the file system.
 
         #Convert to Integer:
         "123".to_i
-      </code></pre>
-      <h4>Look up Ruby Docs from command line</h4>
-      <p><a href='http://ruby-doc.org'>Online Documentation</a></p>
-      <pre><code class='bash'>
+        ```
+      #### Look up Ruby Docs from command line
+
+      [Online Documentation](http://ruby-doc.org)
+
+```bash
         ri
         #or:
         ri -i (for interactive mode)
-      </code></pre>
-      <h4>Interpolate code</h4>
-      <pre><code class='ruby'>
+        ```
+      #### Interpolate code
+      ```ruby
         variable_value = 'test'
         puts "Print out #{variable_value}"
-      </code></pre>
-      <h4>Start IRB Session</h4>
-      <pre><code class='bash'>
+        ```
+      #### Start IRB Session
+
+      ```bash
         irb
-      </code></pre>
-      <h4>If/Else Statement</h4>
-      <pre><code class='ruby'>
+        ```
+      #### If/Else Statement
+
+```ruby
         if a_value == 1
           puts "Yes"
         elsif a_value == 2
@@ -2422,9 +2443,10 @@ This will remove the directory from your repo, but not from the file system.
         else
           puts "Could not find."
         end
-      </code></pre>
-      <h4>Switch Statement</h4>
-      <pre><code class='ruby'>
+        ```
+      #### Switch Statement
+
+      ```ruby
         the_value = return_a_string()
 
         case the_value
@@ -2435,33 +2457,39 @@ This will remove the directory from your repo, but not from the file system.
           else
             puts "Could not find result."
           end
-      </code></pre>
-      <h4>Objects</h4>
-      <p>Ruby objects are always passed by reference</p>
-      <h4>Function</h4>
-      <pre><code class='ruby'>
+          ```
+      #### Objects
+
+      Ruby objects are always passed by reference
+
+      #### Function
+
+      ```ruby
         def function_name(parameter)
           ...
         end
       </code></pre>
-      <h4>Add to Array</h4>
-      <pre><code class='ruby'>
+      ```
+      #### Add to Array
+      ```ruby
         the_array << "val"
 
         #Or:
         the_array.push("val")
-      </code></pre>
-      <h4>Object Instantiation</h4>
-      <pre><code class='ruby'>
-        new_obj = Person.new
-      </code></pre>
-      <h4>Iteration</h4>
-      <pre><code class='ruby'>
-        array.each do |elem| ... end
-      </code></pre>
+        ```
+      #### Object Instantiation
 
-      <h4>Custom Iteration</h4>
-      <pre><code class='ruby'>
+      ```ruby
+        new_obj = Person.new
+        ```
+      #### Iteration
+
+```ruby
+        array.each do |elem| ... end
+        ```
+
+      #### Custom Iteration
+      ```ruby
         #Example 1:
         def output
           yield
@@ -2477,10 +2505,10 @@ This will remove the directory from your repo, but not from the file system.
         end
 
         output_num { |num| puts num }
-      </code></pre>
+        ```
 
-      <h4>Basic Blocks</h4>
-      <pre><code class='ruby'>
+      #### Basic Blocks
+      ```ruby
         2.times { puts 'Josh' }
 
         2.times do
@@ -2492,136 +2520,137 @@ This will remove the directory from your repo, but not from the file system.
         2.times do |i|
           puts "#{i} - Josh"
         end
-      </code></pre>
+        ```
 
-      <h4>Select Block</h4>
-      <pre><code class='ruby'>
+      #### Select Block
+      ```ruby
         #Returns just the numbers greater than '3':
         [1, 2, 3, 4, 5, 6, 7, 8, 9].select { |n| n > 3 }
-      </code></pre>
+        ```
 
-      <h4>Reject Block</h4>
-      <pre><code class='ruby'>
+      #### Reject Block
+      ```ruby
         #Rejects the numbers greater than '3':
         [1, 2, 3, 4, 5, 6, 7, 8, 9].reject { |n| n > 3 }
-      </code></pre>
+        ```
 
-      <h4>Reduce Block</h4>
-      <pre><code class='ruby'>
+      #### Reduce Block
+      ```ruby
         #Gets the sum with the reduce method:
         [1, 2, 3, 4, 5, 6, 7, 8, 9].reduce { |total, n| total + n }
         #or:
         [1, 2, 3, 4, 5, 6, 7, 8, 9].reduce (:+)
-      </code></pre>
+        ```
 
-      <h4>Sort Lowest to Highest</h4>
-      <pre><code class='ruby'>
+      #### Sort Lowest to Highest
+      ```ruby
         [11, 21, 73, 14, 95, 56, 97, 48, 19].sort
-      </code></pre>
+        ```
 
-      <h4>Sort Highest to Lowest</h4>
-      <pre><code class='ruby'>
+      #### Sort Highest to Lowest
+      ```ruby
         [11, 21, 73, 14, 95, 56, 97, 48, 19].sort { |a, b| b <=> a }
-      </code></pre>
+        ```
 
-      <h4>Returns boolean if it finds the result</h4>
-      <pre><code class='ruby'>
+      #### Returns boolean if it finds the result
+      ```ruby
         #This should return false.
         [11, 21, 73, 14, 95, 56, 97, 48, 19].any? { |n| n > 100 }
-      </code></pre>
+        ```
 
-      <h4>Returns the first match</h4>
-      <pre><code class='ruby'>
+      #### Returns the first match
+      ```ruby
         #This should return 73.
         [11, 21, 73, 14, 95, 56, 97, 48, 19].detect { |n| n > 70 }
-      </code></pre>
+        ```
 
-      <h4>Map the values returned into a new array</h4>
-      <pre><code class='ruby'>
+      #### Map the values returned into a new array
+      ```ruby
         [11, 21, 73, 14, 95, 19].map { |n| n * 3 }
-      </code></pre>
+        ```
 
-      <h4>Hash (associative array / dictionary)</h4>
-      <pre><code class='ruby'>
+      #### Hash (associative array / dictionary)
+      ```ruby
         {key => value}
-      </code></pre>
-      <pre><code class='ruby'>
+        ```
+        ```ruby
         {:sport => "baseball"} (the key can be anything)
-      </code></pre>
-      <p>These are both the same:</p>
-      <pre><code class='ruby'>
+        ```
+
+      These are both the same:
+
+```ruby
         {:sport => "baseball", :time_limit => 60}
 
         #Or:
         {sport: "baseball", time_limit: 60}
-      </code></pre>
-      <h4>Loop through a hash</h4>
-      <pre><code class='ruby'>
+        ```
+      #### Loop through a hash
+
+      ```ruby
         sports = {:sport => "baseball", :time_limit => 60}
         sports.each { |key, val| puts "#{key} - #{val}" }
-      </code></pre>
-    </article>
+      ```
 
-    <article>
-      <a name='sqlite'></a>
-      <h3>SQLite</h3>
-      <h4>Execute a Single Query</h4>
-      <pre><code class='bash'>
+      ### <a name='sqlite'></a>SQLite
+
+      #### Execute a Single Query
+      ```bash
         sqlite3 -line mydatabase.sqlite3 "select * from students"
-      </code></pre>
-      <h4>Select Databse</h4>
-      <pre><code class='bash'>
+      ```
+      #### Select Databse
+
+      ```bash
         \c [database]
-      </code></pre>
-      <h4>Describe Table</h4>
-      <pre><code class='bash'>
+        ```
+      #### Describe Table
+
+```bash
         \dt+
-      </code></pre>
-      <h4>Connect to DB</h4>
-      <pre><code class='bash'>
+        ```
+      #### Connect to DB
+      ```bash
         sqlite3 /path/to/database_file.db
-      </code></pre>
-      <h4>Show tables</h4>
-      <pre><code class='bash'>
+        ```
+      #### Show tables
+      ```bash
         .tables
-      </code></pre>
-      <h4>Tables Schema</h4>
-      <pre><code class='bash'>
+        ```
+      #### Tables Schema
+      ```bash
         .schema table_name
-      </code></pre>
-      <h4>Describe Table</h4>
-      <pre><code class='bash'>
+        ```
+      #### Describe Table
+      ```bash
         pragma table_info(table_name)
-      </code></pre>
-      <h4>Select all</h4>
-      <pre><code class='bash'>
+        ```
+      #### Select all
+      ```bash
         select * from table_name
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='security'></a>
-      <h3>Security</h3>
-      <h4>Ping Sweep</h4>
-      <pre><code class='bash'>
+      ### <a name='security'></a>Security
+
+      #### Ping Sweep
+      ```bash
         for i in `seq 1 255`; do ping -c 1 [IP ADDRESS].$i ; done
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='testing'></a>
-      <h3>Testing</h3>
-      <h4>Rspec Fail on First Error</h4>
-      <pre><code class='ruby'>
+      ### <a name='testing'></a>Testing
+      #### Rspec Fail on First Error
+      ```bash
         rspec --fail-fast
-      </code></pre>
-      <h4>Rspec with Documentation</h4>
-      <pre><code class='ruby'>
+        ```
+      #### Rspec with Documentation
+
+      ```ruby
         rspec -f d
-      </code></pre>
-      <h4>Test File Setup</h4>
-      <p>We have a space between each part below.</p>
-      <pre><code class='ruby'>
+        ```
+      #### Test File Setup
+
+      We have a space between each part below.
+
+      ```ruby
         # Setup:
         user = create(:user)
 
@@ -2630,55 +2659,58 @@ This will remove the directory from your repo, but not from the file system.
 
         # Verify:
         expect(Student.users).to eq([user])
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='ssh'></a>
-      <h3>SSH</h3>
-      <h4>Remote Port Forwarding</h4>
-      <p>Here <strong>9100</strong> is the remote port and <strong>22</strong> is the remote port.</p>
-      <pre><code class='bash'>
+      ### <a name='ssh'></a>SSH
+
+      #### Remote Port Forwarding
+
+      Here <strong>9100</strong> is the remote port and <strong>22</strong> is the remote port.
+
+```bash
         ssh -R 9100:127.0.0.1:22 username@192.168.6.7
-      </code></pre>
-      <h4>Local Port Forward</h4>
-      <p>In this case, <strong>9100</strong> would be our local port and <strong>80</strong> would be the remote.</p>
-      <pre><code class='bash'>
-        ssh -L 9100:www.remotesite.com:80 username@host
-      </code></pre>
-    </article>
+        ```
+      #### Local Port Forward
 
-    <article>
-      <a name='svg'></a>
-      <h3>SVG</h3>
-      <h4>SVG viewBox</h4>
-      <p>The viewBox has values of x, y, width, and height. The shapes within this box will be set in relation to the size of the viewBox. The viewBox location within the SVG tag can be offset with the first two numbers (x, y).</p>
-      <p>In the CodePen below below, you can see that the first and last example are consuming 100% of the width of the viewBox. When the screen is expanded or contracted, the elements within expand or contract accordingly, but always consume 100% of the size of the viewBox because the elements inside are sized to contain 100% of the viewBox width.</p>
-      <p>The middle example below internal shapes that total to less than the full width of the viewBox. The viewBox is also shifted from a starting point of 0,0 to demonstrate that the view box can be positioned anywhere within the contining SVG element.</p>
-      <p>To adjust the size of the SVG, you can set the outer containing `SVG` tag to be a certain percentage of the width of the browser window or even a fixed width. Within this the inner viewBox can be positioned within it.</p>
+      In this case, <strong>9100</strong> would be our local port and <strong>80</strong> would be the remote.
+
+```bash
+        ssh -L 9100:www.remotesite.com:80 username@host
+        ```
+
+      ### <a name='svg'></a>SVG
+
+      #### SVG viewBox
+
+      The viewBox has values of x, y, width, and height. The shapes within this box will be set in relation to the size of the viewBox. The viewBox location within the SVG tag can be offset with the first two numbers (x, y).
+
+      In the CodePen below below, you can see that the first and last example are consuming 100% of the width of the viewBox. When the screen is expanded or contracted, the elements within expand or contract accordingly, but always consume 100% of the size of the viewBox because the elements inside are sized to contain 100% of the viewBox width.
+
+      The middle example below internal shapes that total to less than the full width of the viewBox. The viewBox is also shifted from a starting point of 0,0 to demonstrate that the view box can be positioned anywhere within the contining SVG element.
+
+      To adjust the size of the SVG, you can set the outer containing `SVG` tag to be a certain percentage of the width of the browser window or even a fixed width. Within this the inner viewBox can be positioned within it.
+
       <p data-height="265" data-theme-id="0" data-slug-hash="xzgvKX" data-default-tab="html,result" data-user="joshayoung" data-embed-version="2" data-pen-title="SVG viewBox" class="codepen">See the Pen <a href="https://codepen.io/joshayoung/pen/xzgvKX/">SVG viewBox</a> by Josh Young (<a href="https://codepen.io/joshayoung">@joshayoung</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
-      <h4>SVG Links</h4>
+      #### SVG Links
       <p data-height="265" data-theme-id="0" data-slug-hash="xzgodE" data-default-tab="html,result" data-user="joshayoung" data-embed-version="2" data-pen-title="SVG Symbol" class="codepen">See the Pen <a href="https://codepen.io/joshayoung/pen/xzgodE/">SVG Symbol</a> by Josh Young (<a href="https://codepen.io/joshayoung">@joshayoung</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
-      <h4>SVG Elements</h4>
+      #### SVG Elements
       <p data-height="265" data-theme-id="0" data-slug-hash="wXgNvg" data-default-tab="html,result" data-user="joshayoung" data-embed-version="2" data-pen-title="SVG Stuff" class="codepen">See the Pen <a href="https://codepen.io/joshayoung/pen/wXgNvg/">SVG Stuff</a> by Josh Young (<a href="https://codepen.io/joshayoung">@joshayoung</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
-      <h4>Set SVG to Scale with Browser Width</h4>
-      <p>By default an SVG element will take up the full width of the browser unless it has a defined width. To circumvent this, you can give it a definined with such as 300px or a percentage. Below is an example of a way to set the SVG element to be half of the browser width.</p>
-      <p>If the SVG tag is set to scale with the browser width, the SVG shapes within the internal viewBox will scale accordingly.</p>
-      <pre><code>
+      #### Set SVG to Scale with Browser Width
+      By default an SVG element will take up the full width of the browser unless it has a defined width. To circumvent this, you can give it a definined with such as 300px or a percentage. Below is an example of a way to set the SVG element to be half of the browser width.
+      If the SVG tag is set to scale with the browser width, the SVG shapes within the internal viewBox will scale accordingly.
+      ```css
         svg {
           height: auto;
           //This could be any percentage:
           width: 50%;
         }
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='rubymine'></a>
-      <h3>RubyMine</h3>
+      ### <a name='rubymine'></a>RubyMine
+
       <dl>
         <dt>Open Context Menu</dt>
         <dd><code>Option(alt) + Enter</code></dd>
@@ -2689,52 +2721,43 @@ This will remove the directory from your repo, but not from the file system.
         <dt>MVC Dialog</dt>
         <dd><code>CTRL + CMD + UP-ARROW</code></dd>
       </dl>
-    </article>
 
-    <article>
-      <a name='scp'></a>
-      <h3>SCP</h3>
-      <h4>Local to Remote</h4>
-      <pre><code class='bash'>
+      ### <a name='scp'></a>SCP
+
+      #### Local to Remote
+      ```bash
         scp file.txt username@host:/to/myremote/directory
-      </code></pre>
-      <h4>Remote to Local</h4>
-      <pre><code class='bash'>
+        ```
+      #### Remote to Local
+      ```bash
         scp username@host:file.txt /to/my/local/directory
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='security'></a>
-      <h3>Security</h3>
-      <h4>Nmap Ping Scan (detect hosts)</h4>
-      <pre><code class='bash'>
+      ### <a name='security'></a>Security
+
+      #### Nmap Ping Scan (detect hosts)
+      ```bash
         nmap -sP 192.168.1.0/24
-      </code></pre>
-      <h4>Bash Ping Sweep</h4>
-      <h4>Usage: <strong>./sweep.sh 192.168.1</strong></h4>
-      <pre><code class='bash'>
+        ```
+      #### Bash Ping Sweep
+
+      #### Usage: <strong>./sweep.sh 192.168.1</strong>
+      ```bash
         #!/bin/bash
         ip=$1
         for i in `seq 0 1 255`; do
             ping -c 3 -t 5 $ip.$i > /dev/null 2>&1 && echo $ip.$i is up;
         done
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='php'></a>
-      <h3>PHP</h3>
-      <h4>GET/POST Assignment</h4>
-      <pre><code class='php'>
+      ### <a name='php'></a>PHP
+      #### GET/POST Assignment
+      ```php
         $var = isset($_GET['var']) ? $_GET['var'] : '';
-      </code></pre>
-    </article>
+      ```
 
-    <article>
-      <a name='tmux'></a>
-      <h3>Tmux</h3>
-      <div class='code'>
+      ### <a name='tmux'></a>TMUX
+
         <dl>
           <dt>Split Window Vertically:</dt>
           <dd><code>Ctrl-b %</code></dd>
@@ -2773,13 +2796,9 @@ This will remove the directory from your repo, but not from the file system.
           <dt>Rename Session</dt>
           <dd><code>tmux rename-session -t 0 [new name]</code></dd>
         </dl>
-      </div>
-    </article>
 
-    <article>
-      <a name='vim'></a>
-      <h3>Vim</h3>
-      <div class='code'>
+      ### <a name='vim'></a>VIM
+
         <dl>
           <dt>Remove all folds</dt>
           <dd>zR</dd>
@@ -2896,50 +2915,39 @@ This will remove the directory from your repo, but not from the file system.
           <dt>Open NETRW file exporer</dt>
           <dd><code>:e .</code></dd>
         </dl>
-      </div>
-    </article>
 
-    <article>
-      <a name='vs_code'></a>
-      <h3>VS Code</h3>
+      ### <a name='vs_code'></a>VS Code
       <dl>
         <dt>Output HTML Boilerplate</dt>
         <dd><code>html:5 + TAB</code></dd>
       </dl>
-    </article>
 
-    <article>
-      <a name='windows'></a>
-      <h3>Windows</h3>
-      <h4>Switch to C Drive</h4>
-      <pre><code class='bash'>
+      ### <a name='windows'></a>Windows
+
+      #### Switch to C Drive
+      ```bash
         cd /d C:
-      </code></pre>
-      <h4>Flush DNS</h4>
-      <pre><code class='batch'>
+      ```
+      #### Flush DNS
+      ```bash
         ipconfig /flushdns
-      </code></pre>
+        ```
 
-      <h4>All Network Info</h4>
-      <pre><code class='batch'>
+      #### All Network Info
+      ```bash
         ipconfig /all
-      </code></pre>
-    </article>
+        ```
 
-    <article>
-      <a name='yarn'></a>
-      <h3>Yarn</h3>
-      <h4>Package Version (exclude dependencies)</h4>
-      <pre><code>
+      ### <a name='yarn'></a>YARN
+      #### Package Version (exclude dependencies)
+      ```bash
         yarn list --depth 0 | grep [package name]
-      </code></pre>
-    </article>
+      ```
 
-    <article>
-    <a name='zfs'></a>
-    <h3>ZFS</h3>
-      <h4>ZFS Pool Status</h4>
-      <pre><code>
+    ### <a name='zfs'></a>ZFS
+      #### ZFS Pool Status
+
+      ```bash
         zpool status -v
 
         zpool history
@@ -2952,8 +2960,5 @@ This will remove the directory from your repo, but not from the file system.
 
         #Mount filesystem:
          zfs mount /mount_location
-      </code></pre>
-    </article>
+         ```
 
-  </div><!-- inner-section -->
-</section>
