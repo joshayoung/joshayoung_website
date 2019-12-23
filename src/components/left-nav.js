@@ -8,7 +8,7 @@ const blue = "#3385ff";
 const LeftNav = ({ siteTitle }) => (
   <nav css={css`
   width: 200px;
-  margin: 150px 10px 0 10px;
+  margin: 170px 10px 0 10px;
   display: none;
   @media (min-width: 700px) {
     display: block;
