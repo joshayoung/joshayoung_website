@@ -2,11 +2,9 @@ import React from "react";
 import Layout from "../components/layout";
 import listThoughts from "../hooks/list-thoughts";
 import AllThoughts from "../components/all-thoughts";
-import ListTreehouse from "../hooks/list-treehouse";
 
 export default () => {
   const posts = listThoughts();
-  const treehouse = ListTreehouse();
   return (
     <Layout>
       <h1 className='header'>Thoughts</h1>
@@ -15,10 +13,6 @@ export default () => {
       </article>
       {posts.map(post => (
         <AllThoughts key={post.path} post={post} />
-      ))}
-
-      {treehouse.map(treehouse => (
-        <h3>{treehouse.title}</h3>
       ))}
     </Layout>
   );
