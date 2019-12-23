@@ -2,10 +2,14 @@ import React from "react";
 import Layout from "../components/layout";
 import PodcastEpisodes from "../hooks/podcast-episodes";
 import Podcasts from "../hooks/podcasts";
+import BooksRecommended from "../hooks/books-recommended";
+import Book from "../components/book";
+import BookRecommended from "../components/book-recommended";
 
 export default ({ children }) => {
   const podcastEpisodes = PodcastEpisodes();
   const podcasts = Podcasts();
+  const books = BooksRecommended();
   return (
     <Layout>
       <section>
@@ -73,14 +77,22 @@ export default ({ children }) => {
             <a name='books'></a>
             <h3 id='books_ive_read'>Books I've Read</h3>
             <p id='books_ive_read_description'>Frequently, I try to delve deeper into specific aspects of tech that I want to learn more about. I find that buying a book about a particular technology can be a beneficial deep-dive experience. Below I have listed some of the books I have read over the years which have contributed to where I am today (listed in alphabetical order and categorized below).</p>
-            TODO: Books ive read
+            <ul>
+              {books.map(book => (
+                <Book key={book.id} title={book.title} post={book.data} />
+              ))}
+            </ul>
           </article>
 
           <article>
             <a name='books_recomend'></a>
             <h3 id='books_i_recommend'>Books I Recommend</h3>
             <p id='books_ive_read_description'>Of the software engineering, networking, security, and design books that I listed above, these are some of the books that I highly recommend.</p>
-            TODO: Books I recommend
+            <ul>
+              {books.map(book => (
+                <BookRecommended key={book.id} title={book.title} hide={book.hide_list} post={book.data} />
+              ))}
+            </ul>
           </article>
         </div>
       </section>
