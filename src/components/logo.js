@@ -7,10 +7,10 @@ const Intro = ({ siteTitle }) => (
   <Link
     to="/"
     css={css`
-        font-size: 50px;
+        font-size: 52px;
         font-family: 'Acme', sans-serif;
         display: block;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
         span {
           color: #3385ff;
         }

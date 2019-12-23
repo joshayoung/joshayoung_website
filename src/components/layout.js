@@ -31,9 +31,15 @@ const Layout = ({ children }) => {
         }
 
         h1 {
-          font-size: 40px;
-          &.header {
-            border-bottom: 1px solid ${blue};
+          font-size: 28px;
+          border-bottom: 1px solid ${blue};
+          &:after {
+            content: " /";
+            color: ${blue};
+          }
+          &:before {
+            content: "/ ";
+            color: ${blue};
           }
         }
 
