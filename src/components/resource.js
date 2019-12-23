@@ -5,8 +5,9 @@ const Resource = ({ klass, title, post }) => (
     {/* <pre>{JSON.stringify(post)}</pre> */}
     <h3>{title}</h3>
     <a name={klass}></a>
-    {post.map(resource => (
-      <div>
+    {post.map((resource, i) => (
+      <div key={i}>
+        {/* <pre>{JSON.stringify(resource)}</pre> */}
         {resource.display ?
           <a href={resource.url}>{resource.title}</a>
           :
