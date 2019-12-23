@@ -27,6 +27,7 @@ const Layout = ({ children }) => {
           line-height: 1.4;
           background-color: #f2f2f2;
           background-image: -webkit-linear-gradient(10deg, #efefef 50%, #f4f4f4 50%);
+          background-image: -webkit-linear-gradient(10deg, #fff59e 50%, #f4f4f4 50%);
         }
 
         h1 {
