@@ -2,11 +2,12 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ListTreehouse from "../hooks/list-treehouse";
-import { Link } from "gatsby";
+import ListCodeSchool from "../hooks/list-code-school";
 
 
 export default () => {
   const treehouse = ListTreehouse();
+  const codeschool = ListCodeSchool();
   return (
     <Layout>
       <SEO title="Classes" />
@@ -171,7 +172,11 @@ export default () => {
             <p>The Code School site offers excellent classes. I took some of these as review and many as a way to level up my knowledge.</p>
 
             <ul>
-              <div className='warning'>TODO: Add content here</div>
+              <>
+                {codeschool.map(codeschool => (
+                  <li><a href={codeschool.url}>{codeschool.title}</a></li>
+                ))}
+              </>
             </ul>
           </article>
 
