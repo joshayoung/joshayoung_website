@@ -1815,90 +1815,27 @@ In the ruby console, **student.devices** would return all of the devices that st
   end
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th colspan='3'>students</th>
-    </tr>
-    <tr>
-      <th>id</th>
-      <th>name</th>
-      <th>age</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Frank</td>
-      <td>35</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Sally</td>
-      <td>28</td>
-    </tr>
-  </tbody>
-</table>
+| students |       |     |
+| -------- | ----- | --- |
+| id       | name  | age |
+| 1        | Frank | 35  |
+| 2        | Sally | 28  |
 
-<table>
-  <thead>
-    <tr>
-      <th colspan='4'>devices</th>
-    </tr>
-    <tr>
-      <th>id</th>
-      <th>name</th>
-      <th>student_id</th>
-      <th>color_id</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>iPhone</td>
-      <td>2</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>iPad</td>
-      <td>2</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Laptop</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-</table>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan='3'>colors</th>
-    </tr>
-    <tr>
-      <th>id</th>
-      <th>color</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Green</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Blue</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Silver</td>
-    </tr>
-  </tbody>
-</table>
+
+| devices |        |            |          |
+| ------- | ------ | ---------- | -------- |
+| id      | name   | student_id | color_id |
+| 1       | iPhone | 2          | 1        |
+| 2       | iPad   | 2          | 1        |
+| 3       | Laptop | 1          | 2        |
+
+| colors |        |
+| ------ | ------ |
+| id     | color  |
+| 1      | Green  |
+| 2      | Blue   |
+| 3      | Silver |
 
 ### <a name='ruby'></a>Ruby
 
