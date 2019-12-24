@@ -70,6 +70,7 @@ import Bash from "../snippets/bash.js";
 ```
 
 ### <a id="curl"></a>Curl
+
 #### Get HTTP Response
 ```bash
   curl -I example.com
@@ -89,80 +90,78 @@ curl --data "information=to&send=to the server" http://example.com
 
 #### Switch to box sizing
 ```css
-html {
-  box-sizing: border-box;
-}
+  html {
+    box-sizing: border-box;
+  }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 ```
 
 #### Clear Floats
 ```css
-.clearfix:after {
-  content: '';
-  display: block;
-  clear: both;
-  height: 0;
-  visibility: hidden;
-}
+  .clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+  }
 ```
 
 #### Margin/Padding Shorthand
 ```css
-//top right bottom left:
-margin (or padding): 10px 20px 10px 20px;
+  //top right bottom left:
+  margin (or padding): 10px 20px 10px 20px;
 
-//top/bottom left/right:
-margin (or padding): 10px 20px;
+  //top/bottom left/right:
+  margin (or padding): 10px 20px;
 
-//top left/right bottom:
-margin (or padding): 10px 20px 10px;
+  //top left/right bottom:
+  margin (or padding): 10px 20px 10px;
 ```
 
 ### <a id="dev_tools"></a>Dev Tools
 
 #### Chrome
-
 <dl>
   <dt>Logging:</dt>
-  <dd><code>console.log('test string');</code></dd>
+  <dd>`console.log('test string');`</dd>
   <dt>Log Variable as an Object:</dt>
-  <dd><code>console.dir(paragraph);</code></dd>
+  <dd>`console.dir(paragraph);`</dd>
   <dt>Log an object as a table:</dt>
-  <dd><code>console.table(all_animals);</code></dd>
+  <dd>`console.table(all_animals);`</dd>
 </dl>
 
 ### <a id="docker"></a>Docker
 
 <dl>
   <dt>Show containers</dt>
-  <dd><code>docker-compose ps</code></dd>
+  <dd>`docker-compose ps`</dd>
   <dt>Start containers in docker-compose</dt>
-  <dd><code>docker-compose up</code></dd>
+  <dd>`docker-compose up`</dd>
   <dt>Stop a container</dt>
-  <dd><code>docker stop [container name]</code></dd>
+  <dd>`docker stop [container name]`</dd>
   <dt>Start a container</dt>
-  <dd><code>docker start [container name]</code></dd>
+  <dd>`docker start [container name]`</dd>
   <dt>Connect to a running container</dt>
-  <dd><code>docker exec -it [container name] /bin/bash</code></dd>
+  <dd>`docker exec -it [container name] /bin/bash`</dd>
   <dt>Docker compose - bust the cache</dt>
-  <dd><code>docker-compose build --no-cache</code></dd>
+  <dd>`docker-compose build --no-cache`</dd>
   <dt>Spin up container</dt>
-  <dd><code>docker-compose up</code></dd>
+  <dd>`docker-compose up`</dd>
   <dt>Turn off container</dt>
-  <dd><code>docker-compose down</code></dd>
+  <dd>`docker-compose down`</dd>
   <dt>List running containers</dt>
-  <dd><code>docker-compose ps</code></dd>
+  <dd>`docker-compose ps`</dd>
   <dt>Attach to running container</dt>
-  <dd><code>docker exec -it [container name] /bin/bash</code></dd>
+  <dd>`docker exec -it [container name] /bin/bash`</dd>
 </dl>
 
 ### <a id="html5"></a>HTML5
 
 #### Unicode/Emojis
-
 You can get the unicode emoji's from this page: <a href='http://unicode.org/emoji/charts/full-emoji-list.html'>emoji list</a>.
 All you have to do is remove the 'U+' from the first part of the code and replace it with '&#x'. End the unicode string with a semicolon.
 For example, to use the smiley emoji, change it from: U+1F600 to '&amp;#x1F600;'.
@@ -178,11 +177,10 @@ To use a unicode character with the css 'before' or 'after' sudo-selector, remov
 
 #### HTML5 Doctype
 ```html
-<!DOCTYPE html>
+  <!DOCTYPE html>
 ```
 
 #### Tags
-
 * &lt;cite&gt; - cite a source
 * &lt;kdb&gt;  - text entered from a keyboard (i.e. `cd`, `pwd`)
 * &lt;pre&gt;  - preserves white space in html output
@@ -215,63 +213,61 @@ UFW by default will allow all outgoing connections but deny any incoming connect
 ```
 
 #### Application Profiles
-
 ```bash
-#Show all application profiles:
-ufw app list
+  # Show all application profiles:
+  ufw app list
 
-#Show which ports/protocols a rule will enable:
-ufw app info 'OpenSSH'
+  # Show which ports/protocols a rule will enable:
+  ufw app info 'OpenSSH'
 ```
 
 #### Set default egress/ingress rules
 ```bash
-#Deny egress and ingress:
-ufw default deny outgoing
-ufw default deny incoming
+  # Deny egress and ingress:
+  ufw default deny outgoing
+  ufw default deny incoming
 ```
 
 #### Open Up Ports
-
 ```bash
-# Allow HTTP Service:
+  # Allow HTTP Service:
 
-ufw allow http
+  ufw allow http
 
-# or:
+  # or:
 
-ufw allow 80/tcp
-#or allow application profile (nginx, apache, etc):
-ufw allow 'Nginx HTTP'
+  ufw allow 80/tcp
+  # or allow application profile (nginx, apache, etc):
+  ufw allow 'Nginx HTTP'
 
-#Allow a specific port:
-ufw allow 8080/tcp
+  # Allow a specific port:
+  ufw allow 8080/tcp
 
-#Allow a specific IP:
-sudo ufw allow from 192.168.3.100
+  # Allow a specific IP:
+  sudo ufw allow from 192.168.3.100
 
-#Limit to one port:
-sudo ufw allow from 192.168.3.100 to any port 80
+  # Limit to one port:
+  sudo ufw allow from 192.168.3.100 to any port 80
 
-#Allow the whole subnet:
-ufw allow from 192.168.3.0/24 to any port 80
+  # Allow the whole subnet:
+  ufw allow from 192.168.3.0/24 to any port 80
 ```
 
 #### Close Ports/Delete Rules
 ```bash
-#Close port 80
-ufw deny 80/tcp
+  # Close port 80
+  ufw deny 80/tcp
 
-#Deny from specific IP:
-ufw deny from 192.168.3.100
+  # Deny from specific IP:
+  ufw deny from 192.168.3.100
 
-#Deny IP and Port:
-ufw deny from 192.168.3.100 to any port 80
+  # Deny IP and Port:
+  ufw deny from 192.168.3.100 to any port 80
 
-#Delete HTTP rule:
-ufw delete allow www
-#or:
-ufw delete allow 80/tcp
+  # Delete HTTP rule:
+  ufw delete allow www
+  # or:
+  ufw delete allow 80/tcp
 ```
 
 ### <a id="firewalld"></a>Firewalld
@@ -291,77 +287,76 @@ Firewalld is manipulating iptables behind the scene. Firewalld does have extende
 
 #### Firewalld Main Commands
 ```bash
-#Show all zones:
-firewall-cmd --get-zones
+  # Show all zones:
+  firewall-cmd --get-zones
 
-#Show active zones:
-firewall-cmd --get-active-zones
+  # Show active zones:
+  firewall-cmd --get-active-zones
 
-#Show default zone:
-firewall-cmd --get-default-zone
+  # Show default zone:
+  firewall-cmd --get-default-zone
 
-#Show all services:
-firewall-cmd --get-services
+  # Show all services:
+  firewall-cmd --get-services
 ```
 
 #### Change Zones/Interfaces
 
 Each network inteface can be assigned to a different zone.
+
 ```bash
-#Change 'eth0' to 'work' zone:
-firewall-cmd --zone=work --change-interface=eth0
+  # Change 'eth0' to 'work' zone:
+  firewall-cmd --zone=work --change-interface=eth0
 ```
 
 #### Show Current Settings
 ```bash
-#List current settings on 'public' zone:
-sudo firewall-cmd --zone=public --list-all
+  # List current settings on 'public' zone:
+  sudo firewall-cmd --zone=public --list-all
 
-#Show open ports:
-sudo firewall-cmd --zone=public --list-ports
+  # Show open ports:
+  sudo firewall-cmd --zone=public --list-ports
 ```
 
 #### Open Ports/Services
-
 Without `--permanent`, the firewall rule will take affect but will not persist after a reboot.
 
 ```bash
-#Open port 80:
-firewall-cmd --permanent --zone=public --add-port=80/tcp
+  # Open port 80:
+  firewall-cmd --permanent --zone=public --add-port=80/tcp
 
-#Add FTP Service:
-firewall-cmd --permanent --zone=public --add-service=ftp
+  # Add FTP Service:
+  firewall-cmd --permanent --zone=public --add-service=ftp
 
-#Reload the firewall for these to take affect:
-firewall-cmd --reload
+  # Reload the firewall for these to take affect:
+  firewall-cmd --reload
 ```
 
 #### Remove Service/Port
-
 ```bash
-#Remove the open port:
-firewall-cmd --zone=public --remove-port=80/tcp
+  # Remove the open port:
+  firewall-cmd --zone=public --remove-port=80/tcp
 
-#Remove the service:
-firewall-cmd --zone=public --remove-service=ftp
+  # Remove the service:
+  firewall-cmd --zone=public --remove-service=ftp
 
-#Add the '--permanent' flag to make the removal permanent:
-firewall-cmd --zone=public --remove-port=80/tcp --permanent
-firewall-cmd --zone=public --remove-service=ftp --permanent
+  # Add the '--permanent' flag to make the removal permanent:
+  firewall-cmd --zone=public --remove-port=80/tcp --permanent
+  firewall-cmd --zone=public --remove-service=ftp --permanent
 ```
 
 ### <a id="gatsby"></a>Gatsby
 
 #### Starting Local Server
-
 ```bash
-gatsby develop
+  gatsby develop
+  # or
+  npm run develop
 ```
 
 ### <a id="git"></a>Git
 
 #### Contributing to an open source project
-
 1. Fork the project on github.
 2. Create a feature branch: `git checkout -b "feature-branch-name"`.
 3. Commit changes to your feature branch: `git commit -am "commit message"`.
@@ -369,18 +364,18 @@ gatsby develop
 5. Creating a PR from this branch will open up a PR in the forked repo.
 
 #### Remove File from Repo, and File System
-
 This will remove the file from your repo, and the filesystem.
 
 ```git
-git rm file_name
+  git rm file_name
 ```
 
 #### Remove File from Repo, not File System
 
 This will remove the file from your repo, but not from the file system.
+
 ```git
-git rm --cached file_name
+  git rm --cached file_name
 ```
 
 #### Remove Folder from Repo, and File System
@@ -388,7 +383,7 @@ git rm --cached file_name
 This will remove the directory from your repo, and the filesystem.
 
 ```git
-git rm -rvf file_name
+  git rm -rvf file_name
 ```
 
 #### Remove Folder from Repo, not File System
@@ -396,17 +391,16 @@ git rm -rvf file_name
 This will remove the directory from your repo, but not from the file system.
 
 ```git
-git rm -r --cached my_folder_name
+  git rm -r --cached my_folder_name
 ```
 #### Show Contents of Commit
 ```git
-git show [commit hash]
+  git show [commit hash]
 ```
 
 #### Change Base Branch
-
 ```git
-git rebase --onto new_branch old_branch branch_you_are_moving
+  git rebase --onto new_branch old_branch branch_you_are_moving
 ```
 
 #### Turn off the pager
@@ -416,33 +410,33 @@ Add `--no-pager` to a command
 #### Restore a Deleted File
 
 ```git
-git checkout [removed commit]^ -— [path to flle]
+  git checkout [removed commit]^ -— [path to flle]
 ```
 #### Delete Branches
-
 ```git
-#Delete a local branch:
-git branch -d my_local_branch
+  # Delete a local branch:
+  git branch -d my_local_branch
 
-# Delete a remote branch:
-git push origin --delete my_remote_branch
+  # Delete a remote branch:
+  git push origin --delete my_remote_branch
 ```
 
 #### Show which Remote Branch
 
 This shows which remote branch you are tracking and how far behind your local version is from the remote.
+
 ```git
-git branch -vv
+  git branch -vv
 ```
 #### Push changes, then revert locally
 
 This will allow you to push up a feature branch and then revert your local changes to see the diff.
 
 ```git
-git push origin my_feature_branch
+  git push origin my_feature_branch
 
-#Revert changes so you can see the diff (locally):
-git reset HEAD~
+  # Revert changes so you can see the diff (locally):
+  git reset HEAD~
 ```
 
 #### HEAD
@@ -454,35 +448,35 @@ HEAD is the most recent commit on your present branch.
 This will put you in a detached HEAD state.
 
 ```git
-git checkout [hash of previous commit]
+  git checkout [hash of previous commit]
 ```
 
 #### Checkout Remote Branch
 
 ```git
-git fetch origin
-git checkout -b my_branch_name orgin/my_branch_name
+  git fetch origin
+  git checkout -b my_branch_name orgin/my_branch_name
 
-#or:
+  # or:
 
-git fetch
-git checkout my_branch_name
+  git fetch
+  git checkout my_branch_name
 
-#if we have local branch with same name do
-#this to prevent conflicts with the local branch:
+  # if we have local branch with same name do
+  # this to prevent conflicts with the local branch:
 
-git fetch origin
-git checkout --track origin/my_branch_name
+  git fetch origin
+  git checkout --track origin/my_branch_name
 ```
 
 #### Git Reset
 ```git
-git reset --soft HEAD^3
+  git reset --soft HEAD^3
 
-"'mixed' is the default if you run `git reset`:
-git reset --mixed HEAD^3
+  "'mixed' is the default if you run `git reset`:
+  git reset --mixed HEAD^3
 
-git reset --hard HEAD^3
+  git reset --hard HEAD^3
 ```
 
 * --soft (keeps staged changes)
@@ -491,247 +485,276 @@ git reset --hard HEAD^3
 
 #### Edit Commit Message
 ```git
-git commit --amend
+  git commit --amend
 ```
 
 #### Revert a file to state at previous commit
 ```git
-git checkout -- my_file.txt
+  git checkout -- my_file.txt
 ```
 
 #### Commit Messages
+
 Try to use present tense for your commit message (i.e. "<strong>Add</strong> new class for students" not: "Added new class for students")
+
 ```git
-git commit -m "Correct site map"
+  git commit -m "Correct site map"
 ```
 
 #### Pick Files to Stash
-
 ```git
-git stash -p
+  git stash -p
 ```
 
 #### Show File in Stash
 ```git
-git stash show stash@{0}
+  git stash show stash@{0}
 ```
 
 #### Checkout a file that is stashed
 ```git
-git checkout stash@{0} -- path/to/file
+  git checkout stash@{0} -- path/to/file
 ```
 #### Revert Uncommitted Changes
 
 Leaving out the `stash@{2} variable below will run the stash command on top stash on the stack.
 
 ```git
-git stash apply stash@{1}
-git stash drop stash@{2}
+  git stash apply stash@{1}
+  git stash drop stash@{2}
 ```
 
 #### Retrieve a stashed file
 
 ```git
-git checkout [name of stash] -- [filename]
+  git checkout [name of stash] -- [filename]
 ```
 
 #### Stash all files (including files in .gitignore)
 
 ```git
-git stash --all
+  git stash --all
 ```
 #### Stash tracked and untracked files
 ```git
-git stash save --include-untracked
+  git stash save --include-untracked
 ```
 #### Revert One File
 ```git
-git checkout -- path/to/file.txt
+  git checkout -- path/to/file.txt
 ```
+
 #### Show Files in Commit
 ```git
-git diff-tree --no-commit-id --name-only -r [commit hash]
+  git diff-tree --no-commit-id --name-only -r [commit hash]
 ```
 
 #### Show Diff in Staged Files
 
 ```git
-git diff --staged
+  git diff --staged
 ```
+
 #### Rename a Local Branch
 ```git
-git branch -m &lt;oldname&gt; &lt;newname&gt;
+  git branch -m &lt;oldname&gt; &lt;newname&gt;
 ```
+
 #### Move Remote PR Branch Locally
 ```git
-git fetch origin pull/ID/head:BRANCHNAME
+  git fetch origin pull/ID/head:BRANCHNAME
 ```
+
 #### Saves Current Changes with Stash
 ```git
-git stash
-or:
-git stash save "Name for the stash"
+  git stash
+  or:
+  git stash save "Name for the stash"
 ```
+
 #### Files in stash
 ```git
-git stash list --stat
+  git stash list --stat
 ```
 #### Show files in stash
-
 ```git
-git stash show stash@{2}
+  git stash show stash@{2}
 ```
+
 #### Remove all stashes
 ```git
-git stash clear
+  git stash clear
 ```
+
 #### Restores Most Recently Stashed Changes
+
 This command will run `git stash apply` and then `git stash drop`.
+
 ```git
-git stash pop </code></pre>
+  git stash pop `</pre>
 ```
+
 #### List Stashes
 ```git
-git stash list
+  git stash list
 ```
+
 #### Restore Specific Stash
 ```git
-git stash pop stash@{3}
+  git stash pop stash@{3}
 ```
+
 #### Create and switch to branch
 
 ```git
-git checkout -b new_branch_name
+  git checkout -b new_branch_name
 ```
+
 #### Show Remote Branches
 ```git
-git branch -r
+  git branch -r
 ```
+
 #### Delete local branch
 ```git
-git branch -d local_branch_name
+  git branch -d local_branch_name
 ```
 
 #### Git Tags
 ```git
-#show all tags
-git tag
-#checks out the code with this tag
-git checkout [name of tag]
-#adds a tag
-git tag -a [tag name] -m tag description]
-#pushes tags
-git push --tags
+  # show all tags
+  git tag
+  # checks out the code with this tag
+  git checkout [name of tag]
+  # adds a tag
+  git tag -a [tag name] -m tag description]
+  # pushes tags
+  git push --tags
 ```
+
 #### Show Diffs
 ```git
-git diff HEAD^ (parent)
-git diff HEAD^^ (grandparent)
-git diff HEAD~6 (six commits ago)
+  git diff HEAD^ (parent)
+  git diff HEAD^^ (grandparent)
+  git diff HEAD~6 (six commits ago)
 ```
 #### Compare Commits
 ```git
-git diff HEAD^..HEAD
-git diff 58786f..98f7f0
-git diff master another_branch
+  git diff HEAD^..HEAD
+  git diff 58786f..98f7f0
+  git diff master another_branch
 ```
+
 #### Stop tracking in Repo
 ```git
-git rm --cached errors.txt
+  git rm --cached errors.txt
 ```
+
 #### Remove one file from `git add`
 ```git
-git reset HEAD &lt;file&gt;
+  git reset HEAD &lt;file&gt;
 ```
+
 #### Remove files added with `git add .`
 ```git
-git reset
+  git reset
 ```
+
 #### Restore a deleted file
 ```git
-#First find the hash:
-git reflog
-git log --walk-reflogs (more detail)
+  # First find the hash:
+  git reflog
+  git log --walk-reflogs (more detail)
 
-#Then:
-git reset --hard 7980f
-#or:
-git reset --hard HEAD@{1}
+  # Then:
+  git reset --hard 7980f
+  # or:
+  git reset --hard HEAD@{1}
 
-#Create a new branch with reflog hash:
-git branch [new branch name] 890fs4
-or:
-git branch [new branch name] HEAD@{1}
+  # Create a new branch with reflog hash:
+  git branch [new branch name] 890fs4
+  or:
+  git branch [new branch name] HEAD@{1}
 ```
+
 #### Clone a local repo as a backup
 ```git
-git clone local_repo local_repo_backup
+  git clone local_repo local_repo_backup
 ```
+
 #### Rewrite History
 
 Once a file is added to git (after the commit) it is permanently in the repo. The only way to remove it is to rewrite history. However, do this with extreme care! Make a backup of your code first with `clone`.
+
 ```git
-git filter-branch --tree-filter 'rm -f old_file.sh -- --all'
+  git filter-branch --tree-filter 'rm -f old_file.sh -- --all'
 
-#or you can just remove the file from the repo:
-git filter-branch --index-filter 'git rm --cached --ignore-unmatch old_file.sh'
+  # or you can just remove the file from the repo:
+  git filter-branch --index-filter 'git rm --cached --ignore-unmatch old_file.sh'
 
-#Sometimes when you re-write you will get empty commits, to delete these do:
-git filter-branch -f --prune-empty -- --all
+  # Sometimes when you re-write you will get empty commits, to delete these do:
+  git filter-branch -f --prune-empty -- --all
 ```
+
 #### Commit Order Differences
+
 Order from top to bottom:
+
 ```git
-git log (newest to oldest)
-git rebase -i HEAD~3 (oldest to newest)
+  git log (newest to oldest)
+  git rebase -i HEAD~3 (oldest to newest)
 ```
+
 #### Roll back previous commit (preserving file changes)
 ```git
-git reset --soft HEAD~1
-or
-git reset --soft HEAD^
+  git reset --soft HEAD~1
+  or
+  git reset --soft HEAD^
 ```
 #### Cherry Pick
 ```git
-git cherry-pick 97589f
+  git cherry-pick 97589f
 
-#Edit Commit:
-git cherry-pick --edit 987df0
+  # Edit Commit:
+  git cherry-pick --edit 987df0
 
-#Combine two commits:
-git cherry-pick --no-commit 9876f 78979f
-git commit -m "Combine two commits"
+  # Combine two commits:
+  git cherry-pick --no-commit 9876f 78979f
+  git commit -m "Combine two commits"
 ```
+
 #### Add file to last commit
 ```git
-git add newfile.sh
-git commit --amend -m "Add file to repo"
-or:
-git commit --amend --no-edit
+  git add newfile.sh
+  git commit --amend -m "Add file to repo"
+  or:
+  git commit --amend --no-edit
 ```
+
 #### Roll back previous commit (discarding file changes)
 ```git
-git reset --hard HEAD~1
-#or:
-git reset --hard HEAD^
-#or the two previous  commits:
-git reset --hard HEAD^^
+  git reset --hard HEAD~1
+  # or:
+  git reset --hard HEAD^
+  # or the two previous  commits:
+  git reset --hard HEAD^^
 ```
 
 #### Add Remote
 ```git
-git push -u origin master
-git push -u [the name] [the branch]
-#After using '-u', you can use use `git push` next time:
-git push
+  git push -u origin master
+  git push -u [the name] [the branch]
+  # After using '-u', you can use use `git push` next time:
+  git push
 ```
 
 #### Revert a Commit
 ```git
-git revert [the commit hash you want to revert]
+  git revert [the commit hash you want to revert]
 ```
 
 #### How Git Pull Works
+
 When you run `git pull`, you are actually performing a series of commands:
 
 * Updates the local origin/master branch by fetching updates from the origin with: `git fetch`.
@@ -742,84 +765,87 @@ Therefore, just running a `git fetch` will pull down all of the updated code fro
 #### Rebase (run from feature branch)
 
 ```git
-git rebase master
+  git rebase master
 ```
 
 #### Interactive Rebase (the last 4 commits)
 
 Using 'squash' will combine this commit in with the previous commit.
+
 ```git
-git rebase -i HEAD~4
+  git rebase -i HEAD~4
 ```
 
 ### <a id="javascript"></a>JavaScript
 
 #### Capitalize Function
 ```javascript
-var cap = function(str) {
-return str.charAt(0).toUpperCase() + str.slice(1);
-};
+  var cap = function(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+  };
 ```
 #### Destructuring
 ```javascript
-//Object Destructuring:
-let foods = {
-vegetable: 'spinach',
-fruit: 'apple',
-nut: 'almond',
-};
-const { vegetable, fruit } = foods;
+  //Object Destructuring:
+  let foods = {
+  vegetable: 'spinach',
+  fruit: 'apple',
+  nut: 'almond',
+  };
+  const { vegetable, fruit } = foods;
 
-//Array Destructuring:
-let dirty_dozen = [ 'Strawberries', 'Spinach', 'Nectarines', 'Apples',
-          'Peaches', 'Pears', 'Cherries', 'Grapes', 'Celery',
-          'Tomatoes', 'Sweet bell peppers', 'Potatoes' ];
+  //Array Destructuring:
+  let dirty_dozen = [ 'Strawberries', 'Spinach', 'Nectarines', 'Apples',
+            'Peaches', 'Pears', 'Cherries', 'Grapes', 'Celery',
+            'Tomatoes', 'Sweet bell peppers', 'Potatoes' ];
 
-const [ one_item ] = dirty_dozen;
-
+  const [ one_item ] = dirty_dozen;
 ```
 
 #### Only display content when JavaScript is enabled
 ```javascript
-document.getElementsByTagName('body')[0].className += ' js';
-```
-```css
-/* Only set when JavaScript is enabled in browser: */
-body.js .only-js {
-border: 1px solid #a0a0a0;
-display: block;
-...
-}
+  document.getElementsByTagName('body')[0].className += ' js';
+  ```
+  ```css
+  /* Only set when JavaScript is enabled in browser: */
+  body.js .only-js {
+  border: 1px solid #a0a0a0;
+  display: block;
+  ...
+  }
 ```
 
 #### ES2015 Function Syntax
 ```javascript
-const output_log = () => { alert('This is an example.'); };
+  const output_log = () => { alert('This is an example.'); };
 ```
+
 ```javascript
-const add_nums = (x, y) => { return x + y };
+  const add_nums = (x, y) => { return x + y };
 ```
 
 #### Detect Keyboard Input
+
 <p data-height="265" data-theme-id="dark" data-slug-hash="vZjKVr" data-default-tab="css,result" data-user="joshayoung" data-embed-version="2" data-pen-title="Detect Keyboard Input" class="codepen">See the Pen <a href="https://codepen.io/joshayoung/pen/vZjKVr/">Detect Keyboard Input</a> by Josh (<a href="https://codepen.io/joshayoung">@joshayoung</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
 #### Basic Class Structure
 ```javascript
-var Shape = function(sides) {
-this.sides = sides;
-}
+  var Shape = function(sides) {
+  this.sides = sides;
+  }
 
-Shape.prototype.area = function() {
-calculate ...
-}
+  Shape.prototype.area = function() {
+  calculate ...
+  }
 
-var square = new Shape(4);
+  var square = new Shape(4);
 ```
+
 #### Immediately Invoked Function Expression (IIFE)
 ```javascript
-(function() {
-...executed immediately
-})();
+  (function() {
+  ...executed immediately
+  })();
 ```
 
 #### String Object vs Literal
@@ -827,2138 +853,2247 @@ var square = new Shape(4);
 A string literal is immutable.
 
 ```javascript
-//String Object:
-typeof new String(); //'object'
-var str = new String('Hello');
-str.x = 'World';
-console.log(str.x); //Outputs 'World'
+  //String Object:
+  typeof new String(); //'object'
+  var str = new String('Hello');
+  str.x = 'World';
+  console.log(str.x); //Outputs 'World'
 
-//String Literal:
-typeof ''; //'string'
+  //String Literal:
+  typeof ''; //'string'
 ```
 
 ### <a name='laravel'></a>Laravel
 
-      #### Basic Migration
-      ```bash
-        php artisan make:migration the_users_table --create=users
-        ```
-      #### Refresh Auto Load Files
-      ```bash
-        composer dump-autoload
-        ```
-      #### Run the Migrations
-      ```bash
-        php artisan migrate
-        ```
-      #### Open Laravel Shell
-      ```bash
-        php artisan tinker
-        ```
-      #### Create the Model along with the Migration
-      ```bash
-        php artisan make:model User -m
-        ```
-      #### Create Controller
-      ```bash
-        php artisan make:controller UserController
-        ```
-      #### Create Model, Controller, and Migration
-      ```bash
-        php artisan make:model User -mc
-        ```
-      #### Create Resoureful Controller
-      ```bash
-        php artisan make:controller UsersController -r
-        ```
-
-      ### <a name='freebsd'></a>FreeBSD
-      #### Edit Hostname
-      ```bash
-        #Edit:
-        vi /etc/rc.conf
-
-        #Rename references to old hostname:
-        vi /etc/hosts
-
-        #Set the hostname
-        hostname your-new-hostname
-
-        reboot
-        ```
-
-      #### Shutdown Server
-      ```bash
-        poweroff
-        #or
-        shutdown -p now
-        ```
-      #### Show Version
-      ```bash
-        freebsd-version
-        ```
-
-      #### Update OS
-      ```bash
-        freebsd-update fetch
-        freebsd-update install
-        ```
-
-      #### Ports
-
-      Ports are groups of 'make' files that allow software to be installed from source. They can be managed by 'portsnap'.
-
-      #### Packages
-
-      These packages are pre-compiled. They are similar to .deb or .rpm packages on Debian and RHEL respectively.
-
-      ```bash
-        #Package Info:
-        pkg info
-
-        #Install package:
-        pkg install package_name
-
-        #Update:
-        pkg update
-
-        #Upgrade:
-        pkg upgrade
-
-        #Uninstall package:
-        pkg remove package_name
-        ```
-
-    ### <a name='slackware'></a>Slackware
-
-      #### Slackware Linux Commands
-
-      Use slackpkg to keep system updated.
-
+#### Basic Migration
 ```bash
-        #Download slackpkg .tar.gz file with wget
-        wget https://slackpkg.org/stable/slackpkg-2.60-noarch-1.tgz
+  php artisan make:migration the_users_table --create=users
+```
 
-        #Install slackpkg with 'installpkg'
-        installpkg slackpkg-2.60-noarch-1.tgz
-
-        #Uncomment and select a mirror:
-        vi /etc/slackpkg/mirrors
-
-        #Initialize slackpkg:
-        slackpkg update
-
-        #Install package
-        slackpkg install package_name
-
-        #Update to the latest slackpkg packages:
-        slackpkg update
-        slackpkg upgrade-all
-        ```
-
-      ### <a name='ubuntu-debian'></a>Ubuntu / Debian
-      Add or edit the lines below in this file `/etc/network/interfaces`.
-      ```bash
-        ...
-        auto eth0
-        iface eth0 inet static
-        address 192.168.3.100
-        netmask 255.255.255.0
-        gateway 192.168.3.1
-        broadcast 192.168.3.255
-        dns-nameservers 192.168.3.1
-        ...
-      ```
-      #### Show Ubuntu Version
-      ```bash
-        lsb_release -a
-        #or:
-        cat /etc/*release
-        ```
-
-      ### <a name='centos-rhel'></a>CentOS / RHEL
-
-      #### Change Hostname
-      ```bash
-        hostnamectl set-hostname my-new-hostname
-        ```
-
-      #### Show Version
-      ```bash
-        cat /etc/*release
-        ```
-
-      #### Add Static IP
-
-      Add modify the entries below within: `/etc/sysconfig/network-scripts/ifcfg-eth0` (change IP addresses according to your network). The name for your network connection could differ from `ifcfg-eth0`.
-
-      ```bash
-        ...
-        DEVICE="eth0"
-        BOOTPROTO="static"
-        IPADDR="192.168.3.100"
-        NETMASK="255.255.255.0"
-        GATEWAY="192.168.3.1"
-        DNS1="192.168.3.1"
-        DNS2="192.168.3.2"
-        ONBOOT="yes"
-        ...
-      ```
-
-    ### <a name='arch'></a>ARCH
-      #### Pacman Commands
-
+#### Refresh Auto Load Files
 ```bash
-        #Sync and Update:
-        pacman -Syu
+  composer dump-autoload
+```
 
-        #Install a package:
-        pacman -S package_name
-
-        #Remove a package:
-        pacman -R package_name
-        ```
-
-      #### Show Version
-      ```bash
-        lsb_release -a
-        ```
-
-      ### <a name='linux'></a>Linux
-
-      #### Init Systems
-      ##### SystemD
-      Systemd is managed my 'systemctl'. To start sshd, we would run: <code>systemctl start sshd</code>.
-
-      ##### Upstart
-
-      Upstart is managed by 'initctl'. To start sshd we would run: `initctl start sshd`. Upstart was invented as a replace for System V by Ubuntu.
-
-      ##### System V (SysV)
-
-      To start sshd, we would run: '/etc/init.d/ssh start'. This was primarily used by older versions of Linux.
-
-      ##### BSD Init
-      The BSD based init system is configured under /etc/rc.conf. To start sshd, we would run: '/etc/rc.d/sshd start'. BSD and Slackware use the BSD init system
-
-      #### Linux partition/format with Parted
-      ```bash
-        parted /dev/sdb # Open device with gparted:
-        print # Print device info:
-        print free # Show free space
-        help mklabel # Print available label types:
-        mklabel msdos # 'msdos' good option, select 'gpt' for uefi support
-        help mkpart # Partitioning help:
-        mkpart # Start partitioning:
-
-        # You will usually select 'primary' for the partition type.
-
-        # Select filesystem type, examples:
-        # ext2, ext3, ext4, ntfs, exfat, fat32
-
-        # Start/End need adjustment if not partitioning whole drive:
-        # Start partition from '2048s'
-        # End on '-1s'
-
-        quit # Exit:
-
-        # Format your partition with 'mkfs', examples:
-        mkfs.ext2 /dev/sdb1
-        mkfs.ext3 /dev/sdb1
-        mkfs.ext4 /dev/sdb1
-        mkfs.vfat /dev/sdb1
-        mkfs.ntfs /dev/sdb1
-
-        # Use '-L' to add a label:
-        mkfs.ext4 -L mydrive /dev/sdb1
-
-        eject /dev/sdb1 # Eject partition:
-        ```
-
-      #### Show Directory Size
-      ```bash
-        du -sh directory_path
-      ```
-
-      #### SystemD
-      ```bash
-        #'enable' will create a symbolic link so that the service starts on reboot
-        #'disable' will remove the symbolic link
-        #'is-active' will tell you if the service is running
-        #'is-enable' will tell you if it starts on boot
-        systemctl [status, enable, disable, is-active, is-enabled start, restart, reload, stop] application.service
-        ```
-
-      #### Change Username
-      If you want to switch user 'joe' to 'sally', below are the steps:
-      ```bash
-        usermod -l sally joe
-
-        #Verify that the new user exists and the old one does not:
-        id sally
-        id joe
-
-        #Swap out the new user's group:
-        groupmod -n sally joe
-
-        #Swap the home directory:
-        usermod -d /home/sally -m sally
-
-        #If the above command does not work, delete the old dir and re-create it:
-        rm -rvf /home/joe
-        mkhomedir_helper sally
-
-        #If you search these two files, you should not see the 'joe' user/group:
-        cat /etc/group | grep joe
-        cat /etc/passwd | grep joe
-        ```
-
-      #### Rsync
-      ```bash
-        rsync -avz --delete /original/folder/location /new/folder/location
-        ```
-
-      #### Reload Bash Config
-      ```bash
-        source .bashrc
-        ```
-
-      #### Check Drive for Errors
-      ```bash
-        #Health Summary:
-        smartctl -H /dev/sdb
-        #Time required to run HDD Test:
-        smartctl -c /dev/sdb
-
-        #Run Short Test:
-        smartctl -t short /dev/sdb
-
-        #Run Long Test:
-        smartctl -t long /dev/sdb
-
-        #Print Test Results Summary:
-        smartctl -l selftest /dev/sdb
-
-        #Print Details of Latest Test:
-        smartctl -a /dev/sdb
-        ```
-
-      #### Check Drive for Bad Blocks
-      ```bash
-        #Test for bad block:
-        badblocks -vs /dev/sdb > badblocks_results.txt
-      ```
-
-      #### Correct Bad Blocks
-      ```bash
-        #ext(2/3/4) filesystem:
-        e2fsck -l badblocks_results.txt /dev/sdb
-
-        #other filesystems:
-        fsck -l badblocks_results.txt /dev/sdb
-        ```
-
-      #### Show Security Settings with `ls`
-      ```bash
-        ls -Z
-      ```
-      #### Crontab
-      ```bash
-        *  *  *  *  *         command
-        -  -  -  -  -
-        |  |  |  |  |
-        |  |  |  |  +---------------------- day of week (0 - 6) (0 - Sunday)
-        |  |  |  +--------------------- month (1 - 12)
-        |  |  +------------------- day of month (1 - 31)
-        |  +------------- hour (0 - 23)
-        +------------ minute (0 - 59)
-        ```
-
-      #### Write ISO/IMG to Disk or USB
-      The command below could also be executed with 'bs=4M'.
-      ```bash
-        fdisk -l
-        umount /dev/sdb
-        dd if=/path/to/iso/or/img of=/dev/sdb bs=1M status=progress && sync
-        eject /dev/sdb
-      ```
-
-      #### Find Linux Version
-
-      ##### Kernel:
-      ```bash
-        uname -mrs
-      </code></pre>
-      ```
-      ##### Distribution:
-      ```bash
-        cat /etc/*-release
-        ```
-      #### Prevent Command from Being Recorded in Terminal History
-      ```bash
-        &lt;space&gt; command
-        ```
-      #### Logged In User History (last 10)
-      ```bash
-        last -10
-        ```
-      #### Wipe HDD with 'dd' Command
-      ```bash
-        #With Zeros:
-        dd if=/dev/zero of=/dev/sdb bs=1M status=progress && sync
-
-        #With Random Data:
-        dd if=/dev/urandom of=/dev/sdb bs=1M status=progress && sync
-        ```
-      #### Terminal Calculator
-      ```bash
-        bc -l
-        ```
-      #### System Uptime
-      ```bash
-        uptime
-      ```
-      #### Clear Terminal
-      ```bash
-        CTRL + l
-        ```
-      #### Extract a .tar File
-      ```bash
-        tar -xvf file.tar
-        ```
-      #### Extract a .tar.gz File
-      ```bash
-        tar -xzvf file.tar.gz
-        ```
-      #### Extract a .tar.bz2 File
-      ```bash
-        tar -xjvf file.tar.bz2
-        ```
-      #### Finding a File
-      ```bash
-        find / -name [file name you are searching] 2> /dev/null
-        ```
-      #### Bring Job Into the Foreground
-      ```bash
-        fg
-        ```
-      #### Pause Job
-      ```bash
-        Ctrl + Z
-        ```
-      #### Resume Paused Job in Background
-      ```bash
-        bg
-        ```
-      #### Continue Execution after Shell Exit
-      ```bash
-        nohup ./script.sh &
-        ```
-      #### List Background Jobs
-      ```bash
-        jobs
-        ```
-      #### Start Program in Background
-      ```bash
-        ./script.sh &
-        ```
-      #### Direct All Output to Log File
-      ```bash
-        ./script.sh 1> ~/tmp/log.txt 2> ~/tmp/log.txt &
-        ```
-      #### Direct All Output to Null
-      ```bash
-        ./script.sh 1> /dev/null 2> /dev/null &
-        ```
-      #### Run 256 Checksum
-      ```bash
-        sha256sum /the/path/to/file.iso
-        ```
-
-      ### <a name='mac'></a>Mac
-      #### Run 256 Checksum
-      ```bash
-        shasum -a 256 /the/path/to/file.iso
-        ```
-      #### Change Time Machine Backup Frequency
-
-      The interval is set in seconds.
-
-      ```bash
-        defaults write /System/Library/Launch Daemons/com.apple.backupd-auto StartInterval -int 1800
-        ```
-      #### Find IP
-      ```bash
-        ifconfig |  grep -oE "\w* \b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
-        ```
-      #### Flush DNS
-      ```bash
-        killall -HUP mDNSResponder
-        ````
-      #### Write ISO/IMG to Disk or USB
-
-      The command below could also be executed with 'bs=4m'.
-      ```bash
-        diskutil list
-        umount /dev/disk2
-        dd if=/path/to/iso/or/img/file of=/dev/disk2 bs=1m && sync
-        diskutil eject /dev/disk2
-        ```
-
-      ### <a name='mysql'></a>MySQL
-      ##### Connect to Database
-      ```bash
-        mysql -u [username] -p [password] -h [hostname]
-        ```
-
-      ### <a name='netstat'></a>Netstat
-
-      #### Find Listening Port (Bash)
-      ```bash
-        netstat -nao | find "80"
-        ```
-      #### Find Listening Port (Windows)
-      ```bash
-
-        netstat -nao | findstr "0.0.80"
-        ```
-
-      ### <a name='mysql'></a>MySQL
-      ##### Connect to Database
-      ```bash
-        mysql -u [username] -p [password] -h [hostname]
-        ```
-
-      ### <a name='psql'></a>PostgreSQL
-
-        <dl>
-          <dt>Connect to Database</dt>
-          <dd><code>\c DATABASE_NAME</code></dd>
-          <dt>List Databases</dt>
-          <dd><code>\l</code></dd>
-          <dt>Tables in database:</dt>
-          <dd><code>\dt</code></dd>
-          <dt>Describe Table</dt>
-          <dd><code>\dt+</code></dd>
-          <dt>Leave SQL Server</dt>
-          <dd><code>\q</code></dd>
-          <dt>Connect to Postgres</dt>
-          <dd><code>psql postgres</code></dd>
-          <dt>Create User</dt>
-          <dd><code>CREATE USER myuser WITH PASSWORD 'my password';</code></dd>
-          <dt>Create Role</dt>
-          <dd><code>CREATE ROLE myuser WITH LOGIN PASSWORD 'my password';</code></dd>
-          <dt>Alter Role</dt>
-          <dd><code>ALTER USER myuser WITH CREATEDB;</code></dd>
-        </dl>
-
-      ### <a name='kanban'></a>Kanban
-
-        <dl>
-          <dt>Swim Lanes</dt>
-          <dd>Rows</dd>
-          <dt>WIP</dt>
-          <dd>Work In Progress</dd>
-          <dt>WIP Limit</dt>
-          <dd>The maximum amount of cards allowed in one column on the board</dd>
-          <dt>Blocker</dt>
-          <dd>Something that is preventing you from moving your card forward</dd>
-          <dt>Hidden Work</dt>
-          <dd>Something you are working on that is not visible on the Kanban Board</dd>
-        </dl>
-
-      ### <a name='python'></a>Python
-
-      #### Start Simple Server
-
-      ```bash
-        python -m SimpleHTTPServer
-        ```
-
-      #### Start Simple Server with Python 3
-      ```bash
-        python -m http.server
-        ```
-
-      ### <a name='rails'></a>Rails
-
-      #### Inheriting Directly from ActionController::Base
-      Inheriting directly from: "ActionController::Base" instead of: "ApplicationController" will circumvent any code in your application_controller.rb file. Essentially it is like "skip running anything in the application_controller.rb file". "ApplicationController" inherits from "ActionController::Base".
-
-      #### Output image path from console
-      ```bash
-        ActionController::Base.helpers.asset_path('image.jpg')
-
-        #Or:
-        include ActionView::Helpers::AssetUrlHelper
-        asset_path('image.jpg')
-        ```
-      #### Open Rails Database Console
-      ```bash
-        rails dbconsole
-        ```
-      #### Clear Test Log File
-      ```bash
-        rails log:clear LOGS=test
-        ```
-      #### Rails Controller Methods Are Typically Ordered
-
-        1.index
-        2. show
-        3. new
-        4. edit
-        5. create
-        6. update
-        7. destroy
-
-      #### Rollback in Steps
-      ```bash
-        rails db:rollback STEP=1
-        ```
-      #### Show Migration Status
-      ```bash
-        rails db:migrate:status
-        ```
-      #### Run Migrations on Test Database
-      ```bash
-        bin/rails db:migrate RAILS_ENV=test
-        ```
-
-      #### Rails CRUD forms with no form plugin
-
-      [github.com/joshayoung/rails-basic-forms](https://github.com/joshayoung/rails-basic-forms)
-      #### Start Local Server
-      ```bash
-        rails server (rails s)
-        ```
-      #### Start Local Server on any IP
-      ```bash
-        rails s -b 0.0.0.0
-        ```
-      #### Start Local Server on different port
-
-      The default port is 3000 if unspecified.
-
+#### Run the Migrations
 ```bash
-        rails s -b 0.0.0.0 -P tmp/pids/srv1.pid
-        rails s -b 0.0.0.0 -p 3001 -P tmp/pids/srv2.pid
-        rails s -b 0.0.0.0 -p 3002 -P tmp/pids/srv3.pid
-      ```
-
-      #### Active Record Errors
-      ```ruby
-        #Model validations:
-        class Student
-          validates :name, :grade, :act_score, presence: true
-          ...
-        end
-
-        new_student = Student.create(name: 'James', grade: '2nd.')
-
-        #Show errors:
-        new_student.errors
-
-        #Show errors as sentences:
-        new_student.errors.full_messages
-        ```
-      #### Route Syntax
-      ```ruby
-        verb "the_url" => "controller#action"
-        get "tickets" => "tickets#index"
-        get "tickets/:id" => "tickets#show"
-        ```
-      #### Open SQLite from Rails
-      ```bash
-        rails dbconsole
-        ```
-      #### Show Rail Project Info
-      ```bash
-        rails about
-        ```
-      #### Open Rails Console
-      ```bash
-        rails console
-        or:
-        rails c
-
-        #reload the console to pull in any code changes made:
-        reload!
-        ```
-      #### Rails Tasks
-      ```bash
-        rails -T (commands than can be run)
-        rails -T db (database related commands that can be run)
-        ```
-      #### Create Migration
-
-      Older versions of rails used the 'rake' command instead of 'rails' below.
-
-      ```ruby
-        rails g migration [migration name] field:type field:type...
-
-        rails db:migrate
-
-        rails db:status
-
-        rails db:rollback (rolls back the previous migration)
-
-        rails db:migrate VERSION=XXX (rolls back to this migration)
-        ```
-      #### Add More Columns
-
-      Using this convention, rails will know that you want to add the fields listed to the table defined by 'YYY' or 'yyy' below.
-
-      ```bash
-        rails g migration AddXXXToYYY ...
-        rails g migration AddFieldsToTownships title:string moved_to:date
-
-        rails g migration add_xxx_to_yyy
-        rails g migration add_fields_to_townships
-        ```
-      #### Show Rails Generators
-      ```bash
-        rails g
-        ```
-      #### Create Scaffolding
-      ```bash
-        rails generate scaffold [name] attribute:type
-        ```
-      ```bash
-        rails generate scaffold Product title:string price:decimal
-        ```
-      #### Create Model (includes migration)
-
-      Model names should be singular.
-
-      String is the default type, so that can be left off if the type is a string.
-
-      [Column Types](http://api.rubyonrails.org/v5.2.0/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add_column)
-
-      ```bash
-        rails generate model [model name] [field[:type][:index] field[:type][:index]] [options]
-
-        #or:
-
-        rails g model [model name] [field[:type][:index] field[:type][:index]] [options]
-
-        #i.e.
-        rails g model ticket title:string priority:string the_date:datetime
-
-        #Run Migration:
-        rails db:migrate
-
-        #Migration Status:
-        rails db:migrate:status
-        ```
-      Example: A model named 'Student' would point to a table named 'students' by default.
-
-      #### Create Controller and View
-
-      Controller name is plural.
-
-      ```bash
-        rails generate controller [controller name]
-        or:
-        rails g controller [controller name]
-        ```
-      #### Remove Controller and other files created above.
-
-```bash
-        rails destroy controller [controller name]
-      ```
-
-      #### Basic Controller Methods
-
-```ruby
-        class TicketsController < ApplicationController
-          def index; end
-          def create; end
-          def show; end
-          def update; end
-          def destroy; end
-        end
-        ```
-
-      #### Views
-
-      When you do not point the controller action to a specific view it will try to render the view with the same name as the action.
-
-      def 'index; end' would try to render the 'index.html.erb' view.
-
-      #### Create resourceful routes.
-
-      This will create:
-
-    * Database migration for the 'students' table.
-    * The Student model with the 'belongs_to' line pointing to 'course'.
-    * A Student controller.
-    * All of the resourceful routes for student.
-
-      ```bash
-        rails g resource [resource name] field:type field:type...
-
-        rails g resource student first_name:string last_name:string course:references
-        ```
-      #### Show Routes
-
-      Show routes from the browser app by going to this path: http://[url of app][:port]/rails/info/routes.
-
-      ```bash
-        rails routes
-        or:
-        rake routes
-      ```
-
-      #### Resourceful Routes in route.rb
-      ```ruby
-        Rails.application.routes.draw
-          root "students#index"
-          get "students" => "students#index", as: "students"
-          post "students" => "students#create"
-          get "students/new" => "students#new", as: "new_student"
-          get "students/:id/edit" => "students#edit", as: "edit_student"
-          get "students/:id" => "students#show", as: "student"
-          patch "students/:id" => "students#update"
-          put "students/:id" => "students#update"
-          delete "students/:id" => "students#destroy"
-        end
-
-        #This is actually the same thing as the above:
-
-        Rails.application.routes.draw
-          root "students#index"
-          resources :students
-        end
-        ```
-
-      #### One-to-Many Nested Rotues in route.rb
-      ```ruby
-        get '/lists/:list_id/notes' => 'notes#index', as: 'list_notes'
-        post '/lists/:list_id/notes' => 'notes#create'
-        get 'lists/:list_id/notes/new' => 'notes#new', as: 'new_list_note'
-        get '/lists/:list_id/notes/:id/edit' => 'notes#edit', as: 'edit_list_note'
-        get '/lists/:list_id/notes/:id' => 'notes#show', as: 'list_note'
-        patch 'lists/:list_id/notes/:id' => 'notes#update'
-        patch 'lists/:list_id/notes/:id' => 'notes#update'
-        delete 'lists/:list_id/notes/:id' => 'notes#destroy'
-        ```
-
-      #### List of Resourceful routes
-
-      <table class='rails-resourceful-routes'>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Verb</th>
-            <th>URL</th>
-            <th>controller#action</th>
-            <th>Task</th>
-            <th>SQL**</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>students</td>
-            <td>GET</td>
-            <td>/students</td>
-            <td>students#index</td>
-            <td>Show Students</td>
-            <td>SELECT *</td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>POST</td>
-            <td>/students</td>
-            <td>students#create</td>
-            <td>Create a new Student</td>
-            <td>CREATE</td>
-          </tr>
-          <tr>
-            <td>new_student</td>
-            <td>GET</td>
-            <td>/students/new</td>
-            <td>students#new</td>
-            <td>Show new Student form</td>
-            <td>Display a HTML form</td>
-          </tr>
-          <tr>
-            <td>edit_student</td>
-            <td>GET</td>
-            <td>/students/:id/edit</td>
-            <td>students#edit</td>
-            <td>Show edit Student form</td>
-            <td>SELECT where id =</td>
-          </tr>
-          <tr>
-            <td>student</td>
-            <td>GET</td>
-            <td>/students/:id</td>
-            <td>students#show</td>
-            <td>Show a Student</td>
-            <td>SELECT where id =</td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>PATCH</td>
-            <td>/students/:id</td>
-            <td>students#update</td>
-            <td>Update Student (partial)</td>
-            <td>UPDATE tbl SET (name = 'Josh')</td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>PUT</td>
-            <td>/students/:id</td>
-            <td>students#update</td>
-            <td>Update Student (complete)</td>
-            <td>UPDATE tbl SET (name = 'Josh', day = 'Wed', state = 'AL' ...)</td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>DELETE</td>
-            <td>/students/:id</td>
-            <td>students#destroy</td>
-            <td>Remove a Student</td>
-            <td>DELETE</td>
-          </tr>
-        </tbody>
-      </table>
-
-      ** There are exceptions to the SQL displayed here. These example serve as the most common implementations in my experience.
-      Each of the 'name's listed in the table above is appended with either '_url' or '_path' in rails.
-      In the rails app, use '_path' for your views and '_url' for controller redirects.
-
-      ##### _url (full path to page)
-
-        * i.e. students_url: http://www.joshyoung.me/students
-        * i.e. student_url(4): ttp://www.joshyoung.me/students/4
-
-      ##### _path (relative path to page)
-      * i.e. students_path: /students</li>
-      * i.e. student_path(4): /students/4</li>
-
-      #### Naming
-
-      By convention the name of the model is singular and the name of the table is plural.
-
-      #### Create New Table Entry
-      ```ruby
-        township = Township.new
-        township.city = 'London'
-        township.country = 'England'
-        township.save
-
-        #Or:
-
-        township = Township.new(city: 'London', country: 'England')
-        township.save
-
-        #Or:
-
-        Township.create(city: 'London', country: 'England')
+  php artisan migrate
 
 ```
-      #### Update Table Value
-      ```ruby
-        township = Township.find(2)
-        township.city = 'London'
-        township.country = 'England'
-        township.save
-
-        #or:
-
-        township.update(city: 'London', country: 'England')
-
+#### Open Laravel Shell
+```bash
+  php artisan tinker
 ```
-      #### Delete Table Value
-      ```ruby
-        township = Township.find_by(city: 'Jacksonville')
-        township.destroy
-      ```
 
+#### Create the Model along with the Migration
+```bash
+  php artisan make:model User -m
+```
 
-      #### One-to-Many Relationships
-      ```ruby
-        #One (parent):
-        class Student < ApplicationRecord
-          has_many :movies
-        end
+#### Create Controller
+```bash
+  php artisan make:controller UserController
+```
 
-        #Many (has a foreign key to reference parent):
-        class Movie < ApplicationRecord
-          belongs_to :student
-        end
-        ```
+#### Create Model, Controller, and Migration
+```bash
+  php artisan make:model User -mc
+```
 
-      ```ruby
-        #Setup the cascade to delete movies, then the student it removed:
-        class Student < ApplicationRecord
-          has_many :devices, dependent: :destroy
-        end
-        ```
+#### Create Resoureful Controller
+```bash
+  php artisan make:controller UsersController -r
+```
 
-      Generate the relationship:
+### <a name='freebsd'></a>FreeBSD
 
-      ```bash
-        rails g resource Device name:string student:references
-        ```
+#### Edit Hostname
+```bash
+  # Edit:
+  vi /etc/rc.conf
 
-          ##### One (parent):
-          <table>
-            <thead>
-              <tr>
-                <th colspan='3'>students</th>
-              </tr>
-              <tr>
-                <th>id</th>
-                <th>name</th>
-                <th>age</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Frank</td>
-                <td>35</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Sally</td>
-                <td>28</td>
-              </tr>
-            </tbody>
-          </table>
+  # Rename references to old hostname:
+  vi /etc/hosts
 
-          ##### Many (child):
-          <table>
-            <thead>
-              <tr>
-                <th colspan='3'>devices</th>
-              </tr>
-              <tr>
-                <th>id</th>
-                <th>name</th>
-                <th>student_id</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>iPhone</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>iPad</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Laptop</td>
-                <td>3</td>
-              </tr>
-            </tbody>
-          </table>
+  # Set the hostname
+  hostname your-new-hostname
 
-      In the above example, 'student_id' is a foreign key pointing to the 'id' field in the 'students' table.
-      The foreign key will always be the parent's table name in singular form (student) with an '_id' appended to the end. So in this case it is 'student_id' since the parent table is 'students'.
+  reboot
+```
 
-      In the ruby console, <strong>student.devices</strong> would return all of the devices that student possesses. On the other hand, <strong>device.student</strong> would return the student who is the owner of the device selected.
+#### Shutdown Server
+```bash
+  poweroff
+  # or
+  shutdown -p now
+```
 
-      #### Many-to-Many Relationships
+#### Show Version
+```bash
+  freebsd-version
+```
 
-      ```ruby
-        class Student < ApplicationRecord
-          has_many :devices
-        end
+#### Update OS
+```bash
+  freebsd-update fetch
+  freebsd-update install
+```
 
-        class Device < ApplicationRecord
-          belongs_to :student
-          belongs_to :colors
-        end
+#### Ports
 
-        class Color < ApplicationRecord
-          has_many :devices
-        end
-        ```
+Ports are groups of 'make' files that allow software to be installed from source. They can be managed by 'portsnap'.
 
-          <table>
-            <thead>
-              <tr>
-                <th colspan='3'>students</th>
-              </tr>
-              <tr>
-                <th>id</th>
-                <th>name</th>
-                <th>age</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Frank</td>
-                <td>35</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Sally</td>
-                <td>28</td>
-              </tr>
-            </tbody>
-          </table>
+#### Packages
 
-          <table>
-            <thead>
-              <tr>
-                <th colspan='4'>devices</th>
-              </tr>
-              <tr>
-                <th>id</th>
-                <th>name</th>
-                <th>student_id</th>
-                <th>color_id</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>iPhone</td>
-                <td>2</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>iPad</td>
-                <td>2</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Laptop</td>
-                <td>1</td>
-                <td>2</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table>
-            <thead>
-              <tr>
-                <th colspan='3'>colors</th>
-              </tr>
-              <tr>
-                <th>id</th>
-                <th>color</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Green</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Blue</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Silver</td>
-              </tr>
-            </tbody>
-          </table>
-
-      ### <a name='ruby'></a>Ruby
-
-
-      #### Output just a class' own methods
-      ```ruby
-        klass = Klass.new
-
-        puts klass.methods - methods
-        ```
-
-      #### Loads IRB With Active Support
-      ```ruby
-        !rails c
-        ```
-      #### Struct
-      ```ruby
-        # With Struct you can only define
-        # the attributes at object creation
-        Student = Struct.new(:name, :grade)
-        george = Student.new('george', 95)
-
-        # Outputs: 'george'
-        puts george.name
-
-        # Outputs: 95
-        puts george.grade
-        ```
-
-      #### OpenStruct
-      ```ruby
-        require 'ostruct'
-        george = OpenStruct.new(name: 'george', grade: 95)
-
-        # Outputs: 'george'
-        puts george.name
-
-        # Outputs: 95
-        puts george.grade
-        ```
-      #### Open documentation for project's gems
-      ```ruby
-        gem serve
-      ```
-      #### Install to global gemset (when using rvm)
-
-```ruby
-        rvm @global do gem install [gem name]
-      ```
-      #### Empty Method Returns Nil
-      ```ruby
-        def find_grade; end
-        grade = find_grade
-
-        #Outputs nil:
-        puts grade
-        ```
-      #### Naming
-      ```ruby
-        #Class is a Noun:
-        class Cards
-          #Module is an Adjective:
-          include Shuffleable
-        end
-        ```
-      #### Ranges
-      ```ruby
-        #Inclusive:
-        5..10
-        #Exclusive:
-        5...10
-      ```
-      #### Find Methods
-      ```ruby
-        cat.private_methods
-        cat.public_methods
-        cat.protected_methods
-        cat.singleton_methods
-
-        Cat.private_instance_methods
-        Cat.protected_instance_methods
-        Cat.public_instance_methods
-        ```
-      #### Syntactic Sugar
-      At the end of the day, the operators we know like `+`, `-`, etc are actually methods in ruby. So these two will do the same thing:
-      ```ruby
-        y = 5 + 6;
-        y = 5.+(6)
-        ```
-      #### Methods and Code Blocks
-      By default all methods will accept a code block. However, they will not yield to the block unless the method includes a `yield` keyword.
-      ```ruby
-        #These are both valid ways to call a method:
-        my_method
-        my_method { puts "Test" }
-        my_method() { puts "Test" }
-        ```
-      #### Accept Multiple Arguments
-      ```ruby
-        def lots_of(*a)
-        end
-
-        #Outpus: [1, 2, 3, 4]
-        puts lots_of(1, 2, 3, 4)
-        ```
-      #### Multiline Comment
-
-```ruby
-      =begin
-        def a_function
-          puts 'test'
-        end
-      =end
-      ```
-      ####Ruby Symbol vs Strings
-      Symbols have the same object ID whereas strings do not.
-      Symbols are immutable and strings are mutable.
-      ```bash
-        #Open irb:
-        >> :pathway.object_id
-        => 9854917
-        >>
-        >> :pathway.object_id
-        => 9854917
-        >>
-        >> "pathway".object_id
-        => 97508076985508
-        >>
-        >> "pathway".object_id
-        => 98508075985400
-        >>
-        >> :pathway == "pathway"
-        => false
-        ```
-      #### Ruby Class Properties
-      ```ruby
-        class RubyStudent
-          #readable only:
-          attr_reader :name
-
-          #writable only:
-          attr_writer :name
-
-          #readable and writable:
-          attr_accessor :grade
-
-          def initialize
-            @name = 'Josh'
-            @grade = 'a'
-          end
-
-          #Override the attr_accessor method in your class:
-          def grade=(my_grade)
-            @grade = my_grade.upcase
-          end
-          ...
-        end
-
-        rstudent = RubyStudent.new
-
-        #Call the accessor method:
-        puts rstudent.name
-        ```
-
-      #### Static Methods
-      ```ruby
-        class RubyStudent
-          def self.my_method
-            ...
-          end
-        end
-
-        #Call static method:
-        RubyStudent.my_method
-      ```
-
-      #### Multiple Static Methods
-      ```ruby
-        class RubyStudent
-          class << self
-            def my_method
-              ...
-            end
-
-            def my_second_method
-              ...
-            end
-          end
-        end
-
-        #Call static method:
-        RubyStudent.my_method
-        RubyStudent.my_second_method
-        ```
-
-      #### Ruby Modules
-      Modules are a typically used to create reusable sections of code in the form of Mixins or they can be used to wrap classes thereby action as a Namespace.
-      Modules cannot be instantiated, so any methods have to be defined with self.
-      ```ruby
-        module Learnable
-          ...
-          def self.calculate
-            ...
-          end
-        end
-
-        #Call the Module method:
-        Learnable::calculate
-        #or
-        Learnable.calculate
-        ```
-
-      #### Ruby Class Inheritance
-      Use inheritance when two class have a 'is-a' relationship. For instance: a MathStudent is a type of Student and a Fox is a type of Animal.
-      ```ruby
-        class Student
-          ...
-          def print_grade
-            puts 'A'
-          end
-        end
-
-        class MathStudent < Student
-          def print_grade
-            puts 'A+'
-          end
-        end
-        student = MathStudent.new
-        #Prints 'A+':
-        student.print_grade
-        ```
-
-      #### Ruby Namespace
-      ```ruby
-        module CollegeStudent
-          class Student
-            def self.outp
-              puts 'output'
-            end
-            def out
-              puts 'new output'
-            end
-          end
-        end
-
-        CollegeStudent::Student.outp
-        student = CollegeStudent::Student.new
-        student.out
-        ```
-
-      #### Ruby Mixins
-      Ruby Mixins are just ruby modules that are included within a class.
-      ```ruby
-        #If a module will be included in a class as a mixin, you do not have to define the method with self.
-        #This way you can call the module method with the class instantiation.
-
-        #File 'learnable.rb'
-        module Learnable
-          def calculate(num1, num2)
-            num1 * num2
-          end
-        end
-
-        #File: student.rb
-        require_relative 'learnable'
-        class Student
-          include Learnable
-
-          def add_up(n1, n2)
-            calculate(n1, n2)
-          end
-        end
-
-        student = Student.new
-        puts student.calculate(2, 2)
-        ```
-      When you define a mixin, if you know what class it will be included within, you can use class properties in the Module definition, like below:
-      ```ruby
-        module Learnable
-          def calculate(num1, num2)
-            @first_number = 10
-          end
-        end
-        ```
-      However, doing so could cause problems if you ever include the module within a class that does not define '@first_number'. Therefore it is best to use the class access within the module methods, like so:
-      ```ruby
-        module Learnable
-          def calculate(num1, num2)
-            #Here we have to use 'self' otherwise the module will think it is defining a local variable.
-            self.first_number = 10
-          end
-        end
-        ```
-
-      Then when this is included in a class, it will work like this:
-
-      ```ruby
-        require_relative 'learnable'
-        class Student
-          include Learnable
-
-          attr_accessor :first_number
-
-          def initialize
-            calculate(2, 2)
-          end
-        end
-
-        puts Student.new.first_number
-        ```
-
-      #### Unless vs If
-      ```ruby
-
-        #Prints 'false unless':
-        unless false
-          puts 'false unless'
-        end
-
-        #Prints 'false unless':
-        puts 'false unless' unless false
-
-        #Prints 'false if':
-        if !false
-          puts 'false if'
-        end
-
-        #Prints 'false if':
-        puts 'false if' if !false
-        ```
-
-      #### Memoization
-      ```ruby
-        #If 'x' is false or nil return the value of 'y',
-        #otherwise return the value of 'x':
-        x ||= y
-
-        #The first time through it will call the 'find_the_pizza' method.
-        #For subsequent calls it will return '@pizza'.
-        def pizza_special
-          @pizza ||= PizzaSpecial.find_the_pizza('cheese')
-        end
-        ```
-
-      #### When You Must Use 'self'.
-      ##### For assigning values with the accessor method from within a class:
-      ```ruby
-        class Animal
-          attr_accessor :tail
-
-          def change_tail(new_tail)
-            #To get this to work as expected, you would have
-            #to change the line below to use 'self'
-            tail = new_tail
-
-            #Change to this:
-            #self.tail = new_tail
-
-            #If you do not use 'self' as shown above, ruby
-            #thinks you are assigning to a local variable.
-
-            #This works without 'self' because ruby knows that there is no local
-            #variable titled 'tail' therefore it knows to return the value from the
-            #accessor method:
-            def send_tail
-              tail
-            end
-          end
-        end
-
-        the_tail = Animal.new
-        the_tail.tail = 'Brown'
-        the_tail.change_tail('light brown')
-
-        #This would output 'Brown'.
-        puts the_tail.tail
-        ```
-
-      ##### For defining 'class methods' (a.k.a. Static Methods):
-      ```ruby
-        class Student
-          def self.new_grade(grade)
-            @grade = grade
-          end
-        end
-
-        Student.new_grade('A')
-        ```
-
-      #### Convenient Methods
-      ```ruby
-        class Test
-          ...
-        end
-
-        #Prints: Test
-        puts Test.inspect
-
-        #Prints: Class
-        puts Test.class
-
-        #Prints: 89023478923
-        puts test.object_id
-        ```
-
-      #### Show Ancestors
-      ```ruby
-        #In a file named 'my_module.rb':
-        module MyMod
-          ...
-        end
-
-        #In another class:
-        require_relative 'my_module'
-        class Test
-          include MyMod
-          ...
-        end
-
-        #Prints: [Test, MyMod, Object, Kernel, BasicObject]
-        puts Test.ancestors
-        ```
-
-      #### Function Return
-      Functions always return a value even if they are empty.
-      ```ruby
-        def empty_function
-        end
-
-        return_value = empty_function
-
-        #Prints 'nil':
-        puts return_value.inspect
-        ```
-
-      #### Ruby Convert Types
-      ```ruby
-        a_string = 'a string value'
-
-        #Convert to Symbol:
-        a_string.to_sym
-
-        #Convert to String:
-        123.to_s
-
-        #Convert to Integer:
-        "123".to_i
-        ```
-      #### Look up Ruby Docs from command line
-
-      [Online Documentation](http://ruby-doc.org)
+These packages are pre-compiled. They are similar to .deb or .rpm packages on Debian and RHEL respectively.
 
 ```bash
-        ri
-        #or:
-        ri -i (for interactive mode)
-        ```
-      #### Interpolate code
-      ```ruby
-        variable_value = 'test'
-        puts "Print out #{variable_value}"
-        ```
-      #### Start IRB Session
+  # Package Info:
+  pkg info
 
-      ```bash
-        irb
-        ```
-      #### If/Else Statement
+  # Install package:
+  pkg install package_name
 
-```ruby
-        if a_value == 1
-          puts "Yes"
-        elsif a_value == 2
-          puts "No"
-        else
-          puts "Could not find."
-        end
-        ```
-      #### Switch Statement
+  # Update:
+  pkg update
 
-      ```ruby
-        the_value = return_a_string()
+  # Upgrade:
+  pkg upgrade
 
-        case the_value
-          when "One"
-            puts "It is one!"
-          when "Two"
-            puts "It is two!"
-          else
-            puts "Could not find result."
-          end
-          ```
-      #### Objects
+  # Uninstall package:
+  pkg remove package_name
+```
 
-      Ruby objects are always passed by reference
+### <a name='slackware'></a>Slackware
 
-      #### Function
+#### Slackware Linux Commands
 
-      ```ruby
-        def function_name(parameter)
-          ...
-        end
-      </code></pre>
-      ```
-      #### Add to Array
-      ```ruby
-        the_array << "val"
-
-        #Or:
-        the_array.push("val")
-        ```
-      #### Object Instantiation
-
-      ```ruby
-        new_obj = Person.new
-        ```
-      #### Iteration
-
-```ruby
-        array.each do |elem| ... end
-        ```
-
-      #### Custom Iteration
-      ```ruby
-        #Example 1:
-        def output
-          yield
-          yield
-        end
-
-        output { puts "This is output twice" }
-
-        #Example 2:
-        def output_num
-          yield(100)
-          yield(200)
-        end
-
-        output_num { |num| puts num }
-        ```
-
-      #### Basic Blocks
-      ```ruby
-        2.times { puts 'Josh' }
-
-        2.times do
-          puts 'Josh'
-        end
-
-        2.times { |i| puts "#{i} - Josh" }
-
-        2.times do |i|
-          puts "#{i} - Josh"
-        end
-        ```
-
-      #### Select Block
-      ```ruby
-        #Returns just the numbers greater than '3':
-        [1, 2, 3, 4, 5, 6, 7, 8, 9].select { |n| n > 3 }
-        ```
-
-      #### Reject Block
-      ```ruby
-        #Rejects the numbers greater than '3':
-        [1, 2, 3, 4, 5, 6, 7, 8, 9].reject { |n| n > 3 }
-        ```
-
-      #### Reduce Block
-      ```ruby
-        #Gets the sum with the reduce method:
-        [1, 2, 3, 4, 5, 6, 7, 8, 9].reduce { |total, n| total + n }
-        #or:
-        [1, 2, 3, 4, 5, 6, 7, 8, 9].reduce (:+)
-        ```
-
-      #### Sort Lowest to Highest
-      ```ruby
-        [11, 21, 73, 14, 95, 56, 97, 48, 19].sort
-        ```
-
-      #### Sort Highest to Lowest
-      ```ruby
-        [11, 21, 73, 14, 95, 56, 97, 48, 19].sort { |a, b| b <=> a }
-        ```
-
-      #### Returns boolean if it finds the result
-      ```ruby
-        #This should return false.
-        [11, 21, 73, 14, 95, 56, 97, 48, 19].any? { |n| n > 100 }
-        ```
-
-      #### Returns the first match
-      ```ruby
-        #This should return 73.
-        [11, 21, 73, 14, 95, 56, 97, 48, 19].detect { |n| n > 70 }
-        ```
-
-      #### Map the values returned into a new array
-      ```ruby
-        [11, 21, 73, 14, 95, 19].map { |n| n * 3 }
-        ```
-
-      #### Hash (associative array / dictionary)
-      ```ruby
-        {key => value}
-        ```
-        ```ruby
-        {:sport => "baseball"} (the key can be anything)
-        ```
-
-      These are both the same:
-
-```ruby
-        {:sport => "baseball", :time_limit => 60}
-
-        #Or:
-        {sport: "baseball", time_limit: 60}
-        ```
-      #### Loop through a hash
-
-      ```ruby
-        sports = {:sport => "baseball", :time_limit => 60}
-        sports.each { |key, val| puts "#{key} - #{val}" }
-      ```
-
-      ### <a name='sqlite'></a>SQLite
-
-      #### Execute a Single Query
-      ```bash
-        sqlite3 -line mydatabase.sqlite3 "select * from students"
-      ```
-      #### Select Databse
-
-      ```bash
-        \c [database]
-        ```
-      #### Describe Table
+Use slackpkg to keep system updated.
 
 ```bash
-        \dt+
-        ```
-      #### Connect to DB
-      ```bash
-        sqlite3 /path/to/database_file.db
-        ```
-      #### Show tables
-      ```bash
-        .tables
-        ```
-      #### Tables Schema
-      ```bash
-        .schema table_name
-        ```
-      #### Describe Table
-      ```bash
-        pragma table_info(table_name)
-        ```
-      #### Select all
-      ```bash
-        select * from table_name
-        ```
+  # Download slackpkg .tar.gz file with wget
+  wget https://slackpkg.org/stable/slackpkg-2.60-noarch-1.tgz
 
-      ### <a name='security'></a>Security
+  # Install slackpkg with 'installpkg'
+  installpkg slackpkg-2.60-noarch-1.tgz
 
-      #### Ping Sweep
-      ```bash
-        for i in `seq 1 255`; do ping -c 1 [IP ADDRESS].$i ; done
-        ```
+  # Uncomment and select a mirror:
+  vi /etc/slackpkg/mirrors
 
-      ### <a name='testing'></a>Testing
-      #### Rspec Fail on First Error
-      ```bash
-        rspec --fail-fast
-        ```
-      #### Rspec with Documentation
+  # Initialize slackpkg:
+  slackpkg update
 
-      ```ruby
-        rspec -f d
-        ```
-      #### Test File Setup
+  # Install package
+  slackpkg install package_name
 
-      We have a space between each part below.
+  # Update to the latest slackpkg packages:
+  slackpkg update
+  slackpkg upgrade-all
+```
 
-      ```ruby
-        # Setup:
-        user = create(:user)
+### <a name='ubuntu-debian'></a>Ubuntu / Debian
 
-        # Exercise:
-        Student.addToClass(user)
-
-        # Verify:
-        expect(Student.users).to eq([user])
-        ```
-
-      ### <a name='ssh'></a>SSH
-
-      #### Remote Port Forwarding
-
-      Here <strong>9100</strong> is the remote port and <strong>22</strong> is the remote port.
+Add or edit the lines below in this file `/etc/network/interfaces`.
 
 ```bash
-        ssh -R 9100:127.0.0.1:22 username@192.168.6.7
-        ```
-      #### Local Port Forward
+  ...
+  auto eth0
+  iface eth0 inet static
+  address 192.168.3.100
+  netmask 255.255.255.0
+  gateway 192.168.3.1
+  broadcast 192.168.3.255
+  dns-nameservers 192.168.3.1
+  ...
+```
 
-      In this case, <strong>9100</strong> would be our local port and <strong>80</strong> would be the remote.
+#### Show Ubuntu Version
 
 ```bash
-        ssh -L 9100:www.remotesite.com:80 username@host
-        ```
+  lsb_release -a
+  # or:
+  cat /etc/*release
+```
 
-      ### <a name='svg'></a>SVG
+### <a name='centos-rhel'></a>CentOS / RHEL
 
-      #### SVG viewBox
+#### Change Hostname
+```bash
+  hostnamectl set-hostname my-new-hostname
+```
 
-      The viewBox has values of x, y, width, and height. The shapes within this box will be set in relation to the size of the viewBox. The viewBox location within the SVG tag can be offset with the first two numbers (x, y).
+#### Show Version
+```bash
+  cat /etc/*release
+```
 
-      In the CodePen below below, you can see that the first and last example are consuming 100% of the width of the viewBox. When the screen is expanded or contracted, the elements within expand or contract accordingly, but always consume 100% of the size of the viewBox because the elements inside are sized to contain 100% of the viewBox width.
+#### Add Static IP
 
-      The middle example below internal shapes that total to less than the full width of the viewBox. The viewBox is also shifted from a starting point of 0,0 to demonstrate that the view box can be positioned anywhere within the contining SVG element.
+Add modify the entries below within: `/etc/sysconfig/network-scripts/ifcfg-eth0` (change IP addresses according to your network). The name for your network connection could differ from `ifcfg-eth0`.
 
-      To adjust the size of the SVG, you can set the outer containing `SVG` tag to be a certain percentage of the width of the browser window or even a fixed width. Within this the inner viewBox can be positioned within it.
+```bash
+  ...
+  DEVICE="eth0"
+  BOOTPROTO="static"
+  IPADDR="192.168.3.100"
+  NETMASK="255.255.255.0"
+  GATEWAY="192.168.3.1"
+  DNS1="192.168.3.1"
+  DNS2="192.168.3.2"
+  ONBOOT="yes"
+  ...
+```
 
-      <p data-height="265" data-theme-id="0" data-slug-hash="xzgvKX" data-default-tab="html,result" data-user="joshayoung" data-embed-version="2" data-pen-title="SVG viewBox" class="codepen">See the Pen <a href="https://codepen.io/joshayoung/pen/xzgvKX/">SVG viewBox</a> by Josh Young (<a href="https://codepen.io/joshayoung">@joshayoung</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+### <a name='arch'></a>ARCH
 
-      #### SVG Links
-      <p data-height="265" data-theme-id="0" data-slug-hash="xzgodE" data-default-tab="html,result" data-user="joshayoung" data-embed-version="2" data-pen-title="SVG Symbol" class="codepen">See the Pen <a href="https://codepen.io/joshayoung/pen/xzgodE/">SVG Symbol</a> by Josh Young (<a href="https://codepen.io/joshayoung">@joshayoung</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+#### Pacman Commands
+```bash
+  # Sync and Update:
+  pacman -Syu
 
-      #### SVG Elements
-      <p data-height="265" data-theme-id="0" data-slug-hash="wXgNvg" data-default-tab="html,result" data-user="joshayoung" data-embed-version="2" data-pen-title="SVG Stuff" class="codepen">See the Pen <a href="https://codepen.io/joshayoung/pen/wXgNvg/">SVG Stuff</a> by Josh Young (<a href="https://codepen.io/joshayoung">@joshayoung</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+  # Install a package:
+  pacman -S package_name
 
-      #### Set SVG to Scale with Browser Width
-      By default an SVG element will take up the full width of the browser unless it has a defined width. To circumvent this, you can give it a definined with such as 300px or a percentage. Below is an example of a way to set the SVG element to be half of the browser width.
-      If the SVG tag is set to scale with the browser width, the SVG shapes within the internal viewBox will scale accordingly.
-      ```css
-        svg {
-          height: auto;
-          //This could be any percentage:
-          width: 50%;
-        }
-        ```
+  # Remove a package:
+  pacman -R package_name
+```
 
-      ### <a name='rubymine'></a>RubyMine
+#### Show Version
+```bash
+  lsb_release -a
+```
 
-      <dl>
-        <dt>Open Context Menu</dt>
-        <dd><code>Option(alt) + Enter</code></dd>
-        <dt>Search for Files</dt>
-        <dd><code>SHIFT + SHIFT</code></dd>
-        <dt>Search in Files</dt>
-        <dd><code>CMD + SHIFT + F</code></dd>
-        <dt>MVC Dialog</dt>
-        <dd><code>CTRL + CMD + UP-ARROW</code></dd>
-      </dl>
+### <a name='linux'></a>Linux
 
-      ### <a name='scp'></a>SCP
+#### Init Systems
 
-      #### Local to Remote
-      ```bash
-        scp file.txt username@host:/to/myremote/directory
-        ```
-      #### Remote to Local
-      ```bash
-        scp username@host:file.txt /to/my/local/directory
-        ```
+##### SystemD
 
-      ### <a name='security'></a>Security
+Systemd is managed my 'systemctl'. To start sshd, we would run: `systemctl start sshd`.
 
-      #### Nmap Ping Scan (detect hosts)
-      ```bash
-        nmap -sP 192.168.1.0/24
-        ```
-      #### Bash Ping Sweep
+##### Upstart
 
-      #### Usage: <strong>./sweep.sh 192.168.1</strong>
-      ```bash
-        #!/bin/bash
-        ip=$1
-        for i in `seq 0 1 255`; do
-            ping -c 3 -t 5 $ip.$i > /dev/null 2>&1 && echo $ip.$i is up;
-        done
-        ```
+Upstart is managed by 'initctl'. To start sshd we would run: `initctl start sshd`. Upstart was invented as a replace for System V by Ubuntu.
 
-      ### <a name='php'></a>PHP
-      #### GET/POST Assignment
-      ```php
-        $var = isset($_GET['var']) ? $_GET['var'] : '';
-      ```
+##### System V (SysV)
 
-      ### <a name='tmux'></a>TMUX
+To start sshd, we would run: '/etc/init.d/ssh start'. This was primarily used by older versions of Linux.
 
-        <dl>
-          <dt>Split Window Vertically:</dt>
-          <dd><code>Ctrl-b %</code></dd>
-          <dt>Open New Window</dt>
-          <dd><code>Ctrl-b + c</code></dd>
-          <dt>Previous Window</dt>
-          <dd><code>Ctrl-b + l</code></dd>
-          <dt>Navigate Between Windows</dt>
-          <dd><code>Ctrl-b + 0/1/2,etc</code></dd>
-          <dt>Split Window Horizontally:</dt>
-          <dd><code>Ctrl-b "</code></dd>
-          <dt>Navigate Between Windows:</dt>
-          <dd><code>Ctrl-b &lt;ARROW KEYS&gt;</code></dd>
-          <dt>Detach from tmux:</dt>
-          <dd><code>Ctrl-b + d</code></dd>
-          <dt>Re-attach to tmux:</dt>
-          <dd><code>tmux attach -t &lt;SESSION&gt;</code> (i.e. tmux attach -t 0)</dd>
-          <dt>Show running tmux sessions:</dt>
-          <dd><code>tmux ls</code></dd>
-          <dt>Rename tmux Session:</dt>
-          <dd><code>Ctrl-b + $</code></dd>
-          <dt>Full Screen</dt>
-          <dd><code>Ctrl-b + z</code></dd>
-          <dt>Next Window</dt>
-          <dd><code>Ctrl-b + n</code></dd>
-          <dt>Previous Window</dt>
-          <dd><code>Ctrl-b + p</code></dd>
-          <dt>Open a Specific Session</dt>
-          <dd><code>Ctrl-b + &lt;number&gt;</code></dd>
-          <dt>Detach Current Session</dt>
-          <dd><code>Ctrl-b + d</code></dd>
-          <dt>Start Session with Name</dt>
-          <dd><code>tmux new -s [name]</code></dd>
-          <dt>Close a Session with Name</dt>
-          <dd><code>tmux kill-session -t [name]</code></dd>
-          <dt>Rename Session</dt>
-          <dd><code>tmux rename-session -t 0 [new name]</code></dd>
-        </dl>
+##### BSD Init
 
-      ### <a name='vim'></a>VIM
+The BSD based init system is configured under /etc/rc.conf. To start sshd, we would run: '/etc/rc.d/sshd start'. BSD and Slackware use the BSD init system
 
-        <dl>
-          <dt>Remove all folds</dt>
-          <dd>zR</dd>
-          <dt>Toggle fold inside current indent</dt>
-          <dd>za</dd>
-          <dt>Find Character Before:</dt>
-          <dd><code>t}</code></dd>
-          <dt>Change to Found Char Before:</dt>
-          <dd><code>ct}</code></dd>
-          <dt>Find Character:</dt>
-          <dd><code>f}</code></dd>
-          <dt>Change to Found Char:</dt>
-          <dd><code>cf}</code></dd>
-          <dt>Find Character Backwards</dt>
-          <dd><code>F{</code></dd>
-          <dt>Find Character Before Backwards</dt>
-          <dd><code>T{</code></dd>
-          <dt>Re-run the last 'f' or 't' command</dt>
-          <dd><code>;</code></dd>
-          <dt>Re-run the last 'F' or 'T' command</dt>
-          <dd><code>,</code></dd>
-          <dt>End of Current Word:</dt>
-          <dd><code>ea</code></dd>
-          <dt>Change Line</dt>
-          <dd><code>cc</code></dd>
-          <dt>Split Editor:</dt>
-          <dd><code>:split(:sp)</code> new_file_name</dd>
-          <dt>Vertical Split Editor:</dt>
-          <dd><code>:vsplit(:vs)</code> new_file_name</dd>
-          <dt>Switch Between Splits:</dt>
-          <dd><code>Ctrl + w</code></dd>
-          <dt>Mark Current Line:</dt>
-          <dd><code>m[a-z]</code> (i.e. <code>ma</code>)</dd>
-          <dt>Go to Mark "h":</dt>
-          <dd><code>'h</code></dd>
-          <dt>Show all marks:</dt>
-          <dd><code>:marks</code></dd>
-          <dt>Mark Across Files</dt>
-          <dd>Use an uppercase mark: <code>m[A-Z]</code></dd>
-          <dt>Previous location (insert mode):</dt>
-          <dd><code>gi</code></dd>
-          <dt>Go to file under cursor:</dt>
-          <dd><code>gf</code></dd>
-          <dt>Open shell from vi:</dt>
-          <dd><code>:shell</code></dd>
-          <dt>Close shell:</dt>
-          <dd><code>Ctrl + d</code></dd>
-          <dt>Open file browser:</dt>
-          <dd><code>:E</code></dd>
-          <dt>Show Registers:</dt>
-          <dd><code>:reg</code></dd>
-          <dt>Paste from # registers:</dt>
-          <dd><code>"[0-9]p</code> (i.e. <code>"0p</code>, <code>"1p</code>, etc.)</dd>
-          <dt>Yank to register:</dt>
-          <dd><code>"[a-z]yy</code> (then: <code>"ap</code> to paste)</dd>
-          <dt>Append to register:</dt>
-          <dd><code>"[A-Z]yy</code> (then: <code>"Ap</code> to paste)</dd>
-          <dt>Paste from Clipboard</dt>
-          <dd><code>"+p</code></dd>
-          <dt>Record Macro:</dt>
-          <dd><code>q[a-z]</code> (i.e. <code>qm</code> - records to `m`)</dd>
-          <dt>Stop Macro Recording:</dt>
-          <dd><code>q</code></dd>
-          <dt>Execute Macro:</dt>
-          <dd><code>@[a-z]</code> (i.e. <code>@m</code> or <code>20 @m</code> to run 20 times</dd>
-          <dt>Increment Number:</dt>
-          <dd><code>Ctrl + a</code></dd>
-          <dt>Search / Replace Globally:</dt>
-          <dd><code>:%s/searchfor/replacewith/g</code></dd>
-          <dt>Search / Replace Current Line:</dt>
-          <dd><code>:s/searchfor/replacewith/g</code></dd>
-          <dt>Search / Replace (confirmation):</dt>
-          <dd><code>:%s/searchfor/replacewith/gc</code></dd>
-          <dt>High, Middle, Low</dt>
-          <dd><code>H, M, L</code></dd>
-          <dt>Move up/down</dt>
-          <dd><code>Ctrl + U / Ctrl + D</code></dd>
-          <dt>Move to line 11</dt>
-          <dd><code>11 + G</code></dd>
-          <dt>Indent to surroundings</dt>
-          <dd><code>==</code></dd>
-          <dt>Delete around and within:</dt>
-          <dd><code>daw / diw</code></dd>
-          <dt>Delete inner paragraph</dt>
-          <dd><code>dip</code></dd>
-          <dt>Indent a paragraph</dt>
-          <dd><code>&gt;ip</code></dd>
-          <dt>Reverse paragraph indent</dt>
-          <dd><code>=ip</code></dd>
-          <dt>Change between html tags</dt>
-          <dd><code>cit</code></dd>
-          <dt>Delete html tag</dt>
-          <dd><code>dat</code></dd>
-          <dt>Open New Window</dt>
-          <dd><code>:new</code> file_name.txt</dd>
-          <dt>Open Vertical Window</dt>
-          <dd><code>:vnew</code> file_name.txt</dd>
-          <dt>Go to file</dt>
-          <dd><code>gf</code></dd>
-          <dt>Go Back to prev file</dt>
-          <dd><code>Ctrl + o</code></dd>
-          <dt>Open New Tab</dt>
-          <dd><code>:tabnew</code></dd>
-          <dt>Edit File in Tab</dt>
-          <dd><code>:tabedit</code> file_name.txt</dd>
-          <dt>Move forward in tabs</dt>
-          <dd><code>gt</code></dd>
-          <dt>Move backward in tabs</dt>
-          <dd><code>gT</code></dd>
-          <dt>Open Visual Block mode</dt>
-          <dd><code>Ctrl + V</code></dd>
-          <dt>Move to beggining of line</dt>
-          <dd><code>0</code></dd>
-          <dt>Open NETRW file exporer</dt>
-          <dd><code>:e .</code></dd>
-        </dl>
+#### Linux partition/format with Parted
+```bash
+  parted /dev/sdb # Open device with gparted:
+  print # Print device info:
+  print free # Show free space
+  help mklabel # Print available label types:
+  mklabel msdos # 'msdos' good option, select 'gpt' for uefi support
+  help mkpart # Partitioning help:
+  mkpart # Start partitioning:
 
-      ### <a name='vs_code'></a>VS Code
-      <dl>
-        <dt>Output HTML Boilerplate</dt>
-        <dd><code>html:5 + TAB</code></dd>
-      </dl>
+ # You will usually select 'primary' for the partition type.
 
-      ### <a name='windows'></a>Windows
+ # Select filesystem type, examples:
+ # ext2, ext3, ext4, ntfs, exfat, fat32
 
-      #### Switch to C Drive
-      ```bash
-        cd /d C:
-      ```
-      #### Flush DNS
-      ```bash
-        ipconfig /flushdns
-        ```
+ # Start/End need adjustment if not partitioning whole drive:
+ # Start partition from '2048s'
+ # End on '-1s'
 
-      #### All Network Info
-      ```bash
-        ipconfig /all
-        ```
+  quit # Exit:
 
-      ### <a name='yarn'></a>YARN
-      #### Package Version (exclude dependencies)
-      ```bash
-        yarn list --depth 0 | grep [package name]
-      ```
+ # Format your partition with 'mkfs', examples:
+  mkfs.ext2 /dev/sdb1
+  mkfs.ext3 /dev/sdb1
+  mkfs.ext4 /dev/sdb1
+  mkfs.vfat /dev/sdb1
+  mkfs.ntfs /dev/sdb1
 
-    ### <a name='zfs'></a>ZFS
-      #### ZFS Pool Status
+ # Use '-L' to add a label:
+  mkfs.ext4 -L mydrive /dev/sdb1
 
-      ```bash
-        zpool status -v
+  eject /dev/sdb1 # Eject partition:
+```
 
-        zpool history
+#### Show Directory Size
+```bash
+  du -sh directory_path
+```
 
-        #List Datasets:
-        zfs list
+#### SystemD
+```bash
+  #'enable' will create a symbolic link so that the service starts on reboot
+  #'disable' will remove the symbolic link
+  #'is-active' will tell you if the service is running
+  #'is-enable' will tell you if it starts on boot
+  systemctl [status, enable, disable, is-active, is-enabled start, restart, reload, stop] application.service
+```
 
-        #Display all information about all datasets:
-        zfs get all
+#### Change Username
 
-        #Mount filesystem:
-         zfs mount /mount_location
-         ```
+If you want to switch user 'joe' to 'sally', below are the steps:
 
+```bash
+  usermod -l sally joe
+
+  #Verify that the new user exists and the old one does not:
+  id sally
+  id joe
+
+  #Swap out the new user's group:
+  groupmod -n sally joe
+
+  #Swap the home directory:
+  usermod -d /home/sally -m sally
+
+  #If the above command does not work, delete the old dir and re-create it:
+  rm -rvf /home/joe
+  mkhomedir_helper sally
+
+  #If you search these two files, you should not see the 'joe' user/group:
+  cat /etc/group | grep joe
+  cat /etc/passwd | grep joe
+```
+
+#### Rsync
+```bash
+  rsync -avz --delete /original/folder/location /new/folder/location
+```
+
+#### Reload Bash Config
+```bash
+  source .bashrc
+```
+
+#### Check Drive for Errors
+```bash
+  #Health Summary:
+  smartctl -H /dev/sdb
+  #Time required to run HDD Test:
+  smartctl -c /dev/sdb
+
+  #Run Short Test:
+  smartctl -t short /dev/sdb
+
+  #Run Long Test:
+  smartctl -t long /dev/sdb
+
+  #Print Test Results Summary:
+  smartctl -l selftest /dev/sdb
+
+  #Print Details of Latest Test:
+  smartctl -a /dev/sdb
+```
+
+#### Check Drive for Bad Blocks
+```bash
+  #Test for bad block:
+  badblocks -vs /dev/sdb > badblocks_results.txt
+```
+
+#### Correct Bad Blocks
+```bash
+  #ext(2/3/4) filesystem:
+  e2fsck -l badblocks_results.txt /dev/sdb
+
+  #other filesystems:
+  fsck -l badblocks_results.txt /dev/sdb
+```
+
+#### Show Security Settings with `ls`
+```bash
+  ls -Z
+```
+
+#### Crontab
+```bash
+  *  *  *  *  *         command
+  -  -  -  -  -
+  |  |  |  |  |
+  |  |  |  |  +---------------------- day of week (0 - 6) (0 - Sunday)
+  |  |  |  +--------------------- month (1 - 12)
+  |  |  +------------------- day of month (1 - 31)
+  |  +------------- hour (0 - 23)
+  +------------ minute (0 - 59)
+```
+
+#### Write ISO/IMG to Disk or USB
+
+The command below could also be executed with 'bs=4M'.
+
+```bash
+  fdisk -l
+  umount /dev/sdb
+  dd if=/path/to/iso/or/img of=/dev/sdb bs=1M status=progress && sync
+  eject /dev/sdb
+```
+
+#### Find Linux Version
+
+##### Kernel:
+```bash
+  uname -mrs
+```
+##### Distribution:
+```bash
+  cat /etc/*-release
+```
+
+#### Prevent Command from Being Recorded in Terminal History
+```bash
+  &lt;space&gt; command
+```
+
+#### Logged In User History (last 10)
+```bash
+  last -10
+```
+
+#### Wipe HDD with 'dd' Command
+```bash
+  #With Zeros:
+  dd if=/dev/zero of=/dev/sdb bs=1M status=progress && sync
+
+  #With Random Data:
+  dd if=/dev/urandom of=/dev/sdb bs=1M status=progress && sync
+```
+
+#### Terminal Calculator
+```bash
+  bc -l
+```
+
+#### System Uptime
+```bash
+  uptime
+```
+
+#### Clear Terminal
+```bash
+  CTRL + l
+```
+
+#### Extract a .tar File
+```bash
+  tar -xvf file.tar
+```
+
+#### Extract a .tar.gz File
+```bash
+  tar -xzvf file.tar.gz
+```
+
+#### Extract a .tar.bz2 File
+```bash
+  tar -xjvf file.tar.bz2
+```
+
+#### Finding a File
+```bash
+  find / -name [file name you are searching] 2> /dev/null
+```
+
+#### Bring Job Into the Foreground
+```bash
+  fg
+```
+
+#### Pause Job
+```bash
+  Ctrl + Z
+```
+
+#### Resume Paused Job in Background
+```bash
+  bg
+```
+
+#### Continue Execution after Shell Exit
+```bash
+  nohup ./script.sh &
+```
+
+#### List Background Jobs
+```bash
+  jobs
+```
+
+#### Start Program in Background
+```bash
+  ./script.sh &
+```
+
+#### Direct All Output to Log File
+```bash
+  ./script.sh 1> ~/tmp/log.txt 2> ~/tmp/log.txt &
+```
+
+#### Direct All Output to Null
+```bash
+  ./script.sh 1> /dev/null 2> /dev/null &
+```
+
+#### Run 256 Checksum
+```bash
+  sha256sum /the/path/to/file.iso
+```
+
+### <a name='mac'></a>Mac
+
+#### Run 256 Checksum
+```bash
+  shasum -a 256 /the/path/to/file.iso
+```
+
+#### Change Time Machine Backup Frequency
+
+The interval is set in seconds.
+
+```bash
+  defaults write /System/Library/Launch Daemons/com.apple.backupd-auto StartInterval -int 1800
+```
+
+#### Find IP
+```bash
+  ifconfig |  grep -oE "\w* \b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
+```
+
+#### Flush DNS
+```bash
+  killall -HUP mDNSResponder
+````
+
+#### Write ISO/IMG to Disk or USB
+
+The command below could also be executed with 'bs=4m'.
+
+```bash
+  diskutil list
+  umount /dev/disk2
+  dd if=/path/to/iso/or/img/file of=/dev/disk2 bs=1m && sync
+  diskutil eject /dev/disk2
+```
+
+### <a name='mysql'></a>MySQL
+
+##### Connect to Database
+```bash
+  mysql -u [username] -p [password] -h [hostname]
+```
+
+### <a name='netstat'></a>Netstat
+
+#### Find Listening Port (Bash)
+```bash
+  netstat -nao | find "80"
+```
+
+#### Find Listening Port (Windows)
+```bash
+  netstat -nao | findstr "0.0.80"
+```
+
+### <a name='mysql'></a>MySQL
+
+##### Connect to Database
+```bash
+  mysql -u [username] -p [password] -h [hostname]
+```
+
+### <a name='psql'></a>PostgreSQL
+
+<dl>
+  <dt>Connect to Database</dt>
+  <dd>`\c DATABASE_NAME`</dd>
+  <dt>List Databases</dt>
+  <dd>`\l`</dd>
+  <dt>Tables in database:</dt>
+  <dd>`\dt`</dd>
+  <dt>Describe Table</dt>
+  <dd>`\dt+`</dd>
+  <dt>Leave SQL Server</dt>
+  <dd>`\q`</dd>
+  <dt>Connect to Postgres</dt>
+  <dd>`psql postgres`</dd>
+  <dt>Create User</dt>
+  <dd>`CREATE USER myuser WITH PASSWORD 'my password';`</dd>
+  <dt>Create Role</dt>
+  <dd>`CREATE ROLE myuser WITH LOGIN PASSWORD 'my password';`</dd>
+  <dt>Alter Role</dt>
+  <dd>`ALTER USER myuser WITH CREATEDB;`</dd>
+</dl>
+
+### <a name='kanban'></a>Kanban
+
+<dl>
+  <dt>Swim Lanes</dt>
+  <dd>Rows</dd>
+  <dt>WIP</dt>
+  <dd>Work In Progress</dd>
+  <dt>WIP Limit</dt>
+  <dd>The maximum amount of cards allowed in one column on the board</dd>
+  <dt>Blocker</dt>
+  <dd>Something that is preventing you from moving your card forward</dd>
+  <dt>Hidden Work</dt>
+  <dd>Something you are working on that is not visible on the Kanban Board</dd>
+</dl>
+
+### <a name='python'></a>Python
+
+#### Start Simple Server
+
+```bash
+  python -m SimpleHTTPServer
+```
+
+#### Start Simple Server with Python 3
+```bash
+  python -m http.server
+```
+
+### <a name='rails'></a>Rails
+
+#### Inheriting Directly from ActionController::Base
+
+Inheriting directly from: "ActionController::Base" instead of: "ApplicationController" will circumvent any code in your application_controller.rb file. Essentially it is like "skip running anything in the application_controller.rb file". "ApplicationController" inherits from "ActionController::Base".
+
+#### Output image path from console
+```bash
+  ActionController::Base.helpers.asset_path('image.jpg')
+
+  #Or:
+  include ActionView::Helpers::AssetUrlHelper
+  asset_path('image.jpg')
+```
+
+#### Open Rails Database Console
+```bash
+  rails dbconsole
+```
+
+#### Clear Test Log File
+```bash
+  rails log:clear LOGS=test
+```
+
+#### Rails Controller Methods Are Typically Ordered
+1.index
+2. show
+3. new
+4. edit
+5. create
+6. update
+7. destroy
+
+#### Rollback in Steps
+```bash
+  rails db:rollback STEP=1
+```
+
+#### Show Migration Status
+```bash
+  rails db:migrate:status
+```
+#### Run Migrations on Test Database
+
+```bash
+  bin/rails db:migrate RAILS_ENV=test
+```
+
+#### Rails CRUD forms with no form plugin
+[github.com/joshayoung/rails-basic-forms](https://github.com/joshayoung/rails-basic-forms)
+
+#### Start Local Server
+```bash
+  rails server (rails s)
+```
+
+#### Start Local Server on any IP
+```bash
+  rails s -b 0.0.0.0
+```
+
+#### Start Local Server on different port
+
+The default port is 3000 if unspecified.
+
+```bash
+  rails s -b 0.0.0.0 -P tmp/pids/srv1.pid
+  rails s -b 0.0.0.0 -p 3001 -P tmp/pids/srv2.pid
+  rails s -b 0.0.0.0 -p 3002 -P tmp/pids/srv3.pid
+```
+
+#### Active Record Errors
+```ruby
+  #Model validations:
+  class Student
+  validates :name, :grade, :act_score, presence: true
+  ...
+  end
+
+new_student = Student.create(name: 'James', grade: '2nd.')
+
+#Show errors:
+new_student.errors
+
+  #Show errors as sentences:
+  new_student.errors.full_messages
+```
+
+#### Route Syntax
+```ruby
+  verb "the_url" => "controller#action"
+  get "tickets" => "tickets#index"
+  get "tickets/:id" => "tickets#show"
+```
+
+#### Open SQLite from Rails
+```bash
+  rails dbconsole
+```
+
+#### Show Rail Project Info
+```bash
+  rails about
+```
+
+#### Open Rails Console
+```bash
+  rails console
+  or:
+  rails c
+
+  #reload the console to pull in any code changes made:
+  reload!
+```
+
+#### Rails Tasks
+```bash
+  rails -T (commands than can be run)
+  rails -T db (database related commands that can be run)
+```
+
+#### Create Migration
+
+Older versions of rails used the 'rake' command instead of 'rails' below.
+
+```ruby
+  rails g migration [migration name] field:type field:type...
+
+  rails db:migrate
+
+  rails db:status
+
+  rails db:rollback (rolls back the previous migration)
+
+  rails db:migrate VERSION=XXX (rolls back to this migration)
+```
+
+#### Add More Columns
+
+Using this convention, rails will know that you want to add the fields listed to the table defined by 'YYY' or 'yyy' below.
+
+```bash
+  rails g migration AddXXXToYYY ...
+  rails g migration AddFieldsToTownships title:string moved_to:date
+
+  rails g migration add_xxx_to_yyy
+  rails g migration add_fields_to_townships
+```
+
+#### Show Rails Generators
+```bash
+  rails g
+```
+
+#### Create Scaffolding
+```bash
+  rails generate scaffold [name] attribute:type
+```
+
+```bash
+  rails generate scaffold Product title:string price:decimal
+```
+
+#### Create Model (includes migration)
+
+Model names should be singular.
+
+String is the default type, so that can be left off if the type is a string.
+
+[Column Types](http://api.rubyonrails.org/v5.2.0/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add_column)
+
+```bash
+  rails generate model [model name] [field[:type][:index] field[:type][:index]] [options]
+
+  #or:
+
+  rails g model [model name] [field[:type][:index] field[:type][:index]] [options]
+
+  #i.e.
+  rails g model ticket title:string priority:string the_date:datetime
+
+  #Run Migration:
+  rails db:migrate
+
+  #Migration Status:
+  rails db:migrate:status
+```
+
+Example: A model named 'Student' would point to a table named 'students' by default.
+
+#### Create Controller and View
+
+Controller name is plural.
+
+```bash
+  rails generate controller [controller name]
+  or:
+  rails g controller [controller name]
+```
+
+#### Remove Controller and other files created above.
+
+```bash
+  rails destroy controller [controller name]
+```
+
+#### Basic Controller Methods
+
+```ruby
+  class TicketsController < ApplicationController
+  def index; end
+  def create; end
+  def show; end
+  def update; end
+  def destroy; end
+  end
+```
+
+#### Views
+
+When you do not point the controller action to a specific view it will try to render the view with the same name as the action.
+
+def 'index; end' would try to render the 'index.html.erb' view.
+
+#### Create resourceful routes.
+
+This will create:
+
+* Database migration for the 'students' table.
+* The Student model with the 'belongs_to' line pointing to 'course'.
+* A Student controller.
+* All of the resourceful routes for student.
+
+```bash
+  rails g resource [resource name] field:type field:type...
+
+  rails g resource student first_name:string last_name:string course:references
+```
+
+#### Show Routes
+
+Show routes from the browser app by going to this path: http://[url of app][:port]/rails/info/routes.
+
+```bash
+  rails routes
+  or:
+  rake routes
+```
+
+#### Resourceful Routes in route.rb
+```ruby
+  Rails.application.routes.draw
+  root "students#index"
+  get "students" => "students#index", as: "students"
+  post "students" => "students#create"
+  get "students/new" => "students#new", as: "new_student"
+  get "students/:id/edit" => "students#edit", as: "edit_student"
+  get "students/:id" => "students#show", as: "student"
+  patch "students/:id" => "students#update"
+  put "students/:id" => "students#update"
+  delete "students/:id" => "students#destroy"
+  end
+
+  # This is actually the same thing as the above:
+
+  Rails.application.routes.draw
+  root "students#index"
+  resources :students
+  end
+```
+
+#### One-to-Many Nested Rotues in route.rb
+```ruby
+  get '/lists/:list_id/notes' => 'notes#index', as: 'list_notes'
+  post '/lists/:list_id/notes' => 'notes#create'
+  get 'lists/:list_id/notes/new' => 'notes#new', as: 'new_list_note'
+  get '/lists/:list_id/notes/:id/edit' => 'notes#edit', as: 'edit_list_note'
+  get '/lists/:list_id/notes/:id' => 'notes#show', as: 'list_note'
+  patch 'lists/:list_id/notes/:id' => 'notes#update'
+  patch 'lists/:list_id/notes/:id' => 'notes#update'
+  delete 'lists/:list_id/notes/:id' => 'notes#destroy'
+```
+
+#### List of Resourceful routes
+
+<table class='rails-resourceful-routes'>
+<thead>
+<tr>
+  <th>Name</th>
+  <th>Verb</th>
+  <th>URL</th>
+  <th>controller#action</th>
+  <th>Task</th>
+  <th>SQL**</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>students</td>
+  <td>GET</td>
+  <td>/students</td>
+  <td>students#index</td>
+  <td>Show Students</td>
+  <td>SELECT *</td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td>POST</td>
+  <td>/students</td>
+  <td>students#create</td>
+  <td>Create a new Student</td>
+  <td>CREATE</td>
+</tr>
+<tr>
+  <td>new_student</td>
+  <td>GET</td>
+  <td>/students/new</td>
+  <td>students#new</td>
+  <td>Show new Student form</td>
+  <td>Display a HTML form</td>
+</tr>
+<tr>
+  <td>edit_student</td>
+  <td>GET</td>
+  <td>/students/:id/edit</td>
+  <td>students#edit</td>
+  <td>Show edit Student form</td>
+  <td>SELECT where id =</td>
+</tr>
+<tr>
+  <td>student</td>
+  <td>GET</td>
+  <td>/students/:id</td>
+  <td>students#show</td>
+  <td>Show a Student</td>
+  <td>SELECT where id =</td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td>PATCH</td>
+  <td>/students/:id</td>
+  <td>students#update</td>
+  <td>Update Student (partial)</td>
+  <td>UPDATE tbl SET (name = 'Josh')</td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td>PUT</td>
+  <td>/students/:id</td>
+  <td>students#update</td>
+  <td>Update Student (complete)</td>
+  <td>UPDATE tbl SET (name = 'Josh', day = 'Wed', state = 'AL' ...)</td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td>DELETE</td>
+  <td>/students/:id</td>
+  <td>students#destroy</td>
+  <td>Remove a Student</td>
+  <td>DELETE</td>
+</tr>
+</tbody>
+</table>
+
+** There are exceptions to the SQL displayed here. These example serve as the most common implementations in my experience.
+Each of the 'name's listed in the table above is appended with either '_url' or '_path' in rails.
+In the rails app, use '_path' for your views and '_url' for controller redirects.
+
+##### _url (full path to page)
+* i.e. students_url: http://www.joshyoung.me/students
+* i.e. student_url(4): ttp://www.joshyoung.me/students/4
+
+##### _path (relative path to page)
+* i.e. students_path: /students
+* i.e. student_path(4): /students/4
+
+#### Naming
+
+By convention the name of the model is singular and the name of the table is plural.
+
+#### Create New Table Entry
+```ruby
+  township = Township.new
+  township.city = 'London'
+  township.country = 'England'
+  township.save
+
+  # Or:
+
+  township = Township.new(city: 'London', country: 'England')
+  township.save
+
+  # Or:
+
+  Township.create(city: 'London', country: 'England')
+```
+
+#### Update Table Value
+```ruby
+  township = Township.find(2)
+  township.city = 'London'
+  township.country = 'England'
+  township.save
+
+  # or:
+
+  township.update(city: 'London', country: 'England')
+```
+
+#### Delete Table Value
+```ruby
+  township = Township.find_by(city: 'Jacksonville')
+  township.destroy
+```
+
+#### One-to-Many Relationships
+```ruby
+  # One (parent):
+  class Student < ApplicationRecord
+  has_many :movies
+  end
+
+  # Many (has a foreign key to reference parent):
+  class Movie < ApplicationRecord
+  belongs_to :student
+  end
+```
+
+```ruby
+  # Setup the cascade to delete movies, then the student it removed:
+  class Student < ApplicationRecord
+  has_many :devices, dependent: :destroy
+  end
+```
+
+Generate the relationship:
+
+```bash
+  rails g resource Device name:string student:references
+```
+
+##### One (parent):
+<table>
+  <thead>
+    <tr>
+      <th colspan='3'>students</th>
+    </tr>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Frank</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Sally</td>
+      <td>28</td>
+    </tr>
+  </tbody>
+</table>
+
+##### Many (child):
+<table>
+  <thead>
+    <tr>
+      <th colspan='3'>devices</th>
+    </tr>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>student_id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>iPhone</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>iPad</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Laptop</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+In the above example, 'student_id' is a foreign key pointing to the 'id' field in the 'students' table.
+The foreign key will always be the parent's table name in singular form (student) with an '_id' appended to the end. So in this case it is 'student_id' since the parent table is 'students'.
+
+In the ruby console, <strong>student.devices</strong> would return all of the devices that student possesses. On the other hand, <strong>device.student</strong> would return the student who is the owner of the device selected.
+
+#### Many-to-Many Relationships
+
+```ruby
+  class Student < ApplicationRecord
+  has_many :devices
+  end
+
+  class Device < ApplicationRecord
+  belongs_to :student
+  belongs_to :colors
+  end
+
+  class Color < ApplicationRecord
+  has_many :devices
+  end
+```
+
+<table>
+  <thead>
+    <tr>
+      <th colspan='3'>students</th>
+    </tr>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Frank</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Sally</td>
+      <td>28</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan='4'>devices</th>
+    </tr>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>student_id</th>
+      <th>color_id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>iPhone</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>iPad</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Laptop</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan='3'>colors</th>
+    </tr>
+    <tr>
+      <th>id</th>
+      <th>color</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Green</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Blue</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Silver</td>
+    </tr>
+  </tbody>
+</table>
+
+### <a name='ruby'></a>Ruby
+
+#### Output just a class' own methods
+```ruby
+  klass = Klass.new
+
+  puts klass.methods - methods
+```
+
+#### Loads IRB With Active Support
+```ruby
+  !rails c
+```
+#### Struct
+```ruby
+  # With Struct you can only define
+  # the attributes at object creation
+  Student = Struct.new(:name, :grade)
+  george = Student.new('george', 95)
+
+  # Outputs: 'george'
+  puts george.name
+
+  # Outputs: 95
+  puts george.grade
+```
+
+#### OpenStruct
+```ruby
+  require 'ostruct'
+  george = OpenStruct.new(name: 'george', grade: 95)
+
+  # Outputs: 'george'
+  puts george.name
+
+  # Outputs: 95
+  puts george.grade
+```
+
+#### Open documentation for project's gems
+```ruby
+  gem serve
+```
+
+#### Install to global gemset (when using rvm)
+
+```ruby
+  rvm @global do gem install [gem name]
+```
+
+#### Empty Method Returns Nil
+```ruby
+  def find_grade; end
+  grade = find_grade
+
+  # Outputs nil:
+  puts grade
+```
+
+#### Naming
+```ruby
+  # Class is a Noun:
+  class Cards
+  # Module is an Adjective:
+  include Shuffleable
+  end
+```
+
+#### Ranges
+```ruby
+  # Inclusive:
+  5..10
+  # Exclusive:
+  5...10
+```
+#### Find Methods
+```ruby
+  cat.private_methods
+  cat.public_methods
+  cat.protected_methods
+  cat.singleton_methods
+
+  Cat.private_instance_methods
+  Cat.protected_instance_methods
+  Cat.public_instance_methods
+```
+#### Syntactic Sugar
+  At the end of the day, the operators we know like `+`, `-`, etc are actually methods in ruby. So these two will do the same thing:
+  ```ruby
+  y = 5 + 6;
+  y = 5.+(6)
+```
+#### Methods and Code Blocks
+
+By default all methods will accept a code block. However, they will not yield to the block unless the method includes a `yield` keyword.
+
+```ruby
+  # These are both valid ways to call a method:
+  my_method
+  my_method { puts "Test" }
+  my_method() { puts "Test" }
+```
+
+#### Accept Multiple Arguments
+```ruby
+  def lots_of(*a)
+  end
+
+  # Outpus: [1, 2, 3, 4]
+  puts lots_of(1, 2, 3, 4)
+```
+
+#### Multiline Comment
+
+```ruby
+  =begin
+  def a_function
+  puts 'test'
+  end
+  =end
+```
+
+####Ruby Symbol vs Strings
+
+Symbols have the same object ID whereas strings do not.
+Symbols are immutable and strings are mutable.
+
+```bash
+  # Open irb:
+  >> :pathway.object_id
+  => 9854917
+  >>
+  >> :pathway.object_id
+  => 9854917
+  >>
+  >> "pathway".object_id
+  => 97508076985508
+  >>
+  >> "pathway".object_id
+  => 98508075985400
+  >>
+  >> :pathway == "pathway"
+  => false
+```
+
+#### Ruby Class Properties
+```ruby
+  class RubyStudent
+  # readable only:
+  attr_reader :name
+
+  # writable only:
+  attr_writer :name
+
+  # readable and writable:
+  attr_accessor :grade
+
+  def initialize
+    @name = 'Josh'
+    @grade = 'a'
+  end
+
+  # Override the attr_accessor method in your class:
+  def grade=(my_grade)
+    @grade = my_grade.upcase
+  end
+  ...
+  end
+
+  rstudent = RubyStudent.new
+
+  # Call the accessor method:
+  puts rstudent.name
+```
+
+#### Static Methods
+```ruby
+  class RubyStudent
+  def self.my_method
+    ...
+  end
+  end
+
+  # Call static method:
+  RubyStudent.my_method
+```
+
+#### Multiple Static Methods
+```ruby
+  class RubyStudent
+    class << self
+      def my_method
+        ...
+      end
+
+      def my_second_method
+        ...
+      end
+    end
+  end
+
+  # Call static method:
+  RubyStudent.my_method
+  RubyStudent.my_second_method
+```
+
+#### Ruby Modules
+
+Modules are a typically used to create reusable sections of code in the form of Mixins or they can be used to wrap classes thereby action as a Namespace.
+
+Modules cannot be instantiated, so any methods have to be defined with self.
+
+```ruby
+  module Learnable
+    ...
+    def self.calculate
+      ...
+    end
+  end
+
+  # Call the Module method:
+  Learnable::calculate
+  # or
+  Learnable.calculate
+```
+
+#### Ruby Class Inheritance
+
+Use inheritance when two class have a 'is-a' relationship. For instance: a MathStudent is a type of Student and a Fox is a type of Animal.
+
+```ruby
+  class Student
+    ...
+    def print_grade
+      puts 'A'
+    end
+  end
+
+  class MathStudent < Student
+    def print_grade
+      puts 'A+'
+    end
+  end
+  student = MathStudent.new
+  # Prints 'A+':
+  student.print_grade
+```
+
+#### Ruby Namespace
+```ruby
+  module CollegeStudent
+    class Student
+      def self.outp
+        puts 'output'
+      end
+      def out
+        puts 'new output'
+      end
+    end
+  end
+
+  CollegeStudent::Student.outp
+  student = CollegeStudent::Student.new
+  student.out
+```
+
+#### Ruby Mixins
+
+Ruby Mixins are just ruby modules that are included within a class.
+
+```ruby
+  # If a module will be included in a class as a mixin, you do not have to define the method with self.
+  # This way you can call the module method with the class instantiation.
+
+  # File 'learnable.rb'
+  module Learnable
+    def calculate(num1, num2)
+      num1 * num2
+    end
+  end
+
+  # File: student.rb
+  require_relative 'learnable'
+  class Student
+    include Learnable
+
+    def add_up(n1, n2)
+      calculate(n1, n2)
+    end
+  end
+
+  student = Student.new
+  puts student.calculate(2, 2)
+```
+
+When you define a mixin, if you know what class it will be included within, you can use class properties in the Module definition, like below:
+
+```ruby
+  module Learnable
+    def calculate(num1, num2)
+      @first_number = 10
+    end
+  end
+```
+
+However, doing so could cause problems if you ever include the module within a class that does not define '@first_number'. Therefore it is best to use the class access within the module methods, like so:
+
+```ruby
+  module Learnable
+    def calculate(num1, num2)
+      #Here we have to use 'self' otherwise the module will think it is defining a local variable.
+      self.first_number = 10
+    end
+  end
+```
+
+Then when this is included in a class, it will work like this:
+
+```ruby
+  require_relative 'learnable'
+  class Student
+    include Learnable
+
+    attr_accessor :first_number
+
+    def initialize
+      calculate(2, 2)
+    end
+  end
+
+  puts Student.new.first_number
+```
+
+#### Unless vs If
+```ruby
+  # Prints 'false unless':
+  unless false
+    puts 'false unless'
+  end
+
+  # Prints 'false unless':
+  puts 'false unless' unless false
+
+  # Prints 'false if':
+  if !false
+    puts 'false if'
+  end
+
+  # Prints 'false if':
+  puts 'false if' if !false
+```
+
+#### Memoization
+```ruby
+  # If 'x' is false or nil return the value of 'y',
+  # otherwise return the value of 'x':
+  x ||= y
+
+  # The first time through it will call the 'find_the_pizza' method.
+  # For subsequent calls it will return '@pizza'.
+  def pizza_special
+    @pizza ||= PizzaSpecial.find_the_pizza('cheese')
+  end
+```
+
+#### When You Must Use 'self'.
+##### For assigning values with the accessor method from within a class:
+```ruby
+  class Animal
+    attr_accessor :tail
+
+    def change_tail(new_tail)
+      # To get this to work as expected, you would have
+      # to change the line below to use 'self'
+      tail = new_tail
+
+      #Change to this:
+      #self.tail = new_tail
+
+      #If you do not use 'self' as shown above, ruby
+      #thinks you are assigning to a local variable.
+
+      #This works without 'self' because ruby knows that there is no local
+      #variable titled 'tail' therefore it knows to return the value from the
+      #accessor method:
+      def send_tail
+        tail
+      end
+    end
+  end
+
+  the_tail = Animal.new
+  the_tail.tail = 'Brown'
+  the_tail.change_tail('light brown')
+
+  # This would output 'Brown'.
+  puts the_tail.tail
+```
+
+##### For defining 'class methods' (a.k.a. Static Methods):
+```ruby
+  class Student
+    def self.new_grade(grade)
+      @grade = grade
+    end
+  end
+
+  Student.new_grade('A')
+```
+
+#### Convenient Methods
+```ruby
+  class Test
+  ...
+  end
+
+  # Prints: Test
+  puts Test.inspect
+
+  # Prints: Class
+  puts Test.class
+
+  # Prints: 89023478923
+  puts test.object_id
+```
+
+#### Show Ancestors
+```ruby
+  # In a file named 'my_module.rb':
+  module MyMod
+    ...
+  end
+
+  # In another class:
+  require_relative 'my_module'
+  class Test
+    include MyMod
+    ...
+  end
+
+  # Prints: [Test, MyMod, Object, Kernel, BasicObject]
+  puts Test.ancestors
+```
+
+#### Function Return
+
+Functions always return a value even if they are empty.
+
+```ruby
+  def empty_function
+  end
+
+  return_value = empty_function
+
+  # Prints 'nil':
+  puts return_value.inspect
+```
+
+#### Ruby Convert Types
+```ruby
+  a_string = 'a string value'
+
+  # Convert to Symbol:
+  a_string.to_sym
+
+  # Convert to String:
+  123.to_s
+
+  # Convert to Integer:
+  "123".to_i
+```
+
+#### Look up Ruby Docs from command line
+[Online Documentation](http://ruby-doc.org)
+
+```bash
+  ri
+  # or:
+  ri -i (for interactive mode)
+```
+
+#### Interpolate code
+```ruby
+  variable_value = 'test'
+  puts "Print out #{variable_value}"
+```
+
+#### Start IRB Session
+```bash
+  irb
+```
+
+#### If/Else Statement
+```ruby
+  if a_value == 1
+  puts "Yes"
+  elsif a_value == 2
+  puts "No"
+  else
+  puts "Could not find."
+  end
+```
+
+#### Switch Statement
+```ruby
+  the_value = return_a_string()
+
+  case the_value
+  when "One"
+    puts "It is one!"
+  when "Two"
+    puts "It is two!"
+  else
+    puts "Could not find result."
+  end
+```
+
+#### Objects
+
+Ruby objects are always passed by reference
+
+#### Function
+
+```ruby
+  def function_name(parameter)
+  ...
+  end
+```
+
+#### Add to Array
+```ruby
+  the_array << "val"
+
+  # Or:
+  the_array.push("val")
+```
+
+#### Object Instantiation
+```ruby
+  new_obj = Person.new
+```
+
+#### Iteration
+```ruby
+  array.each do |elem| ... end
+```
+
+#### Custom Iteration
+```ruby
+  #Example 1:
+  def output
+    yield
+    yield
+  end
+
+  output { puts "This is output twice" }
+
+  # Example 2:
+  def output_num
+    yield(100)
+    yield(200)
+  end
+
+  output_num { |num| puts num }
+```
+
+#### Basic Blocks
+```ruby
+  2.times { puts 'Josh' }
+
+  2.times do
+    puts 'Josh'
+  end
+
+  2.times { |i| puts "#{i} - Josh" }
+
+  2.times do |i|
+    puts "#{i} - Josh"
+  end
+```
+
+#### Select Block
+```ruby
+  #Returns just the numbers greater than '3':
+  [1, 2, 3, 4, 5, 6, 7, 8, 9].select { |n| n > 3 }
+```
+
+#### Reject Block
+```ruby
+  # Rejects the numbers greater than '3':
+  [1, 2, 3, 4, 5, 6, 7, 8, 9].reject { |n| n > 3 }
+```
+
+#### Reduce Block
+```ruby
+  # Gets the sum with the reduce method:
+  [1, 2, 3, 4, 5, 6, 7, 8, 9].reduce { |total, n| total + n }
+  # or:
+  [1, 2, 3, 4, 5, 6, 7, 8, 9].reduce (:+)
+```
+
+#### Sort Lowest to Highest
+```ruby
+  [11, 21, 73, 14, 95, 56, 97, 48, 19].sort
+```
+
+#### Sort Highest to Lowest
+```ruby
+  [11, 21, 73, 14, 95, 56, 97, 48, 19].sort { |a, b| b <=> a }
+```
+
+#### Returns boolean if it finds the result
+```ruby
+  #This should return false.
+  [11, 21, 73, 14, 95, 56, 97, 48, 19].any? { |n| n > 100 }
+```
+
+#### Returns the first match
+```ruby
+  #This should return 73.
+  [11, 21, 73, 14, 95, 56, 97, 48, 19].detect { |n| n > 70 }
+```
+
+#### Map the values returned into a new array
+```ruby
+  [11, 21, 73, 14, 95, 19].map { |n| n * 3 }
+```
+
+#### Hash (associative array / dictionary)
+```ruby
+  {key => value}
+```
+
+```ruby
+  {:sport => "baseball"} (the key can be anything)
+```
+
+These are both the same:
+
+```ruby
+  {:sport => "baseball", :time_limit => 60}
+
+  # Or:
+  {sport: "baseball", time_limit: 60}
+```
+
+#### Loop through a hash
+
+```ruby
+  sports = {:sport => "baseball", :time_limit => 60}
+  sports.each { |key, val| puts "#{key} - #{val}" }
+```
+
+### <a name='sqlite'></a>SQLite
+
+#### Execute a Single Query
+```bash
+  sqlite3 -line mydatabase.sqlite3 "select * from students"
+```
+#### Select Databse
+```bash
+  \c [database]
+```
+
+#### Describe Table
+```bash
+  \dt+
+```
+
+#### Connect to DB
+```bash
+  sqlite3 /path/to/database_file.db
+```
+
+#### Show tables
+```bash
+  .tables
+```
+
+#### Tables Schema
+```bash
+  .schema table_name
+```
+
+#### Describe Table
+```bash
+  pragma table_info(table_name)
+```
+
+#### Select all
+```bash
+  select * from table_name
+```
+
+### <a name='security'></a>Security
+
+#### Ping Sweep
+```bash
+  for i in `seq 1 255`; do ping -c 1 [IP ADDRESS].$i ; done
+```
+
+### <a name='testing'></a>Testing
+
+#### Rspec Fail on First Error
+```bash
+  rspec --fail-fast
+```
+
+#### Rspec with Documentation
+
+```ruby
+  rspec -f d
+```
+
+#### Test File Setup
+
+We have a space between each part below.
+
+```ruby
+  # Setup:
+  user = create(:user)
+
+  # Exercise:
+  Student.addToClass(user)
+
+  # Verify:
+  expect(Student.users).to eq([user])
+```
+
+### <a name='ssh'></a>SSH
+
+#### Remote Port Forwarding
+
+Here <strong>9100</strong> is the remote port and <strong>22</strong> is the remote port.
+
+```bash
+  ssh -R 9100:127.0.0.1:22 username@192.168.6.7
+```
+
+#### Local Port Forward
+
+In this case, <strong>9100</strong> would be our local port and <strong>80</strong> would be the remote.
+
+```bash
+  ssh -L 9100:www.remotesite.com:80 username@host
+```
+
+### <a name='svg'></a>SVG
+
+#### SVG viewBox
+
+The viewBox has values of x, y, width, and height. The shapes within this box will be set in relation to the size of the viewBox. The viewBox location within the SVG tag can be offset with the first two numbers (x, y).
+
+In the CodePen below below, you can see that the first and last example are consuming 100% of the width of the viewBox. When the screen is expanded or contracted, the elements within expand or contract accordingly, but always consume 100% of the size of the viewBox because the elements inside are sized to contain 100% of the viewBox width.
+
+The middle example below internal shapes that total to less than the full width of the viewBox. The viewBox is also shifted from a starting point of 0,0 to demonstrate that the view box can be positioned anywhere within the contining SVG element.
+
+To adjust the size of the SVG, you can set the outer containing `SVG` tag to be a certain percentage of the width of the browser window or even a fixed width. Within this the inner viewBox can be positioned within it.
+
+<p data-height="265" data-theme-id="0" data-slug-hash="xzgvKX" data-default-tab="html,result" data-user="joshayoung" data-embed-version="2" data-pen-title="SVG viewBox" class="codepen">See the Pen <a href="https://codepen.io/joshayoung/pen/xzgvKX/">SVG viewBox</a> by Josh Young (<a href="https://codepen.io/joshayoung">@joshayoung</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+#### SVG Links
+
+<p data-height="265" data-theme-id="0" data-slug-hash="xzgodE" data-default-tab="html,result" data-user="joshayoung" data-embed-version="2" data-pen-title="SVG Symbol" class="codepen">See the Pen <a href="https://codepen.io/joshayoung/pen/xzgodE/">SVG Symbol</a> by Josh Young (<a href="https://codepen.io/joshayoung">@joshayoung</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+#### SVG Elements
+
+<p data-height="265" data-theme-id="0" data-slug-hash="wXgNvg" data-default-tab="html,result" data-user="joshayoung" data-embed-version="2" data-pen-title="SVG Stuff" class="codepen">See the Pen <a href="https://codepen.io/joshayoung/pen/wXgNvg/">SVG Stuff</a> by Josh Young (<a href="https://codepen.io/joshayoung">@joshayoung</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+#### Set SVG to Scale with Browser Width
+
+By default an SVG element will take up the full width of the browser unless it has a defined width. To circumvent this, you can give it a definined with such as 300px or a percentage. Below is an example of a way to set the SVG element to be half of the browser width.
+
+If the SVG tag is set to scale with the browser width, the SVG shapes within the internal viewBox will scale accordingly.
+
+```css
+  svg {
+  height: auto;
+  //This could be any percentage:
+  width: 50%;
+  }
+```
+
+### <a name='rubymine'></a>RubyMine
+
+<dl>
+  <dt>Open Context Menu</dt>
+  <dd>`Option(alt) + Enter`</dd>
+  <dt>Search for Files</dt>
+  <dd>`SHIFT + SHIFT`</dd>
+  <dt>Search in Files</dt>
+  <dd>`CMD + SHIFT + F`</dd>
+  <dt>MVC Dialog</dt>
+  <dd>`CTRL + CMD + UP-ARROW`</dd>
+</dl>
+
+### <a name='scp'></a>SCP
+
+#### Local to Remote
+```bash
+  scp file.txt username@host:/to/myremote/directory
+```
+
+#### Remote to Local
+```bash
+  scp username@host:file.txt /to/my/local/directory
+```
+
+### <a name='security'></a>Security
+
+#### Nmap Ping Scan (detect hosts)
+```bash
+  nmap -sP 192.168.1.0/24
+```
+
+#### Bash Ping Sweep
+
+#### Usage: <strong>./sweep.sh 192.168.1</strong>
+```bash
+  #!/bin/bash
+  ip=$1
+  for i in `seq 0 1 255`; do
+    ping -c 3 -t 5 $ip.$i > /dev/null 2>&1 && echo $ip.$i is up;
+  done
+```
+
+### <a name='php'></a>PHP
+
+#### GET/POST Assignment
+```php
+  $var = isset($_GET['var']) ? $_GET['var'] : '';
+```
+
+### <a name='tmux'></a>TMUX
+
+<dl>
+  <dt>Split Window Vertically:</dt>
+  <dd>`Ctrl-b %`</dd>
+  <dt>Open New Window</dt>
+  <dd>`Ctrl-b + c`</dd>
+  <dt>Previous Window</dt>
+  <dd>`Ctrl-b + l`</dd>
+  <dt>Navigate Between Windows</dt>
+  <dd>`Ctrl-b + 0/1/2,etc`</dd>
+  <dt>Split Window Horizontally:</dt>
+  <dd>`Ctrl-b "`</dd>
+  <dt>Navigate Between Windows:</dt>
+  <dd>`Ctrl-b &lt;ARROW KEYS&gt;`</dd>
+  <dt>Detach from tmux:</dt>
+  <dd>`Ctrl-b + d`</dd>
+  <dt>Re-attach to tmux:</dt>
+  <dd>`tmux attach -t &lt;SESSION&gt;` (i.e. tmux attach -t 0)</dd>
+  <dt>Show running tmux sessions:</dt>
+  <dd>`tmux ls`</dd>
+  <dt>Rename tmux Session:</dt>
+  <dd>`Ctrl-b + $`</dd>
+  <dt>Full Screen</dt>
+  <dd>`Ctrl-b + z`</dd>
+  <dt>Next Window</dt>
+  <dd>`Ctrl-b + n`</dd>
+  <dt>Previous Window</dt>
+  <dd>`Ctrl-b + p`</dd>
+  <dt>Open a Specific Session</dt>
+  <dd>`Ctrl-b + &lt;number&gt;`</dd>
+  <dt>Detach Current Session</dt>
+  <dd>`Ctrl-b + d`</dd>
+  <dt>Start Session with Name</dt>
+  <dd>`tmux new -s [name]`</dd>
+  <dt>Close a Session with Name</dt>
+  <dd>`tmux kill-session -t [name]`</dd>
+  <dt>Rename Session</dt>
+  <dd>`tmux rename-session -t 0 [new name]`</dd>
+</dl>
+
+### <a name='vim'></a>VIM
+
+<dl>
+  <dt>Remove all folds</dt>
+  <dd>zR</dd>
+  <dt>Toggle fold inside current indent</dt>
+  <dd>za</dd>
+  <dt>Find Character Before:</dt>
+  <dd>`t}`</dd>
+  <dt>Change to Found Char Before:</dt>
+  <dd>`ct}`</dd>
+  <dt>Find Character:</dt>
+  <dd>`f}`</dd>
+  <dt>Change to Found Char:</dt>
+  <dd>`cf}`</dd>
+  <dt>Re-run the last 'f' or 't' command</dt>
+  <dd>`;`</dd>
+  <dt>Re-run the last 'F' or 'T' command</dt>
+  <dd>`,`</dd>
+  <dt>End of Current Word:</dt>
+  <dd>`ea`</dd>
+  <dt>Change Line</dt>
+  <dd>`cc`</dd>
+  <dt>Split Editor:</dt>
+  <dd>`:split(:sp)` new_file_name`</dd>
+  <dt>Vertical Split Editor:</dt>
+  <dd>`:vsplit(:vs)` new_file_name</dd>
+  <dt>Switch Between Splits:</dt>
+  <dd>`Ctrl + w`</dd>
+  <dt>Mark Current Line:</dt>
+  <dd>`m[a-z]` (i.e. `ma`)</dd>
+  <dt>Go to Mark "h":</dt>
+  <dd>`'h`</dd>
+  <dt>Show all marks:</dt>
+  <dd>`:marks`</dd>
+  <dt>Mark Across Files</dt>
+  <dd>Use an uppercase mark: `m[A-Z]`</dd>
+  <dt>Previous location (insert mode):</dt>
+  <dd>`gi`</dd>
+  <dt>Go to file under cursor:</dt>
+  <dd>`gf`</dd>
+  <dt>Open shell from vi:</dt>
+  <dd>`:shell`</dd>
+  <dt>Close shell:</dt>
+  <dd>`Ctrl + d`</dd>
+  <dt>Open file browser:</dt>
+  <dd>`:E`</dd>
+  <dt>Show Registers:</dt>
+  <dd>`:reg`</dd>
+  <dt>Paste from # registers:</dt>
+  <dd>`"[0-9]p` (i.e. `0p`, `"1p`, etc.)</dd>
+  <dt>Yank to register:</dt>
+  <dd>`"[a-z]yy` (then: `"ap` to paste)</dd>
+  <dt>Append to register:</dt>
+  <dd>`"[A-Z]yy` (then: `"Ap` to paste)</dd>
+  <dt>Paste from Clipboard</dt>
+  <dd>`"+p`</dd>
+  <dt>Record Macro:</dt>
+  <dd>`q[a-z]` (i.e. `qm` - records to `m`)</dd>
+  <dt>Stop Macro Recording:</dt>
+  <dd>`q`</dd>
+  <dt>Execute Macro:</dt>
+  <dd>`@[a-z]` (i.e. `@m` or `20 @m` to run 20 times</dd>
+  <dt>Increment Number:</dt>
+  <dd>`Ctrl + a`</dd>
+  <dt>Search / Replace Globally:</dt>
+  <dd>`:%s/searchfor/replacewith/g`</dd>
+  <dt>Search / Replace Current Line:</dt>
+  <dd>`:s/searchfor/replacewith/g`</dd>
+  <dt>Search / Replace (confirmation):</dt>
+  <dd>`:%s/searchfor/replacewith/gc`</dd>
+  <dt>High, Middle, Low</dt>
+  <dd>`H, M, L`</dd>
+  <dt>Move up/down</dt>
+  <dd>`Ctrl + U / Ctrl + D`</dd>
+  <dt>Move to line 11</dt>
+  <dd>`11 + G`</dd>
+  <dt>Indent to surroundings</dt>
+  <dd>`==`</dd>
+  <dt>Delete around and within:</dt>
+  <dd>`daw / diw`</dd>
+  <dt>Delete inner paragraph</dt>
+  <dd>`dip`</dd>
+  <dt>Indent a paragraph</dt>
+  <dd>`&gt;ip`</dd>
+  <dt>Reverse paragraph indent</dt>
+  <dd>`=ip`</dd>
+  <dt>Change between html tags</dt>
+  <dd>`cit`</dd>
+  <dt>Delete html tag</dt>
+  <dd>`dat`</dd>
+  <dt>Open New Window</dt>
+  <dd>`:new` file_name.txt</dd>
+  <dt>Open Vertical Window</dt>
+  <dd>`:vnew` file_name.txt</dd>
+  <dt>Go to file</dt>
+  <dd>`gf`</dd>
+  <dt>Go Back to prev file</dt>
+  <dd>`Ctrl + o`</dd>
+  <dt>Open New Tab</dt>
+  <dd>`:tabnew`</dd>
+  <dt>Edit File in Tab</dt>
+  <dd>`:tabedit` file_name.txt</dd>
+  <dt>Move forward in tabs</dt>
+  <dd>`gt`</dd>
+  <dt>Move backward in tabs</dt>
+  <dd>`gT`</dd>
+  <dt>Open Visual Block mode</dt>
+  <dd>`Ctrl + V`</dd>
+  <dt>Move to beggining of line</dt>
+  <dd>`0`</dd>
+  <dt>Open NETRW file exporer</dt>
+  <dd>`:e .`</dd>
+</dl>
+
+### <a name='vs_code'></a>VS Code
+
+<dl>
+  <dt>Output HTML Boilerplate</dt>
+  <dd>`html:5 + TAB`</dd>
+</dl>
+
+### <a name='windows'></a>Windows
+
+#### Switch to C Drive
+```bash
+  cd /d C:
+```
+
+#### Flush DNS
+```bash
+  ipconfig /flushdns
+```
+
+#### All Network Info
+```bash
+  ipconfig /all
+```
+
+### <a name='yarn'></a>YARN
+
+#### Package Version (exclude dependencies)
+```bash
+  yarn list --depth 0 | grep [package name]
+```
+
+### <a name='zfs'></a>ZFS
+
+#### ZFS Pool Status
+
+```bash
+  zpool status -v
+
+  zpool history
+
+  # List Datasets:
+  zfs list
+
+  # Display all information about all datasets:
+  zfs get all
+
+  # Mount filesystem:
+  zfs mount /mount_location
+```
