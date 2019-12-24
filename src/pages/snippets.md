@@ -168,7 +168,7 @@ For example, to use the smiley emoji, change it from: U+1F600 to '&amp;#x1F600;'
 To use a unicode character with the css 'before' or 'after' sudo-selector, remove the 'U+' from and replace it with '\'. So for the css ':before' or ':after', it would be '\1F600'. Of course, to use unicode on your site, you have to have the utf8 tag in your site header:
 
 ```html
-  &lt;meta charset='utf-8' /&gt;
+  <meta charset='utf-8' />
 ```
 [Reference](https://www.w3.org/International/tutorials/tutorial-char-enc)
 
@@ -393,6 +393,7 @@ This will remove the directory from your repo, but not from the file system.
 ```git
   git rm -r --cached my_folder_name
 ```
+
 #### Show Contents of Commit
 ```git
   git show [commit hash]
@@ -412,6 +413,7 @@ Add `--no-pager` to a command
 ```git
   git checkout [removed commit]^ -— [path to flle]
 ```
+
 #### Delete Branches
 ```git
   # Delete a local branch:
@@ -428,6 +430,7 @@ This shows which remote branch you are tracking and how far behind your local ve
 ```git
   git branch -vv
 ```
+
 #### Push changes, then revert locally
 
 This will allow you to push up a feature branch and then revert your local changes to see the diff.
@@ -495,7 +498,7 @@ This will put you in a detached HEAD state.
 
 #### Commit Messages
 
-Try to use present tense for your commit message (i.e. "<strong>Add</strong> new class for students" not: "Added new class for students")
+Try to use present tense for your commit message (i.e. "**Add** new class for students" not: "Added new class for students")
 
 ```git
   git commit -m "Correct site map"
@@ -515,6 +518,7 @@ Try to use present tense for your commit message (i.e. "<strong>Add</strong> new
 ```git
   git checkout stash@{0} -- path/to/file
 ```
+
 #### Revert Uncommitted Changes
 
 Leaving out the `stash@{2} variable below will run the stash command on top stash on the stack.
@@ -535,10 +539,12 @@ Leaving out the `stash@{2} variable below will run the stash command on top stas
 ```git
   git stash --all
 ```
+
 #### Stash tracked and untracked files
 ```git
   git stash save --include-untracked
 ```
+
 #### Revert One File
 ```git
   git checkout -- path/to/file.txt
@@ -576,6 +582,7 @@ Leaving out the `stash@{2} variable below will run the stash command on top stas
 ```git
   git stash list --stat
 ```
+
 #### Show files in stash
 ```git
   git stash show stash@{2}
@@ -605,7 +612,6 @@ This command will run `git stash apply` and then `git stash drop`.
 ```
 
 #### Create and switch to branch
-
 ```git
   git checkout -b new_branch_name
 ```
@@ -638,6 +644,7 @@ This command will run `git stash apply` and then `git stash drop`.
   git diff HEAD^^ (grandparent)
   git diff HEAD~6 (six commits ago)
 ```
+
 #### Compare Commits
 ```git
   git diff HEAD^..HEAD
@@ -711,6 +718,7 @@ Order from top to bottom:
   or
   git reset --soft HEAD^
 ```
+
 #### Cherry Pick
 ```git
   git cherry-pick 97589f
@@ -784,9 +792,10 @@ Using 'squash' will combine this commit in with the previous commit.
   return str.charAt(0).toUpperCase() + str.slice(1);
   };
 ```
+
 #### Destructuring
 ```javascript
-  //Object Destructuring:
+  // Object Destructuring:
   let foods = {
   vegetable: 'spinach',
   fruit: 'apple',
@@ -794,7 +803,7 @@ Using 'squash' will combine this commit in with the previous commit.
   };
   const { vegetable, fruit } = foods;
 
-  //Array Destructuring:
+  // Array Destructuring:
   let dirty_dozen = [ 'Strawberries', 'Spinach', 'Nectarines', 'Apples',
             'Peaches', 'Pears', 'Cherries', 'Grapes', 'Celery',
             'Tomatoes', 'Sweet bell peppers', 'Potatoes' ];
@@ -806,12 +815,13 @@ Using 'squash' will combine this commit in with the previous commit.
 ```javascript
   document.getElementsByTagName('body')[0].className += ' js';
   ```
+
   ```css
   /* Only set when JavaScript is enabled in browser: */
   body.js .only-js {
-  border: 1px solid #a0a0a0;
-  display: block;
-  ...
+    border: 1px solid #a0a0a0;
+    display: block;
+    ...
   }
 ```
 
@@ -853,14 +863,14 @@ Using 'squash' will combine this commit in with the previous commit.
 A string literal is immutable.
 
 ```javascript
-  //String Object:
-  typeof new String(); //'object'
+  // String Object:
+  typeof new String(); // 'object'
   var str = new String('Hello');
   str.x = 'World';
-  console.log(str.x); //Outputs 'World'
+  console.log(str.x); // Outputs 'World'
 
-  //String Literal:
-  typeof ''; //'string'
+  // String Literal:
+  typeof ''; // 'string'
 ```
 
 ### <a name='laravel'></a>Laravel
@@ -1104,14 +1114,14 @@ The BSD based init system is configured under /etc/rc.conf. To start sshd, we wo
 
   quit # Exit:
 
- # Format your partition with 'mkfs', examples:
+  # Format your partition with 'mkfs', examples:
   mkfs.ext2 /dev/sdb1
   mkfs.ext3 /dev/sdb1
   mkfs.ext4 /dev/sdb1
   mkfs.vfat /dev/sdb1
   mkfs.ntfs /dev/sdb1
 
- # Use '-L' to add a label:
+  # Use '-L' to add a label:
   mkfs.ext4 -L mydrive /dev/sdb1
 
   eject /dev/sdb1 # Eject partition:
@@ -1124,10 +1134,10 @@ The BSD based init system is configured under /etc/rc.conf. To start sshd, we wo
 
 #### SystemD
 ```bash
-  #'enable' will create a symbolic link so that the service starts on reboot
-  #'disable' will remove the symbolic link
-  #'is-active' will tell you if the service is running
-  #'is-enable' will tell you if it starts on boot
+  # 'enable' will create a symbolic link so that the service starts on reboot
+  # 'disable' will remove the symbolic link
+  # 'is-active' will tell you if the service is running
+  # 'is-enable' will tell you if it starts on boot
   systemctl [status, enable, disable, is-active, is-enabled start, restart, reload, stop] application.service
 ```
 
@@ -1138,21 +1148,21 @@ If you want to switch user 'joe' to 'sally', below are the steps:
 ```bash
   usermod -l sally joe
 
-  #Verify that the new user exists and the old one does not:
+  # Verify that the new user exists and the old one does not:
   id sally
   id joe
 
-  #Swap out the new user's group:
+  # Swap out the new user's group:
   groupmod -n sally joe
 
-  #Swap the home directory:
+  # Swap the home directory:
   usermod -d /home/sally -m sally
 
-  #If the above command does not work, delete the old dir and re-create it:
+  # If the above command does not work, delete the old dir and re-create it:
   rm -rvf /home/joe
   mkhomedir_helper sally
 
-  #If you search these two files, you should not see the 'joe' user/group:
+  # If you search these two files, you should not see the 'joe' user/group:
   cat /etc/group | grep joe
   cat /etc/passwd | grep joe
 ```
@@ -1169,36 +1179,36 @@ If you want to switch user 'joe' to 'sally', below are the steps:
 
 #### Check Drive for Errors
 ```bash
-  #Health Summary:
+  # Health Summary:
   smartctl -H /dev/sdb
-  #Time required to run HDD Test:
+  # Time required to run HDD Test:
   smartctl -c /dev/sdb
 
-  #Run Short Test:
+  # Run Short Test:
   smartctl -t short /dev/sdb
 
-  #Run Long Test:
+  # Run Long Test:
   smartctl -t long /dev/sdb
 
-  #Print Test Results Summary:
+  # Print Test Results Summary:
   smartctl -l selftest /dev/sdb
 
-  #Print Details of Latest Test:
+  # Print Details of Latest Test:
   smartctl -a /dev/sdb
 ```
 
 #### Check Drive for Bad Blocks
 ```bash
-  #Test for bad block:
+  # Test for bad block:
   badblocks -vs /dev/sdb > badblocks_results.txt
 ```
 
 #### Correct Bad Blocks
 ```bash
-  #ext(2/3/4) filesystem:
+  # ext(2/3/4) filesystem:
   e2fsck -l badblocks_results.txt /dev/sdb
 
-  #other filesystems:
+  # other filesystems:
   fsck -l badblocks_results.txt /dev/sdb
 ```
 
@@ -1236,6 +1246,7 @@ The command below could also be executed with 'bs=4M'.
 ```bash
   uname -mrs
 ```
+
 ##### Distribution:
 ```bash
   cat /etc/*-release
@@ -1243,7 +1254,7 @@ The command below could also be executed with 'bs=4M'.
 
 #### Prevent Command from Being Recorded in Terminal History
 ```bash
-  &lt;space&gt; command
+  <space> command
 ```
 
 #### Logged In User History (last 10)
@@ -1253,10 +1264,10 @@ The command below could also be executed with 'bs=4M'.
 
 #### Wipe HDD with 'dd' Command
 ```bash
-  #With Zeros:
+  # With Zeros:
   dd if=/dev/zero of=/dev/sdb bs=1M status=progress && sync
 
-  #With Random Data:
+  # With Random Data:
   dd if=/dev/urandom of=/dev/sdb bs=1M status=progress && sync
 ```
 
@@ -1363,7 +1374,7 @@ The interval is set in seconds.
 #### Flush DNS
 ```bash
   killall -HUP mDNSResponder
-````
+```
 
 #### Write ISO/IMG to Disk or USB
 
@@ -1378,7 +1389,7 @@ The command below could also be executed with 'bs=4m'.
 
 ### <a name='mysql'></a>MySQL
 
-##### Connect to Database
+#### Connect to Database
 ```bash
   mysql -u [username] -p [password] -h [hostname]
 ```
@@ -1397,7 +1408,7 @@ The command below could also be executed with 'bs=4m'.
 
 ### <a name='mysql'></a>MySQL
 
-##### Connect to Database
+#### Connect to Database
 ```bash
   mysql -u [username] -p [password] -h [hostname]
 ```
@@ -1463,7 +1474,7 @@ Inheriting directly from: "ActionController::Base" instead of: "ApplicationContr
 ```bash
   ActionController::Base.helpers.asset_path('image.jpg')
 
-  #Or:
+  # Or:
   include ActionView::Helpers::AssetUrlHelper
   asset_path('image.jpg')
 ```
@@ -1479,7 +1490,7 @@ Inheriting directly from: "ActionController::Base" instead of: "ApplicationContr
 ```
 
 #### Rails Controller Methods Are Typically Ordered
-1.index
+1. index
 2. show
 3. new
 4. edit
@@ -1496,8 +1507,8 @@ Inheriting directly from: "ActionController::Base" instead of: "ApplicationContr
 ```bash
   rails db:migrate:status
 ```
-#### Run Migrations on Test Database
 
+#### Run Migrations on Test Database
 ```bash
   bin/rails db:migrate RAILS_ENV=test
 ```
@@ -1527,18 +1538,18 @@ The default port is 3000 if unspecified.
 
 #### Active Record Errors
 ```ruby
-  #Model validations:
+  # Model validations:
   class Student
-  validates :name, :grade, :act_score, presence: true
-  ...
+    validates :name, :grade, :act_score, presence: true
+    ...
   end
 
 new_student = Student.create(name: 'James', grade: '2nd.')
 
-#Show errors:
-new_student.errors
+  # Show errors:
+  new_student.errors
 
-  #Show errors as sentences:
+  # Show errors as sentences:
   new_student.errors.full_messages
 ```
 
@@ -1565,7 +1576,7 @@ new_student.errors
   or:
   rails c
 
-  #reload the console to pull in any code changes made:
+  # reload the console to pull in any code changes made:
   reload!
 ```
 
@@ -1628,17 +1639,17 @@ String is the default type, so that can be left off if the type is a string.
 ```bash
   rails generate model [model name] [field[:type][:index] field[:type][:index]] [options]
 
-  #or:
+  # or:
 
   rails g model [model name] [field[:type][:index] field[:type][:index]] [options]
 
-  #i.e.
+  # i.e.
   rails g model ticket title:string priority:string the_date:datetime
 
-  #Run Migration:
+  # Run Migration:
   rails db:migrate
 
-  #Migration Status:
+  # Migration Status:
   rails db:migrate:status
 ```
 
@@ -1676,9 +1687,9 @@ Controller name is plural.
 
 When you do not point the controller action to a specific view it will try to render the view with the same name as the action.
 
-def 'index; end' would try to render the 'index.html.erb' view.
+`def index; end` would try to render the `index.html.erb` view.
 
-#### Create resourceful routes.
+#### Create resourceful routes
 
 This will create:
 
@@ -1699,29 +1710,29 @@ Show routes from the browser app by going to this path: http://[url of app][:por
 
 ```bash
   rails routes
-  or:
+  # or:
   rake routes
 ```
 
 #### Resourceful Routes in route.rb
 ```ruby
   Rails.application.routes.draw
-  root "students#index"
-  get "students" => "students#index", as: "students"
-  post "students" => "students#create"
-  get "students/new" => "students#new", as: "new_student"
-  get "students/:id/edit" => "students#edit", as: "edit_student"
-  get "students/:id" => "students#show", as: "student"
-  patch "students/:id" => "students#update"
-  put "students/:id" => "students#update"
-  delete "students/:id" => "students#destroy"
+    root "students#index"
+    get "students" => "students#index", as: "students"
+    post "students" => "students#create"
+    get "students/new" => "students#new", as: "new_student"
+    get "students/:id/edit" => "students#edit", as: "edit_student"
+    get "students/:id" => "students#show", as: "student"
+    patch "students/:id" => "students#update"
+    put "students/:id" => "students#update"
+    delete "students/:id" => "students#destroy"
   end
 
   # This is actually the same thing as the above:
 
   Rails.application.routes.draw
-  root "students#index"
-  resources :students
+    root "students#index"
+    resources :students
   end
 ```
 
@@ -1739,7 +1750,7 @@ Show routes from the browser app by going to this path: http://[url of app][:por
 
 #### List of Resourceful routes
 
-<table class='rails-resourceful-routes'>
+<table>
 <thead>
 <tr>
   <th>Name</th>
@@ -1873,19 +1884,19 @@ By convention the name of the model is singular and the name of the table is plu
 ```ruby
   # One (parent):
   class Student < ApplicationRecord
-  has_many :movies
+    has_many :movies
   end
 
   # Many (has a foreign key to reference parent):
   class Movie < ApplicationRecord
-  belongs_to :student
+    belongs_to :student
   end
 ```
 
 ```ruby
   # Setup the cascade to delete movies, then the student it removed:
   class Student < ApplicationRecord
-  has_many :devices, dependent: :destroy
+    has_many :devices, dependent: :destroy
   end
 ```
 
@@ -1955,22 +1966,21 @@ Generate the relationship:
 In the above example, 'student_id' is a foreign key pointing to the 'id' field in the 'students' table.
 The foreign key will always be the parent's table name in singular form (student) with an '_id' appended to the end. So in this case it is 'student_id' since the parent table is 'students'.
 
-In the ruby console, <strong>student.devices</strong> would return all of the devices that student possesses. On the other hand, <strong>device.student</strong> would return the student who is the owner of the device selected.
+In the ruby console, **student.devices** would return all of the devices that student possesses. On the other hand, **device.student** would return the student who is the owner of the device selected.
 
 #### Many-to-Many Relationships
-
 ```ruby
   class Student < ApplicationRecord
-  has_many :devices
+    has_many :devices
   end
 
   class Device < ApplicationRecord
-  belongs_to :student
-  belongs_to :colors
+    belongs_to :student
+    belongs_to :colors
   end
 
   class Color < ApplicationRecord
-  has_many :devices
+    has_many :devices
   end
 ```
 
@@ -2069,9 +2079,10 @@ In the ruby console, <strong>student.devices</strong> would return all of the de
 ```
 
 #### Loads IRB With Active Support
-```ruby
+```bash
   !rails c
 ```
+
 #### Struct
 ```ruby
   # With Struct you can only define
@@ -2104,8 +2115,7 @@ In the ruby console, <strong>student.devices</strong> would return all of the de
 ```
 
 #### Install to global gemset (when using rvm)
-
-```ruby
+```bash
   rvm @global do gem install [gem name]
 ```
 
@@ -2122,8 +2132,8 @@ In the ruby console, <strong>student.devices</strong> would return all of the de
 ```ruby
   # Class is a Noun:
   class Cards
-  # Module is an Adjective:
-  include Shuffleable
+    # Module is an Adjective:
+    include Shuffleable
   end
 ```
 
@@ -2134,6 +2144,7 @@ In the ruby console, <strong>student.devices</strong> would return all of the de
   # Exclusive:
   5...10
 ```
+
 #### Find Methods
 ```ruby
   cat.private_methods
@@ -2145,12 +2156,16 @@ In the ruby console, <strong>student.devices</strong> would return all of the de
   Cat.protected_instance_methods
   Cat.public_instance_methods
 ```
+
 #### Syntactic Sugar
-  At the end of the day, the operators we know like `+`, `-`, etc are actually methods in ruby. So these two will do the same thing:
-  ```ruby
+
+At the end of the day, the operators we know like `+`, `-`, etc are actually methods in ruby. So these two will do the same thing:
+
+```ruby
   y = 5 + 6;
   y = 5.+(6)
 ```
+
 #### Methods and Code Blocks
 
 By default all methods will accept a code block. However, they will not yield to the block unless the method includes a `yield` keyword.
@@ -2172,16 +2187,15 @@ By default all methods will accept a code block. However, they will not yield to
 ```
 
 #### Multiline Comment
-
 ```ruby
-  =begin
+=begin
   def a_function
   puts 'test'
   end
-  =end
+=end
 ```
 
-####Ruby Symbol vs Strings
+#### Ruby Symbol vs Strings
 
 Symbols have the same object ID whereas strings do not.
 Symbols are immutable and strings are mutable.
@@ -2207,25 +2221,25 @@ Symbols are immutable and strings are mutable.
 #### Ruby Class Properties
 ```ruby
   class RubyStudent
-  # readable only:
-  attr_reader :name
+    # readable only:
+    attr_reader :name
 
-  # writable only:
-  attr_writer :name
+    # writable only:
+    attr_writer :name
 
-  # readable and writable:
-  attr_accessor :grade
+    # readable and writable:
+    attr_accessor :grade
 
-  def initialize
-    @name = 'Josh'
-    @grade = 'a'
-  end
+    def initialize
+      @name = 'Josh'
+      @grade = 'a'
+    end
 
-  # Override the attr_accessor method in your class:
-  def grade=(my_grade)
-    @grade = my_grade.upcase
-  end
-  ...
+    # Override the attr_accessor method in your class:
+    def grade=(my_grade)
+      @grade = my_grade.upcase
+    end
+    ...
   end
 
   rstudent = RubyStudent.new
@@ -2237,9 +2251,9 @@ Symbols are immutable and strings are mutable.
 #### Static Methods
 ```ruby
   class RubyStudent
-  def self.my_method
-    ...
-  end
+    def self.my_method
+      ...
+    end
   end
 
   # Call static method:
@@ -2302,7 +2316,9 @@ Use inheritance when two class have a 'is-a' relationship. For instance: a MathS
       puts 'A+'
     end
   end
+
   student = MathStudent.new
+
   # Prints 'A+':
   student.print_grade
 ```
@@ -2425,6 +2441,7 @@ Then when this is included in a class, it will work like this:
 ```
 
 #### When You Must Use 'self'.
+
 ##### For assigning values with the accessor method from within a class:
 ```ruby
   class Animal
@@ -2435,15 +2452,15 @@ Then when this is included in a class, it will work like this:
       # to change the line below to use 'self'
       tail = new_tail
 
-      #Change to this:
-      #self.tail = new_tail
+      # Change to this:
+      # self.tail = new_tail
 
-      #If you do not use 'self' as shown above, ruby
-      #thinks you are assigning to a local variable.
+      # If you do not use 'self' as shown above, ruby
+      # thinks you are assigning to a local variable.
 
-      #This works without 'self' because ruby knows that there is no local
-      #variable titled 'tail' therefore it knows to return the value from the
-      #accessor method:
+      # This works without 'self' because ruby knows that there is no local
+      # variable titled 'tail' therefore it knows to return the value from the
+      # accessor method:
       def send_tail
         tail
       end
@@ -2508,8 +2525,7 @@ Then when this is included in a class, it will work like this:
 Functions always return a value even if they are empty.
 
 ```ruby
-  def empty_function
-  end
+  def empty_function; end
 
   return_value = empty_function
 
@@ -2584,7 +2600,7 @@ Ruby objects are always passed by reference
 
 ```ruby
   def function_name(parameter)
-  ...
+    ...
   end
 ```
 
@@ -2608,7 +2624,7 @@ Ruby objects are always passed by reference
 
 #### Custom Iteration
 ```ruby
-  #Example 1:
+  # Example 1:
   def output
     yield
     yield
@@ -2642,7 +2658,7 @@ Ruby objects are always passed by reference
 
 #### Select Block
 ```ruby
-  #Returns just the numbers greater than '3':
+  # Returns just the numbers greater than '3':
   [1, 2, 3, 4, 5, 6, 7, 8, 9].select { |n| n > 3 }
 ```
 
@@ -2672,13 +2688,13 @@ Ruby objects are always passed by reference
 
 #### Returns boolean if it finds the result
 ```ruby
-  #This should return false.
+  # This should return false.
   [11, 21, 73, 14, 95, 56, 97, 48, 19].any? { |n| n > 100 }
 ```
 
 #### Returns the first match
 ```ruby
-  #This should return 73.
+  # This should return 73.
   [11, 21, 73, 14, 95, 56, 97, 48, 19].detect { |n| n > 70 }
 ```
 
@@ -2718,6 +2734,7 @@ These are both the same:
 ```bash
   sqlite3 -line mydatabase.sqlite3 "select * from students"
 ```
+
 #### Select Databse
 ```bash
   \c [database]
@@ -2792,7 +2809,7 @@ We have a space between each part below.
 
 #### Remote Port Forwarding
 
-Here <strong>9100</strong> is the remote port and <strong>22</strong> is the remote port.
+Here **9100** is the remote port and **22** is the remote port.
 
 ```bash
   ssh -R 9100:127.0.0.1:22 username@192.168.6.7
@@ -2800,7 +2817,7 @@ Here <strong>9100</strong> is the remote port and <strong>22</strong> is the rem
 
 #### Local Port Forward
 
-In this case, <strong>9100</strong> would be our local port and <strong>80</strong> would be the remote.
+In this case, **9100** would be our local port and **80** would be the remote.
 
 ```bash
   ssh -L 9100:www.remotesite.com:80 username@host
@@ -2836,9 +2853,9 @@ If the SVG tag is set to scale with the browser width, the SVG shapes within the
 
 ```css
   svg {
-  height: auto;
-  //This could be any percentage:
-  width: 50%;
+    height: auto;
+    // This could be any percentage:
+    width: 50%;
   }
 ```
 
@@ -2876,7 +2893,7 @@ If the SVG tag is set to scale with the browser width, the SVG shapes within the
 
 #### Bash Ping Sweep
 
-#### Usage: <strong>./sweep.sh 192.168.1</strong>
+#### Usage: **./sweep.sh 192.168.1**
 ```bash
   #!/bin/bash
   ip=$1
@@ -3082,7 +3099,6 @@ If the SVG tag is set to scale with the browser width, the SVG shapes within the
 ### <a name='zfs'></a>ZFS
 
 #### ZFS Pool Status
-
 ```bash
   zpool status -v
 
