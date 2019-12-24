@@ -1,4 +1,12 @@
-import Bash from "../snippets/bash.js";
+import Chrome from "../snippets/chrome.js";
+import Docker from "../snippets/docker.js";
+import HTTP from "../snippets/http.js";
+import Postgresql from "../snippets/postgresql.js";
+import Kanban from "../snippets/kanban.js";
+import Rubymine from "../snippets/rubymine.js";
+import TMUX from "../snippets/tmux.js";
+import VIM from "../snippets/vim.js";
+import VSCode from "../snippets/vs-code.js";
 
 # Code Snippets
 
@@ -125,39 +133,10 @@ curl --data "information=to&send=to the server" http://example.com
 ### <a id="dev_tools"></a>Dev Tools
 
 #### Chrome
-<dl>
-  <dt>Logging:</dt>
-  <dd>`console.log('test string');`</dd>
-  <dt>Log Variable as an Object:</dt>
-  <dd>`console.dir(paragraph);`</dd>
-  <dt>Log an object as a table:</dt>
-  <dd>`console.table(all_animals);`</dd>
-</dl>
+  <Chrome />
 
 ### <a id="docker"></a>Docker
-
-<dl>
-  <dt>Show containers</dt>
-  <dd>`docker-compose ps`</dd>
-  <dt>Start containers in docker-compose</dt>
-  <dd>`docker-compose up`</dd>
-  <dt>Stop a container</dt>
-  <dd>`docker stop [container name]`</dd>
-  <dt>Start a container</dt>
-  <dd>`docker start [container name]`</dd>
-  <dt>Connect to a running container</dt>
-  <dd>`docker exec -it [container name] /bin/bash`</dd>
-  <dt>Docker compose - bust the cache</dt>
-  <dd>`docker-compose build --no-cache`</dd>
-  <dt>Spin up container</dt>
-  <dd>`docker-compose up`</dd>
-  <dt>Turn off container</dt>
-  <dd>`docker-compose down`</dd>
-  <dt>List running containers</dt>
-  <dd>`docker-compose ps`</dd>
-  <dt>Attach to running container</dt>
-  <dd>`docker exec -it [container name] /bin/bash`</dd>
-</dl>
+  <Docker />
 
 ### <a id="html5"></a>HTML5
 
@@ -173,6 +152,7 @@ To use a unicode character with the css 'before' or 'after' sudo-selector, remov
 [Reference](https://www.w3.org/International/tutorials/tutorial-char-enc)
 
 ##### Code Pen
+
 <p data-height="265" data-theme-id="0" data-slug-hash="vrbzGq" data-default-tab="html,result" data-user="joshayoung" data-embed-version="2" data-pen-title="UTF8" class="codepen">See the Pen <a href="https://codepen.io/joshayoung/pen/vrbzGq/">UTF8</a> by Josh Young (<a href="https://codepen.io/joshayoung">@joshayoung</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
 #### HTML5 Doctype
@@ -188,17 +168,7 @@ To use a unicode character with the css 'before' or 'after' sudo-selector, remov
 * &lt;del&gt;  - show removed text (sometimes styled with strike-through mark)
 
 ### <a id="http"></a>HTTP
-
-<dl>
-  <dt>200:</dt>
-  <dd>Success</dd>
-  <dt>301:</dt>
-  <dd>Moved</dd>
-  <dt>403:</dt>
-  <dd>Forbidden</dd>
-  <dt>404:</dt>
-  <dd>Not Found</dd>
-</dl>
+  <HTTP />
 
 ### <a id="ufw"></a>UFW
 
@@ -1414,42 +1384,10 @@ The command below could also be executed with 'bs=4m'.
 ```
 
 ### <a name='psql'></a>PostgreSQL
-
-<dl>
-  <dt>Connect to Database</dt>
-  <dd>`\c DATABASE_NAME`</dd>
-  <dt>List Databases</dt>
-  <dd>`\l`</dd>
-  <dt>Tables in database:</dt>
-  <dd>`\dt`</dd>
-  <dt>Describe Table</dt>
-  <dd>`\dt+`</dd>
-  <dt>Leave SQL Server</dt>
-  <dd>`\q`</dd>
-  <dt>Connect to Postgres</dt>
-  <dd>`psql postgres`</dd>
-  <dt>Create User</dt>
-  <dd>`CREATE USER myuser WITH PASSWORD 'my password';`</dd>
-  <dt>Create Role</dt>
-  <dd>`CREATE ROLE myuser WITH LOGIN PASSWORD 'my password';`</dd>
-  <dt>Alter Role</dt>
-  <dd>`ALTER USER myuser WITH CREATEDB;`</dd>
-</dl>
+<Postgresql />
 
 ### <a name='kanban'></a>Kanban
-
-<dl>
-  <dt>Swim Lanes</dt>
-  <dd>Rows</dd>
-  <dt>WIP</dt>
-  <dd>Work In Progress</dd>
-  <dt>WIP Limit</dt>
-  <dd>The maximum amount of cards allowed in one column on the board</dd>
-  <dt>Blocker</dt>
-  <dd>Something that is preventing you from moving your card forward</dd>
-  <dt>Hidden Work</dt>
-  <dd>Something you are working on that is not visible on the Kanban Board</dd>
-</dl>
+<Kanban />
 
 ### <a name='python'></a>Python
 
@@ -2860,17 +2798,7 @@ If the SVG tag is set to scale with the browser width, the SVG shapes within the
 ```
 
 ### <a name='rubymine'></a>RubyMine
-
-<dl>
-  <dt>Open Context Menu</dt>
-  <dd>`Option(alt) + Enter`</dd>
-  <dt>Search for Files</dt>
-  <dd>`SHIFT + SHIFT`</dd>
-  <dt>Search in Files</dt>
-  <dd>`CMD + SHIFT + F`</dd>
-  <dt>MVC Dialog</dt>
-  <dd>`CTRL + CMD + UP-ARROW`</dd>
-</dl>
+<Rubymine />
 
 ### <a name='scp'></a>SCP
 
@@ -2910,167 +2838,13 @@ If the SVG tag is set to scale with the browser width, the SVG shapes within the
 ```
 
 ### <a name='tmux'></a>TMUX
-
-<dl>
-  <dt>Split Window Vertically:</dt>
-  <dd>`Ctrl-b %`</dd>
-  <dt>Open New Window</dt>
-  <dd>`Ctrl-b + c`</dd>
-  <dt>Previous Window</dt>
-  <dd>`Ctrl-b + l`</dd>
-  <dt>Navigate Between Windows</dt>
-  <dd>`Ctrl-b + 0/1/2,etc`</dd>
-  <dt>Split Window Horizontally:</dt>
-  <dd>`Ctrl-b "`</dd>
-  <dt>Navigate Between Windows:</dt>
-  <dd>`Ctrl-b &lt;ARROW KEYS&gt;`</dd>
-  <dt>Detach from tmux:</dt>
-  <dd>`Ctrl-b + d`</dd>
-  <dt>Re-attach to tmux:</dt>
-  <dd>`tmux attach -t &lt;SESSION&gt;` (i.e. tmux attach -t 0)</dd>
-  <dt>Show running tmux sessions:</dt>
-  <dd>`tmux ls`</dd>
-  <dt>Rename tmux Session:</dt>
-  <dd>`Ctrl-b + $`</dd>
-  <dt>Full Screen</dt>
-  <dd>`Ctrl-b + z`</dd>
-  <dt>Next Window</dt>
-  <dd>`Ctrl-b + n`</dd>
-  <dt>Previous Window</dt>
-  <dd>`Ctrl-b + p`</dd>
-  <dt>Open a Specific Session</dt>
-  <dd>`Ctrl-b + &lt;number&gt;`</dd>
-  <dt>Detach Current Session</dt>
-  <dd>`Ctrl-b + d`</dd>
-  <dt>Start Session with Name</dt>
-  <dd>`tmux new -s [name]`</dd>
-  <dt>Close a Session with Name</dt>
-  <dd>`tmux kill-session -t [name]`</dd>
-  <dt>Rename Session</dt>
-  <dd>`tmux rename-session -t 0 [new name]`</dd>
-</dl>
+<TMUX />
 
 ### <a name='vim'></a>VIM
-
-<dl>
-  <dt>Remove all folds</dt>
-  <dd>zR</dd>
-  <dt>Toggle fold inside current indent</dt>
-  <dd>za</dd>
-  <dt>Find Character Before:</dt>
-  <dd>`t}`</dd>
-  <dt>Change to Found Char Before:</dt>
-  <dd>`ct}`</dd>
-  <dt>Find Character:</dt>
-  <dd>`f}`</dd>
-  <dt>Change to Found Char:</dt>
-  <dd>`cf}`</dd>
-  <dt>Re-run the last 'f' or 't' command</dt>
-  <dd>`;`</dd>
-  <dt>Re-run the last 'F' or 'T' command</dt>
-  <dd>`,`</dd>
-  <dt>End of Current Word:</dt>
-  <dd>`ea`</dd>
-  <dt>Change Line</dt>
-  <dd>`cc`</dd>
-  <dt>Split Editor:</dt>
-  <dd>`:split(:sp)` new_file_name`</dd>
-  <dt>Vertical Split Editor:</dt>
-  <dd>`:vsplit(:vs)` new_file_name</dd>
-  <dt>Switch Between Splits:</dt>
-  <dd>`Ctrl + w`</dd>
-  <dt>Mark Current Line:</dt>
-  <dd>`m[a-z]` (i.e. `ma`)</dd>
-  <dt>Go to Mark "h":</dt>
-  <dd>`'h`</dd>
-  <dt>Show all marks:</dt>
-  <dd>`:marks`</dd>
-  <dt>Mark Across Files</dt>
-  <dd>Use an uppercase mark: `m[A-Z]`</dd>
-  <dt>Previous location (insert mode):</dt>
-  <dd>`gi`</dd>
-  <dt>Go to file under cursor:</dt>
-  <dd>`gf`</dd>
-  <dt>Open shell from vi:</dt>
-  <dd>`:shell`</dd>
-  <dt>Close shell:</dt>
-  <dd>`Ctrl + d`</dd>
-  <dt>Open file browser:</dt>
-  <dd>`:E`</dd>
-  <dt>Show Registers:</dt>
-  <dd>`:reg`</dd>
-  <dt>Paste from # registers:</dt>
-  <dd>`"[0-9]p` (i.e. `0p`, `"1p`, etc.)</dd>
-  <dt>Yank to register:</dt>
-  <dd>`"[a-z]yy` (then: `"ap` to paste)</dd>
-  <dt>Append to register:</dt>
-  <dd>`"[A-Z]yy` (then: `"Ap` to paste)</dd>
-  <dt>Paste from Clipboard</dt>
-  <dd>`"+p`</dd>
-  <dt>Record Macro:</dt>
-  <dd>`q[a-z]` (i.e. `qm` - records to `m`)</dd>
-  <dt>Stop Macro Recording:</dt>
-  <dd>`q`</dd>
-  <dt>Execute Macro:</dt>
-  <dd>`@[a-z]` (i.e. `@m` or `20 @m` to run 20 times</dd>
-  <dt>Increment Number:</dt>
-  <dd>`Ctrl + a`</dd>
-  <dt>Search / Replace Globally:</dt>
-  <dd>`:%s/searchfor/replacewith/g`</dd>
-  <dt>Search / Replace Current Line:</dt>
-  <dd>`:s/searchfor/replacewith/g`</dd>
-  <dt>Search / Replace (confirmation):</dt>
-  <dd>`:%s/searchfor/replacewith/gc`</dd>
-  <dt>High, Middle, Low</dt>
-  <dd>`H, M, L`</dd>
-  <dt>Move up/down</dt>
-  <dd>`Ctrl + U / Ctrl + D`</dd>
-  <dt>Move to line 11</dt>
-  <dd>`11 + G`</dd>
-  <dt>Indent to surroundings</dt>
-  <dd>`==`</dd>
-  <dt>Delete around and within:</dt>
-  <dd>`daw / diw`</dd>
-  <dt>Delete inner paragraph</dt>
-  <dd>`dip`</dd>
-  <dt>Indent a paragraph</dt>
-  <dd>`&gt;ip`</dd>
-  <dt>Reverse paragraph indent</dt>
-  <dd>`=ip`</dd>
-  <dt>Change between html tags</dt>
-  <dd>`cit`</dd>
-  <dt>Delete html tag</dt>
-  <dd>`dat`</dd>
-  <dt>Open New Window</dt>
-  <dd>`:new` file_name.txt</dd>
-  <dt>Open Vertical Window</dt>
-  <dd>`:vnew` file_name.txt</dd>
-  <dt>Go to file</dt>
-  <dd>`gf`</dd>
-  <dt>Go Back to prev file</dt>
-  <dd>`Ctrl + o`</dd>
-  <dt>Open New Tab</dt>
-  <dd>`:tabnew`</dd>
-  <dt>Edit File in Tab</dt>
-  <dd>`:tabedit` file_name.txt</dd>
-  <dt>Move forward in tabs</dt>
-  <dd>`gt`</dd>
-  <dt>Move backward in tabs</dt>
-  <dd>`gT`</dd>
-  <dt>Open Visual Block mode</dt>
-  <dd>`Ctrl + V`</dd>
-  <dt>Move to beggining of line</dt>
-  <dd>`0`</dd>
-  <dt>Open NETRW file exporer</dt>
-  <dd>`:e .`</dd>
-</dl>
+<VIM />
 
 ### <a name='vs_code'></a>VS Code
-
-<dl>
-  <dt>Output HTML Boilerplate</dt>
-  <dd>`html:5 + TAB`</dd>
-</dl>
+<VSCode />
 
 ### <a name='windows'></a>Windows
 
