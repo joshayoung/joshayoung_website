@@ -8,8 +8,6 @@ tags: Programming
 
 I recently started reading Clean Code by Robert C. Martin. Over the years, I have heard high praise from people who have found this book helpful, and I have finally found the time to start reading it. So far I find this to be an excellent book. As I continue reading it, I will update this post with my general conclusions which I have listed below:
 
-<!--more-->
-
 ### Main points of book:
 
 #### Naming:
@@ -61,15 +59,15 @@ I recently started reading Clean Code by Robert C. Martin. Over the years, I hav
 * Insure that your tests are clean and readable.
 * Make sure your tests are testing a single thing.
 * F.I.R.S.T.
-  - Fast
+  * Fast
     * Tests should run quickly.
-  - Independent
+  * Independent
     * Each test should be independent and able to be executed on its own.
-  - Repeatable
+  * Repeatable
     * You should be able to run the test in any environment (Dev, QA, Locally, etc).
-  - Self-Validating
+  * Self-Validating
     * All tests should return a boolean (true or false).
-  - Timely
+  * Timely
     * Write the test for your production code immediately before writing the production code, not afterward.
 
 #### Classes:
@@ -77,4 +75,4 @@ I recently started reading Clean Code by Robert C. Martin. Over the years, I hav
 * Classes should be small.
 * Classes should have a single responsibility.
 * A class name should describe its single responsibility.
-* A class should follow the <a href='https://en.wikipedia.org/wiki/Single_responsibility_principle'>Single Responsibility Principle</a>.
+* A class should follow the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)
