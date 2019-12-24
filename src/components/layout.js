@@ -6,6 +6,9 @@ import Footer from "./footer";
 import Logo from "../components/logo";
 import LeftNav from "../components/left-nav";
 import SEO from "../components/seo";
+// import hljs from 'highlight.js';
+import hljs from 'highlight.js/lib/highlight';
+import 'highlight.js/styles/github.css';
 
 import "normalize.css";
 
@@ -14,6 +17,11 @@ import "../styles/markdown.scss";
 
 const Layout = ({ children, klass }) => {
   const blue = "#3385ff";
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+  });
 
   return (
     <>
