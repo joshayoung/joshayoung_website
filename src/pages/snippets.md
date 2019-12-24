@@ -1688,84 +1688,17 @@ Show routes from the browser app by going to this path: http://[url of app][:por
 
 #### List of Resourceful routes
 
-<table>
-<thead>
-<tr>
-  <th>Name</th>
-  <th>Verb</th>
-  <th>URL</th>
-  <th>controller#action</th>
-  <th>Task</th>
-  <th>SQL**</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>students</td>
-  <td>GET</td>
-  <td>/students</td>
-  <td>students#index</td>
-  <td>Show Students</td>
-  <td>SELECT *</td>
-</tr>
-<tr>
-  <td>&nbsp;</td>
-  <td>POST</td>
-  <td>/students</td>
-  <td>students#create</td>
-  <td>Create a new Student</td>
-  <td>CREATE</td>
-</tr>
-<tr>
-  <td>new_student</td>
-  <td>GET</td>
-  <td>/students/new</td>
-  <td>students#new</td>
-  <td>Show new Student form</td>
-  <td>Display a HTML form</td>
-</tr>
-<tr>
-  <td>edit_student</td>
-  <td>GET</td>
-  <td>/students/:id/edit</td>
-  <td>students#edit</td>
-  <td>Show edit Student form</td>
-  <td>SELECT where id =</td>
-</tr>
-<tr>
-  <td>student</td>
-  <td>GET</td>
-  <td>/students/:id</td>
-  <td>students#show</td>
-  <td>Show a Student</td>
-  <td>SELECT where id =</td>
-</tr>
-<tr>
-  <td>&nbsp;</td>
-  <td>PATCH</td>
-  <td>/students/:id</td>
-  <td>students#update</td>
-  <td>Update Student (partial)</td>
-  <td>UPDATE tbl SET (name = 'Josh')</td>
-</tr>
-<tr>
-  <td>&nbsp;</td>
-  <td>PUT</td>
-  <td>/students/:id</td>
-  <td>students#update</td>
-  <td>Update Student (complete)</td>
-  <td>UPDATE tbl SET (name = 'Josh', day = 'Wed', state = 'AL' ...)</td>
-</tr>
-<tr>
-  <td>&nbsp;</td>
-  <td>DELETE</td>
-  <td>/students/:id</td>
-  <td>students#destroy</td>
-  <td>Remove a Student</td>
-  <td>DELETE</td>
-</tr>
-</tbody>
-</table>
+| Name         | Verb   | URL                | controller#action | Task                      | SQL**                                                         |
+| ------------ | ------ | ------------------ | ----------------- | ------------------------- | ------------------------------------------------------------- |
+| students     | GET    | /students          | student#index     | Show Students             | SELECT *                                                      |
+|              | POST   | /students          | students#create   | Create a new Student      | CREATE                                                        |
+| new_student  | GET    | /students/new      | students#new      | Show new Student form     | Display a HTML form                                           |
+| edit_student | GET    | /students/:id/edit | students#edit     | Show edit Student form    | SELECT where id =                                             |
+| student      | GET    | /students/:id      | students#show     | Show a Student            | SELECT where id =                                             |
+|              | PATCH  | /students/:id      | students#update   | Update Student (partial)  | UPDATE tbl SET (name = 'Josh')                                |
+|              | PUT    | /students/:id      | students#update   | Update Student (complete) | UPDATE tbl SET (name = 'Josh', day = 'Wed', state = 'AL' ...) |
+|              | DELETE | /students/:id      | students#destroy  | Remove a Student          | DELETE                                                        |
+
 
 ** There are exceptions to the SQL displayed here. These example serve as the most common implementations in my experience.
 Each of the 'name's listed in the table above is appended with either '_url' or '_path' in rails.
