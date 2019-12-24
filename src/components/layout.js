@@ -10,8 +10,9 @@ import SEO from "../components/seo";
 import "normalize.css";
 
 import "../styles/global.scss";
+import "../styles/markdown.scss";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, klass }) => {
   const blue = "#3385ff";
 
   return (
@@ -102,11 +103,12 @@ const Layout = ({ children }) => {
 
       `} />
       <SEO title="test" />
-      <div className='Wrap'>
+      <div className="Wrap">
         <div className='WrapInside'>
           <Header />
           <LeftNav />
           <main
+            className={klass ? klass : ''}
             css={css`
               margin: 1rem auto;
               max-width: 90vw;
@@ -121,7 +123,7 @@ const Layout = ({ children }) => {
             {children}
           </main>
         </div>
-      </div>
+      </div >
       <Footer />
     </>
   )
