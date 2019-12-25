@@ -6,6 +6,8 @@ import Footer from "./footer";
 import Logo from "../components/logo";
 import LeftNav from "../components/left-nav";
 import SEO from "../components/seo";
+import Glance from "../components/glance";
+import Tags from "../components/tags";
 
 import "normalize.css";
 
@@ -98,6 +100,25 @@ const Layout = ({ children, klass }) => {
           }
         }
 
+        .aside {
+          display: none;
+          max-width: 300px;
+          font-size: 14px;
+          padding: 10px;
+          padding-left: 40px;
+          margin-top: 240px;
+          header {
+            font-size: 20px;
+          }
+          @media (min-width: 600px) {
+            display: block;
+          }
+        }
+
+        .home .aside {
+            display: none;
+        }
+
         footer {
           padding: 0 10px;
           padding-top: 20px;
@@ -105,12 +126,11 @@ const Layout = ({ children, klass }) => {
 
       `} />
       <SEO title="{}" />
-      <div className="Wrap">
+      <div className={klass ? "Wrap " + klass : 'Wrap'}>
         <div className='WrapInside'>
           <Header />
           <LeftNav />
           <main
-            className={klass ? klass : ''}
             css={css`
               margin: 1rem auto;
               max-width: 90vw;
@@ -124,6 +144,10 @@ const Layout = ({ children, klass }) => {
             <Logo />
             {children}
           </main>
+          <div className='aside'>
+            <Glance />
+            <Tags />
+          </div>
         </div>
       </div >
       <Footer />

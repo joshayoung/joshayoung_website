@@ -1,4 +1,4 @@
-import Count from "../components/counter.js";
+import Count from "../../components/counter.js";
 
 # My first MDX Page
 
