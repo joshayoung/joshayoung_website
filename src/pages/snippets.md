@@ -779,6 +779,7 @@ Using 'squash' will combine this commit in with the previous commit.
             'Peaches', 'Pears', 'Cherries', 'Grapes', 'Celery',
             'Tomatoes', 'Sweet bell peppers', 'Potatoes' ];
 
+
   const [ one_item ] = dirty_dozen;
 ```
 
@@ -812,11 +813,11 @@ Using 'squash' will combine this commit in with the previous commit.
 #### Basic Class Structure
 ```javascript
   var Shape = function(sides) {
-  this.sides = sides;
+    this.sides = sides;
   }
 
   Shape.prototype.area = function() {
-  calculate ...
+    calculate ...
   }
 
   var square = new Shape(4);

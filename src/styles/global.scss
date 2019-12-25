@@ -12,7 +12,13 @@ body {
 
 code {
   /* Allow code to wrap on small screens: */
-  white-space: normal;
+  // white-space: normal;
+}
+pre {
+  white-space: pre-wrap;
+}
+code {
+  white-space: pre-wrap;
 }
 
 .introduction {
