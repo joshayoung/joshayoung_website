@@ -31,7 +31,7 @@ const Certifications = () => (
           <a name='security'></a>
           <h3>CompTIA Security+</h3>
           <p>The CompTIA Security+ certification addressed many IT security subjects such as: cryptography, network security, compliance, threats, access control, etc. This was a very good introduction to security subjects as they relate to computers and networks.</p>
-          <img className='cert-logo' alt='Security Plus Logo' src='/images/certs/resized/SecurityPlus_Logo_Certified_CE.png' />
+          <img className='cert-logo' alt='Security Plus Logo' src='certs/resized/SecurityPlus_Logo_Certified_CE.png' />
           <a href='https://certification.comptia.org/certifications/security'>About Certification</a>
         </article>
 

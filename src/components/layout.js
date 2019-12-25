@@ -47,6 +47,7 @@ const Layout = ({ children, klass }) => {
 
         h3 {
           color: ${blue};
+          font-size: 1.29rem;
           &:before {
             content: "{ ";
             color: #b3b3b3;
@@ -103,7 +104,7 @@ const Layout = ({ children, klass }) => {
         }
 
       `} />
-      <SEO title="test" />
+      <SEO title="{}" />
       <div className="Wrap">
         <div className='WrapInside'>
           <Header />

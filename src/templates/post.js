@@ -14,7 +14,7 @@ export default function Template({ data }) {
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
-      <div>{frontmatter.date}</div>
+      <div>Last Updated: {frontmatter.date}</div>
     </Layout>
   )
 }
