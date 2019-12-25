@@ -7,10 +7,10 @@ import Logo from "../components/logo";
 import LeftNav from "../components/left-nav";
 import SEO from "../components/seo";
 
-// import "normalize.css";
+import "normalize.css";
 
-// import "../styles/global.scss";
-// import "../styles/markdown.scss";
+import "../styles/global.scss";
+import "../styles/markdown.scss";
 import "highlight.js/styles/solarized-dark.css"
 
 const Layout = ({ children, klass }) => {

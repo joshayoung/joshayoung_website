@@ -6,16 +6,16 @@
 
 // You can delete this file if you're not using it
 
-const hljs = require('./node_modules/highlight.js');
+// const hljs = require('./node_modules/highlight.js');
 exports.onRenderBody = ({ setBodyAttributes }) => {
-  setBodyAttributes({
-    className: 'no-js'
-  });
-  debugger;
-  document.addEventListener('DOMContentLoaded', (event) => {
-    debugger;
-    // document.body.className = document.body.className.replace(/\bno-js\b/, '');
-    document.querySelectorAll('pre code').forEach((block) => {
-      hljs.highlightBlock(block);
-    });
-  };
+  // setBodyAttributes({
+  //   className: 'no-js'
+  // });
+  // debugger;
+  // document.addEventListener('DOMContentLoaded', (event) => {
+  //   debugger;
+  //   // document.body.className = document.body.className.replace(/\bno-js\b/, '');
+  //   document.querySelectorAll('pre code').forEach((block) => {
+  //     hljs.highlightBlock(block);
+  //   });
+};
