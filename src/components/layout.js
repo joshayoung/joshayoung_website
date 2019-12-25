@@ -14,14 +14,10 @@ import "normalize.css";
 
 import "../styles/global.scss";
 import "../styles/markdown.scss";
+import "highlight.js/styles/darkula.css"
 
 const Layout = ({ children, klass }) => {
   const blue = "#3385ff";
-  document.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelectorAll('pre code').forEach((block) => {
-      hljs.highlightBlock(block);
-    });
-  });
 
   return (
     <>
