@@ -7,7 +7,7 @@ import Glance from "../components/glance";
 import Tags from "../components/tags";
 
 const Index = () => (
-  <Layout>
+  <Layout klass='home'>
     <SEO title="Home" />
     <Intro />
     <Glance />
