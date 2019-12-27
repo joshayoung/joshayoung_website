@@ -85,7 +85,7 @@ export default ({ children }) => {
           </article>
 
           <article>
-            <a name='books_recomend'></a>
+            <a name='books_i_recommendend'></a>
             <h3 id='books_i_recommend'>Books I Recommend</h3>
             <p id='books_ive_read_description'>Of the software engineering, networking, security, and design books that I listed above, these are some of the books that I highly recommend.</p>
             <ul>

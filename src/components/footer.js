@@ -14,7 +14,7 @@ const Footer = ({ siteTitle }) => (
     css={css`
     background: #efefef;
     border-top: solid 1px #3385ff;
-    height: 100px;
+    height: 125px;
     margin-top: -100px;
     @media (min-width: 600px) {
       height: 80px;
