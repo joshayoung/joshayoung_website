@@ -3,24 +3,24 @@ import React from 'react';
 export default () => (
   <dl>
     <dt>Show containers</dt>
-    <dd>`docker-compose ps`</dd>
+    <dd><code>docker-compose ps</code></dd>
     <dt>Start containers in docker-compose</dt>
-    <dd>`docker-compose up`</dd>
+    <dd><code>docker-compose up</code></dd>
     <dt>Stop a container</dt>
-    <dd>`docker stop [container name]`</dd>
+    <dd><code>docker stop [container name]</code></dd>
     <dt>Start a container</dt>
-    <dd>`docker start [container name]`</dd>
+    <dd><code>docker start [container name]</code></dd>
     <dt>Connect to a running container</dt>
-    <dd>`docker exec -it [container name] /bin/bash`</dd>
+    <dd><code>docker exec -it [container name] /bin/bash</code></dd>
     <dt>Docker compose - bust the cache</dt>
-    <dd>`docker-compose build --no-cache`</dd>
+    <dd><code>docker-compose build --no-cache</code></dd>
     <dt>Spin up container</dt>
-    <dd>`docker-compose up`</dd>
+    <dd><code>docker-compose up</code></dd>
     <dt>Turn off container</dt>
-    <dd>`docker-compose down`</dd>
+    <dd><code>docker-compose down</code></dd>
     <dt>List running containers</dt>
-    <dd>`docker-compose ps`</dd>
+    <dd><code>docker-compose ps</code></dd>
     <dt>Attach to running container</dt>
-    <dd>`docker exec -it [container name] /bin/bash`</dd>
+    <dd><code>docker exec -it [container name] /bin/bash</code></dd>
   </dl>
 );

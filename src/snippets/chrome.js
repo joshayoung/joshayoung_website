@@ -3,10 +3,10 @@ import React from 'react';
 export default () => (
   <dl>
     <dt>Logging:</dt>
-    <dd>`console.log('test string');`</dd>
+    <dd><code>console.log('test string');</code></dd>
     <dt>Log Variable as an Object:</dt>
-    <dd>`console.dir(paragraph);`</dd>
+    <dd><code>console.dir(paragraph);</code></dd>
     <dt>Log an object as a table:</dt>
-    <dd>`console.table(all_animals);`</dd>
+    <dd><code>console.table(all_animals);</code></dd>
   </dl>
 );
