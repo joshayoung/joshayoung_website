@@ -8,7 +8,7 @@ export default () => {
   return (
     <Layout>
       <SEO title="Definitions" />
-      <h1 className='header'>Programming Definitions</h1>
+      <h1>Programming Definitions</h1>
       {definitions.map(definition => (
         <dl key={definition.id}>
           <dt>{definition.word}</dt>

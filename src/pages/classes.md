@@ -1,4 +1,3 @@
-import React from "react";
 import TreeHouseOutput from "../components/tree-house-output";
 import CodeSchoolOutput from "../components/codeschool-output";
 
