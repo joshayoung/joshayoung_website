@@ -3,12 +3,12 @@ import React from 'react';
 export default () => (
   <dl>
     <dt>Open Context Menu</dt>
-    <dd>`Option(alt) + Enter`</dd>
+    <dd><code>Option(alt) + Enter</code></dd>
     <dt>Search for Files</dt>
-    <dd>`SHIFT + SHIFT`</dd>
+    <dd><code>SHIFT + SHIFT</code></dd>
     <dt>Search in Files</dt>
-    <dd>`CMD + SHIFT + F`</dd>
+    <dd><code>CMD + SHIFT + F</code></dd>
     <dt>MVC Dialog</dt>
-    <dd>`CTRL + CMD + UP-ARROW`</dd>
+    <dd><code>CTRL + CMD + UP-ARROW</code></dd>
   </dl>
 );

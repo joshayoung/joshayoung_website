@@ -7,110 +7,110 @@ export default () => (
     <dt>Toggle fold inside current indent</dt>
     <dd>za</dd>
     <dt>Find Character Before:</dt>
-    <dd>`t}`</dd>
+    <dd><code>t}</code></dd>
     <dt>Change to Found Char Before:</dt>
-    <dd>`ct}`</dd>
+    <dd><code>ct}</code></dd>
     <dt>Find Character:</dt>
-    <dd>`f}`</dd>
+    <dd><code>f}</code></dd>
     <dt>Change to Found Char:</dt>
-    <dd>`cf}`</dd>
+    <dd><code>cf}</code></dd>
     <dt>Re-run the last 'f' or 't' command</dt>
-    <dd>`;`</dd>
+    <dd><code>;</code></dd>
     <dt>Re-run the last 'F' or 'T' command</dt>
-    <dd>`,`</dd>
+    <dd><code>,</code></dd>
     <dt>End of Current Word:</dt>
-    <dd>`ea`</dd>
+    <dd><code>ea</code></dd>
     <dt>Change Line</dt>
-    <dd>`cc`</dd>
+    <dd><code>cc</code></dd>
     <dt>Split Editor:</dt>
-    <dd>`:split(:sp)` new_file_name`</dd>
+    <dd><code>:split(:sp) new_file_name</code></dd>
     <dt>Vertical Split Editor:</dt>
-    <dd>`:vsplit(:vs)` new_file_name</dd>
+    <dd><code>:vsplit(:vs)</code> new_file_name</dd>
     <dt>Switch Between Splits:</dt>
-    <dd>`Ctrl + w`</dd>
+    <dd><code>Ctrl + w</code></dd>
     <dt>Mark Current Line:</dt>
-    <dd>`m[a-z]` (i.e. `ma`)</dd>
+    <dd><code>m[a-z]</code> (i.e. <code>ma</code>)</dd>
     <dt>Go to Mark "h":</dt>
-    <dd>`'h`</dd>
+    <dd><code>'h</code></dd>
     <dt>Show all marks:</dt>
-    <dd>`:marks`</dd>
+    <dd><code>:marks</code></dd>
     <dt>Mark Across Files</dt>
-    <dd>Use an uppercase mark: `m[A-Z]`</dd>
+    <dd>Use an uppercase mark: <code>m[A-Z]</code></dd>
     <dt>Previous location (insert mode):</dt>
-    <dd>`gi`</dd>
+    <dd><code>gi</code></dd>
     <dt>Go to file under cursor:</dt>
-    <dd>`gf`</dd>
+    <dd><code>gf</code></dd>
     <dt>Open shell from vi:</dt>
-    <dd>`:shell`</dd>
+    <dd><code>:shell</code></dd>
     <dt>Close shell:</dt>
-    <dd>`Ctrl + d`</dd>
+    <dd><code>Ctrl + d</code></dd>
     <dt>Open file browser:</dt>
-    <dd>`:E`</dd>
+    <dd><code>:E</code></dd>
     <dt>Show Registers:</dt>
-    <dd>`:reg`</dd>
+    <dd><code>:reg</code></dd>
     <dt>Paste from # registers:</dt>
-    <dd>`"[0-9]p` (i.e. `0p`, `"1p`, etc.)</dd>
+    <dd><code>"[0-9]p</code> (i.e. <code>0p</code>, <code>"1p</code>, etc.)</dd>
     <dt>Yank to register:</dt>
-    <dd>`"[a-z]yy` (then: `"ap` to paste)</dd>
+    <dd><code>"[a-z]yy</code> (then: <code>"ap</code> to paste)</dd>
     <dt>Append to register:</dt>
-    <dd>`"[A-Z]yy` (then: `"Ap` to paste)</dd>
+    <dd><code>"[A-Z]yy</code> (then: <code>"Ap</code> to paste)</dd>
     <dt>Paste from Clipboard</dt>
-    <dd>`"+p`</dd>
+    <dd><code>"+p</code></dd>
     <dt>Record Macro:</dt>
-    <dd>`q[a-z]` (i.e. `qm` - records to `m`)</dd>
+    <dd><code>q[a-z]</code> (i.e. <code>qm</code> - records to <code>m</code>)</dd>
     <dt>Stop Macro Recording:</dt>
-    <dd>`q`</dd>
+    <dd><code>q</code></dd>
     <dt>Execute Macro:</dt>
-    <dd>`@[a-z]` (i.e. `@m` or `20 @m` to run 20 times</dd>
+    <dd><code>@[a-z]</code> (i.e. <code>@m</code> or <code>20 @m</code> to run 20 times</dd>
     <dt>Increment Number:</dt>
-    <dd>`Ctrl + a`</dd>
+    <dd><code>Ctrl + a</code></dd>
     <dt>Search / Replace Globally:</dt>
-    <dd>`:%s/searchfor/replacewith/g`</dd>
+    <dd><code>:%s/searchfor/replacewith/g</code></dd>
     <dt>Search / Replace Current Line:</dt>
-    <dd>`:s/searchfor/replacewith/g`</dd>
+    <dd><code>:s/searchfor/replacewith/g</code></dd>
     <dt>Search / Replace (confirmation):</dt>
-    <dd>`:%s/searchfor/replacewith/gc`</dd>
+    <dd><code>:%s/searchfor/replacewith/gc</code></dd>
     <dt>High, Middle, Low</dt>
-    <dd>`H, M, L`</dd>
+    <dd><code>H, M, L</code></dd>
     <dt>Move up/down</dt>
-    <dd>`Ctrl + U / Ctrl + D`</dd>
+    <dd><code>Ctrl + U / Ctrl + D</code></dd>
     <dt>Move to line 11</dt>
-    <dd>`11 + G`</dd>
+    <dd><code>11 + G</code></dd>
     <dt>Indent to surroundings</dt>
-    <dd>`==`</dd>
+    <dd><code>==</code></dd>
     <dt>Delete around and within:</dt>
-    <dd>`daw / diw`</dd>
+    <dd><code>daw / diw</code></dd>
     <dt>Delete inner paragraph</dt>
-    <dd>`dip`</dd>
+    <dd><code>dip</code></dd>
     <dt>Indent a paragraph</dt>
-    <dd>`&gt;ip`</dd>
+    <dd><code>&gt;ip</code></dd>
     <dt>Reverse paragraph indent</dt>
-    <dd>`=ip`</dd>
+    <dd><code>=ip</code></dd>
     <dt>Change between html tags</dt>
-    <dd>`cit`</dd>
+    <dd><code>cit</code></dd>
     <dt>Delete html tag</dt>
-    <dd>`dat`</dd>
+    <dd><code>dat</code></dd>
     <dt>Open New Window</dt>
-    <dd>`:new` file_name.txt</dd>
+    <dd><code>:new</code> file_name.txt</dd>
     <dt>Open Vertical Window</dt>
-    <dd>`:vnew` file_name.txt</dd>
+    <dd><code>:vnew</code> file_name.txt</dd>
     <dt>Go to file</dt>
-    <dd>`gf`</dd>
+    <dd><code>gf</code></dd>
     <dt>Go Back to prev file</dt>
-    <dd>`Ctrl + o`</dd>
+    <dd><code>Ctrl + o</code></dd>
     <dt>Open New Tab</dt>
-    <dd>`:tabnew`</dd>
+    <dd><code>:tabnew</code></dd>
     <dt>Edit File in Tab</dt>
-    <dd>`:tabedit` file_name.txt</dd>
+    <dd><code>:tabedit</code> file_name.txt</dd>
     <dt>Move forward in tabs</dt>
-    <dd>`gt`</dd>
+    <dd><code>gt</code></dd>
     <dt>Move backward in tabs</dt>
-    <dd>`gT`</dd>
+    <dd><code>gT</code></dd>
     <dt>Open Visual Block mode</dt>
-    <dd>`Ctrl + V`</dd>
+    <dd><code>Ctrl + V</code></dd>
     <dt>Move to beggining of line</dt>
-    <dd>`0`</dd>
+    <dd><code>0</code></dd>
     <dt>Open NETRW file exporer</dt>
-    <dd>`:e .`</dd>
+    <dd><code>:e .</code></dd>
   </dl>
 );
