@@ -7,10 +7,8 @@ export default () => {
   const posts = listThoughts();
   return (
     <Layout>
-      <h1 className='header'>Thoughts</h1>
-      <article className='introduction'>
-        <p>Here I document concise posts about web development or programming that I am learning or have recently discovered. Many times these entries are very short, as I am not a prolific blogger. However, hopefully something I list here will be helpful to others.</p>
-      </article>
+      <h1>Thoughts</h1>
+      <p>Here I document concise posts about web development or programming that I am learning or have recently discovered. Many times these entries are very short, as I am not a prolific blogger. However, hopefully something I list here will be helpful to others.</p>
       {posts.map(post => (
         <AllThoughts key={post.path} post={post} />
       ))}

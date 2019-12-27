@@ -6,7 +6,7 @@ import TECHSPECTRUM from "../snippets/tech-spectrum";
 const TechSpectrum = () => (
   <Layout>
     <SEO title="TechSpectrum" />
-    <h1 className='header'>TechSpectrum</h1>
+    <h1>TechSpectrum</h1>
     <TECHSPECTRUM />
   </Layout>
 )

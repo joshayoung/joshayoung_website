@@ -21,7 +21,7 @@ code {
   white-space: pre-wrap;
 }
 
-.introduction {
+main > p:first-of-type {
   line-height: 2;
   font-size: 25px;
   background: #eaeaea;

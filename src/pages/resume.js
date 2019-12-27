@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 const Resume = () => (
   <Layout>
     <SEO title="Resume" />
-    <h1 className='header'>Resume</h1>
+    <h1>Resume</h1>
     <ul style={{ display: 'none' }}>
       <li><a href='/docs/Josh_Young_Resume.pdf'>Download Resume (pdf)</a></li>
       <li><a href='/docs/Josh_Young_Resume.txt'>Download Resume (txt)</a></li>
@@ -13,7 +13,7 @@ const Resume = () => (
 
     <article>
       <h3>Experienced - Full Stack Web Developer</h3>
-      <p className='introduction'>
+      <p>
         Full Stack Web Developer with 7+ years of experience developing web applications. Using current programming languages to further company productivity. Improving user experience by working with members of my team to maintain and improve our web programs.</p>
     </article>
 
