@@ -1,13 +1,10 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import ListTreehouse from "../hooks/list-treehouse";
-import ListCodeSchool from "../hooks/list-code-school";
-
+import TreeHouseOutput from "../components/tree-house-output";
+import CodeSchoolOutput from "../components/codeschool-output";
 
 export default () => {
-  const treehouse = ListTreehouse();
-  const codeschool = ListCodeSchool();
   return (
     <Layout>
       <SEO title="Classes" />
@@ -146,14 +143,7 @@ export default () => {
             <a name='treehouse'></a>
             <h3>Tree House Classes</h3>
             <p>I took all of these classes as a part of a short Tree House membership. They were largely review for me, but some of the classes covered technologies that I had not had time to learn yet.</p>
-
-            <ul>
-              <>
-                {treehouse.map(treehouse => (
-                  <li><a href={treehouse.url}>{treehouse.title}</a></li>
-                ))}
-              </>
-            </ul>
+            <TreeHouseOutput />
           </article>
 
           <article>
@@ -170,14 +160,7 @@ export default () => {
             <a name='codeschool'></a>
             <h3>Code School Classes</h3>
             <p>The Code School site offers excellent classes. I took some of these as review and many as a way to level up my knowledge.</p>
-
-            <ul>
-              <>
-                {codeschool.map(codeschool => (
-                  <li><a href={codeschool.url}>{codeschool.title}</a></li>
-                ))}
-              </>
-            </ul>
+            <CodeSchoolOutput />
           </article>
 
           <article>
