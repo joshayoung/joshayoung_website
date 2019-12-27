@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from "prop-types";
 
 const BookRecommended = ({ title, hide, post }) => {
   const fun = function (data) {
