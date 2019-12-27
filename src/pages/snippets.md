@@ -8,7 +8,6 @@ import TMUX from "../snippets/tmux.js";
 import VIM from "../snippets/vim.js";
 import VSCode from "../snippets/vs-code.js";
 
-
 # Code Snippets
 
 * [Bash](#bash)
