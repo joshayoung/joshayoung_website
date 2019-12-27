@@ -9,7 +9,7 @@ export default () => {
   return (
     <Layout>
       <SEO title="Resources" />
-      <h1 className='header'>Web Development Resources</h1>
+      <h1 className='header'>Development Resources</h1>
       <section>
         <div>
           <article>

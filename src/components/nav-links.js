@@ -6,9 +6,6 @@ import styled from "@emotion/styled";
 const NavLink = styled(Link)`
   font-size: 14px;
   color: ${props => props.color || "#000;"};
-  &.active {
-    background: #fff;
-  }
 `;
 
 const NavLinks = ({ siteTitle }) => (

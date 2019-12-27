@@ -41,12 +41,15 @@ const Nav = ({ siteTitle }) => (
 
     ul li {
       display: block;
+      a.active {
+        background: #fff;
+      }
     }
 
     li:nth-of-type(2n) a {
       background: #e6e6e6;
-      &:active {
-
+      &.active {
+        background: #fff;
       }
       &:hover {
         background: #fff;

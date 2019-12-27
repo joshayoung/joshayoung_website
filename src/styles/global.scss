@@ -38,6 +38,9 @@ code {
   padding-bottom: 10px;
   border-bottom: 3px solid #3385ff;
   margin-bottom: 50px;
+  &:last-child {
+    border-bottom: none;
+  }
   header {
     font-family: 'Acme', sans-serif;
     font-size: 30px;
