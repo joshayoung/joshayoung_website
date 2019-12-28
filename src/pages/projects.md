@@ -1,5 +1,4 @@
 # Development Projects
-
 Below I have listed some of the personal projects that I have developed over the years along with the programming languages used for each.
 
 [Will It Rain (2019)](#will_it_rain)

@@ -24,7 +24,6 @@ export default () => {
       <ul>
         {resources.map(resource => (
           <Resource key={resource.id} klass={resource.class} title={resource.title} post={resource.data} />
-          // <pre>{JSON.stringify(resource)}</pre>
         ))}
       </ul>
     </Layout >

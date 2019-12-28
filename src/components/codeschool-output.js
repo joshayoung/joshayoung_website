@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 import CodeSchoolData from "../hooks/code-school-data";
 
