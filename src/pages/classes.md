@@ -5,49 +5,49 @@ import CodeSchoolOutput from "../components/codeschool-output";
 
 In an effort to continually learn new technologies and stay abreast of existing technologies, I have found it helpful to take advantage of opportunities for continuing education.Below I have listed courses(both classroom and online) that I have completed over the years.
 
-* <a href='#upcase'>Upcase by ThoughtBot</a>
-* <a href='#pragmaticstudio'>The Pragmatic Studio</a>
-* <a href='#leadershipessentials'>Transcend Leadership Essentials</a>
-* <a href='#frontend'>Frontend Masters Classes</a>
-* <a href='#laracastsclasses'>Laracast Courses</a>
-* <a href='#wesbos'>Wes Bos Classes</a>
-* <a href='#udemy'>Udemy Classes</a>
-* <a href='#treehouse'>Tree House Classes</a>
-* <a href='#pluralsight'>PluralSight Courses</a>
-* <a href='#codeschool'>Code School Classes</a>
-* <a href='#fedvte'>FedVTE Training</a>
-* <a href='#kali'>Penetration Testing with Kali Linux</a>
-* <a href='#securityplus'>Security+ Certification Class</a>
-* <a href='#ceh'>CEH - Ethical Hacking and Countermeasures</a>
-* <a href='#unified'>Unified Threat Management Introduction Course</a>
-* <a href='#linuxsteelpivot3'>Linux Administration 310 - Service Configuration, Management, and LAMP Servers</a>
-* <a href='#linuxsteelpivot2'>Linux Administration 210 - System and Network Management</a>
-* <a href='#linuxsteelpivot1'>Linux Administration 110 - System Installation and Configuration</a>
+* [Upcase by ThoughtBot](#upcase)
+* [The Pragmatic Studio](#pragmaticstudio)
+* [Transcend Leadership Essentials](#leadershipessentials)
+* [Frontend Masters Classes](#frontend)
+* [Laracast Courses](#laracastsclasses)
+* [Wes Bos Classes](#wesbos)
+* [Udemy Classes](#udemy)
+* [Tree House Classes](#treehouse)
+* [PluralSight Courses](#pluralsight)
+* [Code School Classes](#codeschool)
+* [FedVTE Training](#fedvte)
+* [Penetration Testing with Kali Linux](#kali)
+* [Security+ Certification Class](#securityplus)
+* [CEH - Ethical Hacking and Countermeasures](#ceh)
+* [Unified Threat Management Introduction Course](#unified)
+* [Linux Administration 310 - Service Configuration, Management, and LAMP Servers](#linuxsteelpivot3)
+* [Linux Administration 210 - System and Network Management](#linuxsteelpivot2)
+* [Linux Administration 110 - System Installation and Configuration](#linuxsteelpivot1)
 
 ### <a name='upcase'></a>Upcase by Thoughtbox
 
 Upcase offers many excellent classes centered around Ruby, Rails, Testing, Vim, and Tmux.
 
-* <a href='https://thoughtbot.com/upcase/onramp-to-vim'>Onramp to Vim</a>
-* <a href='https://thoughtbot.com/upcase/rails-testing-exercises'>Rails Testing Exercises</a>
-* <a href='https://thoughtbot.com/upcase/refactoring'>Refactoring</a>
-* <a href='https://thoughtbot.com/upcase/test-doubles'>Test Doubles</a>
-* <a href='https://thoughtbot.com/upcase/fundamentals-of-tdd'>Fundamentals of TDD</a>
-* <a href='https://thoughtbot.com/upcase/tmux'>tmux</a>
-* <a href='https://thoughtbot.com/upcase/dive-into-neovim'>Dive Into Neovim</a>
-* <a href='https://thoughtbot.com/upcase/intermediate-ruby-on-rails-five'>Intermediate Ruby on Rails (Rails 5)</a>
-* <a href='https://thoughtbot.com/upcase/test-driven-rails'>Test-Driven Rails</a>
-* <a href='https://thoughtbot.com/upcase/navigating-ruby-files-with-vim'>Navigating Ruby Files with Vim</a>
+* [Onramp to Vim](https://thoughtbot.com/upcase/onramp-to-vim)
+* [Rails Testing Exercises](https://thoughtbot.com/upcase/rails-testing-exercises)
+* [Refactoring](https://thoughtbot.com/upcase/refactoring)
+* [Test Doubles](https://thoughtbot.com/upcase/test-doubles)
+* [Fundamentals of TDD](https://thoughtbot.com/upcase/fundamentals-of-tdd)
+* [tmux](https://thoughtbot.com/upcase/tmux)
+* [Dive Into Neovim](https://thoughtbot.com/upcase/dive-into-neovim)
+* [Intermediate Ruby on Rails (Rails 5)](https://thoughtbot.com/upcase/intermediate-ruby-on-rails-five)
+* [Test-Driven Rails](https://thoughtbot.com/upcase/test-driven-rails)
+* [Navigating Ruby Files with Vim](https://thoughtbot.com/upcase/navigating-ruby-files-with-vim)
 
 ### <a name='pragmaticstudio'></a>Pragmatic Studio Classes
 
 The Pragmatic Studio offers some excellent classes. The classes are very in depth and thorough.
 
-* <a href='https://pragmaticstudio.com/alumni/josh-young-c7da'>Alumni Report</a>
-* <a href='https://pragmaticstudio.com/ruby-blocks'>Mastering Ruby Blocks and Iterators</a>
-* <a href='https://pragmaticstudio.com/rails-ii'>Ruby on Rails Level II</a>
-* <a href='https://pragmaticstudio.com/rails'>Ruby on Rails Level I</a>
-* <a href='https://pragmaticstudio.com/ruby'>Ruby Programming</a>
+* [Alumni Report](https://pragmaticstudio.com/alumni/josh-young-c7da)
+* [Mastering Ruby Blocks and Iterators](https://pragmaticstudio.com/ruby-blocks)
+* [Ruby on Rails Level II](https://pragmaticstudio.com/rails-ii)
+* [Ruby on Rails Level I](https://pragmaticstudio.com/rails)
+* [Ruby Programming](https://pragmaticstudio.com/ruby)
 
 ### <a name='leadershipessentials'></a>Transcend Leadership Essentials
 
@@ -60,51 +60,51 @@ professional and respectful manner.
 
 The Frontend Master website offers great courses covering front-end topics such as accessibilty, performance, JavasScript, etc.
 
-* <a href='https://frontendmasters.com/courses/serverless-aws/'>Serverless with AWS Lambda</a>
-* <a href='https://frontendmasters.com/courses/git-in-depth'>Git In-depth</a>
-* <a href='https://frontendmasters.com/courses/aws-frontend-react/'>AWS for Front-End Engineers (ft. S3, Cloudfront & Route 53)</a>
-* <a href='https://frontendmasters.com/courses/intro-elm/'>Introduction to Elm, v2</a>
-* <a href='https://frontendmasters.com/courses/design-for-developers/'>Design for Developers</a>
-* <a href='https://frontendmasters.com/courses/javascript-hard-parts/'>JavaScript: The Hard Parts</a>
-* <a href='https://frontendmasters.com/courses/full-stack'>Full Stack for Front End Engineers</a>
-* <a href='https://frontendmasters.com/courses/full-stack-v2'>Full Stack for Front-Ends Part 2</a>
-* <a href='https://frontendmasters.com/courses/chrome-dev-tools-v2'>Mastering Chrome Developer Tools v2</a>
-* <a href='https://frontendmasters.com/courses/js-fundamentals-functional-v2'>JavaScript: From Fundamentals to Functional JS, v2</a>
-* <a href='https://frontendmasters.com/courses/css-grids-flexbox'>CSS Grids and Flexbox for Responsive Web Design</a>
-* <a href='https://frontendmasters.com/courses/javascript-basics'>Introduction to JavaScript Programming</a>
-* <a href='https://frontendmasters.com/courses/web-development-v2'>Complete Intro to Web Development, v2</a>
-* <a href='https://frontendmasters.com/courses/web-accessibility'>Web Accessibility</a>
-* <a href='https://frontendmasters.com/courses/good-parts-javascript-web'>The Good Parts of JavaScript and the Web</a>
-* <a href='https://frontendmasters.com/courses/javascript-frameworks-showdown'>Choosing a JavaScript Framework</a>
-* <a href='https://frontendmasters.com/courses/js-fundamentals-to-functional'>JavaScript: From Fundamentals to Functional JS</a>
-* <a href='https://frontendmasters.com/courses/website-performance'>Web Site Performance</a>
-* <a href='https://frontendmasters.com/courses/web-ui-architecture'>Web UI Architecture</a>
+* [Serverless with AWS Lambda](https://frontendmasters.com/courses/serverless-aws/)
+* [Git In-depth](https://frontendmasters.com/courses/git-in-depth)
+* [AWS for Front-End Engineers (ft. S3, Cloudfront & Route 53)](https://frontendmasters.com/courses/aws-frontend-react/)
+* [Introduction to Elm, v2](https://frontendmasters.com/courses/intro-elm/)
+* [Design for Developers](https://frontendmasters.com/courses/design-for-developers/)
+* [JavaScript: The Hard Parts](https://frontendmasters.com/courses/javascript-hard-parts/)
+* [Full Stack for Front End Engineers](https://frontendmasters.com/courses/full-stack)
+* [Full Stack for Front-Ends Part 2](https://frontendmasters.com/courses/full-stack-v2)
+* [Mastering Chrome Developer Tools v2](https://frontendmasters.com/courses/chrome-dev-tools-v2)
+* [JavaScript: From Fundamentals to Functional JS, v2](https://frontendmasters.com/courses/js-fundamentals-functional-v2)
+* [CSS Grids and Flexbox for Responsive Web Design](https://frontendmasters.com/courses/css-grids-flexbox)
+* [Introduction to JavaScript Programming](https://frontendmasters.com/courses/javascript-basics)
+* [Complete Intro to Web Development, v2](https://frontendmasters.com/courses/web-development-v2)
+* [Web Accessibility](https://frontendmasters.com/courses/web-accessibility)
+* [The Good Parts of JavaScript and the Web](https://frontendmasters.com/courses/good-parts-javascript-web)
+* [Choosing a JavaScript Framework](https://frontendmasters.com/courses/javascript-frameworks-showdown)
+* [JavaScript: From Fundamentals to Functional JS](https://frontendmasters.com/courses/js-fundamentals-to-functional)
+* [Web Site Performance](https://frontendmasters.com/courses/website-performance)
+* [Web UI Architecture](https://frontendmasters.com/courses/web-ui-architecture)
 
 ### <a name='laracastsclasses'></a>Laracast Courses
 
-Jeffery Way teaches some great courses at this site <a href='http://laracasts.com'>laracasts.com</a>. I have taken two of his courses (listed below).
+Jeffery Way teaches some great courses at this site [laracasts.com](http://laracasts.com'>laracasts.com). I have taken two of his courses (listed below).
 
-* <a href='https://laracasts.com/series/git-me-some-version-control'>Git Me Some Version Control</a>
-* <a href='https://laracasts.com/series/how-to-build-command-line-apps-in-php'>How to Build Command-Line Apps</a>
-* <a href='https://laracasts.com/series/php7-up-and-running'>PHP 7 Up and Running</a>
-* <a href='https://laracasts.com/series/laravel-from-scratch-2017'>Laravel 5.4 from Scratch</a>
-* <a href='https://laracasts.com/series/webpack-for-everyone'>Webpack for Everyone</a>
+* [Git Me Some Version Control](https://laracasts.com/series/git-me-some-version-control)
+* [How to Build Command-Line Apps](https://laracasts.com/series/how-to-build-command-line-apps-in-php)
+* [PHP 7 Up and Running](https://laracasts.com/series/php7-up-and-running)
+* [Laravel 5.4 from Scratch](https://laracasts.com/series/laravel-from-scratch-2017)
+* [Webpack for Everyone](https://laracasts.com/series/webpack-for-everyone)
 
 ### <a name='wesbos'></a> Wes Bos Classes
 
-Wes Bos delivers some excellent content at his <a href='http://wesbos.com/courses/'>website</a>. His classes have a web front-end focus and include topics such as: React, Redux, JavaScript, and CSS.
+Wes Bos delivers some excellent content at his [website](http://wesbos.com/courses). His classes have a web front-end focus and include topics such as: React, Redux, JavaScript, and CSS.
 
-* <a href='https://learnnode.com'>Learn Node</a>
-* <a href='https://reactforbeginners.com'>React for Beginners</a>
-* <a href='https://learnredux.com'>Learn Redux</a>
-* <a href='https://flexbox.io'>What The Flexbox?!</a>
-* <a href='https://masteringmarkdown.com'>Mastering Markdown</a>
+* [Learn Node](https://learnnode.com)
+* [React for Beginners](https://reactforbeginners.com)
+* [Learn Redux](https://learnredux.com)
+* [What The Flexbox?!](https://flexbox.io)
+* [Mastering Markdown](https://masteringmarkdown.com)
 
 ### <a name='udemy'></a>Udemy Classes
 
 You have to be selective with some of the classes offered on Udemy; however, sometimes the classes offered are excellent at a reasonable price.
 
-* <a href='https://www.udemy.com/learnsketch3'>Sketch 3 from A to Z: Become an App Designer</a>
+* [Sketch 3 from A to Z: Become an App Designer](https://www.udemy.com/learnsketch3)
 
 ### <a name='treehouse'></a>Tree House Classes
 
@@ -116,8 +116,8 @@ I took all of these classes as a part of a short Tree House membership. They wer
 
 PluralSight also offers some good content. It is not as focused as other platforms such as Code School though. I have taken a few courses from PluralSight which I have listed below.
 
-* <a href='https://app.pluralsight.com/library/courses/emmet-getting-started/table-of-contents'>Getting Started with Emmet</a>
-* <a href='https://app.pluralsight.com/library/courses/docker-web-development/table-of-contents'>Docker for Web Developers</a>
+* [Getting Started with Emmet](https://app.pluralsight.com/library/courses/emmet-getting-started/table-of-contents)
+* [Docker for Web Developers](https://app.pluralsight.com/library/courses/docker-web-development/table-of-contents)
 
 ### <a name='codeschool'></a>Code School Classes
 
@@ -135,7 +135,7 @@ These are free courses offered to government employees by the Department of Home
 
 ### <a name='kali'></a>Penetration Testing with Kali Linux
 
-I took this class in preparation for Offensive Security's certification exam (<a href='https://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/'>OSCP</a>). Unfortunately, I did not pass my first exam attempt and have not had time to re-test. After speaking with a few individuals who passed the exam, it seems that no one passes it on their first attempt anyway. For me it was a great way to learn more about security and many different security techniques that relate to web development. For these reasons, the class time alone was extremely beneficial!
+I took this class in preparation for Offensive Security's certification exam ([OSCP](https://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional)). Unfortunately, I did not pass my first exam attempt and have not had time to re-test. After speaking with a few individuals who passed the exam, it seems that no one passes it on their first attempt anyway. For me it was a great way to learn more about security and many different security techniques that relate to web development. For these reasons, the class time alone was extremely beneficial!
 
 [Penetration Testing with Kali Linux](https://www.offensive-security.com/information-security-training/penetration-testing-training-kali-linux)
 
