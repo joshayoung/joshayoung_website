@@ -19,6 +19,7 @@ const Intro = () => (
       background: #3385ff;
       display: inline-block;
       padding: 0 10px;
+      font-size: 28px;
       color: #fff;
       a {
         color: #fff;

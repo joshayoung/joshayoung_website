@@ -21,7 +21,6 @@ const Main = ({ children }) => (
       background: #eaeaea;
       border-bottom: 1px solid #3385ff;
       box-shadow: 1px 1px 1px #ccc;
-      margin-bottom: 50px;
       padding: 0 10px;
       font-family: 'Acme', sans-serif;
       &:first-letter {

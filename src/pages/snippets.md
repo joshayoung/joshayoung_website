@@ -7,53 +7,16 @@ import Rubymine from "../snippets/rubymine.js";
 import TMUX from "../snippets/tmux.js";
 import VIM from "../snippets/vim.js";
 import VSCode from "../snippets/vs-code.js";
+import AnchorList from "../components/anchor-list";
+import SnippetAnchorList from "../snippets/snippet-anchor-list";
 
 # Code Snippets
 
 Below, I have listed some common code snippets that I commonly go back to reference. Maybe you will find some of these useful. I update these routinely and add new ones as I run across them.
 
-* [Bash](#bash)
-* [CSS](#css)
-* [Curl](#curl)
-* [Dev Tools](#dev_tools)
-* [Docker](#docker)
-* [HTTP](#http)
-* [HTML5](#html5)
-* [Firewalld](#firewalld)
-* [Gatsby](#gatsby)
-* [Git](#git)
-* [JavaScript](#javascript)
-* [Kanban](#kanban)
-* [Laravel](#laravel)
-* [Linux](#linux)
-* [Arch](#arch)
-* [Slackware](#slackware)
-* [CentOS/RHEL](#centos-rhel)
-* [Ubuntu/Debian](#ubuntu-debian)
-* [FreeBSD](#freebsd)
-* [Mac](#mac)
-* [MySQL](#mysql)
-* [Netstat](#netstat)
-* [PHP](#php)
-* [PostgreSQL](#psql)
-* [Python](#python)
-* [Rails](#rails)
-* [Ruby](#ruby)
-* [RubyMine](#rubymine)
-* [SCP](#scp)
-* [SSH](#ssh)
-* [SQLite](#sqlite)
-* [Security](#security)
-* [SVG](#svg)
-* [Security](#security)
-* [Testing](#testing)
-* [Tmux](#tmux)
-* [UFW](#ufw)
-* [Vim](#vim)
-* [VS Code](#vs_code)
-* [Windows](#windows)
-* [Yarn](#yarn)
-* [ZFS](#zfs)
+<AnchorList>
+  <SnippetAnchorList />
+</AnchorList>
 
 ### <a id="bash"></a>Bash
 
