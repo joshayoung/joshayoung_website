@@ -7,6 +7,7 @@ import Resource from "../components/resource";
 export default () => {
   const resources = ListResources();
   return (
+    <SEO title="Resources" />
     <Layout>
       <SEO title="Resources" />
       <h1>Development Resources</h1>

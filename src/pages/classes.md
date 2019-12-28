@@ -129,29 +129,29 @@ The Code School site offers excellent classes. I took some of these as review an
 
 These are free courses offered to government employees by the Department of Homeland Security. I completed the following courses through FedVTE.
 
-* <a href='https://fedvte.usalearning.gov/pdf/FedVTE_Training_Catalog.pdf'>Demilitarized Zone (DMZ) with IDS/IPS</a>
-* <a href='https://fedvte.usalearning.gov/pdf/FedVTE_Training_Catalog.pdf'>Linux Operating System Security</a>
-* <a href='https://fedvte.usalearning.gov/pdf/FedVTE_Training_Catalog.pdf'>Penetration Testing</a>
+* [Demilitarized Zone (DMZ) with IDS/IPS](https://fedvte.usalearning.gov/pdf/FedVTE_Training_Catalog.pdf)
+* [Linux Operating System Security](https://fedvte.usalearning.gov/pdf/FedVTE_Training_Catalog.pdf)
+* [Penetration Testing](https://fedvte.usalearning.gov/pdf/FedVTE_Training_Catalog.pdf)
 
 ### <a name='kali'></a>Penetration Testing with Kali Linux
 
 I took this class in preparation for Offensive Security's certification exam (<a href='https://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/'>OSCP</a>). Unfortunately, I did not pass my first exam attempt and have not had time to re-test. After speaking with a few individuals who passed the exam, it seems that no one passes it on their first attempt anyway. For me it was a great way to learn more about security and many different security techniques that relate to web development. For these reasons, the class time alone was extremely beneficial!
 
-<a href='https://www.offensive-security.com/information-security-training/penetration-testing-training-kali-linux/'>Penetration Testing with Kali Linux</a>
+[Penetration Testing with Kali Linux](https://www.offensive-security.com/information-security-training/penetration-testing-training-kali-linux)
 
 ### <a name='securityplus'></a>CompTIA Security+ Certification Training
 In preparation for the Security+ certification, I took this class covering the fundamentals on the CompTIA Security+ certification exam. This class was offered as a night course by the University of Alabama in Huntsville (UAH).
-<a href='http://www.uah.edu/'>University of Alabama in Huntsville</a>
+[University of Alabama in Huntsville](http://www.uah.edu)
 
 ### <a name='ceh'></a>CEH - Ethical Hacking and Countermeasures
 
 In preparation for the CEH certification, I took this class covering the fundamentals of ethical hacking. The training was offered by Dynetics in Huntsville, AL. I do not have a direct link to a description of the training; however, I have included a link to Dynetics below along with more information about the CEH certification.
-<a href='http://www.dynetics.com/services/space/training'>Dynetics</a><br />
-<a href='https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/'>About CEH</a>
+[Dynetics](http://www.dynetics.com/services/space/training)
+[About CEH](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh)
 
 ### <a name='unified'></a>Unified Threat Management Introduction Course
 
-This class covered setting up a secure pfSense firewall as well as firewall best practices. This class was delivered by <a href='http://www.sudosecure.com'>SudoSecure</a>.
+This class covered setting up a secure pfSense firewall as well as firewall best practices. This class was delivered by [SudoSecure](http://www.sudosecure.com).
 
 ### <a name='linuxsteelpivot3'></a>Linux Administration 310 - Service Configuration, Management and LAMP Servers
 
