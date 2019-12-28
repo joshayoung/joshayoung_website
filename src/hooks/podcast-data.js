@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-const Podcasts = () => {
+const PodcastData = () => {
   const data = useStaticQuery(graphql`
   {
     allPodcastsJson {
@@ -22,4 +22,4 @@ const Podcasts = () => {
   }));
 };
 
-export default Podcasts;
+export default PodcastData;

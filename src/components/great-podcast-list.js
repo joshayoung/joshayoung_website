@@ -1,16 +1,16 @@
 import React from "react";
-import PodcastEpisodes from "../hooks/podcast-episodes";
+import PodcastRecommendedData from "../hooks/podcast-recommend-data";
 
 export default () => {
-  const podcastEpisodes = PodcastEpisodes();
+  const podcastRecommendedData = PodcastRecommendedData();
 
   return (
-    <ul aria-labelledby='podcast_episodes' aria-describedby='podcasts_episodes_description'>
-      {podcastEpisodes.map(post => (
-        <div key={post.id}>
+    <ul>
+      {podcastRecommendedData.map(podcast => (
+        <div key={podcast.id}>
           {
-            post.display === true ?
-              <li><a href={post.url}>{post.title}</a></li>
+            podcast.display === true ?
+              <li><a href={podcast.url}>{podcast.title}</a></li>
               :
               ''
           }

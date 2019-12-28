@@ -1,17 +1,16 @@
-import PropTypes from "prop-types";
 import React from "react";
-import ListTreehouse from "../hooks/list-treehouse";
+import TreeHouseData from "../hooks/tree-house-data";
 
 export default () => {
-  const treehouse = ListTreehouse();
+  const treehouses = TreeHouseData();
 
   return (
+
     <ul>
-      <>
-        {treehouse.map(treehouse => (
-          <li><a href={treehouse.url}>{treehouse.title}</a></li>
-        ))}
-      </>
+      <li>est</li>
+      {treehouses.map(treehouse => (
+        <li><a href={treehouse.url}>{treehouse.title}</a></li>
+      ))}
     </ul>
   );
 };

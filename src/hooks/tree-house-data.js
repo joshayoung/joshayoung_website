@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-const listTreehouse = () => {
+const TreeHouseData = () => {
   const data = useStaticQuery(graphql`
     {
       allTreehousesJson {
@@ -21,4 +21,4 @@ const listTreehouse = () => {
   }));
 };
 
-export default listTreehouse;
+export default TreeHouseData;

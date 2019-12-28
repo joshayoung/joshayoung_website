@@ -1,10 +1,10 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import ListDefinitions from "../hooks/list-definitions";
+import DefinitionData from "../hooks/definition-data";
 
 export default () => {
-  const definitions = ListDefinitions();
+  const definitions = DefinitionData();
   return (
     <Layout>
       <SEO title="Definitions" />
