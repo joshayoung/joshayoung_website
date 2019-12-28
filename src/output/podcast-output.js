@@ -2,11 +2,11 @@ import React from "react";
 import PodcastData from "../hooks/podcast-data";
 
 export default () => {
-  const podcastData = PodcastData();
+  const podcasts = PodcastData();
 
   return (
     <ul>
-      {podcastData.map(podcast => (
+      {podcasts.map(podcast => (
         <div key={podcast.id}>
           {
             podcast.display === true ?
