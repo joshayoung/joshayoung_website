@@ -10,6 +10,8 @@ import VSCode from "../snippets/vs-code.js";
 
 # Code Snippets
 
+Below, I have listed some common code snippets that I commonly go back to reference. Maybe you will find some of these useful. I update these routinely and add new ones as I run across them.
+
 * [Bash](#bash)
 * [CSS](#css)
 * [Curl](#curl)

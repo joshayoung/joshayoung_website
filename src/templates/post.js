@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
+import { css } from '@emotion/core';
 
 export default function Template({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
@@ -13,7 +14,12 @@ export default function Template({ data }) {
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
-      <div>Last Updated: {frontmatter.date}</div>
+      <div
+        css={css`
+          font-size: 12px;
+        `}>
+        Last Updated: {frontmatter.date}
+      </div>
     </Layout>
   )
 }
