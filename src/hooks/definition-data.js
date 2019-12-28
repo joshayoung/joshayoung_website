@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-const ListDefinitions = () => {
+const DefinitionData = () => {
   const data = useStaticQuery(graphql`
   query MyQuery {
     allDefinitionsJson {
@@ -22,4 +22,4 @@ const ListDefinitions = () => {
   }));
 };
 
-export default ListDefinitions;
+export default DefinitionData;

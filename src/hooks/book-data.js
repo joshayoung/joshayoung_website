@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-const BooksRecommended = () => {
+const BookData = () => {
   const data = useStaticQuery(graphql`
   {
     allBooksCategorizedJson {
@@ -30,4 +30,4 @@ const BooksRecommended = () => {
   }));
 };
 
-export default BooksRecommended;
+export default BookData;

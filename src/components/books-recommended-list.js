@@ -1,9 +1,9 @@
 import React from "react";
-import BooksRecommended from "../hooks/books-recommended";
+import BookData from "../hooks/book-data";
 import BookRecommended from "../components/book-recommended";
 
 export default () => {
-  const books = BooksRecommended();
+  const books = BookData();
 
   return (
     <ul>

@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-const ListResources = () => {
+const ResourceData = () => {
   const data = useStaticQuery(graphql`
   {
     allResourcesJson {
@@ -26,4 +26,4 @@ const ListResources = () => {
   }));
 };
 
-export default ListResources;
+export default ResourceData;

@@ -1,13 +1,12 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import ListResources from "../hooks/list-resources";
+import ResourceData from "../hooks/resource-data";
 import Resource from "../components/resource";
 
 export default () => {
-  const resources = ListResources();
+  const resources = ResourceData();
   return (
-    <SEO title="Resources" />
     <Layout>
       <SEO title="Resources" />
       <h1>Development Resources</h1>

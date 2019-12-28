@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-const listThoughts = () => {
+const ThoughtData = () => {
   const data = useStaticQuery(graphql`
     {
       allMdx {
@@ -24,4 +24,4 @@ const listThoughts = () => {
   }));
 };
 
-export default listThoughts;
+export default ThoughtData;

@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import React from "react";
-import ListCodeschool from "../hooks/list-code-school";
+import CodeSchoolData from "../hooks/code-school-data";
 
 export default () => {
-  const codeschool = ListCodeschool();
+  const codeschool = CodeSchoolData();
 
   return (
     <ul>

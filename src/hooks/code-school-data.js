@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-const ListCodeSchool = () => {
+const CodeSchoolData = () => {
   const data = useStaticQuery(graphql`
   {
     allCodeschoolsJson {
@@ -21,4 +21,4 @@ const ListCodeSchool = () => {
   }));
 };
 
-export default ListCodeSchool;
+export default CodeSchoolData;
