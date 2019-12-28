@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 const TreeHouseData = () => {
   const data = useStaticQuery(graphql`
     {
-      allTreehousesJson {
+      allTreehouseJson {
         nodes {
           title
           url
@@ -13,7 +13,7 @@ const TreeHouseData = () => {
     }
   `);
 
-  return data.allTreehousesJson.nodes.map(data => ({
+  return data.allTreehouseJson.nodes.map(data => ({
     id: data.id,
     title: data.title,
     url: data.url,

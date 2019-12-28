@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 const PodcastRecommendedData = () => {
   const data = useStaticQuery(graphql`
   {
-    allPodcastsEpisodesJson {
+    allPodcastsRecommendedJson {
       nodes {
         id
         title
@@ -14,7 +14,7 @@ const PodcastRecommendedData = () => {
   }
   `);
 
-  return data.allPodcastsEpisodesJson.nodes.map(data => ({
+  return data.allPodcastsRecommendedJson.nodes.map(data => ({
     id: data.id,
     title: data.title,
     url: data.url,

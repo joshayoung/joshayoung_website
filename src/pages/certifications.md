@@ -3,19 +3,19 @@
 Below I have included a list of certifications that I have attained over the past few years.
 Many of these certs required passing more than one test. I have included a short summary of each certification along with a link to a better explanation of each one.
 
-- [My Certifications](#my-certifications)
-    - [CompTIA Security+](#comptia-security)
-    - [Certified Ethical Hacker (C|EH)](#certified-ethical-hacker-ceh)
-    - [Zend Certified PHP Engineer (ZCPE)](#zend-certified-php-engineer-zcpe)
-    - [CompTIA Network+](#comptia-network)
-    - [CIW Web Development Professional](#ciw-web-development-professional)
-    - [CIW Database Design Specialist](#ciw-database-design-specialist)
-    - [CIW Perl Specialist](#ciw-perl-specialist)
-    - [CIW JavaScript Specialist](#ciw-javascript-specialist)
-    - [CompTIA Linux+](#comptia-linux)
-    - [SUSE Certified Linux Administrator 11](#suse-certified-linux-administrator-11)
-    - [LPIC-1](#lpic-1)
-    - [CompTIA A+](#comptia-a)
+* [My Certifications](#my-certifications)
+* [CompTIA Security+](#comptia-security)
+* [Certified Ethical Hacker (C|EH)](#certified-ethical-hacker-ceh)
+* [Zend Certified PHP Engineer (ZCPE)](#zend-certified-php-engineer-zcpe)
+* [CompTIA Network+](#comptia-network)
+* [CIW Web Development Professional](#ciw-web-development-professional)
+* [CIW Database Design Specialist](#ciw-database-design-specialist)
+* [CIW Perl Specialist](#ciw-perl-specialist)
+* [CIW JavaScript Specialist](#ciw-javascript-specialist)
+* [CompTIA Linux+](#comptia-linux)
+* [SUSE Certified Linux Administrator 11](#suse-certified-linux-administrator-11)
+* [LPIC-1](#lpic-1)
+* [CompTIA A+](#comptia-a)
 
 ### <a name='security'></a>CompTIA Security+
 

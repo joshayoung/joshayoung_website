@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 const BookData = () => {
   const data = useStaticQuery(graphql`
   {
-    allBooksCategorizedJson {
+    allBooksJson {
       nodes {
         hide_from_recommended
         id
@@ -22,7 +22,7 @@ const BookData = () => {
   }
   `);
 
-  return data.allBooksCategorizedJson.nodes.map(data => ({
+  return data.allBooksJson.nodes.map(data => ({
     hide_list: data.hide_from_recommended,
     id: data.id,
     title: data.title,

@@ -300,6 +300,6 @@ const Resume = () => (
       </ul>
     </article>
   </Layout >
-)
+);
 
 export default Resume;
