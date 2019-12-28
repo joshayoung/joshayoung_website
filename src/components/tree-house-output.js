@@ -7,7 +7,6 @@ export default () => {
   return (
 
     <ul>
-      <li>est</li>
       {treehouses.map(treehouse => (
         <li><a href={treehouse.url}>{treehouse.title}</a></li>
       ))}

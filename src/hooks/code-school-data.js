@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 const CodeSchoolData = () => {
   const data = useStaticQuery(graphql`
   {
-    allCodeschoolsJson {
+    allCodeschoolJson {
       nodes {
         id
         title
@@ -13,7 +13,7 @@ const CodeSchoolData = () => {
   }
   `);
 
-  return data.allCodeschoolsJson.nodes.map(data => ({
+  return data.allCodeschoolJson.nodes.map(data => ({
     id: data.id,
     title: data.title,
     url: data.url,

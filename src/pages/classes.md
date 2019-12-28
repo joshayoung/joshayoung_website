@@ -102,7 +102,7 @@ Wes Bos delivers some excellent content at his <a href='http://wesbos.com/course
 
 ### <a name='udemy'></a>Udemy Classes
 
-    You have to be selective with some of the classes offered on Udemy; however, sometimes the classes offered are excellent at a reasonable price.
+You have to be selective with some of the classes offered on Udemy; however, sometimes the classes offered are excellent at a reasonable price.
 
 * <a href='https://www.udemy.com/learnsketch3'>Sketch 3 from A to Z: Become an App Designer</a>
 
@@ -110,7 +110,7 @@ Wes Bos delivers some excellent content at his <a href='http://wesbos.com/course
 
 I took all of these classes as a part of a short Tree House membership. They were largely review for me, but some of the classes covered technologies that I had not had time to learn yet.
 
-    <TreeHouseOutput />
+<TreeHouseOutput />
 
 ### <a name='pluralsight'></a>PluralSight Courses
 
