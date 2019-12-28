@@ -9,8 +9,7 @@ const Book = ({ title, post }) => {
     }
   }
   return (
-    <article className='box'>
-      {/* <pre>{JSON.stringify(post)}</pre> */}
+    <>
       <h3>{title}</h3>
       {post.map((book, i) => (
         <div key={i}>
@@ -28,7 +27,7 @@ const Book = ({ title, post }) => {
           }
         </div>
       ))}
-    </article>
+    </>
   );
 };
 

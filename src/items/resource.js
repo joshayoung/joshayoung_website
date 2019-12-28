@@ -1,8 +1,7 @@
 import React from 'react';
 
 const Resource = ({ klass, title, post }) => (
-  <article className='box'>
-    {/* <pre>{JSON.stringify(post)}</pre> */}
+  <>
     <h3>{title}</h3>
     <a name={klass}></a>
     {post.map((resource, i) => (
@@ -16,7 +15,7 @@ const Resource = ({ klass, title, post }) => (
       </div>
       // <pre>{JSON.stringify(resource)}</pre>
     ))}
-  </article>
+  </>
 );
 
 export default Resource;
