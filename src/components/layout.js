@@ -8,11 +8,10 @@ import LeftNav from "../components/left-nav";
 import SEO from "../components/seo";
 import Glance from "../snippets/glance";
 import Tags from "../snippets/tags";
+import Main from "../components/main";
 
 import "normalize.css";
-
-import "../styles/global.scss";
-import "../styles/markdown.scss";
+import "../styles/fonts.scss";
 import "highlight.js/styles/solarized-dark.css"
 
 const Layout = ({ children, klass }) => {
@@ -21,12 +20,25 @@ const Layout = ({ children, klass }) => {
   return (
     <>
       <Global styles={css`
+        .warning {
+          padding: 10px;
+          background: red;
+        }
+
+        pre {
+          white-space: pre-wrap;
+        }
+        code {
+          white-space: pre-wrap;
+        }
+
         * {
           box-sizing: border-box;
         }
 
         body {
           font-family: 'Acme', sans-serif;
+          font-family: 'Work Sans', sans-serif;
           font-size: 18px;
           line-height: 1.4;
           background-color: #f2f2f2;
@@ -93,13 +105,6 @@ const Layout = ({ children, klass }) => {
           }
         }
 
-        main {
-          @media (min-width: 600px) {
-              border-left: 1px solid #dedede;
-              padding-left: 30px;
-          }
-        }
-
         .aside {
           display: none;
           max-width: 300px;
@@ -123,27 +128,15 @@ const Layout = ({ children, klass }) => {
           padding: 0 10px;
           padding-top: 20px;
         }
-
       `} />
-      <SEO title="{}" />
       <div className={klass ? "Wrap " + klass : 'Wrap'}>
         <div className='WrapInside'>
           <Header />
           <LeftNav />
-          <main
-            css={css`
-              margin: 1rem auto;
-              max-width: 90vw;
-              width: 700px;
-              @media (min-width: 700px) {
-                margin: 0;
-                margin-top: 50px;
-              }
-            `}
-          >
+          <Main>
             <Logo />
             {children}
-          </main>
+          </Main>
           <div className='aside'>
             <Glance />
             <Tags />
