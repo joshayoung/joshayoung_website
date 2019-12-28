@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
 import React from "react";
+import Box from "../components/box";
 
-const Glance = ({ siteTitle }) => (
-  <div className='box links'>
+const Glance = () => (
+  <Box>
     <header>Glance</header>
     <ul>
       <li><a href="/me#books">Books</a></li>
@@ -16,15 +16,7 @@ const Glance = ({ siteTitle }) => (
       <li><a href="/tech-spectrum">Spectrum</a></li>
       <li><a href="/me#podcasts">Podcasts</a></li>
     </ul>
-  </div>
+  </Box>
 );
-
-Glance.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Glance.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Glance;

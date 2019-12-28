@@ -1,8 +1,8 @@
-import PropTypes from "prop-types"
 import React from "react"
+import Box from "../components/box";
 
-const Tags = ({ siteTitle }) => (
-  <div className='box links'>
+const Tags = () => (
+  <Box>
     <header>Tags</header>
     <ul aria-labelledby="tags">
       <li><a href="/tags?Jekyll">Jekyll</a></li>
@@ -25,15 +25,7 @@ const Tags = ({ siteTitle }) => (
       <li><a href="/tags?Ruby">Ruby</a></li>
       <li><a href="/tags?MVC">MVC</a></li>
     </ul>
-  </div>
+  </Box>
 );
-
-Tags.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Tags.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Tags;
