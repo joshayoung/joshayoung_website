@@ -1,8 +1,7 @@
-import PropTypes from "prop-types";
 import { css } from '@emotion/core';
 import React from "react";
 
-const Attribution = ({ siteTitle }) => (
+const Attribution = () => (
   <div css={css`
     color: #999999;
     a {
@@ -17,13 +16,5 @@ const Attribution = ({ siteTitle }) => (
     <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
   </div>
 );
-
-Attribution.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Attribution.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Attribution;

@@ -11,7 +11,7 @@ const Glance = () => (
       <li><a href="/me#hobbies">Hobbies</a></li>
       <li><a href="https://github.com/joshayoung">GitHub</a></li>
       <li><a href="/quotes">Quotes</a></li>
-      <li><a href="https://www.freecodecamp.org/joshayoung">FreeCodeCamp</a></li>
+      {/* <li><a href="https://www.freecodecamp.org/joshayoung">FreeCodeCamp</a></li> */}
       <li><a href="https://www.linkedin.com/in/joshuayoung1">LinkedIn</a></li>
       <li><a href="/tech-spectrum">Spectrum</a></li>
       <li><a href="/me#podcasts">Podcasts</a></li>

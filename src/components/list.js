@@ -20,10 +20,6 @@ const List = ({ children }) => (
         color: #b3b3b3;
       }
     }
-    ul {
-      list-style-type: square;
-      margin-left: 30px;
-    }
   `}>
     {children}
   </div>

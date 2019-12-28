@@ -62,9 +62,9 @@ const Layout = ({ children, klass }) => {
         }
 
         ul {
-          list-style-type: none;
-          margin: 0;
+          list-style-type: square;
           padding: 0;
+          margin: 0 0 0 30px;
         }
 
         .home .aside {
