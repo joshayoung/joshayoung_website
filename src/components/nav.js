@@ -1,11 +1,10 @@
-import PropTypes from "prop-types";
 import React from "react";
 import { css } from '@emotion/core';
 import NavLinks from "../components/nav-links";
 
 const blue = "#3385ff";
 
-const Nav = ({ siteTitle }) => (
+const Nav = () => (
   <nav css={css`
     margin-left: 100%;
     position: relative;
@@ -97,13 +96,5 @@ const Nav = ({ siteTitle }) => (
     <NavLinks />
   </nav>
 )
-
-Nav.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Nav.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Nav;

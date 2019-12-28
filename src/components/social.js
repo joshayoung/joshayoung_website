@@ -1,8 +1,7 @@
-import PropTypes from "prop-types";
 import React from "react";
 import { css } from "@emotion/core";
 
-const Social = ({ siteTitle }) => (
+const Social = () => (
   <div css={css`
     svg {
       width: 15px;
@@ -48,13 +47,5 @@ const Social = ({ siteTitle }) => (
     </a>
   </div>
 )
-
-Social.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Social.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Social;

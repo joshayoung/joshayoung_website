@@ -1,11 +1,10 @@
-import PropTypes from "prop-types";
 import React from "react";
 import NavLinks from "../components/nav-links";
 import { css } from '@emotion/core';
 
 const blue = "#3385ff";
 
-const LeftNav = ({ siteTitle }) => (
+const LeftNav = () => (
   <nav css={css`
   width: 200px;
   margin: 170px 10px 0 10px;
@@ -35,13 +34,5 @@ const LeftNav = ({ siteTitle }) => (
     <NavLinks />
   </nav >
 )
-
-LeftNav.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-LeftNav.defaultProps = {
-  siteTitle: ``,
-}
 
 export default LeftNav;

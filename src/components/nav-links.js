@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 import { Link } from "gatsby";
 import styled from "@emotion/styled";
@@ -8,7 +7,7 @@ const NavLink = styled(Link)`
   color: ${props => props.color || "#000;"};
 `;
 
-const NavLinks = ({ siteTitle }) => (
+const NavLinks = () => (
   <ul>
     <li><NavLink activeClassName='active' to="/">Home</NavLink></li>
     <li><NavLink activeClassName='active' to="/thoughts">Thoughts</NavLink></li>
@@ -22,13 +21,5 @@ const NavLinks = ({ siteTitle }) => (
     <li><NavLink activeClassName='active' to="/me">About</NavLink></li>
   </ul>
 )
-
-NavLinks.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-NavLinks.defaultProps = {
-  siteTitle: ``,
-}
 
 export default NavLinks;
