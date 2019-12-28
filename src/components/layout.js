@@ -53,6 +53,22 @@ const Layout = ({ children, klass }) => {
           }
         }
 
+        h4 {
+          margin-bottom: 0;
+        }
+
+        h6 {
+          margin: 10px 0;
+        }
+
+        h5 {
+          margin: 10px 0;
+        }
+
+        span {
+          font-size: 14px;
+        }
+
         a {
           text-decoration: none;
           color: #000;
@@ -65,6 +81,23 @@ const Layout = ({ children, klass }) => {
           list-style-type: square;
           padding: 0;
           margin: 0 0 0 30px;
+          font-size: 14px;
+        }
+
+        dl {
+          dd {
+            margin: 0 0 10px 0;
+            font-style: italic;
+            font-size: 14px;
+          }
+          dt {
+            display: inline-block;
+            font-weight: bold;
+            color: ${blue};
+            &:after {
+              content: ': ';
+            }
+          }
         }
 
         .home .aside {

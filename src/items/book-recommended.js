@@ -12,23 +12,26 @@ const BookRecommended = ({ title, hide, post }) => {
     <>
       {hide !== true ?
         <>
-          <h3>{title}</h3>
-          {post.map((book, i) => (
-            <div key={i}>
-              {book.display && (book.recommend === true) ?
-                <>
-                  {book.short_title ?
-                    <p>{book.short_title}</p>
+          <h5>{title}</h5>
+          <ul>
+            {post.map((book, i) => (
+              <>
+                {
+                  book.display && (book.recommend === true) ?
+                    <li key={i}>
+                      {book.short_title ?
+                        <>{book.short_title}</>
+                        :
+                        <>{book.title}</>
+                      }
+                      {fun(book)}
+                    </li>
                     :
-                    <p>{book.title}</p>
-                  }
-                  {fun(book)}
-                </>
-                :
-                ''
-              }
-            </div>
-          ))}
+                    ''
+                }
+              </>
+            ))}
+          </ul>
         </>
         : ''}
     </>

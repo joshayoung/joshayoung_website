@@ -108,7 +108,7 @@ I have listed more details about each one of these projects on my [projects](/pr
 #### Bryan College, Dayton Tennessee (2006 - 2009)
 ##### **Bachelor of Science, Computer Science**
 ###### Minor: Business Administration
-(Also see my continuing education under my <a href='/classes'>classes</a> page.)
+<span>(Also see my continuing education under my <a href='/classes'>classes</a> page.)</span>
 
 ### Certification
 More information about each certification is listed on on my [certifications](/certifications) page.
