@@ -18,24 +18,11 @@ const Layout = ({ children, klass }) => {
   return (
     <>
       <Global styles={css`
-        .warning {
-          padding: 10px;
-          background: red;
-        }
-
-        pre {
-          white-space: pre-wrap;
-        }
-        code {
-          white-space: pre-wrap;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
+        pre { white-space: pre-wrap; }
+        code { white-space: pre-wrap; }
+        * { box-sizing: border-box; }
 
         body {
-          font-family: 'Acme', sans-serif;
           font-family: 'Work Sans', sans-serif;
           font-size: 18px;
           line-height: 1.4;
@@ -84,12 +71,6 @@ const Layout = ({ children, klass }) => {
           padding: 0;
         }
 
-        nav {
-          li {
-            display: inline-block;
-          }
-        }
-
         .Wrap {
           display: flex;
           min-height: 100vh;
@@ -107,9 +88,9 @@ const Layout = ({ children, klass }) => {
             display: none;
         }
 
-        footer {
-          padding: 0 10px;
-          padding-top: 20px;
+        .warning {
+          padding: 10px;
+          background: red;
         }
       `} />
       <div className={klass ? "Wrap " + klass : 'Wrap'}>
