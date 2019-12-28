@@ -1,17 +1,17 @@
 # Development Projects
-Below I have listed some of the personal projects that I have developed over the years along with the programming languages used for each.
 
-[Will It Rain (2019)](#will_it_rain)
-[Plot Notes (2018 - 2019)](#plot_notes)
-[Note/URL System (2017)](#note_url_system)
-[Joshyoung.me Website (2016)](#joshyoung)
-[Note Taking System (2014)](#note_system_flask)
-[Joshayoung Website (2012)](#joshayoung)
-[Code It Creation Website (2011)](#codeitcreations)
-[Ticketing System v2 (2010)](#ticketing_system_alt)
-[Ticketing System v1 (2010)](#ticketing_system)
-[Comments and Capers Website (2009)](#commentsandcapers)
-[Blogging System (2008)](#blogging_system)
+Below I have listed some of the personal projects that I have developed over the years along with the programming languages used for each.
+* [Will It Rain (2019)](#will_it_rain)
+* [Plot Notes (2018 - 2019)](#plot_notes)
+* [Note/URL System (2017)](#note_url_system)
+* [Joshyoung.me Website (2016)](#joshyoung)
+* [Note Taking System (2014)](#note_system_flask)
+* [Joshayoung Website (2012)](#joshayoung)
+* [Code It Creation Website (2011)](#codeitcreations)
+* [Ticketing System v2 (2010)](#ticketing_system_alt)
+* [Ticketing System v1 (2010)](#ticketing_system)
+* [Comments and Capers Website (2009)](#commentsandcapers)
+* [Blogging System (2008)](#blogging_system)
 
 ### <a name='will_it_rain'></a>Will It Rain (2019)
 #### (Ruby, RSpec)
