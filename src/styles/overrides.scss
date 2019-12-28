@@ -1,4 +1,9 @@
-.home .aside {
+
+.home .aside,
+.tech-spectrum .aside {
+  display: none;
+}
+.tech-spectrum .left-nav {
   display: none;
 }
 

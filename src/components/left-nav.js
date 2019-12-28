@@ -30,7 +30,8 @@ const LeftNav = () => (
       }
     }
   }
-  `}>
+  `}
+    className="left-nav">
     <NavLinks />
   </nav >
 )
