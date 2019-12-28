@@ -2,17 +2,17 @@
 
 Below I have listed some of the personal projects that I have developed over the years along with the programming languages used for each.
 
-* <a href='#will_it_rain'>Will It Rain (2019)</a>
-* <a href='#plot_notes'>Plot Notes (2018 - 2019)</a>
-* <a href='#note_url_system'>Note/URL System (2017)</a>
-* <a href='#joshyoung'>Joshyoung.me Website (2016)</a>
-* <a href='#note_system_flask'>Note Taking System (2014)</a>
-* <a href='#joshayoung'>Joshayoung Website (2012)</a>
-* <a href='#codeitcreations'>Code It Creation Website (2011)</a>
-* <a href='#ticketing_system_alt'>Ticketing System v2 (2010)</a>
-* <a href='#ticketing_system'>Ticketing System v1 (2010)</a>
-* <a href='#commentsandcapers'>Comments and Capers Website (2009)</a>
-* <a href='#blogging_system'>Blogging System (2008)</a>
+[Will It Rain (2019)](#will_it_rain)
+[Plot Notes (2018 - 2019)](#plot_notes)
+[Note/URL System (2017)](#note_url_system)
+[Joshyoung.me Website (2016)](#joshyoung)
+[Note Taking System (2014)](#note_system_flask)
+[Joshayoung Website (2012)](#joshayoung)
+[Code It Creation Website (2011)](#codeitcreations)
+[Ticketing System v2 (2010)](#ticketing_system_alt)
+[Ticketing System v1 (2010)](#ticketing_system)
+[Comments and Capers Website (2009)](#commentsandcapers)
+[Blogging System (2008)](#blogging_system)
 
 ### <a name='will_it_rain'></a>Will It Rain (2019)
 #### (Ruby, RSpec)

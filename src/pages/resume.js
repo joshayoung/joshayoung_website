@@ -6,10 +6,6 @@ const Resume = () => (
   <Layout>
     <SEO title="Resume" />
     <h1>Resume</h1>
-    <ul style={{ display: 'none' }}>
-      <li><a href='/docs/Josh_Young_Resume.pdf'>Download Resume (pdf)</a></li>
-      <li><a href='/docs/Josh_Young_Resume.txt'>Download Resume (txt)</a></li>
-    </ul>
 
     <article>
       <h3>Experienced - Full Stack Web Developer</h3>
