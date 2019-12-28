@@ -1,5 +1,6 @@
 import React from "react";
 import PodcastData from "../hooks/podcast-data";
+import Podcast from "../items/podcast";
 
 export default () => {
   const podcasts = PodcastData();
@@ -7,14 +8,7 @@ export default () => {
   return (
     <ul>
       {podcasts.map(podcast => (
-        <div key={podcast.id}>
-          {
-            podcast.display === true ?
-              <li><a href={podcast.url}>{podcast.title}</a></li>
-              :
-              ''
-          }
-        </div>
+        <Podcast podcast={podcast} />
       ))}
     </ul>
   );
