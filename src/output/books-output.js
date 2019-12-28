@@ -1,5 +1,5 @@
 import React from "react";
-import Book from "../components/book";
+import Book from "../items/book";
 import BookData from "../hooks/book-data";
 
 export default () => {

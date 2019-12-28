@@ -1,6 +1,6 @@
 import React from "react";
 import ResourceData from "../hooks/resource-data";
-import Resource from "../components/resource";
+import Resource from "../items/resource";
 
 export default () => {
   const resources = ResourceData()
