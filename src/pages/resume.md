@@ -10,6 +10,8 @@ Full Stack Web Developer with 7+ years of experience developing web applications
 * Working with other team members via git and other collaboration tools.
 * Writing and updating rspec tests to insure good test coverage for our websites.
 
+---
+
 #### Systems Analyst (Web Developer)
 ##### Huntsville Utilities - Huntsville, AL (2010 - 2018)
 * Supported customers by developing web and mobile applications using PHP, Laravel, CodeIgniter, JavaScript, jQuery, React, HTML5, CSS, and MySQL.
@@ -22,6 +24,8 @@ Full Stack Web Developer with 7+ years of experience developing web applications
 * Attended conferences, workshops, and online training to continually improve skillsets.
 * Worked with other technologies including: C#, ASP.NET, Ruby, Perl, Python, MS SQL, Oracle, Red Hat, macOS, and Windows Server.
 
+---
+
 #### Freelancing Development
 ##### Web Developer/Designer (2009 - 2011)
 * Assisted customers by designing and developing web pages using standards-compliant XHTML, CSS, JavaScript, and jQuery.
@@ -32,6 +36,8 @@ Full Stack Web Developer with 7+ years of experience developing web applications
 * Setup and maintained website back-end code bases and the supporting databases.
 * Maintained databases and servers by writing bash and SQL scripts.
 
+---
+
 #### Developer
 ##### ASI Software &amp; Web Solutions, Hoover, AL (November 2009 – August 2010)
 * Built and improved customer websites using CSS, HTML, JavaScript, and jQuery.
@@ -41,11 +47,15 @@ Full Stack Web Developer with 7+ years of experience developing web applications
 * Communicated with supervisor to complete the most important tasks on time.
 * Sliced Adobe Photoshop mockups to create CSS and HTML layouts.
 
+---
+
 #### Web Intern
 ##### IT Department Bryan College - Dayton, TN (2007 – 2009)
 * Maintained the college website via XHTML, CSS, and a content management system (MODX).
 * Developed web pages for each athletic department and email templates for the athletic director.
 * Corrected ASP.NET and C# code to insure correct functioning of the school website.
+
+---
 
 #### Ledford Research Project (PHP Blogging System)
 ##### Student Researcher/Developer - Birmingham, AL (Summer 2008)
@@ -55,11 +65,15 @@ Full Stack Web Developer with 7+ years of experience developing web applications
 * Implemented secure PHP practices and MySQL database schema.
 * Arranged results of research into downloadable content for placement on website.
 
+---
+
 #### IT Internship (Development Work)
 ##### APAC Mid-South - Birmingham, AL (Summer 2008)
 * Interacted with Microsoft SharePoint and SQL Server to formulate SQL reports.
 * Worked with ASP.NET, HTML, and CSS within a Windows Server 2003 environment.
 * Remoted into client's computers to set up software and troubleshoot technical problems.
+
+---
 
 ### Work Projects
 * <span>Website for External Web Apps</span>
@@ -83,6 +97,8 @@ Full Stack Web Developer with 7+ years of experience developing web applications
 * <span>Redesign Help Desk System</span>
   <span>(PHP, HTML, CSS, JavaScript - 2010)</span>
 
+---
+
 ### Personal Projects
 I have listed more details about each one of these projects on my [projects](/projects) page.
 * <a href='/projects#note_url_system'>Note/URL System</a>
@@ -104,11 +120,15 @@ I have listed more details about each one of these projects on my [projects](/pr
 * <a href='/projects#blogging_system'>Blogging System</a>
   <span>(PHP, MySQL, HTML, CSS, JavaScript - Summer 2008)</span>
 
+---
+
 ### Education
 #### Bryan College, Dayton Tennessee (2006 - 2009)
 ##### **Bachelor of Science, Computer Science**
 ###### Minor: Business Administration
 <span>(Also see my continuing education under my <a href='/classes'>classes</a> page.)</span>
+
+---
 
 ### Certification
 More information about each certification is listed on on my [certifications](/certifications) page.
@@ -124,6 +144,8 @@ More information about each certification is listed on on my [certifications](/c
 * <a href='/certifications#suse'>SUSE Certified Linux Administrator 11</a>
 * <a href='/certifications#lpci'>LPCI-1</a>
 * <a href='/certifications#aplus'>CompTIA A+</a>
+
+---
 
 ### Technical Skills
 * Server Technologies

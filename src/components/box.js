@@ -12,7 +12,7 @@ const Box = ({ children }) => (
 
       header {
         font-family: 'Acme', sans-serif;
-        font-size: 30px;
+        font-size: 24px;
         margin-bottom: 5px;
         color: #3385ff;
         &:before {

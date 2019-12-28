@@ -6,6 +6,7 @@ import Wrap from "../components/wrap";
 
 import "normalize.css";
 import "../styles/fonts.css";
+import "../styles/overrides.scss";
 import "highlight.js/styles/solarized-dark.css"
 
 const Layout = ({ children, klass }) => {
@@ -98,15 +99,6 @@ const Layout = ({ children, klass }) => {
               content: ': ';
             }
           }
-        }
-
-        .home .aside {
-            display: none;
-        }
-
-        .warning {
-          padding: 10px;
-          background: red;
         }
       `} />
       <Wrap children={children} klass={klass} />
