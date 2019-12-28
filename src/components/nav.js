@@ -29,7 +29,8 @@ const Nav = () => (
       z-index: 100;
       width: 250px;
       margin-top: -68px;
-      animation: close 0.5s ease;
+      /* TODO: Correct this so the animation works on page load: */
+      // animation: close 0.5s ease;
       right: -250px;
       animation-fill-mode: forwards;
       border-left: solid 3px ${blue};
