@@ -1,7 +1,7 @@
-import PodcastList from "../components/podcast-list";
-import GreatPodcastList from "../components/great-podcast-list";
-import BooksList from "../components/books-list";
-import BooksRecommendedList from "../components/books-recommended-list";
+import PodcastOutput from '../output/podcast-output';
+import PodcastRecommendOutput from '../output/podcast-recommended-output';
+import BooksOutput from '../output/books-output';
+import BooksRecommendedOutput from '../output/books-recommended-output';
 
 # About Me
 
@@ -24,20 +24,20 @@ I also spend some of my free time maintaining my home network, firewall, fileser
 
 Below I have listed the tech podcasts that I currently listen to or have listened to in the past. Podcasts are a great way to keep up with the latest changes in development. Hopefully this list will introduce a good podcast to someone who enjoys learning and keeping up with the latest changes in tech.
 
-<PodcastList />
+<PodcastOutput />
 
 ### <a id='podcast_episodes'></a>Great Podcast Episodes
 
-<GreatPodcastList />
+<PodcastRecommendOutput />
 
 ### <a id='books'></a>Books I've Read
 
 Frequently, I try to delve deeper into specific aspects of tech that I want to learn more about. I find that buying a book about a particular technology can be a beneficial deep-dive experience. Below I have listed some of the books I have read over the years which have contributed to where I am today (listed in alphabetical order and categorized below).
 
-<BooksList />
+<BooksOutput />
 
 ### <a id='books_i_recommendend'></a>Books I Recommend
 
 Of the software engineering, networking, security, and design books that I listed above, these are some of the books that I highly recommend.
 
-<BooksRecommendedList />
+<BooksRecommendedOutput />

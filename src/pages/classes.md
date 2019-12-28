@@ -1,28 +1,29 @@
-import TreeHouseOutput from "../components/tree-house-output";
-import CodeSchoolOutput from "../components/codeschool-output";
+import TreeHouseOutput from "../output/tree-house-output";
+import CodeSchoolOutput from "../output/code-school-output";
 
 # Classes I've Taken
 
 In an effort to continually learn new technologies and stay abreast of existing technologies, I have found it helpful to take advantage of opportunities for continuing education.Below I have listed courses(both classroom and online) that I have completed over the years.
 
-* [Upcase by ThoughtBot](#upcase)
-* [The Pragmatic Studio](#pragmaticstudio)
-* [Transcend Leadership Essentials](#leadershipessentials)
-* [Frontend Masters Classes](#frontend)
-* [Laracast Courses](#laracastsclasses)
-* [Wes Bos Classes](#wesbos)
-* [Udemy Classes](#udemy)
-* [Tree House Classes](#treehouse)
-* [PluralSight Courses](#pluralsight)
-* [Code School Classes](#codeschool)
-* [FedVTE Training](#fedvte)
-* [Penetration Testing with Kali Linux](#kali)
-* [Security+ Certification Class](#securityplus)
-* [CEH - Ethical Hacking and Countermeasures](#ceh)
-* [Unified Threat Management Introduction Course](#unified)
-* [Linux Administration 310 - Service Configuration, Management, and LAMP Servers](#linuxsteelpivot3)
-* [Linux Administration 210 - System and Network Management](#linuxsteelpivot2)
-* [Linux Administration 110 - System Installation and Configuration](#linuxsteelpivot1)
+- [Classes I've Taken](#classes-ive-taken)
+    - [Upcase by Thoughtbox](#upcase-by-thoughtbox)
+    - [Pragmatic Studio Classes](#pragmatic-studio-classes)
+    - [Transcend Leadership Essentials](#transcend-leadership-essentials)
+    - [Frontend Masters Classes](#frontend-masters-classes)
+    - [Laracast Courses](#laracast-courses)
+    - [ Wes Bos Classes](#wes-bos-classes)
+    - [Udemy Classes](#udemy-classes)
+    - [Tree House Classes](#tree-house-classes)
+    - [PluralSight Courses](#pluralsight-courses)
+    - [Code School Classes](#code-school-classes)
+    - [FedVTE Training](#fedvte-training)
+    - [Penetration Testing with Kali Linux](#penetration-testing-with-kali-linux)
+    - [CompTIA Security+ Certification Training](#comptia-security-certification-training)
+    - [CEH - Ethical Hacking and Countermeasures](#ceh---ethical-hacking-and-countermeasures)
+    - [Unified Threat Management Introduction Course](#unified-threat-management-introduction-course)
+    - [Linux Administration 310 - Service Configuration, Management and LAMP Servers](#linux-administration-310---service-configuration-management-and-lamp-servers)
+    - [Linux Administration 210 - System and Network Management](#linux-administration-210---system-and-network-management)
+    - [Linux Administration 110 - System Installation and Configuration](#linux-administration-110---system-installation-and-configuration)
 
 ### <a name='upcase'></a>Upcase by Thoughtbox
 
