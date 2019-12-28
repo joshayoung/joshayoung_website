@@ -5,10 +5,8 @@ import Header from "./header";
 import Footer from "./footer";
 import Logo from "../components/logo";
 import LeftNav from "../components/left-nav";
-import SEO from "../components/seo";
-import Glance from "../snippets/glance";
-import Tags from "../snippets/tags";
 import Main from "../components/main";
+import Aside from "../components/aside";
 
 import "normalize.css";
 import "../styles/fonts.scss";
@@ -105,21 +103,6 @@ const Layout = ({ children, klass }) => {
           }
         }
 
-        .aside {
-          display: none;
-          max-width: 300px;
-          font-size: 14px;
-          padding: 10px;
-          padding-left: 40px;
-          margin-top: 240px;
-          header {
-            font-size: 20px;
-          }
-          @media (min-width: 600px) {
-            display: block;
-          }
-        }
-
         .home .aside {
             display: none;
         }
@@ -137,10 +120,7 @@ const Layout = ({ children, klass }) => {
             <Logo />
             {children}
           </Main>
-          <div className='aside'>
-            <Glance />
-            <Tags />
-          </div>
+          <Aside />
         </div>
       </div >
       <Footer />
