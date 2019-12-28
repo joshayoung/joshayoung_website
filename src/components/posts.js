@@ -1,7 +1,8 @@
 import React from "react";
+import List from "../components/list";
 
 const Posts = () => (
-  <section className='list'>
+  <List>
     <header>Latest Posts</header>
     <ul>
       <li>
@@ -14,7 +15,7 @@ const Posts = () => (
         <a href="/one-to-many-associations/">All about Rails</a>
       </li>
     </ul>
-  </section>
+  </List>
 )
 
 export default Posts;

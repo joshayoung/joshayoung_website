@@ -5,7 +5,7 @@ import Footer from "./footer";
 import Wrap from "../components/wrap";
 
 import "normalize.css";
-import "../styles/fonts.scss";
+import "../styles/fonts.css";
 import "highlight.js/styles/solarized-dark.css"
 
 const Layout = ({ children, klass }) => {
