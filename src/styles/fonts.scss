@@ -1,35 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 
-.warning {
-  padding: 10px;
-  background: red;
-}
-
-body {
-  font-family: 'Work Sans', sans-serif;
-}
-
-pre {
-  white-space: pre-wrap;
-}
-code {
-  white-space: pre-wrap;
-}
-
-main > p:first-of-type {
-  line-height: 2;
-  font-size: 25px;
-  background: #eaeaea;
-  border-bottom: 1px solid #3385ff;
-  box-shadow: 1px 1px 1px #ccc;
-  margin-bottom: 50px;
-  padding: 0 10px;
-  &:first-letter {
-    color: #3385ff;
-  }
-}
-
 .box {
   padding-bottom: 10px;
   border-bottom: 3px solid #3385ff;
