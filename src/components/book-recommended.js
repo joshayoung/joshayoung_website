@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from "prop-types";
 
 const BookRecommended = ({ title, hide, post }) => {
   const fun = function (data) {
@@ -11,16 +10,14 @@ const BookRecommended = ({ title, hide, post }) => {
   }
   return (
     <>
-      {/* <pre>{JSON.stringify(recommend)}</pre> */}
       {hide !== true ?
         <article className='box'>
           <>
             <h3>{title}</h3>
             {post.map((book, i) => (
               <div key={i}>
-                {book.display && (book.recommend == true) ?
+                {book.display && (book.recommend === true) ?
                   <>
-                    {/* <pre>{JSON.stringify(post)}</pre> */}
                     {book.short_title ?
                       <p>{book.short_title}</p>
                       :
@@ -35,11 +32,8 @@ const BookRecommended = ({ title, hide, post }) => {
             ))}
           </>
         </article>
-
         : ''}
-
     </>
-
   )
 };
 

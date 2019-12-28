@@ -1,4 +1,3 @@
-
 import PropTypes from "prop-types";
 import React from "react";
 import { css } from '@emotion/core';
@@ -7,7 +6,7 @@ import Quote from "../components/quote";
 import Attribution from "../components/attribution";
 import { Link } from "gatsby";
 
-const year = (new Date).getFullYear();
+const year = new Date().getFullYear();
 
 const Footer = ({ siteTitle }) => (
   <footer

@@ -6,8 +6,8 @@ import Footer from "./footer";
 import Logo from "../components/logo";
 import LeftNav from "../components/left-nav";
 import SEO from "../components/seo";
-import Glance from "../components/glance";
-import Tags from "../components/tags";
+import Glance from "../snippets/glance";
+import Tags from "../snippets/tags";
 
 import "normalize.css";
 
