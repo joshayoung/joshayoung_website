@@ -1,7 +1,8 @@
 import React from "react";
+import List from "../components/list";
 
 const Repos = () => (
-  <section className='list last'>
+  <List>
     <header>Recently Updated Repos</header>
     <ul id="github_repos">
       <li>
@@ -14,7 +15,7 @@ const Repos = () => (
         <a href="https://github.com/joshayoung/josh_website">josh_website</a>
       </li>
     </ul>
-  </section>
+  </List>
 )
 
 export default Repos;
