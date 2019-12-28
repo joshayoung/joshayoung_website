@@ -1,9 +1,8 @@
 import { Link } from "gatsby";
-import PropTypes from "prop-types";
 import React from "react";
 import { css } from '@emotion/core';
 
-const Intro = ({ siteTitle }) => (
+const Logo = () => (
   <Link
     to="/"
     css={css`
@@ -26,12 +25,4 @@ const Intro = ({ siteTitle }) => (
   </Link>
 )
 
-Intro.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Intro.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Intro;
+export default Logo;

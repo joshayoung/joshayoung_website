@@ -1,9 +1,8 @@
-import PropTypes from "prop-types";
 import React from "react";
 import { css } from '@emotion/core';
 import { Link } from 'gatsby';
 
-const Intro = ({ siteTitle }) => (
+const Intro = () => (
   <section className='' css={css`
     padding: 20px 0;
     font-size: 30px;
@@ -38,14 +37,6 @@ const Intro = ({ siteTitle }) => (
     Check out my <span><Link to="/thoughts">Blog</Link></span> to see what I am writing or my <Link to="/projects"><span>Projects</span></Link> to
     see what I am building<span className='dot'>...</span>
   </section >
-)
-
-Intro.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Intro.defaultProps = {
-  siteTitle: ``,
-}
+);
 
 export default Intro;

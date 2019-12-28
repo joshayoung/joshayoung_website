@@ -1,7 +1,6 @@
-import PropTypes from "prop-types";
 import React from "react";
 
-const Posts = ({ siteTitle }) => (
+const Posts = () => (
   <section className='list'>
     <header>Latest Posts</header>
     <ul>
@@ -17,13 +16,5 @@ const Posts = ({ siteTitle }) => (
     </ul>
   </section>
 )
-
-Posts.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Posts.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Posts;

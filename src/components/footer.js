@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 import { css } from '@emotion/core';
 import Social from "../components/social";
@@ -8,7 +7,7 @@ import { Link } from "gatsby";
 
 const year = new Date().getFullYear();
 
-const Footer = ({ siteTitle }) => (
+const Footer = () => (
   <footer
     css={css`
     background: #efefef;
@@ -73,13 +72,5 @@ const Footer = ({ siteTitle }) => (
     </div>
   </footer>
 )
-
-Footer.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Footer.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Footer;

@@ -1,7 +1,6 @@
-import PropTypes from "prop-types";
 import React from "react";
 
-const Repos = ({ siteTitle }) => (
+const Repos = () => (
   <section className='list last'>
     <header>Recently Updated Repos</header>
     <ul id="github_repos">
@@ -17,13 +16,5 @@ const Repos = ({ siteTitle }) => (
     </ul>
   </section>
 )
-
-Repos.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Repos.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Repos;
