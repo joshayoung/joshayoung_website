@@ -1,3 +1,5 @@
+import TechnicalSkills from "../snippets/technical-skills";
+
 # Resume
 
 ### Experienced - Full Stack Web Developer
@@ -148,87 +150,5 @@ More information about each certification is listed on on my [certifications](/c
 ---
 
 ### Technical Skills
-* Server Technologies
-* Apache
-* IIS
-* Nginx
-* MS Servers 2008/2012
-* Linux (Debian/Red Hat/CentOS)
-* FreeBSD
 
-* Operating Systems
-* Windows 7/8/10
-* Mac
-* VMware
-* Linux (Arch, Fedora, Ubuntu
-
-* Networking
-* TCP/IP
-* Routing/Switching
-* VLANs
-* DNS
-* DHCP
-* SSH
-* (S)FTP
-* TLS
-
-* Programming Languages
-* PHP
-* Ruby
-* C#
-* Perl
-* Python
-* JavaScript
-* ES2015
-* Ruby
-* Bash/Batch
-* Objective C
-
-* Frameworks
-* Rails
-* Laravel
-* ASP.NET
-* CoffeeScript
-* Bootstrap
-* SASS
-* Gulp
-* Webpack
-* CodeIgniter
-* React
-
-* Design
-* Sketch
-* Photoshop
-* Gimp
-* Balsamiq Mockups
-
-* Databases
-* MySQL
-* MS SQL
-* Oracle
-* SQLite
-* NoSQL (MongoDB)
-* PostgreSQL
-* Firebase
-* Normalization
-
-* Markup Languages/Protocols
-* HTTP(S)
-* XHTML/HTML5
-* Markdown
-* CSS
-* XML
-* SVG
-* REST
-* JSON
-* YAML
-* SASS
-
-* Security
-* NMAP
-* Kali Linux
-* Wireshark
-* Vulnerability Scanning
-* Enumeration
-* Footprinting
-* Web Security and Testing
+<TechnicalSkills />
