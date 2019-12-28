@@ -27,7 +27,9 @@ The CompTIA Security+ certification addressed many IT security subjects such as:
 
 ### <a name='ceh'></a>Certified Ethical Hacker (C|EH)
 The Certified Ethical Hacker certification covered many areas of computer security including: footprinting, scanning, enumeration, penetration testing, SQL injection, etc. By gaining a better understanding of the tactics use by ethical hackers, I acquired valuable information to facilitate building better defenses and more secure web applications.
-![CEH Logo](../images/certs/resized/CEH_logo.gif)
+
+![CEH Logo](../images/certs/changed_format/CEH_logo.png)
+
 [About Certification](https://www.eccouncil.org/Certification/certified-ethical-hacker)
 
 ### <a name='pce'></a>Zend Certified PHP Engineer (ZCPE)
