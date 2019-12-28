@@ -1,12 +1,8 @@
 import React from "react";
 import { Global, css } from '@emotion/core';
 import PropTypes from "prop-types";
-import Header from "./header";
 import Footer from "./footer";
-import Logo from "../components/logo";
-import LeftNav from "../components/left-nav";
-import Main from "../components/main";
-import Aside from "../components/aside";
+import Wrap from "../components/wrap";
 
 import "normalize.css";
 import "../styles/fonts.scss";
@@ -71,19 +67,6 @@ const Layout = ({ children, klass }) => {
           padding: 0;
         }
 
-        .Wrap {
-          display: flex;
-          min-height: 100vh;
-          flex-direction: column;
-          padding-bottom: 100px;
-          &Inside {
-            @media (min-width: 700px) {
-              display: flex;
-              justify-content: flex-start;
-            }
-          }
-        }
-
         .home .aside {
             display: none;
         }
@@ -93,17 +76,7 @@ const Layout = ({ children, klass }) => {
           background: red;
         }
       `} />
-      <div className={klass ? "Wrap " + klass : 'Wrap'}>
-        <div className='WrapInside'>
-          <Header />
-          <LeftNav />
-          <Main>
-            <Logo />
-            {children}
-          </Main>
-          <Aside />
-        </div>
-      </div >
+      <Wrap children={children} klass={klass} />
       <Footer />
     </>
   )
