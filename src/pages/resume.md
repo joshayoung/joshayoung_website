@@ -1,13 +1,11 @@
 # Resume
 
 ### Experienced - Full Stack Web Developer
-
 Full Stack Web Developer with 7+ years of experience developing web applications. Using current programming languages to further company productivity. Improving user experience by working with members of my team to maintain and improve our web programs.
 
 ### Work Experience
 #### Full Stack Developer
 ##### Ramsey Solutions - Brentwood, TN (2018 - Present)
-
 * Developing and maintaining many web properties (Ruby on Rails, JavaScript, CSS, HTML).
 * Working with other team members via git and other collaboration tools.
 * Writing and updating rspec tests to insure good test coverage for our websites.

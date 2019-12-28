@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 const Glance = ({ siteTitle }) => (
-  <section className='box links'>
+  <div className='box links'>
     <header>Glance</header>
     <ul>
       <li><a href="/me#books">Books</a></li>
@@ -16,7 +16,7 @@ const Glance = ({ siteTitle }) => (
       <li><a href="/tech-spectrum">Spectrum</a></li>
       <li><a href="/me#podcasts">Podcasts</a></li>
     </ul>
-  </section>
+  </div>
 );
 
 Glance.propTypes = {

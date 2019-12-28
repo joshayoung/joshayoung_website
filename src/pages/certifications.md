@@ -2,34 +2,28 @@
 
 Below I have included a list of certifications that I have attained over the past few years.
 Many of these certs required passing more than one test. I have included a short summary of each certification along with a link to a better explanation of each one.
-
-* [My Certifications](#my-certifications)
-* [CompTIA Security+](#comptia-security)
-* [Certified Ethical Hacker (C|EH)](#certified-ethical-hacker-ceh)
-* [Zend Certified PHP Engineer (ZCPE)](#zend-certified-php-engineer-zcpe)
-* [CompTIA Network+](#comptia-network)
-* [CIW Web Development Professional](#ciw-web-development-professional)
-* [CIW Database Design Specialist](#ciw-database-design-specialist)
-* [CIW Perl Specialist](#ciw-perl-specialist)
-* [CIW JavaScript Specialist](#ciw-javascript-specialist)
-* [CompTIA Linux+](#comptia-linux)
-* [SUSE Certified Linux Administrator 11](#suse-certified-linux-administrator-11)
-* [LPIC-1](#lpic-1)
-* [CompTIA A+](#comptia-a)
+- [My Certifications](#my-certifications)
+    - [CompTIA Security+](#comptia-security)
+    - [Certified Ethical Hacker (C|EH)](#certified-ethical-hacker-ceh)
+    - [Zend Certified PHP Engineer (ZCPE)](#zend-certified-php-engineer-zcpe)
+    - [CompTIA Network+](#comptia-network)
+    - [CIW Web Development Professional](#ciw-web-development-professional)
+    - [CIW Database Design Specialist](#ciw-database-design-specialist)
+    - [CIW Perl Specialist](#ciw-perl-specialist)
+    - [CIW JavaScript Specialist](#ciw-javascript-specialist)
+    - [CompTIA Linux+](#comptia-linux)
+    - [SUSE Certified Linux Administrator 11](#suse-certified-linux-administrator-11)
+    - [LPIC-1](#lpic-1)
+    - [CompTIA A+](#comptia-a)
 
 ### <a name='security'></a>CompTIA Security+
-
 The CompTIA Security+ certification addressed many IT security subjects such as: cryptography, network security, compliance, threats, access control, etc. This was a very good introduction to security subjects as they relate to computers and networks.
-
 ![Security Plus Logo](../images/certs/resized/SecurityPlus_Logo_Certified_CE.png)
-
 [About Certification](https://certification.comptia.org/certifications/security)
 
 ### <a name='ceh'></a>Certified Ethical Hacker (C|EH)
 The Certified Ethical Hacker certification covered many areas of computer security including: footprinting, scanning, enumeration, penetration testing, SQL injection, etc. By gaining a better understanding of the tactics use by ethical hackers, I acquired valuable information to facilitate building better defenses and more secure web applications.
-
 ![CEH Logo](../images/certs/changed_format/CEH_logo.png)
-
 [About Certification](https://www.eccouncil.org/Certification/certified-ethical-hacker)
 
 ### <a name='pce'></a>Zend Certified PHP Engineer (ZCPE)
