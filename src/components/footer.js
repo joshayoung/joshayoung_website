@@ -14,6 +14,8 @@ const Footer = () => (
     border-top: solid 1px #3385ff;
     height: 125px;
     margin-top: -100px;
+    padding: 0 10px;
+    padding-top: 20px;
     @media (min-width: 600px) {
       height: 80px;
       margin-top: -80px;
