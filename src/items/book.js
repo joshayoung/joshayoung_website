@@ -10,23 +10,25 @@ const Book = ({ title, post }) => {
   }
   return (
     <>
-      <h3>{title}</h3>
-      {post.map((book, i) => (
-        <div key={i}>
-          {book.display ?
-            <>
-              {book.short_title ?
-                <p>{book.short_title}</p>
-                :
-                <p>{book.title}</p>
-              }
-              {fun(book)}
-            </>
-            :
-            ''
-          }
-        </div>
-      ))}
+      <h5>{title}</h5>
+      <ul>
+        {post.map((book, i) => (
+          <li key={i}>
+            {book.display ?
+              <>
+                {book.short_title ?
+                  <>{book.short_title}</>
+                  :
+                  <>{book.title}</>
+                }
+                {fun(book)}
+              </>
+              :
+              ''
+            }
+          </li>
+        ))}
+      </ul>
     </>
   );
 };

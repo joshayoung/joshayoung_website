@@ -6,10 +6,10 @@ export default () => {
   const books = BookData();
 
   return (
-    <ul>
+    <>
       {books.map(book => (
         <BookRecommended key={book.id} title={book.title} hide={book.hide_list} post={book.data} />
       ))}
-    </ul>
+    </>
   );
 };

@@ -6,10 +6,10 @@ export default () => {
   const books = BookData();
 
   return (
-    <ul>
+    <>
       {books.map(book => (
         <Book key={book.id} title={book.title} post={book.data} />
       ))}
-    </ul>
+    </>
   );
 };
