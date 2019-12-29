@@ -8,6 +8,7 @@ import "normalize.css";
 import "../styles/fonts.css";
 import "../styles/overrides.scss";
 import "highlight.js/styles/solarized-dark.css"
+import background from "../images/backgrounds/bck5.png";
 
 const Layout = ({ children, klass }) => {
   const blue = "#3385ff";
@@ -26,6 +27,8 @@ const Layout = ({ children, klass }) => {
           background-color: #f2f2f2;
           background-image: -webkit-linear-gradient(10deg, #efefef 50%, #f4f4f4 50%);
           background-image: -webkit-linear-gradient(10deg, #fff59e 50%, #f4f4f4 50%);
+          // background-image: url(${background});
+          // background-size: cover;
         }
 
         h1 {
