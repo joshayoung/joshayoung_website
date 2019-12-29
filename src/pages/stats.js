@@ -19,6 +19,9 @@ const Stats = () => {
     <Layout>
       {/* TODO: Create a component here that you can use to loop through the result set */}
       <div>Data: {repos}</div>
+      <div>
+        {`${process.env.GATSBY_API_URL}`}
+      </div>
     </Layout>
   );
 }
