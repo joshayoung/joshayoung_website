@@ -5,28 +5,19 @@ const getIt = (url) => {
   let token = window.localStorage.getItem('token');
   return fetch(url,
     { headers: { 'Authorization': 'token ' + token } }
-  ).then(response => response.json())
-    .then(result => {
-      return result[0].name;
-    })
-};
-
-const githubData = async () => {
-  const data = await getIt('https://api.github.com/users/joshayoung/repos');
-  return data;
+  ).then(response => { return response.json() })
 };
 
 const Stats = () => {
-  const [repos, setRecentlyUpdatedRepos] = useState(0)
-  useEffect(() => {
-    const data = githubData();
-    data.then((res) => {
-      setRecentlyUpdatedRepos(res);
-    });
+  const [repos, setRecentlyUpdatedRepos] = useState("no data")
+  useEffect(async () => {
+    const data = await getIt('https://api.github.com/users/joshayoung/repos');
+    setRecentlyUpdatedRepos(data[0].name);
   }, []);
 
   return (
     <Layout>
+      {/* TODO: Create a component here that you can use to loop through the result set */}
       <div>Data: {repos}</div>
     </Layout>
   );
