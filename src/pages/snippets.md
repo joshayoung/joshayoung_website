@@ -1376,7 +1376,8 @@ Inheriting directly from: "ActionController::Base" instead of: "ApplicationContr
 
 #### Output image path from console
 ```bash
-  ActionController::Base.helpers.asset_path('image.jpg')
+  ActionController::Base. \
+  helpers.asset_path('image.jpg')
 
   # Or:
   include ActionView::Helpers::AssetUrlHelper
