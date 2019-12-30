@@ -5,6 +5,10 @@
     "link": "https://en.wikipedia.org/wiki/Parameter_(computer_programming)"
   },
   {
+    "word": "Yagne",
+    "definition": "you ant gonna need it"
+  },
+  {
     "word": "Primitive Data Type",
     "definition": "a data type provided by a programming language as a basic building block. Most languages allow more complicated composite types to be recursively constructed starting from basic types.",
     "link": "https://en.wikipedia.org/wiki/Primitive_data_type"
@@ -83,13 +87,11 @@
     "definition": "'software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification'; that is, such an entity can allow its behaviour to be extended without modifying its source code.",
     "link": "https://en.wikipedia.org/wiki/Open/closed_principle"
   },
-
   {
     "word": "Click-through Rate (CTR)",
     "definition": "'is the ratio of users who click on a specific link to the number of total users who view a page, email, or advertisement. It is commonly used to measure the success of an online advertising campaign for a particular website as well as the effectiveness of email campaigns.'",
     "link": "https://en.wikipedia.org/wiki/Click-through_rate"
   },
-
   {
     "word": "Soft Delete",
     "definition": "'marking a database entry as deleted so that it no longer appears to the end user. On the backend a boolean flag is being set that prevent this entry from being shown on the frontend of the site.",
@@ -168,7 +170,7 @@
   {
     "word": "Lambda Expression",
     "definition": "a function (or a subroutine) defined, and possibly called, without being bound to an identifier",
-    "link":"https://en.wikipedia.org/wiki/Lambda_expression"
+    "link": "https://en.wikipedia.org/wiki/Lambda_expression"
   },
   {
     "word": "Tail Recursion",
