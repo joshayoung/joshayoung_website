@@ -2,6 +2,10 @@
 
 These are some of the tech-related quotes that I have found helpful and memorable. In order to preserve them, I have included them here along with a reference to the source of the quote.
 
+"If we have data, let’s look at data. If all we have are opinions, let’s go with mine."​ - Jim Barksdale, ​Engineer, VC, & Netscape founder​
+
+"Change managed well is​: taught​, exercised​, and then trusted​." - Kevin Howard
+
 "Agile believes that the most cost-effective way to produce what customers really want is to collaborate with them, building software one small bit at a time such that each delivered bit has the opportunity to alter ideas about the next." - Practical Object-Oriented Design (book)
 
 "You will never know less than you know right now." - Practical Object-Oriented Design (book)
