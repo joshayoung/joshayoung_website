@@ -22,6 +22,7 @@ const SnippetAnchorList = () => (
     <li><a href='#ubuntu-debian'>Ubuntu/Debian</a></li>
     <li><a href='#freebsd'>FreeBSD</a></li>
     <li><a href='#mac'>Mac</a></li>
+    <li><a href='#react'>React</a></li>
     <li><a href='#mysql'>MySql</a></li>
     <li><a href='#netstat'>Netstat</a></li>
     <li><a href='#php'>PHP</a></li>
