@@ -1323,6 +1323,18 @@ The command below could also be executed with 'bs=4m'.
   diskutil eject /dev/disk2
 ```
 
+### <a name='react'></a>React
+
+#### Debugging data:
+```javascript
+ <pre>{JSON.stringify(resource)}</pre>
+```
+
+#### Commenting out JSX:
+```javascript
+ {/* <ReactComponent></ReactComponent> */}
+```
+
 ### <a name='mysql'></a>MySQL
 
 #### Connect to Database
