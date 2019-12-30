@@ -106,7 +106,7 @@ curl --data "information=to&send=to the server" http://example.com
 ### <a id="html5"></a>HTML5
 
 #### Unicode/Emojis
-You can get the unicode emoji's from this page: <a href='http://unicode.org/emoji/charts/full-emoji-list.html'>emoji list</a>.
+You can get the unicode emoji's from this page: [emoji list](http://unicode.org/emoji/charts/full-emoji-list.html).
 All you have to do is remove the 'U+' from the first part of the code and replace it with '&#x'. End the unicode string with a semicolon.
 For example, to use the smiley emoji, change it from: U+1F600 to '&amp;#x1F600;'.
 To use a unicode character with the css 'before' or 'after' sudo-selector, remove the 'U+' from and replace it with '\'. So for the css ':before' or ':after', it would be '\1F600'. Of course, to use unicode on your site, you have to have the utf8 tag in your site header:

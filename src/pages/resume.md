@@ -103,23 +103,23 @@ Full Stack Web Developer with 7+ years of experience developing web applications
 
 ### Personal Projects
 I have listed more details about each one of these projects on my [projects](/projects) page.
-* <a href='/projects#note_url_system'>Note/URL System</a>
+* [Note/URL System](/projects#note_url_system)
   <span>(PHP, Laravel, PostgreSQL - 2017)</span>
-* <a href='/projects#joshyoung'>Joshyoung Website</a>
+* [Joshyoung Website](/projects#joshyoung)
   <span>(HTML, CSS, SASS, JavaScript, jQuery, Jekyll - 2016)</span>
-* <a href='/projects#note_system_flask'>Note Taking System</a>
+* [Note Taking System](/projects#note_system_flask)
   <span>(Python, Flask, SQLite - 2014)</span>
-* <a href='/projects#joshayoung'>Joshayoung Website</a>
+* [Joshayoung Website](/projects#joshayoung)
   <span>(HTML, CSS, JavaScript - 2012)</span>
-* <a href='/projects#codeitcreations'>Code It Creation Website</a>
+* [Code It Creation Website](/projects#codeitcreations)
   <span>(HTML, CSS, JavaScript - 2011)</span>
-* <a href='/projects#ticketing_system_alt'>Ticketing System v2</a>
+* [Ticketing System v2](/projects#ticketing_system_alt)
   <span>(C#, MSSQL, ASP.NET, CSS, JavaScript - 2010)</span>
-* <a href='/projects#ticketing_system'>Ticketing System v1</a>
+* [Ticketing System v1](/projects#ticketing_system)
   <span>(PHP, MySQL, HTML, CSS, JavaScript - 2010)</span>
-* <a href='/projects#commentsandcapers'>Comments and Capers Website</a>
+* [Comments and Capers Website](/projects#commentsandcapers)
   <span>(HTML, CSS, JavaScript - 2009)</span>
-* <a href='/projects#blogging_system'>Blogging System</a>
+* [Blogging System](/projects#blogging_system)
   <span>(PHP, MySQL, HTML, CSS, JavaScript - Summer 2008)</span>
 
 ---
@@ -128,24 +128,24 @@ I have listed more details about each one of these projects on my [projects](/pr
 #### Bryan College, Dayton Tennessee (2006 - 2009)
 ##### **Bachelor of Science, Computer Science**
 ###### Minor: Business Administration
-<span>(Also see my continuing education under my <a href='/classes'>classes</a> page.)</span>
+<span>(Also see my continuing education under my [classes](/classes) page.)</span>
 
 ---
 
 ### Certification
 More information about each certification is listed on on my [certifications](/certifications) page.
-* <a href='/certifications#security'>CompTIA Security+</a>
-* <a href='/certifications#ceh'>Certified Ethical Hacker</a>
-* <a href='/certifications#pce'>Zend Certified PHP Engineer</a>
-* <a href='/certifications#network'>CompTIA Network+</a>
-* <a href='/certifications#professional'>CIW Web Development Professional</a>
-* <a href='certifications#database'>CIW Database Design Specialist</a>
-* <a href='/certifications#perl'>CIW Perl Specialist</a>
-* <a href='/certifications#javascript'>CIW JavaScript Specialist</a>
-* <a href='/certifications#linux'>CompTIA Linux+</a>
-* <a href='/certifications#suse'>SUSE Certified Linux Administrator 11</a>
-* <a href='/certifications#lpci'>LPCI-1</a>
-* <a href='/certifications#aplus'>CompTIA A+</a>
+* [CompTIA Security+](/certifications#security)
+* [Certified Ethical Hacker](/certifications#ceh)
+* [Zend Certified PHP Engineer](/certifications#pce)
+* [CompTIA Network+](/certifications#network)
+* [CIW Web Development Professional](/certifications#professional)
+* [CIW Database Design Specialist](certifications#database)
+* [CIW Perl Specialist](/certifications#perl)
+* [CIW JavaScript Specialist](/certifications#javascript)
+* [CompTIA Linux+](/certifications#linux)
+* [SUSE Certified Linux Administrator 11](/certifications#suse)
+* [LPCI-1](/certifications#lpci)
+* [CompTIA A+](/certifications#aplus)
 
 ---
 
