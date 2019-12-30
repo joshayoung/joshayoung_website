@@ -133,126 +133,126 @@ export default () => (
       <tr>
         <td>
           <ul>
-            <li class='three'>Sketch</li>
-            <li class='one'>Photoshop</li>
+            <li className='three'>Sketch</li>
+            <li className='one'>Photoshop</li>
             <li>Illustrator</li>
             <li>InDesign</li>
-            <li class='three'>Gimp</li>
-            <li class='one'>Balsamiq</li>
+            <li className='three'>Gimp</li>
+            <li className='one'>Balsamiq</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='four'>HTML5</li>
-            <li class='two'>XML/JSON</li>
-            <li class='four'>Markdown</li>
-            <li class='two'>YAML</li>
-            <li class='one'>Pug</li>
-            <li class='two'>Liquid</li>
-            <li class='one'>Mustache</li>
-            <li class='three'>ERB</li>
-            <li class='two'>Blade</li>
-            <li class='three'>SVG</li>
+            <li className='four'>HTML5</li>
+            <li className='two'>XML/JSON</li>
+            <li className='four'>Markdown</li>
+            <li className='two'>YAML</li>
+            <li className='one'>Pug</li>
+            <li className='two'>Liquid</li>
+            <li className='one'>Mustache</li>
+            <li className='three'>ERB</li>
+            <li className='two'>Blade</li>
+            <li className='three'>SVG</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='one'>Bootstrap</li>
+            <li className='one'>Bootstrap</li>
             <li>Foundation</li>
-            <li class='four'>CSS</li>
-            <li class='three'>Sass</li>
+            <li className='four'>CSS</li>
+            <li className='three'>Sass</li>
             <li>LESS</li>
             <li>Stylus</li>
-            <li class='three'>Animation</li>
+            <li className='three'>Animation</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='four'>JavaScript</li>
+            <li className='four'>JavaScript</li>
             <li>Ember.js</li>
-            <li class='three'>jQuery</li>
-            <li class='two'>Jest</li>
-            <li class='one'>Elm</li>
-            <li class='two'>React</li>
+            <li className='three'>jQuery</li>
+            <li className='two'>Jest</li>
+            <li className='one'>Elm</li>
+            <li className='two'>React</li>
             <li>Angular</li>
-            <li class='one'>Vue.js</li>
-            <li class='two'>Stimulus</li>
-            <li class='one'>Node</li>
-            <li class='two'>CoffeeScript</li>
+            <li className='one'>Vue.js</li>
+            <li className='two'>Stimulus</li>
+            <li className='one'>Node</li>
+            <li className='two'>CoffeeScript</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='three'>Ruby</li>
-            <li class='three'>.NET</li>
-            <li class='two'>Laravel</li>
-            <li class='three'>Objective-C</li>
-            <li class='two'>Java</li>
-            <li class='three'>Rails</li>
-            <li class='three'>RSpec</li>
-            <li class='four'>PHP</li>
-            <li class='three'>C#</li>
-            <li class='three'>CodeIgniter</li>
+            <li className='three'>Ruby</li>
+            <li className='three'>.NET</li>
+            <li className='two'>Laravel</li>
+            <li className='three'>Objective-C</li>
+            <li className='two'>Java</li>
+            <li className='three'>Rails</li>
+            <li className='three'>RSpec</li>
+            <li className='four'>PHP</li>
+            <li className='three'>C#</li>
+            <li className='three'>CodeIgniter</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='three'>Normalization</li>
-            <li class='four'>SQL</li>
-            <li class='three'>MySQL</li>
-            <li class='three'>SQLite</li>
-            <li class='two'>PostgreSQL</li>
-            <li class='three'>ORMs</li>
-            <li class='two'>Oracle</li>
-            <li class='two'>MS SQL</li>
+            <li className='three'>Normalization</li>
+            <li className='four'>SQL</li>
+            <li className='three'>MySQL</li>
+            <li className='three'>SQLite</li>
+            <li className='two'>PostgreSQL</li>
+            <li className='three'>ORMs</li>
+            <li className='two'>Oracle</li>
+            <li className='two'>MS SQL</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='three'>IIS</li>
-            <li class='three'>Apache</li>
-            <li class='two'>Nginx</li>
+            <li className='three'>IIS</li>
+            <li className='three'>Apache</li>
+            <li className='two'>Nginx</li>
             <li>Ansible</li>
-            <li class='three'>Python/Perl</li>
-            <li class='two'>Bash</li>
-            <li class='two'>Batch</li>
-            <li class='one'>PowerShell</li>
-            <li class='one'>Docker</li>
-            <li class='two'>AWS</li>
+            <li className='three'>Python/Perl</li>
+            <li className='two'>Bash</li>
+            <li className='two'>Batch</li>
+            <li className='one'>PowerShell</li>
+            <li className='one'>Docker</li>
+            <li className='two'>AWS</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='two'>Pin Testing</li>
-            <li class='two'>Enumeration</li>
-            <li class='three'>Kali Linux</li>
-            <li class='two'>Scanning</li>
-            <li class='one'>Social Engineering</li>
-            <li class='three'>Nmap</li>
-            <li class='two'>Wireshark</li>
-            <li class='three'>Web Security</li>
-            <li class='two'>Footprinting</li>
+            <li className='two'>Pin Testing</li>
+            <li className='two'>Enumeration</li>
+            <li className='three'>Kali Linux</li>
+            <li className='two'>Scanning</li>
+            <li className='one'>Social Engineering</li>
+            <li className='three'>Nmap</li>
+            <li className='two'>Wireshark</li>
+            <li className='three'>Web Security</li>
+            <li className='two'>Footprinting</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='four'>macOS</li>
-            <li class='two'>FreeBSD</li>
-            <li class='four'>Linux</li>
-            <li class='four'>Hypervisors/VMs</li>
-            <li class='three'>Windows Server</li>
-            <li class='two'>Log Management</li>
-            <li class='four'>Hardware</li>
+            <li className='four'>macOS</li>
+            <li className='two'>FreeBSD</li>
+            <li className='four'>Linux</li>
+            <li className='four'>Hypervisors/VMs</li>
+            <li className='three'>Windows Server</li>
+            <li className='two'>Log Management</li>
+            <li className='four'>Hardware</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='four'>Firewalls</li>
-            <li class='two'>Switching</li>
-            <li class='four'>Cabling</li>
-            <li class='three'>VLANs</li>
-            <li class='four'>Subnetting</li>
-            <li class='three'>Routing</li>
+            <li className='four'>Firewalls</li>
+            <li className='two'>Switching</li>
+            <li className='four'>Cabling</li>
+            <li className='three'>VLANs</li>
+            <li className='four'>Subnetting</li>
+            <li className='three'>Routing</li>
           </ul>
         </td>
       </tr>
@@ -264,85 +264,85 @@ export default () => (
       <tr>
         <td>
           <ul>
-            <li class='a-class'>Tree House</li>
-            <li class='a-class'>Udemy</li>
-            <li class='a-class'>Frontend Masters</li>
+            <li className='a-class'>Tree House</li>
+            <li className='a-class'>Udemy</li>
+            <li className='a-class'>Frontend Masters</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='a-class'>Code School</li>
-            <li class='a-class'>PluralSight</li>
-            <li class='a-class'>Tree House</li>
-            <li class='a-class'>Frontend Masters</li>
+            <li className='a-class'>Code School</li>
+            <li className='a-class'>PluralSight</li>
+            <li className='a-class'>Tree House</li>
+            <li className='a-class'>Frontend Masters</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='a-class'>Code School</li>
-            <li class='a-class'>Wes Bos</li>
-            <li class='a-class'>Frontend Masters</li>
+            <li className='a-class'>Code School</li>
+            <li className='a-class'>Wes Bos</li>
+            <li className='a-class'>Frontend Masters</li>
           </ul>
         </td>
         <td>
           <ul>
             <li>
-              <li class='a-class'>Laracast</li>
-              <li class='cert'>CIW JS</li>
-              <li class='a-class'>Code School</li>
-              <li class='a-class'>Wes Bos</li>
-              <li class='a-class'>Frontend Masters</li>
+              <li className='a-class'>Laracast</li>
+              <li className='cert'>CIW JS</li>
+              <li className='a-class'>Code School</li>
+              <li className='a-class'>Wes Bos</li>
+              <li className='a-class'>Frontend Masters</li>
             </li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='a-class'>Code School</li>
-            <li class='cert'>CIW PS</li>
-            <li class='a-class'>Pragmatic</li>
-            <li class='cert'>ZCPE</li>
-            <li class='a-class'>Laracast</li>
-            <li class='a-class'>Thoughtbot</li>
-            <li class='a-class'>Tree House</li>
+            <li className='a-class'>Code School</li>
+            <li className='cert'>CIW PS</li>
+            <li className='a-class'>Pragmatic</li>
+            <li className='cert'>ZCPE</li>
+            <li className='a-class'>Laracast</li>
+            <li className='a-class'>Thoughtbot</li>
+            <li className='a-class'>Tree House</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='cert'>CIW DDS</li>
-            <li class='a-class'>Tree House</li>
+            <li className='cert'>CIW DDS</li>
+            <li className='a-class'>Tree House</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='a-class'>PluralSight</li>
-            <li class='a-class'>Frontend Masters</li>
-            <li class='a-class'>Linux Academy</li>
+            <li className='a-class'>PluralSight</li>
+            <li className='a-class'>Frontend Masters</li>
+            <li className='a-class'>Linux Academy</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='a-class'>UAH</li>
-            <li class='cert'>Security+</li>
-            <li class='a-class'>OSCP</li>
-            <li class='cert'>CEH</li>
-            <li class='a-class'>FedVTE</li>
+            <li className='a-class'>UAH</li>
+            <li className='cert'>Security+</li>
+            <li className='a-class'>OSCP</li>
+            <li className='cert'>CEH</li>
+            <li className='a-class'>FedVTE</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='cert'>A+</li>
-            <li class='cert'>LPCI-I</li>
-            {/*<!--<li class='cert'>SUSE CLA 11</li>-->*/}
-            <li class='a-class'>Steel Pivot</li>
-            <li class='cert'>Linux+</li>
-            <li class='a-class'>Linux Academy</li>
+            <li className='cert'>A+</li>
+            <li className='cert'>LPCI-I</li>
+            {/*<!--<li className='cert'>SUSE CLA 11</li>-->*/}
+            <li className='a-class'>Steel Pivot</li>
+            <li className='cert'>Linux+</li>
+            <li className='a-class'>Linux Academy</li>
           </ul>
         </td>
         <td>
           <ul>
-            <li class='a-class'>SudoSecure</li>
-            <li class='cert'>Network+</li>
-            <li class='a-class'>ITPro TV</li>
+            <li className='a-class'>SudoSecure</li>
+            <li className='cert'>Network+</li>
+            <li className='a-class'>ITPro TV</li>
           </ul>
         </td>
       </tr>
