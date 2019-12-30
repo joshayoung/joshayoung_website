@@ -29,7 +29,7 @@ const TechnicalSkills = () => (
       }
     }
   `}>
-    <ul class='tech-skills'>
+    <ul className='tech-skills'>
       <li>Server Technologies</li>
       <li>Apache</li>
       <li>IIS</li>
@@ -38,14 +38,14 @@ const TechnicalSkills = () => (
       <li>Linux (Debian/Red Hat/CentOS)</li>
       <li>FreeBSD</li>
     </ul>
-    <ul class='tech-skills'>
+    <ul className='tech-skills'>
       <li>Operating Systems</li>
       <li>Windows 7/8/10</li>
       <li>Mac</li>
       <li>VMware</li>
       <li>Linux (Arch, Fedora, Ubuntu)</li>
     </ul>
-    <ul class='tech-skills'>
+    <ul className='tech-skills'>
       <li>Networking</li>
       <li>TCP/IP</li>
       <li>Routing/Switching</li>
@@ -56,7 +56,7 @@ const TechnicalSkills = () => (
       <li>(S)FTP</li>
       <li>TLS</li>
     </ul>
-    <ul class='tech-skills'>
+    <ul className='tech-skills'>
       <li>Programming Languages</li>
       <li>PHP</li>
       <li>Ruby</li>
@@ -69,7 +69,7 @@ const TechnicalSkills = () => (
       <li>Bash/Batch</li>
       <li>Objective C</li>
     </ul>
-    <ul class='tech-skills'>
+    <ul className='tech-skills'>
       <li>Frameworks</li>
       <li>Rails</li>
       <li>Laravel</li>
@@ -82,14 +82,14 @@ const TechnicalSkills = () => (
       <li>CodeIgniter</li>
       <li>React</li>
     </ul>
-    <ul class='tech-skills'>
+    <ul className='tech-skills'>
       <li>Design</li>
       <li>Sketch</li>
       <li>Photoshop</li>
       <li>Gimp</li>
       <li>Balsamiq Mockups</li>
     </ul>
-    <ul class='tech-skills'>
+    <ul className='tech-skills'>
       <li>Databases</li>
       <li>MySQL</li>
       <li>MS SQL</li>
@@ -100,7 +100,7 @@ const TechnicalSkills = () => (
       <li>Firebase</li>
       <li>Normalization</li>
     </ul>
-    <ul class='tech-skills'>
+    <ul className='tech-skills'>
       <li>Markup Languages/Protocols</li>
       <li>HTTP(S)</li>
       <li>XHTML/HTML5</li>
@@ -113,7 +113,7 @@ const TechnicalSkills = () => (
       <li>YAML</li>
       <li>SASS</li>
     </ul>
-    <ul class='tech-skills'>
+    <ul className='tech-skills'>
       <li>Security</li>
       <li>NMAP</li>
       <li>Kali Linux</li>
