@@ -6,8 +6,8 @@ const blue = "#3385ff";
 
 const LeftNav = () => (
   <nav css={css`
-  width: 200px;
-  margin: 170px 10px 0 10px;
+  width: 130px;
+  margin: 170px 10px 0 52px;
   display: none;
   @media (min-width: 700px) {
     display: block;
@@ -21,7 +21,7 @@ const LeftNav = () => (
     }
     a {
       display: block;
-      text-align: center;
+      text-align: right;
       padding: 10px;
       &.active {
         background: none;

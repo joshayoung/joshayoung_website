@@ -5,6 +5,7 @@ import Logo from "../components/logo";
 import LeftNav from "../components/left-nav";
 import Main from "../components/main";
 import Aside from "../components/aside";
+import GoToTop from "../components/go-to-top";
 
 const Inner = ({ children }) => (
   <div css={css`
@@ -14,11 +15,13 @@ const Inner = ({ children }) => (
       }
     `}
   >
+    <a id="top"></a>
     <Header />
     <LeftNav />
     <Main>
       <Logo />
       {children}
+      <GoToTop />
     </Main>
     <Aside />
   </div>
