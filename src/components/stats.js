@@ -1,6 +1,6 @@
 import React from "react";
 import Repos from "./repos";
-import Posts from "./posts";
+import PostsOutput from "../output/posts-output";
 import { css } from '@emotion/core';
 
 const Stats = () => (
@@ -11,7 +11,7 @@ const Stats = () => (
       justify-content: space-between;
     }
   `}>
-    <Posts />
+    <PostsOutput />
     <Repos />
   </div>
 )
