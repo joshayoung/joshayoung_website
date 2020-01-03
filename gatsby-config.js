@@ -5,6 +5,13 @@ module.exports = {
     author: `@joshayoung`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`
+      }
+    },
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
