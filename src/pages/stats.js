@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import Layout from "../components/layout";
 
 const getIt = (url) => {
-  let token = window.localStorage.getItem('token');
+  // let token = window.localStorage.getItem('token');
+  let token = process.env.GATSBY_GITHUB_TOKEN;
+
   return fetch(url,
     { headers: { 'Authorization': 'token ' + token } }
   ).then(response => { return response.json() })
