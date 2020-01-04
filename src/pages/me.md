@@ -32,7 +32,7 @@ Frequently, I try to delve deeper into specific aspects of tech that I want to l
 
 <BooksOutput />
 
-### <a id='books_i_recommendend'></a>Books I Recommend
+### <a id='books_i_recommend'></a>Books I Recommend
 Of the software engineering, networking, security, and design books that I listed above, these are some of the books that I highly recommend.
 
 <BooksRecommendedOutput />

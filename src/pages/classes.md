@@ -60,7 +60,8 @@ professional and respectful manner.
 ---
 
 ### <a name='frontend'></a>Frontend Masters Classes
-The Frontend Master website offers great courses covering front-end topics such as accessibilty, performance, JavasScript, etc.
+The Frontend Master website offers great courses covering front-end topics such as accessibility, performance, JavasScript, etc.
+* [Introduction to Gatsby](https://frontendmasters.com/courses/gatsby)
 * [Serverless with AWS Lambda](https://frontendmasters.com/courses/serverless-aws/)
 * [Git In-depth](https://frontendmasters.com/courses/git-in-depth)
 * [AWS for Front-End Engineers (ft. S3, Cloudfront & Route 53)](https://frontendmasters.com/courses/aws-frontend-react/)
