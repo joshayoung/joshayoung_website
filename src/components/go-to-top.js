@@ -32,7 +32,7 @@ class GoToTop extends Component {
     return (
       <>
         <a
-          style={{ position: this.state.offScreen ? 'fixed' : 'relative' }}
+          style={this.state.offScreen ? { position: 'fixed' } : { display: 'none', position: 'relative' }}
           css={css`
         bottom: 0;
         left: 200px;

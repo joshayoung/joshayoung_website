@@ -301,7 +301,7 @@ Without `--permanent`, the firewall rule will take affect but will not persist a
 #### Remove File from Repo, and File System
 This will remove the file from your repo, and the filesystem.
 
-```git
+```bash
   git rm file_name
 ```
 
@@ -309,7 +309,7 @@ This will remove the file from your repo, and the filesystem.
 
 This will remove the file from your repo, but not from the file system.
 
-```git
+```bash
   git rm --cached file_name
 ```
 
@@ -317,7 +317,7 @@ This will remove the file from your repo, but not from the file system.
 
 This will remove the directory from your repo, and the filesystem.
 
-```git
+```bash
   git rm -rvf file_name
 ```
 
@@ -325,17 +325,17 @@ This will remove the directory from your repo, and the filesystem.
 
 This will remove the directory from your repo, but not from the file system.
 
-```git
+```bash
   git rm -r --cached my_folder_name
 ```
 
 #### Show Contents of Commit
-```git
+```bash
   git show [commit hash]
 ```
 
 #### Change Base Branch
-```git
+```bash
   git rebase --onto new_branch old_branch branch_you_are_moving
 ```
 
@@ -345,12 +345,12 @@ Add `--no-pager` to a command
 
 #### Restore a Deleted File
 
-```git
+```bash
   git checkout [removed commit]^ -— [path to flle]
 ```
 
 #### Delete Branches
-```git
+```bash
   # Delete a local branch:
   git branch -d my_local_branch
 
@@ -362,7 +362,7 @@ Add `--no-pager` to a command
 
 This shows which remote branch you are tracking and how far behind your local version is from the remote.
 
-```git
+```bash
   git branch -vv
 ```
 
@@ -370,7 +370,7 @@ This shows which remote branch you are tracking and how far behind your local ve
 
 This will allow you to push up a feature branch and then revert your local changes to see the diff.
 
-```git
+```bash
   git push origin my_feature_branch
 
   # Revert changes so you can see the diff (locally):
@@ -385,13 +385,13 @@ HEAD is the most recent commit on your present branch.
 
 This will put you in a detached HEAD state.
 
-```git
+```bash
   git checkout [hash of previous commit]
 ```
 
 #### Checkout Remote Branch
 
-```git
+```bash
   git fetch origin
   git checkout -b my_branch_name orgin/my_branch_name
 
@@ -408,7 +408,7 @@ This will put you in a detached HEAD state.
 ```
 
 #### Git Reset
-```git
+```bash
   git reset --soft HEAD^3
 
   "'mixed' is the default if you run `git reset`:
@@ -422,12 +422,12 @@ This will put you in a detached HEAD state.
 * --hard (does not preserve uncommitted changes)
 
 #### Edit Commit Message
-```git
+```bash
   git commit --amend
 ```
 
 #### Revert a file to state at previous commit
-```git
+```bash
   git checkout -- my_file.txt
 ```
 
@@ -435,22 +435,22 @@ This will put you in a detached HEAD state.
 
 Try to use present tense for your commit message (i.e. "**Add** new class for students" not: "Added new class for students")
 
-```git
+```bash
   git commit -m "Correct site map"
 ```
 
 #### Pick Files to Stash
-```git
+```bash
   git stash -p
 ```
 
 #### Show File in Stash
-```git
+```bash
   git stash show stash@{0}
 ```
 
 #### Checkout a file that is stashed
-```git
+```bash
   git checkout stash@{0} -- path/to/file
 ```
 
@@ -458,73 +458,73 @@ Try to use present tense for your commit message (i.e. "**Add** new class for st
 
 Leaving out the `stash@{2} variable below will run the stash command on top stash on the stack.
 
-```git
+```bash
   git stash apply stash@{1}
   git stash drop stash@{2}
 ```
 
 #### Retrieve a stashed file
 
-```git
+```bash
   git checkout [name of stash] -- [filename]
 ```
 
 #### Stash all files (including files in .gitignore)
 
-```git
+```bash
   git stash --all
 ```
 
 #### Stash tracked and untracked files
-```git
+```bash
   git stash save --include-untracked
 ```
 
 #### Revert One File
-```git
+```bash
   git checkout -- path/to/file.txt
 ```
 
 #### Show Files in Commit
-```git
+```bash
   git diff-tree --no-commit-id --name-only -r [commit hash]
 ```
 
 #### Show Diff in Staged Files
 
-```git
+```bash
   git diff --staged
 ```
 
 #### Rename a Local Branch
-```git
+```bash
   git branch -m &lt;oldname&gt; &lt;newname&gt;
 ```
 
 #### Move Remote PR Branch Locally
-```git
+```bash
   git fetch origin pull/ID/head:BRANCHNAME
 ```
 
 #### Saves Current Changes with Stash
-```git
+```bash
   git stash
   or:
   git stash save "Name for the stash"
 ```
 
 #### Files in stash
-```git
+```bash
   git stash list --stat
 ```
 
 #### Show files in stash
-```git
+```bash
   git stash show stash@{2}
 ```
 
 #### Remove all stashes
-```git
+```bash
   git stash clear
 ```
 
@@ -532,37 +532,37 @@ Leaving out the `stash@{2} variable below will run the stash command on top stas
 
 This command will run `git stash apply` and then `git stash drop`.
 
-```git
+```bash
   git stash pop `</pre>
 ```
 
 #### List Stashes
-```git
+```bash
   git stash list
 ```
 
 #### Restore Specific Stash
-```git
+```bash
   git stash pop stash@{3}
 ```
 
 #### Create and switch to branch
-```git
+```bash
   git checkout -b new_branch_name
 ```
 
 #### Show Remote Branches
-```git
+```bash
   git branch -r
 ```
 
 #### Delete local branch
-```git
+```bash
   git branch -d local_branch_name
 ```
 
 #### Git Tags
-```git
+```bash
   # show all tags
   git tag
   # checks out the code with this tag
@@ -574,36 +574,36 @@ This command will run `git stash apply` and then `git stash drop`.
 ```
 
 #### Show Diffs
-```git
+```bash
   git diff HEAD^ (parent)
   git diff HEAD^^ (grandparent)
   git diff HEAD~6 (six commits ago)
 ```
 
 #### Compare Commits
-```git
+```bash
   git diff HEAD^..HEAD
   git diff 58786f..98f7f0
   git diff master another_branch
 ```
 
 #### Stop tracking in Repo
-```git
+```bash
   git rm --cached errors.txt
 ```
 
 #### Remove one file from `git add`
-```git
+```bash
   git reset HEAD &lt;file&gt;
 ```
 
 #### Remove files added with `git add .`
-```git
+```bash
   git reset
 ```
 
 #### Restore a deleted file
-```git
+```bash
   # First find the hash:
   git reflog
   git log --walk-reflogs (more detail)
@@ -620,7 +620,7 @@ This command will run `git stash apply` and then `git stash drop`.
 ```
 
 #### Clone a local repo as a backup
-```git
+```bash
   git clone local_repo local_repo_backup
 ```
 
@@ -628,7 +628,7 @@ This command will run `git stash apply` and then `git stash drop`.
 
 Once a file is added to git (after the commit) it is permanently in the repo. The only way to remove it is to rewrite history. However, do this with extreme care! Make a backup of your code first with `clone`.
 
-```git
+```bash
   git filter-branch --tree-filter 'rm -f old_file.sh -- --all'
 
   # or you can just remove the file from the repo:
@@ -642,20 +642,20 @@ Once a file is added to git (after the commit) it is permanently in the repo. Th
 
 Order from top to bottom:
 
-```git
+```bash
   git log (newest to oldest)
   git rebase -i HEAD~3 (oldest to newest)
 ```
 
 #### Roll back previous commit (preserving file changes)
-```git
+```bash
   git reset --soft HEAD~1
   or
   git reset --soft HEAD^
 ```
 
 #### Cherry Pick
-```git
+```bash
   git cherry-pick 97589f
 
   # Edit Commit:
@@ -667,7 +667,7 @@ Order from top to bottom:
 ```
 
 #### Add file to last commit
-```git
+```bash
   git add newfile.sh
   git commit --amend -m "Add file to repo"
   or:
@@ -675,7 +675,7 @@ Order from top to bottom:
 ```
 
 #### Roll back previous commit (discarding file changes)
-```git
+```bash
   git reset --hard HEAD~1
   # or:
   git reset --hard HEAD^
@@ -684,7 +684,7 @@ Order from top to bottom:
 ```
 
 #### Add Remote
-```git
+```bash
   git push -u origin master
   git push -u [the name] [the branch]
   # After using '-u', you can use use `git push` next time:
@@ -692,7 +692,7 @@ Order from top to bottom:
 ```
 
 #### Revert a Commit
-```git
+```bash
   git revert [the commit hash you want to revert]
 ```
 
@@ -707,7 +707,7 @@ Therefore, just running a `git fetch` will pull down all of the updated code fro
 
 #### Rebase (run from feature branch)
 
-```git
+```bash
   git rebase master
 ```
 
@@ -715,7 +715,7 @@ Therefore, just running a `git fetch` will pull down all of the updated code fro
 
 Using 'squash' will combine this commit in with the previous commit.
 
-```git
+```bash
   git rebase -i HEAD~4
 ```
 

@@ -20,6 +20,7 @@ const Stats = () => {
   return (
     <Layout>
       {/* TODO: Create a component here that you can use to loop through the result set */}
+      <p>This page holds some of the API data for projects I am currently or have worked on in the past.</p>
       <div>Data: {repos}</div>
       <div>
         {`${process.env.GATSBY_API_URL}`}
