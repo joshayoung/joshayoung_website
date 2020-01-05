@@ -93,7 +93,7 @@ I wrote this post to describe the basic rails setup to get a simple CRUD applica
   end
 ```
 
-#### Setup simple_form_for
+#### Setup `simple_form_for`
 [Simple Form](https://github.com/plataformatec/simple_form)
 
 Add `gem 'simple_form'` to your `Gemfile` and then run `bundle install`, followed by `rails generate simple_form:install`. If you had already started the rails server `rails s`, you will need to stop it and then restart the server to use the new form method.
