@@ -17,6 +17,7 @@ export default function Template({ data }) {
       <div
         css={css`
           font-size: 12px;
+          margin-top: 20px;
         `}>
         Last Updated: {frontmatter.date}
       </div>

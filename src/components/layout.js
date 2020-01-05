@@ -88,6 +88,15 @@ const Layout = ({ children, klass }) => {
           font-size: 14px;
         }
 
+        /* Reset the margin for indented list item in markdown */
+        li > p {
+          margin: 0;
+        }
+
+        li span:last-child {
+          margin-left: 5px;
+        }
+
         dl {
           dd {
             margin: 0 0 10px 0;

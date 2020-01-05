@@ -44,7 +44,8 @@ class GoToTop extends Component {
         font-size: 14px;
         color: #fff;
         &:hover {
-          background: rgba(204,204,204,0.4);
+          text-decoration: underline;
+          color: #fff;
         }
       `}
           href='#top'>Go To Top</a>
