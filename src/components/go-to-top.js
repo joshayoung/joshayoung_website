@@ -20,8 +20,14 @@ class GoToTop extends Component {
     }
   }
 
+  closeNav(e) {
+    // document.getElementById("js_navigation").style.display = 'none';
+    console.log('closing');
+  }
+
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    document.body.addEventListener('click', this.closeNav(this), false);
   }
 
   componentWillUnmount() {
