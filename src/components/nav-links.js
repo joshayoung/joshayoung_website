@@ -8,7 +8,7 @@ const NavLink = styled(Link)`
 `;
 
 const NavLinks = () => (
-  <ul>
+  <ul id="js_navigation">
     <li><NavLink activeClassName='active' to="/">Home</NavLink></li>
     <li><NavLink activeClassName='active' to="/thoughts">Thoughts</NavLink></li>
     <li><NavLink activeClassName='active' to="/projects">Projects</NavLink></li>
