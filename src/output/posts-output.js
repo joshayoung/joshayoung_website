@@ -11,7 +11,7 @@ export default () => {
       <header>Latest Posts</header>
       <ul>
         {posts.map(post => (
-          <li><Link to={post.path}>{post.title}</Link></li>
+          <li key={post.path}><Link to={post.path}>{post.title}</Link></li>
         ))}
       </ul>
     </List >
