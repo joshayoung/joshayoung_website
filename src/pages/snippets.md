@@ -20,7 +20,14 @@ Below, I have listed some common code snippets that I commonly go back to refere
 
 ### <a id="bash"></a>Bash
 
+#### Services Running on Port
+
+```bash
+  sudo lsof -i tcp:3000
+```
+
 #### If/Else
+
 ```bash
   if [ expression ]
     ...
@@ -32,12 +39,14 @@ Below, I have listed some common code snippets that I commonly go back to refere
 ```
 
 #### Assign Variable (spacing is important)
+
 ```bash
   the_var="a string"
   echo $the_var
 ```
 
 #### Show a process running on a particular port
+
 ```bash
   netstat -na | grep -i LISTEN | grep '2000\|3000'
 ```
@@ -45,16 +54,19 @@ Below, I have listed some common code snippets that I commonly go back to refere
 ### <a id="curl"></a>Curl
 
 #### Get HTTP Response
+
 ```bash
   curl -I example.com
 ```
 
 #### Get Just Response Code
+
 ```bash
   curl -s -o /dev/null -w "%{http_code}" example.com
 ```
 
 #### Curl POST
+
 ```bash
 curl --data "information=to&send=to the server" http://example.com
 ```
@@ -62,58 +74,67 @@ curl --data "information=to&send=to the server" http://example.com
 ### <a id="css"></a>CSS
 
 #### Switch to box sizing
-```css
-  html {
-    box-sizing: border-box;
-  }
 
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+```css
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 ```
 
 #### Clear Floats
+
 ```css
-  .clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
-    height: 0;
-    visibility: hidden;
-  }
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
 ```
 
 #### Margin/Padding Shorthand
+
 ```css
-  //top right bottom left:
-  margin (or padding): 10px 20px 10px 20px;
+//top right bottom left:
+margin(or padding): 10px 20px 10px 20px;
 
-  //top/bottom left/right:
-  margin (or padding): 10px 20px;
+//top/bottom left/right:
+margin(or padding): 10px 20px;
 
-  //top left/right bottom:
-  margin (or padding): 10px 20px 10px;
+//top left/right bottom:
+margin(or padding): 10px 20px 10px;
 ```
 
 ### <a id="dev_tools"></a>Dev Tools
 
 #### Chrome
+
   <Chrome />
 
 ### <a id="docker"></a>Docker
+
   <Docker />
 
 ### <a id="html5"></a>HTML5
 
 #### Unicode/Emojis
+
 You can get the unicode emoji's from this page: [emoji list](http://unicode.org/emoji/charts/full-emoji-list.html).
 All you have to do is remove the 'U+' from the first part of the code and replace it with '&#x'. End the unicode string with a semicolon.
 For example, to use the smiley emoji, change it from: U+1F600 to '&amp;#x1F600;'.
 To use a unicode character with the css 'before' or 'after' sudo-selector, remove the 'U+' from and replace it with '\'. So for the css ':before' or ':after', it would be '\1F600'. Of course, to use unicode on your site, you have to have the utf8 tag in your site header:
 
 ```html
-  <meta charset='utf-8' />
+<meta charset="utf-8" />
 ```
+
 [Reference](https://www.w3.org/International/tutorials/tutorial-char-enc)
 
 ##### Code Pen
@@ -121,18 +142,21 @@ To use a unicode character with the css 'before' or 'after' sudo-selector, remov
 <p data-height="265" data-theme-id="0" data-slug-hash="vrbzGq" data-default-tab="html,result" data-user="joshayoung" data-embed-version="2" data-pen-title="UTF8" class="codepen">See the Pen <a href="https://codepen.io/joshayoung/pen/vrbzGq/">UTF8</a> by Josh Young (<a href="https://codepen.io/joshayoung">@joshayoung</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
 #### HTML5 Doctype
+
 ```html
-  <!DOCTYPE html>
+<!DOCTYPE html>
 ```
 
 #### Tags
-* &lt;cite&gt; - cite a source
-* &lt;kdb&gt;  - text entered from a keyboard (i.e. `cd`, `pwd`)
-* &lt;pre&gt;  - preserves white space in html output
-* &lt;var&gt;  - used for outputting a variable in html
-* &lt;del&gt;  - show removed text (sometimes styled with strike-through mark)
+
+- &lt;cite&gt; - cite a source
+- &lt;kdb&gt; - text entered from a keyboard (i.e. `cd`, `pwd`)
+- &lt;pre&gt; - preserves white space in html output
+- &lt;var&gt; - used for outputting a variable in html
+- &lt;del&gt; - show removed text (sometimes styled with strike-through mark)
 
 ### <a id="http"></a>HTTP
+
   <HTTP />
 
 ### <a id="ufw"></a>UFW
@@ -148,6 +172,7 @@ UFW by default will allow all outgoing connections but deny any incoming connect
 ```
 
 #### Application Profiles
+
 ```bash
   # Show all application profiles:
   ufw app list
@@ -157,6 +182,7 @@ UFW by default will allow all outgoing connections but deny any incoming connect
 ```
 
 #### Set default egress/ingress rules
+
 ```bash
   # Deny egress and ingress:
   ufw default deny outgoing
@@ -164,6 +190,7 @@ UFW by default will allow all outgoing connections but deny any incoming connect
 ```
 
 #### Open Up Ports
+
 ```bash
   # Allow HTTP Service:
 
@@ -189,6 +216,7 @@ UFW by default will allow all outgoing connections but deny any incoming connect
 ```
 
 #### Close Ports/Delete Rules
+
 ```bash
   # Close port 80
   ufw deny 80/tcp
@@ -210,17 +238,19 @@ UFW by default will allow all outgoing connections but deny any incoming connect
 Firewalld is manipulating iptables behind the scene. Firewalld does have extended features in comparison to just using iptables. In the future iptables will be replaced with nftables. Firewalld will also serve as a font-end for nftables.
 
 #### Default Zones
-* block - ingress rejected, egress allowed
-* dmz - for DMZ servers
-* drop - ingress dropped, egress allowed
-* external - use when you have NAT masquerading
-* home - other machines trusted
-* internal - use when server is a router/gateway machine
-* public - other machines untrusted
-* trusted - connections accepted and machines trusted
-* work - other machines trusted
+
+- block - ingress rejected, egress allowed
+- dmz - for DMZ servers
+- drop - ingress dropped, egress allowed
+- external - use when you have NAT masquerading
+- home - other machines trusted
+- internal - use when server is a router/gateway machine
+- public - other machines untrusted
+- trusted - connections accepted and machines trusted
+- work - other machines trusted
 
 #### Firewalld Main Commands
+
 ```bash
   # Show all zones:
   firewall-cmd --get-zones
@@ -245,6 +275,7 @@ Each network inteface can be assigned to a different zone.
 ```
 
 #### Show Current Settings
+
 ```bash
   # List current settings on 'public' zone:
   sudo firewall-cmd --zone=public --list-all
@@ -254,6 +285,7 @@ Each network inteface can be assigned to a different zone.
 ```
 
 #### Open Ports/Services
+
 Without `--permanent`, the firewall rule will take affect but will not persist after a reboot.
 
 ```bash
@@ -268,6 +300,7 @@ Without `--permanent`, the firewall rule will take affect but will not persist a
 ```
 
 #### Remove Service/Port
+
 ```bash
   # Remove the open port:
   firewall-cmd --zone=public --remove-port=80/tcp
@@ -283,6 +316,7 @@ Without `--permanent`, the firewall rule will take affect but will not persist a
 ### <a id="gatsby"></a>Gatsby
 
 #### Starting Local Server
+
 ```bash
   gatsby develop
   # or
@@ -292,6 +326,7 @@ Without `--permanent`, the firewall rule will take affect but will not persist a
 ### <a id="git"></a>Git
 
 #### Contributing to an open source project
+
 1. Fork the project on github.
 2. Create a feature branch: `git checkout -b "feature-branch-name"`.
 3. Commit changes to your feature branch: `git commit -am "commit message"`.
@@ -299,6 +334,7 @@ Without `--permanent`, the firewall rule will take affect but will not persist a
 5. Creating a PR from this branch will open up a PR in the forked repo.
 
 #### Remove File from Repo, and File System
+
 This will remove the file from your repo, and the filesystem.
 
 ```bash
@@ -330,11 +366,13 @@ This will remove the directory from your repo, but not from the file system.
 ```
 
 #### Show Contents of Commit
+
 ```bash
   git show [commit hash]
 ```
 
 #### Change Base Branch
+
 ```bash
   git rebase --onto new_branch old_branch branch_you_are_moving
 ```
@@ -350,6 +388,7 @@ Add `--no-pager` to a command
 ```
 
 #### Delete Branches
+
 ```bash
   # Delete a local branch:
   git branch -d my_local_branch
@@ -408,6 +447,7 @@ This will put you in a detached HEAD state.
 ```
 
 #### Git Reset
+
 ```bash
   git reset --soft HEAD^3
 
@@ -417,16 +457,18 @@ This will put you in a detached HEAD state.
   git reset --hard HEAD^3
 ```
 
-* --soft (keeps staged changes)
-* --mixed (changes present, not staged)
-* --hard (does not preserve uncommitted changes)
+- --soft (keeps staged changes)
+- --mixed (changes present, not staged)
+- --hard (does not preserve uncommitted changes)
 
 #### Edit Commit Message
+
 ```bash
   git commit --amend
 ```
 
 #### Revert a file to state at previous commit
+
 ```bash
   git checkout -- my_file.txt
 ```
@@ -440,16 +482,19 @@ Try to use present tense for your commit message (i.e. "**Add** new class for st
 ```
 
 #### Pick Files to Stash
+
 ```bash
   git stash -p
 ```
 
 #### Show File in Stash
+
 ```bash
   git stash show stash@{0}
 ```
 
 #### Checkout a file that is stashed
+
 ```bash
   git checkout stash@{0} -- path/to/file
 ```
@@ -476,16 +521,19 @@ Leaving out the `stash@{2} variable below will run the stash command on top stas
 ```
 
 #### Stash tracked and untracked files
+
 ```bash
   git stash save --include-untracked
 ```
 
 #### Revert One File
+
 ```bash
   git checkout -- path/to/file.txt
 ```
 
 #### Show Files in Commit
+
 ```bash
   git diff-tree --no-commit-id --name-only -r [commit hash]
 ```
@@ -497,16 +545,19 @@ Leaving out the `stash@{2} variable below will run the stash command on top stas
 ```
 
 #### Rename a Local Branch
+
 ```bash
   git branch -m &lt;oldname&gt; &lt;newname&gt;
 ```
 
 #### Move Remote PR Branch Locally
+
 ```bash
   git fetch origin pull/ID/head:BRANCHNAME
 ```
 
 #### Saves Current Changes with Stash
+
 ```bash
   git stash
   or:
@@ -514,16 +565,19 @@ Leaving out the `stash@{2} variable below will run the stash command on top stas
 ```
 
 #### Files in stash
+
 ```bash
   git stash list --stat
 ```
 
 #### Show files in stash
+
 ```bash
   git stash show stash@{2}
 ```
 
 #### Remove all stashes
+
 ```bash
   git stash clear
 ```
@@ -537,31 +591,37 @@ This command will run `git stash apply` and then `git stash drop`.
 ```
 
 #### List Stashes
+
 ```bash
   git stash list
 ```
 
 #### Restore Specific Stash
+
 ```bash
   git stash pop stash@{3}
 ```
 
 #### Create and switch to branch
+
 ```bash
   git checkout -b new_branch_name
 ```
 
 #### Show Remote Branches
+
 ```bash
   git branch -r
 ```
 
 #### Delete local branch
+
 ```bash
   git branch -d local_branch_name
 ```
 
 #### Git Tags
+
 ```bash
   # show all tags
   git tag
@@ -574,6 +634,7 @@ This command will run `git stash apply` and then `git stash drop`.
 ```
 
 #### Show Diffs
+
 ```bash
   git diff HEAD^ (parent)
   git diff HEAD^^ (grandparent)
@@ -581,6 +642,7 @@ This command will run `git stash apply` and then `git stash drop`.
 ```
 
 #### Compare Commits
+
 ```bash
   git diff HEAD^..HEAD
   git diff 58786f..98f7f0
@@ -588,21 +650,25 @@ This command will run `git stash apply` and then `git stash drop`.
 ```
 
 #### Stop tracking in Repo
+
 ```bash
   git rm --cached errors.txt
 ```
 
 #### Remove one file from `git add`
+
 ```bash
   git reset HEAD &lt;file&gt;
 ```
 
 #### Remove files added with `git add .`
+
 ```bash
   git reset
 ```
 
 #### Restore a deleted file
+
 ```bash
   # First find the hash:
   git reflog
@@ -620,6 +686,7 @@ This command will run `git stash apply` and then `git stash drop`.
 ```
 
 #### Clone a local repo as a backup
+
 ```bash
   git clone local_repo local_repo_backup
 ```
@@ -648,6 +715,7 @@ Order from top to bottom:
 ```
 
 #### Roll back previous commit (preserving file changes)
+
 ```bash
   git reset --soft HEAD~1
   or
@@ -655,6 +723,7 @@ Order from top to bottom:
 ```
 
 #### Cherry Pick
+
 ```bash
   git cherry-pick 97589f
 
@@ -667,6 +736,7 @@ Order from top to bottom:
 ```
 
 #### Add file to last commit
+
 ```bash
   git add newfile.sh
   git commit --amend -m "Add file to repo"
@@ -675,6 +745,7 @@ Order from top to bottom:
 ```
 
 #### Roll back previous commit (discarding file changes)
+
 ```bash
   git reset --hard HEAD~1
   # or:
@@ -684,6 +755,7 @@ Order from top to bottom:
 ```
 
 #### Add Remote
+
 ```bash
   git push -u origin master
   git push -u [the name] [the branch]
@@ -692,6 +764,7 @@ Order from top to bottom:
 ```
 
 #### Revert a Commit
+
 ```bash
   git revert [the commit hash you want to revert]
 ```
@@ -700,8 +773,8 @@ Order from top to bottom:
 
 When you run `git pull`, you are actually performing a series of commands:
 
-* Updates the local origin/master branch by fetching updates from the origin with: `git fetch`.
-* Then the newly updated local origin/master is merged into the local master with: `git merge origin/master`.
+- Updates the local origin/master branch by fetching updates from the origin with: `git fetch`.
+- Then the newly updated local origin/master is merged into the local master with: `git merge origin/master`.
 
 Therefore, just running a `git fetch` will pull down all of the updated code from the origin, but it will not merge any of this with the local master.
 
@@ -722,52 +795,70 @@ Using 'squash' will combine this commit in with the previous commit.
 ### <a id="javascript"></a>JavaScript
 
 #### Capitalize Function
+
 ```javascript
-  var cap = function(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1);
-  };
+var cap = function(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1)
+}
 ```
 
 #### Destructuring
+
 ```javascript
-  // Object Destructuring:
-  let foods = {
-  vegetable: 'spinach',
-  fruit: 'apple',
-  nut: 'almond',
-  };
-  const { vegetable, fruit } = foods;
+// Object Destructuring:
+let foods = {
+  vegetable: "spinach",
+  fruit: "apple",
+  nut: "almond",
+}
+const { vegetable, fruit } = foods
 
-  // Array Destructuring:
-  let dirty_dozen = [ 'Strawberries', 'Spinach', 'Nectarines', 'Apples',
-            'Peaches', 'Pears', 'Cherries', 'Grapes', 'Celery',
-            'Tomatoes', 'Sweet bell peppers', 'Potatoes' ];
+// Array Destructuring:
+let dirty_dozen = [
+  "Strawberries",
+  "Spinach",
+  "Nectarines",
+  "Apples",
+  "Peaches",
+  "Pears",
+  "Cherries",
+  "Grapes",
+  "Celery",
+  "Tomatoes",
+  "Sweet bell peppers",
+  "Potatoes",
+]
 
-
-  const [ one_item ] = dirty_dozen;
+const [one_item] = dirty_dozen
 ```
 
 #### Only display content when JavaScript is enabled
-```javascript
-  document.getElementsByTagName('body')[0].className += ' js';
-  ```
 
-  ```css
-  /* Only set when JavaScript is enabled in browser: */
-  body.js .only-js {
-    border: 1px solid #a0a0a0;
-    display: block;
-    ...
-  }
+```javascript
+document.getElementsByTagName("body")[0].className += " js"
+```
+
+```css
+/* Only set when JavaScript is enabled in browser: */
+body.js .only-js {
+  border: 1px solid #a0a0a0;
+  display: block;
+  ...;
+}
 ```
 
 #### ES2015 Function Syntax
+
 ```javascript
-  const output_log = () => { alert('This is an example.'); };
+const output_log = () => {
+  alert("This is an example.")
+}
 ```
 
 ```javascript
-  const add_nums = (x, y) => { return x + y };
+const add_nums = (x, y) => {
+  return x + y
+}
 ```
 
 #### Detect Keyboard Input
@@ -775,6 +866,7 @@ Using 'squash' will combine this commit in with the previous commit.
 <p data-height="265" data-theme-id="dark" data-slug-hash="vZjKVr" data-default-tab="css,result" data-user="joshayoung" data-embed-version="2" data-pen-title="Detect Keyboard Input" class="codepen">See the Pen <a href="https://codepen.io/joshayoung/pen/vZjKVr/">Detect Keyboard Input</a> by Josh (<a href="https://codepen.io/joshayoung">@joshayoung</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
 #### Basic Class Structure
+
 ```javascript
   var Shape = function(sides) {
     this.sides = sides;
@@ -788,6 +880,7 @@ Using 'squash' will combine this commit in with the previous commit.
 ```
 
 #### Immediately Invoked Function Expression (IIFE)
+
 ```javascript
   (function() {
   ...executed immediately
@@ -799,54 +892,63 @@ Using 'squash' will combine this commit in with the previous commit.
 A string literal is immutable.
 
 ```javascript
-  // String Object:
-  typeof new String(); // 'object'
-  var str = new String('Hello');
-  str.x = 'World';
-  console.log(str.x); // Outputs 'World'
+// String Object:
+typeof new String() // 'object'
+var str = new String("Hello")
+str.x = "World"
+console.log(str.x) // Outputs 'World'
 
-  // String Literal:
-  typeof ''; // 'string'
+// String Literal:
+typeof "" // 'string'
 ```
 
 ### <a name='laravel'></a>Laravel
 
 #### Basic Migration
+
 ```bash
   php artisan make:migration the_users_table --create=users
 ```
 
 #### Refresh Auto Load Files
+
 ```bash
   composer dump-autoload
 ```
 
 #### Run the Migrations
+
 ```bash
   php artisan migrate
 
 ```
+
 #### Open Laravel Shell
+
 ```bash
   php artisan tinker
 ```
 
 #### Create the Model along with the Migration
+
 ```bash
   php artisan make:model User -m
 ```
 
 #### Create Controller
+
 ```bash
   php artisan make:controller UserController
 ```
 
 #### Create Model, Controller, and Migration
+
 ```bash
   php artisan make:model User -mc
 ```
 
 #### Create Resoureful Controller
+
 ```bash
   php artisan make:controller UsersController -r
 ```
@@ -854,6 +956,7 @@ A string literal is immutable.
 ### <a name='freebsd'></a>FreeBSD
 
 #### Edit Hostname
+
 ```bash
   # Edit:
   vi /etc/rc.conf
@@ -868,6 +971,7 @@ A string literal is immutable.
 ```
 
 #### Shutdown Server
+
 ```bash
   poweroff
   # or
@@ -875,11 +979,13 @@ A string literal is immutable.
 ```
 
 #### Show Version
+
 ```bash
   freebsd-version
 ```
 
 #### Update OS
+
 ```bash
   freebsd-update fetch
   freebsd-update install
@@ -964,11 +1070,13 @@ Add or edit the lines below in this file `/etc/network/interfaces`.
 ### <a name='centos-rhel'></a>CentOS / RHEL
 
 #### Change Hostname
+
 ```bash
   hostnamectl set-hostname my-new-hostname
 ```
 
 #### Show Version
+
 ```bash
   cat /etc/*release
 ```
@@ -993,6 +1101,7 @@ Add modify the entries below within: `/etc/sysconfig/network-scripts/ifcfg-eth0`
 ### <a name='arch'></a>ARCH
 
 #### Pacman Commands
+
 ```bash
   # Sync and Update:
   pacman -Syu
@@ -1005,6 +1114,7 @@ Add modify the entries below within: `/etc/sysconfig/network-scripts/ifcfg-eth0`
 ```
 
 #### Show Version
+
 ```bash
   lsb_release -a
 ```
@@ -1030,6 +1140,7 @@ To start sshd, we would run: '/etc/init.d/ssh start'. This was primarily used by
 The BSD based init system is configured under /etc/rc.conf. To start sshd, we would run: '/etc/rc.d/sshd start'. BSD and Slackware use the BSD init system
 
 #### Linux partition/format with Parted
+
 ```bash
   parted /dev/sdb # Open device with gparted:
   print # Print device info:
@@ -1064,11 +1175,13 @@ The BSD based init system is configured under /etc/rc.conf. To start sshd, we wo
 ```
 
 #### Show Directory Size
+
 ```bash
   du -sh directory_path
 ```
 
 #### SystemD
+
 ```bash
   # 'enable' will create a symbolic link so that the service starts on reboot
   # 'disable' will remove the symbolic link
@@ -1104,16 +1217,19 @@ If you want to switch user 'joe' to 'sally', below are the steps:
 ```
 
 #### Rsync
+
 ```bash
   rsync -avz --delete /original/folder/location /new/folder/location
 ```
 
 #### Reload Bash Config
+
 ```bash
   source .bashrc
 ```
 
 #### Check Drive for Errors
+
 ```bash
   # Health Summary:
   smartctl -H /dev/sdb
@@ -1134,12 +1250,14 @@ If you want to switch user 'joe' to 'sally', below are the steps:
 ```
 
 #### Check Drive for Bad Blocks
+
 ```bash
   # Test for bad block:
   badblocks -vs /dev/sdb > badblocks_results.txt
 ```
 
 #### Correct Bad Blocks
+
 ```bash
   # ext(2/3/4) filesystem:
   e2fsck -l badblocks_results.txt /dev/sdb
@@ -1149,11 +1267,13 @@ If you want to switch user 'joe' to 'sally', below are the steps:
 ```
 
 #### Show Security Settings with `ls`
+
 ```bash
   ls -Z
 ```
 
 #### Crontab
+
 ```bash
   *  *  *  *  *         command
   -  -  -  -  -
@@ -1179,26 +1299,31 @@ The command below could also be executed with 'bs=4M'.
 #### Find Linux Version
 
 ##### Kernel:
+
 ```bash
   uname -mrs
 ```
 
 ##### Distribution:
+
 ```bash
   cat /etc/*-release
 ```
 
 #### Prevent Command from Being Recorded in Terminal History
+
 ```bash
   <space> command
 ```
 
 #### Logged In User History (last 10)
+
 ```bash
   last -10
 ```
 
 #### Wipe HDD with 'dd' Command
+
 ```bash
   # With Zeros:
   dd if=/dev/zero of=/dev/sdb bs=1M status=progress && sync
@@ -1208,81 +1333,97 @@ The command below could also be executed with 'bs=4M'.
 ```
 
 #### Terminal Calculator
+
 ```bash
   bc -l
 ```
 
 #### System Uptime
+
 ```bash
   uptime
 ```
 
 #### Clear Terminal
+
 ```bash
   CTRL + l
 ```
 
 #### Extract a .tar File
+
 ```bash
   tar -xvf file.tar
 ```
 
 #### Extract a .tar.gz File
+
 ```bash
   tar -xzvf file.tar.gz
 ```
 
 #### Extract a .tar.bz2 File
+
 ```bash
   tar -xjvf file.tar.bz2
 ```
 
 #### Finding a File
+
 ```bash
   find / -name [file name you are searching] 2> /dev/null
 ```
 
 #### Bring Job Into the Foreground
+
 ```bash
   fg
 ```
 
 #### Pause Job
+
 ```bash
   Ctrl + Z
 ```
 
 #### Resume Paused Job in Background
+
 ```bash
   bg
 ```
 
 #### Continue Execution after Shell Exit
+
 ```bash
   nohup ./script.sh &
 ```
 
 #### List Background Jobs
+
 ```bash
   jobs
 ```
 
 #### Start Program in Background
+
 ```bash
   ./script.sh &
 ```
 
 #### Direct All Output to Log File
+
 ```bash
   ./script.sh 1> ~/tmp/log.txt 2> ~/tmp/log.txt &
 ```
 
 #### Direct All Output to Null
+
 ```bash
   ./script.sh 1> /dev/null 2> /dev/null &
 ```
 
 #### Run 256 Checksum
+
 ```bash
   sha256sum /the/path/to/file.iso
 ```
@@ -1290,6 +1431,7 @@ The command below could also be executed with 'bs=4M'.
 ### <a name='mac'></a>Mac
 
 #### Run 256 Checksum
+
 ```bash
   shasum -a 256 /the/path/to/file.iso
 ```
@@ -1303,11 +1445,13 @@ The interval is set in seconds.
 ```
 
 #### Find IP
+
 ```bash
   ifconfig |  grep -oE "\w* \b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
 ```
 
 #### Flush DNS
+
 ```bash
   killall -HUP mDNSResponder
 ```
@@ -1326,18 +1470,23 @@ The command below could also be executed with 'bs=4m'.
 ### <a name='react'></a>React
 
 #### Debugging data:
+
 ```javascript
- <pre>{JSON.stringify(resource)}</pre>
+<pre>{JSON.stringify(resource)}</pre>
 ```
 
 #### Commenting out JSX:
+
 ```javascript
- {/* <ReactComponent></ReactComponent> */}
+{
+  /* <ReactComponent></ReactComponent> */
+}
 ```
 
 ### <a name='mysql'></a>MySQL
 
 #### Connect to Database
+
 ```bash
   mysql -u [username] -p [password] -h [hostname]
 ```
@@ -1345,11 +1494,13 @@ The command below could also be executed with 'bs=4m'.
 ### <a name='netstat'></a>Netstat
 
 #### Find Listening Port (Bash)
+
 ```bash
   netstat -nao | find "80"
 ```
 
 #### Find Listening Port (Windows)
+
 ```bash
   netstat -nao | findstr "0.0.80"
 ```
@@ -1357,14 +1508,17 @@ The command below could also be executed with 'bs=4m'.
 ### <a name='mysql'></a>MySQL
 
 #### Connect to Database
+
 ```bash
   mysql -u [username] -p [password] -h [hostname]
 ```
 
 ### <a name='psql'></a>PostgreSQL
+
 <Postgresql />
 
 ### <a name='kanban'></a>Kanban
+
 <Kanban />
 
 ### <a name='python'></a>Python
@@ -1376,17 +1530,39 @@ The command below could also be executed with 'bs=4m'.
 ```
 
 #### Start Simple Server with Python 3
+
 ```bash
   python -m http.server
 ```
 
 ### <a name='rails'></a>Rails
 
+#### Start server on a different port:
+
+```bash
+  rails s -e development -p 2000
+```
+
+#### Start server on a different port with another pid file:
+
+Sometimes when you are running a server on a different port, you will get an error having to do with the pid file (I forgot exactly what it says). Running a command such as the below will allow you to write to a different pid file.
+
+```bash
+  rails s -e development -p 2000 -P tmp/pids/srv2.pid
+```
+
+#### Start rails listening on your local IP address
+
+```bash
+  rails s -b 0.0.0.0
+```
+
 #### Inheriting Directly from ActionController::Base
 
 Inheriting directly from: "ActionController::Base" instead of: "ApplicationController" will circumvent any code in your application_controller.rb file. Essentially it is like "skip running anything in the application_controller.rb file". "ApplicationController" inherits from "ActionController::Base".
 
 #### Output image path from console
+
 ```bash
   ActionController::Base. \
   helpers.asset_path('image.jpg')
@@ -1397,16 +1573,19 @@ Inheriting directly from: "ActionController::Base" instead of: "ApplicationContr
 ```
 
 #### Open Rails Database Console
+
 ```bash
   rails dbconsole
 ```
 
 #### Clear Test Log File
+
 ```bash
   rails log:clear LOGS=test
 ```
 
 #### Rails Controller Methods Are Typically Ordered
+
 1. index
 2. show
 3. new
@@ -1416,29 +1595,35 @@ Inheriting directly from: "ActionController::Base" instead of: "ApplicationContr
 7. destroy
 
 #### Rollback in Steps
+
 ```bash
   rails db:rollback STEP=1
 ```
 
 #### Show Migration Status
+
 ```bash
   rails db:migrate:status
 ```
 
 #### Run Migrations on Test Database
+
 ```bash
   bin/rails db:migrate RAILS_ENV=test
 ```
 
 #### Rails CRUD forms with no form plugin
+
 [github.com/joshayoung/rails-basic-forms](https://github.com/joshayoung/rails-basic-forms)
 
 #### Start Local Server
+
 ```bash
   rails server (rails s)
 ```
 
 #### Start Local Server on any IP
+
 ```bash
   rails s -b 0.0.0.0
 ```
@@ -1454,6 +1639,7 @@ The default port is 3000 if unspecified.
 ```
 
 #### Active Record Errors
+
 ```ruby
   # Model validations:
   class Student
@@ -1471,6 +1657,7 @@ new_student = Student.create(name: 'James', grade: '2nd.')
 ```
 
 #### Route Syntax
+
 ```ruby
   verb "the_url" => "controller#action"
   get "tickets" => "tickets#index"
@@ -1478,16 +1665,19 @@ new_student = Student.create(name: 'James', grade: '2nd.')
 ```
 
 #### Open SQLite from Rails
+
 ```bash
   rails dbconsole
 ```
 
 #### Show Rail Project Info
+
 ```bash
   rails about
 ```
 
 #### Open Rails Console
+
 ```bash
   rails console
   or:
@@ -1498,6 +1688,7 @@ new_student = Student.create(name: 'James', grade: '2nd.')
 ```
 
 #### Rails Tasks
+
 ```bash
   rails -T (commands than can be run)
   rails -T db (database related commands that can be run)
@@ -1532,11 +1723,13 @@ Using this convention, rails will know that you want to add the fields listed to
 ```
 
 #### Show Rails Generators
+
 ```bash
   rails g
 ```
 
 #### Create Scaffolding
+
 ```bash
   rails generate scaffold [name] attribute:type
 ```
@@ -1610,10 +1803,10 @@ When you do not point the controller action to a specific view it will try to re
 
 This will create:
 
-* Database migration for the 'students' table.
-* The Student model with the 'belongs_to' line pointing to 'course'.
-* A Student controller.
-* All of the resourceful routes for student.
+- Database migration for the 'students' table.
+- The Student model with the 'belongs_to' line pointing to 'course'.
+- A Student controller.
+- All of the resourceful routes for student.
 
 ```bash
   rails g resource [resource name] field:type field:type...
@@ -1632,6 +1825,7 @@ Show routes from the browser app by going to this path: http://[url of app][:por
 ```
 
 #### Resourceful Routes in route.rb
+
 ```ruby
   Rails.application.routes.draw
     root "students#index"
@@ -1654,6 +1848,7 @@ Show routes from the browser app by going to this path: http://[url of app][:por
 ```
 
 #### One-to-Many Nested Rotues in route.rb
+
 ```ruby
   get '/lists/:list_id/notes' => 'notes#index', as: 'list_notes'
   post '/lists/:list_id/notes' => 'notes#create'
@@ -1667,9 +1862,9 @@ Show routes from the browser app by going to this path: http://[url of app][:por
 
 #### List of Resourceful routes
 
-| Name         | Verb   | URL                | controller#action | Task                      | SQL**                                                         |
+| Name         | Verb   | URL                | controller#action | Task                      | SQL\*\*                                                       |
 | ------------ | ------ | ------------------ | ----------------- | ------------------------- | ------------------------------------------------------------- |
-| students     | GET    | /students          | student#index     | Show Students             | SELECT *                                                      |
+| students     | GET    | /students          | student#index     | Show Students             | SELECT \*                                                     |
 |              | POST   | /students          | students#create   | Create a new Student      | CREATE                                                        |
 | new_student  | GET    | /students/new      | students#new      | Show new Student form     | Display a HTML form                                           |
 | edit_student | GET    | /students/:id/edit | students#edit     | Show edit Student form    | SELECT where id =                                             |
@@ -1678,24 +1873,26 @@ Show routes from the browser app by going to this path: http://[url of app][:por
 |              | PUT    | /students/:id      | students#update   | Update Student (complete) | UPDATE tbl SET (name = 'Josh', day = 'Wed', state = 'AL' ...) |
 |              | DELETE | /students/:id      | students#destroy  | Remove a Student          | DELETE                                                        |
 
+\*\* There are exceptions to the SQL displayed here. These example serve as the most common implementations in my experience.
+Each of the 'name's listed in the table above is appended with either '\_url' or '\_path' in rails.
+In the rails app, use '\_path' for your views and '\_url' for controller redirects.
 
-** There are exceptions to the SQL displayed here. These example serve as the most common implementations in my experience.
-Each of the 'name's listed in the table above is appended with either '_url' or '_path' in rails.
-In the rails app, use '_path' for your views and '_url' for controller redirects.
+##### \_url (full path to page)
 
-##### _url (full path to page)
-* i.e. students_url: http://www.joshyoung.me/students
-* i.e. student_url(4): ttp://www.joshyoung.me/students/4
+- i.e. students_url: http://www.joshyoung.me/students
+- i.e. student_url(4): ttp://www.joshyoung.me/students/4
 
-##### _path (relative path to page)
-* i.e. students_path: /students
-* i.e. student_path(4): /students/4
+##### \_path (relative path to page)
+
+- i.e. students_path: /students
+- i.e. student_path(4): /students/4
 
 #### Naming
 
 By convention the name of the model is singular and the name of the table is plural.
 
 #### Create New Table Entry
+
 ```ruby
   township = Township.new
   township.city = 'London'
@@ -1713,6 +1910,7 @@ By convention the name of the model is singular and the name of the table is plu
 ```
 
 #### Update Table Value
+
 ```ruby
   township = Township.find(2)
   township.city = 'London'
@@ -1725,12 +1923,14 @@ By convention the name of the model is singular and the name of the table is plu
 ```
 
 #### Delete Table Value
+
 ```ruby
   township = Township.find_by(city: 'Jacksonville')
   township.destroy
 ```
 
 #### One-to-Many Relationships
+
 ```ruby
   # One (parent):
   class Student < ApplicationRecord
@@ -1774,11 +1974,12 @@ Generate the relationship:
 | 3       | Laptop | 3          |
 
 In the above example, 'student_id' is a foreign key pointing to the 'id' field in the 'students' table.
-The foreign key will always be the parent's table name in singular form (student) with an '_id' appended to the end. So in this case it is 'student_id' since the parent table is 'students'.
+The foreign key will always be the parent's table name in singular form (student) with an '\_id' appended to the end. So in this case it is 'student_id' since the parent table is 'students'.
 
 In the ruby console, **student.devices** would return all of the devices that student possesses. On the other hand, **device.student** would return the student who is the owner of the device selected.
 
 #### Many-to-Many Relationships
+
 ```ruby
   class Student < ApplicationRecord
     has_many :devices
@@ -1800,8 +2001,6 @@ In the ruby console, **student.devices** would return all of the devices that st
 | 1        | Frank | 35  |
 | 2        | Sally | 28  |
 
-
-
 | devices |        |            |          |
 | ------- | ------ | ---------- | -------- |
 | id      | name   | student_id | color_id |
@@ -1819,6 +2018,7 @@ In the ruby console, **student.devices** would return all of the devices that st
 ### <a name='ruby'></a>Ruby
 
 #### Output just a class' own methods
+
 ```ruby
   klass = Klass.new
 
@@ -1826,11 +2026,13 @@ In the ruby console, **student.devices** would return all of the devices that st
 ```
 
 #### Loads IRB With Active Support
+
 ```bash
   !rails c
 ```
 
 #### Struct
+
 ```ruby
   # With Struct you can only define
   # the attributes at object creation
@@ -1845,6 +2047,7 @@ In the ruby console, **student.devices** would return all of the devices that st
 ```
 
 #### OpenStruct
+
 ```ruby
   require 'ostruct'
   george = OpenStruct.new(name: 'george', grade: 95)
@@ -1857,16 +2060,19 @@ In the ruby console, **student.devices** would return all of the devices that st
 ```
 
 #### Open documentation for project's gems
+
 ```ruby
   gem serve
 ```
 
 #### Install to global gemset (when using rvm)
+
 ```bash
   rvm @global do gem install [gem name]
 ```
 
 #### Empty Method Returns Nil
+
 ```ruby
   def find_grade; end
   grade = find_grade
@@ -1876,6 +2082,7 @@ In the ruby console, **student.devices** would return all of the devices that st
 ```
 
 #### Naming
+
 ```ruby
   # Class is a Noun:
   class Cards
@@ -1885,6 +2092,7 @@ In the ruby console, **student.devices** would return all of the devices that st
 ```
 
 #### Ranges
+
 ```ruby
   # Inclusive:
   5..10
@@ -1893,6 +2101,7 @@ In the ruby console, **student.devices** would return all of the devices that st
 ```
 
 #### Find Methods
+
 ```ruby
   cat.private_methods
   cat.public_methods
@@ -1925,6 +2134,7 @@ By default all methods will accept a code block. However, they will not yield to
 ```
 
 #### Accept Multiple Arguments
+
 ```ruby
   def lots_of(*a)
   end
@@ -1934,6 +2144,7 @@ By default all methods will accept a code block. However, they will not yield to
 ```
 
 #### Multiline Comment
+
 ```ruby
 =begin
   def a_function
@@ -1966,6 +2177,7 @@ Symbols are immutable and strings are mutable.
 ```
 
 #### Ruby Class Properties
+
 ```ruby
   class RubyStudent
     # readable only:
@@ -1996,6 +2208,7 @@ Symbols are immutable and strings are mutable.
 ```
 
 #### Static Methods
+
 ```ruby
   class RubyStudent
     def self.my_method
@@ -2008,6 +2221,7 @@ Symbols are immutable and strings are mutable.
 ```
 
 #### Multiple Static Methods
+
 ```ruby
   class RubyStudent
     class << self
@@ -2071,6 +2285,7 @@ Use inheritance when two class have a 'is-a' relationship. For instance: a MathS
 ```
 
 #### Ruby Namespace
+
 ```ruby
   module CollegeStudent
     class Student
@@ -2156,6 +2371,7 @@ Then when this is included in a class, it will work like this:
 ```
 
 #### Unless vs If
+
 ```ruby
   # Prints 'false unless':
   unless false
@@ -2175,6 +2391,7 @@ Then when this is included in a class, it will work like this:
 ```
 
 #### Memoization
+
 ```ruby
   # If 'x' is false or nil return the value of 'y',
   # otherwise return the value of 'x':
@@ -2190,6 +2407,7 @@ Then when this is included in a class, it will work like this:
 #### When You Must Use 'self'.
 
 ##### For assigning values with the accessor method from within a class:
+
 ```ruby
   class Animal
     attr_accessor :tail
@@ -2223,6 +2441,7 @@ Then when this is included in a class, it will work like this:
 ```
 
 ##### For defining 'class methods' (a.k.a. Static Methods):
+
 ```ruby
   class Student
     def self.new_grade(grade)
@@ -2234,6 +2453,7 @@ Then when this is included in a class, it will work like this:
 ```
 
 #### Convenient Methods
+
 ```ruby
   class Test
   ...
@@ -2250,6 +2470,7 @@ Then when this is included in a class, it will work like this:
 ```
 
 #### Show Ancestors
+
 ```ruby
   # In a file named 'my_module.rb':
   module MyMod
@@ -2281,6 +2502,7 @@ Functions always return a value even if they are empty.
 ```
 
 #### Ruby Convert Types
+
 ```ruby
   a_string = 'a string value'
 
@@ -2295,6 +2517,7 @@ Functions always return a value even if they are empty.
 ```
 
 #### Look up Ruby Docs from command line
+
 [Online Documentation](http://ruby-doc.org)
 
 ```bash
@@ -2304,17 +2527,20 @@ Functions always return a value even if they are empty.
 ```
 
 #### Interpolate code
+
 ```ruby
   variable_value = 'test'
   puts "Print out #{variable_value}"
 ```
 
 #### Start IRB Session
+
 ```bash
   irb
 ```
 
 #### If/Else Statement
+
 ```ruby
   if a_value == 1
   puts "Yes"
@@ -2326,6 +2552,7 @@ Functions always return a value even if they are empty.
 ```
 
 #### Switch Statement
+
 ```ruby
   the_value = return_a_string()
 
@@ -2352,6 +2579,7 @@ Ruby objects are always passed by reference
 ```
 
 #### Add to Array
+
 ```ruby
   the_array << "val"
 
@@ -2360,16 +2588,19 @@ Ruby objects are always passed by reference
 ```
 
 #### Object Instantiation
+
 ```ruby
   new_obj = Person.new
 ```
 
 #### Iteration
+
 ```ruby
   array.each do |elem| ... end
 ```
 
 #### Custom Iteration
+
 ```ruby
   # Example 1:
   def output
@@ -2389,6 +2620,7 @@ Ruby objects are always passed by reference
 ```
 
 #### Basic Blocks
+
 ```ruby
   2.times { puts 'Josh' }
 
@@ -2404,18 +2636,21 @@ Ruby objects are always passed by reference
 ```
 
 #### Select Block
+
 ```ruby
   # Returns just the numbers greater than '3':
   [1, 2, 3, 4, 5, 6, 7, 8, 9].select { |n| n > 3 }
 ```
 
 #### Reject Block
+
 ```ruby
   # Rejects the numbers greater than '3':
   [1, 2, 3, 4, 5, 6, 7, 8, 9].reject { |n| n > 3 }
 ```
 
 #### Reduce Block
+
 ```ruby
   # Gets the sum with the reduce method:
   [1, 2, 3, 4, 5, 6, 7, 8, 9].reduce { |total, n| total + n }
@@ -2424,33 +2659,39 @@ Ruby objects are always passed by reference
 ```
 
 #### Sort Lowest to Highest
+
 ```ruby
   [11, 21, 73, 14, 95, 56, 97, 48, 19].sort
 ```
 
 #### Sort Highest to Lowest
+
 ```ruby
   [11, 21, 73, 14, 95, 56, 97, 48, 19].sort { |a, b| b <=> a }
 ```
 
 #### Returns boolean if it finds the result
+
 ```ruby
   # This should return false.
   [11, 21, 73, 14, 95, 56, 97, 48, 19].any? { |n| n > 100 }
 ```
 
 #### Returns the first match
+
 ```ruby
   # This should return 73.
   [11, 21, 73, 14, 95, 56, 97, 48, 19].detect { |n| n > 70 }
 ```
 
 #### Map the values returned into a new array
+
 ```ruby
   [11, 21, 73, 14, 95, 19].map { |n| n * 3 }
 ```
 
 #### Hash (associative array / dictionary)
+
 ```ruby
   {key => value}
 ```
@@ -2478,41 +2719,49 @@ These are both the same:
 ### <a name='sqlite'></a>SQLite
 
 #### Execute a Single Query
+
 ```bash
   sqlite3 -line mydatabase.sqlite3 "select * from students"
 ```
 
 #### Select Databse
+
 ```bash
   \c [database]
 ```
 
 #### Describe Table
+
 ```bash
   \dt+
 ```
 
 #### Connect to DB
+
 ```bash
   sqlite3 /path/to/database_file.db
 ```
 
 #### Show tables
+
 ```bash
   .tables
 ```
 
 #### Tables Schema
+
 ```bash
   .schema table_name
 ```
 
 #### Describe Table
+
 ```bash
   pragma table_info(table_name)
 ```
 
 #### Select all
+
 ```bash
   select * from table_name
 ```
@@ -2520,6 +2769,7 @@ These are both the same:
 ### <a name='security'></a>Security
 
 #### Ping Sweep
+
 ```bash
   for i in `seq 1 255`; do ping -c 1 [IP ADDRESS].$i ; done
 ```
@@ -2527,6 +2777,7 @@ These are both the same:
 ### <a name='testing'></a>Testing
 
 #### Rspec Fail on First Error
+
 ```bash
   rspec --fail-fast
 ```
@@ -2599,24 +2850,27 @@ By default an SVG element will take up the full width of the browser unless it h
 If the SVG tag is set to scale with the browser width, the SVG shapes within the internal viewBox will scale accordingly.
 
 ```css
-  svg {
-    height: auto;
-    // This could be any percentage:
-    width: 50%;
-  }
+svg {
+  height: auto;
+  // This could be any percentage:
+  width: 50%;
+}
 ```
 
 ### <a name='rubymine'></a>RubyMine
+
 <Rubymine />
 
 ### <a name='scp'></a>SCP
 
 #### Local to Remote
+
 ```bash
   scp file.txt username@host:/to/myremote/directory
 ```
 
 #### Remote to Local
+
 ```bash
   scp username@host:file.txt /to/my/local/directory
 ```
@@ -2624,6 +2878,7 @@ If the SVG tag is set to scale with the browser width, the SVG shapes within the
 ### <a name='security'></a>Security
 
 #### Nmap Ping Scan (detect hosts)
+
 ```bash
   nmap -sP 192.168.1.0/24
 ```
@@ -2631,6 +2886,7 @@ If the SVG tag is set to scale with the browser width, the SVG shapes within the
 #### Bash Ping Sweep
 
 #### Usage: **./sweep.sh 192.168.1**
+
 ```bash
   #!/bin/bash
   ip=$1
@@ -2642,32 +2898,39 @@ If the SVG tag is set to scale with the browser width, the SVG shapes within the
 ### <a name='php'></a>PHP
 
 #### GET/POST Assignment
+
 ```php
   $var = isset($_GET['var']) ? $_GET['var'] : '';
 ```
 
 ### <a name='tmux'></a>TMUX
+
 <TMUX />
 
 ### <a name='vim'></a>VIM
+
 <VIM />
 
 ### <a name='vs_code'></a>VS Code
+
 <VSCode />
 
 ### <a name='windows'></a>Windows
 
 #### Switch to C Drive
+
 ```bash
   cd /d C:
 ```
 
 #### Flush DNS
+
 ```bash
   ipconfig /flushdns
 ```
 
 #### All Network Info
+
 ```bash
   ipconfig /all
 ```
@@ -2675,6 +2938,7 @@ If the SVG tag is set to scale with the browser width, the SVG shapes within the
 ### <a name='yarn'></a>YARN
 
 #### Package Version (exclude dependencies)
+
 ```bash
   yarn list --depth 0 | grep [package name]
 ```
@@ -2682,6 +2946,7 @@ If the SVG tag is set to scale with the browser width, the SVG shapes within the
 ### <a name='zfs'></a>ZFS
 
 #### ZFS Pool Status
+
 ```bash
   zpool status -v
 
