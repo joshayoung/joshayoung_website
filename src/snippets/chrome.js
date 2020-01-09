@@ -1,12 +1,22 @@
-import React from 'react';
+import React from "react"
 
 export default () => (
   <dl>
+    <dt>Output selected element in console</dt>
+    <dd>
+      <code>$0</code>
+    </dd>
     <dt>Logging:</dt>
-    <dd><code>console.log('test string');</code></dd>
+    <dd>
+      <code>console.log('test string');</code>
+    </dd>
     <dt>Log Variable as an Object:</dt>
-    <dd><code>console.dir(paragraph);</code></dd>
+    <dd>
+      <code>console.dir(paragraph);</code>
+    </dd>
     <dt>Log an object as a table:</dt>
-    <dd><code>console.table(all_animals);</code></dd>
+    <dd>
+      <code>console.table(all_animals);</code>
+    </dd>
   </dl>
-);
+)
