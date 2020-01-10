@@ -23,3 +23,5 @@ These are some of the tech-related quotes that I have found helpful and memorabl
 "The easiest code to refactor is code that doesn't exist." - Ben Orenstein
 
 "Depending on an abstraction is always safer than depending on a concretion because by its very nature, the abstraction is more stable." - Practical Object-Oriented Design (book)
+
+"Weeks of programming can save you hours of planning."

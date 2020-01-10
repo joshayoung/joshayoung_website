@@ -341,6 +341,12 @@ This will remove the file from your repo, and the filesystem.
   git rm file_name
 ```
 
+#### Push up tags:
+
+ ```bash
+  git push --follow-tags
+ ```
+
 #### Remove File from Repo, not File System
 
 This will remove the file from your repo, but not from the file system.
@@ -2941,6 +2947,12 @@ svg {
 
 ```bash
   yarn list --depth 0 | grep [package name]
+```
+
+#### Show why a package was installed:
+
+```bash
+  yarn why
 ```
 
 ### <a name='zfs'></a>ZFS

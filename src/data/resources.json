@@ -433,6 +433,11 @@
         "display": true
       },
       {
+        "title": "Stimulus Cheat Sheet",
+        "url": "https://gist.github.com/mrmartineau/a4b7dfc22dc8312f521b42bb3c9a7c1e",
+        "display": true
+      },
+      {
         "title": "Git Cheat Sheet",
         "url": "https://gist.github.com/hofmannsven/6814451",
         "display": true
@@ -481,6 +486,17 @@
     ]
   },
   {
+    "title": "Markdown",
+    "class": "markdown",
+    "data": [
+      {
+        "title": "Anchor Links in Markdown",
+        "url": "https://justin.kelly.org.au/anchor-links-in-markdown",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Time/Date",
     "class": "time_date",
     "data": [
@@ -492,6 +508,17 @@
       {
         "title": "Time Zone Map",
         "url": "https://www.timeanddate.com/time/map",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Images",
+    "class": "images",
+    "data": [
+      {
+        "title": "Unsplash",
+        "url": "https://unsplash.com/",
         "display": true
       }
     ]
@@ -885,6 +912,11 @@
       {
         "title": "Secure Tunnel",
         "url": "https://ngrok.com",
+        "display": true
+      },
+      {
+        "title": "The Product-Minded Software Engineer",
+        "url": "https://blog.pragmaticengineer.com/the-product-minded-engineer",
         "display": true
       },
       {
