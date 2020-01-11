@@ -3,7 +3,7 @@ title: Laravel Note/Bookmark System
 description: Note taking and URL documenting system using Laravel and PostgreSQL
 date: 2017-04-12
 path: /laravel-notes
-tags: Laravel PHP PostgreSQL
+tags: ["Laravel", "PHP", "PostgreSQL"]
 ---
 
 Over the years, I have accumulated a lot of notes about various tech projects I have completed. However, I never seem to be able to find a note when I need it. I also tend to bookmark a lot of helpful URLs according to subject area. It would be nice to have a system to tabulate all of the information, index it, and allow for searching.
