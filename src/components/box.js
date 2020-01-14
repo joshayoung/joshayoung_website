@@ -1,6 +1,8 @@
 import React from "react";
 import { css } from '@emotion/core';
 
+const blue = "#3385ff";
+
 const Box = ({ children }) => (
   <div css={css`
       padding-bottom: 10px;
@@ -15,6 +17,9 @@ const Box = ({ children }) => (
         font-size: 24px;
         margin-bottom: 5px;
         color: #3385ff;
+        a {
+          color: ${blue};
+        }
         &:before {
           content: "{ ";
           color: #b3b3b3;
