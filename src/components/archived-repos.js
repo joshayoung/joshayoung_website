@@ -1,23 +1,5 @@
 import React, { useState, useEffect } from "react"
 
-const top = function(data) {
-  let all = []
-  data.forEach((repo, value) => {
-    all.push({
-      name: repo.name,
-      url: "<a href='" + repo.html_url + "'>" + repo.name + "</a>",
-      raw_url: repo.url,
-      updated: repo.updated_at,
-      language: repo.language,
-      created_at: repo.created_at.split("T")[0],
-    })
-  })
-  all.sort(function(a, b) {
-    return new Date(b.updated) - new Date(a.updated)
-  })
-  return all.slice(0, 3)
-}
-
 const getData = () => {
   const [repos, setRecentlyUpdatedRepos] = useState("no data")
   const [results, setResults] = useState(false)
@@ -29,8 +11,23 @@ const getData = () => {
       { headers: { Authorization: "token " + token } }
     )
     const json = await response.json()
-    let t = top(json)
-    setRecentlyUpdatedRepos(t)
+    let tags = []
+    for (var i = 0; i < json.length; i++) {
+      tags.push(json[i].tags_url)
+    }
+    let tall = []
+    let json2
+    for (var i = 0; i < tags.length; i++) {
+      const response2 = await fetch(tags[i], {
+        headers: { Authorization: "token " + token },
+      })
+      json2 = await response2.json()
+
+      if (json2.length > 0) {
+        tall.push(json2[0])
+      }
+    }
+    setRecentlyUpdatedRepos(tall)
     setResults(true)
   }
 
@@ -45,11 +42,12 @@ export default () => {
   const { repos, results } = getData()
   return (
     <>
+      {/* <pre>{JSON.stringify(repos)}</pre> */}
       {results ? (
         <ul>
           {repos.map(val => (
-            <li key={val.raw_url}>
-              <div dangerouslySetInnerHTML={{ __html: val.url }} />
+            <li key={val.commit.sha}>
+              <div dangerouslySetInnerHTML={{ __html: val.name }} />
             </li>
           ))}
         </ul>
