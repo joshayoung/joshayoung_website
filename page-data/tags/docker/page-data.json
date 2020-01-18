@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/docker/","webpackCompilationHash":"11c2b823418232876bb5","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Using Docker in my Workflow","path":"/using-docker"}}}]}},"pageContext":{"isCreatedByStatefulCreatePages":false,"tag":"Docker"}}}
