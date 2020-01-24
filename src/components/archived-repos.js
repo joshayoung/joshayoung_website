@@ -1,21 +1,5 @@
 import React, { useState, useEffect } from "react";
-
-const getRepos = async () => {
-  let token = process.env.GATSBY_GITHUB_TOKEN;
-  const response = await fetch(
-    "https://api.github.com/users/joshayoung/repos",
-    { headers: { Authorization: "token " + token } }
-  );
-  return response.json();
-};
-
-const getTheTags = async url => {
-  let token = process.env.GATSBY_GITHUB_TOKEN;
-  const response = await fetch(url, {
-    headers: { Authorization: "token " + token },
-  });
-  return response.json();
-};
+import { getData } from "../utilities/api_requests"
 
 const repoName = name => {
   return name.zipball_url.split("/")[5];
@@ -40,16 +24,16 @@ const tags = data => {
   return allTags;
 };
 
-const getData = () => {
+const getTheData = () => {
   const [repos, setRecentlyUpdatedRepos] = useState("no data");
   const [results, setResults] = useState(false);
 
   async function getRepoList() {
-    const data = await getRepos();
+    const data = await getData('https://api.github.com/users/joshayoung/repos');
     let allTags = tags(data);
     let tagsUrl = [];
     allTags.forEach(tag => {
-      tagsUrl.push(getTheTags(tag.url));
+      tagsUrl.push(getData(tag.url));
     });
 
     let archived_repos = Promise.all(tagsUrl).then(all => {
@@ -75,7 +59,7 @@ const getData = () => {
 };
 
 export default () => {
-  const { repos, results } = getData();
+  const { repos, results } = getTheData();
   return (
     <>
       {/* <pre>{JSON.stringify(repos)}</pre> */}
