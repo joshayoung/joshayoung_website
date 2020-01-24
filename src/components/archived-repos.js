@@ -17,16 +17,18 @@ const getTheTags = async url => {
   return response.json();
 };
 
+const repoName = name => {
+  return name.zipball_url.split("/")[5];
+};
+
 const archivedTags = data => {
   let archived = [];
-  for (let i = 0; i < data.length; i++) {
-    for (let j = 0; j < data[i].length; j++) {
-      if (data[i][j].name === "archived") {
-        let name = data[i][j].zipball_url.split("/")[5];
-        archived.push(name);
-      }
+  data.forEach(tg => {
+    let repo = tg.filter(value => value.name === "archived");
+    if (repo.length > 0) {
+      archived.push(repoName(repo[0]));
     }
-  }
+  });
   return archived;
 };
 
@@ -50,18 +52,16 @@ const getData = () => {
       tagsUrl.push(getTheTags(tag.url));
     });
 
-    let test = Promise.all(tagsUrl).then(all => {
+    let archived_repos = Promise.all(tagsUrl).then(all => {
       let archived = [];
       all.forEach(t => {
-        if (t.length > 0) {
-          archived.push(t);
-        }
+        archived.push(t);
       });
-      return archived;
+      return archived.filter(a => a.length !== 0);
     });
 
-    test.then(t => {
-      const results = archivedTags(t);
+    archived_repos.then(ar => {
+      const results = archivedTags(ar);
       setRecentlyUpdatedRepos(results);
       setResults(true);
     });
