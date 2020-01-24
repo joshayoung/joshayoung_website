@@ -1,3 +1,5 @@
+const REPO_URL = 'https://api.github.com/users/joshayoung/repos';
+
 const getData = async url => {
   let token = process.env.GATSBY_GITHUB_TOKEN;
   const response = await fetch(url, {
@@ -43,6 +45,4 @@ const archivedTags = data => {
   return archived;
 };
 
-const REPO_URL = 'https://api.github.com/users/joshayoung/repos';
-
-export { tags, archivedRepos, getData, archivedTags, REPO_URL };
+export { REPO_URL, tags, archivedRepos, getData, archivedTags };
