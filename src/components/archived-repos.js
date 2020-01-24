@@ -17,15 +17,25 @@ const getTheTags = async url => {
   return response.json();
 };
 
-const archivedTags = (name, data) => {
-  let tags = [];
-  for (var i = 0; i < data.length; i++) {
-    if (data[i].name === "archived") {
-      tags.push(name);
-      continue;
+const archivedTags = data => {
+  let archived = [];
+  for (let i = 0; i < data.length; i++) {
+    for (let j = 0; j < data[i].length; j++) {
+      if (data[i][j].name === "archived") {
+        let name = data[i][j].zipball_url.split("/")[5];
+        archived.push(name);
+      }
     }
   }
-  return tags;
+  return archived;
+};
+
+const tags = data => {
+  let allTags = [];
+  data.forEach(tag => {
+    allTags.push({ name: tag.name, url: tag.tags_url });
+  });
+  return allTags;
 };
 
 const getData = () => {
@@ -34,21 +44,27 @@ const getData = () => {
 
   async function getRepoList() {
     const data = await getRepos();
-    let tags = [];
-    data.forEach(val => {
-      tags.push({ name: val.name, url: val.tags_url });
+    let allTags = tags(data);
+    let tagsUrl = [];
+    allTags.forEach(tag => {
+      tagsUrl.push(getTheTags(tag.url));
     });
-    let archived = [];
-    let data_tags;
-    for (let i = 0; i < tags.length; i++) {
-      data_tags = await getTheTags(tags[i].url);
-      let archived_repo = archivedTags(tags[i].name, data_tags);
-      if (archived_repo.length > 0) {
-        archived.push(archived_repo);
-      }
-    }
-    setRecentlyUpdatedRepos(archived);
-    setResults(true);
+
+    let test = Promise.all(tagsUrl).then(all => {
+      let archived = [];
+      all.forEach(t => {
+        if (t.length > 0) {
+          archived.push(t);
+        }
+      });
+      return archived;
+    });
+
+    test.then(t => {
+      const results = archivedTags(t);
+      setRecentlyUpdatedRepos(results);
+      setResults(true);
+    });
   }
 
   useEffect(() => {
