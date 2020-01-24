@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import RepoResults from "../components/repo-results";
 
 const top = function(data) {
   let all = []
@@ -44,20 +45,6 @@ const getData = () => {
 export default () => {
   const { repos, results } = getData()
   return (
-    <>
-      {results ? (
-        <ul>
-          {repos.map(val => (
-            <li key={val.raw_url}>
-              <div dangerouslySetInnerHTML={{ __html: val.url }} />
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <ul>
-          <li>nothing</li>
-        </ul>
-      )}
-    </>
+    <RepoResults repos={repos} results={results} />
   )
 }

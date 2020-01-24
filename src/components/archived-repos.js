@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { tags, archivedRepos, REPO_URL, getData, archivedTags } from "../utilities/api_requests"
+import { REPO_URL, tags, archivedRepos, getData, archivedTags } from "../utilities/api_requests"
+import RepoResults from "../components/repo-results";
 
 const getTheData = () => {
   const [repos, setRecentlyUpdatedRepos] = useState("no data");
@@ -25,21 +26,6 @@ const getTheData = () => {
 export default () => {
   const { repos, results } = getTheData();
   return (
-    <>
-      {/* <pre>{JSON.stringify(repos)}</pre> */}
-      {results ? (
-        <ul>
-          {repos.map(val => (
-            <li key={val}>
-              <div dangerouslySetInnerHTML={{ __html: val }} />
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <ul>
-          <li>loading...</li>
-        </ul>
-      )}
-    </>
+    <RepoResults repos={repos} results={results} />
   );
 };
