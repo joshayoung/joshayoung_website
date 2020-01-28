@@ -343,9 +343,9 @@ This will remove the file from your repo, and the filesystem.
 
 #### Push up tags:
 
- ```bash
-  git push --follow-tags
- ```
+```bash
+ git push --follow-tags
+```
 
 #### Remove File from Repo, not File System
 
@@ -804,8 +804,8 @@ Using 'squash' will combine this commit in with the previous commit.
 
 ```javascript
 var cap = function(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1)
-}
+  return str.charAt(0).toUpperCase() + str.slice(1);
+};
 ```
 
 #### Destructuring
@@ -816,8 +816,8 @@ let foods = {
   vegetable: "spinach",
   fruit: "apple",
   nut: "almond",
-}
-const { vegetable, fruit } = foods
+};
+const { vegetable, fruit } = foods;
 
 // Array Destructuring:
 let dirty_dozen = [
@@ -833,15 +833,15 @@ let dirty_dozen = [
   "Tomatoes",
   "Sweet bell peppers",
   "Potatoes",
-]
+];
 
-const [one_item] = dirty_dozen
+const [one_item] = dirty_dozen;
 ```
 
 #### Only display content when JavaScript is enabled
 
 ```javascript
-document.getElementsByTagName("body")[0].className += " js"
+document.getElementsByTagName("body")[0].className += " js";
 ```
 
 ```css
@@ -857,14 +857,14 @@ body.js .only-js {
 
 ```javascript
 const output_log = () => {
-  alert("This is an example.")
-}
+  alert("This is an example.");
+};
 ```
 
 ```javascript
 const add_nums = (x, y) => {
-  return x + y
-}
+  return x + y;
+};
 ```
 
 #### Detect Keyboard Input
@@ -899,13 +899,13 @@ A string literal is immutable.
 
 ```javascript
 // String Object:
-typeof new String() // 'object'
-var str = new String("Hello")
-str.x = "World"
-console.log(str.x) // Outputs 'World'
+typeof new String(); // 'object'
+var str = new String("Hello");
+str.x = "World";
+console.log(str.x); // Outputs 'World'
 
 // String Literal:
-typeof "" // 'string'
+typeof ""; // 'string'
 ```
 
 ### <a name='laravel'></a>Laravel
@@ -1471,6 +1471,14 @@ The command below could also be executed with 'bs=4m'.
   umount /dev/disk2
   dd if=/path/to/iso/or/img/file of=/dev/disk2 bs=1m && sync
   diskutil eject /dev/disk2
+```
+
+### <a name='node'></a>Node
+
+#### NPM Packages Installed Globally:
+
+```bash
+  npm list -g --depth 0
 ```
 
 ### <a name='react'></a>React
