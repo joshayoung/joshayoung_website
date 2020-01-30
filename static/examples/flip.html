@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <style>
+      /* ### These styles are just for the page styles, not necessary for the flip boxes */
+      body { display: flex; flex-direction: column; }
+      label { color: #000; }
+      input { border: 1px solid #ccc; }
+      .wrap { border: 1px solid #ccc; margin: 10px; }
+      /* ### */
+
+      /* Height and Width of Boxes */
+      .wrap, .top, .bottom { width: 180px; height: 70px; }
+
+
+      /* The styles below should not need changing */
+
+      .wrap { perspective: 1000px; transform-style: preserve-3d; }
+      .wrap.clicked .bottom { transform: rotateY(0deg); }
+      .wrap.clicked .top { transform: rotateY(180deg); }
+      .cont { transition: 0.6s; transform-style: preserve-3d; position: relative; }
+
+      .top, .bottom {
+        backface-visibility: hidden;
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .top {
+        z-index: 2;
+        transform: rotateY(0deg);
+      }
+
+      .bottom {
+        transform: rotateY(-180deg);
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+
+    <p>
+      <strong>Usage:</strong> To add more to the page, you should be able to just duplicate the individual 'wrap' divs
+      and changes the image and form out for each one.
+    </p>
+
+    <div class="wrap" onclick="this.classList.toggle('clicked');">
+      <div class="cont">
+        <div class="top">
+          <img src='https://dummyimage.com/180x70/25de4a/fff.jpg&text=img1' />
+        </div>
+        <div class="bottom">
+          <form>
+            <label>Email</label>
+            <input type='text' placholder='your email' />
+            <input type='submit' value='Go' />
+          </form>
+        </div>
+      </div>
+    </div><!-- wrap -->
+
+    <div class="wrap" onclick="this.classList.toggle('clicked');">
+      <div class="cont">
+        <div class="top">
+          <img src='https://dummyimage.com/180x70/25de4a/fff.jpg&text=img2' />
+        </div>
+        <div class="bottom">
+          <form>
+            <label>Name</label>
+            <input type='text' placholder='your name' />
+            <input type='submit' value='Save' />
+          </form>
+        </div>
+      </div>
+    </div><!-- wrap -->
+
+    <div class="wrap" onclick="this.classList.toggle('clicked');">
+      <div class="cont">
+        <div class="top">
+          <img src='https://dummyimage.com/180x70/25de4a/fff.jpg&text=img3' />
+        </div>
+        <div class="bottom">
+          <form>
+            <label>Address</label>
+            <input type='text' placholder='your address' />
+            <input type='submit' value='Save' />
+          </form>
+        </div>
+      </div>
+    </div><!-- wrap -->
+
+  </body>
+</html>
