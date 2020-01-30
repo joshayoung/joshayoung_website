@@ -69,11 +69,11 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      <link rel="apple-touch-icon" sizes="72x72" href="/apple/site_apple.png" />
+      <link rel="apple-touch-icon" sizes="72x72" href="apple/site_apple.png" />
       <link
         rel="apple-touch-icon"
         sizes="114x114"
-        href="/apple/site_apple_retina.png"
+        href="apple/site_apple_retina.png"
       />
     </Helmet>
   );
