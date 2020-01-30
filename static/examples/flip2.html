@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <style>
+      /* ### Not necessary for flipping */
+      body { flex-direction: column; width: 100%; height: 100%; margin:0; padding:0; display: flex; }
+      .wrap { border: 1px solid #ccc; }
+      input { border: 1px solid #ccc; }
+      form { padding: 10px; }
+      p { padding: 10px; margin: 0; }
+      /* ### */
+
+
+      /* The width and height of each box */
+      .wrap, .top, .bottom { width: 180px; height: 70px; }
+
+
+
+      /* Create a new section for each new ID in the box sections below: */
+
+
+
+      /* box1 */
+      #box1:checked+label .bottom { transform: rotateY(0deg); }
+      #box1:checked+label .top { transform: rotateY(180deg); }
+      /* End box1 */
+
+      /* box2 */
+      #box2:checked+label .bottom { transform: rotateY(0deg); }
+      #box2:checked+label .top { transform: rotateY(180deg); }
+      /* end box2 */
+
+      /* box3 */
+      #box3:checked+label .bottom { transform: rotateY(0deg); }
+      #box3:checked+label .top { transform: rotateY(180deg); }
+      /* End box3 */
+
+
+      /***** The styles below should not need changing *****/
+
+      .cont {
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: relative;
+      }
+
+      .top, .bottom {
+        backface-visibility: hidden;
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .wrap { perspective: 1000px; transform-style: preserve-3d; }
+      .top { z-index: 2; transform: rotateY(0deg); }
+      .bottom { transform: rotateY(-180deg); }
+      label { display: inline-block; user-select: none; }
+      label:hover { cursor: pointer; }
+      input[type='checkbox'] { display: none; }
+    </style>
+  </head>
+
+  <body>
+
+    <p>
+      <strong>HTML:</strong> to create another flippable element, just duplicate the div with a class of 'wrapper'
+      and change the 'box' ID to a unique number on the 'input' and on the 'label' (i.e. box4).
+    </p>
+    <p>
+      <strong>CSS:</strong> Create a new 'ID:checked+label' declaration section for each new box you add in the HTML.
+    </p>
+
+    <div class='wrapper'>
+      <input type="checkbox" id="box1" />
+      <label for="box1">
+        <div class='wrap'>
+          <div class='cont'>
+            <div class='top'>
+              <img src='https://dummyimage.com/180x70/25de4a/fff.jpg&text=img1' />
+            </div>
+            <div class='bottom'>
+              <form>
+                <label>Email</label>
+                <input type='text' placholder='your email' />
+                <input type='submit' value='Go' />
+              </form>
+            </div>
+          </div>
+        </div>
+      </label>
+    </div><!-- wrapper -->
+
+    <div class='wrapper'>
+      <input type="checkbox" id="box2" />
+      <label for="box2">
+        <div class='wrap'>
+          <div class='cont'>
+            <div class='top'>
+              <img src='https://dummyimage.com/180x70/25de4a/fff.jpg&text=img2' />
+            </div>
+            <div class='bottom'>
+              <form>
+                <label>Email</label>
+                <input type='text' placholder='your email' />
+                <input type='submit' value='Go' />
+              </form>
+            </div>
+          </div>
+        </div>
+      </label>
+    </div><!-- wrapper -->
+
+    <div class='wrapper'>
+      <input type="checkbox" id="box3" />
+      <label for="box3">
+        <div class='wrap'>
+          <div class='cont'>
+            <div class='top'>
+              <img src='https://dummyimage.com/180x70/25de4a/fff.jpg&text=img3' />
+            </div>
+            <div class='bottom'>
+              <form>
+                <label>Email</label>
+                <input type='text' placholder='your email' />
+                <input type='submit' value='Go' />
+              </form>
+            </div>
+          </div>
+        </div>
+      </label>
+    </div><!-- wrapper -->
+
+  </body>
+</html>
