@@ -47,6 +47,11 @@
         "title": "Public APIs",
         "url": "https://flaviocopes.com/sample-app-ideas/#public-apis-you-can-use-in-example-projects",
         "display": true
+      },
+      {
+        "title": "API For Testing",
+        "url": "https://jsonplaceholder.typicode.com",
+        "display": true
       }
     ]
   },
@@ -1020,6 +1025,11 @@
       {
         "title": "Import and Export",
         "url": "https://javascript.info/import-export",
+        "display": true
+      },
+      {
+        "title": "IIFE",
+        "url": "https://developer.mozilla.org/en-US/docs/Glossary/IIFE",
         "display": true
       },
       {
