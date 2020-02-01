@@ -942,6 +942,17 @@
     ]
   },
   {
+    "title": "React",
+    "class": "react",
+    "data": [
+      {
+        "title": "Fetch Data with React Hooks",
+        "url": "https://reactgo.com/fetch-data-react-hooks/",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "News",
     "class": "news_resources",
     "data": [
