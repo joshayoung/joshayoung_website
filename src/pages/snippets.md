@@ -1186,6 +1186,20 @@ The BSD based init system is configured under /etc/rc.conf. To start sshd, we wo
   du -sh directory_path
 ```
 
+#### 32 or 64 Bit OS:
+
+```bash
+  uname -m
+  # or
+  arch
+```
+
+#### Print Services Running on Port:
+
+```bash
+  lsof -i tcp:8000
+```
+
 #### SystemD
 
 ```bash
