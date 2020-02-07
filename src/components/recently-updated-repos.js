@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import RepoResults from "../components/repo-results";
+import RepoResults from "./repo-results";
 
 const top = function(data) {
   let all = []
