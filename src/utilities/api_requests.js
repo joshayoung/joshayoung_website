@@ -1,5 +1,23 @@
 const REPO_URL = 'https://api.github.com/users/joshayoung/repos';
 
+const top = function(data) {
+  let all = []
+  data.forEach((repo, value) => {
+    all.push({
+      name: repo.name,
+      url: "<a href='" + repo.html_url + "'>" + repo.name + "</a>",
+      raw_url: repo.url,
+      updated: repo.updated_at,
+      language: repo.language,
+      created_at: repo.created_at.split("T")[0],
+    })
+  })
+  all.sort(function(a, b) {
+    return new Date(b.updated) - new Date(a.updated)
+  })
+  return all.slice(0, 3)
+}
+
 const getData = async url => {
   let token = process.env.GATSBY_GITHUB_TOKEN;
   const response = await fetch(url, {
@@ -45,4 +63,4 @@ const archivedTags = data => {
   return archived;
 };
 
-export { REPO_URL, tags, archivedRepos, getData, archivedTags };
+export { top, REPO_URL, tags, archivedRepos, getData, archivedTags };
