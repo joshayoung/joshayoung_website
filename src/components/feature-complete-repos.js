@@ -1,23 +1,19 @@
 import React, { useState, useEffect } from "react";
 import RepoResults from "../components/repo-results";
+import { REPO_URL, getData } from "../utilities/api_requests"
 
 const top = function(data) {
   let all = [];
   return all;
 };
 
-const getData = () => {
+const getStuff = () => {
   const [repos, setRecentlyUpdatedRepos] = useState("no data");
   const [results, setResults] = useState(false);
 
   async function getFeatureCompleteList() {
-    let token = process.env.GATSBY_GITHUB_TOKEN;
-    const response = await fetch(
-      "https://api.github.com/users/joshayoung/repos",
-      { headers: { Authorization: "token " + token } }
-    );
-    const json = await response.json();
-    let t = top(json);
+    const data = await getData(REPO_URL);
+    let t = top(data);
     setRecentlyUpdatedRepos(t);
     setResults(true);
   }
@@ -30,6 +26,6 @@ const getData = () => {
 };
 
 export default () => {
-  const { repos, results } = getData();
+  const { repos, results } = getStuff();
   return <RepoResults repos={repos} results={results} />;
 };
