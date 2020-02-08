@@ -7,13 +7,11 @@ const Main = ({ children }) => (
     margin: 1rem auto;
     max-width: 90vw;
     width: 700px;
-    @media (min-width: 600px) {
-        border-left: 1px solid #dedede;
-        padding-left: 30px;
-    }
     @media (min-width: 700px) {
+      border-left: 1px solid #dedede;
       margin: 0;
       margin-top: 50px;
+      padding-left: 30px;
     }
     > p:first-of-type {
       line-height: 2;
