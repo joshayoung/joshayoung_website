@@ -13,7 +13,7 @@ const Cert = ({ logo, link, children }) => (
       {logo ?
         <div
           css={css`
-          width: 450px;
+          flex: 23%;
           padding-right: 10px;
         `}
         ><Image filename={logo} /></div>
@@ -22,6 +22,7 @@ const Cert = ({ logo, link, children }) => (
 
       <div
         css={css`
+          flex: 77%;
         `}
       >{children}</div>
     </div>

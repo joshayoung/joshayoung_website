@@ -109,10 +109,10 @@ The CompTIA Linux+ certification required a very thorough knowledge of Linux. He
 
 ### <a name='suse'></a>SUSE Certified Linux Administrator 11
 <Cert
-logo="resized/cert_linux_admin_11.png"
+logo="resized/cert_linux_admin_11_half.png"
 link="https://training.suse.com/certification/sca-linux"
 >
-This SUSE cert was attained through passing a Linux exam.
+This SUSE cert was attained through passing a Linux exam. This certification validates my skill for SUSE linux 11.
 </Cert>
 
 ---
