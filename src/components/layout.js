@@ -19,6 +19,7 @@ const Layout = ({ children, klass }) => {
         pre { white-space: pre-wrap; }
         code { white-space: pre-wrap; }
         * { box-sizing: border-box; }
+        fieldset { border: none; }
 
         body {
           font-family: 'Work Sans', sans-serif;
