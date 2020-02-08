@@ -1,11 +1,11 @@
 import React from "react";
 import List from "../components/list";
-import TopRepos from "../components/top-repos";
+import RecentlyUpdateRepos from "../components/recently-updated-repos";
 
 const Repos = () => (
   <List>
     <header>Recently Updated Repos</header>
-    <TopRepos />
+    <RecentlyUpdateRepos />
   </List>
 )
 
