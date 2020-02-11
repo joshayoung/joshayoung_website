@@ -2,6 +2,8 @@
 
 These are some of the tech-related quotes that I have found helpful and memorable. In order to preserve them, I have included them here along with a reference to the source of the quote.
 
+A Good Function - is very small and does very little (ideally one thing).
+
 "If we have data, let’s look at data. If all we have are opinions, let’s go with mine."​ - Jim Barksdale, ​Engineer, VC, & Netscape founder​
 
 "Change managed well is​: taught​, exercised​, and then trusted​." - Kevin Howard
