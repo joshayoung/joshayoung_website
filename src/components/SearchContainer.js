@@ -15,8 +15,9 @@ class Search extends Component {
    * React lifecycle method to fetch the data
    */
   async componentDidMount() {
-    Axios.get("https://bvaughn.github.io/js-search/books.json")
+    Axios.get("../../data/books.json")
       .then(result => {
+          debugger
         const bookData = result.data
         this.setState({ bookList: bookData.books })
         this.rebuildIndex()
