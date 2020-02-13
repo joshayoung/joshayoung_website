@@ -51,6 +51,66 @@ Below, I have listed some common code snippets that I commonly go back to refere
   netstat -na | grep -i LISTEN | grep '2000\|3000'
 ```
 
+### <a id="text"></a>Text
+
+<!-- Adopted from: https://www.lifewire.com/typing-quotes-apostrophes-and-primes-1074104 -->
+#### Keyboard Shortcuts for Quote Marks
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Description</th>
+      <th>Windows</th>
+      <th>Mac</th>
+      <th>HTML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>‘</th>
+      <td>Opening Single Apostrophe</td>
+      <td>alt+0145</td>
+      <td>option+]</td>
+      <td>&amp;lsquo;</td>
+    </tr>
+    <tr>
+      <th>’</th>
+      <td>Closing Single Apostrophe</td>
+      <td>alt+0146</td>
+      <td>option+shift+]</td>
+      <td>&amp;rsquo;</td>
+    </tr>
+    <tr>
+      <th>“</th>
+      <td>Opening Double Quote</td>
+      <td>alt+0147</td>
+      <td>option+[</td>
+      <td>&amp;ldquo;</td>
+    </tr>
+    <tr>
+      <th>”</th>
+      <td>Closing Double Quote</td>
+      <td>alt+0148</td>
+      <td>option+shift+[</td>
+      <td>&amp;rdquo;</td>
+    </tr>
+    <tr>
+      <th>'</th>
+      <td>Straight Single Apostrophe</td>
+      <td>'</td>
+      <td>'</td>
+      <td>'</td>
+    </tr>
+    <tr>
+      <th>"</th>
+      <td>Straight Double Quote</td>
+      <td>"</td>
+      <td>"</td>
+      <td>"</td>
+    </tr>
+  </tbody>
+</table>
+
 ### <a id="curl"></a>Curl
 
 #### Get HTTP Response
