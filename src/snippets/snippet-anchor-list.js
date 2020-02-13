@@ -75,6 +75,9 @@ const SnippetAnchorList = () => (
       <a href="#netstat">Netstat</a>
     </li>
     <li>
+      <a href="#text">Text</a>
+    </li>
+    <li>
       <a href="#php">PHP</a>
     </li>
     <li>
