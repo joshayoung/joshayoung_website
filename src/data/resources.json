@@ -453,6 +453,11 @@
         "display": true
       },
       {
+        "title": "Vim Cheat Sheet",
+        "url": "https://vim.rtorr.com/",
+        "display": true
+      },
+      {
         "title": "Git Cheat Sheet",
         "url": "https://gist.github.com/hofmannsven/6814451",
         "display": true
@@ -841,6 +846,11 @@
       {
         "title": "Style Guides",
         "url": "https://github.com/thoughtbot/guides/tree/master/style",
+        "display": true
+      },
+      {
+        "title": "Giet Explorer",
+        "url": "https://gitexplorer.com",
         "display": true
       },
       {
