@@ -108,6 +108,20 @@ Below, I have listed some common code snippets that I commonly go back to refere
       <td>"</td>
       <td>"</td>
     </tr>
+    <tr>
+      <th>–</th>
+      <td>En Dash</td>
+      <td>Ctrl + hyphen</td>
+      <td>Option + hyphen</td>
+      <td>alt+0150</td>
+    </tr>
+    <tr>
+      <th>—</th>
+      <td>Em Dash</td>
+      <td>Ctrl + Alt + hyphen</td>
+      <td>Shift + Option + hyphen</td>
+      <td>alt+0151</td>
+    </tr>
   </tbody>
 </table>
 
