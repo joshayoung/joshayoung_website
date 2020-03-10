@@ -67,6 +67,13 @@ Below, I have listed some common code snippets that I commonly go back to refere
   </thead>
   <tbody>
     <tr>
+      <th>…</th>
+      <td>Ellipsis</td>
+      <td>alt+0133</td>
+      <td>option+;</td>
+      <td>&amp;#x2026;</td>
+    </tr>
+    <tr>
       <th>‘</th>
       <td>Opening Single Apostrophe</td>
       <td>alt+0145</td>
