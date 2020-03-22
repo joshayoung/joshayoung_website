@@ -21,7 +21,7 @@ I also spend some of my free time maintaining my home network, firewall, file se
 ### <a id='podcasts'></a>Recommended Podcasts
 Below I have listed the tech podcasts that I currently listen to or have listened to in the past. Podcasts are a great way to keep up with the latest changes in development. Hopefully this list will introduce a good podcast to someone who enjoys learning and keeping up with the latest changes in tech.
 
-<PodcastOutput />
+<!-- <PodcastOutput /> -->
 
 ### <a id='podcast_episodes'></a>Great Podcast Episodes
 

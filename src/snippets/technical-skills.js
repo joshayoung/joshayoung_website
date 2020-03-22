@@ -19,7 +19,7 @@ const TechnicalSkills = () => (
         padding: 0 6px;
         font-size: pxToRem(12px);
         padding: 0 pxToRem(6px);
-        &:first-child {
+        &:first-of-type {
           font-weight: bold;
           color: $dark_green;
           &:after {

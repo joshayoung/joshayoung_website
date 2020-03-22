@@ -7,7 +7,7 @@ export default () => {
   return (
     <ul>
       {treehouses.map(treehouse => (
-        <li><a href={treehouse.url}>{treehouse.title}</a></li>
+        <li key={treehouse.url}><a href={treehouse.url}>{treehouse.title}</a></li>
       ))}
     </ul>
   );
