@@ -22,7 +22,6 @@ class GoToTop extends Component {
 
   closeNav(e) {
     // document.getElementById("js_navigation").style.display = 'none';
-    console.log('closing');
   }
 
   componentDidMount() {
@@ -40,20 +39,20 @@ class GoToTop extends Component {
         <a
           style={this.state.offScreen ? { position: 'fixed' } : { display: 'none', position: 'relative' }}
           css={css`
-        bottom: 0;
-        left: 200px;
-        display: block;
-        background: ${blue};
-        padding: 2px 10px;
-        border-top-right-radius: 2px;
-        border-top-left-radius: 2px;
-        font-size: 14px;
-        color: #fff;
-        &:hover {
-          text-decoration: underline;
-          color: #fff;
-        }
-      `}
+            bottom: 0;
+            left: 200px;
+            display: block;
+            background: ${blue};
+            padding: 2px 10px;
+            border-top-right-radius: 2px;
+            border-top-left-radius: 2px;
+            font-size: 14px;
+            color: #fff;
+            &:hover {
+              text-decoration: underline;
+              color: #fff;
+            }
+          `}
           href='#top'>Go To Top</a>
       </>
     );
