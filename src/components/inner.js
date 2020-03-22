@@ -2,7 +2,7 @@ import React from "react";
 import { css } from '@emotion/core';
 import Header from "./header";
 import Logo from "../components/logo";
-import LeftNav from "../components/left-nav";
+import Nav from "../components/nav";
 import Main from "../components/main";
 import Aside from "../components/aside";
 import GoToTop from "../components/go-to-top";
@@ -17,7 +17,7 @@ const Inner = ({ children }) => (
   >
     <a id="top"></a>
     <Header />
-    <LeftNav />
+    <Nav />
     <Main>
       <Logo />
       {children}

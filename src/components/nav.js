@@ -1,16 +1,16 @@
 import React from "react";
-import NavLinks from "../components/nav-links";
+import NavLinks from "./nav-links";
 import { css } from '@emotion/core';
 
 const blue = "#3385ff";
 
-const LeftNav = () => (
+const Nav = () => (
   <nav css={css`
 
   `}
-    className="left-nav">
+    className="nav">
     <NavLinks />
   </nav >
 )
 
-export default LeftNav;
+export default Nav;
