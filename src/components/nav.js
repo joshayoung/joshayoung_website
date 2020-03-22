@@ -7,23 +7,25 @@ const blue = "#3385ff";
 class Nav extends Component {
 
   componentDidMount() {
-    if (document.body.classList.contains('open')) {
+    let hamburger = document.querySelector(".hamburger");
+    let navigation = document.querySelector('.nav');
+    let isOpen = document.body.classList.contains("open");
+
+    if (isOpen) {
       document.body.classList.remove("open");
     }
-    let navButton = document.querySelector(".hamburger");
-    navButton.addEventListener("click", (e) => { 
+
+    hamburger.addEventListener("click", e => { 
       e.preventDefault();
       document.body.classList.toggle("open");
     });
 
-    // document.body.addEventListener("click", (e) => {
-    //   if (e.target.tagName === "BUTTON" || 
-    //       e.target.tagName === "NAV" ||
-    //       !document.body.classList.contains('open')) {
-    //       return;
-    //   }
-    //   document.body.classList.toggle("open");
-    // });
+    navigation.addEventListener("click", e => {
+      let name = e.target.tagName;
+      if (name === "A" && isOpen)  {
+        document.body.classList.remove("open");
+      }
+    })
   }
 
   render() {
@@ -34,13 +36,13 @@ class Nav extends Component {
         transition: transform 0.7s, visibility 0.7s;
         perspective: 1000px;
         position: fixed;
-        background: ${blue};
+        background: rgba(195, 205, 220, 0.98);
         left: 0;
         visibility: hidden;
         height: 100%;
         top: 0;
         padding-top: 80px;
-        width: 150px;
+        width: 100%;
         @media (min-width: 700px) { 
           visibility: visible;
           transform: translateX(0);
@@ -52,6 +54,7 @@ class Nav extends Component {
       `}
         className="nav">
           <ul css={css`
+            margin: 0;
             transform-origin: left center;
             transform: rotateY(90deg);
             transition: transform 0.7s;
@@ -61,9 +64,13 @@ class Nav extends Component {
               transform: rotateY(0deg);
             }
             a {
-              padding: 10px 7px 10px 3px;
+              padding: 10px 20px 10px 20px;
               display: block;
-              color: #fff;
+              margin-bottom: 2px;
+              color: #000;
+              &:last-child {
+                margin-bottom: 0;
+              }
               &.active {
                 background: #fff;
                 color: ${blue};

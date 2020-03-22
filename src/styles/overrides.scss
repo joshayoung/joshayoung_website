@@ -10,6 +10,10 @@
   font-size: 8px;
 }
 
+.open .hamburger {
+  position: fixed;
+}
+
 .open .nav {
   visibility: visible;
   transform: translateX(0);
