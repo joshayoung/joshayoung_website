@@ -8,7 +8,7 @@ const NavLink = styled(Link)`
 `;
 
 const NavLinks = () => (
-  <ul id="js_navigation">
+  <>
     <li><NavLink activeClassName='active' to="/">Home</NavLink></li>
     <li><NavLink activeClassName='active' to="/thoughts">Thoughts</NavLink></li>
     <li><NavLink activeClassName='active' to="/projects">Projects</NavLink></li>
@@ -20,7 +20,7 @@ const NavLinks = () => (
     <li><NavLink activeClassName='active' to="/resources">Resources</NavLink></li>
     <li><NavLink activeClassName='active' to="/search">Search</NavLink></li>
     <li><NavLink activeClassName='active' to="/me">About</NavLink></li>
-  </ul>
+  </>
 )
 
 export default NavLinks;
