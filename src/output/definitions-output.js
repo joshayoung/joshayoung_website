@@ -7,7 +7,7 @@ export default () => {
   return (
     <dl>
       {definitions.map(definition => (
-        <>
+        <div key={definition.word}>
           <dt>{definition.word}</dt>
           <dd>
             {definition.definition}
@@ -19,7 +19,7 @@ export default () => {
               ''
             }
           </dd>
-        </>
+        </div>
       ))}
     </dl>
   );
