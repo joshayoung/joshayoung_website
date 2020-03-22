@@ -7,6 +7,9 @@ const blue = "#3385ff";
 class Nav extends Component {
 
   componentDidMount() {
+    if (document.body.classList.contains('open')) {
+      document.body.classList.remove("open");
+    }
     let navButton = document.querySelector(".hamburger");
     navButton.addEventListener("click", (e) => { 
       e.preventDefault();
@@ -37,7 +40,15 @@ class Nav extends Component {
         height: 100%;
         top: 0;
         padding-top: 80px;
-        width: 150px
+        width: 150px;
+        @media (min-width: 700px) { 
+          visibility: visible;
+          transform: translateX(0);
+          position: static;
+          width: 130px;
+          margin: 90px 10px 0 52px;
+          background: none;
+        }
       `}
         className="nav">
           <ul css={css`
@@ -46,13 +57,32 @@ class Nav extends Component {
             transition: transform 0.7s;
             list-style-type: none;
             position: relative;
+            @media (min-width: 700px) { 
+              transform: rotateY(0deg);
+            }
             a {
               padding: 10px 7px 10px 3px;
               display: block;
               color: #fff;
+              &.active {
+                background: #fff;
+                color: ${blue};
+                @media (min-width: 700px) { 
+                  background: none;
+                }
+              }
+              @media (min-width: 700px) { 
+                text-align: right;
+                padding: 10px;
+                color: #000;
+              }
               &:hover {
                 background: #fff;
                 color: #000;
+                @media (min-width: 700px) { 
+                  color: ${blue};
+                  background: none;
+                }
               }
             }
           `}>

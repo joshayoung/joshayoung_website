@@ -28,6 +28,9 @@ const Inner = ({ children }) => (
       user-select: none;
       /* TODO: Restricts going to full height at wide resolutions. Fix */
       max-height: 62px;
+      @media (min-width: 700px) { 
+        display: none;
+      }
     `}>
       <span css={css`
           display: inline-block;
