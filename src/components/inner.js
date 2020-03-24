@@ -20,6 +20,7 @@ const Inner = ({ children }) => (
     <button className="hamburger" css={css`
       cursor: pointer;
       z-index: 100;
+      outline: none;
       background: transparent;
       display: inline-block;
       padding: 20px;
