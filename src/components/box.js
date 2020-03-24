@@ -39,6 +39,9 @@ const Box = ({ children }) => (
         display: inline-block;
         padding: 5px 10px;
         background: rgba(204, 204, 204, 0.4);
+        background: #b377005c;
+        background: #FFBB33;
+        background: #ffbb33a3;
         border: 1px solid #f4f4f4;
         padding: 4px 10px;
         border-radius: 4px;

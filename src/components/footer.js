@@ -51,6 +51,7 @@ const Footer = () => (
     .social a {
       margin: 0 4px;
       display: inline-block;
+      font-size: 14px;
     }
   `}>
     <div className='inner'>

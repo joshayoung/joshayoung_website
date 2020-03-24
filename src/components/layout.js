@@ -28,6 +28,8 @@ const Layout = ({ children, klass }) => {
           background-color: #f2f2f2;
           background-image: -webkit-linear-gradient(10deg, #efefef 50%, #f4f4f4 50%);
           background-image: -webkit-linear-gradient(10deg, #fff59e 50%, #f4f4f4 50%);
+          background-image: -webkit-linear-gradient(10deg, #FFBB33 50%, #f4f4f4 50%);
+          background-image: -webkit-linear-gradient(9deg, rgba(255, 187, 51, 0.16) 50%, #f4f4f4 50%);
           // background-image: url(${background});
           // background-size: cover;
         }
