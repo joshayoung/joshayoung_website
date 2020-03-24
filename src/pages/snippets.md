@@ -1646,6 +1646,12 @@ The command below could also be executed with 'bs=4m'.
 
 ### <a name='rails'></a>Rails
 
+#### Update Gems:
+
+Updating gems that are in your lock file, but not in your Gemfile can be updated with `bundle update [gem name]`. The gem can be upgraded to the next patch version with `bundle update [gem name] --patch`.
+
+Use `bundle update --help` for more info.
+
 #### Start server on a different port:
 
 ```bash
@@ -3045,6 +3051,20 @@ svg {
 ```
 
 ### <a name='yarn'></a>YARN
+
+#### Update all packages in `packge.json` to the lates version with:
+
+```bash
+  yarn upgrade
+```
+
+Upgrade to specific versions with:
+
+```bash
+  yarn upgrade package@version
+```
+
+Reference: [yarn upgrade](https://classic.yarnpkg.com/en/docs/cli/upgrade)
 
 #### Package Version (exclude dependencies)
 
