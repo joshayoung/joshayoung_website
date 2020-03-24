@@ -9,6 +9,11 @@
     "definition": "you ant gonna need it"
   },
   {
+    "word": "Dead Letter Queue (DLQ)",
+    "definition": "A dead-letter queue (DLQ), sometimes referred to as an undelivered-message queue, is a holding queue for messages that cannot be delivered to their destination queues, for example because the queue does not exist, or because it is full. Dead-letter queues are also used at the sending end of a channel, for data-conversion errors.. Every queue manager in a network typically has a local queue to be used as a dead-letter queue so that messages that cannot be delivered to their correct destination can be stored for later retrieval.",
+    "link": "https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_8.0.0/com.ibm.mq.pro.doc/q002680_.htm"
+  },
+  {
     "word": "Primitive Data Type",
     "definition": "a data type provided by a programming language as a basic building block. Most languages allow more complicated composite types to be recursively constructed starting from basic types.",
     "link": "https://en.wikipedia.org/wiki/Primitive_data_type"
