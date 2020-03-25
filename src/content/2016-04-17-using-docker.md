@@ -3,7 +3,7 @@ title: Using Docker in my Workflow
 description: Using docker to setup isolated development environments.
 date: 2016-04-17
 path: /using-docker
-tags: ["Docker"]
+tags: ["docker"]
 ---
 
 Currently I am doing docker research to see how I can build that into my development workflow. From what I have been able to tell, docker is replacing a lot of the need for applications like Vagrant.
