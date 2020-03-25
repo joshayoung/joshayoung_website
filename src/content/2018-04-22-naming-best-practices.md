@@ -3,7 +3,7 @@ title: Naming Best Practices
 description: Over the years I have decided on a few rule for best variable naming which I have outlined here.
 date: 2018-04-22
 path: /naming-best-practices
-tags: ["Standards", "Programming"]
+tags: ["standards", "programming"]
 ---
 
 Over the years (probably from a few of the books I have read), I have come about a few variable naming rules that I think allow for the best program structure. As with anything there are exceptions to the rules. Actually, some languages even discourage some of the examples that I will list below. However, this serves as a good general guideline.

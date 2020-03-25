@@ -3,7 +3,7 @@ title: One-to-Many Association in Rails
 description: This post will step through the necessary stepst to setup a one-to-many relationship between two tables in rails.
 date: 2018-05-21
 path: /one-to-many-associations
-tags: ["Programming", "Rails", "Ruby", "MVC"]
+tags: ["programming", "rails", "ruby", "mvc"]
 ---
 
 Below I have outlined the necessary steps to get a one-to-many association going in your rails project. For each step, I tried to outline the setup steps as well as the SQL queries that are executed behind the schemes for each of these commands.
