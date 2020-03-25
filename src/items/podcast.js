@@ -1,14 +1,17 @@
 import React from "react";
 
 export default ({ podcast }) => {
+  const data = function(podcast) {
+    if (podcast.display === true) {
+      return (
+        <li><a href={podcast.url}>{podcast.title}</a></li>
+      )
+    }
+  };
+
   return (
-    <div key={podcast.id}>
-      {
-        podcast.display === true ?
-          <li><a href={podcast.url}>{podcast.title}</a></li>
-          :
-          ''
-      }
-    </div>
+    <ul>
+      {data(podcast)}
+    </ul>
   );
 };
