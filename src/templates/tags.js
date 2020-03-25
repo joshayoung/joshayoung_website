@@ -19,20 +19,14 @@ const Tags = ({ pageContext, data }) => {
         {edges.map(({ node }) => {
           const { path } = node.frontmatter
           const { title } = node.frontmatter
-          const { date } = node.frontmatter
-          console.log(date)
           return (
-            <li key={date}>
+            <li key={title}>
               <Link to={path}>{title}</Link>
             </li>
           )
         })}
+        <li><Link to="/tags">See All tags</Link></li>
       </ul>
-      {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
-      <Link to="/tags">All tags</Link>
     </Layout>
   )
 }

@@ -8,7 +8,7 @@ export default () => {
   return (
     <ul>
       {podcasts.map(podcast => (
-        <Podcast podcast={podcast} />
+        <Podcast key={podcast.id} podcast={podcast} />
       ))}
     </ul>
   );
