@@ -3,10 +3,10 @@ import CodeSchoolOutput from "../output/code-school-output";
 
 # Classes I've Taken
 
-In an effort to continually learn new technologies and stay abreast of existing technologies, I have found it helpful to take advantage of opportunities for continuing education.Below I have listed courses(both classroom and online) that I have completed over the years.
+In an effort to continually learn new technologies and stay abreast of existing technologies, I have found it helpful to take advantage of opportunities for continuing education. Below I have listed courses(both classroom and online) that I have completed over the years.
 
 - [Classes I've Taken](#classes-ive-taken)
-- [Upcase by Thoughtbox](#upcase-by-thoughtbox)
+- [Upcase by Thoughtbot](#upcase-by-thoughtbot)
 - [Pragmatic Studio Classes](#pragmatic-studio-classes)
 - [Transcend Leadership Essentials](#transcend-leadership-essentials)
 - [Frontend Masters Classes](#frontend-masters-classes)
@@ -19,13 +19,13 @@ In an effort to continually learn new technologies and stay abreast of existing 
 - [FedVTE Training](#fedvte-training)
 - [Penetration Testing with Kali Linux](#penetration-testing-with-kali-linux)
 - [CompTIA Security+ Certification Training](#comptia-security-certification-training)
-- [CEH - Ethical Hacking and Countermeasures](#ceh---ethical-hacking-and-countermeasures)
+- [CEH - Ethical Hacking and Countermeasures](#ceh-ethical-hacking-and-countermeasures)
 - [Unified Threat Management Introduction Course](#unified-threat-management-introduction-course)
-- [Linux Administration 310 - Service Configuration, Management and LAMP Servers](#linux-administration-310---service-configuration-management-and-lamp-servers)
-- [Linux Administration 210 - System and Network Management](#linux-administration-210---system-and-network-management)
-- [Linux Administration 110 - System Installation and Configuration](#linux-administration-110---system-installation-and-configuration)
+- [Linux Administration 310 - Service Configuration, Management and LAMP Servers](#linux-administration-310)
+- [Linux Administration 210 - System and Network Management](#linux-administration-210)
+- [Linux Administration 110 - System Installation and Configuration](#linux-administration-110)
 
-### <a name='upcase'></a>Upcase by Thoughtbox
+### <a name='upcase-by-thoughtbot'></a>Upcase by Thoughtbot
 
 Upcase offers many excellent classes centered around Ruby, Rails, Testing, Vim, and Tmux.
 
@@ -42,7 +42,7 @@ Upcase offers many excellent classes centered around Ruby, Rails, Testing, Vim, 
 
 ---
 
-### <a name='pragmaticstudio'></a>Pragmatic Studio Classes
+### <a name='pragmatic-studio-classes'></a>Pragmatic Studio Classes
 
 The Pragmatic Studio offers some excellent classes. The classes are very in depth and thorough.
 
@@ -54,7 +54,7 @@ The Pragmatic Studio offers some excellent classes. The classes are very in dept
 
 ---
 
-### <a name='leadershipessentials'></a>Transcend Leadership Essentials
+### <a name='transcend-leadership-essentials'></a>Transcend Leadership Essentials
 
 This class covered the elements of the DISC personality profile in depth. With the new knowledge that DISC
 presented, this class elaborated on how to best work with others in the different DISC quadrants.
@@ -64,7 +64,7 @@ professional and respectful manner.
 
 ---
 
-### <a name='frontend'></a>Frontend Masters Classes
+### <a name='frontend-masters-classes'></a>Frontend Masters Classes
 
 The Frontend Master website offers great courses covering front-end topics such as accessibility, performance, JavasScript, etc.
 
@@ -92,7 +92,7 @@ The Frontend Master website offers great courses covering front-end topics such 
 
 ---
 
-### <a name='laracastsclasses'></a>Laracast Courses
+### <a name='laracast-courses'></a>Laracast Courses
 
 Jeffery Way teaches some great courses at this site [laracasts.com](http://laracasts.com'>laracasts.com). I have taken two of his courses (listed below).
 
@@ -104,7 +104,7 @@ Jeffery Way teaches some great courses at this site [laracasts.com](http://larac
 
 ---
 
-### <a name='wesbos'></a> Wes Bos Classes
+### <a name='wes-bos-classes'></a> Wes Bos Classes
 
 Wes Bos delivers some excellent content at his [website](http://wesbos.com/courses). His classes have a web front-end focus and include topics such as: React, Redux, JavaScript, and CSS.
 
@@ -116,7 +116,7 @@ Wes Bos delivers some excellent content at his [website](http://wesbos.com/cours
 
 ---
 
-### <a name='udemy'></a>Udemy Classes
+### <a name='udemy-classes'></a>Udemy Classes
 
 You have to be selective with some of the classes offered on Udemy; however, sometimes the classes offered are excellent at a reasonable price.
 
@@ -124,7 +124,7 @@ You have to be selective with some of the classes offered on Udemy; however, som
 
 ---
 
-### <a name='treehouse'></a>Tree House Classes
+### <a name='tree-house-classes'></a>Tree House Classes
 
 I took all of these classes as a part of a short Tree House membership. They were largely review for me, but some of the classes covered technologies that I had not had time to learn yet.
 
@@ -132,7 +132,7 @@ I took all of these classes as a part of a short Tree House membership. They wer
 
 ---
 
-### <a name='pluralsight'></a>PluralSight Courses
+### <a name='pluralsight-courses'></a>PluralSight Courses
 
 PluralSight also offers some good content. It is not as focused as other platforms such as Code School though. I have taken a few courses from PluralSight which I have listed below.
 
@@ -141,7 +141,7 @@ PluralSight also offers some good content. It is not as focused as other platfor
 
 ---
 
-### <a name='codeschool'></a>Code School Classes
+### <a name='code-school-classes'></a>Code School Classes
 
 The Code School site offers excellent classes. I took some of these as review and many as a way to level up my knowledge.
 
@@ -149,7 +149,7 @@ The Code School site offers excellent classes. I took some of these as review an
 
 ---
 
-### <a name='fedvte'></a>FedVTE Training
+### <a name='fedvte-training'></a>FedVTE Training
 
 These are free courses offered to government employees by the Department of Homeland Security. I completed the following courses through FedVTE.
 
@@ -159,21 +159,21 @@ These are free courses offered to government employees by the Department of Home
 
 ---
 
-### <a name='kali'></a>Penetration Testing with Kali Linux
+### <a name='penetration-testing-with-kali-linux'></a>Penetration Testing with Kali Linux
 
 I took this class in preparation for Offensive Security's certification exam ([OSCP](https://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional)). Unfortunately, I did not pass my first exam attempt and have not had time to re-test. After speaking with a few individuals who passed the exam, it seems that no one passes it on their first attempt anyway. For me it was a great way to learn more about security and many different security techniques that relate to web development. For these reasons, the class time alone was extremely beneficial!
 [Penetration Testing with Kali Linux](https://www.offensive-security.com/information-security-training/penetration-testing-training-kali-linux)
 
 ---
 
-### <a name='securityplus'></a>CompTIA Security+ Certification Training
+### <a name='comptia-security-certification-training'></a>CompTIA Security+ Certification Training
 
 In preparation for the Security+ certification, I took this class covering the fundamentals on the CompTIA Security+ certification exam. This class was offered as a night course by the University of Alabama in Huntsville (UAH).
 [University of Alabama in Huntsville](http://www.uah.edu)
 
 ---
 
-### <a name='ceh'></a>CEH - Ethical Hacking and Countermeasures
+### <a name='ceh-ethical-hacking-and-countermeasures'></a>CEH - Ethical Hacking and Countermeasures
 
 In preparation for the CEH certification, I took this class covering the fundamentals of ethical hacking. The training was offered by Dynetics in Huntsville, AL. I do not have a direct link to a description of the training; however, I have included a link to Dynetics below along with more information about the CEH certification.
 [Dynetics](http://www.dynetics.com/services/space/training)
@@ -181,24 +181,24 @@ In preparation for the CEH certification, I took this class covering the fundame
 
 ---
 
-### <a name='unified'></a>Unified Threat Management Introduction Course
+### <a name='unified-threat-management-introduction-course'></a>Unified Threat Management Introduction Course
 
 This class covered setting up a secure pfSense firewall as well as firewall best practices. This class was delivered by [SudoSecure](http://www.sudosecure.com).
 
 ---
 
-### <a name='linuxsteelpivot3'></a>Linux Administration 310 - Service Configuration, Management and LAMP Servers
+### <a name='linux-administration-310'></a>Linux Administration 310 - Service Configuration, Management and LAMP Servers
 
 This was the third class in the series, and it taught more advanced topics such as the following: sed, awk, syslog, postfix, open source licensing, LAMP servers, etc.
 
 ---
 
-### <a name='linuxsteelpivot2'></a>Linux Administration 210 - System and Network Management
+### <a name='linux-administration-210'></a>Linux Administration 210 - System and Network Management
 
 This class was a follow-up to the 110 class and went into further detail. It coved topics such as: Linux networking, DNS, RAID, LVM, authentication, scripting, etc.
 
 ---
 
-### <a name='linuxsteelpivot1'></a>Linux Administration 110 - System Installation and Configuration
+### <a name='linux-administration-110'></a>Linux Administration 110 - System Installation and Configuration
 
 Even though I had taken Linux classes in school, my company offered to send me to this class prior to taking on more Linux system administration duties at work. This class was mostly review for me since I had previous Linux experience and training, but it served as a good review and preparation for the classes that followed. This class went over basic Linux information such as the file system, input, output, process management, etc.
