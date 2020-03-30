@@ -1,7 +1,7 @@
-import React from "react"
-import Box from "../components/box"
-import { Link } from "gatsby"
-import { graphql, useStaticQuery } from "gatsby"
+import React from "react";
+import Box from "../components/box";
+import { Link } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 
 function test() {
   const data = useStaticQuery(graphql`
@@ -17,23 +17,38 @@ function test() {
         }
       }
     }
-  `)
+  `);
 
-  let tags = []
+  let tags = [];
   data.allMarkdownRemark.edges.map(dta => {
-    let tg = dta.node.frontmatter.tags
+    let tg = dta.node.frontmatter.tags;
     tg.forEach(element => {
-      if (tags.includes(element.toLowerCase())) {
-        return
+      element = element.toLowerCase();
+
+      if (tags.includes(element)) {
+        return;
       }
-      tags.push(element.toLowerCase())
-    })
-  })
-  return tags
+
+      tags.push(element);
+    });
+  });
+  return tags;
+}
+
+function formatTag(tag) {
+  if (tag === "vscode") return "VSCode";
+  if (tag === "javascript") return "JavaScript";
+  if (tag === "php") return "PHP";
+  if (tag === "github") return "GitHub";
+  if (tag === "postgresql") return "PostgreSQL";
+  if (tag === "csp") return "CSP";
+  if (tag === "mvc") return "MVC";
+
+  return tag.charAt(0).toUpperCase() + tag.slice(1);
 }
 
 export default () => {
-  let dta = test()
+  let dta = test();
   return (
     <Box>
       <header>
@@ -42,12 +57,10 @@ export default () => {
       <ul aria-labelledby="tags">
         {dta.map(tag_link => (
           <li key={tag_link}>
-            <a href={`/tags/${tag_link}`}>
-              {tag_link.charAt(0).toUpperCase() + tag_link.slice(1)}
-            </a>
+            <a href={`/tags/${tag_link}`}>{formatTag(tag_link)}</a>
           </li>
         ))}
       </ul>
     </Box>
-  )
-}
+  );
+};
