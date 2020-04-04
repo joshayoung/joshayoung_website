@@ -54,7 +54,9 @@ Below, I have listed some common code snippets that I commonly go back to refere
 ### <a id="text"></a>Text
 
 <!-- Adopted from: https://www.lifewire.com/typing-quotes-apostrophes-and-primes-1074104 -->
+
 #### Keyboard Shortcuts for Quote Marks
+
 <table>
   <thead>
     <tr>
@@ -1391,10 +1393,10 @@ If you want to switch user 'joe' to 'sally', below are the steps:
 The command below could also be executed with 'bs=4M'.
 
 ```bash
-  fdisk -l
-  umount /dev/sdb
-  dd if=/path/to/iso/or/img of=/dev/sdb bs=1M status=progress && sync
-  eject /dev/sdb
+  sudo fdisk -l
+  sudo umount /dev/sdb
+  sudo dd if=/path/to/iso/or/img of=/dev/sdb bs=1M status=progress && sync
+  sudo eject /dev/sdb
 ```
 
 #### Find Linux Version
