@@ -291,6 +291,16 @@
         "display": true
       },
       {
+        "title": "Test Driven Development",
+        "url": "https://github.com/testdouble/contributing-tests/wiki/Test-Driven-Development",
+        "display": true
+      },
+      {
+        "title": "High-Low Testing",
+        "url": "http://mikepackdev.com/blog_posts/39-high-low-testing",
+        "display": true
+      },
+      {
         "title": "Testing JavaScript with Jest",
         "url": "https://flaviocopes.com/jest/#create-the-first-jest-test",
         "display": true
@@ -1149,6 +1159,16 @@
       {
         "title": "Securing Public Web Servers",
         "url": "http://csrc.nist.gov/publications/nistpubs/800-44-ver2/SP800-44v2.pdf",
+        "display": true
+      },
+      {
+        "title": "Security Headers",
+        "url": "https://securityheaders.com",
+        "display": true
+      },
+      {
+        "title": "Mozilla Observatory",
+        "url": "https://observatory.mozilla.org",
         "display": true
       },
       {
