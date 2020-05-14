@@ -3000,6 +3000,10 @@ svg {
   nmap -sP 192.168.1.0/24
 ```
 
+#### Bypass a Self-Signed SSL Warning in Chrome
+
+Once you get the warning in the webpage, to continue to the site anyway, type: `thisisunsafe`.
+
 #### Bash Ping Sweep
 
 #### Usage: **./sweep.sh 192.168.1**
