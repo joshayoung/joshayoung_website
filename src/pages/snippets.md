@@ -154,6 +154,14 @@ Below, I have listed some common code snippets that I commonly go back to refere
 curl --data "information=to&send=to the server" http://example.com
 ```
 
+### <a id="bundler"></a>Bundler
+
+#### Install a different version of bundler
+
+```bash
+  gem install bundler -v 1.0.10
+```
+
 ### <a id="css"></a>CSS
 
 #### Switch to box sizing
