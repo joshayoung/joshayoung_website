@@ -1,1 +1,0 @@
-{"componentChunkName":"component---src-templates-post-js","path":"/my-first-post","webpackCompilationHash":"","result":{"data":{"markdownRemark":{"html":"<p>This is my first Gatsby post written in Markdown!</p>","frontmatter":{"date":"July 10, 2019","path":"/my-first-post","title":"My First Post"}}},"pageContext":{"isCreatedByStatefulCreatePages":false}}}
