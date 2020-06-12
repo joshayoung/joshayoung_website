@@ -168,6 +168,11 @@
         "display": true
       },
       {
+        "title": "From Bash to Python",
+        "url": "https://bruxy.regnet.cz/programming/bash-python/workshop_bash-python-en.html",
+        "display": true
+      },
+      {
         "title": "Rubular",
         "url": "https://rubular.com",
         "display": true
@@ -574,6 +579,11 @@
         "display": true
       },
       {
+        "title": "Rails ActiveRecord Class Methods",
+        "url": "https://api.rubyonrails.org/classes/ActiveRecord/Persistence/ClassMethods.html",
+        "display": true
+      },
+      {
         "title": "Enhanced Ruby on Rails Architecture",
         "url": "https://github.com/CodeRocketCo/enhanced-rails-architecture",
         "display": true
@@ -744,12 +754,33 @@
     ]
   },
   {
+    "title": "Docker",
+    "class": "docker",
+    "data": [
+      {
+        "title": "Docker Images",
+        "url": "https://www.linuxserver.io",
+        "display": true
+      },
+      {
+        "title": "Docker Hub",
+        "url": "https://hub.docker.com/search?q=&type=image",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "SQL",
     "class": "sql_resources",
     "data": [
       {
         "title": "SQL Connection Strings",
         "url": "https://www.connectionstrings.com/sql-server",
+        "display": true
+      },
+      {
+        "title": "Postgresql User Account",
+        "url": "https://www.cyberciti.biz/faq/howto-add-postgresql-user-account",
         "display": true
       },
       {

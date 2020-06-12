@@ -2142,6 +2142,13 @@ In the ruby console, **student.devices** would return all of the devices that st
 
 ### <a name='ruby'></a>Ruby
 
+#### Write to file from command line:
+```ruby
+  f = File.new('log.txt', 'w')
+  f << log_this_variables_value
+  f.close
+```
+
 #### Output just a class' own methods
 
 ```ruby

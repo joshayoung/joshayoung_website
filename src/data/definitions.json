@@ -10,6 +10,11 @@
     "link": "https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_8.0.0/com.ibm.mq.pro.doc/q002680_.htm"
   },
   {
+    "word": "Transclusion",
+    "definition": "Transclusion means the inclusion of the content of one document within another document by reference.",
+    "link": "https://en.wikipedia.org/wiki/Wikipedia:Transclusion"
+  },
+  {
     "word": "Primitive Data Type",
     "definition": "a data type provided by a programming language as a basic building block. Most languages allow more complicated composite types to be recursively constructed starting from basic types.",
     "link": "https://en.wikipedia.org/wiki/Primitive_data_type"
