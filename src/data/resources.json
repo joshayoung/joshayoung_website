@@ -805,6 +805,11 @@
         "display": true
       },
       {
+        "title": "Tools for Better Thinking",
+        "url": "https://untools.co",
+        "display": true
+      },
+      {
         "title": "Essential RubyOnRails patterns",
         "url": "https://medium.com/selleo/essential-rubyonrails-patterns-part-1-service-objects-1af9f9573ca1",
         "display": true
