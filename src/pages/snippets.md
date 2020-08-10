@@ -1656,6 +1656,11 @@ The command below could also be executed with 'bs=4m'.
 
 ### <a name='rails'></a>Rails
 
+#### Connect to Already Running Rails Instance:
+```bash
+  rails server -P /app/tmp/pids/server.pid
+```
+
 #### Update Gems:
 
 Updating gems that are in your lock file, but not in your Gemfile can be updated with `bundle update [gem name]`. The gem can be upgraded to the next patch version with `bundle update [gem name] --patch`.
