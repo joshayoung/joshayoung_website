@@ -490,6 +490,17 @@
     ]
   },
   {
+    "title": "Product",
+    "class": "product",
+    "data": [
+      {
+        "title": "Good Product Team / Bad Product Team",
+        "url": "https://svpg.com/good-product-team-bad-product-team/",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Slack",
     "class": "slack",
     "data": [
@@ -581,6 +592,11 @@
       {
         "title": "Active Model Validations",
         "url": "https://api.rubyonrails.org/classes/ActiveModel/Validations.html",
+        "display": true
+      },
+      {
+        "title": "Finder Methods",
+        "url": "https://api.rubyonrails.org/classes/ActiveRecord/FinderMethods.html",
         "display": true
       },
       {
