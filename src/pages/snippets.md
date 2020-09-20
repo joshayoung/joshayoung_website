@@ -162,6 +162,11 @@ curl --data "information=to&send=to the server" http://example.com
   gem install bundler -v 1.0.10
 ```
 
+#### Run `bundle` with a different version:
+```bash
+  bundle _2.0.15_ install
+```
+
 ### <a id="css"></a>CSS
 
 #### Switch to box sizing
