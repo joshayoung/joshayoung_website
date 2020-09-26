@@ -10,6 +10,11 @@
     "link": "https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_8.0.0/com.ibm.mq.pro.doc/q002680_.htm"
   },
   {
+    "word": "Aggregate Function",
+    "definition": "In database management, an aggregate function or aggregation function is a function where the values of multiple rows are grouped together to form a single summary value.",
+    "link": "https://en.wikipedia.org/wiki/Aggregate_function"
+  },
+  {
     "word": "Transclusion",
     "definition": "Transclusion means the inclusion of the content of one document within another document by reference.",
     "link": "https://en.wikipedia.org/wiki/Wikipedia:Transclusion"
