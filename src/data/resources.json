@@ -512,6 +512,17 @@
     ]
   },
   {
+    "title": "FreeNAS",
+    "class": "freenas",
+    "data": [
+      {
+        "title": "FreeNAS Essentials: How to set up SMART Tests and Scrubs",
+        "url": "https://www.ceos3c.com/freenas/freenas-essentials-setting-up-smart-tests-and-scrubs/",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Slack",
     "class": "slack",
     "data": [
