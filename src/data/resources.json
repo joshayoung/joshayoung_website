@@ -501,6 +501,17 @@
     ]
   },
   {
+    "title": "Xamarin",
+    "class": "xamarin",
+    "data": [
+      {
+        "title": "How To Work With CollectionView in Xamarin Forms",
+        "url": "https://medium.com/a-developer-in-making/how-to-work-with-collectionview-in-xamarin-forms-5dc65c50b419",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Slack",
     "class": "slack",
     "data": [
