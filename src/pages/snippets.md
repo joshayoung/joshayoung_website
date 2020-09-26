@@ -1057,6 +1057,17 @@ typeof ""; // 'string'
 
 ### <a name='freebsd'></a>FreeBSD
 
+#### Troubleshooting ZPool Drive Errors
+```bash
+  zpool status
+  glabel status
+  camcontrol devlist
+  geom disk list
+
+  # Grep for info on the drive in question:
+  dmesg | grep ^da1 | less
+```
+
 #### Edit Hostname
 
 ```bash
