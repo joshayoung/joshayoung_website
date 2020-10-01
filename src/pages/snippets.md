@@ -1066,6 +1066,9 @@ typeof ""; // 'string'
 
   # Grep for info on the drive in question:
   dmesg | grep ^da1 | less
+
+  # Find the serial on the drive in question:
+  camcontrol identify da1 | grep serial
 ```
 
 #### Edit Hostname
