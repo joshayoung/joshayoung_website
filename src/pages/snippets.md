@@ -3031,6 +3031,11 @@ svg {
   scp username@host:file.txt /to/my/local/directory
 ```
 
+#### Backup Folder Remote to Local
+```bash
+  scp -r user@host:/path/to/folder/* /to/my/local/directory/
+```
+
 ### <a name='security'></a>Security
 
 #### Nmap Ping Scan (detect hosts)
