@@ -519,6 +519,16 @@
         "title": "FreeNAS Essentials: How to set up SMART Tests and Scrubs",
         "url": "https://www.ceos3c.com/freenas/freenas-essentials-setting-up-smart-tests-and-scrubs/",
         "display": true
+      },
+      {
+        "title": "How to Replace Failed HDDs in FreeNAS 9.3",
+        "url": "https://www.youtube.com/watch?v=c8bvtj-LQ_A",
+        "display": true
+      },
+      {
+        "title": "How to Replace a Bad Hard Drive in a FreeNAS 9 Encrypted Raid Array",
+        "url": "https://www.youtube.com/watch?v=ovQ-t8ffj-0",
+        "display": true
       }
     ]
   },
@@ -977,6 +987,11 @@
       {
         "title": "SCP Reference",
         "url": "http://www.hypexr.org/linux_scp_help.php",
+        "display": true
+      },
+      {
+        "title": "Linux Delta - How-To Guides",
+        "url": "https://wiki.linuxdelta.com/mediawiki/index.php/Main_Page",
         "display": true
       }
     ]
