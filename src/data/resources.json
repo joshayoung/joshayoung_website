@@ -468,6 +468,11 @@
         "display": true
       },
       {
+        "title": "Cheat Sheet Series Project",
+        "url": "https://cheatsheetseries.owasp.org",
+        "display": true
+      },
+      {
         "title": "Vim Cheat Sheet",
         "url": "https://vim.rtorr.com/",
         "display": true
@@ -581,6 +586,11 @@
       {
         "title": "Epoch Conversion",
         "url": "https://www.epochconverter.com",
+        "display": true
+      },
+      {
+        "title": "Durations",
+        "url": "https://en.wikipedia.org/wiki/ISO_8601#Durations",
         "display": true
       },
       {
@@ -1040,6 +1050,17 @@
     ]
   },
   {
+    "title": "Leadership",
+    "class": "leadership",
+    "data": [
+      {
+        "title": "How to Exhibit Leadership as an Individual Contributor",
+        "url": "https://www.tombartel.me/blog/exhibit-leadership-as-individual-contributor",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Miscellaneous",
     "class": "miscellaneous_resources",
     "data": [
@@ -1258,6 +1279,11 @@
       {
         "title": "Content Security Policy",
         "url": "https://developers.google.com/web/fundamentals/security/csp",
+        "display": true
+      },
+      {
+        "title": "OWASP WebGoat",
+        "url": "https://owasp.org/www-project-webgoat",
         "display": true
       },
       {
