@@ -4,7 +4,7 @@ import Cert from "../components/cert";
 # My Certifications
 
 Below I have included a list of certifications that I have attained over the past few years.
-Many of these certs required passing more than one test. I have included a short summary of each certification along with a link to a better explanation of each one.
+Many of these certs required passing more than one test. I have included a short summary of each certification along with a link to a better explanation of each one. See all of my current CompTIA certs listed <a href='https://www.youracclaim.com/users/joshua-young.5eb07482/badges'>here</a> as well.
 
 * [CompTIA Security+](#comptia-security)
 * [Certified Ethical Hacker (C|EH)](#certified-ethical-hacker-ceh)
