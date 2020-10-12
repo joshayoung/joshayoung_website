@@ -9,8 +9,18 @@
         "display": true
       },
       {
+        "title": "Flex Cheat Sheet",
+        "url": "https://yoksel.github.io/flex-cheatsheet/",
+        "display": true
+      },
+      {
         "title": "Grid by Example",
         "url": "https://gridbyexample.com",
+        "display": true
+      },
+      {
+        "title": "Suit CSS",
+        "url": "https://suitcss.github.io/",
         "display": true
       },
       {
@@ -280,6 +290,11 @@
         "display": true
       },
       {
+        "title": "Regexr",
+        "url": "https://regexr.com/",
+        "display": true
+      },
+      {
         "title": "Robots.txt Checker",
         "url": "http://tool.motoricerca.info/robots-checker.phtml",
         "display": true
@@ -463,6 +478,16 @@
         "display": true
       },
       {
+        "title": "Favicon Cheat Sheet",
+        "url": "https://github.com/audreyfeldroy/favicon-cheat-sheet",
+        "display": true
+      },
+      {
+        "title": "Pry Cheat Sheet",
+        "url": "https://gist.github.com/lfender6445/9919357",
+        "display": true
+      },
+      {
         "title": "Stimulus Cheat Sheet",
         "url": "https://gist.github.com/mrmartineau/a4b7dfc22dc8312f521b42bb3c9a7c1e",
         "display": true
@@ -608,6 +633,11 @@
         "title": "Unsplash",
         "url": "https://unsplash.com/",
         "display": true
+      },
+      {
+        "title": "PlaceCorgi",
+        "url": "http://placecorgi.com/",
+        "display": true
       }
     ]
   },
@@ -618,6 +648,11 @@
       {
         "title": "Tiny PNG",
         "url": "https://tinypng.com",
+        "display": true
+      },
+      {
+        "title": "SVGOMG",
+        "url": "https://jakearchibald.github.io/svgomg/",
         "display": true
       }
     ]
@@ -632,8 +667,43 @@
         "display": true
       },
       {
+        "title": "Ruby For Beginners",
+        "url": "http://ruby-for-beginners.rubymonstas.org/index.html",
+        "display": true
+      },
+      {
+        "title": "Back to Basics: HTTP Requests in Rails Apps",
+        "url": "https://thoughtbot.com/blog/back-to-basics-http-requests",
+        "display": true
+      },
+      {
+        "title": "Sandi Metz' Rules For Developers",
+        "url": "https://thoughtbot.com/blog/sandi-metz-rules-for-developers",
+        "display": true
+      },
+      {
+        "title": "Let's Not",
+        "url": "https://thoughtbot.com/blog/lets-not",
+        "display": true
+      },
+      {
+        "title": "RailsDiff",
+        "url": "http://railsdiff.org/",
+        "display": true
+      },
+      {
         "title": "Active Model Validations",
+        "url": "http://blog.plataformatec.com.br/2010/06/simpleform-forms-made-easy/",
+        "display": true
+      },
+      {
+        "title": "SimpleForm: forms made easy",
         "url": "https://api.rubyonrails.org/classes/ActiveModel/Validations.html",
+        "display": true
+      },
+      {
+        "title": "List of Rails Status Code Symbols",
+        "url": "http://billpatrianakos.me/blog/2013/10/13/list-of-rails-status-code-symbols/",
         "display": true
       },
       {
@@ -771,6 +841,11 @@
       {
         "title": "Exercism",
         "url": "https://exercism.io",
+        "display": true
+      },
+      {
+        "title": "The 30-Day Code Quality Challenge",
+        "url": "https://www.codequalitychallenge.com",
         "display": true
       },
       {
@@ -1070,8 +1145,33 @@
         "display": true
       },
       {
-        "title": "The Product-Minded Software Engineer",
-        "url": "https://blog.pragmaticengineer.com/the-product-minded-engineer",
+        "title": "Kent C. Dodds - Links",
+        "url": "https://kentcdodds.com/links/",
+        "display": true
+      },
+      {
+        "title": "Floating Point Accuracy problems",
+        "url": "https://en.wikipedia.org/wiki/Floating-point_arithmetic#Accuracy_problems",
+        "display": true
+      },
+      {
+        "title": "Recovering from CTRL+S in Putty",
+        "url": "https://raamdev.com/2007/recovering-from-ctrls-in-putty/",
+        "display": true
+      },
+      {
+        "title": "GitHut",
+        "url": "https://githut.info/",
+        "display": true
+      },
+      {
+        "title": "Meta Tags",
+        "url": "https://metatags.io/",
+        "display": true
+      },
+      {
+        "title": "Falsehoods Programmers Believe About Names",
+        "url": "https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/",
         "display": true
       },
       {
@@ -1127,6 +1227,48 @@
         "url": "https://frontendfront.com",
         "display": true
       }
+    ]
+  },
+  {
+    "title": "Software",
+    "class": "software",
+    "data": [
+      {
+        "title": "Web Sequence Diagrams",
+        "url": "https://www.websequencediagrams.com/",
+        "display": true
+      },
+      {
+        "title": "The Product-Minded Software Engineer",
+        "url": "https://blog.pragmaticengineer.com/the-product-minded-engineer",
+        "display": true
+      },
+      {
+        "title": "Clean Code Ruby",
+        "url": "https://github.com/uohzxela/clean-code-ruby",
+        "display": true
+      },
+    ]
+  },
+  {
+    "title": "C# / Xamarin",
+    "class": "c_sharp_xamarin",
+    "data": [
+      {
+        "title": "Xamarin documentation",
+        "url": "https://docs.microsoft.com/en-us/xamarin/#pivot=get-started",
+        "display": true
+      },
+      {
+        "title": "C# Fundamentals for Absolute Beginners",
+        "url": "https://channel9.msdn.com/Series/CSharp-Fundamentals-for-Absolute-Beginners?l=XIMI21QIC_2406218949",
+        "display": true
+      },
+      {
+        "title": "Microsoft Classes",
+        "url": "https://docs.microsoft.com/en-us/learn/browse/?resource_type=module&products=xamarin",
+        "display": true
+      },
     ]
   },
   {
