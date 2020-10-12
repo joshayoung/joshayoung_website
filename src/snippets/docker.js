@@ -24,6 +24,10 @@ export default () => (
     <dd>
       <code>docker stop [container name]</code>
     </dd>
+    <dt>Stop Running Containers</dt>
+    <dd>
+      <code>docker container stop $(docker container list -q)</code>
+    </dd>
     <dt>Start a container</dt>
     <dd>
       <code>docker start [container name]</code>
