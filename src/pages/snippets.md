@@ -1320,6 +1320,19 @@ The BSD based init system is configured under /etc/rc.conf. To start sshd, we wo
   systemctl [status, enable, disable, is-active, is-enabled start, restart, reload, stop] application.service
 ```
 
+#### Scan a Folder for Viruses (ubuntu)
+```bash
+  sudo apt-get update
+  sudo apt-get install clamav clamav-daemon
+
+  # If you get an error here, it might be because freshclam is already running in the background:
+  # This command will update the virus signatures:
+  sudo freshclam
+
+  # Scan a directory:
+  clamscan -r —bell -i /path/to/directory
+```
+
 #### Change Username
 
 If you want to switch user 'joe' to 'sally', below are the steps:
