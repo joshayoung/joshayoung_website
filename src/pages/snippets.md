@@ -2899,16 +2899,16 @@ These are both the same:
   \c [database]
 ```
 
-#### Describe Table
-
-```bash
-  \dt+
-```
-
 #### Connect to DB
 
 ```bash
   sqlite3 /path/to/database_file.db
+```
+
+#### Show databases
+
+```bash
+  .database
 ```
 
 #### Show tables
