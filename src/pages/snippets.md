@@ -2935,6 +2935,11 @@ These are both the same:
   select * from table_name
 ```
 
+#### Exit SqLite Command Prompt:
+```bash
+  .quit
+```
+
 ### <a name='security'></a>Security
 
 #### Ping Sweep
