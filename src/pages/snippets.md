@@ -1397,6 +1397,12 @@ If you want to switch user 'joe' to 'sally', below are the steps:
 ```bash
   # Test for bad block:
   badblocks -vs /dev/sdb > badblocks_results.txt
+
+  # Command with different options:
+  badblocks -sw -t random /dev/sdb > badblocks_results.txt
+
+  # If you get an error like: "Value too large for defined data type invalid end block ... must be 32-bit value"
+  badblocks -sw -t random -b 4096 /dev/sdb > badblocks_results.txt
 ```
 
 #### Correct Bad Blocks
