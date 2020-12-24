@@ -14,6 +14,7 @@ In an effort to continually learn new technologies and stay abreast of existing 
 - [ Wes Bos Classes](#wes-bos-classes)
 - [Udemy Classes](#udemy-classes)
 - [Tree House Classes](#tree-house-classes)
+- [Refactoring Rails](#refactoring-rails)
 - [PluralSight Courses](#pluralsight-courses)
 - [Code School Classes](#code-school-classes)
 - [FedVTE Training](#fedvte-training)
@@ -24,6 +25,12 @@ In an effort to continually learn new technologies and stay abreast of existing 
 - [Linux Administration 310 - Service Configuration, Management and LAMP Servers](#linux-administration-310)
 - [Linux Administration 210 - System and Network Management](#linux-administration-210)
 - [Linux Administration 110 - System Installation and Configuration](#linux-administration-110)
+
+### <a name='refactoring-rails'></a>Refactoring Rails
+
+This class is taught by Ben Orenstein. It teaches you technics for keeping Rails organized and improving your code.
+
+- [Refactoring Rails](https://www.refactoringrails.io/)
 
 ### <a name='upcase-by-thoughtbot'></a>Upcase by Thoughtbot
 
