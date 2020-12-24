@@ -10,6 +10,16 @@
     "link": "https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_8.0.0/com.ibm.mq.pro.doc/q002680_.htm"
   },
   {
+    "word": "Arity",
+    "definition": "the number of arguments or operands taken by a function or operation in logic, mathematics, and computer science.",
+    "link": "https://en.wikipedia.org/wiki/Arity"
+  },
+  {
+    "word": "Copacetic",
+    "definition": "very satisfactory",
+    "link": "https://www.merriam-webster.com/dictionary/copacetic"
+  },
+  {
     "word": "Aggregate Function",
     "definition": "In database management, an aggregate function or aggregation function is a function where the values of multiple rows are grouped together to form a single summary value.",
     "link": "https://en.wikipedia.org/wiki/Aggregate_function"
