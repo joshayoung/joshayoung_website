@@ -178,6 +178,16 @@
         "display": true
       },
       {
+        "title": "TIOBE Index",
+        "url": "https://www.tiobe.com/tiobe-index",
+        "display": true
+      },
+      {
+        "title": "Typing the Untyped: Soundness in Gradual Type Systems",
+        "url": "https://www.thestrangeloop.com/2019/typing-the-untyped-soundness-in-gradual-type-systems.html",
+        "display": true
+      },
+      {
         "title": "From Bash to Python",
         "url": "https://bruxy.regnet.cz/programming/bash-python/workshop_bash-python-en.html",
         "display": true
@@ -664,6 +674,16 @@
       {
         "title": "Binding.pry",
         "url": "https://docs.gitlab.com/ee/development/pry_debugging.html",
+        "display": true
+      },
+      {
+        "title": "Heuristics for Object Oriented Design in Ruby",
+        "url": "https://ogdenstudios.xyz/blog/heuristics-for-object-oriented-design-in-ruby",
+        "display": true
+      },
+      {
+        "title": "Documentation for Ruby",
+        "url": "https://docs.ruby-lang.org/en",
         "display": true
       },
       {
