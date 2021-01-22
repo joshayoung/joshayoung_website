@@ -1,7 +1,7 @@
 const REPO_URL = 'https://api.github.com/users/joshayoung/repos';
 
 const top = function(data) {
-  if (!data.isArray) { return []; }
+  if (!Array.isArray(data)) { return []; }
 
   let all = []
   data.forEach((repo, value) => {

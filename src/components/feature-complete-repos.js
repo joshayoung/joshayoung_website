@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
-import RepoResults from "../components/repo-results";
-import { REPO_URL, getData } from "../utilities/api_requests"
-
-const top = function(data) {
-  let all = [];
-  return all;
-};
+import RepoResults from "./repo-results";
+import { REPO_URL, top, getData } from "../utilities/api_requests"
 
 const GetStuff = () => {
   const [repos, setRecentlyUpdatedRepos] = useState("no data");
