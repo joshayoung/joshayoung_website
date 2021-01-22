@@ -4,7 +4,7 @@ import TechnicalSkills from "../snippets/technical-skills";
 
 ### Experienced - Full Stack Web Developer
 
-Full Stack Web Developer with 7+ years of experience developing web applications. Using current programming languages to further company productivity. Improving user experience by working with members of my team to maintain and improve our web programs.
+Full Stack Web Developer with over 10 years of experience developing web applications. Using current programming languages to further company productivity. Improving user experience by working with members of my team to maintain and improve our web programs.
 
 ### Work Experience
 
