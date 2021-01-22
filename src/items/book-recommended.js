@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 
 class BookRecommended extends Component {
-  constructor() {
-    super();
-  }
-
   author(data) {
     if (data.truncated_authors) {
       return " by " + data.truncated_authors;

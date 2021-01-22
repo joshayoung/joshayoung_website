@@ -13,7 +13,7 @@ export default () => {
         <RecentlyUpdatedRepos />
 
         <header>Archived Repos</header>
-        <ArchivedRepos />
+        {/* <ArchivedRepos /> */}
 
         <header>Feature Complete Repos</header>
         <FeatureComplete />

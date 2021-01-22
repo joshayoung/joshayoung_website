@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { REPO_URL, tags, archivedRepos, getData, archivedTags } from "../utilities/api_requests"
 import RepoResults from "../components/repo-results";
 
-const getTheData = () => {
+const GetTheData = () => {
   const [repos, setRecentlyUpdatedRepos] = useState("no data");
   const [results, setResults] = useState(false);
 
@@ -24,7 +24,7 @@ const getTheData = () => {
 };
 
 export default () => {
-  const { repos, results } = getTheData();
+  const { repos, results } = GetTheData();
   return (
     <RepoResults repos={repos} results={results} />
   );
