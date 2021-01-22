@@ -15,7 +15,7 @@ const Inner = ({ children }) => (
       }
     `}
   >
-    <a id="top"></a>
+    <a id="top" className='hide' href="#1">top</a>
     <Header />
     <button className="hamburger" css={css`
       cursor: pointer;

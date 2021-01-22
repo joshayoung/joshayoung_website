@@ -7,7 +7,7 @@ const top = function(data) {
   return all;
 };
 
-const getStuff = () => {
+const GetStuff = () => {
   const [repos, setRecentlyUpdatedRepos] = useState("no data");
   const [results, setResults] = useState(false);
 
@@ -26,6 +26,6 @@ const getStuff = () => {
 };
 
 export default () => {
-  const { repos, results } = getStuff();
+  const { repos, results } = GetStuff();
   return <RepoResults repos={repos} results={results} />;
 };

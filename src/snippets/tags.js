@@ -3,7 +3,7 @@ import Box from "../components/box";
 import { Link } from "gatsby";
 import { graphql, useStaticQuery } from "gatsby";
 
-function test() {
+function Test() {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark {
@@ -20,7 +20,7 @@ function test() {
   `);
 
   let tags = [];
-  data.allMarkdownRemark.edges.map(dta => {
+  data.allMarkdownRemark.edges.forEach(dta => {
     let tg = dta.node.frontmatter.tags;
     tg.forEach(element => {
       element = element.toLowerCase();
@@ -48,7 +48,7 @@ function formatTag(tag) {
 }
 
 export default () => {
-  let dta = test();
+  let dta = Test();
   return (
     <Box>
       <header>
