@@ -689,7 +689,7 @@ Leaving out the `stash@{2} variable below will run the stash command on top stas
 This command will run `git stash apply` and then `git stash drop`.
 
 ```bash
-  git stash pop `</pre>
+  git stash pop
 ```
 
 #### List Stashes
