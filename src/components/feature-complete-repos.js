@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import RepoResults from "./repo-results";
-import { REPO_URL, top, getData } from "../utilities/api_requests"
+import { REPO_URL, featureCompleteRepos, completedTags, tags, getData } from "../utilities/api_requests"
 
 const GetStuff = () => {
   const [repos, setRecentlyUpdatedRepos] = useState("no data");
@@ -8,9 +8,12 @@ const GetStuff = () => {
 
   async function getFeatureCompleteList() {
     const data = await getData(REPO_URL);
-    let t = top(data);
-    setRecentlyUpdatedRepos(t);
-    setResults(true);
+    let tagsUrl = tags(data);
+    featureCompleteRepos(tagsUrl).then(ar => {
+      const results = completedTags(ar);
+      setRecentlyUpdatedRepos(results);
+      setResults(true);
+    })
   }
 
   useEffect(() => {

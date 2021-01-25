@@ -40,6 +40,16 @@ allTags.forEach(tag => {
   return tagsUrl;
 };
 
+const featureCompleteRepos = (tagsUrl) => {
+    return Promise.all(tagsUrl).then(all => {
+    let archived = [];
+    all.forEach(t => {
+    archived.push(t);
+    });
+    return archived.filter(a => a.length !== 0);
+    });
+}
+
 const archivedRepos = (tagsUrl) => {
     return Promise.all(tagsUrl).then(all => {
     let archived = [];
@@ -65,4 +75,15 @@ const archivedTags = data => {
   return archived;
 };
 
-export { top, REPO_URL, tags, archivedRepos, getData, archivedTags };
+const completedTags = data => {
+  let archived = [];
+  data.forEach(tg => {
+    let repo = tg.filter(value => value.name === "feature-complete");
+    if (repo.length > 0) {
+      archived.push(repoName(repo[0]));
+    }
+  });
+  return archived;
+};
+
+export { top, REPO_URL, tags, featureCompleteRepos, archivedRepos, getData, archivedTags, completedTags };
