@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         env:
-          token: ${{ secrets.TEST_ME }}
+          GATSBY_TOKEN: ${{ secrets.TEST_ME }}

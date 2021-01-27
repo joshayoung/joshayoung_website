@@ -21,7 +21,7 @@ const top = function(data) {
 }
 
 const getData = async url => {
-  let t = process.env.GATSBY_BLA;
+  let t = process.env.GATSBY_TOKEN;
   const response = await fetch(url, {
     headers: { Authorization: "token " + t },
   });
