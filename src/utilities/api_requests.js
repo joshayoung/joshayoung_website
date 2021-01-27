@@ -21,9 +21,9 @@ const top = function(data) {
 }
 
 const getData = async url => {
-  let token = process.env.GATSBY_GITHUB_TOKEN;
+  let t = process.env.GATSBY_BLA;
   const response = await fetch(url, {
-    headers: { Authorization: "token " + token },
+    headers: { Authorization: "token " + t },
   });
   return response.json();
 };
