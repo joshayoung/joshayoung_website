@@ -3,7 +3,6 @@ name: Gatsby Deploy
 on:
   push:
     branches:
-      - gh-pages
       - master
 
 jobs:

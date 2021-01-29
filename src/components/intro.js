@@ -37,7 +37,7 @@ const Intro = () => (
     I am a Full Stack Software Engineer<span className='dot'>.</span>
     Here I write about development and my current tech projects<span className='dot'>.</span>
     Check out my <span><Link to="/thoughts">Blog</Link></span> to see what I am writing or my <Link to="/projects"><span>Projects</span></Link> to
-    see what I am building<span className='dot'>...</span> testing
+    see what I am building<span className='dot'>...</span>
   </section >
 );
 
