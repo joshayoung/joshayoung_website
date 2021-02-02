@@ -4,8 +4,9 @@ import RecentlyUpdateRepos from "../components/recently-updated-repos";
 
 const Repos = () => (
   <List>
-    <header>Recently Updated Repos</header>
-    <RecentlyUpdateRepos />
+    {/* TODO: Move this API call to the backend: */}
+    {/* <header>Recently Updated Repos</header> */}
+    {/* <RecentlyUpdateRepos /> */}
   </List>
 )
 

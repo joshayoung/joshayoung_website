@@ -10,13 +10,16 @@ export default () => {
     <Layout>
       <List>
         <header>Recently Updated Repos</header>
-        <RecentlyUpdatedRepos />
+        {/* TODO: Move this API call to the backend: */}
+        {/* <RecentlyUpdatedRepos /> */}
 
         <header>Archived Repos</header>
-        <ArchivedRepos />
+        {/* TODO: Move this API call to the backend: */}
+        {/* <ArchivedRepos /> */}
 
         <header>Feature Complete Repos</header>
-        <FeatureComplete />
+        {/* TODO: Move this API call to the backend: */}
+        {/* <FeatureComplete /> */}
       </List>
     </Layout>
   );

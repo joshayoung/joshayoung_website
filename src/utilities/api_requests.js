@@ -23,9 +23,6 @@ const top = function(data) {
 const getData = async url => {
   let t = 
   process.env.GATSBY_TOKEN;
-  console.log("test");
-  console.log(process.env.GATSBY_TOKEN);
-  console.log("test");
   const response = await fetch(url, {
     headers: { Authorization: "token " + t },
   });
