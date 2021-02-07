@@ -921,6 +921,11 @@
         "display": true
       },
       {
+        "title": "Best practices when writing a Dockerfile for a Ruby application",
+        "url": "https://lipanski.com/posts/dockerfile-ruby-best-practices",
+        "display": true
+      },
+      {
         "title": "Docker Hub",
         "url": "https://hub.docker.com/search?q=&type=image",
         "display": true
