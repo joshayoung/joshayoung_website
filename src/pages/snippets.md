@@ -1181,6 +1181,8 @@ Add or edit the lines below in this file `/etc/network/interfaces`.
   lsb_release -a
   # or:
   cat /etc/*release
+  # or:
+  cat /etc/os-release
 ```
 
 ### <a name='centos-rhel'></a>CentOS / RHEL
@@ -2991,6 +2993,17 @@ Here **9100** is the remote port and **22** is the remote port.
 
 ```bash
   ssh -R 9100:127.0.0.1:22 username@192.168.6.7
+```
+
+#### Generate a SSH and transfer it to a server
+```bash
+  ssh-keygen -t ed25519 -C “key_name”
+  ssh-copy-id -i ~/.ssh/key_name.pub 192.168.1.100
+```
+
+#### Connect with a specific key
+```bash
+  ssh -i ~/.ssh/key_name user@192.168.1.100
 ```
 
 #### Local Port Forward
