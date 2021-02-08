@@ -615,6 +615,22 @@
     ]
   },
   {
+    "title": "Ansible",
+    "class": "ansible",
+    "data": [
+      {
+        "title": "Getting Started with Ansible - Wiki",
+        "url": "https://wiki.learnlinux.tv/index.php/Episode_Notes",
+        "display": true
+      },
+      {
+        "title": "Getting started with Ansible - Video Series",
+        "url": "https://www.youtube.com/playlist?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Time/Date",
     "class": "time_date",
     "data": [
