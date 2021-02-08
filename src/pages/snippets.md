@@ -18,6 +18,17 @@ Below, I have listed some common code snippets that I commonly go back to refere
   <SnippetAnchorList />
 </AnchorList>
 
+### <a id="ansible"></a>Ansible
+
+#### Ping Command:
+```bash
+  ansible all --key-file ~/.ssh/my_private_key -i inventory -m ping
+```
+
+```bash
+  ansible all -m gather_facts --limit 192.168.1.100
+```
+
 ### <a id="bash"></a>Bash
 
 #### Services Running on Port
