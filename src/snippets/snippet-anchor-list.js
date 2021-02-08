@@ -3,6 +3,9 @@ import React from "react";
 const SnippetAnchorList = () => (
   <>
     <li>
+      <a href="#ansible">Ansible</a>
+    </li>
+    <li>
       <a href="#bash">Bash</a>
     </li>
     <li>
