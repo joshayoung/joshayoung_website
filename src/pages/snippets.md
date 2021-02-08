@@ -25,8 +25,19 @@ Below, I have listed some common code snippets that I commonly go back to refere
   ansible all --key-file ~/.ssh/my_private_key -i inventory -m ping
 ```
 
+#### Run gather facts command:
 ```bash
   ansible all -m gather_facts --limit 192.168.1.100
+```
+
+#### Become sudo first:
+```bash
+  ansible all -m apt -a update_cache=true --become --ask-become-pass
+```
+
+#### Run a playbook:
+```bash
+  ansible-playbook --ask-become-pass playboo.yml
 ```
 
 ### <a id="bash"></a>Bash
