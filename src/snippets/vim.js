@@ -116,5 +116,7 @@ export default () => (
     <dd><code>0</code></dd>
     <dt>Open NETRW file exporer</dt>
     <dd><code>:e .</code></dd>
+    <dt>Open a file at a line number</dt>
+    <dd>vim /path/to/file.conf +120</dd>
   </dl>
 );
