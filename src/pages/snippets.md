@@ -3085,9 +3085,13 @@ svg {
 ```
 
 #### Remote to Local
-
 ```bash
   scp username@host:file.txt /to/my/local/directory
+```
+
+#### Backup Local Folder to Remote
+```bash
+  scp -r local_folder/ user@host:/path/to/folder
 ```
 
 #### Backup Folder Remote to Local

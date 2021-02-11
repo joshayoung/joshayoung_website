@@ -10,6 +10,8 @@ export default () => (
     <dd><code>\dt</code></dd>
     <dt>Connect with admin user:</dt>
     <dd>psql -U postgres</dd>
+    <dt>Connect with user to a specific database</dt>
+    <dd>psql -U username database_name</dd>
     <dt>Show Users</dt>
     <dd>\du</dd>
     <dt>Create User, Database, Grant Privileges</dt>
