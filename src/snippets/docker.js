@@ -53,6 +53,18 @@ export default () => (
       <code>docker-compose run dev rails server -b 0.0.0.0</code>
     </dd>
     <dt>Spin up container</dt>
+    <dt>Start a Single Service via Docker Compose</dt>
+    <dd>
+      <code>docker-compose up -d service_name</code>
+    </dd>
+    <dd>
+      <code>docker restart $(docker ps -q)</code>
+    </dd>
+    <dt>Force the Re-creation of Container</dt>
+    <dd>
+      <code>docker-compose up --force-recreate</code>
+    </dd>
+    <dt>Restart All Containers</dt>
     <dd>
       <code>docker-compose up</code>
     </dd>
