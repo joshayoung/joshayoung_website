@@ -3076,6 +3076,10 @@ svg {
 
 <Rubymine />
 
+### <a name='intellij'></a>IntelliJ
+* Context menu to add class components
+  * **CMD + N**
+
 ### <a name='scp'></a>SCP
 
 #### Local to Remote

@@ -102,6 +102,9 @@ const SnippetAnchorList = () => (
       <a href="#rubymine">RubyMine</a>
     </li>
     <li>
+      <a href="#intellij">intellij</a>
+    </li>
+    <li>
       <a href="#scp">SCP</a>
     </li>
     <li>
