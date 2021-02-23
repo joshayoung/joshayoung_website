@@ -7,6 +7,8 @@
 // You can delete this file if you're not using it
 
 const hljs = require('./node_modules/highlight.js');
+require("prismjs/themes/prism-solarizedlight.css")
+require("prismjs/plugins/command-line/prism-command-line.css")
 
 exports.onClientEntry = () => {
   window.onload = () => {
