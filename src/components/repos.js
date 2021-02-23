@@ -1,6 +1,5 @@
 import React from "react";
 import List from "../components/list";
-import RecentlyUpdateRepos from "../components/recently-updated-repos";
 
 const Repos = () => (
   <List>
