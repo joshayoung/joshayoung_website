@@ -14,9 +14,8 @@ export default () => (
     <dd>
       <code>
         <pre>
-          docker-compose down
-          docker rm -fv $(docker ps -aq)
-          sudo lsof -i -P -n | grep 5432
+          docker-compose down docker rm -fv $(docker ps -aq) sudo lsof -i -P -n
+          | grep 5432
         </pre>
       </code>
     </dd>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default () => (
   <dl>
@@ -11,6 +11,8 @@ export default () => (
     <dt>Blocker</dt>
     <dd>Something that is preventing you from moving your card forward</dd>
     <dt>Hidden Work</dt>
-    <dd>Something you are working on that is not visible on the Kanban Board</dd>
+    <dd>
+      Something you are working on that is not visible on the Kanban Board
+    </dd>
   </dl>
 );

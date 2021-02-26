@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 export default () => (
   <dl>
@@ -19,4 +19,4 @@ export default () => (
       <code>console.table(all_animals);</code>
     </dd>
   </dl>
-)
+);

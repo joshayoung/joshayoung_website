@@ -21,21 +21,25 @@ Below, I have listed some common code snippets that I commonly go back to refere
 ### <a id="ansible"></a>Ansible
 
 #### Ping Command:
+
 ```bash
   ansible all --key-file ~/.ssh/my_private_key -i inventory -m ping
 ```
 
 #### Run gather facts command:
+
 ```bash
   ansible all -m gather_facts --limit 192.168.1.100
 ```
 
 #### Become sudo first:
+
 ```bash
   ansible all -m apt -a update_cache=true --become --ask-become-pass
 ```
 
 #### Run a playbook:
+
 ```bash
   ansible-playbook --ask-become-pass playboo.yml
 ```
@@ -185,6 +189,7 @@ curl --data "information=to&send=to the server" http://example.com
 ```
 
 #### Run `bundle` with a different version:
+
 ```bash
   bundle _2.0.15_ install
 ```
@@ -1080,6 +1085,7 @@ typeof ""; // 'string'
 ### <a name='freebsd'></a>FreeBSD
 
 #### Troubleshooting ZPool Drive Errors
+
 ```bash
   zpool status
   glabel status
@@ -1345,6 +1351,7 @@ The BSD based init system is configured under /etc/rc.conf. To start sshd, we wo
 ```
 
 #### Scan a Folder for Viruses (ubuntu)
+
 ```bash
   sudo apt-get update
   sudo apt-get install clamav clamav-daemon
@@ -1719,6 +1726,7 @@ The command below could also be executed with 'bs=4m'.
 ### <a name='rails'></a>Rails
 
 #### Connect to Already Running Rails Instance:
+
 ```bash
   rails server -P /app/tmp/pids/server.pid
 ```
@@ -2210,6 +2218,7 @@ In the ruby console, **student.devices** would return all of the devices that st
 ### <a name='ruby'></a>Ruby
 
 #### Write to file from command line:
+
 ```ruby
   f = File.new('log.txt', 'w')
   f << log_this_variables_value
@@ -2966,6 +2975,7 @@ These are both the same:
 ```
 
 #### Exit SqLite Command Prompt:
+
 ```bash
   .quit
 ```
@@ -3018,12 +3028,14 @@ Here **9100** is the remote port and **22** is the remote port.
 ```
 
 #### Generate a SSH and transfer it to a server
+
 ```bash
   ssh-keygen -t ed25519 -C “key_name”
   ssh-copy-id -i ~/.ssh/key_name.pub 192.168.1.100
 ```
 
 #### Connect with a specific key
+
 ```bash
   ssh -i ~/.ssh/key_name user@192.168.1.100
 ```
@@ -3077,8 +3089,9 @@ svg {
 <Rubymine />
 
 ### <a name='intellij'></a>IntelliJ
-* Context menu to add class components
-  * **CMD + N**
+
+- Context menu to add class components
+  - **CMD + N**
 
 ### <a name='scp'></a>SCP
 
@@ -3089,16 +3102,19 @@ svg {
 ```
 
 #### Remote to Local
+
 ```bash
   scp username@host:file.txt /to/my/local/directory
 ```
 
 #### Backup Local Folder to Remote
+
 ```bash
   scp -r local_folder/ user@host:/path/to/folder
 ```
 
 #### Backup Folder Remote to Local
+
 ```bash
   scp -r user@host:/path/to/folder/* /to/my/local/directory/
 ```

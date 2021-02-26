@@ -1,57 +1,57 @@
 [
   {
-    "title" : "Aaron Gustafson - Semantic HTML: The Hard Parts",
-    "url" : "http://www.fullstackradio.com/118",
+    "title": "Aaron Gustafson - Semantic HTML: The Hard Parts",
+    "url": "http://www.fullstackradio.com/118",
     "display": true
   },
   {
-    "title" : "Keeping Systems Simple",
-    "url" : "https://www.jupiterbroadcasting.com/131156/keeping-systems-simple-techsnap-403",
+    "title": "Keeping Systems Simple",
+    "url": "https://www.jupiterbroadcasting.com/131156/keeping-systems-simple-techsnap-403",
     "display": true
   },
   {
-    "title" : "Dockerized Development Environments with Julian Fahrer",
-    "url" : "https://devchat.tv/ruby-rogues/rr-426-dockerized-development-environments-with-julian-fahrer",
+    "title": "Dockerized Development Environments with Julian Fahrer",
+    "url": "https://devchat.tv/ruby-rogues/rr-426-dockerized-development-environments-with-julian-fahrer",
     "display": true
   },
   {
-    "title" : "Ben Orenstein - Outside-in TDD and Dependency Injection in Rails",
-    "url" : "http://www.fullstackradio.com/27",
+    "title": "Ben Orenstein - Outside-in TDD and Dependency Injection in Rails",
+    "url": "http://www.fullstackradio.com/27",
     "display": true
   },
   {
-    "title" : "Sorbet, a Type Checker for Ruby with Paul Tarjan",
-    "url" : "https://devchat.tv/ruby-rogues/rr-427-sorbet-a-type-checker-for-ruby-with-paul-tarjan/",
+    "title": "Sorbet, a Type Checker for Ruby with Paul Tarjan",
+    "url": "https://devchat.tv/ruby-rogues/rr-427-sorbet-a-type-checker-for-ruby-with-paul-tarjan/",
     "display": true
   },
   {
-    "title" : "Microservices and Storyscript with Steve Peak",
-    "url" : "https://devchat.tv/ruby-rogues/rr-419-microservices-and-storyscript-with-steve-peak/",
+    "title": "Microservices and Storyscript with Steve Peak",
+    "url": "https://devchat.tv/ruby-rogues/rr-419-microservices-and-storyscript-with-steve-peak/",
     "display": true
   },
   {
-    "title" : "Teaching and Learning with Sandi Metz",
-    "url" : "https://www.techdoneright.io/69",
+    "title": "Teaching and Learning with Sandi Metz",
+    "url": "https://www.techdoneright.io/69",
     "display": true
   },
   {
-    "title" : "I'm Not a Lawyer, But...",
-    "url" : "https://bikeshed.fm/episodes/211",
+    "title": "I'm Not a Lawyer, But...",
+    "url": "https://bikeshed.fm/episodes/211",
     "display": true
   },
   {
-    "title" : "Ben Orenstein - Our All-Time Favorite Refactorings",
-    "url" : "http://www.fullstackradio.com/78",
+    "title": "Ben Orenstein - Our All-Time Favorite Refactorings",
+    "url": "http://www.fullstackradio.com/78",
     "display": true
   },
   {
-    "title" : "Documenting Your Code",
-    "url" : "https://devchat.tv/ruby-rogues/rr-424-documenting-your-code",
+    "title": "Documenting Your Code",
+    "url": "https://devchat.tv/ruby-rogues/rr-424-documenting-your-code",
     "display": true
   },
   {
-    "title" : "Ben Orenstein - The Art of Pairing",
-    "url" : "http://www.fullstackradio.com/94",
+    "title": "Ben Orenstein - The Art of Pairing",
+    "url": "http://www.fullstackradio.com/94",
     "display": true
   }
 ]

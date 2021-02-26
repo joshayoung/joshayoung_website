@@ -1,7 +1,7 @@
 import React from "react";
 import List from "../components/list";
 import PostData from "../hooks/post-data";
-import { Link } from 'gatsby';
+import { Link } from "gatsby";
 
 export default () => {
   const posts = PostData();
@@ -11,9 +11,11 @@ export default () => {
       <header>Latest Posts</header>
       <ul>
         {posts.map(post => (
-          <li key={post.path}><Link to={post.path}>{post.title}</Link></li>
+          <li key={post.path}>
+            <Link to={post.path}>{post.title}</Link>
+          </li>
         ))}
       </ul>
-    </List >
+    </List>
   );
 };

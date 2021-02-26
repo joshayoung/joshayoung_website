@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from "gatsby";
 
 const TreeHouseData = () => {
   const data = useStaticQuery(graphql`
@@ -17,7 +17,7 @@ const TreeHouseData = () => {
     id: data.id,
     title: data.title,
     url: data.url,
-    date: data.url
+    date: data.url,
   }));
 };
 

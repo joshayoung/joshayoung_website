@@ -8,7 +8,13 @@ export default () => {
   return (
     <>
       {books.map(book => (
-        <BookRecommended key={book.id} id={book.id} title={book.title} hide={book.hide_list} post={book.data} />
+        <BookRecommended
+          key={book.id}
+          id={book.id}
+          title={book.title}
+          hide={book.hide_list}
+          post={book.data}
+        />
       ))}
     </>
   );

@@ -11,6 +11,7 @@ To setup a basic many-to-many associations, we need to start by declaring the ne
 Just two one-to-many associations with a joining table in the middle as demonstrated in the table diagram below.
 
 #### From the rails console create the needed models:
+
 ```ruby
   rails g model Product
   rails g mdoel Satisfaction
@@ -20,6 +21,7 @@ Just two one-to-many associations with a joining table in the middle as demonstr
 This will create three model and migration files. Open each of the migration files and added the needed fields so they can be created with a `rails db:migrate` command.
 
 #### Product Migration
+
 ```ruby
   class CreateProducts < ActiveRecord::Migration[5.0]
     def change
@@ -33,6 +35,7 @@ This will create three model and migration files. Open each of the migration fil
 ```
 
 #### Satisfaction Migration
+
 ```ruby
   class CreateSatisfactions < ActiveRecord::Migration[5.0]
     def change
@@ -47,6 +50,7 @@ This will create three model and migration files. Open each of the migration fil
 ```
 
 #### Buyer Migration
+
 ```ruby
   class CreateBuyers < ActiveRecord::Migration[5.0]
     def change
@@ -79,6 +83,7 @@ The `product_id` is a foreign key pointing to the 'products' table and the `buye
 At this point, we need to setup the necessary associations within the model files. This can be accomplished by added the `belongs_to` and `has_many` lines listed int the model files below.
 
 #### Product Model:
+
 ```ruby
   class Product < ApplicationRecord
     has_many :satisfactions
@@ -86,6 +91,7 @@ At this point, we need to setup the necessary associations within the model file
 ```
 
 #### Satisfaction Model:
+
 ```ruby
   class Satisfaction < ApplicationRecord
     belongs_to :product
@@ -94,6 +100,7 @@ At this point, we need to setup the necessary associations within the model file
 ```
 
 #### Buyer Model:
+
 ```ruby
   class Buyer < ApplicationRecord
     # The 'dependent: :destroy' says to destroy the satisfaction
@@ -103,6 +110,7 @@ At this point, we need to setup the necessary associations within the model file
 ```
 
 If we open up the rails console with `rails c`, then we have the following relationships available to us:
+
 ```ruby
   prod = Product.create(name: "Dell Inspiron")
   buy = Buyer.create(name: "Joe", buy_date: "2017-07-04")
@@ -121,6 +129,7 @@ If we open up the rails console with `rails c`, then we have the following relat
 ```
 
 With this relationship setup we can create new satisfaction ranking like this:
+
 ```ruby
     prod = Product.first
     buy = Buyer.find_by(name: "Joe")
@@ -130,6 +139,7 @@ With this relationship setup we can create new satisfaction ranking like this:
 ```
 
 In addition, we could also setup the buyer and product for the new satisfaction ranking in one fell swoop:
+
 ```ruby
   prod = Product.first
   buy = Buyer.first
@@ -163,6 +173,7 @@ Instead of having to get a list of the satisfaction rankings assigned to a parti
 To setup a through association for our current example, we can add this to the 'Product' model:
 
 #### Product Model:
+
 ```ruby
   class Product < ApplicationRecord
     has_many :satisfactions
@@ -182,6 +193,7 @@ To setup a through association for our current example, we can add this to the '
 To setup the reverse of this relationship, we can add the line below to the 'Buyer' model:
 
 #### Buyer Model:
+
 ```ruby
   class Buyer < ApplicationRecord
     has_many :satisfactions, dependent: :destroy
@@ -196,6 +208,7 @@ To setup the reverse of this relationship, we can add the line below to the 'Buy
 We can even abbreviate the name of our through association relationship by adding a 'source' declaration and changing our 'Product' model as listed below:
 
 #### Product Model:
+
 ```ruby
   class Product < ApplicationRecord
     has_many :satisfactions
@@ -229,4 +242,4 @@ We can do the same thing in the reverse as well, by modifying the 'Buyer' model 
 ```
 
 I have included the code for this mvc application in this repo:
-  [many-to-many-rails](https://github.com/joshayoung/many-to-many-rails'>many-to-many-rails).
+[many-to-many-rails](https://github.com/joshayoung/many-to-many-rails'>many-to-many-rails).
