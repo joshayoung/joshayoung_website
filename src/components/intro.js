@@ -10,11 +10,6 @@ const Intro = () => (
     margin-bottom: 50px;
     line-height: 1.7;
 
-    &:first-letter {
-      color: #3385ff;
-      font-weight: bold;
-    }
-
     span:not(.dot) {
       background: #3385ff;
       background: #1252B3;

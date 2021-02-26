@@ -18,7 +18,6 @@ const NavLinks = () => (
     <li><NavLink activeClassName='active' to="/snippets">Snippets</NavLink></li>
     <li><NavLink activeClassName='active' to="/definitions">Definitions</NavLink></li>
     <li><NavLink activeClassName='active' to="/resources">Resources</NavLink></li>
-    {/* <li><NavLink activeClassName='active' to="/search">Search</NavLink></li> */}
     <li><NavLink activeClassName='active' to="/me">About</NavLink></li>
   </>
 )

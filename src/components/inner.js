@@ -27,7 +27,7 @@ const Inner = ({ children }) => (
       border: none;
       position: relative;
       user-select: none;
-      /* TODO: Restricts going to full height at wide resolutions. Fix */
+      /* TODO: Restricts going to full height at wide resolutions */
       max-height: 62px;
       @media (min-width: 700px) { 
         display: none;

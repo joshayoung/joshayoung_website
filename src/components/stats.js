@@ -1,5 +1,4 @@
 import React from "react";
-import Repos from "./repos";
 import PostsOutput from "../output/posts-output";
 import { css } from '@emotion/core';
 
@@ -12,7 +11,6 @@ const Stats = () => (
     }
   `}>
     <PostsOutput />
-    <Repos />
   </div>
 )
 
