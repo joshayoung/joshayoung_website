@@ -12,7 +12,6 @@ const Intro = () => (
 
     span:not(.dot) {
       background: #3385ff;
-      background: #1252B3;
       display: inline-block;
       padding: 0 10px;
       font-size: 28px;
