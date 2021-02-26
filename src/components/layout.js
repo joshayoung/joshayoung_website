@@ -7,7 +7,7 @@ import Wrap from "../components/wrap";
 import "normalize.css";
 import "../styles/fonts.css";
 import "../styles/overrides.scss";
-import "highlight.js/styles/solarized-dark.css";
+import "../styles/code-styles.scss";
 
 const Layout = ({ children, klass }) => {
   const blue = "#3385ff";
