@@ -6,20 +6,20 @@ import Cert from "../components/cert";
 Below I have included a list of certifications that I have attained over the past few years.
 Many of these certs required passing more than one test. I have included a short summary of each certification along with a link to a better explanation of each one. See all of my current CompTIA certs listed <a href='https://www.youracclaim.com/users/joshua-young.5eb07482/badges'>here</a> as well.
 
-* [CompTIA Security+](#comptia-security)
-* [Certified Ethical Hacker (C|EH)](#certified-ethical-hacker-ceh)
-* [Zend Certified PHP Engineer (ZCPE)](#zend-certified-php-engineer-zcpe)
-* [CompTIA Network+](#comptia-network)
-* [CIW Web Development Professional](#ciw-web-development-professional)
-* [CIW Database Design Specialist](#ciw-database-design-specialist)
-* [CIW Perl Specialist](#ciw-perl-specialist)
-* [CIW JavaScript Specialist](#ciw-javascript-specialist)
-* [CompTIA Linux+](#comptia-linux)
-* [SUSE Certified Linux Administrator 11](#suse-certified-linux-administrator-11)
-* [LPIC-1](#lpic-1)
-* [CompTIA A+](#comptia-a)
+- [CompTIA Security+](#comptia-security)
+- [Certified Ethical Hacker (C|EH)](#ceh)
+- [Zend Certified PHP Engineer (ZCPE)](#pce)
+- [CompTIA Network+](#network)
+- [CIW Web Development Professional](#professional)
+- [CIW Database Design Specialist](#database)
+- [CIW Perl Specialist](#perl)
+- [CIW JavaScript Specialist](#javascript)
+- [CompTIA Linux+](#linux)
+- [SUSE Certified Linux Administrator 11](#suse)
+- [LPIC-1](#lpci)
+- [CompTIA A+](#aplus)
 
-### <a name='security'></a>CompTIA Security+
+### <a name='comptia-security'></a>CompTIA Security+
 <Cert
   logo="resized/SecurityPlus_Logo_Certified_CE.png"
   link="https://certification.comptia.org/certifications/security"

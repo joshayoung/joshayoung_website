@@ -25,8 +25,8 @@ const NavLinks = () => (
       </NavLink>
     </li>
     <li>
-      <NavLink activeClassName="active" to="/classes">
-        Classes
+      <NavLink activeClassName="active" to="/training">
+        Training
       </NavLink>
     </li>
     <li>
