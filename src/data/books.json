@@ -37,6 +37,12 @@
         "display": false
       },
       {
+        "title": "Docker for Rails Developers",
+        "author": "Rob Isenberg",
+        "url": "https://pragprog.com/titles/ridocker/docker-for-rails-developers/",
+        "display": true
+      },
+      {
         "title": "Practical Object-Oriented Design: An Agile Primer Using Ruby",
         "author": "Sandi Metz",
         "url": "",

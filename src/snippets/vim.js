@@ -118,6 +118,11 @@ export default () => (
     <dd>
       <code>q[a-z]</code> (i.e. <code>qm</code> - records to <code>m</code>)
     </dd>
+    <dt>Open Multiple Files</dt>
+    <dd>
+      <code>vim *</code>
+      <code>:bn - next file</code>
+    </dd>
     <dt>Stop Macro Recording</dt>
     <dd>
       <code>q</code>

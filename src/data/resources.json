@@ -1290,6 +1290,11 @@
         "display": true
       },
       {
+        "title": "Embrace Beginner's Mind; Avoid The Wrong Way To Be An Expert",
+        "url": "https://eugeneyan.com/writing/beginners-mind",
+        "display": true
+      },
+      {
         "title": "What I've Learned in 45 Years in the Software Industry",
         "url": "https://www.bti360.com/what-ive-learned-in-45-years-in-the-software-industry",
         "display": true
@@ -1477,6 +1482,11 @@
       {
         "title": "OWASP WebGoat",
         "url": "https://owasp.org/www-project-webgoat",
+        "display": true
+      },
+      {
+        "title": "Ping Sweep in Kali Linux 2020",
+        "url": "https://linuxhint.com/ping_sweep_kali_linux",
         "display": true
       },
       {
