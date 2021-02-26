@@ -14,7 +14,7 @@ Before I embark on the road to explain docker, I want to define a few concepts. 
 ```bash
 Using default tag: latest
 latest: Pulling from library/postgres
-Digest: sha256:ce0f6c28b5869ff166714da5fe08554c70c731a335ff9702e38b00f81ad348c6
+Digest: sha256:ce0f6c28b5869ff166714d5ff9702e38b00f81ad348c6
 ```
 * This will provide an image on your local machine for use with building a container.
 

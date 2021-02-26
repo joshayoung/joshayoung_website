@@ -15,6 +15,7 @@ const Inner = ({ children }) => (
       }
     `}
   >
+    {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
     <a id="top" href="#1" aria-label="top"></a>
     <Header />
     <button className="hamburger" css={css`
