@@ -21,9 +21,6 @@ const Main = ({ children }) => (
       box-shadow: 1px 1px 1px #ccc;
       padding: 0 10px;
       font-family: 'Acme', sans-serif;
-      &:first-letter {
-        color: #3385ff;
-      }
     }
   `}>
     {children}

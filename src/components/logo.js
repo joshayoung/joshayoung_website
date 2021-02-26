@@ -18,10 +18,16 @@ const Logo = () => (
     <div
       css={css`
       font-size: 20px;
-      font-style: italic;
       color: #3385ff;
-    `}>
-      &#x7b; Full Stack Software Engineer &#x7d;</div>
+      &:before {
+        content: "{ ";
+        color: #b3b3b3;
+      }
+      &:after {
+        content: " }";
+        color: #b3b3b3;
+      }
+    `}>Full Stack Software Engineer</div>
   </Link>
 )
 
