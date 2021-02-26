@@ -1,11 +1,10 @@
 import TreeHouseOutput from "../output/tree-house-output";
 import CodeSchoolOutput from "../output/code-school-output";
 
-# Classes I've Taken
+# Training Classes
 
 In an effort to continually learn new technologies and stay abreast of existing technologies, I have found it helpful to take advantage of opportunities for continuing education. Below I have listed courses(both classroom and online) that I have completed over the years.
 
-- [Classes I've Taken](#classes-ive-taken)
 - [Upcase by Thoughtbot](#upcase-by-thoughtbot)
 - [Pragmatic Studio Classes](#pragmatic-studio-classes)
 - [Transcend Leadership Essentials](#transcend-leadership-essentials)
