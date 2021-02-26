@@ -7,13 +7,13 @@ import Glance from "../snippets/glance";
 import Tags from "../snippets/tags";
 
 const Index = () => (
-  <Layout klass='home'>
+  <Layout klass="home">
     <SEO title="Home" />
     <Intro />
     <Glance />
     <Tags />
     <Stats />
   </Layout>
-)
+);
 
 export default Index;

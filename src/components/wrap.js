@@ -1,5 +1,5 @@
 import React from "react";
-import { css } from '@emotion/core';
+import { css } from "@emotion/core";
 import Inner from "../components/inner";
 
 const Wrap = ({ children, klass }) => (
@@ -9,10 +9,11 @@ const Wrap = ({ children, klass }) => (
       min-height: 100vh;
       flex-direction: column;
       padding-bottom: 100px;
-  `}
-    className={klass}>
+    `}
+    className={klass}
+  >
     <Inner children={children} />
-  </div >
-)
+  </div>
+);
 
 export default Wrap;

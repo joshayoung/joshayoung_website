@@ -1,10 +1,11 @@
 import React from "react";
-import { css } from '@emotion/core';
+import { css } from "@emotion/core";
 import Glance from "../snippets/glance";
 import Tags from "../snippets/tags";
 
 const Aside = () => (
-  <div className='aside'
+  <div
+    className="aside"
     css={css`
       display: none;
       max-width: 300px;
@@ -18,10 +19,11 @@ const Aside = () => (
       @media (min-width: 600px) {
         display: block;
       }
-  `}>
+    `}
+  >
     <Glance />
     <Tags />
   </div>
-)
+);
 
 export default Aside;

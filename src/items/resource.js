@@ -1,15 +1,13 @@
-import React from 'react';
+import React from "react";
 
 const Resource = ({ klass, title, post }) => (
   <>
-    <a id={klass} href="1#"><h3>{title}</h3></a>
+    <a id={klass} href="1#">
+      <h3>{title}</h3>
+    </a>
     {post.map((resource, i) => (
       <div key={i}>
-        {resource.display ?
-          <a href={resource.url}>{resource.title}</a>
-          :
-          ''
-        }
+        {resource.display ? <a href={resource.url}>{resource.title}</a> : ""}
       </div>
     ))}
   </>

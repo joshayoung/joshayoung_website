@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { css } from '@emotion/core';
+import React, { Component } from "react";
+import { css } from "@emotion/core";
 
 const blue = "#3385ff";
 
@@ -8,7 +8,7 @@ class GoToTop extends Component {
     super();
 
     this.state = {
-      offScreen: false
+      offScreen: false,
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -25,19 +25,23 @@ class GoToTop extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-    document.body.addEventListener('click', this.closeNav(this), false);
+    window.addEventListener("scroll", this.handleScroll);
+    document.body.addEventListener("click", this.closeNav(this), false);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   render() {
     return (
       <>
         <a
-          style={this.state.offScreen ? { position: 'fixed' } : { display: 'none', position: 'relative' }}
+          style={
+            this.state.offScreen
+              ? { position: "fixed" }
+              : { display: "none", position: "relative" }
+          }
           css={css`
             bottom: 0;
             left: 200px;
@@ -53,11 +57,13 @@ class GoToTop extends Component {
               color: #fff;
             }
           `}
-          href='#top'>Go To Top</a>
+          href="#top"
+        >
+          Go To Top
+        </a>
       </>
     );
-  };
-};
-
+  }
+}
 
 export default GoToTop;

@@ -9,8 +9,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`
-      }
+        path: `${__dirname}/src/images/`,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -43,7 +43,7 @@ module.exports = {
       options: {
         name: `content`,
         path: `${__dirname}/src/content`,
-        plugins: [ ]
+        plugins: [],
       },
     },
     `gatsby-plugin-emotion`,
@@ -55,9 +55,7 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve("./src/components/layout-markdown.js"),
         },
-        gatsbyRemarkPlugins: [
-          { resolve: 'gatsby-remark-images' }
-        ]
+        gatsbyRemarkPlugins: [{ resolve: "gatsby-remark-images" }],
       },
     },
     `gatsby-transformer-json`,
@@ -67,8 +65,8 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    `gatsby-plugin-sharp`, 
+    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sass`
-  ]
-}
+    `gatsby-plugin-sass`,
+  ],
+};

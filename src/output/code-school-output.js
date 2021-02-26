@@ -7,7 +7,9 @@ export default () => {
   return (
     <ul>
       {codeschool.map(codeschool => (
-        <li key={codeschool.url}><a href={codeschool.url}>{codeschool.title}</a></li>
+        <li key={codeschool.url}>
+          <a href={codeschool.url}>{codeschool.title}</a>
+        </li>
       ))}
     </ul>
   );

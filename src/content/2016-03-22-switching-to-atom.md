@@ -10,10 +10,10 @@ I recently made the switch to Atom from Sublime Text 2. My first thoughts are th
 
 I have found the following plugins useful:
 
-* vim-mode
-* ex-mode
-* color-picker
-* relative-numbers
-* git-plus
-* git-time-machine
-* todo-show
+- vim-mode
+- ex-mode
+- color-picker
+- relative-numbers
+- git-plus
+- git-time-machine
+- todo-show

@@ -9,6 +9,7 @@ tags: ["programming", "rails", "ruby", "mvc"]
 Below I have outlined the necessary steps to get a one-to-many association going in your rails project. For each step, I tried to outline the setup steps as well as the SQL queries that are executed behind the schemes for each of these commands.
 
 #### Setup the basic rails project with two models/tables
+
 ```bash
   # Creates the initial ruby project files:
   rails new carsapp
@@ -42,12 +43,14 @@ It will also create these tables:
 
 The 'car_id' field below is a foreign key that points back to the 'id' field in 'cars'.
 
- | passengers |      |             |        |            |            |
- | ---------- | ---- | ----------- | ------ | ---------- | ---------- |
- | id         | name | ride_length | car_id | created_at | updated_at |
+| passengers |      |             |        |            |            |
+| ---------- | ---- | ----------- | ------ | ---------- | ---------- |
+| id         | name | ride_length | car_id | created_at | updated_at |
 
 #### Add parent and child data:
+
 Open the rails console with 'rails c' and run these commands to create some data.
+
 ```ruby
   c = Car.new
   c.brand = "Honda"
@@ -93,6 +96,7 @@ This relationship allow for some handy queries outlined below:
 ```
 
 #### We could also create a passenger assigned to a specific car, like this as well:
+
 ```ruby
   c = Car.first
   # SQL: SELECT  "cars".* FROM "cars" ORDER BY "cars"."id" ASC LIMIT ?
@@ -147,6 +151,7 @@ To allow child table entries to be deleted when a parent entry is deleted, we ha
 ```
 
 Example:
+
 ```ruby
   c = Car.first
 

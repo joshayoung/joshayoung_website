@@ -1,9 +1,9 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from "gatsby";
 
 const ThoughtData = () => {
   const data = useStaticQuery(graphql`
     {
-      allMdx(sort: {order: DESC, fields: frontmatter___date}) {
+      allMdx(sort: { order: DESC, fields: frontmatter___date }) {
         nodes {
           frontmatter {
             title
@@ -14,13 +14,13 @@ const ThoughtData = () => {
         }
       }
     }
-  `)
+  `);
 
   return data.allMdx.nodes.map(post => ({
     title: post.frontmatter.title,
     date: post.frontmatter.date,
     description: post.frontmatter.description,
-    path: post.frontmatter.path
+    path: post.frontmatter.path,
   }));
 };
 

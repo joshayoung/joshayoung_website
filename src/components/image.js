@@ -1,7 +1,7 @@
 // Adopted From: https://stackoverflow.com/questions/55122752/reusable-gatsby-image-component-with-dynamic-image-sources/56508865#56508865
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 const Image = props => (
   <StaticQuery
