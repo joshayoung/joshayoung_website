@@ -2,6 +2,7 @@
 
 Below I have listed some of the personal projects that I have developed over the years along with the programming languages used for each.
 
+- [Notification System (2020 - 2021)](#notification_system)
 - [Joshayoung.com (2019 - 2020)](#joshayoung_website)
 - [Will It Rain (2019)](#will_it_rain)
 - [Plot Notes (2018 - 2019)](#plot_notes)
@@ -14,6 +15,12 @@ Below I have listed some of the personal projects that I have developed over the
 - [Ticketing System v1 (2010)](#ticketing_system)
 - [Comments and Capers Website (2009)](#commentsandcapers)
 - [Blogging System (2008)](#blogging_system)
+
+### <a name='notification_system'></a>Notification System (2020 - 2021)
+
+###### (Ruby, SQLite, Docker, Docker Compose)
+
+This project is build to read an API and then send notifications based on rules I set for the application. In this case, it is all running in a docker container and uses ruby to send the notifications. This project contains some private code, so I do not have it publicly hosted on GitHub for the time being.
 
 ### <a name='joshayoung_website'></a>Joshayoung.com (2019 - 2020)
 
