@@ -8,7 +8,6 @@ import "normalize.css";
 import "../styles/fonts.css";
 import "../styles/overrides.scss";
 import "highlight.js/styles/solarized-dark.css"
-import background from "../images/backgrounds/bck5.png";
 
 const Layout = ({ children, klass }) => {
   const blue = "#3385ff";
