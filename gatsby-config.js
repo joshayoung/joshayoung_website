@@ -65,8 +65,6 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
   ],
 };
