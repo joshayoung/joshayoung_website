@@ -46,9 +46,7 @@ module.exports = {
       options: {
         name: `content`,
         path: `${__dirname}/src/content`,
-        plugins: [
-          `gatsby-remark-prismjs`,
-        ]
+        plugins: [ ]
       },
     },
     `gatsby-plugin-emotion`,
