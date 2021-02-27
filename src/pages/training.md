@@ -5,6 +5,8 @@ import CodeSchoolOutput from "../output/code-school-output";
 
 In an effort to continually learn new technologies and stay abreast of existing technologies, I have found it helpful to take advantage of opportunities for continuing education. Below I have listed courses(both classroom and online) that I have completed over the years.
 
+- [Learn Docker](#learn_docker)
+- [Refactoring Rails](#refactoring-rails)
 - [Upcase by Thoughtbot](#upcase-by-thoughtbot)
 - [Pragmatic Studio Classes](#pragmatic-studio-classes)
 - [Transcend Leadership Essentials](#transcend-leadership-essentials)
@@ -13,7 +15,6 @@ In an effort to continually learn new technologies and stay abreast of existing 
 - [ Wes Bos Classes](#wes-bos-classes)
 - [Udemy Classes](#udemy-classes)
 - [Tree House Classes](#tree-house-classes)
-- [Refactoring Rails](#refactoring-rails)
 - [PluralSight Courses](#pluralsight-courses)
 - [Code School Classes](#code-school-classes)
 - [FedVTE Training](#fedvte-training)
@@ -24,6 +25,12 @@ In an effort to continually learn new technologies and stay abreast of existing 
 - [Linux Administration 310 - Service Configuration, Management and LAMP Servers](#linux-administration-310)
 - [Linux Administration 210 - System and Network Management](#linux-administration-210)
 - [Linux Administration 110 - System Installation and Configuration](#linux-administration-110)
+
+### <a name='learn_docker'></a>Learn Docker
+
+This course walks through learning docker with hands-on exercises. In my experience, this is the most thorough docker course I have found. It covers: Docker, Docker Compose, Docker Swarm, etc.
+
+- [Learn Docker course](learndocker.online)
 
 ### <a name='refactoring-rails'></a>Refactoring Rails
 
