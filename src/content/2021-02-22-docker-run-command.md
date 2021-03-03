@@ -16,14 +16,14 @@ The `docker run` command is used to create a container from an image. It can be 
 - You can see the container by running:
   - `docker container ls | grep my-postgres`.
   ```bash
-  1234567890 postgres "/bin/sh" 57 seconds ago Exited (0) 56 seconds ago my-postgres
+  1234567890 postgres "docker-entrypoint.s…" 27 seconds ago Up 26 seconds 5432/tcp my-postgres
   ```
-- We can spin up the container:
-  - `docker container start my-postgres`
 - Now we can attach to it with a bash shell:
   - `docker exec -it my-postgres bash`.
+      - From inside this shell we can run a program (like `psql` in this case).
 - Start a container with the psql shell:
   - `docker exec -it my-postgres psql -U postgres`
+      - I should be in an interactive `psql` session within my container.
 
 ##### Create a Temporary Container:
 
@@ -37,3 +37,9 @@ Each time we execute the run command and specify a `--name` flag, we create a co
 - As noted above, using `-it` and passing a shell to the container like: `bash` will allow me to connect to a shell instance inside my running container.
 - `docker container run --name my-postgres -it --rm -e POSTGRES_PASSWORD=password postgres bash`
 - If you are debugging an application like rails for instance and want to use a debugger, make sure you specify the `-it`. Otherwise you may spend a lot of time trying to determine why your server sessions is running but not hitting any of your breakpoints. I speak from experience :)
+
+##### Connect to Your Running Container from your Host:
+- If I expose the container's listen port to my host machine via the `-p` flag, then I can connect to the running server on my container from a program on my host.
+- `docker container run --name my-postgres -p 5433:5432 -it --rm -e POSTGRES_PASSWORD=password -d postgres`
+    - Here I am saying expose port 5432 to my host via port 5433.
+    - I now should be able to use any postgres gui client installed on my laptop to connect to the running postgres server in my container.
