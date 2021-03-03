@@ -32,7 +32,7 @@ const Logo = () => (
         }
       `}
     >
-      Full Stack Software Engineer
+      Software Engineer
     </div>
   </Link>
 );
