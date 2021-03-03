@@ -30,7 +30,7 @@ const Intro = () => (
       }
     `}
   >
-    My name is Josh<span className="dot">.</span>I am a Full Stack Software
+    My name is Josh<span className="dot">.</span>I am a Software
     Engineer<span className="dot">.</span>
     Here I write about development and my current tech projects
     <span className="dot">.</span>

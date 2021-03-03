@@ -2,9 +2,9 @@ import TechnicalSkills from "../snippets/technical-skills";
 
 # Resume
 
-### Experienced - Full Stack Software Engineer
+### Experienced - Software Engineer
 
-Full Stack Web Developer with over 10 years of experience developing web applications. Using current programming languages to further company productivity. Improving user experience by working with members of my team to maintain and improve our web programs.
+Software Engineer with over 10 years of experience developing web applications. Using current programming languages to further company productivity. Improving user experience by working with members of my team to maintain and improve our web programs.
 
 ### Work Experience
 
