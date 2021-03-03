@@ -27,6 +27,14 @@ export default () => (
     <dd>
       <code>docker container stop $(docker container list -q)</code>
     </dd>
+    <dt>Stop All Running Containers</dt>
+    <dd>
+      <code>docker container ps -q | xargs docker container stop</code>
+    </dd>
+    <dt>Delete All Containers (be careful!)</dt>
+    <dd>
+      <code>docker container ps -q -a | xargs docker container rm</code>
+    </dd>
     <dt>Start a container</dt>
     <dd>
       <code>docker start [container name]</code>
