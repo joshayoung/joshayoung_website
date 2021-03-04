@@ -33,6 +33,7 @@ const TechnicalSkills = () => (
   >
     <ul className="tech-skills">
       <li>Server Technologies</li>
+      <li>Docker</li>
       <li>Apache</li>
       <li>IIS</li>
       <li>Nginx</li>
@@ -60,6 +61,7 @@ const TechnicalSkills = () => (
     </ul>
     <ul className="tech-skills">
       <li>Programming Languages</li>
+      <li>Java</li>
       <li>PHP</li>
       <li>Ruby</li>
       <li>C#</li>
@@ -73,6 +75,7 @@ const TechnicalSkills = () => (
     </ul>
     <ul className="tech-skills">
       <li>Frameworks</li>
+      <li>Spring Framework</li>
       <li>Rails</li>
       <li>Laravel</li>
       <li>ASP.NET</li>
