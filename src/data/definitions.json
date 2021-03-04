@@ -10,6 +10,11 @@
     "link": "https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_8.0.0/com.ibm.mq.pro.doc/q002680_.htm"
   },
   {
+    "word": "Plain Old Java Object (POJO)",
+    "definition": "an ordinary Java object, not bound by any special restriction.",
+    "link": "https://en.wikipedia.org/wiki/Plain_old_Java_object"
+  },
+  {
     "word": "Mise en place",
     "definition": "a French culinary phrase which means 'putting in place' or 'everything in its place'. It refers to the setup required before cooking, and is often used in professional kitchens to refer to organizing and arranging the ingredients (e.g., cuts of meat, relishes, sauces, par-cooked items, spices, freshly chopped vegetables, and other components) that a cook will require for the menu items that are expected to be prepared during a shift.",
     "link": "https://en.wikipedia.org/wiki/Mise_en_place"
