@@ -39,6 +39,9 @@ const SnippetAnchorList = () => (
       <a href="#git">Git</a>
     </li>
     <li>
+      <a href="#github">GitHub</a>
+    </li>
+    <li>
       <a href="#javascript">JavaScript</a>
     </li>
     <li>

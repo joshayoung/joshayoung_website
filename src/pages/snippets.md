@@ -921,6 +921,14 @@ Using 'squash' will combine this commit in with the previous commit.
   git rebase -i HEAD~4
 ```
 
+### <a id="github"></a>GitHub
+
+#### Close an Issue With a Commit
+You can add a number to your commit message to close that particular commit. I have included an example commit below.
+```bash
+Addressing the problems with the latency. Closes #4.
+```
+
 ### <a id="javascript"></a>JavaScript
 
 #### Capitalize Function
