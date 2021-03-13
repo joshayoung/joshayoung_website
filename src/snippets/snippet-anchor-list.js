@@ -36,6 +36,9 @@ const SnippetAnchorList = () => (
       <a href="#gatsby">Gatsby</a>
     </li>
     <li>
+      <a href="#java">Java</a>
+    </li>
+    <li>
       <a href="#git">Git</a>
     </li>
     <li>
