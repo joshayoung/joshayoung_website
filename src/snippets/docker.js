@@ -35,6 +35,10 @@ export default () => (
     <dd>
       <code>docker container ps -q -a | xargs docker container rm</code>
     </dd>
+    <dt>Copy File from Container to Host</dt>
+    <dd>
+      <code>docker cp container_name:/path/to/file/on/container.txt /path/on/host/</code>
+    </dd>
     <dt>Start a container</dt>
     <dd>
       <code>docker start [container name]</code>

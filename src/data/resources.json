@@ -183,6 +183,11 @@
         "display": true
       },
       {
+        "title": "The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)",
+        "url": "https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses",
+        "display": true
+      },
+      {
         "title": "Typing the Untyped: Soundness in Gradual Type Systems",
         "url": "https://www.thestrangeloop.com/2019/typing-the-untyped-soundness-in-gradual-type-systems.html",
         "display": true
@@ -949,6 +954,17 @@
     ]
   },
   {
+    "title": "CPE Resources",
+    "class": "cpe_resources",
+    "data": [
+      {
+        "title": "Real-Training-For-Free Webinars",
+        "url": "https://www.ultimatewindowssecurity.com/webinars/default.aspx",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "SQL",
     "class": "sql_resources",
     "data": [
@@ -1079,6 +1095,11 @@
         "display": true
       },
       {
+        "title": "How To Remove Files From Git Commit",
+        "url": "https://devconnected.com/how-to-remove-files-from-git-commit",
+        "display": true
+      },
+      {
         "title": "Git Version Control Guide",
         "url": "https://github.com/thoughtbot/guides/tree/master/protocol/git",
         "display": true
@@ -1140,6 +1161,17 @@
       {
         "title": "Converters and Calculators",
         "url": "https://www.wintelguy.com",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Networking Resources",
+    "class": "networking",
+    "data": [
+      {
+        "title": "An Introduction to Computer Networks",
+        "url": "http://intronetworks.cs.luc.edu",
         "display": true
       }
     ]
