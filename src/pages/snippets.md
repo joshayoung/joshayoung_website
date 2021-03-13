@@ -446,6 +446,12 @@ Without `--permanent`, the firewall rule will take affect but will not persist a
   npm run develop
 ```
 
+### <a id="java"></a>Java
+
+#### Interface Naming
+* When you have more than one interface use a name that corresponds to the domain.
+* When you have only one interface, name the interface "name" + "Impl".
+
 ### <a id="git"></a>Git
 
 #### Contributing to an open source project
