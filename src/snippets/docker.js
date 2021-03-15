@@ -39,6 +39,10 @@ export default () => (
     <dd>
       <code>docker cp container_name:/path/to/file/on/container.txt /path/on/host/</code>
     </dd>
+    <dt>Detach from a Running Container</dt>
+    <dd>Ctrl+P then Ctrl+Q</dd>
+    <dt>Re-attach to a Running Container</dt>
+    <dd>docker attach [container id]</dd>
     <dt>Start a container</dt>
     <dd>
       <code>docker start [container name]</code>
