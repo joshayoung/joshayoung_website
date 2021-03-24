@@ -31,6 +31,8 @@ export default () => (
     <dd>
       <code>docker container ps -q | xargs docker container stop</code>
     </dd>
+    <dt>Prune System - use caution with this</dt>
+    <dd>docker system prune -a</dd>
     <dt>Delete All Containers (be careful!)</dt>
     <dd>
       <code>docker container ps -q -a | xargs docker container rm</code>
@@ -43,6 +45,8 @@ export default () => (
     <dd>Ctrl+P then Ctrl+Q</dd>
     <dt>Re-attach to a Running Container</dt>
     <dd>docker attach [container id]</dd>
+    <dt>Show Mounts</dt>
+    <dd>docker inspect -f "&#123;&#123; .Mounts &#125;&#125;" [container id]</dd>
     <dt>Start a container</dt>
     <dd>
       <code>docker start [container name]</code>

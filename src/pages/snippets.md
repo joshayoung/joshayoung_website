@@ -448,6 +448,12 @@ Without `--permanent`, the firewall rule will take affect but will not persist a
 
 ### <a id="java"></a>Java
 
+#### Build a Jar:
+```java
+  mvn package
+  java -jar target/my_jar_name.jar
+```
+
 #### Interface Naming
 * When you have more than one interface use a name that corresponds to the domain.
 * When you have only one interface, name the interface "name" + "Impl".
@@ -1738,6 +1744,15 @@ The command below could also be executed with 'bs=4m'.
 ```
 
 ### <a name='rails'></a>Rails
+
+#### Set to Production Mode Locally:
+If you are using 'dotenv-rails' to add ENV data, you may need to move that outside of your development/test section in your Gemfile.
+
+```bash
+  bin/rails assets:precompile
+
+  bin/rails s -b 0.0.0.0 -e production
+```
 
 #### Connect to Already Running Rails Instance:
 
