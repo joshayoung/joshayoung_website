@@ -493,6 +493,11 @@
         "display": true
       },
       {
+        "title": "Tailwind CSS",
+        "url": "https://tailwindcomponents.com/cheatsheet",
+        "display": true
+      },
+      {
         "title": "Favicon Cheat Sheet",
         "url": "https://github.com/audreyfeldroy/favicon-cheat-sheet",
         "display": true
