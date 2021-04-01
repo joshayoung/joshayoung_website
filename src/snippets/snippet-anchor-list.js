@@ -12,6 +12,9 @@ const SnippetAnchorList = () => (
       <a href="#bundler">Bundler</a>
     </li>
     <li>
+      <a href="#csharp">C#</a>
+    </li>
+    <li>
       <a href="#css">CSS</a>
     </li>
     <li>

@@ -194,6 +194,21 @@ curl --data "information=to&send=to the server" http://example.com
   bundle _2.0.15_ install
 ```
 
+### <a id="csharp">C#</a>
+
+#### Prefer Named Arguments:
+```csharp
+  public void FullName(string first, string last) 
+  {
+
+  }
+
+  // Call method like this:
+  fullName(first: "Joe", last: "Smith");
+
+  // Not like this:
+  fullName("Joe", "Smith");
+```
 ### <a id="css"></a>CSS
 
 #### Switch to box sizing
