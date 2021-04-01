@@ -124,6 +124,15 @@ Software Engineer with over 10 years of experience developing web applications. 
 
 I have listed more details about each one of these projects on my [projects](/projects) page.
 
+
+- [Notification System)](/projects/#notification_system)
+  <span>(Ruby, SQLite, Docker, Docker Compose - 2021)</span>
+- [Joshayoung.com)](/projects/#joshayoung_website)
+  <span>(Gatsby, React, Jest - 2020)</span>
+- [Will It Rain](/projects/#will_it_rain)
+  <span>(Ruby, RSpec - 2019)</span>
+- [Plot Notes](/projects/#plot_notes)
+  <span>(Ruby/Rails, RSpec, HTML, CSS, JavaScript - 2019)</span>
 - [Note/URL System](/projects#note_url_system)
   <span>(PHP, Laravel, PostgreSQL - 2017)</span>
 - [Joshyoung Website](/projects#joshyoung)
