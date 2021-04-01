@@ -87,6 +87,17 @@
     ]
   },
   {
+    "title": "Blogs",
+    "class": "blogs",
+    "data": [
+      {
+        "title": "James Lorenzen's Blog",
+        "url": "https://jlorenzen.blogspot.com?m=1",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Build Tools",
     "class": "build_tools",
     "data": [
