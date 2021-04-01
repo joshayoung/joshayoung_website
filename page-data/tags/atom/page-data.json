@@ -1,1 +1,0 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/atom/","result":{"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"frontmatter":{"title":"Trying VSCode","path":"/vs-code"}}},{"node":{"frontmatter":{"title":"Switching to Atom","path":"/switch-to-atom"}}}]}},"pageContext":{"tag":"atom"}},"staticQueryHashes":["305197398"]}
