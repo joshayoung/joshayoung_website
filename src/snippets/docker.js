@@ -51,6 +51,10 @@ export default () => (
     <dd>
       <code>docker start [container name]</code>
     </dd>
+    <dt>Docker `exec` vs `attach`</dt>
+    <dd>
+      `exec` creates a new instance of the container and connects to it. `attach` connects to the currently running instance.
+    </dd>
     <dt>Connect to a running container</dt>
     <dd>
       <code>docker exec -it [image name] /bin/bash</code>
