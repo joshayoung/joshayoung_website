@@ -133,6 +133,8 @@ Wes Bos delivers some excellent content at his [website](http://wesbos.com/cours
 
 You have to be selective with some of the classes offered on Udemy; however, sometimes the classes offered are excellent at a reasonable price.
 
+- [Spring Framework 5: Beginner to Guru](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/)
+  - I went through some of this course to learn Java/Spring. I did not complete the whole course though.
 - [Sketch 3 from A to Z: Become an App Designer](https://www.udemy.com/learnsketch3)
 
 ---
