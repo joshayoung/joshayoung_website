@@ -17,7 +17,7 @@
   {
     "title": "BSD Now",
     "url": "https://www.bsdnow.tv/episodes",
-    "display": true
+    "display": false
   },
   {
     "title": "The Bike Shed",
@@ -27,22 +27,22 @@
   {
     "title": "Giant Robots Smashing Into Other Giant Robots",
     "url": "http://giantrobots.fm/",
-    "display": true
+    "display": false
   },
   {
     "title": "Ruby on Rails Podcast",
     "url": "http://5by5.tv/rubyonrails",
-    "display": true
+    "display": false
   },
   {
     "title": "Ruby Rogues",
     "url": "https://devchat.tv/ruby-rogues",
-    "display": true
+    "display": false
   },
   {
     "title": "The Ruby Testing Podcast",
     "url": "https://www.codewithjason.com/ruby-testing-podcast/",
-    "display": true
+    "display": false
   },
   {
     "title": ".NET Rocks",
@@ -52,7 +52,7 @@
   {
     "title": "Command Line Heroes",
     "url": "https://www.redhat.com/en/command-line-heroes",
-    "display": true
+    "display": false
   },
   {
     "title": "Software Engineering Daily",
@@ -72,12 +72,12 @@
   {
     "title": "Packet Pushers Datanauts",
     "url": "http://packetpushers.net/series/datanauts-podcast",
-    "display": true
+    "display": false
   },
   {
     "title": "CTRL+CLICK CAST",
     "url": "https://ctrlclickcast.com/episodes/archive",
-    "display": true
+    "display": false
   },
   {
     "title": "CodePen Radio",
@@ -87,27 +87,27 @@
   {
     "title": "The Big Web Show",
     "url": "http://5by5.tv/bigwebshow",
-    "display": true
+    "display": false
   },
   {
     "title": "A Responsive Web Design Podcast",
     "url": "https://responsivewebdesign.com/podcast",
-    "display": true
+    "display": false
   },
   {
     "title": "FLOSS Weekly",
     "url": "https://twit.tv/shows/floss-weekly",
-    "display": true
+    "display": false
   },
   {
     "title": "Front End Happy Hour",
     "url": "http://frontendhappyhour.com",
-    "display": true
+    "display": false
   },
   {
     "title": "JavaScript Jabber",
     "url": "https://devchat.tv/js-jabber",
-    "display": true
+    "display": false
   },
   {
     "title": "The Laracasts Snippet",
@@ -117,7 +117,7 @@
   {
     "title": "The Laravel Podcast",
     "url": "http://www.laravelpodcast.com",
-    "display": true
+    "display": false
   },
   {
     "title": "Ask Noah",
@@ -127,22 +127,22 @@
   {
     "title": "Linux Action News",
     "url": "http://www.jupiterbroadcasting.com/show/linux-action-news",
-    "display": true
+    "display": false
   },
   {
     "title": "Request for Commits",
     "url": "https://changelog.com/rfc",
-    "display": true
+    "display": false
   },
   {
     "title": "Presentable",
     "url": "https://www.relay.fm/presentable",
-    "display": true
+    "display": false
   },
   {
     "title": "The PHP Roundtable",
     "url": "https://www.phproundtable.com",
-    "display": true
+    "display": false
   },
   {
     "title": "TechSNAP",
@@ -152,7 +152,7 @@
   {
     "title": "Scale Your Code Podcast",
     "url": "https://itunes.apple.com/us/podcast/scale-your-code-podcast/id987253051?mt=2",
-    "display": true
+    "display": false
   },
   {
     "title": "ShopTalk Show",
@@ -162,16 +162,16 @@
   {
     "title": "The Web Ahead",
     "url": "http://5by5.tv/webahead",
-    "display": true
+    "display": false
   },
   {
     "title": "Toolsday",
     "url": "http://www.toolsday.io/#episode-area",
-    "display": true
+    "display": false
   },
   {
     "title": "The Changelog",
     "url": "https://changelog.com/podcast",
-    "display": true
+    "display": false
   }
 ]
