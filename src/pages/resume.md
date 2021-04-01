@@ -14,7 +14,7 @@ Software Engineer with over 10 years of experience developing web applications. 
 
 - Developing and maintaining many web properties (Ruby on Rails, JavaScript, CSS, HTML).
 - Working with other team members via git and other collaboration tools.
-- Writing and updating rspec tests to insure good test coverage for our websites.
+- Writing and updating RSpec tests to insure good test coverage for our websites.
 - Troubleshoot logs to find and correct bugs in production.
 - Work with Java/Spring service to correct errors and add features.
 
