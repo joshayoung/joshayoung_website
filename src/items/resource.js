@@ -2,7 +2,7 @@ import React from "react";
 
 const Resource = ({ klass, title, post }) => (
   <>
-    <a id={klass} href="1#">
+    <a id={klass} href="#top">
       <h3>{title}</h3>
     </a>
     {post.map((resource, i) => (
