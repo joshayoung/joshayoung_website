@@ -87,6 +87,22 @@
     ]
   },
   {
+    "title": "Build Tools",
+    "class": "build_tools",
+    "data": [
+      {
+        "title": "Tooling.Report",
+        "url": "https://bundlers.tooling.report",
+        "display": true
+      },
+      {
+        "title": "Import from `node_modules`",
+        "url": "https://bundlers.tooling.report/importing-modules/node-modules/",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Performance",
     "class": "performance_resources",
     "data": [
