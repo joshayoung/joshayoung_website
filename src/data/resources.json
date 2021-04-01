@@ -578,17 +578,6 @@
     ]
   },
   {
-    "title": "Xamarin",
-    "class": "xamarin",
-    "data": [
-      {
-        "title": "How To Work With CollectionView in Xamarin Forms",
-        "url": "https://medium.com/a-developer-in-making/how-to-work-with-collectionview-in-xamarin-forms-5dc65c50b419",
-        "display": true
-      }
-    ]
-  },
-  {
     "title": "FreeNAS",
     "class": "freenas",
     "data": [
@@ -1371,17 +1360,33 @@
     ]
   },
   {
-    "title": "C# / Xamarin",
-    "class": "c_sharp_xamarin",
+    "title": "C#",
+    "class": "csharp",
     "data": [
-      {
-        "title": "Xamarin documentation",
-        "url": "https://docs.microsoft.com/en-us/xamarin/#pivot=get-started",
-        "display": true
-      },
       {
         "title": "C# Fundamentals for Absolute Beginners",
         "url": "https://channel9.msdn.com/Series/CSharp-Fundamentals-for-Absolute-Beginners?l=XIMI21QIC_2406218949",
+        "display": true
+      },
+      {
+        "title": "Dot Net Fiddle",
+        "url": "https://dotnetfiddle.net",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Xamarin",
+    "class": "xamarin",
+    "data": [
+      {
+        "title": "How To Work With CollectionView in Xamarin Forms",
+        "url": "https://medium.com/a-developer-in-making/how-to-work-with-collectionview-in-xamarin-forms-5dc65c50b419",
+        "display": true
+      },
+      {
+        "title": "Xamarin documentation",
+        "url": "https://docs.microsoft.com/en-us/xamarin/#pivot=get-started",
         "display": true
       },
       {
