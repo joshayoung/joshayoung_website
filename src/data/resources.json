@@ -719,6 +719,11 @@
         "display": true
       },
       {
+        "title": "How I code without service objects",
+        "url": "https://www.codewithjason.com/code-without-service-objects",
+        "display": true
+      },
+      {
         "title": "Binding.pry",
         "url": "https://docs.gitlab.com/ee/development/pry_debugging.html",
         "display": true
@@ -1398,6 +1403,16 @@
       {
         "title": "How To Work With CollectionView in Xamarin Forms",
         "url": "https://medium.com/a-developer-in-making/how-to-work-with-collectionview-in-xamarin-forms-5dc65c50b419",
+        "display": true
+      },
+      {
+        "title": "Xamarin.Forms documentation",
+        "url": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms",
+        "display": true
+      },
+      {
+        "title": "Xamarin List view guide",
+        "url": "https://codeburst.io/xamarin-list-view-guide-ac97bac5955a",
         "display": true
       },
       {
