@@ -59,6 +59,11 @@
         "display": true
       },
       {
+        "title": "My JSON Server",
+        "url": "https://my-json-server.typicode.com",
+        "display": true
+      },
+      {
         "title": "API For Testing",
         "url": "https://jsonplaceholder.typicode.com",
         "display": true
@@ -1406,6 +1411,26 @@
         "display": true
       },
       {
+        "title": "Using Data Binding in Xamarin Applications",
+        "url": "https://www.twilio.com/blog/using-data-binding-in-xamarin-applications",
+        "display": true
+      },
+      {
+        "title": "Get started with Xamarin",
+        "url": "https://docs.microsoft.com/en-us/xamarin/get-started",
+        "display": true
+      },
+      {
+        "title": "Xamarin Tutorials",
+        "url": "https://docs.microsoft.com/en-us/learn/browse/?term=xamarin&terms=xamarin",
+        "display": true
+      },
+      {
+        "title": "xamarin-101",
+        "url": "https://github.com/codemillmatt/xamarin-101",
+        "display": true
+      },
+      {
         "title": "Xamarin.Forms documentation",
         "url": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms",
         "display": true
@@ -1577,6 +1602,16 @@
       {
         "title": "Content Security Policy",
         "url": "https://developers.google.com/web/fundamentals/security/csp",
+        "display": true
+      },
+      {
+        "title": "OWASP Dependency-Check",
+        "url": "https://owasp.org/www-project-dependency-check",
+        "display": true
+      },
+      {
+        "title": "Have I Been Pwned",
+        "url": "https://haveibeenpwned.com",
         "display": true
       },
       {
