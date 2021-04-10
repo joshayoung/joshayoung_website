@@ -1596,6 +1596,17 @@
     ]
   },
   {
+    "title": "Tools",
+    "class": "tools",
+    "data": [
+      {
+        "title": "URLEX",
+        "url": "https://urlex.org/",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Security",
     "class": "security_resources",
     "data": [
