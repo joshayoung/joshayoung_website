@@ -1348,6 +1348,11 @@
         "display": true
       },
       {
+        "title": "Quantity Always Trumps Quality",
+        "url": "https://blog.codinghorror.com/quantity-always-trumps-quality",
+        "display": true
+      },
+      {
         "title": "7 Ways To Make Software Developers Happy",
         "url": "https://towardsdatascience.com/7-ways-to-make-software-developers-happy-d4b72c07584e",
         "display": true
@@ -1413,6 +1418,21 @@
       {
         "title": "Using Data Binding in Xamarin Applications",
         "url": "https://www.twilio.com/blog/using-data-binding-in-xamarin-applications",
+        "display": true
+      },
+      {
+        "title": "Safe Area Layout Guide on iOS",
+        "url": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms/platform/ios/page-safe-area-layout",
+        "display": true
+      },
+      {
+        "title": "ListView Data Sources",
+        "url": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/listview/data-and-databinding",
+        "display": true
+      },
+      {
+        "title": "Introduction to Enterprise App Development",
+        "url": "https://docs.microsoft.com/en-us/xamarin/get-started",
         "display": true
       },
       {
