@@ -210,6 +210,11 @@
         "display": true
       },
       {
+        "title": "Learn X in Y minutes",
+        "url": "https://learnxinyminutes.com",
+        "display": true
+      },
+      {
         "title": "TIOBE Index",
         "url": "https://www.tiobe.com/tiobe-index",
         "display": true
@@ -522,6 +527,11 @@
       {
         "title": "DevHints.io",
         "url": "https://devhints.io",
+        "display": true
+      },
+      {
+        "title": "Jetbrains Rider - Keyboard Shortcuts",
+        "url": "https://cheatography.com/franklioty/cheat-sheets/jetbrains-rider-keyboard-shortcuts/",
         "display": true
       },
       {
@@ -1386,6 +1396,26 @@
       {
         "title": "C# Fundamentals for Absolute Beginners",
         "url": "https://channel9.msdn.com/Series/CSharp-Fundamentals-for-Absolute-Beginners?l=XIMI21QIC_2406218949",
+        "display": true
+      },
+      {
+        "title": "C# code snippets",
+        "url": "https://docs.microsoft.com/en-us/visualstudio/ide/visual-csharp-code-snippets",
+        "display": true
+      },
+      {
+        "title": "Value types (C# reference)",
+        "url": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types",
+        "display": true
+      },
+      {
+        "title": "Extension Methods (C# Programming Guide)",
+        "url": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods",
+        "display": true
+      },
+      {
+        "title": "Reference types (C# Reference)",
+        "url": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types",
         "display": true
       },
       {
