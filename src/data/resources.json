@@ -119,6 +119,22 @@
     ]
   },
   {
+    "title": "Software Diagramming",
+    "class": "software_diagramming",
+    "data": [
+      {
+        "title": "UML - Standard Diagrams",
+        "url": "https://www.tutorialspoint.com/uml/uml_standard_diagrams.htm",
+        "display": true
+      },
+      {
+        "title": "App.Diagrams.Net",
+        "url": "https://app.diagrams.net/",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Performance",
     "class": "performance_resources",
     "data": [
@@ -360,6 +376,11 @@
       {
         "title": "Mocks Aren't Stubs",
         "url": "https://martinfowler.com/articles/mocksArentStubs.html",
+        "display": true
+      },
+      {
+        "title": "What are the different kinds of Rails tests...",
+        "url": "https://www.codewithjason.com/different-kinds-rails-tests-use",
         "display": true
       },
       {
@@ -651,6 +672,22 @@
       {
         "title": "Anchor Links in Markdown",
         "url": "https://justin.kelly.org.au/anchor-links-in-markdown",
+        "display": true
+      },
+      {
+        "title": "Basic Syntax",
+        "url": "https://www.markdownguide.org/basic-syntax",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Temporary Services",
+    "class": "temporary_services",
+    "data": [
+      {
+        "title": "MinuteInbox",
+        "url": "https://www.minuteinbox.com",
         "display": true
       }
     ]
