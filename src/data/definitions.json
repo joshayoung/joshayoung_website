@@ -10,6 +10,16 @@
     "link": "https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_8.0.0/com.ibm.mq.pro.doc/q002680_.htm"
   },
   {
+    "word": "Separate Query from Modifier",
+    "definition": "Split the method into two separate methods. As you would expect, one of them should return the value and the other one modifies the object.",
+    "link": "https://refactoring.guru/separate-query-from-modifier"
+  },
+  {
+    "word": "Cyclomatic Complexity",
+    "definition": "a software metric used to indicate the complexity of a program. It is a quantitative measure of the number of linearly independent paths through a program's source code.",
+    "link": "https://en.wikipedia.org/wiki/Cyclomatic_complexity"
+  },
+  {
     "word": "Sturgeon's law",
     "definition": "an adage that states that 'ninety percent of everything is crap.'",
     "link": "https://en.wikipedia.org/wiki/Sturgeon%27s_law"
