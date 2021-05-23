@@ -196,9 +196,15 @@ curl --data "information=to&send=to the server" http://example.com
 
 ### <a id="csharp">C#</a>
 
+#### Property vs Field
+* A property is a field that has an implicit getter and setter set for it. This getter/setter is setup using the `get;` and `set;`. Usually this manifests itself as a public getter that returns a private field. Here is an example:
+  * `public string Name { get; set; };`
+* A field in C# does not have a backing field and has no getter or setter set for it. Here is an example:
+  * `public string Name;`
+
 #### Prefer Named Arguments:
 ```csharp
-  public void FullName(string first, string last) 
+  public void FullName(string first, string last)
   {
 
   }
@@ -3127,6 +3133,10 @@ svg {
   width: 50%;
 }
 ```
+
+### <a name='rider'></a>Rider
+* `Alt + Insert`
+  * Generation Menu.
 
 ### <a name='rubymine'></a>RubyMine
 
