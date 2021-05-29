@@ -47,6 +47,10 @@ export default () => (
     <dd>docker attach [container id]</dd>
     <dt>Show Mounts</dt>
     <dd>docker inspect -f "&#123;&#123; .Mounts &#125;&#125;" [container id]</dd>
+    <dt>Show Docker Stats</dt>
+    <dd>
+      <code>docker stats</code>
+    </dd>
     <dt>Start a container</dt>
     <dd>
       <code>docker start [container name]</code>
