@@ -8,13 +8,14 @@ Software Engineer with over 10 years of experience developing web applications. 
 
 ### Work Experience
 
-#### Full Stack Developer
+#### Developer III
 
 ##### Ramsey Solutions - Franklin, TN (2018 - Present)
 
-- Developing and maintaining many web properties (Ruby on Rails, JavaScript, CSS, HTML).
-- Working with other team members via git and other collaboration tools.
-- Writing and updating RSpec tests to insure good test coverage for our websites.
+- Build mobile applications using Xamarin and C#.
+- Maintain and improve web services written in Ruby and C#.
+- Develop and maintain many web properties (Ruby on Rails, JavaScript, CSS, HTML).
+- Write and update xUnit/RSpec tests to insure good test coverage for our applications.
 - Troubleshoot logs to find and correct bugs in production.
 - Work with Java/Spring service to correct errors and add features.
 
