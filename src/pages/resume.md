@@ -4,11 +4,11 @@ import TechnicalSkills from "../snippets/technical-skills";
 
 ### Experienced - Software Engineer
 
-Software Engineer with over 10 years of experience developing web applications. Using current programming languages to further company productivity. Improving user experience by working with members of my team to maintain and improve our web programs.
+Software Engineer with over 10 years of experience developing web and mobile applications. Using current programming languages to further company productivity. Improving user experience by working with members of my team to maintain and improve our applications.
 
 ### Work Experience
 
-#### Developer III
+#### Software Engineer III
 
 ##### Ramsey Solutions - Franklin, TN (2018 - Present)
 
