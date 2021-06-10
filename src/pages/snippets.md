@@ -489,6 +489,16 @@ Without `--permanent`, the firewall rule will take affect but will not persist a
 4. Push the feature branch up: `git push origin feature-branch-name`.
 5. Creating a PR from this branch will open up a PR in the forked repo.
 
+#### Pull Down / Commit to a Remote PR:
+1. Copy the remote branch name in the PR list (i.e. 'thebrnm:master')
+  * Remove the `:master` off the end.
+2. `git remote add thebrnm git@github.com:thebrnm/the_repo.git`
+  * In this case 'origin' started as: `git@github.com:thebrnm/the_repo.git`
+3. `git fetch thebrnm`
+4. `git checkout -b thebrnm-master thebrnm/master`
+5. `git commit -am "My Commit Message"`
+6. `git push thebrnm HEAD:master`
+
 #### Remove File from Repo, and File System
 
 This will remove the file from your repo, and the filesystem.
