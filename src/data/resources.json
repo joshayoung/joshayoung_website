@@ -128,6 +128,16 @@
         "display": true
       },
       {
+        "title": "PlantUML Editor",
+        "url": "https://plantuml-editor.kkeisuke.com",
+        "display": true
+      },
+      {
+        "title": "PlantText",
+        "url": "https://www.planttext.com",
+        "display": true
+      },
+      {
         "title": "App.Diagrams.Net",
         "url": "https://app.diagrams.net/",
         "display": true
@@ -1441,6 +1451,11 @@
         "display": true
       },
       {
+        "title": "C# Coding Standards and Naming Conventions",
+        "url": "https://github.com/ktaranov/naming-convention/blob/master/C%23%20Coding%20Standards%20and%20Naming%20Conventions.md",
+        "display": true
+      },
+      {
         "title": "Value types (C# reference)",
         "url": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types",
         "display": true
@@ -1483,8 +1498,18 @@
         "display": true
       },
       {
+        "title": "Stateless View Models",
+        "url": "http://www.xamlpatterns.com/stateless-view-models",
+        "display": true
+      },
+      {
         "title": "Using Data Binding in Xamarin Applications",
         "url": "https://www.twilio.com/blog/using-data-binding-in-xamarin-applications",
+        "display": true
+      },
+      {
+        "title": "The Coordinate System in Xamarin.Forms and Android",
+        "url": "https://www.andrewhoefling.com/Blog/Post/the-coordinate-system-in-xamarin-forms-and-android",
         "display": true
       },
       {
