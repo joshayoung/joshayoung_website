@@ -1446,6 +1446,21 @@
         "display": true
       },
       {
+        "title": "Async/Await - Best Practices in Asynchronous Programming",
+        "url": "https://docs.microsoft.com/en-us/archive/msdn-magazine/2013/march/async-await-best-practices-in-asynchronous-programming",
+        "display": true
+      },
+      {
+        "title": "C# Async Antipatterns",
+        "url": "https://markheath.net/post/async-antipatterns",
+        "display": true
+      },
+      {
+        "title": "Understanding C# async / await",
+        "url": "https://weblogs.asp.net/dixin/understanding-c-sharp-async-await-1-compilation",
+        "display": true
+      },
+      {
         "title": "C# code snippets",
         "url": "https://docs.microsoft.com/en-us/visualstudio/ide/visual-csharp-code-snippets",
         "display": true
@@ -1484,6 +1499,21 @@
       {
         "title": "WebJars",
         "url": "https://www.webjars.org",
+        "display": true
+      },
+      {
+        "title": "A Start to Finish Guide to Docker with Java",
+        "url": "https://stackify.com/guide-docker-java/",
+        "display": true
+      },
+      {
+        "title": "Spring - Command line support",
+        "url": "https://docs.spring.io/initializr/docs/0.4.x/reference/html/command-line.html",
+        "display": true
+      },
+      {
+        "title": "Three Ways to Create Docker Images for Java",
+        "url": "https://codefresh.io/docker-tutorial/create-docker-images-for-java",
         "display": true
       }
     ]
