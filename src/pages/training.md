@@ -151,6 +151,27 @@ I took all of these classes as a part of a short Tree House membership. They wer
 
 PluralSight also offers some good content. It is not as focused as other platforms such as Code School though. I have taken a few courses from PluralSight which I have listed below.
 
+- [Cross-platform C# Programming with JetBrains' Rider](https://www.pluralsight.com/courses/csharp-jetbrains-rider-cross-platform-programming)
+- [C# Design Patterns: Builder](https://www.pluralsight.com/courses/c-sharp-design-patterns-builder)
+- [C# Design Patterns: Null Object](https://www.pluralsight.com/courses/csharp-design-patterns-null-object)
+- [C# Design Patterns: Bridge](https://www.pluralsight.com/courses/design-patterns-c-sharp-bridge)
+- [C# Design Patterns: Command](https://www.pluralsight.com/courses/c-sharp-command-pattern)
+- [C# Design Patterns: Singleton](https://www.pluralsight.com/courses/c-sharp-design-patterns-singleton)
+- [C# Design Patterns: Strategy](https://www.pluralsight.com/courses/c-sharp-design-patterns-strategy)
+- [Design Patterns Overview](https://app.pluralsight.com/library/courses/design-patterns-overview/table-of-contents)
+- [C# Design Patterns: Visitor](https://www.pluralsight.com/courses/c-sharp-design-patterns-visitor)
+- [C# Programming Paradigms](https://www.pluralsight.com/courses/csharp-fundamentals-2)
+- [SOLID Principles for C# Developers](https://www.pluralsight.com/courses/csharp-solid-principles)
+- [Refactoring for C# Developers](https://www.pluralsight.com/courses/refactoring-csharp-developers)
+- [Testing .NET Code with xUnit.net: Getting Started](https://www.pluralsight.com/courses/dotnet-core-testing-code-xunit-dotnet-getting-started)
+- [Exception Handling in C#](https://www.pluralsight.com/courses/exception-handling-c-sharp)
+- [C# Interfaces](https://www.pluralsight.com/courses/using-csharp-interfaces)
+- [Clean Coding Principles in C#](https://www.pluralsight.com/courses/csharp-clean-coding-principles)
+- [Beginning C# Collections](https://www.pluralsight.com/courses/csharp-collections-beginning)
+- [Applying MVVM in Xamarin.Forms Applications](https://app.pluralsight.com/library/courses/applying-mvvm-xamarin-forms-applications/table-of-contents)
+- [Xamarin: The Big Picture](https://www.pluralsight.com/courses/xamarin-big-picture)
+- [Building Xamarin.Forms Applications with XAML](https://www.pluralsight.com/courses/xamarin-forms-applications-xaml)
+- [C# Fundamentals](https://www.pluralsight.com/courses/csharp-fundamentals-dev)
 - [Getting Started with Emmet](https://app.pluralsight.com/library/courses/emmet-getting-started/table-of-contents)
 - [Docker for Web Developers](https://app.pluralsight.com/library/courses/docker-web-development/table-of-contents)
 
