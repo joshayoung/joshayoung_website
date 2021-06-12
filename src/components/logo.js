@@ -9,7 +9,6 @@ const Logo = () => (
       font-size: 52px;
       font-family: "Acme", sans-serif;
       display: block;
-      margin-bottom: 70px;
       span {
         color: #3385ff;
       }
