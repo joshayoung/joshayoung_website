@@ -2,6 +2,7 @@ import React from "react";
 import { css } from "@emotion/core";
 import Header from "./header";
 import Logo from "../components/logo";
+import Social from "../components/social";
 import Nav from "../components/nav";
 import Main from "../components/main";
 import Aside from "../components/aside";
@@ -77,6 +78,7 @@ const Inner = ({ children }) => (
     <Nav />
     <Main>
       <Logo />
+      <Social />
       {children}
       <GoToTop />
     </Main>
