@@ -34,6 +34,9 @@ const Glance = () => (
         <a href="/tech-spectrum">Spectrum</a>
       </li>
       <li>
+        <a href="/tips">Tips</a>
+      </li>
+      <li>
         <a href="/me#podcasts">Podcasts</a>
       </li>
       <li>
