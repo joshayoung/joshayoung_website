@@ -58,9 +58,6 @@ typings/
 .cache/
 public
 
-# Mac files
-.DS_Store
-
 # Yarn
 yarn-error.log
 .pnp/
@@ -72,4 +69,5 @@ notes/
 
 .env.development
 .env.production
-.vscode/
+
+static/page-data/tags
