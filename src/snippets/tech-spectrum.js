@@ -175,6 +175,7 @@ export default () => (
             <li className="one">Mustache</li>
             <li className="three">ERB</li>
             <li className="two">Blade</li>
+            <li className="two">XAML</li>
             <li className="three">SVG</li>
           </ul>
         </td>
@@ -202,6 +203,7 @@ export default () => (
             <li className="two">Stimulus</li>
             <li className="one">Node</li>
             <li className="two">CoffeeScript</li>
+            <li className="two">Xamarin</li>
           </ul>
         </td>
         <td>
@@ -216,6 +218,7 @@ export default () => (
             <li className="four">PHP</li>
             <li className="three">C#</li>
             <li className="three">CodeIgniter</li>
+            <li className="one">Spring</li>
           </ul>
         </td>
         <td>
@@ -235,7 +238,7 @@ export default () => (
             <li className="three">IIS</li>
             <li className="three">Apache</li>
             <li className="two">Nginx</li>
-            <li>Ansible</li>
+            <li className="one">Ansible</li>
             <li className="three">Python/Perl</li>
             <li className="two">Bash</li>
             <li className="two">Batch</li>
@@ -322,6 +325,7 @@ export default () => (
             <li className="cert">CIW PS</li>
             <li className="a-class">Pragmatic</li>
             <li className="cert">ZCPE</li>
+            <li className="a-class">PluralSight</li>
             <li className="a-class">Laracast</li>
             <li className="a-class">Thoughtbot</li>
             <li className="a-class">Tree House</li>
