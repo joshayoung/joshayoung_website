@@ -1,6 +1,6 @@
-# Axios
+# Axioms
 
-These are some axios that relate to software development that I have found useful and instructive over the years.
+These are some axioms that relate to software development that I have found useful and instructive over the years.
 
 * A Good Function - is very small and does very little (ideally one thing).
 * "You will never know less than you know right now." - Practical Object-Oriented Design (book)
