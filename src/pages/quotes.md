@@ -2,17 +2,11 @@
 
 These are some of the tech-related quotes that I have found helpful and memorable. In order to preserve them, I have included them here along with a reference to the source of the quote.
 
-A Good Function - is very small and does very little (ideally one thing).
-
 "If we have data, let’s look at data. If all we have are opinions, let’s go with mine."​ - Jim Barksdale, ​Engineer, VC, & Netscape founder​
 
 "Change managed well is​: taught​, exercised​, and then trusted​." - Kevin Howard
 
 "Agile believes that the most cost-effective way to produce what customers really want is to collaborate with them, building software one small bit at a time such that each delivered bit has the opportunity to alter ideas about the next." - Practical Object-Oriented Design (book)
-
-"You will never know less than you know right now." - Practical Object-Oriented Design (book)
-
-"Make the change easy (warning: this may be hard), then make the easy change." -Kent Beck
 
 "Design is more the art of preserving changeability than it is the act of achieving perfection" - Practical Object-Oriented Design (book)
 
@@ -23,7 +17,5 @@ A Good Function - is very small and does very little (ideally one thing).
 "Left unchecked, unmanaged dependencies cause an entire application to become an entangled mess. A day will come when it's easier to rewrite everything than to change anything." - Practical Object-Oriented Design (book)
 
 "The easiest code to refactor is code that doesn't exist." - Ben Orenstein
-
-"Depending on an abstraction is always safer than depending on a concretion because by its very nature, the abstraction is more stable." - Practical Object-Oriented Design (book)
 
 "Weeks of programming can save you hours of planning."

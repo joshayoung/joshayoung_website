@@ -24,9 +24,6 @@ const Glance = () => (
         <a href="/quotes">Quotes</a>
       </li>
       <li>
-        <a href="/stats">Stats</a>
-      </li>
-      <li>
         <a href="/me#podcast_episodes">Great Podcasts</a>
       </li>
       {/* <li><a href="https://www.freecodecamp.org/joshayoung">FreeCodeCamp</a></li> */}
@@ -38,6 +35,9 @@ const Glance = () => (
       </li>
       <li>
         <a href="/me#podcasts">Podcasts</a>
+      </li>
+      <li>
+        <a href="/axioms">Axioms</a>
       </li>
     </ul>
   </Box>
