@@ -1533,6 +1533,16 @@
         "display": true
       },
       {
+        "title": "XAML Naming Conventions in Xamarin Forms",
+        "url": "https://xamgirl.com/xaml-naming-conventions-in-xamarin-forms",
+        "display": true
+      },
+      {
+        "title": "Xamarin Coding Standards",
+        "url": "https://jesseliberty.com/2020/02/18/xamarin-coding-standards",
+        "display": true
+      },
+      {
         "title": "Using Data Binding in Xamarin Applications",
         "url": "https://www.twilio.com/blog/using-data-binding-in-xamarin-applications",
         "display": true
