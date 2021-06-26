@@ -8,4 +8,5 @@ These are some axioms that relate to software development that I have found usef
 * "Depending on an abstraction is always safer than depending on a concretion because by its very nature, the abstraction is more stable." - Practical Object-Oriented Design (book)
 * "Give me six hours to chop down a tree and I will spend the first four sharpening the axe." - Abraham Lincoln
 * "Slow is smooth smooth is fast" - Navy Seals
-
+* Discovery: build the right product.
+* Delivery: built the product right.
