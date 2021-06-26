@@ -3148,6 +3148,11 @@ svg {
 * `Alt + Insert`
   * Generation Menu.
 
+* `CMD/CTRL + n`
+  * Add Controller
+* `CMD + OPTION + L`
+  * Format Code
+
 ### <a name='rubymine'></a>RubyMine
 
 <Rubymine />
