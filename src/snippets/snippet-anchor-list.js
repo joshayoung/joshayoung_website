@@ -9,6 +9,9 @@ const SnippetAnchorList = () => (
       <a href="#bash">Bash</a>
     </li>
     <li>
+      <a href="#blazor">Blazor</a>
+    </li>
+    <li>
       <a href="#bundler">Bundler</a>
     </li>
     <li>

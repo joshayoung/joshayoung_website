@@ -227,6 +227,17 @@
     ]
   },
   {
+    "title": "Blazor",
+    "class": "blazor_resources",
+    "data": [
+      {
+        "title": "How to deploy ASP.NET Blazor WebAssembly to GitHub Pages",
+        "url": "https://swimburger.net/blog/dotnet/how-to-deploy-aspnet-blazor-webassembly-to-github-pages",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Programming",
     "class": "programming_resources",
     "data": [
