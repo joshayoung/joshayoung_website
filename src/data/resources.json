@@ -234,6 +234,11 @@
         "title": "How to deploy ASP.NET Blazor WebAssembly to GitHub Pages",
         "url": "https://swimburger.net/blog/dotnet/how-to-deploy-aspnet-blazor-webassembly-to-github-pages",
         "display": true
+      },
+      {
+        "title": "Deploy a Blazor app on GitHub Pages",
+        "url": "https://www.fabiocozzolino.eu/deploy-blazor-on-github-pages/",
+        "display": true
       }
     ]
   },
@@ -794,6 +799,11 @@
       {
         "title": "How I code without service objects",
         "url": "https://www.codewithjason.com/code-without-service-objects",
+        "display": true
+      },
+      {
+        "title": "How I organize my Rails apps",
+        "url": "https://www.codewithjason.com/organize-rails-apps",
         "display": true
       },
       {
@@ -1541,6 +1551,11 @@
       {
         "title": "Stateless View Models",
         "url": "http://www.xamlpatterns.com/stateless-view-models",
+        "display": true
+      },
+      {
+        "title": "Stop Putting State In Your View Models",
+        "url": "https://medium.com/livefront/stop-putting-state-in-your-view-models-aa27d0a68b39",
         "display": true
       },
       {
