@@ -179,6 +179,7 @@ Below, I have listed some common code snippets that I commonly go back to refere
 ```bash
 curl --data "information=to&send=to the server" http://example.com
 ```
+### <a id="blazor"></a>Blazor
 
 ### <a id="bundler"></a>Bundler
 
