@@ -156,10 +156,10 @@ export default () => (
       <tr>
         <td>
           <ul>
+            <li className="two">PlantUML</li>
             <li className="three">Sketch</li>
             <li className="one">Photoshop</li>
-            <li>Illustrator</li>
-            <li>InDesign</li>
+            <li className="two">Lucidchart</li>
             <li className="three">Gimp</li>
             <li className="one">Balsamiq</li>
           </ul>
@@ -182,23 +182,18 @@ export default () => (
         <td>
           <ul>
             <li className="one">Bootstrap</li>
-            <li>Foundation</li>
             <li className="four">CSS</li>
             <li className="three">Sass</li>
-            <li>LESS</li>
-            <li>Stylus</li>
             <li className="three">Animation</li>
           </ul>
         </td>
         <td>
           <ul>
             <li className="four">JavaScript</li>
-            <li>Ember.js</li>
             <li className="three">jQuery</li>
             <li className="two">Jest</li>
             <li className="one">Elm</li>
             <li className="two">React</li>
-            <li>Angular</li>
             <li className="one">Vue.js</li>
             <li className="two">Stimulus</li>
             <li className="one">Node</li>
@@ -314,6 +309,7 @@ export default () => (
               <li className="a-class">Laracast</li>
               <li className="cert">CIW JS</li>
               <li className="a-class">Code School</li>
+              <li className="a-class">PluralSight</li>
               <li className="a-class">Wes Bos</li>
               <li className="a-class">Frontend Masters</li>
             </li>
