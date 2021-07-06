@@ -3253,6 +3253,10 @@ Once you get the warning in the webpage, to continue to the site anyway, type: `
   ipconfig /all
 ```
 
+### <a name='xamarin'></a>Xamarin
+#### Margin:
+* left/right, top/bottom
+
 ### <a name='yarn'></a>YARN
 
 #### Update all packages in `packge.json` to the lates version with:
