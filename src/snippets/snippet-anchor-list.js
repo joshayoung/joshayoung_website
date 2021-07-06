@@ -153,6 +153,9 @@ const SnippetAnchorList = () => (
       <a href="#windows">Windows</a>
     </li>
     <li>
+      <a href="#xamarin">Xamarin</a>
+    </li>
+    <li>
       <a href="#yarn">Yarn</a>
     </li>
     <li>
