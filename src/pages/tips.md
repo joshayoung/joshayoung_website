@@ -8,3 +8,8 @@ These are some tips for development that I have found helpful. These also serve 
 * Never push production code to master unless it has good tests (unit, integration) backing that code.
 * Before building out a new feature test it with a "spike" / "discovery".
   * This discovery work is typically code that you build out quickly that has no tests. It provides a quick way to develop a workable/feasible plan.
+* Programming Cases:
+  * kebab-case
+  * camelCase
+  * PascalCase
+  * snake_case

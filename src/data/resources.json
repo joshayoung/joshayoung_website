@@ -1549,6 +1549,11 @@
         "display": true
       },
       {
+        "title": "Improve Xamarin.Forms App Performance",
+        "url": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms/deploy-test/performance#choose-the-correct-layout",
+        "display": true
+      },
+      {
         "title": "Stateless View Models",
         "url": "http://www.xamlpatterns.com/stateless-view-models",
         "display": true
