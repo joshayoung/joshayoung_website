@@ -1472,6 +1472,11 @@
         "display": true
       },
       {
+        "title": "C# Coding Conventions",
+        "url": "https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions",
+        "display": true
+      },
+      {
         "title": "C# Async Antipatterns",
         "url": "https://markheath.net/post/async-antipatterns",
         "display": true
@@ -1549,8 +1554,28 @@
         "display": true
       },
       {
+        "title": "Xamarin.Forms application fundamentals",
+        "url": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals",
+        "display": true
+      },
+      {
+        "title": "Implement DependsOn without Fody",
+        "url": "https://github.com/Fody/PropertyChanged/issues/199",
+        "display": true
+      },
+      {
+        "title": "How to create a simple Web Service for your Xamarin Application",
+        "url": "https://devlinduldulao.pro/how-to-create-a-simple-web-service-for-your-xamarin-application",
+        "display": true
+      },
+      {
         "title": "Improve Xamarin.Forms App Performance",
         "url": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms/deploy-test/performance#choose-the-correct-layout",
+        "display": true
+      },
+      {
+        "title": "eXtensible Application Markup Language",
+        "url": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml",
         "display": true
       },
       {
