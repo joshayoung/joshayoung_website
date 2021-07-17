@@ -13,6 +13,7 @@ const Social = () => (
       #codepen,
       #exercism,
       #linkedin,
+      #credly,
       #github {
         fill: #3385ff;
       }
@@ -58,6 +59,12 @@ const Social = () => (
     <a href="https://github.com/joshayoung">
       <svg>
         <use xlinkHref="#github" />
+      </svg>
+    </a>
+
+    <a href="https://www.credly.com/users/joshayoung/badges">
+      <svg>
+        <use xlinkHref="#credly" />
       </svg>
     </a>
   </div>

@@ -31,6 +31,9 @@ const Glance = () => (
         <a href="https://www.linkedin.com/in/joshuayoung1">LinkedIn</a>
       </li>
       <li>
+        <a href="https://www.credly.com/users/joshayoung/badges">Credly</a>
+      </li>
+      <li>
         <a href="/tech-spectrum">Spectrum</a>
       </li>
       <li>
