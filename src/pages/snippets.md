@@ -3189,6 +3189,12 @@ svg {
   scp -r user@host:/path/to/folder/* /to/my/local/directory/
 ```
 
+#### Backup Folder Remote to Local, with Port
+
+```bash
+  scp -r -P 8000 user@host:/path/to/folder/* /to/my/local/directory/
+```
+
 ### <a name='security'></a>Security
 
 #### Nmap Ping Scan (detect hosts)
