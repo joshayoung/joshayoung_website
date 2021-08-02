@@ -6,6 +6,18 @@ export default () => (
     <dd>
       <code>docker-compose ps</code>
     </dd>
+    <dt>List all Images</dt>
+    <dd>
+      <code>docker image ls -a</code>
+    </dd>
+    <dt>List all Containers</dt>
+    <dd>
+      <code>docker container ls -a</code>
+    </dd>
+    <dt>List all Volumes</dt>
+    <dd>
+      <code>docker volume ls</code>
+    </dd>
     <dt>Start containers in docker-compose</dt>
     <dd>
       <code>docker-compose up</code>
@@ -33,9 +45,17 @@ export default () => (
     </dd>
     <dt>Prune System - use caution with this</dt>
     <dd>docker system prune -a</dd>
+    <dt>Delete All Images (be careful!)</dt>
+    <dd>
+      <code>docker image ls -q -a | xargs docker image rm -f</code>
+    </dd>
     <dt>Delete All Containers (be careful!)</dt>
     <dd>
       <code>docker container ps -q -a | xargs docker container rm</code>
+    </dd>
+    <dt>Delete All Volumes (be careful!)</dt>
+    <dd>
+      <code>docker volume ls -q | xargs docker volume rm</code>
     </dd>
     <dt>Copy File from Container to Host</dt>
     <dd>
