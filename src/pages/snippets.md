@@ -3262,6 +3262,7 @@ Once you get the warning in the webpage, to continue to the site anyway, type: `
 ### <a name='xamarin'></a>Xamarin
 #### Margin:
 * left/right, top/bottom
+* left, top, right, bottom
 
 ### <a name='yarn'></a>YARN
 
