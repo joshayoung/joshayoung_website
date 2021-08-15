@@ -197,6 +197,9 @@ curl --data "information=to&send=to the server" http://example.com
 
 ### <a id="csharp">C#</a>
 
+#### Unused variable
+* For an unused variable (in a loop for instance), you can use an underscore `_`.
+
 #### Property vs Field
 * A property is a field that has an implicit getter and setter set for it. This getter/setter is setup using the `get;` and `set;`. Usually this manifests itself as a public getter that returns a private field. Here is an example:
   * `public string Name { get; set; };`

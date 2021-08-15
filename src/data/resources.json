@@ -1569,6 +1569,11 @@
         "display": true
       },
       {
+        "title": "SwipeView Interaction with Xamarin.Forms",
+        "url": "https://blog.verslu.is/xamarin/xamarin-forms-xamarin/swipeview-interaction-with-xamarin-forms/",
+        "display": true
+      },
+      {
         "title": "Implement DependsOn without Fody",
         "url": "https://github.com/Fody/PropertyChanged/issues/199",
         "display": true
@@ -1836,6 +1841,11 @@
       {
         "title": "OWASP Dependency-Check",
         "url": "https://owasp.org/www-project-dependency-check",
+        "display": true
+      },
+      {
+        "title": "Perfect Passwords",
+        "url": "https://www.grc.com/passwords.htm",
         "display": true
       },
       {
