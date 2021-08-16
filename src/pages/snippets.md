@@ -197,6 +197,19 @@ curl --data "information=to&send=to the server" http://example.com
 
 ### <a id="csharp">C#</a>
 
+#### Test for Property Changed with xUnit
+```csharp
+  Assert.PropertyChanged(viewModel, nameof(viewModel.MyProperty), () => {
+    anotherProperty.Title = "new title";
+  });
+```
+
+#### Invoke Property Change Event After List's Add()
+```csharp
+  MyListOfValues.Add("an item");
+  PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(MyListOfValues)));
+```
+
 #### Unused variable
 * For an unused variable (in a loop for instance), you can use an underscore `_`.
 
