@@ -471,6 +471,11 @@
         "display": true
       },
       {
+        "title": "Therapeutic Refactoring by Katrina Owen",
+        "url": "https://www.youtube.com/watch?v=J4dlF0kcThQ",
+        "display": true
+      },
+      {
         "title": "Refactoring to Form Objects in Rails",
         "url": "https://www.youtube.com/watch?v=9luYcnfZ7Ok",
         "display": true
@@ -1453,6 +1458,11 @@
       {
         "title": "What I've Learned in 45 Years in the Software Industry",
         "url": "https://www.bti360.com/what-ive-learned-in-45-years-in-the-software-industry",
+        "display": true
+      },
+      {
+        "title": "Why We Argue: Style",
+        "url": "https://sandimetz.com/blog/2017/6/1/why-we-argue-style",
         "display": true
       },
       {
