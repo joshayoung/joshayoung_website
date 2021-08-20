@@ -19,3 +19,5 @@ These are some of the tech-related quotes that I have found helpful and memorabl
 "The easiest code to refactor is code that doesn't exist." - Ben Orenstein
 
 "Weeks of programming can save you hours of planning."
+
+"1 + 1 = 3, for very large values of 1."

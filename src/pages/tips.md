@@ -13,3 +13,6 @@ These are some tips for development that I have found helpful. These also serve 
   * camelCase
   * PascalCase
   * snake_case
+* When naming a method, use a name that signifies either 'What It Does' or 'What It Is'. 
+  * Do not use a method name that signifies how it does it.
+* Make sure your editor displays trailing white space. This will make your diffs easier and prevent unnecessary changes.
