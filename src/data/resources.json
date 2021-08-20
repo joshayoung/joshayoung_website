@@ -1525,6 +1525,11 @@
         "title": "Dot Net Fiddle",
         "url": "https://dotnetfiddle.net",
         "display": true
+      },
+      {
+        "title": "VisualStudio .gitignore",
+        "url": "https://github.com/github/gitignore/blob/master/VisualStudio.gitignore",
+        "display": true
       }
     ]
   },
