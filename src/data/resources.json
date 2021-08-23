@@ -1224,6 +1224,11 @@
         "display": true
       },
       {
+        "title": "How to Change the User for All Your Git Commits",
+        "url": "https://mhagemann.medium.com/how-to-change-the-user-for-all-your-git-commits-ffefbacf2652",
+        "display": true
+      },
+      {
         "title": "Git Best Practices",
         "url": "https://chris.beams.io/posts/git-commit",
         "display": true
