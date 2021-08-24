@@ -24,7 +24,8 @@ const Attribution = () => (
     from{" "}
     <a href="https://www.flaticon.com/" title="Flaticon">
       www.flaticon.com
-    </a>
+    </a>.
+    Also icon(s) from <a href='https://www.iconfinder.com/icons/4691606/pluralsight_icon'>iconfinder</a>.
   </div>
 );
 
