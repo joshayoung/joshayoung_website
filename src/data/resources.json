@@ -1589,6 +1589,11 @@
         "display": true
       },
       {
+        "title": "Ask Xammy",
+        "url": "https://askxammy.com",
+        "display": true
+      },
+      {
         "title": "SwipeView Interaction with Xamarin.Forms",
         "url": "https://blog.verslu.is/xamarin/xamarin-forms-xamarin/swipeview-interaction-with-xamarin-forms/",
         "display": true
