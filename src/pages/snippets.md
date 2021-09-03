@@ -2294,6 +2294,12 @@ In the ruby console, **student.devices** would return all of the devices that st
 
 ### <a name='ruby'></a>Ruby
 
+#### Messages
+```ruby
+# `name` is the message sent to `animal`
+  animal.name
+```
+
 #### Write to file from command line:
 
 ```ruby

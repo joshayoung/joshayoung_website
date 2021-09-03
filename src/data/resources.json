@@ -1482,8 +1482,18 @@
     "class": "csharp",
     "data": [
       {
+        "title": "C# programming guide",
+        "url": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/",
+        "display": true
+      },
+      {
         "title": "C# Fundamentals for Absolute Beginners",
         "url": "https://channel9.msdn.com/Series/CSharp-Fundamentals-for-Absolute-Beginners?l=XIMI21QIC_2406218949",
+        "display": true
+      },
+      {
+        "title": "Linq Projection Operators",
+        "url": "https://www.tutorialsteacher.com/linq/linq-projection-operators",
         "display": true
       },
       {
