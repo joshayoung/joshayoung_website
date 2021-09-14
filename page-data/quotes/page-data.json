@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-quotes-md","path":"/quotes/","result":{"pageContext":{"frontmatter":{}}},"staticQueryHashes":["305197398"]}
+{
+    "componentChunkName": "component---src-pages-quotes-md",
+    "path": "/quotes/",
+    "result": {"pageContext":{"frontmatter":{}}},
+    "staticQueryHashes": ["305197398"]}

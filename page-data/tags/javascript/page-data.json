@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/javascript/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Starting with React","path":"/starting-with-react"}}}]}},"pageContext":{"tag":"javascript"}},"staticQueryHashes":["305197398"]}
+{
+    "componentChunkName": "component---src-templates-tags-js",
+    "path": "/tags/javascript/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Starting with React","path":"/starting-with-react"}}}]}},"pageContext":{"tag":"javascript"}},
+    "staticQueryHashes": ["305197398"]}

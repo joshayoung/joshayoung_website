@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-resources-md","path":"/resources/","result":{"pageContext":{"frontmatter":{}}},"staticQueryHashes":["1121823429","305197398"]}
+{
+    "componentChunkName": "component---src-pages-resources-md",
+    "path": "/resources/",
+    "result": {"pageContext":{"frontmatter":{}}},
+    "staticQueryHashes": ["1121823429","305197398"]}

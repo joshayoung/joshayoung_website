@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/laravel/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Laravel Note/Bookmark System","path":"/laravel-notes"}}}]}},"pageContext":{"tag":"laravel"}},"staticQueryHashes":["305197398"]}
+{
+    "componentChunkName": "component---src-templates-tags-js",
+    "path": "/tags/laravel/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Laravel Note/Bookmark System","path":"/laravel-notes"}}}]}},"pageContext":{"tag":"laravel"}},
+    "staticQueryHashes": ["305197398"]}

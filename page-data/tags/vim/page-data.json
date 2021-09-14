@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/vim/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Switching to Atom","path":"/switch-to-atom"}}}]}},"pageContext":{"tag":"vim"}},"staticQueryHashes":["305197398"]}
+{
+    "componentChunkName": "component---src-templates-tags-js",
+    "path": "/tags/vim/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Switching to Atom","path":"/switch-to-atom"}}}]}},"pageContext":{"tag":"vim"}},
+    "staticQueryHashes": ["305197398"]}

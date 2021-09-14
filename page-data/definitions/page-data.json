@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-definitions-md","path":"/definitions/","result":{"pageContext":{"frontmatter":{}}},"staticQueryHashes":["305197398","40669755"]}
+{
+    "componentChunkName": "component---src-pages-definitions-md",
+    "path": "/definitions/",
+    "result": {"pageContext":{"frontmatter":{}}},
+    "staticQueryHashes": ["305197398","40669755"]}
