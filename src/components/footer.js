@@ -1,5 +1,5 @@
 import React from "react";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 import Social from "../components/social";
 import Quote from "../components/quote";
 import Attribution from "../components/attribution";

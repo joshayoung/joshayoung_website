@@ -1,6 +1,6 @@
 import React from "react";
 import PostsOutput from "../output/posts-output";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 
 const Stats = () => (
   <div

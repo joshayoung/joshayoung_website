@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 
 export default function Template({ data }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data

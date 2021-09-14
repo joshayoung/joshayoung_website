@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "./image";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 
 const Cert = ({ logo, link, children }) => (
   <>

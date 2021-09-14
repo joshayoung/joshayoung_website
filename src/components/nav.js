@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import NavLinks from "./nav-links";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 
 const blue = "#3385ff";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import ResourceData from "../hooks/resource-data";
 import Resource from "../items/resource";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 
 export default () => {
   const resources = ResourceData();

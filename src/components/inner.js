@@ -1,5 +1,5 @@
 import React from "react";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 import Header from "./header";
 import Logo from "../components/logo";
 import Social from "../components/social";
