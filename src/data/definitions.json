@@ -265,5 +265,9 @@
   {
     "word": "Design Intent",
     "definition": "in programming - building out objects with clear thought to the design (i.e. which properties should be required, which properties should default to null, etc)."
+  },
+  {
+    "word": "SUT",
+    "definition": "System Under Test"
   }
 ]
