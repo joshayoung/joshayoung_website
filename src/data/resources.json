@@ -807,6 +807,11 @@
         "display": true
       },
       {
+        "title": "Using application-wide variables in Rails 4",
+        "url": "https://adlerhsieh.com/blog/global-variables-in-rails-4",
+        "display": true
+      },
+      {
         "title": "How I organize my Rails apps",
         "url": "https://www.codewithjason.com/organize-rails-apps",
         "display": true
@@ -1489,6 +1494,11 @@
       {
         "title": "C# Fundamentals for Absolute Beginners",
         "url": "https://channel9.msdn.com/Series/CSharp-Fundamentals-for-Absolute-Beginners?l=XIMI21QIC_2406218949",
+        "display": true
+      },
+      {
+        "title": "Microsoft Reference Source",
+        "url": "https://referencesource.microsoft.com/",
         "display": true
       },
       {
