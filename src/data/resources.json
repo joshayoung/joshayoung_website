@@ -807,6 +807,11 @@
         "display": true
       },
       {
+        "title": "Ruby and dependency injection in a dynamic world",
+        "url": "https://fabiokung.com/2010/05/06/ruby-and-dependency-injection-in-a-dynamic-world",
+        "display": true
+      },
+      {
         "title": "Using application-wide variables in Rails 4",
         "url": "https://adlerhsieh.com/blog/global-variables-in-rails-4",
         "display": true
