@@ -1955,6 +1955,11 @@
         "display": true
       },
       {
+        "title": "Document Templates",
+        "url": "https://github.com/ryanbrookepayne/document-templates",
+        "display": true
+      },
+      {
         "title": "ASCII",
         "url": "http://www.crockford.com/wrmg/ascii.html",
         "display": true
