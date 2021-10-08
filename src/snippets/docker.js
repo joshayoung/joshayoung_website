@@ -107,6 +107,14 @@ export default () => (
     <dd>
       <code>docker restart $(docker ps -q)</code>
     </dd>
+    <dt>Copy file from host to container</dt>
+    <dd>
+      <code>docker cp file.txt container_id:/file.txt</code>
+    </dd>
+    <dt>Copy file from container to host</dt>
+    <dd>
+      <code>docker cp container_id:/file.txt file.txt</code>
+    </dd>
     <dt>Force the Re-creation of Container</dt>
     <dd>
       <code>docker-compose up --force-recreate</code>
