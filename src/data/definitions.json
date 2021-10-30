@@ -129,6 +129,47 @@
     "definition": "naming variables so that two words are separated with an underscore such as: 'the_variable' or 'Read_line'."
   },
   {
+    "word": "Deterministic",
+    "definition": "Given the same input, the same result will be returned every time it is called."
+  },
+  {
+    "word": "Lazy Initialization / Lazy Instantiation",
+    "definition": "Lazy initialization of an object means that its creation is deferred until it is first used.",
+    "link": "https://docs.microsoft.com/en-us/dotnet/framework/performance/lazy-initialization"
+  },
+  {
+    "word": "Short-Circuiting",
+    "definition": "Since a statement involving && is only true if both of the statements are true, the computer doesn't evaluate the second part of the conditional if the first part is false. This helps it save time by avoiding unnecessary calculations.",
+    "link": "https://fiveable.me/ap-comp-sci-a/blogs/short-circuiting/blog/ma5qykH89Cqhx5CvYuL9"
+  },
+  {
+    "word": "Model",
+    "definition": "Represents an object and has methods, fields, or properties for that object (i.e. Student, Car). These are typically nouns. A model could also hold multiple smaller models (i.e. CarRepository or StudentCollection)."
+  },
+  {
+    "word": "Fake",
+    "definition": "A fake is a generic term that can be used to describe either a stub or a mock object. Whether it's a stub or a mock depends on the context in which it's used. So in other words, a fake can be a stub or a mock.",
+    "link": "https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices"
+  },
+  {
+    "word": "Mock",
+    "definition": "A mock object is a fake object in the system that decides whether or not a unit test has passed or failed. A mock starts out as a Fake until it's asserted against.",
+    "link": "https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices"
+  },
+  {
+    "word": "Stub",
+    "definition": "A stub is a controllable replacement for an existing dependency (or collaborator) in the system. By using a stub, you can test your code without dealing with the dependency directly. By default, a stub starts out as a fake.",
+    "link": "https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices"
+  },
+  {
+    "word": "Service",
+    "definition": "a class that contains methods which can be used by model(s) (i.e. CarTuner, StudentGradeCalculator). These are typically verbs."
+  },
+  {
+    "word": "Pure Function",
+    "definition": "Does not have side effects and is deterministic."
+  },
+  {
     "word": "Open/Closed Principle",
     "definition": "'software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification'; that is, such an entity can allow its behaviour to be extended without modifying its source code.",
     "link": "https://en.wikipedia.org/wiki/Open/closed_principle"
