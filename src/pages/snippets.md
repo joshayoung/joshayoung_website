@@ -3071,6 +3071,18 @@ These are both the same:
   for i in `seq 1 255`; do ping -c 1 [IP ADDRESS].$i ; done
 ```
 
+### <a name='software_engineering'></a>Software Engineering
+
+#### Semantic versioning
+```bash
+# Major Version . Minor Version . Patch
+1.4.9
+```
+* The first number represents the major version. The second number represents the minor version. The third number represents the current patch level.
+* Typically if the first number changes that would represent a breaking change.
+* If the second number changes, that would represent a new feature.
+* If the third number changes, that would represent a bug fix.
+
 ### <a name='testing'></a>Testing
 
 #### Rspec Fail on First Error
