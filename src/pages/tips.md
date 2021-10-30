@@ -17,3 +17,5 @@ These are some tips for development that I have found helpful. These also serve 
   * Do not use a method name that signifies how it does it.
 * Make sure your editor displays trailing white space. This will make your diffs easier and prevent unnecessary changes.
 * When building a mobile app, do not let the API's design determine how your build your mobile app's model(s).
+* When writing a ticket for a kanban board (i.e. Jira, Trello, etc) in a team environment, include enough details in the ticket so that any one on the team can pull the ticket without having to consult anyone else.
+* When using an external service (library, API, etc), try not to include the language of that project inside your application so that you can easily switch library's or APIs in the future without having to change your model/service names.
