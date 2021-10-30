@@ -405,8 +405,18 @@
         "display": true
       },
       {
+        "title": "How We Test Rails Applications",
+        "url": "https://thoughtbot.com/blog/how-we-test-rails-applications",
+        "display": true
+      },
+      {
         "title": "What are the different kinds of Rails tests...",
         "url": "https://www.codewithjason.com/different-kinds-rails-tests-use",
+        "display": true
+      },
+      {
+        "title": "Unit testing best practices with .NET Core and .NET Standard",
+        "url": "https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices",
         "display": true
       },
       {
@@ -986,6 +996,21 @@
       {
         "title": "Front End Center",
         "url": "https://frontend.center",
+        "display": true
+      },
+      {
+        "title": "Dotnet Maui Developer Roadmap",
+        "url": "https://multiplatform-dev.github.io/dotnet-maui-developer-roadmap/markmap.html",
+        "display": true
+      },
+      {
+        "title": "Destroy All Software",
+        "url": "https://www.destroyallsoftware.com/screencasts/catalog",
+        "display": true
+      },
+      {
+        "title": "Succinctly Series",
+        "url": "https://www.syncfusion.com/succinctly-free-ebooks",
         "display": true
       },
       {
