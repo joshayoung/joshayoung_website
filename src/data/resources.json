@@ -400,6 +400,11 @@
     "class": "testing_resources",
     "data": [
       {
+        "title": "BDD vs TDD vs ATDD : Key Differences",
+        "url": "https://www.browserstack.com/guide/tdd-vs-bdd-vs-atdd",
+        "display": true
+      },
+      {
         "title": "Mocks Aren't Stubs",
         "url": "https://martinfowler.com/articles/mocksArentStubs.html",
         "display": true
