@@ -236,6 +236,11 @@
         "display": true
       },
       {
+        "title": "Blazor University",
+        "url": "https://blazor-university.com",
+        "display": true
+      },
+      {
         "title": "Deploy a Blazor app on GitHub Pages",
         "url": "https://www.fabiocozzolino.eu/deploy-blazor-on-github-pages/",
         "display": true
