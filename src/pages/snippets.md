@@ -99,7 +99,7 @@ Below, I have listed some common code snippets that I commonly go back to refere
       <td>Ellipsis</td>
       <td>alt+0133</td>
       <td>option+;</td>
-      <td>&amp;#x2026;</td>
+      <td>&amp;hellip;</td>
     </tr>
     <tr>
       <th>‘</th>
@@ -130,32 +130,18 @@ Below, I have listed some common code snippets that I commonly go back to refere
       <td>&amp;rdquo;</td>
     </tr>
     <tr>
-      <th>'</th>
-      <td>Straight Single Apostrophe</td>
-      <td>'</td>
-      <td>'</td>
-      <td>'</td>
-    </tr>
-    <tr>
-      <th>"</th>
-      <td>Straight Double Quote</td>
-      <td>"</td>
-      <td>"</td>
-      <td>"</td>
-    </tr>
-    <tr>
       <th>–</th>
       <td>En Dash</td>
-      <td>Ctrl + hyphen</td>
-      <td>Option + hyphen</td>
       <td>alt+0150</td>
+      <td>Option + dash</td>
+      <td>&amp;ndash;</td>
     </tr>
     <tr>
       <th>—</th>
       <td>Em Dash</td>
-      <td>Ctrl + Alt + hyphen</td>
-      <td>Shift + Option + hyphen</td>
       <td>alt+0151</td>
+      <td>Option + Shift + dash</td>
+      <td>&amp;mdash;</td>
     </tr>
   </tbody>
 </table>
