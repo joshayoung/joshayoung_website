@@ -10,12 +10,7 @@ const Social = () => (
         margin: 0 2px;
       }
 
-      #codepen,
-      #exercism,
-      #linkedin,
-      #credly,
-      #pluralsight
-      #github {
+      .svg-social {
         fill: #3385ff;
       }
     `}
@@ -51,37 +46,37 @@ const Social = () => (
 
     <a href="https://exercism.io/profiles/joshayoung">
       <svg>
-        <use xlinkHref="#exercism" />
+        <use class="svg-social" xlinkHref="#exercism" />
       </svg>
     </a>
 
     <a href="https://codepen.io/joshayoung/pens/popular">
       <svg>
-        <use xlinkHref="#codepen" />
+        <use class="svg-social" xlinkHref="#codepen" />
       </svg>
     </a>
 
     <a href="https://www.linkedin.com/in/joshuayoung1">
       <svg>
-        <use xlinkHref="#linkedin" />
+        <use class="svg-social" xlinkHref="#linkedin" />
       </svg>
     </a>
 
     <a href="https://github.com/joshayoung">
       <svg>
-        <use xlinkHref="#github" />
+        <use class="svg-social" xlinkHref="#github" />
       </svg>
     </a>
 
     <a href="https://www.credly.com/users/joshayoung/badges">
       <svg>
-        <use xlinkHref="#credly" />
+        <use class="svg-social" xlinkHref="#credly" />
       </svg>
     </a>
 
     <a href="https://app.pluralsight.com/profile/josh-young-8a">
       <svg>
-        <use xlinkHref="#pluralsight" />
+        <use class="svg-social" xlinkHref="#pluralsight" />
       </svg>
     </a>
   </div>
