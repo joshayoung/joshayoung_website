@@ -97,7 +97,10 @@ Software Engineer with over 10 years of experience developing web and hybrid mob
 ---
 
 ### Work Projects
-
+- <span>Mobile Application for Users to Get Out of Debt</span>
+  <span>(C#, Xamarin, XAML - 2021 - 2022)</span>
+- <span>Website for Checkout and Subscription Management</span>
+  <span>(Ruby, Rails, CSS, HTML, JavaScript, Stripe - 2019 - 2020)</span>
 - <span>Website for External Web Apps</span>
   <span>(Laravel, PHP, HTML, CSS, JavaScript, Sketch - 2018)</span>
 - <span>Built Internal React App with PHP back-end</span>
@@ -125,9 +128,9 @@ Software Engineer with over 10 years of experience developing web and hybrid mob
 
 I have listed more details about each one of these projects on my [projects](/projects) page.
 
-- [Simple Notes App 2021](/projects/#simple-notes-app)
+- [Simple Notes App](/projects/#simple-notes-app)
   <span>(C#, Xamarin, Xaml - 2021)</span>
-- [Xamarin Courses App 2021](/projects/#xamarin-courses-app)
+- [Xamarin Courses App](/projects/#xamarin-courses-app)
   <span>(C#, Xamarin, Xaml - 2021)</span>
 - [Notification System](/projects/#notification_system)
   <span>(Ruby, SQLite, Docker, Docker Compose - 2021)</span>

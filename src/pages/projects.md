@@ -2,6 +2,7 @@
 
 Below I have listed some of the personal projects that I have developed over the years along with the programming languages used for each.
 
+- [Simple Notes App (2021)](#simple_notes_app)
 - [Xamarin Courses App (2021)](#xamarin_courses_app)
 - [Notification System (2020 - 2021)](#notification_system)
 - [Joshayoung.com (2019 - 2020)](#joshayoung_website)
@@ -25,7 +26,7 @@ This project was build as a simple way to add local notes to my phone. It stores
 
 ### <a name='xamarin_courses_app'></a>Xamarin Courses App (2021)
 ###### (C#, Xamarin, XAML)
-This project was built as a learning experience for Xamarin. It uses XAML and C# to build a mobile application that reads a list of courses and students from a json file. It gives you the ability to add or remove courses and students. All of these changes are updated via Xamarin's event system.
+This project was built as a learning experience for Xamarin. It is a mobile application that reads a list of courses and students from a json file. It gives you the ability to add or remove courses and students. All of these changes are updated via Xamarin's event system.
 [Repo](https://github.com/joshayoung/xamarin-courses-app)
 
 ### <a name='notification_system'></a>Notification System (2020 - 2021)
