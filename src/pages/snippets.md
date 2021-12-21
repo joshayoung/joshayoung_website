@@ -3059,6 +3059,17 @@ These are both the same:
 
 ### <a name='software_engineering'></a>Software Engineering
 
+#### Gherkin Success Criteria
+##### Scenario: The Widget Should Play a Random Song
+* **GIVEN**: The widget is in the closed position.
+* **AND**: It has never been opened.
+* **WHEN**: You open it.
+* **THEN**: It plays a random song.
+
+##### Resources:
+* [How do you write Gherkin acceptance criteria](https://findanyanswer.com/how-do-you-write-gherkin-acceptance-criteria)
+* [Behavior Driven Development - Gherkin](https://www.tutorialspoint.com/behavior_driven_development/behavior_driven_development_gherkin.htm)
+
 #### Semantic versioning
 ```bash
 # Major Version . Minor Version . Patch
