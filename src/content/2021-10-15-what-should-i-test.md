@@ -1,6 +1,6 @@
 ---
 title: What Should I Test
-description: When testing code, which portions should be tested and why.
+description: When testing code, which portions should be tested and why. This post outlines those concepts along with a lot of resources for additional reading.
 date: 2021-10-15
 path: /what-should-i-test
 tags: ["testing"]

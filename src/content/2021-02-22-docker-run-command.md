@@ -1,6 +1,6 @@
 ---
 title: Docker Run Command
-description: The docker run command in more depth.
+description: There are lots of different ways to use the docker run command. This entry outlines these steps in more depth.
 date: 2021-02-22
 path: /docker-run-command
 tags: ["docker"]

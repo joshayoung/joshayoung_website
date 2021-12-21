@@ -1,6 +1,6 @@
 ---
 title: Switching to Atom
-description: Switching to Atom and the plugin that I found useful.
+description: This post outlines my switch to the Atom editor and some of the plugins that I have found useful.
 date: 2016-03-22
 path: /switch-to-atom
 tags: ["atom", "vim"]

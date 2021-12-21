@@ -1,6 +1,6 @@
 ---
 title: Many-to-Many Association in Rails
-description: This post will demonstrate a basic many-to-many association in rails as well as the through-association.
+description: This post will demonstrate a basic many-to-many association in rails as well as the through-association. I have provided an example of the code via the repo listed at the bottom of this page.
 date: 2018-05-26
 path: /many-to-many-association
 tags: ["programming", "rails", "ruby", "mvc"]

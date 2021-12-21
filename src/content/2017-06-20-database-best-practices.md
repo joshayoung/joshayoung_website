@@ -1,6 +1,6 @@
 ---
 title: Database Best Practices
-description: Tips I have learned for best databases creation
+description: These are the tips I have learned for best databases creation. I have outlined these tips here for future review.
 date: 2017-06-20
 path: /database-best-practices
 tags: ["databases", "standards"]

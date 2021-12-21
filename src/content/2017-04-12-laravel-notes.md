@@ -1,6 +1,6 @@
 ---
 title: Laravel Note/Bookmark System
-description: Note taking and URL documenting system using Laravel and PostgreSQL
+description: This post outlines my decision to start using Laravel and PostgreSQL to build a documentation system.
 date: 2017-04-12
 path: /laravel-notes
 tags: ["laravel", "php", "postgresql"]

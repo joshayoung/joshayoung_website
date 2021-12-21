@@ -1,6 +1,6 @@
 ---
 title: Naming Best Practices
-description: Over the years I have decided on a few rule for best variable naming which I have outlined here.
+description: These are some of the variable, method, and class naming tips that I have acquired over the years. I have outline them here and hope to update this with any future discoveries.
 date: 2018-04-22
 path: /naming-best-practices
 tags: ["standards", "programming"]

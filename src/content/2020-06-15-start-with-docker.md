@@ -1,6 +1,6 @@
 ---
 title: Start with Docker
-description: Here I describe some of the basic building blocks of Docker and how to get started using it.
+description: Here I describe some of the basic building blocks of Docker and how to get started using it. This post outlines tips for using images and building containers. In addition, it displays other docker-related tips.
 date: 2020-06-15
 path: /start-with-docker
 tags: ["docker"]

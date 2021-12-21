@@ -1,6 +1,6 @@
 ---
 title: Updating a Container
-description: Updating a docker container image.
+description: In order to update a docker container, there are multiple steps. This post outlines how to work with the image and the container in order to get it updated.
 date: 2021-03-03
 path: /updating-docker-container
 tags: ["docker"]
@@ -15,7 +15,6 @@ In order to update a docker container, we need to follow a few steps _(outlined 
 
 ##### 1. Remove the Old Container:
 * Run: `docker container rm id`
-
 
 ##### 1. Pull the New Image:
 * Run: `docker pull image:tag`

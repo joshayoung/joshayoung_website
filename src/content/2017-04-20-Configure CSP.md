@@ -1,6 +1,6 @@
 ---
 title: Configure CSP
-description: Setting up and configuring Content Security Policy (CSP).
+description: Here I have outline some resources for configuring the Content Security Policy (CSP) and how to set it up for your site.
 date: 2017-04-20
 path: /configure-csp
 tags: ["security", "csp"]

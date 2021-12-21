@@ -1,6 +1,6 @@
 ---
 title: Clean Code Takeaways
-description: Takeaways from reading Clean Code by Robert C. Martin.
+description: These are my notes and key takeaways from a reading of Clean Code by Robert C. Martin. I recommend this book for every developer to read, great info!
 date: 2017-06-09
 path: /clean-code-takeaways
 tags: ["programming"]

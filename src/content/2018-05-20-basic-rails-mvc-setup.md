@@ -1,6 +1,6 @@
 ---
 title: Basic Rails MVC Setup
-description: This serves as a reference for a basic rails MVC setup with minimal customization.
+description: This serves as a reference for a basic rails MVC setup with minimal customization. These tips will hopefully aid anyone that needs to quickly start in rails or refresh their memory. In addition, please checkout my Ruby and Rails sections on the snippets page.
 date: 2018-05-20
 path: /basic-rails-mvc-setup
 tags: ["programming", "rails", "ruby", "mvc"]

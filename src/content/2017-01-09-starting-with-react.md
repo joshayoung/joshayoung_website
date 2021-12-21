@@ -1,6 +1,6 @@
 ---
 title: Starting with React
-description: Learning and using React.
+description: My thoughts on learning and using react. This post outlines my thoughts around this subject with a resource for beginners.
 date: 2017-01-09
 path: /starting-with-react
 tags: ["react", "javascript"]
