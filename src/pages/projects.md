@@ -2,6 +2,7 @@
 
 Below I have listed some of the personal projects that I have developed over the years along with the programming languages used for each.
 
+- [Xamarin Courses App (2021)](#xamarin_courses_app)
 - [Notification System (2020 - 2021)](#notification_system)
 - [Joshayoung.com (2019 - 2020)](#joshayoung_website)
 - [Will It Rain (2019)](#will_it_rain)
@@ -15,6 +16,11 @@ Below I have listed some of the personal projects that I have developed over the
 - [Ticketing System v1 (2010)](#ticketing_system)
 - [Comments and Capers Website (2009)](#commentsandcapers)
 - [Blogging System (2008)](#blogging_system)
+
+### <a name='xamarin_courses_app'></a>Xamarin Courses App (2021)
+###### (C#, Xamarin, XAML)
+This project was built as a learning experience for Xamarin. It uses XAML and C# to build a mobile application that reads a list of courses and students from a json file. It gives you the ability to add or remove courses and students. All of these changes are updated via Xamarin's event system.
+[Repo](https://github.com/joshayoung/xamarin-courses-app)
 
 ### <a name='notification_system'></a>Notification System (2020 - 2021)
 
