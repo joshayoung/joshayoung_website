@@ -3,9 +3,8 @@ import { graphql, useStaticQuery } from "gatsby";
 const ResourceData = () => {
   const data = useStaticQuery(graphql`
     {
-      allResourcesJson {
+      allResourcesJson(sort: {order: ASC, fields: title}) {
         nodes {
-          id
           title
           class
           data {
@@ -19,7 +18,6 @@ const ResourceData = () => {
   `);
 
   return data.allResourcesJson.nodes.map(data => ({
-    id: data.id,
     title: data.title,
     class: data.class,
     data: data.data,
