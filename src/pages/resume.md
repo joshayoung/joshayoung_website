@@ -125,6 +125,8 @@ Software Engineer with over 10 years of experience developing web and hybrid mob
 
 I have listed more details about each one of these projects on my [projects](/projects) page.
 
+- [Simple Notes App 2021](/projects/#simple-notes-app)
+  <span>(C#, Xamarin, Xaml - 2021)</span>
 - [Xamarin Courses App 2021](/projects/#xamarin-courses-app)
   <span>(C#, Xamarin, Xaml - 2021)</span>
 - [Notification System](/projects/#notification_system)
