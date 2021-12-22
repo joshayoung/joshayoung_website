@@ -31,7 +31,7 @@ Digest: sha256:ce0f6c28b5869ff166714d5ff9702e38b00f81ad348c6
 <h4>View Local Image:</h4>
 <ul>
 <li>You can run the <code>docker image</code> command to see this image on your local system:</li>
-<li><code>docker image ls | grep postgre</code></li>
+<li><code>docker image ls | grep postgres</code></li>
 </ul>
 <h4>Build a Container:</h4>
 <ul>
@@ -53,7 +53,11 @@ Digest: sha256:ce0f6c28b5869ff166714d5ff9702e38b00f81ad348c6
 <li><code>postgres</code> tells my container which image to use.</li>
 </ul>
 </li>
-<li>Now, I have a container named 'postgres_cont' on my local machine.</li>
+<li>Now, I have a container named 'postgres_cont' on my local machine.
+<ul>
+<li><code>docker container ls | grep postgres_cont</code></li>
+</ul>
+</li>
 </ul>
 <h4>Start and Connect to a Container:</h4>
 <ul>
