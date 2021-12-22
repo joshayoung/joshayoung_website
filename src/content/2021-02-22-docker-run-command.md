@@ -27,7 +27,7 @@ The `docker run` command is used to create a container from an image. It can be 
 
 ##### Create a Temporary Container:
 
-Each time we execute the run command and specify a `--name` flag, we create a container by that name on our host. Therefore, if we run our docker `run` command again, we will get an error to the effect of: 'this container already exists'. We can circumvent this issue kby specifying a different value for the `--name` flag. Alternatively, we can also use the `--rm` flag.
+Each time we execute the run command and specify a `--name` flag, we create a container by that name on our host. Therefore, if we run our docker `run` command again, we will get an error to the effect of: 'this container already exists'. We can circumvent this issue by specifying a different value for the `--name` flag. Alternatively, we can also use the `--rm` flag.
 - `docker container run --name my-postgres -it --rm -e POSTGRES_PASSWORD=password postgres bash`
   - Here I get an interactive temporary container that will not be saved to my file system upon exit.
 - `docker container run --name my-postgres --rm -e POSTGRES_PASSWORD=password -d postgres`

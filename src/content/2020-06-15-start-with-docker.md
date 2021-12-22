@@ -23,7 +23,7 @@ Digest: sha256:ce0f6c28b5869ff166714d5ff9702e38b00f81ad348c6
 
 #### View Local Image:
 * You can run the `docker image` command to see this image on your local system:
-* `docker image ls | grep postgre`
+* `docker image ls | grep postgres`
 
 #### Build a Container:
 
@@ -37,6 +37,7 @@ Digest: sha256:ce0f6c28b5869ff166714d5ff9702e38b00f81ad348c6
   - `-d` tells the container to run in the background.
   - `postgres` tells my container which image to use.
 - Now, I have a container named 'postgres_cont' on my local machine.
+  - `docker container ls | grep postgres_cont`
 
 #### Start and Connect to a Container:
 - I can start the container with a run command and then connect to a shell session by running a command similar to this:
