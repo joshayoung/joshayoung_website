@@ -165,6 +165,7 @@ Below, I have listed some common code snippets that I commonly go back to refere
 ```bash
 curl --data "information=to&send=to the server" http://example.com
 ```
+
 ### <a id="blazor"></a>Blazor
 
 ### <a id="bundler"></a>Bundler
@@ -184,6 +185,7 @@ curl --data "information=to&send=to the server" http://example.com
 ### <a id="csharp">C#</a>
 
 #### Test for Property Changed with xUnit
+
 ```csharp
   Assert.PropertyChanged(viewModel, nameof(viewModel.MyProperty), () => {
     anotherProperty.Title = "new title";
@@ -191,21 +193,25 @@ curl --data "information=to&send=to the server" http://example.com
 ```
 
 #### Invoke Property Change Event After List's Add()
+
 ```csharp
   MyListOfValues.Add("an item");
   PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(MyListOfValues)));
 ```
 
 #### Unused variable
-* For an unused variable (in a loop for instance), you can use an underscore `_`.
+
+- For an unused variable (in a loop for instance), you can use an underscore `_`.
 
 #### Property vs Field
-* A property is a field that has an implicit getter and setter set for it. This getter/setter is setup using the `get;` and `set;`. Usually this manifests itself as a public getter that returns a private field. Here is an example:
-  * `public string Name { get; set; };`
-* A field in C# does not have a backing field and has no getter or setter set for it. Here is an example:
-  * `public string Name;`
+
+- A property is a field that has an implicit getter and setter set for it. This getter/setter is setup using the `get;` and `set;`. Usually this manifests itself as a public getter that returns a private field. Here is an example:
+  - `public string Name { get; set; };`
+- A field in C# does not have a backing field and has no getter or setter set for it. Here is an example:
+  - `public string Name;`
 
 #### Prefer Named Arguments:
+
 ```csharp
   public void FullName(string first, string last)
   {
@@ -218,6 +224,7 @@ curl --data "information=to&send=to the server" http://example.com
   // Not like this:
   fullName("Joe", "Smith");
 ```
+
 ### <a id="css"></a>CSS
 
 #### Switch to box sizing
@@ -473,14 +480,16 @@ Without `--permanent`, the firewall rule will take affect but will not persist a
 ### <a id="java"></a>Java
 
 #### Build a Jar:
+
 ```java
   mvn package
   java -jar target/my_jar_name.jar
 ```
 
 #### Interface Naming
-* When you have more than one interface use a name that corresponds to the domain.
-* When you have only one interface, name the interface "name" + "Impl".
+
+- When you have more than one interface use a name that corresponds to the domain.
+- When you have only one interface, name the interface "name" + "Impl".
 
 ### <a id="git"></a>Git
 
@@ -493,10 +502,15 @@ Without `--permanent`, the firewall rule will take affect but will not persist a
 5. Creating a PR from this branch will open up a PR in the forked repo.
 
 #### Pull Down / Commit to a Remote PR:
+
 1. Copy the remote branch name in the PR list (i.e. 'thebrnm:master')
-  * Remove the `:master` off the end.
+
+- Remove the `:master` off the end.
+
 2. `git remote add thebrnm git@github.com:thebrnm/the_repo.git`
-  * In this case 'origin' started as: `git@github.com:thebrnm/the_repo.git`
+
+- In this case 'origin' started as: `git@github.com:thebrnm/the_repo.git`
+
 3. `git fetch thebrnm`
 4. `git checkout -b thebrnm-master thebrnm/master`
 5. `git commit -am "My Commit Message"`
@@ -970,7 +984,9 @@ Using 'squash' will combine this commit in with the previous commit.
 ### <a id="github"></a>GitHub
 
 #### Close an Issue With a Commit
+
 You can add a number to your commit message to close that particular commit. I have included an example commit below.
+
 ```bash
 Addressing the problems with the latency. Closes #4.
 ```
@@ -980,7 +996,7 @@ Addressing the problems with the latency. Closes #4.
 #### Capitalize Function
 
 ```javascript
-var cap = function(str) {
+var cap = function (str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
 ```
@@ -1711,6 +1727,16 @@ The command below could also be executed with 'bs=4m'.
 
 ### <a name='react'></a>React
 
+#### Components
+
+- Components should not be aware of state.
+
+#### Containers
+
+- Containers are aware of state.
+- Do not do styling in Containers.
+- Integration test containers.
+
 #### Debugging data:
 
 ```javascript
@@ -1780,6 +1806,7 @@ The command below could also be executed with 'bs=4m'.
 ### <a name='rails'></a>Rails
 
 #### Set to Production Mode Locally:
+
 If you are using 'dotenv-rails' to add ENV data, you may need to move that outside of your development/test section in your Gemfile.
 
 ```bash
@@ -2281,6 +2308,7 @@ In the ruby console, **student.devices** would return all of the devices that st
 ### <a name='ruby'></a>Ruby
 
 #### Messages
+
 ```ruby
 # `name` is the message sent to `animal`
   animal.name
@@ -3060,25 +3088,30 @@ These are both the same:
 ### <a name='software_engineering'></a>Software Engineering
 
 #### Gherkin Success Criteria
+
 ##### Scenario: The Widget Should Play a Random Song
-* **GIVEN**: The widget is in the closed position.
-* **AND**: It has never been opened.
-* **WHEN**: You open it.
-* **THEN**: It plays a random song.
+
+- **GIVEN**: The widget is in the closed position.
+- **AND**: It has never been opened.
+- **WHEN**: You open it.
+- **THEN**: It plays a random song.
 
 ##### Resources:
-* [How do you write Gherkin acceptance criteria](https://findanyanswer.com/how-do-you-write-gherkin-acceptance-criteria)
-* [Behavior Driven Development - Gherkin](https://www.tutorialspoint.com/behavior_driven_development/behavior_driven_development_gherkin.htm)
+
+- [How do you write Gherkin acceptance criteria](https://findanyanswer.com/how-do-you-write-gherkin-acceptance-criteria)
+- [Behavior Driven Development - Gherkin](https://www.tutorialspoint.com/behavior_driven_development/behavior_driven_development_gherkin.htm)
 
 #### Semantic versioning
+
 ```bash
 # Major Version . Minor Version . Patch
 1.4.9
 ```
-* The first number represents the major version. The second number represents the minor version. The third number represents the current patch level.
-* Typically if the first number changes that would represent a breaking change.
-* If the second number changes, that would represent a new feature.
-* If the third number changes, that would represent a bug fix.
+
+- The first number represents the major version. The second number represents the minor version. The third number represents the current patch level.
+- Typically if the first number changes that would represent a breaking change.
+- If the second number changes, that would represent a new feature.
+- If the third number changes, that would represent a bug fix.
 
 ### <a name='testing'></a>Testing
 
@@ -3177,13 +3210,15 @@ svg {
 ```
 
 ### <a name='rider'></a>Rider
-* `Alt + Insert`
-  * Generation Menu.
 
-* `CMD/CTRL + n`
-  * Add Controller
-* `CMD + OPTION + L`
-  * Format Code
+- `Alt + Insert`
+
+  - Generation Menu.
+
+- `CMD/CTRL + n`
+  - Add Controller
+- `CMD + OPTION + L`
+  - Format Code
 
 ### <a name='rubymine'></a>RubyMine
 
@@ -3291,9 +3326,11 @@ Once you get the warning in the webpage, to continue to the site anyway, type: `
 ```
 
 ### <a name='xamarin'></a>Xamarin
+
 #### Margin:
-* left/right, top/bottom
-* left, top, right, bottom
+
+- left/right, top/bottom
+- left, top, right, bottom
 
 ### <a name='yarn'></a>YARN
 
