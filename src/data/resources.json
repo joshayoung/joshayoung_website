@@ -827,6 +827,11 @@
         "display": true
       },
       {
+        "title": "React on Rails: Building a Simple App (with React)",
+        "url": "https://www.honeybadger.io/blog/react-rails/",
+        "display": true
+      },
+      {
         "title": "How I code without service objects",
         "url": "https://www.codewithjason.com/code-without-service-objects",
         "display": true
@@ -1466,6 +1471,26 @@
       {
         "title": "Fetch Data with React Hooks",
         "url": "https://reactgo.com/fetch-data-react-hooks/",
+        "display": true
+      },
+      {
+        "title": "Why React Context is Not a 'State Management' Tool (and Why It Does not Replace Redux)",
+        "url": "https://blog.isquaredsoftware.com/2021/01/context-redux-differences",
+        "display": true
+      },
+      {
+        "title": "Using Redux Toolkits createAsyncThunk",
+        "url": "https://blog.logrocket.com/using-redux-toolkits-createasyncthunk/",
+        "display": true
+      },
+      {
+        "title": "Smarter Redux with Redux Toolkit",
+        "url": "https://blog.logrocket.com/smarter-redux-with-redux-toolkit",
+        "display": true
+      },
+      {
+        "title": "How to Test React Components: the Complete Guide",
+        "url": "https://www.freecodecamp.org/news/testing-react-hooks/",
         "display": true
       }
     ]
