@@ -10,6 +10,11 @@
     "link": "https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_8.0.0/com.ibm.mq.pro.doc/q002680_.htm"
   },
   {
+    "word": "Dunder",
+    "definition": "Double Underscore (i.e. Double UNDERscore",
+    "link": ""
+  },
+  {
     "word": "Separate Query from Modifier",
     "definition": "Split the method into two separate methods. As you would expect, one of them should return the value and the other one modifies the object.",
     "link": "https://refactoring.guru/separate-query-from-modifier"
