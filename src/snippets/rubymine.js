@@ -18,5 +18,9 @@ export default () => (
     <dd>
       <code>CTRL + CMD + UP-ARROW</code>
     </dd>
+    <dt>Code Navigation</dt>
+    <dd>
+      <code>CMD/CTRL + b</code>
+    </dd>
   </dl>
 );
