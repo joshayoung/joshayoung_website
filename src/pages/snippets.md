@@ -576,6 +576,13 @@ Add `--no-pager` to a command
   git checkout [removed commit]^ -— [path to flle]
 ```
 
+#### Restore a Deleted File Before Commit
+
+```bash
+  git reset
+  git checkout -- /path/to/deleted/file.txt
+```
+
 #### Delete Branches
 
 ```bash
