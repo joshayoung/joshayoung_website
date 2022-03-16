@@ -3163,7 +3163,16 @@ Here **9100** is the remote port and **22** is the remote port.
 
 ```bash
   ssh-keygen -t ed25519 -C “key_name”
-  ssh-copy-id -i ~/.ssh/key_name.pub 192.168.1.100
+  ssh-copy-id -i ~/.ssh/key_name.pub user@192.168.1.100
+
+  Note: If you get permission errors after trying to connect with the key, make sure that you have this key setup in your `~/.ssh/config` file.
+```
+
+#### Sample config for `~/.ssh/config` file:
+
+```bash
+Host 192.168.1.100
+   IdentityFile ~/.ssh/key_name
 ```
 
 #### Connect with a specific key

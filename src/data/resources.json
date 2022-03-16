@@ -753,6 +753,11 @@
     "class": "ansible",
     "data": [
       {
+        "title": "Vagrant Cloud",
+        "url": "https://app.vagrantup.com/boxes/search",
+        "display": true
+      },
+      {
         "title": "Getting Started with Ansible - Wiki",
         "url": "https://wiki.learnlinux.tv/index.php/Episode_Notes",
         "display": true
