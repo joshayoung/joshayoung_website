@@ -1744,6 +1744,11 @@ The command below could also be executed with 'bs=4m'.
 - Do not do styling in Containers.
 - Integration test containers.
 
+#### toContainHTML (jest)
+
+- Do not use this for testing. Use toContainElement instead of toContainHTML.
+- [toContainHTML Resource](https://github.com/testing-library/jest-dom#tocontainhtml)
+
 #### Debugging data:
 
 ```javascript
