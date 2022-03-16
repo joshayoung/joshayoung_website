@@ -758,6 +758,11 @@
         "display": true
       },
       {
+        "title": "Everything about Ansible Loops",
+        "url": "https://blog.learncodeonline.in/everything-about-ansible-loops",
+        "display": true
+      },
+      {
         "title": "Getting Started with Ansible - Wiki",
         "url": "https://wiki.learnlinux.tv/index.php/Episode_Notes",
         "display": true
@@ -1473,6 +1478,16 @@
     "title": "React",
     "class": "react",
     "data": [
+      {
+        "title": "A guide to module mocking with Jest",
+        "url": "https://www.emgoto.com/mocking-with-jest",
+        "display": true
+      },
+      {
+        "title": "Jest .fn() and .spyOn() spy/stub/mock assertion reference",
+        "url": "https://codewithhugo.com/jest-fn-spyon-stub-mock/",
+        "display": true
+      },
       {
         "title": "Fetch Data with React Hooks",
         "url": "https://reactgo.com/fetch-data-react-hooks/",
