@@ -1475,6 +1475,27 @@
     ]
   },
   {
+    "title": "Jest",
+    "class": "jest",
+    "data": [
+      {
+        "title": "jest-dom",
+        "url": "https://github.com/testing-library/jest-dom#tobeinthedocument",
+        "display": true
+      },
+      {
+        "title": "How to Test Javascript with Jest",
+        "url": "https://thomaslombart.com/how-to-test-javascript-with-jest",
+        "display": true
+      },
+      {
+        "title": "Common Test Scenarios with React Testing Library",
+        "url": "https://react-testing-library-examples.netlify.app/",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "React",
     "class": "react",
     "data": [
