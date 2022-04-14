@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tags-js",
+    "path": "/tags/backend/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Micro Frontend Article Notes","path":"/micro-frontend-reading"}}}]}},"pageContext":{"tag":"backend"}},
+    "staticQueryHashes": ["305197398"]}
