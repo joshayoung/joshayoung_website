@@ -3167,7 +3167,7 @@ Here **9100** is the remote port and **22** is the remote port.
 #### Generate a SSH and transfer it to a server
 
 ```bash
-  ssh-keygen -t ed25519 -C “key_name”
+  ssh-keygen -t ed25519 -C "comment"
   ssh-copy-id -i ~/.ssh/key_name.pub user@192.168.1.100
 
   Note: If you get permission errors after trying to connect with the key, make sure that you have this key setup in your `~/.ssh/config` file.
