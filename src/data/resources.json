@@ -420,6 +420,11 @@
         "display": true
       },
       {
+        "title": "TestPyramid",
+        "url": "https://martinfowler.com/bliki/TestPyramid.html",
+        "display": true
+      },
+      {
         "title": "What are the different kinds of Rails tests...",
         "url": "https://www.codewithjason.com/different-kinds-rails-tests-use",
         "display": true
@@ -1558,6 +1563,37 @@
       {
         "title": "Front End Front",
         "url": "https://frontendfront.com",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Software Engineering",
+    "class": "software-engineering",
+    "data": [
+      {
+        "title": "How To Implement Micro-Frontend Architecture With React",
+        "url": "https://medium.com/bb-tutorials-and-thoughts/how-to-implement-micro-frontend-architecture-with-react-5ab172a0fec7",
+        "display": true
+      },
+      {
+        "title": "Micro frontends",
+        "url": "https://microfrontends.com",
+        "display": true
+      },
+      {
+        "title": "Pattern: Backends For Frontends",
+        "url": "https://samnewman.io/patterns/architectural/bff/",
+        "display": true
+      },
+      {
+        "title": "Micro Frontends",
+        "url": "https://martinfowler.com/articles/micro-frontends.html",
+        "display": true
+      },
+      {
+        "title": "BFF @ SoundCloud",
+        "url": "https://www.thoughtworks.com/insights/blog/bff-soundcloud",
         "display": true
       }
     ]
