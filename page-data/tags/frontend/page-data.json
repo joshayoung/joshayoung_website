@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-tags-js",
     "path": "/tags/frontend/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"frontmatter":{"title":"Further Notes on Backend for Frontends","path":"/notes-on-frontend-reading"}}},{"node":{"frontmatter":{"title":"Micro Frontend Article Notes","path":"/micro-frontend-reading"}}}]}},"pageContext":{"tag":"frontend"}},
+    "result": {"data":{"allMarkdownRemark":{"totalCount":3,"edges":[{"node":{"frontmatter":{"title":"Backend for Frontends at SoundCloud Quotes","path":"/bff-at-soundcloud"}}},{"node":{"frontmatter":{"title":"Micro Frontend Article Notes","path":"/micro-frontend-reading"}}},{"node":{"frontmatter":{"title":"Further Notes on Backend for Frontends","path":"/notes-on-frontend-reading"}}}]}},"pageContext":{"tag":"frontend"}},
     "staticQueryHashes": ["305197398"]}
