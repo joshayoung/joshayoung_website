@@ -1,7 +1,7 @@
 ---
 title: Further Notes on Backend for Frontends
 description: These are some pertinent quotes from my reading of the Pattern Backends For Frontends article.
-date: 2023-04-14
+date: 2022-04-14
 path: /notes-on-frontend-reading
 tags: ["frontend", "backend", "micro", "spa"]
 ---
