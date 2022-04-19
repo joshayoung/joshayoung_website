@@ -758,6 +758,11 @@
         "display": true
       },
       {
+        "title": "Ansible Bookmarks",
+        "url": "https://github.com/lampo/ramsey-plus-web-app/pull/2383",
+        "display": true
+      },
+      {
         "title": "Everything about Ansible Loops",
         "url": "https://blog.learncodeonline.in/everything-about-ansible-loops",
         "display": true
@@ -834,6 +839,11 @@
       {
         "title": "Rails HTTP Status Codes",
         "url": "https://gist.github.com/joshayoung/ae88a69dabb19c62da35b285fed8f6f2",
+        "display": true
+      },
+      {
+        "title": "The Rails Style Guide",
+        "url": "https://rails.rubystyle.guide",
         "display": true
       },
       {
