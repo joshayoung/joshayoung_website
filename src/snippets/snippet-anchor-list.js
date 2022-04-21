@@ -117,6 +117,9 @@ const SnippetAnchorList = () => (
       <a href="#slackware">Slackware</a>
     </li>
     <li>
+      <a href="#spring">Spring</a>
+    </li>
+    <li>
       <a href="#ssh">SSH</a>
     </li>
     <li>

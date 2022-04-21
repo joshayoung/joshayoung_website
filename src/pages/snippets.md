@@ -1282,6 +1282,10 @@ Use slackpkg to keep system updated.
   slackpkg upgrade-all
 ```
 
+### <a id="spring"></a>Spring
+
+- After modifying the Spring `pom.xml` file, you may need to right-click and tell maven to reload the project for it to properly install all of the packages.
+
 ### <a name='ubuntu-debian'></a>Ubuntu / Debian
 
 Add or edit the lines below in this file `/etc/network/interfaces`.
