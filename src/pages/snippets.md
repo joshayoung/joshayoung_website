@@ -1008,6 +1008,10 @@ Using 'squash' will combine this commit in with the previous commit.
 
 ### <a id="github"></a>GitHub
 
+#### Quick Search Menu:
+
+- `CMD/CTRL + K`
+
 #### Close an Issue With a Commit
 
 You can add a number to your commit message to close that particular commit. I have included an example commit below.
