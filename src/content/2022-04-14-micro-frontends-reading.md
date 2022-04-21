@@ -3,10 +3,10 @@ title: Micro Frontend Article Notes
 description: These are some pertinent quotes from my reading of the Micro Frontend article.
 date: 2022-04-14
 path: /micro-frontend-reading
-tags: ["frontend", "backend", "micro", "spa"]
+tags: ["frontend", "backend", "micro", "spa", "bff"]
 ---
 
-In the article: [Micro Frontends](https://martinfowler.com/articles/micro-frontends.html), Cam Jackson describes the principles behind a micro frontend architecture. Listed below are some quotes from the article that I thought were very good. I highly recommend a full reading of this article.
+In the article ([Micro Frontends](https://martinfowler.com/articles/micro-frontends.html)), Cam Jackson describes the principles behind a micro frontend architecture. Listed below are some quotes from the article that I thought were very good. I highly recommend a full reading of this article.
 
 - "However, be careful to ensure that your shared components contain only UI logic, and no business or domain logic."
 - "That said, some level of cross-app communication is often needed. Custom events allow micro frontends to communicate indirectly, which is a good way to minimise direct coupling, though it does make it harder to determine and enforce the contract that exists between micro frontends. Alternatively, the React model of passing callbacks and data downwards (in this case downwards from the container application to the micro frontends) is also a good solution that makes the contract more explicit. A third alternative is to use the address bar as a communication mechanism, which we'll explore in more detail later."

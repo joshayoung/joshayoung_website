@@ -3,10 +3,10 @@ title: Further Notes on Backend for Frontends
 description: These are some pertinent quotes from my reading of the Pattern Backends For Frontends article.
 date: 2022-04-14
 path: /notes-on-frontend-reading
-tags: ["frontend", "backend", "micro", "spa"]
+tags: ["frontend", "backend", "micro", "spa", "bff"]
 ---
 
-In the article: [Pattern: Backends For Frontends](https://samnewman.io/patterns/architectural/bff/), Sam Newman describes the principles behind the frontend for backend architecture. Listed below are some quotes from the article that I thought were very good. I highly recommend a full reading of this article.
+In the article ([Pattern: Backends For Frontends](https://samnewman.io/patterns/architectural/bff/)), Sam Newman describes the principles behind the frontend for backend architecture. Listed below are some quotes from the article that I thought were very good. I highly recommend a full reading of this article.
 
 - "Firstly, the affordances of a mobile device are very different. We have less screen real estate, which means we can display less data. Opening lots of connections to server-side resources can drain battery life and limited data plans. And secondly, the nature of the interactions we want to provide on a mobile device can differ drastically. Think of a typical bricks-and-mortar retailer. On a desktop app I might allow you to look at the items for sale, order online or reserve in store. On the mobile device though I might want to allow you scan bar codes to do price comparisons or give you context-based offers while in store. As we've built more and more mobile applications we've come to realise that people use them very differently and therefore the functionality we need to expose will differ too."
 - "So in practice, our mobile devices will want to make different calls, fewer calls, and will want to display different (and probably less) data than their desktop counterparts. This means that we need to add additional functionality to our API backend to support our mobile interfaces."

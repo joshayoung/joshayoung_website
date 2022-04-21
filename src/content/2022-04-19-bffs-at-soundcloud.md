@@ -3,10 +3,10 @@ title: Backend for Frontends at SoundCloud Quotes
 description: These are some notes from an article describing SoundCloud's process for implementing backend-for-frontends.
 date: 2022-04-19
 path: /bff-at-soundcloud
-tags: ["frontend", "backend", "micro", "spa"]
+tags: ["frontend", "backend", "micro", "spa", "bff"]
 ---
 
-In this article: [BFF @ SoundCloud](https://www.thoughtworks.com/insights/blog/bff-soundcloud), Lukasz Plotnicki outlines the process SoundCloud used to implement backend-for-frontends in their infrastructure. Below are some quotes from the article that I thought were excellent.
+In this article ([BFF @ SoundCloud](https://www.thoughtworks.com/insights/blog/bff-soundcloud)), Lukasz Plotnicki outlines the process SoundCloud used to implement backend-for-frontends in their infrastructure. Below are some quotes from the article that I thought were excellent.
 
 - "After a while, it started to get problematic, both in regards to the time needed for adding new features, and also due to the different needs of the platforms. For a mobile API, it's sensible to have a smaller payload footprint and request frequency than a web API, for example. The existing monolith API didn't take this into consideration and was developed by another team, unaware of the mobile needs. So every time the apps needed a new endpoint, first the frontend team needed to convince the backend team that this was truly the case, then a story needed to be written, prioritized, picked, developed and communicated to the frontend team."
 - "You can see the problem here: unnecessary friction, communication overhead, delay. At the same time, the backend team started to have issues with the monolithic application, as adding new features became harder, whilst fire-fighting got more prominent."
