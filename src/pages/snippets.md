@@ -44,6 +44,24 @@ Below, I have listed some common code snippets that I commonly go back to refere
   ansible-playbook --ask-become-pass playboo.yml
 ```
 
+### <a id="asdf"></a>ASDF
+
+- List versions of plugin installed
+
+```bash
+  asdf list nodejs
+```
+
+- Show Current Plugins with the Global Version
+
+```bash
+  asdf current
+```
+
+- Reshim Note:
+  - After running a `asdf reshim [plugin]` (i.e. `asdf reshim nodejs`),
+    you might need to reload or shutdown and reopen your terminal for it to properly take affect.
+
 ### <a id="bash"></a>Bash
 
 #### Services Running on Port
