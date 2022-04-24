@@ -675,6 +675,17 @@
     ]
   },
   {
+    "title": "YAML",
+    "class": "yaml",
+    "data": [
+      {
+        "title": "YAML Tutorial: Everything You Need to Get Started in Minutes",
+        "url": "https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "FreeNAS",
     "class": "freenas",
     "data": [
