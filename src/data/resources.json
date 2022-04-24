@@ -1520,6 +1520,11 @@
         "display": true
       },
       {
+        "title": "How to use Props in React",
+        "url": "https://www.robinwieruch.de/react-pass-props-to-component/",
+        "display": true
+      },
+      {
         "title": "Jest .fn() and .spyOn() spy/stub/mock assertion reference",
         "url": "https://codewithhugo.com/jest-fn-spyon-stub-mock/",
         "display": true
@@ -1574,6 +1579,11 @@
       {
         "title": "How To Implement Micro-Frontend Architecture With React",
         "url": "https://medium.com/bb-tutorials-and-thoughts/how-to-implement-micro-frontend-architecture-with-react-5ab172a0fec7",
+        "display": true
+      },
+      {
+        "title": "Falling Into The Pit of Success",
+        "url": "https://blog.codinghorror.com/falling-into-the-pit-of-success",
         "display": true
       },
       {
@@ -1651,6 +1661,11 @@
       {
         "title": "C# programming guide",
         "url": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/",
+        "display": true
+      },
+      {
+        "title": "JSON2Csharp",
+        "url": "https://json2csharp.com/csharp-object-initializer",
         "display": true
       },
       {
@@ -1955,6 +1970,11 @@
       {
         "title": "Import and Export",
         "url": "https://javascript.info/import-export",
+        "display": true
+      },
+      {
+        "title": "How to Use Fetch with async/await",
+        "url": "https://dmitripavlutin.com/javascript-fetch-async-await/",
         "display": true
       },
       {
