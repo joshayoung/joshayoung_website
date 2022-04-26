@@ -682,6 +682,11 @@
         "title": "YAML Tutorial: Everything You Need to Get Started in Minutes",
         "url": "https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started",
         "display": true
+      },
+      {
+        "title": "ONLINEYAMLTOOLS",
+        "url": "https://onlineyamltools.com",
+        "display": true
       }
     ]
   },
@@ -771,6 +776,11 @@
       {
         "title": "Vagrant Cloud",
         "url": "https://app.vagrantup.com/boxes/search",
+        "display": true
+      },
+      {
+        "title": "Checking if a file exists in Ansible",
+        "url": "https://linuxdigest.com/howto/checking-if-a-file-exists-in-ansible",
         "display": true
       },
       {
