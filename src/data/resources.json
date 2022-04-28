@@ -370,6 +370,28 @@
     ]
   },
   {
+    "title": "ASDF",
+    "class": "asdf",
+    "data": [
+      {
+        "title": "All Commands",
+        "url": "http://asdf-vm.com/manage/commands.html",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Python",
+    "class": "python",
+    "data": [
+      {
+        "title": "The right and wrong way to set Python 3 as default on a Mac",
+        "url": "https://opensource.com/article/19/5/python-3-default-mac#what-we-should-do",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Validation",
     "class": "validation_resources",
     "data": [
