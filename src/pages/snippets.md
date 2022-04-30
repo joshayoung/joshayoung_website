@@ -519,6 +519,9 @@ Without `--permanent`, the firewall rule will take affect but will not persist a
 4. Push the feature branch up: `git push origin feature-branch-name`.
 5. Creating a PR from this branch will open up a PR in the forked repo.
 
+#### Copy Contents from One Branch to a New Branch:
+* `git checkout -b my_new_branch_name my_old_branch_name`
+
 #### Pull Down / Commit to a Remote PR:
 
 1. Copy the remote branch name in the PR list (i.e. 'thebrnm:master')
