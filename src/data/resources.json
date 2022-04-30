@@ -386,6 +386,27 @@
     ]
   },
   {
+    "title": "GitHub",
+    "class": "github",
+    "data": [
+      {
+        "title": "GitHub Profile Languages",
+        "url": "https://ionicabizau.github.io/github-profile-languages",
+        "display": true
+      },
+      {
+        "title": "Shields IO",
+        "url": "https://shields.io/",
+        "display": true
+      },
+      {
+        "title": "Simple Icons",
+        "url": "https://simpleicons.org",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Python",
     "class": "python",
     "data": [
