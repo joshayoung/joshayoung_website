@@ -377,6 +377,11 @@
         "title": "All Commands",
         "url": "http://asdf-vm.com/manage/commands.html",
         "display": true
+      },
+      {
+        "title": "ASDF Cheat Sheet",
+        "url": "http://asdf-vm.com/manage/commands.html",
+        "display": true
       }
     ]
   },
@@ -1389,6 +1394,16 @@
         "display": true
       },
       {
+        "title": "Zsh/Bash startup files loading order (.bashrc, .zshrc etc.)",
+        "url": "https://medium.com/@rajsek/zsh-bash-startup-files-loading-order-bashrc-zshrc-etc-e30045652f2e",
+        "display": true
+      },
+      {
+        "title": ".bashrc vs .bash_profile",
+        "url": "https://linuxize.com/post/bashrc-vs-bash-profile",
+        "display": true
+      },
+      {
         "title": "Linux Delta - How-To Guides",
         "url": "https://wiki.linuxdelta.com/mediawiki/index.php/Main_Page",
         "display": true
@@ -1563,6 +1578,11 @@
         "display": true
       },
       {
+        "title": "React Reference Guide - Hooks API",
+        "url": "https://blog.logrocket.com/react-reference-guide-hooks-api",
+        "display": true
+      },
+      {
         "title": "How to use Props in React",
         "url": "https://www.robinwieruch.de/react-pass-props-to-component/",
         "display": true
@@ -1619,6 +1639,11 @@
     "title": "Software Engineering",
     "class": "software-engineering",
     "data": [
+      {
+        "title": "Writing User Stories With Gherkin",
+        "url": "https://medium.com/@nic/writing-user-stories-with-gherkin-dda63461b1d2",
+        "display": true
+      },
       {
         "title": "How To Implement Micro-Frontend Architecture With React",
         "url": "https://medium.com/bb-tutorials-and-thoughts/how-to-implement-micro-frontend-architecture-with-react-5ab172a0fec7",
@@ -1797,6 +1822,11 @@
     "title": "Java",
     "class": "java",
     "data": [
+      {
+        "title": "Java .gitignore",
+        "url": "https://gist.github.com/dedunumax/54e82214715e35439227",
+        "display": true
+      },
       {
         "title": "WebJars",
         "url": "https://www.webjars.org",
@@ -2018,6 +2048,16 @@
       {
         "title": "Import and Export",
         "url": "https://javascript.info/import-export",
+        "display": true
+      },
+      {
+        "title": "Javascript: How to create chainable functions",
+        "url": "https://aparnajoshi.netlify.app/javascript-how-to-create-chainable-functions",
+        "display": true
+      },
+      {
+        "title": "Function Chaining",
+        "url": "https://lucasamos.dev/articles/jsfunctionchaining",
         "display": true
       },
       {
