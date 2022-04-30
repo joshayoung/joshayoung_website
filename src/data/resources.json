@@ -800,6 +800,11 @@
         "display": true
       },
       {
+        "title": "Markdown Cheatsheet",
+        "url": "https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet",
+        "display": true
+      },
+      {
         "title": "Basic Syntax",
         "url": "https://www.markdownguide.org/basic-syntax",
         "display": true
