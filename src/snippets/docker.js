@@ -138,7 +138,7 @@ export default () => (
     <dt>Remove All Volumes from a Container</dt>
     <dd>
       <code>
-        docker volume ls | grep "my-container-name" | awk '{print $2}' | xargs docker volume rm
+        docker volume ls | grep "my-container-name" | awk "{print $2}" | xargs docker volume rm
       </code>
     </dd>
   </dl>
