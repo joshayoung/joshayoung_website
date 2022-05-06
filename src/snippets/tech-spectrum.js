@@ -175,7 +175,7 @@ export default () => (
             <li className="one">Mustache</li>
             <li className="three">ERB</li>
             <li className="two">Blade</li>
-            <li className="two">XAML</li>
+            <li className="three">XAML</li>
             <li className="three">SVG</li>
           </ul>
         </td>
@@ -191,7 +191,7 @@ export default () => (
           <ul>
             <li className="four">JavaScript</li>
             <li className="three">jQuery</li>
-            <li className="two">Jest</li>
+            <li className="three">Jest</li>
             <li className="one">Elm</li>
             <li className="two">React</li>
             <li className="one">Vue.js</li>
@@ -208,10 +208,10 @@ export default () => (
             <li className="two">Laravel</li>
             <li className="three">Objective-C</li>
             <li className="two">Java</li>
-            <li className="three">Rails</li>
-            <li className="three">RSpec</li>
+            <li className="four">Rails</li>
+            <li className="fourc">RSpec</li>
             <li className="four">PHP</li>
-            <li className="three">C#</li>
+            <li className="four">C#</li>
             <li className="three">CodeIgniter</li>
             <li className="one">Spring</li>
           </ul>
@@ -233,12 +233,12 @@ export default () => (
             <li className="three">IIS</li>
             <li className="three">Apache</li>
             <li className="two">Nginx</li>
-            <li className="one">Ansible</li>
+            <li className="three">Ansible</li>
             <li className="three">Python/Perl</li>
             <li className="two">Bash</li>
             <li className="two">Batch</li>
             <li className="one">PowerShell</li>
-            <li className="one">Docker</li>
+            <li className="four">Docker</li>
             <li className="two">AWS</li>
           </ul>
         </td>
