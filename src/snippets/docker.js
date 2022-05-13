@@ -59,14 +59,18 @@ export default () => (
     </dd>
     <dt>Copy File from Container to Host</dt>
     <dd>
-      <code>docker cp container_name:/path/to/file/on/container.txt /path/on/host/</code>
+      <code>
+        docker cp container_name:/path/to/file/on/container.txt /path/on/host/
+      </code>
     </dd>
     <dt>Detach from a Running Container</dt>
     <dd>Ctrl+P then Ctrl+Q</dd>
     <dt>Re-attach to a Running Container</dt>
     <dd>docker attach [container id]</dd>
     <dt>Show Mounts</dt>
-    <dd>docker inspect -f "&#123;&#123; .Mounts &#125;&#125;" [container id]</dd>
+    <dd>
+      docker inspect -f "&#123;&#123; .Mounts &#125;&#125;" [container id]
+    </dd>
     <dt>Show Docker Stats</dt>
     <dd>
       <code>docker stats</code>
@@ -77,7 +81,8 @@ export default () => (
     </dd>
     <dt>Docker `exec` vs `attach`</dt>
     <dd>
-      `exec` creates a new instance of the container and connects to it. `attach` connects to the currently running instance.
+      `exec` creates a new instance of the container and connects to it.
+      `attach` connects to the currently running instance.
     </dd>
     <dt>Connect to a running container</dt>
     <dd>
@@ -134,12 +139,6 @@ export default () => (
     <dt>Attach to running container</dt>
     <dd>
       <code>docker exec -it [container name] /bin/bash</code>
-    </dd>
-    <dt>Remove All Volumes from a Container</dt>
-    <dd>
-      <code>
-        docker volume ls | grep "my-container-name" | awk "{print $2}" | xargs docker volume rm
-      </code>
     </dd>
   </dl>
 );
