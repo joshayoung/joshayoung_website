@@ -202,6 +202,12 @@ curl --data "information=to&send=to the server" http://example.com
 
 ### <a id="csharp">C#</a>
 
+#### Install .NET Package from Command Line
+```bash
+dotnet add package PackageName -v 0.1-pre -s https://url/path/nuget/v3/index.json
+
+```
+
 #### Test for Property Changed with xUnit
 
 ```csharp
