@@ -3361,6 +3361,10 @@ Once you get the warning in the webpage, to continue to the site anyway, type: `
 
 <VSCode />
 
+### <a name='visual_studio'></a>Visual Studio
+
+<VisualStudio />
+
 ### <a name='windows'></a>Windows
 
 #### Switch to C Drive
