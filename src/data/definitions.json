@@ -152,6 +152,21 @@
     "definition": "Represents an object and has methods, fields, or properties for that object (i.e. Student, Car). These are typically nouns. A model could also hold multiple smaller models (i.e. CarRepository or StudentCollection)."
   },
   {
+    "word": "Imperative Programming",
+    "definition": "a programming paradigm of software that uses statements that change a program's state. In much the same way that the imperative mood in natural languages expresses commands, an imperative program consists of commands for the computer to perform. Imperative programming focuses on describing how a program operates step by step, rather than on high-level descriptions of its expected results.",
+    "link": "https://en.wikipedia.org/wiki/Imperative_programming"
+  },
+  {
+    "word": "Declarative programming",
+    "definition": "a programming paradigm—a style of building the structure and elements of computer programs—that expresses the logic of a computation without describing its control flow.",
+    "link": "https://en.wikipedia.org/wiki/Declarative_programming"
+  },
+  {
+    "word": "Imperative Programming",
+    "definition": "a programming paradigm of software that uses statements that change a program's state. In much the same way that the imperative mood in natural languages expresses commands, an imperative program consists of commands for the computer to perform. Imperative programming focuses on describing how a program operates step by step, rather than on high-level descriptions of its expected results.",
+    "link": "https://en.wikipedia.org/wiki/Imperative_programming"
+  },
+  {
     "word": "Fake",
     "definition": "A fake is a generic term that can be used to describe either a stub or a mock object. Whether it's a stub or a mock depends on the context in which it's used. So in other words, a fake can be a stub or a mock.",
     "link": "https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices"
