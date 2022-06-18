@@ -140,5 +140,21 @@ export default () => (
     <dd>
       <code>docker exec -it [container name] /bin/bash</code>
     </dd>
+    <dt>Delete all Images</dt>
+    <dd>
+      <code>docker image ls -q -a | xargs docker image rm -f</code>
+    </dd>
+    <dt>Delete all Container</dt>
+    <dd>
+      <code>
+        docker container ps -q -a | xargs docker container rm
+      </code>
+    </dd>
+    <dt>Delete all Volumes</dt>
+    <dd>
+      <cod>
+        docker volume ls -q | xargs docker volume rm
+      </cod>
+    </dd>
   </dl>
 );
