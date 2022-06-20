@@ -156,5 +156,11 @@ export default () => (
         docker volume ls -q | xargs docker volume rm
       </cod>
     </dd>
+    <dt>Add Linux User to Docker Group (allows docker use without `sudo`)</dt>
+    <dd>
+      <cod>
+        sudo usermod -aG docker $USER
+      </cod>
+    </dd>
   </dl>
 );
