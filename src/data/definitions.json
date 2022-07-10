@@ -152,6 +152,11 @@
     "definition": "Represents an object and has methods, fields, or properties for that object (i.e. Student, Car). These are typically nouns. A model could also hold multiple smaller models (i.e. CarRepository or StudentCollection)."
   },
   {
+    "word": "Parkinson's Law",
+    "definition": "'work expands so as to fill the time available for its completion.'",
+    "link": "https://en.wikipedia.org/wiki/Parkinson%27s_law"
+  },
+  {
     "word": "Imperative Programming",
     "definition": "a programming paradigm of software that uses statements that change a program's state. In much the same way that the imperative mood in natural languages expresses commands, an imperative program consists of commands for the computer to perform. Imperative programming focuses on describing how a program operates step by step, rather than on high-level descriptions of its expected results.",
     "link": "https://en.wikipedia.org/wiki/Imperative_programming"
