@@ -8,9 +8,16 @@ Software Engineer with over 10 years of experience developing web and hybrid mob
 
 ### Work Experience
 
+#### Senior Software Development Engineer
+
+##### NFIB - Nashville, TN (2022 - Present)
+- Build and maintain backend systems using .NET, C#, and REST.
+- Assist as necessary with mobile development using Xamarin.
+(Gitflow, Scrum)
+
 #### Software Engineer III
 
-##### Ramsey Solutions - Franklin, TN (2018 - Present)
+##### Ramsey Solutions - Franklin, TN (2018 - 2022)
 
 - Build mobile applications using Xamarin and C#.
 - Maintain and improve web services written in Ruby and C#.
@@ -18,6 +25,7 @@ Software Engineer with over 10 years of experience developing web and hybrid mob
 - Write and update xUnit/RSpec tests to insure good test coverage for our applications.
 - Troubleshoot logs to find and correct bugs in production.
 - Work with Java/Spring service to correct errors and add features.
+(Trunk-based, Kanban)
 
 ---
 
