@@ -1109,6 +1109,17 @@
     ]
   },
   {
+    "title": "Technology",
+    "class": "technology",
+    "data": [
+      {
+        "title": "Uses",
+        "url": "https://uses.tech",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Levelling-up",
     "class": "levelling_up_resources",
     "data": [
@@ -1120,6 +1131,11 @@
       {
         "title": "Dotnet Maui Developer Roadmap",
         "url": "https://multiplatform-dev.github.io/dotnet-maui-developer-roadmap/markmap.html",
+        "display": true
+      },
+      {
+        "title": "Mountain Goat Software",
+        "url": "https://www.mountaingoatsoftware.com",
         "display": true
       },
       {
