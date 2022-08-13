@@ -1129,6 +1129,11 @@
         "display": true
       },
       {
+        "title": "Brilliant",
+        "url": "https://brilliant.org",
+        "display": true
+      },
+      {
         "title": "Dotnet Maui Developer Roadmap",
         "url": "https://multiplatform-dev.github.io/dotnet-maui-developer-roadmap/markmap.html",
         "display": true
