@@ -1662,6 +1662,28 @@
     ]
   },
   {
+    "title": "Authentication / Authorization",
+    "class": "news_resources",
+    "data": [
+      {
+        "title": "ID Token and Access Token",
+        "url": "https://auth0.com/blog/id-token-access-token-what-is-the-difference/",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Domain Driven Design",
+    "class": "ddd",
+    "data": [
+      {
+        "title": "Enterprise Craftsmanship",
+        "url": "https://enterprisecraftsmanship.com/",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Software Engineering",
     "class": "software-engineering",
     "data": [
