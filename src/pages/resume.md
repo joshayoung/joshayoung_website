@@ -39,6 +39,7 @@ Software Engineer with over 10 years of experience developing web and hybrid mob
 - Ensured all details of new software projects were completed prior to final delivery.
 - Utilized Balsamiq Mockups to provide visuals that aided in fulfilling design requirements.
 - Enhanced application aesthetics by producing creative designs with Sketch.
+- Taught training course on the on the Linux operating system.
 - Focused on project goals to consistently deliver software on time.
 - Attended conferences, workshops, and online training to continually improve skillsets.
 - Worked with other technologies including: C#, ASP.NET, Ruby, Perl, Python, MS SQL, Oracle, Red Hat, macOS, and Windows Server.
