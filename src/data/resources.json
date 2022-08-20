@@ -1120,6 +1120,27 @@
     ]
   },
   {
+    "title": "Trainer's Websites",
+    "class": "trainers_websites",
+    "data": [
+      {
+        "title": "Zoran Horvat",
+        "url": "https://codinghelmet.com/articles",
+        "display": true
+      },
+      {
+        "title": "Vladimir Khorikov",
+        "url": "https://enterprisecraftsmanship.com/",
+        "display": true
+      },
+      {
+        "title": "Nate Taylor",
+        "url": "https://taylonr.com",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Levelling-up",
     "class": "levelling_up_resources",
     "data": [
