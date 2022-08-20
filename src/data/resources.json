@@ -458,6 +458,11 @@
         "display": true
       },
       {
+        "title": "Integration testing or how to sleep well at nights",
+        "url": "https://enterprisecraftsmanship.com/posts/integration-testing-or-how-to-sleep-well-at-nights",
+        "display": true
+      },
+      {
         "title": "Mocks Aren't Stubs",
         "url": "https://martinfowler.com/articles/mocksArentStubs.html",
         "display": true
