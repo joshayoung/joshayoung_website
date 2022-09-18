@@ -458,6 +458,11 @@
         "display": true
       },
       {
+        "title": "TDD is a lot easier with the right tools",
+        "url": "https://i-kh.net/2019/11/11/tdd-is-easier-with-right-tools",
+        "display": true
+      },
+      {
         "title": "Integration testing or how to sleep well at nights",
         "url": "https://enterprisecraftsmanship.com/posts/integration-testing-or-how-to-sleep-well-at-nights",
         "display": true
@@ -1737,6 +1742,11 @@
       {
         "title": "Writing User Stories With Gherkin",
         "url": "https://medium.com/@nic/writing-user-stories-with-gherkin-dda63461b1d2",
+        "display": true
+      },
+      {
+        "title": "The Pot Roast Story",
+        "url": "https://theklutterkoach.com/2015/12/27/the-pot-roast-story",
         "display": true
       },
       {
