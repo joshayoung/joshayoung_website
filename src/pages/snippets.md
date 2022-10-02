@@ -205,7 +205,23 @@ curl --data "information=to&send=to the server" http://example.com
 #### Install .NET Package from Command Line
 ```bash
 dotnet add package PackageName -v 0.1-pre -s https://url/path/nuget/v3/index.json
+```
 
+#### Empty IEnumerable
+```csharp
+  Enumerable.Empty<XElement>();
+```
+
+#### Static Instance
+```csharp
+  public class MyStaticInstance
+  {
+    // Our static instantiation:
+    public static MyStaticInstance Instance { get; } = new MyStaticInstance();
+
+    // Prevents new instantiations from being possible:
+    private MyStaticInstance() { }
+  }
 ```
 
 #### Test for Property Changed with xUnit
