@@ -1418,6 +1418,11 @@
       {
         "title": "Code Review Best Practices",
         "url": "https://www.ibm.com/developerworks/rational/library/11-proven-practices-for-peer-review/index.html",
+        "display": false
+      },
+      {
+        "title": "Code Review Best Practices",
+        "url": "http://viewer.media.bitpipe.com/1253203751_753/1284482743_310/11_Best_Practices_for_Peer_Code_Review.pdf",
         "display": true
       },
       {
@@ -1847,6 +1852,11 @@
     "title": "C#",
     "class": "csharp",
     "data": [
+      {
+        "title": "Marshal and Unmarshal",
+        "url": "https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/how-to?pivots=dotnet-6-0",
+        "display": true
+      },
       {
         "title": "C# programming guide",
         "url": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/",
