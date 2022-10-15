@@ -1756,6 +1756,16 @@
     "class": "software-engineering",
     "data": [
       {
+        "title": "Gerald M. Weinberg",
+        "url": "http://geraldmweinberg.com/Site/Software.html",
+        "display": true
+      },
+      {
+        "title": "Karl Wiegers",
+        "url": "https://karlwiegers.com/",
+        "display": true
+      },
+      {
         "title": "Writing User Stories With Gherkin",
         "url": "https://medium.com/@nic/writing-user-stories-with-gherkin-dda63461b1d2",
         "display": true
