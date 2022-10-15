@@ -386,6 +386,17 @@
     ]
   },
   {
+    "title": "REST",
+    "class": "rest",
+    "data": [
+      {
+        "title": "Richardson Maturity Model",
+        "url": "https://martinfowler.com/articles/richardsonMaturityModel.html",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "GitHub",
     "class": "github",
     "data": [
