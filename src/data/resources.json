@@ -307,6 +307,11 @@
         "display": true
       },
       {
+        "title": "Use Different Git Email Addresses",
+        "url": "https://blog.hao.dev/how-to-use-different-git-emails-for-personal-and-work-repositories-on-the-same-machine",
+        "display": true
+      },
+      {
         "title": "Rails Casts",
         "url": "http://railscasts.com",
         "display": true

@@ -533,6 +533,16 @@ Without `--permanent`, the firewall rule will take affect but will not persist a
 
 ### <a id="git"></a>Git
 
+#### Set a Different Author for a Repository
+* `git config --local user.email email@example.com`
+
+#### Reset the Previous' Commit's Email Address
+* ```bash
+  git reset HEAD~1
+  git commit --amend --author="First Last <email@example.com>" --no-edit
+  git push --force-with-lease
+  ```
+
 #### Contributing to an open source project
 
 1. Fork the project on github.
