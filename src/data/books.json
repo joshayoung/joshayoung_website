@@ -76,6 +76,13 @@
         "recommend": true
       },
       {
+        "title": "Clean Architecture",
+        "author": "Robert C. Martin",
+        "url": "",
+        "display": true,
+        "recommend": false
+      },
+      {
         "title": "Learning PHP and MySQL",
         "author": "Michele E. Davis and Jon A. Phillips",
         "url": "",
