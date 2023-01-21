@@ -1868,8 +1868,38 @@
     "class": "csharp",
     "data": [
       {
+        "title": "Simplifying Events with Commanding",
+        "url": "https://devblogs.microsoft.com/xamarin/simplifying-events-with-commanding",
+        "display": true
+      },
+      {
+        "title": "C# code contracts vs input validation",
+        "url": "https://enterprisecraftsmanship.com/posts/code-contracts-vs-input-validation/",
+        "display": true
+      },
+      {
+        "title": "Exceptions for flow control in C#",
+        "url": "https://enterprisecraftsmanship.com/posts/exceptions-for-flow-control",
+        "display": true
+      },
+      {
+        "title": "KISS revisited",
+        "url": "https://enterprisecraftsmanship.com/posts/kiss-revisited",
+        "display": true
+      },
+      {
+        "title": "Separation of Concerns in ORM",
+        "url": "https://enterprisecraftsmanship.com/posts/separation-of-concerns-in-orm",
+        "display": true
+      },
+      {
         "title": "Marshal and Unmarshal",
         "url": "https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/how-to?pivots=dotnet-6-0",
+        "display": true
+      },
+      {
+        "title": "The Operation Result Pattern",
+        "url": "https://medium.com/@cummingsi1993/the-operation-result-pattern-a-simple-guide-fe10ff959080",
         "display": true
       },
       {

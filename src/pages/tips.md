@@ -20,3 +20,4 @@ These are some tips for development that I have found helpful. These also serve 
 * When writing a ticket for a kanban board (i.e. Jira, Trello, etc) in a team environment, include enough details in the ticket so that any one on the team can pull the ticket without having to consult anyone else.
 * When using an external service (library, API, etc), try not to include the language of that project inside your application so that you can easily switch library's or APIs in the future without having to change your model/service names.
 * Do not use exceptions for flow control.
+* Before you start debugging an issue, always ask the simple questions first: "is the plugin initialized correctly", "am I calling the right function", is my element hidden, etc.
