@@ -1864,12 +1864,33 @@
     ]
   },
   {
+    "title": "Azure",
+    "class": "azure",
+    "data": [
+      {
+        "title": "Easy Auth for Azure App Service",
+        "url": "https://parveensingh.com/easy-auth-for-azure-app-service",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "C#",
     "class": "csharp",
     "data": [
       {
         "title": "Simplifying Events with Commanding",
         "url": "https://devblogs.microsoft.com/xamarin/simplifying-events-with-commanding",
+        "display": true
+      },
+      {
+        "title": "Bulletproof Interface Deserialization in Json.NET",
+        "url": "https://skrift.io/issues/bulletproof-interface-deserialization-in-jsonnet",
+        "display": true
+      },
+      {
+        "title": "How to update value in a List using LINQ",
+        "url": "https://stackoverflow.com/questions/30055651/how-to-update-value-in-a-list-using-linq",
         "display": true
       },
       {
