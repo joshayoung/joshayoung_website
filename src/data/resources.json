@@ -1873,6 +1873,21 @@
         "display": true
       },
       {
+        "title": "Swagger Editor",
+        "url": "https://editor.swagger.io/",
+        "display": true
+      },
+      {
+        "title": "Generic Parameter Constraints for C#",
+        "url": "https://www.pluralsight.com/guides/generic-parameter-constraints-csharp",
+        "display": true
+      },
+      {
+        "title": "C# - Action vs Func",
+        "url": "https://medium.com/@serhat21zor/c-action-vs-func-62fe917da43f",
+        "display": true
+      },
+      {
         "title": "C# code contracts vs input validation",
         "url": "https://enterprisecraftsmanship.com/posts/code-contracts-vs-input-validation/",
         "display": true
@@ -2027,6 +2042,11 @@
       {
         "title": "How To Work With CollectionView in Xamarin Forms",
         "url": "https://medium.com/a-developer-in-making/how-to-work-with-collectionview-in-xamarin-forms-5dc65c50b419",
+        "display": true
+      },
+      {
+        "title": "Improve Xamarin.Forms App Performance",
+        "url": "https://learn.microsoft.com/en-us/xamarin/xamarin-forms/deploy-test/performance",
         "display": true
       },
       {

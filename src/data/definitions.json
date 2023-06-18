@@ -10,6 +10,16 @@
     "link": "https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_8.0.0/com.ibm.mq.pro.doc/q002680_.htm"
   },
   {
+    "word": "Eventual Consistency",
+    "definition": "a consistency model used in distributed computing to achieve high availability that informally guarantees that, if no new updates are made to a given data item, eventually all accesses to that item will return the last updated value.",
+    "link": "https://en.wikipedia.org/wiki/Eventual_consistency"
+  },
+  {
+    "word": "Zeller's Congruence",
+    "definition": "an algorithm devised by Christian Zeller in the 19th century to calculate the day of the week for any Julian or Gregorian calendar date.",
+    "link": "https://en.wikipedia.org/wiki/Zeller%27s_congruence"
+  },
+  {
     "word": "Dunder",
     "definition": "Double Underscore (i.e. Double UNDERscore",
     "link": ""
