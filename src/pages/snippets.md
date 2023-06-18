@@ -3294,13 +3294,13 @@ svg {
 ### <a name='rider'></a>Rider
 
 - `Alt + Insert`
-
   - Generation Menu.
-
 - `CMD/CTRL + n`
   - Add Controller
 - `CMD + OPTION + L`
   - Format Code
+- `CMD + D`
+  - Navigation to Source
 
 ### <a name='rubymine'></a>RubyMine
 

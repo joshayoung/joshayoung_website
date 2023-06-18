@@ -21,3 +21,4 @@ These are some tips for development that I have found helpful. These also serve 
 * When using an external service (library, API, etc), try not to include the language of that project inside your application so that you can easily switch library's or APIs in the future without having to change your model/service names.
 * Do not use exceptions for flow control.
 * Before you start debugging an issue, always ask the simple questions first: "is the plugin initialized correctly", "am I calling the right function", is my element hidden, etc.
+* If your code base is suddenly failing and you cannot determine why, find the last commit where it worked and see what has changed in each commit since. You should be able to `git checkout [hash of commit]` to see if it worked at that point.
