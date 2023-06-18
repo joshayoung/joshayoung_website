@@ -22,3 +22,9 @@ These are some tips for development that I have found helpful. These also serve 
 * Do not use exceptions for flow control.
 * Before you start debugging an issue, always ask the simple questions first: "is the plugin initialized correctly", "am I calling the right function", is my element hidden, etc.
 * If your code base is suddenly failing and you cannot determine why, find the last commit where it worked and see what has changed in each commit since. You should be able to `git checkout [hash of commit]` to see if it worked at that point.
+
+### Maui / Xamarin
+* If you add a page as a singleton and have a form it it, it will keep the data you type in the form everytime you re-open the apge.
+* Having an initialize method keeps most of the code for the vm out of the constructor. This is recommended practice by Microsoft, and allows for async methods.
+* The wrong order of DI classes in Xamrin will cause the app to crash for no reason (sometimes it will not tell you, the app will just close).
+* if x:Class it not correct, the xaml page will be blank!
