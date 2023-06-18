@@ -13,6 +13,7 @@ Software Engineer with over 10 years of experience developing web and hybrid mob
 ##### NFIB - Nashville, TN (2022 - Present)
 - Build and maintain backend systems using .NET, C#, and REST.
 - Write mobile application using Xamarin and C#.
+- Convert existing Xamarin app to Maui.
 - Setup authentication between backend APIs and the mobile app.
 (Gitflow, Scrum)
 
