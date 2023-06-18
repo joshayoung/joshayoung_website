@@ -2036,8 +2036,8 @@
     ]
   },
   {
-    "title": "Xamarin",
-    "class": "xamarin",
+    "title": "Xamarin / MAUI",
+    "class": "xamarin-maui",
     "data": [
       {
         "title": "How To Work With CollectionView in Xamarin Forms",
