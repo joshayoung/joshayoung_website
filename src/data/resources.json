@@ -2045,6 +2045,176 @@
         "display": true
       },
       {
+        "title": "Exploring Layout Options in .NET MAUI",
+        "url": "https://www.telerik.com/blogs/exploring-layout-options-dotnet-maui",
+        "display": true
+      },
+      {
+        "title": "Xamarin.Forms to .NET MAUI: How Layout Behavior Has Evolved",
+        "url": "https://www.telerik.com/blogs/xamarin-forms-dotnet-maui-how-layout-behavior-evolved",
+        "display": true
+      },
+      {
+        "title": "Binding to Static Property",
+        "url": "https://stackoverflow.com/questions/51172683/how-to-bind-static-class-property-to-ui-component-in-xaml-xamarin",
+        "display": true
+      },
+      {
+        "title": "Configuring Life Cycle Events in .NET MAUI Apps",
+        "url": "https://medium.com/syncfusion/configuring-life-cycle-events-in-net-maui-apps-ce77c856130",
+        "display": true
+      },
+      {
+        "title": "ARGB Hex Values",
+        "url": "https://stackoverflow.com/questions/23201134/transparent-argb-hex-value",
+        "display": true
+      },
+      {
+        "title": "Entry Text Validation Behavior",
+        "url": "https://learn.microsoft.com/en-us/dotnet/communitytoolkit/maui/behaviors/text-validation-behavior",
+        "display": true
+      },
+      {
+        "title": "Simplify your local data storage with SQLite-net",
+        "url": "https://jonathancrozier.com/blog/simplify-your-local-data-storage-with-sqlite-net",
+        "display": true
+      },
+      {
+        "title": "Styling Apps with CSS in .NET MAUI",
+        "url": "https://www.telerik.com/blogs/styling-apps-css-dotnet-maui",
+        "display": true
+      },
+      {
+        "title": "Removing async void",
+        "url": "https://johnthiriet.com/removing-async-void/",
+        "display": true
+      },
+      {
+        "title": "Setting up a basic MVVM architecture in .NET MAUI",
+        "url": "https://blog.pieeatingninjas.be/2022/02/11/setting-up-a-basic-mvvm-architecture-in-net-maui/",
+        "display": true
+      },
+      {
+        "title": "Dependency injection using Shell in MAUI",
+        "url": "https://putridparrot.com/blog/dependency-injection-using-shell-in-maui",
+        "display": true
+      },
+      {
+        "title": ".Net Maui Samples",
+        "url": "https://github.com/dotnet/maui-samples",
+        "display": true
+      },
+      {
+        "title": "Unit test projects can't reference Maui multi target projects",
+        "url": "https://github.com/dotnet/maui/issues/3552",
+        "display": true
+      },
+      {
+        "title": "Validation",
+        "url": "https://learn.microsoft.com/en-us/dotnet/architecture/maui/validation",
+        "display": true
+      },
+      {
+        "title": "Platform-Specific Code in .NET MAUI Using Dependency Injection",
+        "url": "https://www.youtube.com/watch?v=8Ri5nJsapOI",
+        "display": true
+      },
+      {
+        "title": "Find Resource in Code-Behind",
+        "url": "https://stackoverflow.com/questions/72591153/how-to-find-a-resource-with-key-in-code-behind-maui",
+        "display": true
+      },
+      {
+        "title": "Maui Docs",
+        "url": "https://github.com/dotnet/docs-maui",
+        "display": true
+      },
+      {
+        "title": "Centered StackLayout within StackLayout does not center",
+        "url": "https://github.com/dotnet/maui/issues/9927",
+        "display": true
+      },
+      {
+        "title": "Syncfusion Examples ",
+        "url": "https://github.com/orgs/SyncfusionExamples/repositories",
+        "display": true
+      },
+      {
+        "title": "Splash Screen in .NET MAUI",
+        "url": "https://askxammy.com/splash-screen-in-net-maui-%F0%9F%92%9A/",
+        "display": true
+      },
+      {
+        "title": "Use Navigation Page in Maui",
+        "url": "https://stackoverflow.com/questions/67378690/how-can-i-use-navigationpage-in-maui",
+        "display": true
+      },
+      {
+        "title": "David Ortinau Videos",
+        "url": "https://www.youtube.com/@DavidOrtinau/videos",
+        "display": true
+      },
+      {
+        "title": "Avoid async calls in view model constructors",
+        "url": "https://www.damirscorner.com/blog/posts/20221021-AvoidAsyncCallsInViewmodelConstructors.html",
+        "display": true
+      },
+      {
+        "title": "Turn Events into Commands with Behaviors",
+        "url": "https://devblogs.microsoft.com/xamarin/turn-events-into-commands-behaviors",
+        "display": true
+      },
+      {
+        "title": "Pass OnAppearing to a ViewModel in Xamarin Forms MVVM",
+        "url": "https://stackoverflow.com/questions/56826222/pass-onappearing-to-a-viewmodel-in-xamarin-forms-mvvm",
+        "display": true
+      },
+      {
+        "title": "Run Methods in View Model after Receiving Object in AppShell .NET MAUI",
+        "url": "https://stackoverflow.com/questions/74625838/run-method-in-viewmodel-after-receiving-object-in-appshell-net-maui",
+        "display": true
+      },
+      {
+        "title": "Adding SQLite to the .NET MAUI application",
+        "url": "https://vladislavantonyuk.github.io/articles/Adding-SQLite-to-the-.NET-MAUI-application/",
+        "display": true
+      },
+      {
+        "title": "dotnet-maui-samples",
+        "url": "https://github.com/egvijayanand/dotnet-maui-samples",
+        "display": true
+      },
+      {
+        "title": "Async / Await and Task best practices for Xamarin",
+        "url": "https://luismts.com/async-await-and-task-best-practices-for-xamarin/",
+        "display": true
+      },
+      {
+        "title": "Syncfusion, Inc Videos",
+        "url": "https://www.youtube.com/@SyncfusionInc/videos",
+        "display": true
+      },
+      {
+        "title": "Injecting Services into View Models",
+        "url": "https://stackoverflow.com/questions/72429297/injecting-services-into-view-models-in-net-maui-app",
+        "display": true
+      },
+      {
+        "title": "Global Exception Handling in Xamarin.Forms",
+        "url": "https://stackoverflow.com/questions/72429297/injecting-services-into-view-models-in-net-maui-app",
+        "display": true
+      },
+      {
+        "title": "Planning a Network Caching Strategy (VLOG)",
+        "url": "https://www.youtube.com/watch?v=4u7ajxGxo1k",
+        "display": true
+      },
+      {
+        "title": "Why is async void bad and how do I await a Task in an object constructor in C#?",
+        "url": "https://www.youtube.com/watch?v=O1Tx-k4Vao0",
+        "display": true
+      },
+      {
         "title": "Improve Xamarin.Forms App Performance",
         "url": "https://learn.microsoft.com/en-us/xamarin/xamarin-forms/deploy-test/performance",
         "display": true
