@@ -3411,7 +3411,12 @@ Once you get the warning in the webpage, to continue to the site anyway, type: `
   ipconfig /all
 ```
 
-### <a name='xamarin'></a>Xamarin
+### <a name='xamarin-maui'></a>Xamarin / MAUI
+
+#### Push a New Content Page
+```csharp
+  Navigation.PushAsync(new ContentPage());
+```
 
 #### Margin:
 
