@@ -2201,6 +2201,11 @@
         "display": true
       },
       {
+        "title": "C# SQLite",
+        "url": "https://zetcode.com/csharp/sqlite",
+        "display": true
+      },
+      {
         "title": "dotnet-maui-samples",
         "url": "https://github.com/egvijayanand/dotnet-maui-samples",
         "display": true
