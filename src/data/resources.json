@@ -2066,6 +2066,36 @@
         "display": true
       },
       {
+        "title": "How to set the flyout menu only on a certain page - .NET MAUI",
+        "url": "https://stackoverflow.com/questions/74995206/how-to-set-the-flyout-menu-only-on-a-certain-page-net-maui",
+        "display": true
+      },
+      {
+        "title": "Run method in viewmodel after receiving object in AppShell .NET MAUI",
+        "url": "https://stackoverflow.com/questions/74625838/run-method-in-viewmodel-after-receiving-object-in-appshell-net-maui",
+        "display": true
+      },
+      {
+        "title": "awesome-dotnet-maui",
+        "url": "https://github.com/jsuarezruiz/awesome-dotnet-maui",
+        "display": true
+      },
+      {
+        "title": "How to check the multiple permission at single request in Android M?",
+        "url": "https://stackoverflow.com/questions/34040355/how-to-check-the-multiple-permission-at-single-request-in-android-m",
+        "display": true
+      },
+      {
+        "title": "Xamarin.Forms Shell : Navigation",
+        "url": "https://medium.com/globant/xamarin-forms-shell-navigation-d1179bfa2e4a",
+        "display": true
+      },
+      {
+        "title": "MAUISqlite",
+        "url": "https://github.com/Abhayprince/MAUISqlite",
+        "display": true
+      },
+      {
         "title": "Exploring Layout Options in .NET MAUI",
         "url": "https://www.telerik.com/blogs/exploring-layout-options-dotnet-maui",
         "display": true
