@@ -8,18 +8,18 @@
 * Install Gatsby (not sure if this is necessary)
   * `brew install gatsby-cli`
 * Run Install
-  * `npm install`
+  * `npm install --global yarn`
+  * `yarn install`
 
 ### Update Packages
-  * `npm install -g npm-check-updates`
-    * [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
-  * `ncu`
-  * `ncu -u`
-  * `npm install`
+  * `yarn update`
 
 ### Start Site:
 - npm run develop
-- http://localhost:8080
+- Website Runs At: http://localhost:8080
+
+### Deploy Updates
+- `npm run deploy`
 
 ### Resources:
 - https://www.gatsbyjs.org/tutorial/part-five/
