@@ -9,10 +9,10 @@ My name is Josh Young. I am a web developer living and working in Nashville, Ten
 
 ### My Job
 
-For my day job, I maintain web applications, websites, and other apps for my employer,
-[Ramsey Solutions](https://www.daveramsey.com). In a typical day, I work primarily with Rails, Ruby, CSS, SASS, JavaScript and their accompanying technologies such as build tools, testing frameworks, and the like. I primarily write "Line-of-Business" Applications (Enterprise Software Development).
+For my day job, I develope web APIs and mobile applications for my employer,
+[National Federation of Independent Business](https://www.nfib.com/). In a typical day, I work primarily with Xamarin/Maui, C#, and ASP.NET and their accompanying technologies such as build tools, testing frameworks, and the like. I primarily write "Line-of-Business" Applications (Enterprise Software Development).
 
-In the past, I have had the opportunity to work with many technologies including, but not limited to: PHP, Laravel, Objective-C, C#, ASP.NET and Python. On the [resume](/resume) portion of this site, I have listed some of my job duties in more detail.
+In the past, I have had the opportunity to work with many technologies including, but not limited to: PHP, Laravel, Objective-C, Ruby, JavaScript, and Python. On the [resume](/resume) portion of this site, I have listed some of my job duties in more detail.
 
 ### <a id='hobbies'></a> Hobbies
 
