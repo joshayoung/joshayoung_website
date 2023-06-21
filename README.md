@@ -1,5 +1,15 @@
 # Website for joshayoung.com
 
+### Installation Instructions
+* Install brew:
+  * `https://brew.sh`
+* Install Node:
+  * `brew install node`
+* Install Gatsby (not sure if this is necessary)
+  * `brew install gatsby-cli`
+* Run Install
+  * `npm install`
+
 ### Start Site:
 - npm run develop
 - http://localhost:8080
