@@ -10,6 +10,13 @@
 * Run Install
   * `npm install`
 
+### Update Packages
+  * `npm install -g npm-check-updates`
+    * [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
+  * `ncu`
+  * `ncu -u`
+  * `npm install`
+
 ### Start Site:
 - npm run develop
 - http://localhost:8080
