@@ -16,7 +16,7 @@
 
 ### Start Site:
 - npm run develop
-- Website Runs At: http://localhost:8080
+- Website Runs At: http://localhost:8000
 
 ### Deploy Updates
 - `npm run deploy`
