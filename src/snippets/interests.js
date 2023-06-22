@@ -1,5 +1,7 @@
 import React from "react";
 import Box from "../components/box";
+import { css } from "@emotion/react";
+
 
 const Interests = () => (
   <Box>
