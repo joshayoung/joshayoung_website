@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-templates-tags-js",
-    "path": "/tags/databases/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Database Best Practices","path":"/database-best-practices"}}}]}},"pageContext":{"tag":"databases"}},
-    "staticQueryHashes": ["305197398"]}
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/databases/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Database Best Practices","path":"/database-best-practices"}}}]}},"pageContext":{"tag":"databases"}},"staticQueryHashes":["305197398"]}

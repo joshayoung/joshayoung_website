@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-templates-tags-js",
-    "path": "/tags/testing/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"What Should I Test","path":"/what-should-i-test"}}}]}},"pageContext":{"tag":"testing"}},
-    "staticQueryHashes": ["305197398"]}
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/testing/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"What Should I Test","path":"/what-should-i-test"}}}]}},"pageContext":{"tag":"testing"}},"staticQueryHashes":["305197398"]}

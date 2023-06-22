@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-templates-tags-js",
-    "path": "/tags/ruby/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":3,"edges":[{"node":{"frontmatter":{"title":"Many-to-Many Association in Rails","path":"/many-to-many-association"}}},{"node":{"frontmatter":{"title":"One-to-Many Association in Rails","path":"/one-to-many-associations"}}},{"node":{"frontmatter":{"title":"Basic Rails MVC Setup","path":"/basic-rails-mvc-setup"}}}]}},"pageContext":{"tag":"ruby"}},
-    "staticQueryHashes": ["305197398"]}
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/ruby/","result":{"data":{"allMarkdownRemark":{"totalCount":3,"edges":[{"node":{"frontmatter":{"title":"Many-to-Many Association in Rails","path":"/many-to-many-association"}}},{"node":{"frontmatter":{"title":"One-to-Many Association in Rails","path":"/one-to-many-associations"}}},{"node":{"frontmatter":{"title":"Basic Rails MVC Setup","path":"/basic-rails-mvc-setup"}}}]}},"pageContext":{"tag":"ruby"}},"staticQueryHashes":["305197398"]}

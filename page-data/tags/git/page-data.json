@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-templates-tags-js",
-    "path": "/tags/git/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Using Git Feature Branches","path":"/git-feature-branching"}}}]}},"pageContext":{"tag":"git"}},
-    "staticQueryHashes": ["305197398"]}
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/git/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Using Git Feature Branches","path":"/git-feature-branching"}}}]}},"pageContext":{"tag":"git"}},"staticQueryHashes":["305197398"]}

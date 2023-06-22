@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-templates-tags-js",
-    "path": "/tags/php/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Laravel Note/Bookmark System","path":"/laravel-notes"}}}]}},"pageContext":{"tag":"php"}},
-    "staticQueryHashes": ["305197398"]}
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/php/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Laravel Note/Bookmark System","path":"/laravel-notes"}}}]}},"pageContext":{"tag":"php"}},"staticQueryHashes":["305197398"]}
