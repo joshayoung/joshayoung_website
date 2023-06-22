@@ -20,7 +20,7 @@
     "gatsby-remark-images": "^5.10.0",
     "gatsby-source-filesystem": "^5.11.0",
     "gatsby-transformer-json": "^3.13.0",
-    "gatsby-transformer-remark": "^4.10.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^3.13.0",
     "gh-pages": "^3.2.3",
     "kind-of": "^6.0.3",
