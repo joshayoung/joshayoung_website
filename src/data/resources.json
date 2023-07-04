@@ -1884,6 +1884,21 @@
         "display": true
       },
       {
+        "title": "Set object property using reflection",
+        "url": "https://stackoverflow.com/questions/619767/set-object-property-using-reflection",
+        "display": true
+      },
+      {
+        "title": "Standard numeric format strings",
+        "url": "https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings?redirectedfrom=MSDN",
+        "display": true
+      },
+      {
+        "title": "How to use StringFormat in XAML elements",
+        "url": "https://stackoverflow.com/questions/685743/how-to-use-stringformat-in-xaml-elements",
+        "display": true
+      },
+      {
         "title": "Bulletproof Interface Deserialization in Json.NET",
         "url": "https://skrift.io/issues/bulletproof-interface-deserialization-in-jsonnet",
         "display": true
@@ -2063,6 +2078,26 @@
       {
         "title": "How To Work With CollectionView in Xamarin Forms",
         "url": "https://medium.com/a-developer-in-making/how-to-work-with-collectionview-in-xamarin-forms-5dc65c50b419",
+        "display": true
+      },
+      {
+        "title": "Why is the control inaccessible due to its protection level",
+        "url": "https://stackoverflow.com/questions/1742909/why-is-the-control-inaccessible-due-to-its-protection-level",
+        "display": true
+      },
+      {
+        "title": ".Net MAUI data binding not carrying through to custom component",
+        "url": "https://stackoverflow.com/questions/73011596/net-maui-data-binding-not-carrying-through-to-custom-component",
+        "display": true
+      },
+      {
+        "title": "MAUI: Customize an Entry",
+        "url": "https://stackoverflow.com/questions/72404629/maui-customize-an-entry",
+        "display": true
+      },
+      {
+        "title": "Useful converters in Xamarin Forms",
+        "url": "https://xamgirl.com/useful-converters-in-xamarin-forms/",
         "display": true
       },
       {

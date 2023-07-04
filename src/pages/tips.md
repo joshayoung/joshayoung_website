@@ -29,3 +29,4 @@ These are some tips for development that I have found helpful. These also serve 
 * The wrong order of DI classes in Xamrin will cause the app to crash for no reason (sometimes it will not tell you, the app will just close).
 * if x:Class it not correct, the xaml page will be blank!
 * On IOS, if you have the ‘Entry’'s `MaxLength` set a a number that is smaller than the length of the value that is binding to, it will cause a crash on IOS (at least if it is in a CarouselView). This same error does not occur in Android. Error: “Value cannot be null. (Parameter 'fromPosition’)”.
+* If the signature of your command is incorrect, it will not be triggered (i.e. if you call it with a string and the command is defined as Command<int>, it will never be called).
