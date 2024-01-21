@@ -3194,6 +3194,16 @@ These are both the same:
   rspec --fail-fast
 ```
 
+#### Testing DateTime
+* https://methodpoet.com/unit-testing-datetime-now/
+* https://dev.to/pnieweglowski/why-using-datetime-now-directly-is-a-bad-idea-1gob
+* https://cosmin-vladutu.medium.com/how-to-mock-datetime-in-unit-tests-80dad50b8508
+* To test a method with a DateTime in C#, you have a few options. 
+  * Inject a class that calls DateTime.Now, which you can then mock. 
+    * This only works if you can use an instance method. If you need to mock a static value, then you can follow the last recommendation here: https://methodpoet.com/unit-testing-datetime-now/ which works really well, but is complicated. 
+  * Or you can create a class that calls a function which returns DateTime.Now. 
+  * Optionally, you can use Pose to mock the DateTime value.
+
 #### Rspec with Documentation
 
 ```ruby
@@ -3417,6 +3427,13 @@ Once you get the warning in the webpage, to continue to the site anyway, type: `
 ```csharp
   Navigation.PushAsync(new ContentPage());
 ```
+
+#### Delete bin and obj files
+* `find . -iname "bin" -o -iname "obj" | xargs rm -rf`
+  * https://stackoverflow.com/questions/755382/i-want-to-delete-all-bin-and-obj-folders-to-force-all-projects-to-rebuild-everyt
+
+##### Install .NET from the Command Line
+* `sudo bash dotnet-install.sh --channel 8.0.1xx --install-dir /usr/local/share/dotnet``
 
 #### Change Maui App Icon
 * Move the existing app icon into the 'raw' folder.

@@ -1320,6 +1320,36 @@
         "display": true
       },
       {
+        "title": "SQL Join Types – Inner Join VS Outer Join Example",
+        "url": "https://www.freecodecamp.org/news/sql-join-types-inner-join-vs-outer-join-example/",
+        "display": true
+      },
+      {
+        "title": "Creating Reusable Components with .NET MAUI",
+        "url": "https://mrsauravsahu.medium.com/creating-reusable-components-with-net-maui-c6137bfff4dd",
+        "display": true
+      },
+      {
+        "title": "Easily control the executability of Commands using MVVM Source Generators",
+        "url": "https://blog.ewers-peters.de/easily-control-the-executability-of-commands-using-mvvm-source-generators",
+        "display": true
+      },
+      {
+        "title": "RSA Encryption In C# using Microsoft Cryptography Library",
+        "url": "https://kashifsoofi.github.io/cryptography/rsa-encryption-in-csharp-using-microsoft-cryptography/",
+        "display": true
+      },
+      {
+        "title": "C# RSA encryption-decryption with my own key",
+        "url": "https://t-phitakgul.medium.com/c-rsa-encryption-decryption-with-my-own-key-dab2d1f4df1b",
+        "display": true
+      },
+      {
+        "title": "Removing async void",
+        "url": "https://johnthiriet.com/removing-async-void",
+        "display": true
+      },
+      {
         "title": "Postgresql User Account",
         "url": "https://www.cyberciti.biz/faq/howto-add-postgresql-user-account",
         "display": true
@@ -1884,8 +1914,23 @@
         "display": true
       },
       {
+        "title": "DictionaryEntry",
+        "url": "https://stackoverflow.com/questions/34879666/checking-shouldthrow-exception-data-in-fluent-assertions-in-net",
+        "display": true
+      },
+      {
+        "title": "Unit testing in C#",
+        "url": "https://docs.educationsmediagroup.com/unit-testing-csharp/",
+        "display": true
+      },
+      {
         "title": "Set object property using reflection",
         "url": "https://stackoverflow.com/questions/619767/set-object-property-using-reflection",
+        "display": true
+      },
+      {
+        "title": "Major.Minor.Patch",
+        "url": "https://medium.com/fiverr-engineering/major-minor-patch-a5298e2e1798",
         "display": true
       },
       {
@@ -1961,6 +2006,21 @@
       {
         "title": "JSON2Csharp",
         "url": "https://json2csharp.com/csharp-object-initializer",
+        "display": true
+      },
+      {
+        "title": "How to Deserialize JSON Into Dynamic Object in C#",
+        "url": "https://code-maze.com/csharp-deserialize-json-into-dynamic-object/",
+        "display": true
+      },
+      {
+        "title": "Correcting Common Async/Await Mistakes in .NET",
+        "url": "https://codetraveler.io/ndcoslo-asyncawait/",
+        "display": true
+      },
+      {
+        "title": "JSON to C#",
+        "url": "https://app.quicktype.io/?l=csharp",
         "display": true
       },
       {
@@ -2081,8 +2141,33 @@
         "display": true
       },
       {
+        "title": "Where to put database initialisation code in Maui App",
+        "url": "https://stackoverflow.com/questions/72934399/where-to-put-database-initialisation-code-in-maui-app",
+        "display": true
+      },
+      {
+        "title": "A simple Navigation Service for Xamarin.Forms",
+        "url": "https://mallibone.com/post/a-simple-navigation-service-for-xamarinforms",
+        "display": true
+      },
+      {
+        "title": "SQLite-net",
+        "url": "https://github.com/praeclarum/sqlite-net",
+        "display": true
+      },
+      {
+        "title": "Store data locally with SQLite",
+        "url": "https://learn.microsoft.com/en-us/training/modules/store-local-data/3-store-data-locally-with-sqlite",
+        "display": true
+      },
+      {
         "title": "Why is the control inaccessible due to its protection level",
         "url": "https://stackoverflow.com/questions/1742909/why-is-the-control-inaccessible-due-to-its-protection-level",
+        "display": true
+      },
+      {
+        "title": "Responsive Layouts in .NET MAUI with OnOrientationExtension",
+        "url": "https://www.cayas.de/en/blog/responsive-layouts-for-dotnet-maui",
         "display": true
       },
       {
