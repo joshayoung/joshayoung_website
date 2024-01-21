@@ -2091,6 +2091,11 @@
         "display": true
       },
       {
+        "title": "Deploying your .NET MAUI apps to production",
+        "url": "https://goforgoldman.com/posts/maui-app-deploy",
+        "display": true
+      },
+      {
         "title": "MAUI: Customize an Entry",
         "url": "https://stackoverflow.com/questions/72404629/maui-customize-an-entry",
         "display": true

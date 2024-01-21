@@ -3418,6 +3418,18 @@ Once you get the warning in the webpage, to continue to the site anyway, type: `
   Navigation.PushAsync(new ContentPage());
 ```
 
+#### Change Maui App Icon
+* Move the existing app icon into the 'raw' folder.
+* Copy your new icon to the AppIcon folder and make ensure it is named 'appicon.[ext]'.
+  * 'ext' could be svg or png
+* Refactor-delete the copied icons from the raw folder.
+* Make sure the new appicon is set to 'MauiIcon' in the build settings.
+* clean
+* rebuild
+##### Resources
+* https://www.youtube.com/watch?v=iigquyjXlM0
+* https://www.youtube.com/watch?v=jXuuoBlQFD4
+
 #### Margin:
 
 - left/right, top/bottom
