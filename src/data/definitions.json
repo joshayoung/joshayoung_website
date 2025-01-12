@@ -338,6 +338,11 @@
     "link": "https://en.wikipedia.org/wiki/Unary_function"
   },
   {
+    "word": "Strangler Fig Pattern",
+    "definition": "an architectural pattern that involves wrapping old code, with the intent of redirecting it to newer code or to log uses of the old code.",
+    "link": "https://en.wikipedia.org/wiki/Strangler_fig_pattern"
+  },
+  {
     "word": "Predicate",
     "definition": "a Boolean-valued function P: X→ {true, false}",
     "link": "https://en.wikipedia.org/wiki/Predicate_(mathematical_logic)"
