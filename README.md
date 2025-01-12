@@ -2,8 +2,6 @@
 
 ### Installation Instructions
 
-- Install brew:
-  - `https://brew.sh`
 - Install node with a node version manager such as `nvm` or `asdf`.
   - My latest build of this site used: `node 18.0.0`
 - Install Gatsby (not sure if this is necessary)
