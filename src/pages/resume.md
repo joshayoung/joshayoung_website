@@ -11,11 +11,13 @@ Software Engineer with over 10 years of experience developing web and hybrid mob
 #### Senior Software Development Engineer
 
 ##### NFIB - Nashville, TN (2022 - Present)
+
 - Build and maintain backend systems using .NET, C#, and REST.
-- Write mobile application using Xamarin and C#.
+- Write mobile application using Xamarin/Maui and C#.
+- Write blazor applications.
 - Convert existing Xamarin app to Maui.
 - Setup authentication between backend APIs and the mobile app.
-(Gitflow, Scrum)
+  (Gitflow, Scrum)
 
 #### Software Engineer III
 
@@ -27,7 +29,7 @@ Software Engineer with over 10 years of experience developing web and hybrid mob
 - Write and update xUnit/RSpec tests to insure good test coverage for our applications.
 - Troubleshoot logs to find and correct bugs in production.
 - Work with Java/Spring service to correct errors and add features.
-(Trunk-based, Kanban)
+  (Trunk-based, Kanban)
 
 ---
 
@@ -108,6 +110,7 @@ Software Engineer with over 10 years of experience developing web and hybrid mob
 ---
 
 ### Work Projects
+
 - <span>Mobile Application for Users to Get Out of Debt</span>
   <span>(C#, Xamarin, XAML - 2021 - 2022)</span>
 - <span>Website for Checkout and Subscription Management</span>
