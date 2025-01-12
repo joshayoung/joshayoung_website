@@ -4,7 +4,7 @@ import TechnicalSkills from "../snippets/technical-skills";
 
 ### Experienced - Software Engineer
 
-Software Engineer with over 10 years of experience developing web and hybrid mobile applications. Using current programming languages to further company productivity. Improving user experience by working with members of my team to maintain and improve our applications.
+Software Engineer with over 15 years of experience developing web and hybrid mobile applications. Using current programming languages to further company productivity. Improving user experience by working with members of my team to maintain and improve our applications.
 
 ### Work Experience
 
