@@ -2,19 +2,17 @@ import React from "react";
 import Box from "../components/box";
 import { css } from "@emotion/react";
 
-
 const Interests = () => (
   <Box>
     <header>Interests</header>
     <ul
-    css={css`
-      padding-bottom: 10px;
-      border-bottom: 3px solid #3385ff;
-      margin-bottom: 50px;
-      &:last-child {
-        border-bottom: none;
-      }
-      ul {
+      css={css`
+        padding-bottom: 10px;
+        border-bottom: 3px solid #3385ff;
+        margin-bottom: 50px;
+        &:last-child {
+          border-bottom: none;
+        }
         display: flex;
         flex-wrap: wrap;
         list-style-type: none;
@@ -31,8 +29,7 @@ const Interests = () => (
           border-radius: 4px;
           margin: 4px;
         }
-      }
-    `}
+      `}
     >
       <li>C#</li>
       <li>.NET</li>
