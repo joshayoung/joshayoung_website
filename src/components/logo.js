@@ -31,7 +31,7 @@ const Logo = () => (
         }
       `}
     >
-      Software Engineer
+      Senior Software Engineer
     </div>
   </Link>
 );
