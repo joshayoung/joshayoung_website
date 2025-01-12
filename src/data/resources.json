@@ -1601,6 +1601,11 @@
         "title": "How to Exhibit Leadership as an Individual Contributor",
         "url": "https://www.tombartel.me/blog/exhibit-leadership-as-individual-contributor",
         "display": true
+      },
+      {
+        "title": "Mastering the Art of Managing Up: A Developer's Guide to Career Advancement",
+        "url": "https://ardalis.com/managing-up-developers-guide-career-advancement",
+        "display": true
       }
     ]
   },
@@ -1914,6 +1919,21 @@
         "display": true
       },
       {
+        "title": "Coding Helmet",
+        "url": "https://codinghelmet.com/articles",
+        "display": true
+      },
+      {
+        "title": "Is C# pass by value or pass by reference?",
+        "url": "https://www.quora.com/Is-C-pass-by-value-or-pass-by-reference",
+        "display": true
+      },
+      {
+        "title": "What is the difference between a DTO and a POCO (or POJO)",
+        "url": "https://ardalis.com/dto-or-poco",
+        "display": true
+      },
+      {
         "title": "DictionaryEntry",
         "url": "https://stackoverflow.com/questions/34879666/checking-shouldthrow-exception-data-in-fluent-assertions-in-net",
         "display": true
@@ -2138,6 +2158,26 @@
       {
         "title": "How To Work With CollectionView in Xamarin Forms",
         "url": "https://medium.com/a-developer-in-making/how-to-work-with-collectionview-in-xamarin-forms-5dc65c50b419",
+        "display": true
+      },
+      {
+        "title": "App Configuration Settings in .NET MAUI (appsettings.json)",
+        "url": "https://montemagno.com/dotnet-maui-appsettings-json-configuration",
+        "display": true
+      },
+      {
+        "title": "Using ConfigureAwait to improve your application",
+        "url": "https://johnthiriet.com/configure-await",
+        "display": true
+      },
+      {
+        "title": "MVVM - Going async with async command",
+        "url": "https://johnthiriet.com/mvvm-going-async-with-async-command",
+        "display": true
+      },
+      {
+        "title": "Improve app performance",
+        "url": "https://learn.microsoft.com/en-us/dotnet/maui/deployment/performance?view=net-maui-8.0",
         "display": true
       },
       {
