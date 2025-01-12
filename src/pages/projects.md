@@ -2,6 +2,7 @@
 
 Below I have listed some of the personal projects that I have developed over the years along with the programming languages used for each.
 
+- [Contacts App App/API (2023 - 2024)](#contacts_app)
 - [Simple Notes App (2021)](#simple_notes_app)
 - [Xamarin Courses App (2021)](#xamarin_courses_app)
 - [Notification System (2020 - 2021)](#notification_system)
@@ -18,14 +19,23 @@ Below I have listed some of the personal projects that I have developed over the
 - [Comments and Capers Website (2009)](#commentsandcapers)
 - [Blogging System (2008)](#blogging_system)
 
+### <a name='contacts_app'></a>Contacts App (2024)
+
+###### (.NET MAUI, ASP.NET, XAML)
+
+This was my effort to build a contacts app using good architecture patterns in .NET MAUI. I ended up expanding this to include reminders, notes, and other feature along the way. It used local storage and I built a .NET API for the backend.
 
 ### <a name='simple_notes_app'></a>Simple Notes App (2021)
+
 ###### (C#, Xamarin, XAML)
+
 This project was build as a simple way to add local notes to my phone. It stores all of its notes in local storage for now. In the future, it will have the ability to synchronize these notes to a local server.
 [Repo](https://github.com/joshayoung/simple-notes-app)
 
 ### <a name='xamarin_courses_app'></a>Xamarin Courses App (2021)
+
 ###### (C#, Xamarin, XAML)
+
 This project was built as a learning experience for Xamarin. It is a mobile application that reads a list of courses and students from a json file. It gives you the ability to add or remove courses and students. All of these changes are updated via Xamarin's event system.
 [Repo](https://github.com/joshayoung/xamarin-courses-app)
 

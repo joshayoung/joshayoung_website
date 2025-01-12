@@ -5,12 +5,12 @@ import BooksRecommendedOutput from '../output/books-recommended-output';
 
 # About Me
 
-My name is Josh Young. I am a web developer living and working in Nashville, Tennessee. I enjoy all things tech related. I am not a huge blogger, but I enjoy writing small posts about what I am currently working with or technologies that I am using. Maybe something I say here will help someone in their journey, or at the very least provide a central place for me to document what I have learned when working through new projects.
+My name is Josh Young. I am a mobile developer living and working near Nashville, Tennessee. I enjoy all things tech related. I am not a huge blogger, but I enjoy writing small posts about what I am currently working with or technologies that I am using. Maybe something I say here will help someone in their journey, or at the very least provide a central place for me to document what I have learned when working through new projects.
 
 ### My Job
 
-For my day job, I develope web APIs and mobile applications for my employer,
-[National Federation of Independent Business](https://www.nfib.com/). In a typical day, I work primarily with Xamarin/Maui, C#, and ASP.NET and their accompanying technologies such as build tools, testing frameworks, and the like. I primarily write "Line-of-Business" Applications (Enterprise Software Development).
+For my day job, I develop mobile applications for my employer,
+[National Federation of Independent Business](https://www.nfib.com/). In a typical day, I work primarily with .NET Maui, C#, and ASP.NET Core and their accompanying technologies such as build tools, testing frameworks, and the like. I primarily write "Line-of-Business" Applications (Enterprise Software Development).
 
 In the past, I have had the opportunity to work with many technologies including, but not limited to: PHP, Laravel, Objective-C, Ruby, JavaScript, and Python. On the [resume](/resume) portion of this site, I have listed some of my job duties in more detail.
 
