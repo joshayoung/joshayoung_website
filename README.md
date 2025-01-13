@@ -22,6 +22,8 @@
 ### Deploy Updates
 
 - `npm run deploy`
+  - If you run into errors with this command, try running `npm run develop` first to see if that works locally.
+  - Sometimes if you run it in development mode first, the deploy will work correctly for some reason.
 
 ### Resources:
 
