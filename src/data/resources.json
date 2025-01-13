@@ -1919,6 +1919,11 @@
         "display": true
       },
       {
+        "title": "Getting rid of warnings with nullable reference types and JSON object models in C#",
+        "url": "https://blog.maartenballiauw.be/post/2023/01/12/getting-rid-of-warnings-with-nullable-reference-types-and-json-object-models-in-csharp.html",
+        "display": true
+      },
+      {
         "title": "Coding Helmet",
         "url": "https://codinghelmet.com/articles",
         "display": true
