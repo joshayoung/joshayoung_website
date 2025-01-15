@@ -203,16 +203,19 @@ curl --data "information=to&send=to the server" http://example.com
 ### <a id="csharp">C#</a>
 
 #### Install .NET Package from Command Line
+
 ```bash
 dotnet add package PackageName -v 0.1-pre -s https://url/path/nuget/v3/index.json
 ```
 
 #### Empty IEnumerable
+
 ```csharp
   Enumerable.Empty<XElement>();
 ```
 
 #### Static Instance
+
 ```csharp
   public class MyStaticInstance
   {
@@ -533,11 +536,18 @@ Without `--permanent`, the firewall rule will take affect but will not persist a
 
 ### <a id="git"></a>Git
 
+#### Merge with a New Hash
+
+- Use the `--squash` flag with the `merge` command if you want to include code from one branch into another branch, but you do not want the commit to have the same hash value for the commit.
+- If you were to use a `cherry-pick` or a 'regular' `merge`, the the included commit hash would be the same as the original commit hash.
+
 #### Set a Different Author for a Repository
-* `git config --local user.email email@example.com`
+
+- `git config --local user.email email@example.com`
 
 #### Reset the Previous' Commit's Email Address
-* ```bash
+
+- ```bash
   git reset HEAD~1
   git commit --amend --author="First Last <email@example.com>" --no-edit
   git push --force-with-lease
@@ -552,7 +562,8 @@ Without `--permanent`, the firewall rule will take affect but will not persist a
 5. Creating a PR from this branch will open up a PR in the forked repo.
 
 #### Copy Contents from One Branch to a New Branch:
-* `git checkout -b my_new_branch_name my_old_branch_name`
+
+- `git checkout -b my_new_branch_name my_old_branch_name`
 
 #### Pull Down / Commit to a Remote PR:
 
@@ -3195,14 +3206,15 @@ These are both the same:
 ```
 
 #### Testing DateTime
-* https://methodpoet.com/unit-testing-datetime-now/
-* https://dev.to/pnieweglowski/why-using-datetime-now-directly-is-a-bad-idea-1gob
-* https://cosmin-vladutu.medium.com/how-to-mock-datetime-in-unit-tests-80dad50b8508
-* To test a method with a DateTime in C#, you have a few options. 
-  * Inject a class that calls DateTime.Now, which you can then mock. 
-    * This only works if you can use an instance method. If you need to mock a static value, then you can follow the last recommendation here: https://methodpoet.com/unit-testing-datetime-now/ which works really well, but is complicated. 
-  * Or you can create a class that calls a function which returns DateTime.Now. 
-  * Optionally, you can use Pose to mock the DateTime value.
+
+- https://methodpoet.com/unit-testing-datetime-now/
+- https://dev.to/pnieweglowski/why-using-datetime-now-directly-is-a-bad-idea-1gob
+- https://cosmin-vladutu.medium.com/how-to-mock-datetime-in-unit-tests-80dad50b8508
+- To test a method with a DateTime in C#, you have a few options.
+  - Inject a class that calls DateTime.Now, which you can then mock.
+    - This only works if you can use an instance method. If you need to mock a static value, then you can follow the last recommendation here: https://methodpoet.com/unit-testing-datetime-now/ which works really well, but is complicated.
+  - Or you can create a class that calls a function which returns DateTime.Now.
+  - Optionally, you can use Pose to mock the DateTime value.
 
 #### Rspec with Documentation
 
@@ -3424,28 +3436,34 @@ Once you get the warning in the webpage, to continue to the site anyway, type: `
 ### <a name='xamarin-maui'></a>Xamarin / MAUI
 
 #### Push a New Content Page
+
 ```csharp
   Navigation.PushAsync(new ContentPage());
 ```
 
 #### Delete bin and obj files
-* `find . -iname "bin" -o -iname "obj" | xargs rm -rf`
-  * https://stackoverflow.com/questions/755382/i-want-to-delete-all-bin-and-obj-folders-to-force-all-projects-to-rebuild-everyt
+
+- `find . -iname "bin" -o -iname "obj" | xargs rm -rf`
+  - https://stackoverflow.com/questions/755382/i-want-to-delete-all-bin-and-obj-folders-to-force-all-projects-to-rebuild-everyt
 
 ##### Install .NET from the Command Line
-* `sudo bash dotnet-install.sh --channel 8.0.1xx --install-dir /usr/local/share/dotnet``
+
+- `sudo bash dotnet-install.sh --channel 8.0.1xx --install-dir /usr/local/share/dotnet``
 
 #### Change Maui App Icon
-* Move the existing app icon into the 'raw' folder.
-* Copy your new icon to the AppIcon folder and make ensure it is named 'appicon.[ext]'.
-  * 'ext' could be svg or png
-* Refactor-delete the copied icons from the raw folder.
-* Make sure the new appicon is set to 'MauiIcon' in the build settings.
-* clean
-* rebuild
+
+- Move the existing app icon into the 'raw' folder.
+- Copy your new icon to the AppIcon folder and make ensure it is named 'appicon.[ext]'.
+  - 'ext' could be svg or png
+- Refactor-delete the copied icons from the raw folder.
+- Make sure the new appicon is set to 'MauiIcon' in the build settings.
+- clean
+- rebuild
+
 ##### Resources
-* https://www.youtube.com/watch?v=iigquyjXlM0
-* https://www.youtube.com/watch?v=jXuuoBlQFD4
+
+- https://www.youtube.com/watch?v=iigquyjXlM0
+- https://www.youtube.com/watch?v=jXuuoBlQFD4
 
 #### Margin:
 
@@ -3453,6 +3471,7 @@ Once you get the warning in the webpage, to continue to the site anyway, type: `
 - left, top, right, bottom
 
 #### Margin with CSS:
+
 - top/bottom, left/right
 - top, left/right, bottom
 - top, right, bottom, left
