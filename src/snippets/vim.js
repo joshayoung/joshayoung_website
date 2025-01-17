@@ -204,6 +204,10 @@ export default () => (
     <dd>
       <code>Ctrl + o</code>
     </dd>
+    <dt>Go Back to next file</dt>
+    <dd>
+      <code>Ctrl + i</code>
+    </dd>
     <dt>Open New Tab</dt>
     <dd>
       <code>:tabnew</code>
