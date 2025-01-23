@@ -1,5 +1,8 @@
 # Website
 
+### To Do
+* Add not about ~/.ssh/config being needed anytime you have a non-standard ssh-key file name to your snippets.
+
 ### Installation Instructions
 
 - Install node with a node version manager such as `nvm` or `asdf`.
