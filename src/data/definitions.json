@@ -10,6 +10,11 @@
     "link": "https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_8.0.0/com.ibm.mq.pro.doc/q002680_.htm"
   },
   {
+    "word": "Fallacies of Distributed Computing",
+    "definition": "The originally listed fallacies are: The network is reliable, Latency is zero, Bandwidth is infinite, The network is secure, Topology doesn't change, There is one administrator, Transport cost is zero, The network is homogeneous",
+    "link": "https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing"
+  },
+  {
     "word": "Eventual Consistency",
     "definition": "a consistency model used in distributed computing to achieve high availability that informally guarantees that, if no new updates are made to a given data item, eventually all accesses to that item will return the last updated value.",
     "link": "https://en.wikipedia.org/wiki/Eventual_consistency"
