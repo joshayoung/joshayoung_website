@@ -4,13 +4,12 @@
 
 - Add not about ~/.ssh/config being needed anytime you have a non-standard ssh-key file name to your snippets.
 
-## Installation Instructions
+## Initial Setup
 
 - Install node with a node version manager such as `nvm` or `asdf`.
-  - My latest build of this site used: `node 18.0.0`
-- Run Install
-  - `npm install --global yarn`
-  - `yarn install`
+  - My latest build of this site used: `node 18.0.0`.
+- Install yarn globally: `npm install --global yarn`.
+- Change to this site's folder and run: `yarn install`.
 
 ## Update Packages
 
