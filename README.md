@@ -1,14 +1,18 @@
 # Website
 
-## To Do
-
-- Add not about ~/.ssh/config being needed anytime you have a non-standard ssh-key file name to your snippets.
-
 ## Initial Setup
+
+### Install Note
 
 - Install node with a node version manager such as `nvm` or `asdf`.
   - My latest build of this site used: `node 18.0.0`.
+
+### Install Yarn
+
 - Install yarn globally: `npm install --global yarn`.
+
+### Run Local Install
+
 - Change to this site's folder and run: `yarn install`.
 
 ## Update Packages
@@ -25,6 +29,10 @@
 - `npm run deploy`
   - If you run into errors with this command, try running `npm run develop` first to see if that works locally.
   - Sometimes if you run it in development mode first, the deploy will work correctly for some reason.
+
+## To Do
+
+- Add not about ~/.ssh/config being needed anytime you have a non-standard ssh-key file name to your snippets.
 
 ### Resources
 
