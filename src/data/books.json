@@ -155,6 +155,34 @@
     ]
   },
   {
+    "title": "Mobile",
+    "class": "",
+    "hide_from_recommended": true,
+    "data": [
+      {
+        "title": ".NET MAUI Cookbook",
+        "short_title": "",
+        "author": "Alexander Russkov",
+        "url": "",
+        "display": true
+      }
+    ]
+  },
+  {
+    "title": "Process",
+    "class": "",
+    "hide_from_recommended": true,
+    "data": [
+      {
+        "title": "Scrum: The Art of Doing Twice the Work in Half the Time",
+        "short_title": "",
+        "author": "Jeff Sutherland (Author), J.J. Sutherland (Author)",
+        "url": "",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Design",
     "class": "",
     "hide_from_recommended": false,

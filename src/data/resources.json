@@ -1283,6 +1283,16 @@
         "display": true
       },
       {
+        "title": "Backup and Restore of Docker Volumes: A Step-by-Step Guide",
+        "url": "https://osmosys.co/blog/backup-and-restore-of-docker-volumes-a-step-by-step-guide",
+        "display": true
+      },
+      {
+        "title": "How to migrate Docker volumes to a different host",
+        "url": "https://labex.io/tutorials/docker-how-to-migrate-docker-volumes-to-a-different-host-414915",
+        "display": true
+      },
+      {
         "title": "How to wait for MSSQL in Docker Compose?",
         "url": "https://newbedev.com/how-to-wait-for-mssql-in-docker-compose",
         "display": true
