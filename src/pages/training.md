@@ -3,8 +3,9 @@ import CodeSchoolOutput from "../output/code-school-output";
 
 # Training Classes
 
-In an effort to continually learn new technologies and stay abreast of existing technologies, I have found it helpful to take advantage of opportunities for continuing education. Below I have listed courses(both classroom and online) that I have completed over the years.
+In an effort to continually learn new technologies and stay abreast of existing technologies, I have found it helpful to take advantage of opportunities for continuing education. Below I have listed courses that I have completed over the years.
 
+- [Android Courses](#android_courses)
 - [Learn Docker](#learn_docker)
 - [Refactoring Rails](#refactoring-rails)
 - [Upcase by Thoughtbot](#upcase-by-thoughtbot)
@@ -25,6 +26,16 @@ In an effort to continually learn new technologies and stay abreast of existing 
 - [Linux Administration 310 - Service Configuration, Management and LAMP Servers](#linux-administration-310)
 - [Linux Administration 210 - System and Network Management](#linux-administration-210)
 - [Linux Administration 110 - System Installation and Configuration](#linux-administration-110)
+
+### <a name='android_courses'></a>Android Courses
+
+Philipp Lacker offers some really great content on Android Native Development as well as KMP. Below are the courses I have taken through his training program.
+- [The Jetpack Compose Masterclass](https://pl-coding.com/compose-masterclass)
+- [The Kotlin Coroutines & Flows Masterclass](https://pl-coding.com/coroutines-masterclass)
+- [Mastering Automtated Testing](https://pl-coding.com/testing)
+- [Building Industry-Level Multiplatform Apps With KMP](https://pl-coding.com/kmp)
+- [The Essentials of Industry-Level Android App Development](https://pl-coding.com/android-essentials)
+
 
 ### <a name='learn_docker'></a>Learn Docker
 
