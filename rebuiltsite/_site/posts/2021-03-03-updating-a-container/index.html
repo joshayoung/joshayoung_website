@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <heaer>
+            <h1>Updating a Container</h1>
+        </heaer>
+    </body>
+    <main>
+<p>In order to update a docker container, we need to follow a few steps <em>(outlined below)</em>. We will need to update the image to a newer version and then build a new container based off that image. It is usually best to not use the image with the ':latest' tag. Instead try to build your container off of a specific image version
+(<a href="https://vsupalov.com/docker-latest-tag">What's Wrong With The Docker :latest Tag?</a>).</p>
+<h5>1. Stop the Running Container:</h5>
+<ul>
+<li>Run: <code>docker container stop [container id]</code>
+<ul>
+<li>Or: run <code>docker-compose down</code></li>
+</ul>
+</li>
+</ul>
+<h5>1. Remove the Old Container:</h5>
+<ul>
+<li>Run: <code>docker container rm id</code></li>
+</ul>
+<h5>1. Pull the New Image:</h5>
+<ul>
+<li>Run: <code>docker pull image:tag</code>
+<ul>
+<li>Or: update the image <code>tag</code> in your docker-compose file.</li>
+</ul>
+</li>
+</ul>
+<h5>1. Start the New Container:</h5>
+<ul>
+<li>Run: <code>docker run ...</code>
+<ul>
+<li>Or: <code>docker-compose up</code></li>
+</ul>
+</li>
+</ul>
+<h5>Note:</h5>
+<p>In order to find the current image version of your container, you can run an inspect command on your running container:</p>
+<ul>
+<li><code>docker inspect [container id]</code></li>
+</ul>
+<p>Find the current image tag within this metadata. Then take this image tag and plug it into a search on Docker Hub to determine a reasonable image version for your new container.</p>
+<h5>Warning:</h5>
+<p><em>When you update your image to a new version pay attention to breaking changes. Do not update your container to an image version that requires changes to your container setup without first making the needed changes.</em></p>
+ blas
+    </main>
+</html>

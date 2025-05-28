@@ -1,0 +1,181 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <heaer>
+            <h1>One-to-Many Association in Rails</h1>
+        </heaer>
+    </body>
+    <main>
+<p>Below I have outlined the necessary steps to get a one-to-many association going in your rails project. For each step, I tried to outline the setup steps as well as the SQL queries that are executed behind the schemes for each of these commands.</p>
+<h4>Setup the basic rails project with two models/tables</h4>
+<pre><code class="language-bash">  # Creates the initial ruby project files:
+  rails new carsapp
+
+  # Creates the migration and model file:
+  rails g model car brand:string color:string
+
+  # Create the child association:
+  rails g model passenger name:string ride_length:string car:references
+
+  # Runs the migration to create the database:
+  rails db:migrate
+</code></pre>
+<p>These commands should create these models:</p>
+<pre><code class="language-ruby">  class Car &lt; ApplicationRecord
+  end
+
+  class Passenger &lt; ApplicationRecord
+    belongs_to :car
+  end
+</code></pre>
+<p>It will also create these tables:</p>
+<table>
+<thead>
+<tr>
+<th>cars</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>brand</td>
+<td>color</td>
+<td>created_at</td>
+<td>updated_at</td>
+</tr>
+</tbody>
+</table>
+<p>The 'car_id' field below is a foreign key that points back to the 'id' field in 'cars'.</p>
+<table>
+<thead>
+<tr>
+<th>passengers</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>name</td>
+<td>ride_length</td>
+<td>car_id</td>
+<td>created_at</td>
+<td>updated_at</td>
+</tr>
+</tbody>
+</table>
+<h4>Add parent and child data:</h4>
+<p>Open the rails console with 'rails c' and run these commands to create some data.</p>
+<pre><code class="language-ruby">  c = Car.new
+  c.brand = &quot;Honda&quot;
+  c.color = &quot;red&quot;
+  c.save
+
+  # SQL:
+  # begin transaction
+  # INSERT INTO &quot;cars&quot; (&quot;brand&quot;, &quot;color&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?)
+  # commit transaction
+
+  p = Passenger.new
+  p.name = &quot;Bob&quot;
+  p.ride_length = &quot;1hr&quot;
+
+  # The 'belongs_to :car' line in our model allows for this assignment:
+  # This line sets the 'car_id' to the ID of the car belonging to 'c':
+  p.car = c
+
+  p.save
+
+  # SQL:
+  # begin transaction
+  # INSERT INTO &quot;passengers&quot; (&quot;name&quot;, &quot;ride_length&quot;, &quot;car_id&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?)
+  # commit transaction
+</code></pre>
+<h4>Convenience methods:</h4>
+<p>This relationship allow for some handy queries outlined below:</p>
+<pre><code class="language-ruby">  p = Passenger.first
+
+  # SQL:
+  # SELECT  &quot;passengers&quot;.* FROM &quot;passengers&quot; ORDER BY &quot;passengers&quot;.&quot;id&quot; ASC LIMIT ?
+
+  # Will print out an object containing the car the passenger is associated with:
+  p.car
+
+  # SQL:
+  # SELECT  &quot;cars&quot;.* FROM &quot;cars&quot; WHERE &quot;cars&quot;.&quot;id&quot; = ? LIMIT ?
+</code></pre>
+<h4>We could also create a passenger assigned to a specific car, like this as well:</h4>
+<pre><code class="language-ruby">  c = Car.first
+  # SQL: SELECT  &quot;cars&quot;.* FROM &quot;cars&quot; ORDER BY &quot;cars&quot;.&quot;id&quot; ASC LIMIT ?
+
+  p = Passenger.new(name: &quot;Jane&quot;, ride_length: &quot;1.5hrs&quot;, car: c)
+  p.save
+
+  # SQL:
+  # begin transaction
+  # INSERT INTO &quot;passengers&quot; (&quot;name&quot;, &quot;ride_length&quot;, &quot;car_id&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?)
+  # commit transaction
+
+  # From that we can also get the 'car' that the 'passenger' is in:
+  the_car = p.car
+</code></pre>
+<p>In order to get the reverse of the relationship, we have to add the string below to the parent model:</p>
+<pre><code class="language-ruby">  class Car &lt; ApplicationRecord
+    has_many :passengers
+  end
+</code></pre>
+<p>By added this line, we can perform the reverse of the query:</p>
+<pre><code class="language-ruby">  c = Car.first
+  c.passengers
+
+  # SQL:
+  # SELECT &quot;passengers&quot;.* FROM &quot;passengers&quot; WHERE &quot;passengers&quot;.&quot;car_id&quot; = ?
+
+  # We can also save a record with the car relationship already set:
+  c = Car.find_by(brand: &quot;Honda&quot;)
+
+  # SQL:
+  # SELECT  &quot;cars&quot;.* FROM &quot;cars&quot; WHERE &quot;cars&quot;.&quot;brand&quot; = ? LIMIT ?
+
+  p = c.passengers.new(name: &quot;Jack&quot;, ride_length: &quot;30min.&quot;).save
+  # begin transaction
+  # INSERT INTO &quot;passengers&quot; (&quot;name&quot;, &quot;ride_length&quot;, &quot;car_id&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?)
+  # commit transaction
+</code></pre>
+<p>To allow child table entries to be deleted when a parent entry is deleted, we have to add the line below to the model. Otherwise, when the parent is removed the child entries will stay in the child table, but they will be linked to an non-existent record.</p>
+<pre><code class="language-ruby">  class Car &lt; ApplicationRecord
+    has_many :passengers, dependent: :destroy
+  end
+</code></pre>
+<p>Example:</p>
+<pre><code class="language-ruby">  c = Car.first
+
+  # SQL:
+  # SELECT  &quot;cars&quot;.* FROM &quot;cars&quot; ORDER BY &quot;cars&quot;.&quot;id&quot; ASC LIMIT ?
+
+  c.destroy
+
+  # SQL:
+  # begin transaction
+  # SELECT &quot;passengers&quot;.* FROM &quot;passengers&quot; WHERE &quot;passengers&quot;.&quot;car_id&quot; = ?
+  # DELETE FROM &quot;passengers&quot; WHERE &quot;passengers&quot;.&quot;id&quot; = ?
+  # DELETE FROM &quot;passengers&quot; WHERE &quot;passengers&quot;.&quot;id&quot; = ?
+  # DELETE FROM &quot;cars&quot; WHERE &quot;cars&quot;.&quot;id&quot; = ?
+  # commit transaction
+</code></pre>
+<p>I have included the code for this mvc application in this <a href="https://github.com/joshayoung/one-to-many-rails'%3Eone-to-many-rails">repo</a></p>
+ blas
+    </main>
+</html>

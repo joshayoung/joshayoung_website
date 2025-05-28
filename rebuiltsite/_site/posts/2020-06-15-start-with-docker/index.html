@@ -1,0 +1,102 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <heaer>
+            <h1>Start with Docker</h1>
+        </heaer>
+    </body>
+    <main>
+<p>Before I embark on the road to explain docker, I want to define a few concepts. In the docker world, we have two structures: <em>images</em> and <em>containers</em>. At the base level, you can download (pull) an image from the <a href="https://hub.docker.com">hub.docker.com</a>, and use it to build a container.</p>
+<h4>Pull a Image:</h4>
+<ul>
+<li><code>docker pull postgres</code></li>
+<li>You will see something like this on your command line:</li>
+</ul>
+<pre><code class="language-bash">Using default tag: latest
+latest: Pulling from library/postgres
+Digest: sha256:ce0f6c28b5869ff166714d5ff9702e38b00f81ad348c6
+</code></pre>
+<ul>
+<li>This will provide an image on your local machine for use with building a container.</li>
+</ul>
+<h4>View Local Image:</h4>
+<ul>
+<li>You can run the <code>docker image</code> command to see this image on your local system:</li>
+<li><code>docker image ls | grep postgres</code></li>
+</ul>
+<h4>Build a Container:</h4>
+<ul>
+<li>From here we can create a container with the <code>docker run</code> command:</li>
+<li><code>docker run --name postgres_cont --rm -e POSTGRES_PASSWORD=password -d postgres</code>
+<ul>
+<li><code>--name</code> will name my container.</li>
+<li><code>--rm</code> tells my container to delete the container when it stops running.
+<ul>
+<li>Otherwise, my system will potentially build up a whole bunch of containers that use the same image.</li>
+</ul>
+</li>
+<li><code>-e</code> will pass environmental values to my container.
+<ul>
+<li>In this case, Docker Hub's explanation for the postgres container says that the <code>POSTGRES_PASSWORD</code> is required for this image.</li>
+</ul>
+</li>
+<li><code>-d</code> tells the container to run in the background.</li>
+<li><code>postgres</code> tells my container which image to use.</li>
+</ul>
+</li>
+<li>Now, I have a container named 'postgres_cont' on my local machine.
+<ul>
+<li><code>docker container ls | grep postgres_cont</code></li>
+</ul>
+</li>
+</ul>
+<h4>Start and Connect to a Container:</h4>
+<ul>
+<li>I can start the container with a run command and then connect to a shell session by running a command similar to this:</li>
+<li><code>docker run --name postgres_cont --rm -it -e POSTGRES_PASSWORD=password postgres bash</code>
+<ul>
+<li><code>-it</code> says to start an interactive terminal that stays open.</li>
+<li><code>bash</code> tells my container to run the bash shell.
+<ul>
+<li>In some cases, the image will not be based off of an image that includes bash, so you would have to use <code>/bin/sh</code> instead.</li>
+<li>From inside this shell we could then interact with or database via <code>psql</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>We could also start an interactive shell session inside the container directly with the postgres terminal:</li>
+<li><code>docker run --name postgres_cont --rm -it -e POSTGRES_PASSWORD=password postgres psql -U postgres</code>
+<ul>
+<li><code>postgres psql -U postgres</code> is saying when you attach to this container run <code>psql</code> and connect with the <code>postgres</code> user.</li>
+</ul>
+</li>
+</ul>
+<h4>Connect to a Running Container:</h4>
+<ul>
+<li>I can connect to a running container by running the <code>exec</code> command.
+<ul>
+<li>This container could have been started by using <code>run</code> with the <code>-d</code> flag or it could have been started by running <code>docker-compose up</code>.</li>
+</ul>
+</li>
+<li><code>docker exec -it postgres_cont bash</code>
+<ul>
+<li><code>-it</code> says to start an interactive terminal that stays open.</li>
+<li><code>postgres_cont</code> is my container name.</li>
+<li><code>bash</code> is the process I want to use when I attach to my container.</li>
+<li>This will give me an interactive terminal session within the container where I can run postgres commands.</li>
+</ul>
+</li>
+</ul>
+<h4>Connect to the Container from the Host:</h4>
+<ul>
+<li>If I want to connect to my container from my host machine, I will need to expose the container's port to my host.</li>
+<li><code>docker run --name postgres_cont -p 5432:5432 -e POSTGRES_PASSWORD=password -d postgres</code></li>
+<li>Now instead of having to connect to my running container via the command line, I can use any postgres GUI and connect to my database from my host machine on port 5432.</li>
+</ul>
+ blas
+    </main>
+</html>

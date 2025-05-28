@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <heaer>
+            <h1>Database Best Practices</h1>
+        </heaer>
+    </body>
+    <main>
+<p>Over the years, I have come to some general conclusions regarding database structure and naming which I have listed below:</p>
+<h3>Databases:</h3>
+<ul>
+<li>When creating a database, use one, lowercase word for the name.</li>
+</ul>
+<h3>Tables:</h3>
+<ul>
+<li>For tables, use a plural word such as <code>users</code>, <code>houses</code>, etc.</li>
+<li>It is best to use a single word for table names instead of two words with an underscore.</li>
+<li>It is best to separate large tables into a series of smaller tables that represent constituent parts (normalization).</li>
+</ul>
+<h3>Fields:</h3>
+<ul>
+<li>When naming fields use lowercase letters for consistency.</li>
+<li>If two words are necessary use an underscore between them to increase reading clarity.</li>
+<li>If a field is meant to hold a boolean value, start it with a verb or name the field with a verb (i.e. is_deleted, remove).</li>
+<li>For foreign keys, precede the field name with the name of the source table (i.e. <code>users_id</code>).</li>
+</ul>
+<h3>Permissions</h3>
+<ul>
+<li>When giving users permission to a database table, only allow the minimum set of needed permissions. So if a users needs to be able to <code>SELECT</code> from a particular table in a database, give them <code>SELECT</code> permission on that table only.</li>
+<li>When building user interfaces that allows users to remove database entries, it is best to give the user 'soft delete' permission.
+<ul>
+<li>Soft Delete means that a user would be allowed to mark a field as true that would hide a table record. From the front-end, the entry would be removed - giving the appearance of deletion. However, the record would only be marked for removal on the back-end database.</li>
+<li>This way the user would only need <code>UPDATE</code> permission on the database table instead of <code>DELETE</code> permission. Therefore, in the event of a site compromise (such as SQL Injection), the hacker would be working with a database user that had more limited permissions.</li>
+</ul>
+</li>
+</ul>
+ blas
+    </main>
+</html>

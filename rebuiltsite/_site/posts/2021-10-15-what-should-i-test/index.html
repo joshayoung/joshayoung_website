@@ -1,0 +1,228 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <heaer>
+            <h1>What Should I Test</h1>
+        </heaer>
+    </body>
+    <main>
+<p>There are two general types of actions that can be performed in function - a command or a query. In general, a query would return a value and a command would mutate state in some way.</p>
+<p>At a high level, we want to test a method's return value (if it has one) and any side-effects (if it has any).</p>
+<p><em>The tricky part is that a method can contain both command and query messages within the same method. This is where it can be difficult to determine which portions to test and which portions to not test.</em></p>
+<p>These distinctions can be further broken down by <em>incoming</em>, <em>outgoing</em>, and <em>sent-to-self</em> designations.</p>
+<h2>Query Message:</h2>
+<ul>
+<li>Return/change something.</li>
+<li>Have no side-effects.</li>
+<li>Are Idempotent.</li>
+</ul>
+<h2>Command Message:</h2>
+<ul>
+<li>Do not return anything.</li>
+<li>Mutate state.</li>
+<li>Have side-effects.</li>
+<li>Not Idempotent.</li>
+</ul>
+<h2>Sent-to-Self</h2>
+<ul>
+<li>Private methods.</li>
+<li><strong>Do not test</strong>.</li>
+</ul>
+<p>Let's start with Incoming Query tests. Below I have outlined a few examples and what to test for each case.</p>
+<hr>
+<h3>Incoming Query:</h3>
+<pre><code class="language-csharp">public class Knight
+{
+  public Knight(int bladeLength, int LengthToBeASword) { ... }
+
+  public bool HasSword()
+  {
+      return BladeLength &gt;= LengthToBeASword;
+  }
+}
+</code></pre>
+<ul>
+<li>Here would would assert on the <strong>return</strong> value only.</li>
+</ul>
+<pre><code class="language-csharp">  public class Knight
+  {
+    public Knight(Sustenance sustenance) { ... }
+
+    public int StrengthLevel()
+    {
+      return sustenance.GetEndurance() + Level();
+    }
+
+    private int Level() { ... }
+  }
+</code></pre>
+<ul>
+<li>Once again, we only test the <strong>return</strong> value of <code>StrengthLevel()</code>.</li>
+<li>We do not care that <code>sustenance.GetEndurance()</code> is called.
+<ul>
+<li>The call to: <code>sustenance.GetEndurance()</code> is not changing anything.</li>
+</ul>
+</li>
+<li>We do not care what is going on inside the method, just about the return value.</li>
+</ul>
+<h3>Incoming Command:</h3>
+<pre><code class="language-csharp">  public class Knight
+  {
+    public int BladeLength;
+
+    public Knight() { ... }
+
+    public void SetBladeLength(int length)
+    {
+      BladeLength = length;
+    }
+  }
+</code></pre>
+<ul>
+<li>Because <code>BladeLength</code> has changed, here I would test the <strong>side-effect</strong>.</li>
+<li>The side-effect tested should be public.</li>
+<li>The side-effect should be direct (the last class involved).</li>
+</ul>
+<h3>Sent-to-Self</h3>
+<pre><code class="language-csharp">  public class Knight
+  {
+    public int BladeLength;
+
+    public Knight() { ... }
+
+    private int AppropriateBattleLength()
+    {
+      return this.BladeLength - 10;
+    }
+  }
+</code></pre>
+<ul>
+<li><strong>Do not test</strong> private methods at all.</li>
+<li>Private methods should be free to change their implementation.</li>
+</ul>
+<h3>Outgoing Query:</h3>
+<pre><code class="language-csharp">  public class Knight
+  {
+    public Knight(Sustenance sustenance) { ... }
+
+    public int StrengthLevel()
+    {
+      return sustenance.EnergyLevel() + 10;
+    }
+  }
+</code></pre>
+<ul>
+<li><strong>Do not test</strong>.</li>
+<li><em>In this case, this method is an outgoing query message, but also an incoming query message.</em>
+<ul>
+<li>We would not test the <code>sustenance.EnergyLevel()</code> for its return value.</li>
+<li>We would not test that the <code>sustenance.EnergyLevel()</code> was sent.
+<ul>
+<li><em><code>sustenance.EnergyLevel()</code> is an incoming query for another object, that should already be tested elsewhere.</em></li>
+</ul>
+</li>
+<li>We would test the return value of <code>StrengthLevel()</code> though.</li>
+</ul>
+</li>
+</ul>
+<h3>Outgoing Command:</h3>
+<pre><code class="language-csharp">  public class Knight
+  {
+    public Knight(Sustenance sustenance) { ... }
+
+    public void IncreaseEnergy() 
+    {
+      sustenance.SetEnergyLevel();
+    }
+  }
+</code></pre>
+<ul>
+<li>Test that this method was <strong>called</strong>.</li>
+<li>The method has to be called because other parts of the program are relying on the side effects that result from this method call.</li>
+<li>If <code>sustenance.SetEnergyLevel();</code> changes something else in the code base, we do not need to test for that because that would be an integration test.
+<ul>
+<li>We just need to verify that the call to <code>SetEnergyLevel()</code> was made.</li>
+</ul>
+</li>
+<li>You will have to use a mock to test this.</li>
+</ul>
+<h3>Method with a command and a query:</h3>
+<pre><code class="language-csharp">  public bool Save(Student student)
+  {
+    string? serializeStudent = JsonConvert.SerializeObject(student);
+
+    if (serializeStudents == null)
+    {
+      return false;
+    }
+
+    await this.data.Save(&quot;student&quot;, student);
+
+    return true;
+  }
+</code></pre>
+<p>In this case we have a method that has both <em>commands</em> and <em>queries</em>.</p>
+<p>For the first line: <code>var st = this.Students.Find(s =&gt; s.Id == student.Id);</code> we are dealing with an outgoing query. It would be tested elsewhere (in this case it is part of the C# language). We would not write any tests for this line.</p>
+<p>For the second line: <code>if (serializeStudents == null)</code>, we would want to pass in data that forces the JSON serialization to return null and then assert that the incoming query <code>return false;</code> returned false.</p>
+<p>Our next line: <code>await this.data.Save(&quot;student&quot;, student);</code> is an outgoing command. We would want to test that this method was called with the correct parameters.</p>
+<p>On our last (incoming query) line (<code>return true;</code>), we would want to assert that true was returned.</p>
+<h3>Method with Multiple Commands:</h3>
+<pre><code class="language-csharp">  public async Task Save(Student student)
+  {
+    var st = this.Students.Find(s =&gt; s.Id == student.Id);
+    st.Name = student.Name;
+    string? serializeStudents = JsonConvert.SerializeObject(this.Students);
+    await this.data.Save(&quot;all_students&quot;, serializeStudents);
+  }
+</code></pre>
+<p>In this case, we have a <em>command</em> method with <em>incoming</em> and <em>outgoing</em> commands.</p>
+<p>For the first line: <code>var st = this.Students.Find(s =&gt; s.Id == student.Id);</code> we are dealing with an outgoing query. It would be tested elsewhere (in this case it is part of the C# language). We would not write any tests for this line.</p>
+<p>Our second line: <code>st.Name = student.Name;</code> is an incoming command, so we would want an assert on this value being set.</p>
+<p>On our next line: <code>string? serializeStudents = JsonConvert.SerializeObject(this.Students);</code>, we are once again dealing with a outgoing query that we cannot and should not test.</p>
+<p>Our next line: <code>await this.data.Save(&quot;all_students&quot;, serializeStudents);</code> is an outgoing command. We would want to test that this method was called with the correct parameters.</p>
+<h3>Summary</h3>
+<p>In general, these rules can be broken down like this table:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Query</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Incoming</td>
+<td>Assert Return Value</td>
+<td>Assert Direct Public Side Effect</td>
+</tr>
+<tr>
+<td>Sent-to-Self*</td>
+<td>Don't Test</td>
+<td>Don't Test</td>
+</tr>
+<tr>
+<td>Outgoing</td>
+<td>Don't Test</td>
+<td>Assert Message Sent</td>
+</tr>
+</tbody>
+</table>
+<p>I have created a repo that outlines these concepts <a href="https://github.com/joshayoung/csharp-testing-types">here</a>, please take a look. I have also listed resources that I have found helpful below.</p>
+<h3>Resources:</h3>
+<ul>
+<li><a href="https://martinfowler.com/bliki/CommandQuerySeparation.html">Command Query Separation</a></li>
+<li><a href="https://vimeo.com/68730418">Katrina Owen - 467 tests, 0 failures, 0 confidence</a></li>
+<li><a href="https://www.youtube.com/watch?v=URSWYvyc42M">The Magic Tricks of Testing by Sandi Metz</a></li>
+<li><a href="https://medium.com/@christiancarey1/writing-specs-like-sandi-metz-9f2acf5026cb">Writing Specs like Sandi Metz</a></li>
+<li><a href="https://thoughtbot.com/blog/functional-viewpoints-on-testing-objectoriented-code">Testing Objects with a Functional Mindset</a></li>
+<li><a href="https://thoughtbot.com/blog/simplify-tests-by-extracting-side-effects">Simplifying Tests by Extracting Side-Effects</a></li>
+<li><a href="https://medium.com/swlh/about-command-query-separation-and-object-oriented-design-c5dd4a5e03fb">About Command &amp; Query Separation and Object-Oriented-Design</a></li>
+</ul>
+ blas
+    </main>
+</html>
