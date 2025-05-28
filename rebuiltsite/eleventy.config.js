@@ -1,7 +1,12 @@
 const path = require("node:path");
 const sass = require("sass");
+const pluginWebc = require("@11ty/eleventy-plugin-webc");
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
+	const { RenderPlugin } = await import("@11ty/eleventy");
+
+	eleventyConfig.addPlugin(RenderPlugin);
+	eleventyConfig.addPlugin(pluginWebc);
 	eleventyConfig.addTemplateFormats("scss")
 	eleventyConfig.addExtension("scss", {
 		outputFileExtension: "css",

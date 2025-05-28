@@ -1,5 +1,8 @@
+##ote: My config is using CommonJS Syntax.
+
 ## Steps
 * `npm install sass`
+* `npm install @11ty/eleventy-plugin-webc`
 
 ## Start the Local Server
 * `npx @11ty/eleventy --serve`
