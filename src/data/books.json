@@ -169,6 +169,20 @@
     ]
   },
   {
+    "title": "Kotlin",
+    "class": "",
+    "hide_from_recommended": true,
+    "data": [
+      {
+        "title": "Kotlin: An Illustrated Guide",
+        "short_title": "",
+        "author": "Dave Leeds",
+        "url": "",
+        "display": true
+      }
+    ]
+  },
+  {
     "title": "Process",
     "class": "",
     "hide_from_recommended": true,
