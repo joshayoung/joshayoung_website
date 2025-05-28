@@ -2,6 +2,10 @@
 
 Below I have listed some of the personal projects that I have developed over the years along with the programming languages used for each.
 
+- [Kanboard App (2025)](#kanboard_app)
+- [KMP Text to Speech (2025)](#kmp_text_to_speech)
+- [Running Tracker App (2025)](#running_tracker)
+- [Notes App (2024 - 2025)](#android_notes_app)
 - [Contacts App App/API (2023 - 2024)](#contacts_app)
 - [Simple Notes App (2021)](#simple_notes_app)
 - [Xamarin Courses App (2021)](#xamarin_courses_app)
@@ -18,6 +22,30 @@ Below I have listed some of the personal projects that I have developed over the
 - [Ticketing System v1 (2010)](#ticketing_system)
 - [Comments and Capers Website (2009)](#commentsandcapers)
 - [Blogging System (2008)](#blogging_system)
+
+### <a name='kanboad_app'></a>Kanboard App (2025)
+
+###### (Android Native, Kotlin, Compose)
+
+Using Kotlin and Android Native technologies like Compose, I build an app for managing my kanban board. This way I did not need to login to the kanboard web interface to add/edit/remove tickets, etc. This app used a multi-module approach.
+
+### <a name='kmp_text_to_speech'></a>KMP Text to Speech App (2025)
+
+###### (Kotin Multiplatform, Compose, iOS)
+
+This app was build with Kotlin Multiplatform (KMP). Basically this allows a lot of the code to be shared between native Android and native iOS. The end result was a text to speach application that runs on both Android and iOS.
+
+### <a name='running_tracker'></a>Running Tracker App (2025)
+
+###### (Android Native, Kotlin, Compose)
+
+This app used a multi-module approach to build a app that can track runs, sync runs. It also build in authentication with a backend application as well.
+
+### <a name='android_notes_app'></a>Android Notes App (2024 - 2025)
+
+###### (Android Native, Kotlin, Compose)
+
+This was a single module app that allows editing, removing, and adding colors to locally stored notes on an android phone. It was a simplistic app, but it build in SOLID and Clean Architecture principles.
 
 ### <a name='contacts_app'></a>Contacts App (2024)
 
