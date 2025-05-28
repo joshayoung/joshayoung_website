@@ -1,6 +1,6 @@
-# Development Projects
+# Portfolio
 
-Below I have listed some of the personal projects that I have developed over the years along with the programming languages used for each.
+Below I have listed some of the projects that I have developed over the years along with the programming languages used for each.
 
 - [Kanboard App (2025)](#kanboard_app)
 - [KMP Text to Speech (2025)](#kmp_text_to_speech)
