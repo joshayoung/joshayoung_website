@@ -29,7 +29,7 @@ In an effort to continually learn new technologies and stay abreast of existing 
 
 ### <a name='android_courses'></a>Android Courses
 
-Philipp Lacker offers some really great content on Android Native Development as well as KMP. Below are the courses I have taken through his training program.
+Philipp Lackner offers some really great content on Android Native Development as well as KMP. Below are the courses I have taken through his training program.
 - [The Jetpack Compose Masterclass](https://pl-coding.com/compose-masterclass)
 - [The Kotlin Coroutines & Flows Masterclass](https://pl-coding.com/coroutines-masterclass)
 - [Mastering Automtated Testing](https://pl-coding.com/testing)

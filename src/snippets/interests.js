@@ -31,14 +31,13 @@ const Interests = () => (
         }
       `}
     >
+      <li>Kotlin</li>
+      <li>Android</li>
       <li>C#</li>
       <li>.NET</li>
       <li>Architecture</li>
       <li>Mobile</li>
       <li>.NET MAUI</li>
-      <li>Java</li>
-      <li>Kotlin</li>
-      <li>Android</li>
       <li>APIs</li>
       <li>Design Patterns</li>
       <li>SOLID</li>

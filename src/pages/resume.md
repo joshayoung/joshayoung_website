@@ -18,7 +18,7 @@ Mobile Software Engineer with over 15 years of experience developing mobile and 
 - Convert existing Xamarin app to Maui.
 - Write and Maintain ASP.NET Core API.
 - Setup authentication between backend APIs and the mobile app.
-  (Gitflow, Scrum)
+- (Gitflow, Scrum)
 
 #### Software Engineer III
 
@@ -30,7 +30,7 @@ Mobile Software Engineer with over 15 years of experience developing mobile and 
 - Write and update xUnit/RSpec tests to insure good test coverage for our applications.
 - Troubleshoot logs to find and correct bugs in production.
 - Work with Java/Spring service to correct errors and add features.
-  (Trunk-based, Kanban)
+- (Trunk-based, Kanban)
 
 ---
 

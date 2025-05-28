@@ -23,7 +23,7 @@ Below I have listed some of the personal projects that I have developed over the
 - [Comments and Capers Website (2009)](#commentsandcapers)
 - [Blogging System (2008)](#blogging_system)
 
-### <a name='kanboad_app'></a>Kanboard App (2025)
+### <a name='kanboard_app'></a>Kanboard App (2025)
 
 ###### (Android Native, Kotlin, Compose)
 
@@ -39,13 +39,13 @@ This app was build with Kotlin Multiplatform (KMP). Basically this allows a lot 
 
 ###### (Android Native, Kotlin, Compose)
 
-This app used a multi-module approach to build a app that can track runs, sync runs. It also build in authentication with a backend application as well.
+This app uses a multi-module approach to build an app that can track runs, sync runs. It also build in authentication with a backend application as well.
 
 ### <a name='android_notes_app'></a>Android Notes App (2024 - 2025)
 
 ###### (Android Native, Kotlin, Compose)
 
-This was a single module app that allows editing, removing, and adding colors to locally stored notes on an android phone. It was a simplistic app, but it build in SOLID and Clean Architecture principles.
+This was a single module app that allows editing, removing, and adding colors to locally stored notes on an android phone. It build in SOLID and Clean Architecture principles.
 
 ### <a name='contacts_app'></a>Contacts App (2024)
 
