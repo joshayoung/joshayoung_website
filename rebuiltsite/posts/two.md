@@ -1,5 +1,5 @@
 ---
-title: Switching to Atom 2
+title: Switching to Atom
 description: This post outlines my switch to the Atom editor and some of the plugins that I have found useful.
 date: 2016-03-22
 path: /switch-to-atom
