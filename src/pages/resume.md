@@ -2,9 +2,9 @@ import TechnicalSkills from "../snippets/technical-skills";
 
 # Resume
 
-### Experienced - Software Engineer
+### Experienced - Mobile Software Engineer
 
-Software Engineer with over 15 years of experience developing web and hybrid mobile applications. Using current programming languages to further company productivity. Improving user experience by working with members of my team to maintain and improve our applications.
+Mobile Software Engineer with over 15 years of experience developing mobile and web applications. Using current programming languages to further company productivity. Improving user experience by working with members of my team to maintain and improve our applications.
 
 ### Work Experience
 
@@ -16,6 +16,7 @@ Software Engineer with over 15 years of experience developing web and hybrid mob
 - Write mobile application using Xamarin/Maui and C#.
 - Write blazor applications.
 - Convert existing Xamarin app to Maui.
+- Write and Maintain ASP.NET Core API.
 - Setup authentication between backend APIs and the mobile app.
   (Gitflow, Scrum)
 
