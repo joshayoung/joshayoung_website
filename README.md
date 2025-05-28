@@ -33,6 +33,7 @@
 ## To Do
 
 - Add not about ~/.ssh/config being needed anytime you have a non-standard ssh-key file name to your snippets.
+- Correct pluralsight link.
 
 ### Resources
 
