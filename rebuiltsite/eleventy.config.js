@@ -5,12 +5,6 @@ const pluginWebc = require("@11ty/eleventy-plugin-webc");
 module.exports = async function (eleventyConfig) {
 	const { RenderPlugin } = await import("@11ty/eleventy");
 
-
-	module.exports = function(eleventyConfig) {
-  eleventyConfig.addCollection("limitedPosts", function(collection) {
-    return collection.getAll().slice(0, 3); // Limit to the first 3 items
-  });
-};
 	eleventyConfig.addPlugin(RenderPlugin);
 	eleventyConfig.addPlugin(pluginWebc);
 	eleventyConfig.addTemplateFormats("scss")
